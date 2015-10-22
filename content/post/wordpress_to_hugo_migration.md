@@ -1,9 +1,9 @@
 ---
 date: "2015-10-21T15:39:13-07:00"
 title: "Hugo: A replacement for Wordpress"
+url: /hugo-a-replacement-for-wordpress/
 categories:
   - Software
-
 ---
 
 
