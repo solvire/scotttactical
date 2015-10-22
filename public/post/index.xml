@@ -48,7 +48,7 @@ systemctl enable nginx
 
 &lt;pre&gt;&lt;code&gt;mkdir -p /var/www/ursite/
 chown -R nginx:nginx /var/www
-touch /var/www/ursite/index.html
+touch /var/www/ursite/index.html - or clone your site 
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/ursite
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -68,10 +68,24 @@ server {
     server_alias go.scotttactical.com;
 
     location / {
-        root   /var/www/example.com/public_html/;
-         index  index.html index.htm;
+        root   /var/www/stac/;
+        index  index.html;
     }
 }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;install-go-hugo:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Install  Go + Hugo&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install go 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I decided to install from source
+Edit your bash script to have the proper variables in place.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install git hg 
+export GOPATH=$HOME/go
+go get -v github.com/spf13/hugo
+cp $GOPATH/bin/hugo /usr/local/bin/
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         </item>
