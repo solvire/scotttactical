@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta property="og:url" content="http://localhost:1313/">
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP Hypermedia REST API wrapper &middot; Scott Tactical">
+
+<meta property="og:site_name" content="Scott Tactical">
+
+<title>
+    
+    PHP Hypermedia REST API wrapper
+    
+</title>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/github.min.css">
+<link rel="stylesheet" href="http://localhost:1313//css/styles.css">
+<link rel="stylesheet" href="http://localhost:1313//css/custom.css">
+
+
+<link rel="shortcut icon" href="http://localhost:1313//assets/favicon.ico">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:1313//index.xml">
+
+
+<div class="container">
+    <header class="nav">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://localhost:1313/">Scott Tactical</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="http://localhost:1313//post">All Posts</a></li>
+                        <li><a href="http://localhost:1313//tags">Tags</a></li>
+                        
+                        <li><a href="http://localhost:1313/about/">About</a></li>
+                        
+                        <li><a href="http://localhost:1313/">Home</a></li>
+                        
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        <li>
+                            <a href="https://www.facebook.com/scott.tactical" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                                Facebook</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="https://twitter.com/scott_tactical" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                                Twitter</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="https://github.com/solvire" target="_blank">
+                                <i class="fa fa-github-square"></i>
+                                GitHub
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <article class="post">
+
+            <header>
+                <div class="post-date">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    <time datetime="8090-90-89">
+                        8090-90-89
+                    </time>
+                </div>
+                <h1 class="post-title">
+                    <a href="http://localhost:1313/php-hypermedia-rest-api-wrapper/">PHP Hypermedia REST API wrapper</a>
+                </h1>
+            </header>
+
+            <div class="post-content">
+                <h2 style="margin-bottom: 0in;">
+  Hypermedia for PHP APIs.
+</h2>
+
+<p style="margin-bottom: 0in;">
+  Well, here it is.  I'm finally finishing up my Hypermedia layer for our <a title="Laravel 5.1" href="http://laravel.com/docs/5.1" target="_blank">Laravel 5.1</a> build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of <a href="https://twitter.com/hashtag/iot" target="_blank">Internet-of-Things</a> (IoT).
+</p>
+
+<h3 style="margin-bottom: 0in;">
+  So why now?
+</h3>
+
+<p style="margin-bottom: 0in;">
+  For about 20 or so years we have been collectively building sophisticated network interfaces for humans. The most advanced interface is the web browser. The browser's job is to present or render data to the user in way that allows them to consume and then determine what the information means. In addition to the specific data quested the server will also present the representative data that delivers context. This was necessary by convention and dictated by market demand. People en mass were going into the business of supplying customers and other businesses with data. For the most part that data is self-serve. I'll write more about that philosophy at a later time.
+</p>
+
+<h2 style="margin-bottom: 0in;">
+  Metadata and Context
+</h2>
+
+<p style="margin-bottom: 0in;">
+  Each response should contain everything that is necessary for an intelligent agent to decide what to do next. Considering that machines will eclipse humans in pretty much every intelligence metric we can be qualified in keeping them in the category of intelligent agents. They will be making their own decisions based on the data.
+</p>
+
+<p style="margin-bottom: 0in;">
+  In the past the design of an API would leave the interpretation of the HTTP service up to the designer of the API's consumer. The context of the data is completely absent from the source of the data. Most of the time the designer of the client would have to build a specific set of functions or classes that would represent what the designer believed the documentation was trying to tell us about the data. Most web service designers were so far off from matching the returned data streams with the actual business objects the data represented that there was no great benefit in trying to have a client that mimicked the server object structure. The simple genius of the REST paradigm is that is requires the business object to be represented in the transaction and builds on the strengths of HTTP.
+</p>
+
+<h2 style="margin-bottom: 0in;">
+  Data Context and the Long Form
+</h2>
+
+<p style="margin-bottom: 0in;">
+  An allegory: an API client contacts a web service requesting a list of book titles. The most economical thing would be to stream back a delimited list of integers. That was all that was requested right? Could anyone figure out what it means if found alone. Not really. Only if they were able to consult with other sources: namely the documentation.
+</p>
+
+<p style="margin-bottom: 0in;">
+  Social and modern media tends to deliver everything in the short form. It only provides the least amount of information possible. And then by a genetic algorithm the data that is the most entertaining bubbles up to the top. It lives without context. A picture of a cat or a meme with only a few lines. Even important topics in politics and commerce are made without context. The long form is dead. Although I have started to see a renewed interest especially when visiting Medium.
+</p>
+
+<h2 style="margin-bottom: 0in;">
+  Architecture
+</h2>
+
+<p style="margin-bottom: 0in;">
+  This SDK attempts to represent a paradigm that mimics the organic agents of the Internet. Sorta. What I mean by that is the naming convention and the architecture are set up so they suggest some structures that are self-documenting. For instance the main controller for the pattern is a RepresentationalController. It represents the resource. If there is something that needs to be presented pertaining to the resource the RepresentationalController should answer the call.
+</p>
+
+<p style="margin-bottom: 0in;">
+  Because the RepresentationalController is going to interpret the call it must handle translation of the verbs. Thankfully there are only a handful of authorized verbs so the interpretation is trivial.
+</p>
+
+<p style="margin-bottom: 0in;">
+  I will elaborate more on the individual aspects of the architecture at a later time. Right now I'm leaving it brief.
+</p>
+
+<h2 style="margin-bottom: 0in;">
+  Closing
+</h2>
+
+<p style="margin-bottom: 0in;">
+  Probably not an acceptable instruction, but it's a start. I'll keep posting as I can.
+</p>
+
+<p style="margin-bottom: 0in;">
+  ST
+</p>
+
+            </div>
+
+            <aside>
+                
+                <ul class="list-inline post-tags">
+                    
+                </ul>
+
+                
+                
+                <h3>Related Post</h3>
+                <ul class="post-rels">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+            </aside>
+            
+            
+            <footer>
+
+                <nav>
+                    <ul class="pager">
+
+                        
+                        <li class="previous"><a href="http://localhost:1313/force-https-on-laravel-5-aws-elb-on-ec2/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        
+
+                        <li><a href="http://localhost:1313//post">All Posts</a></li>
+
+                        
+                        <li class="next"><a href="http://localhost:1313/linux-file-manipulation-shortcuts-commands/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        
+
+                    </ul>
+                </nav>
+
+                
+                
+                
+            </footer>
+
+        </article>
+    </div>
+    <div class="col-md-4">
+        
+<aside>
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Recent Posts</h2>
+                </div>
+                <div class="list-group">
+                    
+                    <a href="/deploying-hugo-golang-digitalocean-nginx" class="list-group-item">Deploying Hugo the Golang CMS on DigitalOcean - Nginx</a>
+                    
+                    <a href="/about/" class="list-group-item">About</a>
+                    
+                    <a href="/post/hugo-a-replacement-for-wordpress/" class="list-group-item">Hugo: A replacement for Wordpress</a>
+                    
+                    <a href="/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/" class="list-group-item">Yosemite National Park, CA - October 9, 2015</a>
+                    
+                    <a href="/yosemite-valley-ca-october-8-2015/" class="list-group-item">Yosemite Valley, CA - October 8, 2015</a>
+                    
+                    <a href="/interview-strategies-a-technology-hiring-manager/" class="list-group-item">Interview Strategies: A Technology Hiring Manager Who Wins</a>
+                    
+                    <a href="/photography-sepulveda-dam-and-wildlife-basin-los-angeles/" class="list-group-item">Photography Sepulveda Dam and WildLife Basin - Los Angeles</a>
+                    
+                    <a href="/download-an-entire-site-with-wget-mac-osx/" class="list-group-item">Download an Entire Site with wget - mac OSX</a>
+                    
+                    <a href="/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/" class="list-group-item">Hypermedia, API Philosophy, and Talking to Your Robot Overlords</a>
+                    
+                    <a href="/force-https-on-laravel-5-aws-elb-on-ec2/" class="list-group-item">Force HTTPS on Laravel 5 behind AWS ELB on EC2</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Tags</h2>
+                </div>
+                <div class="list-group">
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</aside>
+
+    </div>
+</div>
+
+</div>
+<hr>
+
+<footer class="container copy">
+    <p>&copy; 2015  Scott Tactical </p>
+	<p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a></p>
+	<p>Theme <a href="https://github.com/dim0627/hugo_theme_hugostrap" target="_blank">Hugostrap</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a>, Inspired from <a href="https://github.com/kAworu/octostrap3" target="_blank">Octostrap3</a></p>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-53440065-2', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+<script>
+document.write('<script src="//sharebutton.net/plugin/sharebutton.php?type=horizontal&u=' + encodeURIComponent(document.location.href) + '"></scr' + 'ipt>');
+</script>
+

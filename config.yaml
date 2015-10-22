@@ -1,0 +1,23 @@
+BaseUrl: "http://go.scotttactical.com/"
+LanguageCode: "en-us"
+Title: "Scott Tactical"
+Theme: "beg"
+
+Params:
+  Author: "Scott Tactical"
+  DateForm: "2015-10-21"
+  GoogleAnalyticsUserID: "UA-53440065-2"
+  Facebook: "scott.tactical"
+  Twitter: "scott_tactical"
+  Github: "solvire"
+  ShowRelatedPost: True
+  Disqus: "unresolved"
+  SyntaxHighlightTheme: "github.min.css"
+
+Indexes:
+  tag: "tags"
+
+permalinks:
+  post: /post/:slug/
+
+MetadataFormat: "yaml"
