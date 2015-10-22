@@ -62,7 +62,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         
                         <li>
-                            <a href="https://www.facebook.com/scott.tactical" target="_blank">
+                            <a href="https://www.facebook.com/100005012745496" target="_blank">
                                 <i class="fa fa-facebook-square"></i>
                                 Facebook</a>
                         </li>
@@ -159,7 +159,7 @@ server {
     server_alias go.scotttactical.com;
 
     location / {
-        root   /var/www/stac/;
+        root   /var/www/stac/public/;
         index  index.html;
     }
 }
@@ -178,6 +178,8 @@ export GOPATH=$HOME/go
 go get -v github.com/spf13/hugo
 cp $GOPATH/bin/hugo /usr/local/bin/
 </code></pre>
+
+<p>NOTE: THis actually isn&rsquo;t necessary.  Just check it out and go with it. Afer screwing with it a few minutes I facepalmed&hellip; they are static files. Doh!</p>
 
             </div>
 

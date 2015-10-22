@@ -52,7 +52,7 @@ server {
     server_alias go.scotttactical.com;
 
     location / {
-        root   /var/www/stac/;
+        root   /var/www/stac/public/;
         index  index.html;
     }
 }
@@ -71,4 +71,5 @@ Edit your bash script to have the proper variables in place.
 	go get -v github.com/spf13/hugo
 	cp $GOPATH/bin/hugo /usr/local/bin/
 
+NOTE: THis actually isn't necessary.  Just check it out and go with it. Afer screwing with it a few minutes I facepalmed... they are static files. Doh! 
 
