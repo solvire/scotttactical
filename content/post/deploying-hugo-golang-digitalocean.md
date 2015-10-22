@@ -1,6 +1,6 @@
 ---
-date: 2015-10-22T04:23:21-07:00
-draft: true
+date: 2015-10-22T06:29:31-07:00
+draft: false
 title: Deploying Hugo the Golang CMS on DigitalOcean - Nginx
 url: deploying-hugo-golang-digitalocean-nginx
 ---
