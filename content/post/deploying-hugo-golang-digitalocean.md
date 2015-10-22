@@ -32,7 +32,7 @@ Setting up a droplet is always very simple. Just turn it on basically. Upload yo
 
 	mkdir -p /var/www/ursite/
 	chown -R nginx:nginx /var/www
-	touch /var/www/ursite/index.html
+	touch /var/www/ursite/index.html - or clone your site 
 	cp /etc/nginx/sites-available/default /etc/nginx/sites-available/ursite
 
 ### Configure nginx 
@@ -52,10 +52,23 @@ server {
     server_alias go.scotttactical.com;
 
     location / {
-        root   /var/www/example.com/public_html/;
-         index  index.html index.htm;
+        root   /var/www/stac/;
+        index  index.html;
     }
 }
 ```
 
-#### 
+#### Install  Go + Hugo
+
+	yum install go 
+
+
+I decided to install from source 
+Edit your bash script to have the proper variables in place. 
+
+	yum install git hg 
+	export GOPATH=$HOME/go
+	go get -v github.com/spf13/hugo
+	cp $GOPATH/bin/hugo /usr/local/bin/
+
+
