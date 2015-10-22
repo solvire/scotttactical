@@ -132,4 +132,12 @@ Add `theme = "beg"`
 Start the serve:
 
     hugo server --buildDrafts --watch
+
+# Conclusion
+
+This was very painless. I am kinda surprised. I was a little hesitant to get in here. Setting up virtual hosts and getting the code out there wasn't elegant but wasn't hard either. I just checked out my repo on the server. 
+
+I am going to start transfering some of my other blogs to this when I have the chance. I might even do something sophisticated to the sites that are more or dynamic or colorful. 
+
+Go Golang! 
     

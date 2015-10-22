@@ -233,6 +233,14 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;hugo server --buildDrafts --watch
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;conclusion:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;This was very painless. I am kinda surprised. I was a little hesitant to get in here. Setting up virtual hosts and getting the code out there wasn&amp;rsquo;t elegant but wasn&amp;rsquo;t hard either. I just checked out my repo on the server.&lt;/p&gt;
+
+&lt;p&gt;I am going to start transfering some of my other blogs to this when I have the chance. I might even do something sophisticated to the sites that are more or dynamic or colorful.&lt;/p&gt;
+
+&lt;p&gt;Go Golang!&lt;/p&gt;
 </description>
         </item>
       
