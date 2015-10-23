@@ -7,6 +7,7 @@ categories:
   - Photography
   - Uncategorized
 format: gallery
+tags: [photography, yosemite, national park, hiking, california]
 ---
 ## Hiking and Photography - Yosemite National Park
 

@@ -3,6 +3,7 @@ date: 2015-10-22T06:29:31-07:00
 draft: false
 title: Deploying Hugo the Golang CMS on DigitalOcean - Nginx
 url: deploying-hugo-golang-digitalocean-nginx
+tags: [go, golang, hugo, wordpress, blogging, software, programming]
 ---
 
 # Deploying Hugo the Golang CMS on DigitalOcean

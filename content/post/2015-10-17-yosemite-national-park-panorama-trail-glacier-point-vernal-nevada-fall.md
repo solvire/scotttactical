@@ -6,6 +6,7 @@ url: /yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/
 categories:
   - Photography
 format: gallery
+tags: [photography, yosemite, national park, hiking, california]
 ---
 # Hiking Yosemite, CA
 

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scott Tactical </title>
+    <link>http://scotttactical.com/tags/golang/</link>
+    <language>en-us</language>
+    <author>Scott Tactical</author>
+    <rights>(C) 2015</rights>
+    <updated>2015-10-22 06:29:31 -0700 PDT</updated>
+
+    
+      
+        <item>
+          <title>Deploying Hugo the Golang CMS on DigitalOcean - Nginx</title>
+          <link>http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx</link>
+          <pubDate>Thu, 22 Oct 2015 06:29:31 PDT</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx</guid>
+          <description>
+
+&lt;h1 id=&#34;deploying-hugo-the-golang-cms-on-digitalocean:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Deploying Hugo the Golang CMS on DigitalOcean&lt;/h1&gt;
+
+&lt;h2 id=&#34;creating-a-droplet:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Creating a Droplet&lt;/h2&gt;
+
+&lt;p&gt;I am a bit partial to CentOS. The lastest version as of this writing is &lt;em&gt;CentOS Linux release 7.1.1503 (Core)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Setting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done.&lt;/p&gt;
+
+&lt;h2 id=&#34;install-nginx:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Install Nginx&lt;/h2&gt;
+
+&lt;h3 id=&#34;add-the-epel-repo:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Add the epel repo:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install epel-release
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;install:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Install&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;start-it:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Start it&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;service nginx start 
+systemctl enable nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;create-the-folders:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Create the Folders&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir -p /var/www/ursite/
+chown -R nginx:nginx /var/www
+touch /var/www/ursite/index.html - or clone your site 
+cp /etc/nginx/sites-available/default /etc/nginx/sites-available/ursite
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;configure-nginx:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Configure nginx&lt;/h3&gt;
+
+&lt;p&gt;open the config file: &lt;code&gt;vim /etc/nginx/conf.d/virtual.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Add the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;#
+# A virtual host using mix of IP-, name-, and port-based configuration
+#
+
+server {
+    listen       80;
+    server_name  scotttactical.com;
+    server_alias go.scotttactical.com;
+
+    location / {
+        root   /var/www/stac/public/;
+        index  index.html;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;install-go-hugo:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Install  Go + Hugo&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install go 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I decided to install from source
+Edit your bash script to have the proper variables in place.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install git hg 
+export GOPATH=$HOME/go
+go get -v github.com/spf13/hugo
+cp $GOPATH/bin/hugo /usr/local/bin/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;NOTE: THis actually isn&amp;rsquo;t necessary.  Just check it out and go with it. Afer screwing with it a few minutes I facepalmed&amp;hellip; they are static files. Doh!&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Hugo: A replacement for Wordpress</title>
+          <link>http://scotttactical.com/hugo-a-replacement-for-wordpress/</link>
+          <pubDate>Wed, 21 Oct 2015 15:39:13 PDT</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/hugo-a-replacement-for-wordpress/</guid>
+          <description>
+
+&lt;h1 id=&#34;hugo-a-replacement-for-wordpress:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Hugo: A Replacement for Wordpress&lt;/h1&gt;
+
+&lt;h2 id=&#34;tl-dr:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;TL;DR&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I researched go&lt;/li&gt;
+&lt;li&gt;Found Hugo&lt;/li&gt;
+&lt;li&gt;Setup a test&lt;/li&gt;
+&lt;li&gt;Migrated my Wordpress instance&lt;/li&gt;
+&lt;li&gt;Launched DigitalOcean Droplet&lt;/li&gt;
+&lt;li&gt;Deployed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Total time: &lt;em&gt;6 hours&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;continued:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Continued:&lt;/h2&gt;
+
+&lt;p&gt;My problems started almost a year before I took up this cause. At the time I only had 2 Wordpress sites. Very very low traffic.  Only a couple users a day.  They were mostly place holders for business sites.&lt;/p&gt;
+
+&lt;h2 id=&#34;wordpress-is-hungry:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Wordpress is hungry&lt;/h2&gt;
+
+&lt;p&gt;What was annoying about the case was that they would randomly &lt;em&gt;carsh&lt;/em&gt;! I realized they were running &lt;em&gt;out of memory&lt;/em&gt;. I couldn&amp;rsquo;t figure out why because I just wouldn&amp;rsquo;t let myself believe that a couple instances of Wordpress were enough to run out of memory. It was an AWS box running with .5GB of memory and some swap space. I can&amp;rsquo;t remember what. Maybe I was just too optimistic.&lt;/p&gt;
+
+&lt;p&gt;I reimaged the server, installed several performance plugins, cached anything I could, but still it would eat memory like a lonely fat girl at a buffet. Every couple days my monitor would go off telling me the site was down. The monitor wasn&amp;rsquo;t in place immediately because I didn&amp;rsquo;t think I needed one. It was only after the site had been offline for a couple days before I realized that I had to get a monitor.&lt;/p&gt;
+
+&lt;p&gt;Well eventually I decided it just needed more hardware. I went to 1G of memory for the 2 instances. That carshed as well. It was like watching the movie Carsh in slow motion. I added a couple gigs of swap, but then aws started acting funny and it would fill up the memory immediately. I then went to 2G ram and 2G of swap. Still - Carshon Daily show!&lt;/p&gt;
+
+&lt;h2 id=&#34;it-s-the-future-already:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;It&amp;rsquo;s the Future Already&lt;/h2&gt;
+
+&lt;p&gt;It&amp;rsquo;s 2015. In honor of 2015 and #BackToTheFuture day I am getting over 2000&amp;rsquo;s technology and moving on to something new.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Blogs should fast and light&lt;/em&gt; and should be able to run in the fog. Static, and with out short codes. Gawd! And hoverboards.&lt;/p&gt;
+
+&lt;h1 id=&#34;so-starts-my-late-journey:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;So Starts My (Late) Journey&lt;/h1&gt;
+
+&lt;h2 id=&#34;my-requirements:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;My Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Easy markup (or markdown)&lt;/li&gt;
+&lt;li&gt;Lite - less than 500M of memory required&lt;/li&gt;
+&lt;li&gt;Static (optional but nice)&lt;/li&gt;
+&lt;li&gt;No DB or a lighter option&lt;/li&gt;
+&lt;li&gt;Image manipulation or gallery ease&lt;/li&gt;
+&lt;li&gt;Simple enough a business person can (ha this isn&amp;rsquo;t the future you are looking for)&lt;/li&gt;
+&lt;li&gt;Authentication layers&lt;/li&gt;
+&lt;li&gt;SEO items
+
+&lt;ul&gt;
+&lt;li&gt;Sitemap&lt;/li&gt;
+&lt;li&gt;Metatags&lt;/li&gt;
+&lt;li&gt;Links&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Multiple environment friendly (dev/stage/prod)&lt;/li&gt;
+&lt;li&gt;PERFORMANT fast&lt;/li&gt;
+&lt;li&gt;Templates (market)&lt;/li&gt;
+&lt;li&gt;Multi-site management (please?)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;languages-prepared-to-flamed:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Languages - PREPARED TO FLAMED!&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;PHP - too slow - boring - part of my problem already&lt;/li&gt;
+&lt;li&gt;Python - Interesting but everyone wants to use django. Kinda heavy for this&lt;/li&gt;
+&lt;li&gt;Ruby - pretty good but still kinda foreign to me&lt;/li&gt;
+&lt;li&gt;Go - I wanna learn it but where are the projects&lt;/li&gt;
+&lt;li&gt;Java - swatting at flies with a sledge hammer&lt;/li&gt;
+&lt;li&gt;Scala - eh&amp;hellip; i liked this idea but still too big&lt;/li&gt;
+&lt;li&gt;C++ - Not a masochist&lt;/li&gt;
+&lt;li&gt;Perl - Not unless you say perl in a French accent every time&lt;/li&gt;
+&lt;li&gt;Node.js - I will not allow JS on my backend, it&amp;rsquo;s unnatural&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Given my above list of languages I kinda forced myself into a sector.&lt;/p&gt;
+
+&lt;h3 id=&#34;languages-decisions:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Languages - Decisions&lt;/h3&gt;
+
+&lt;h4 id=&#34;ruby:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Ruby&lt;/h4&gt;
+
+&lt;p&gt;I really liked &lt;a href=&#34;http://jekyllrb.com/docs/home/&#34;&gt;jekyll&lt;/a&gt; and might have gone with it if Ruby wasn&amp;rsquo;t such a foreign concept to me. And I haven&amp;rsquo;t decided if I want to jump in and learn it completely. So not this time gems.&lt;/p&gt;
+
+&lt;h4 id=&#34;a-shot-at-python:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;A Shot at Python&lt;/h4&gt;
+
+&lt;p&gt;I have a ton of experience with PHP. They are all about the same. They can get okay performance if you cache everything but they are just too heavy. And it&amp;rsquo;s PHP. I&amp;rsquo;m over it. Drupal. Seriously it&amp;rsquo;s 2015. That thing should have died 10 years ago.  Are you still driving your subaru brat?&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve used python before and I did give it a good run, but &lt;a href=&#34;https://www.djangoproject.com/&#34;&gt;Django&lt;/a&gt; is just too big IMO. A blog is simple. It needs to stay simple. Plus they are trying to recreate Wordpress in all of its glory. No thanks.&lt;/p&gt;
+
+&lt;p&gt;To be fair to python, I spent a little time going through the implementation of &lt;a href=&#34;http://mezzanine.jupo.org/&#34;&gt;Mezzanine&lt;/a&gt; and &lt;a href=&#34;http://www.django-cms.org/en/&#34;&gt;Django-CMS&lt;/a&gt;.  Still. Too grande.&lt;/p&gt;
+
+&lt;h4 id=&#34;java-et-al:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Java et al&lt;/h4&gt;
+
+&lt;p&gt;I have spent time before researching Java and C++ CMS programs. They are probably okay for monolithic enterprises who need some sort of back stroking to know they used a dump truck with a Cadillac interior to go pick up the groceries.  When 500 people will be working on it and you need a 20 step approval process I guess. I digress.&lt;/p&gt;
+
+&lt;h1 id=&#34;starting-with-go:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Starting with Go&lt;/h1&gt;
+
+&lt;p&gt;Ok fine. Maybe now&amp;rsquo;s my chance to play with &lt;a href=&#34;https://golang.org/&#34;&gt;Golang&lt;/a&gt;. I was looking for a project for it so let&amp;rsquo;s give this a try.&lt;/p&gt;
+
+&lt;p&gt;So far my implementation ideas are:
+- roll my own
+- wrap up a framework
+- use a designed blog framework&lt;/p&gt;
+
+&lt;h2 id=&#34;some-frameworks:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Some Frameworks&lt;/h2&gt;
+
+&lt;p&gt;I really liked a few of the frameworks, but as time went on I decided to see if I could find something lighter. But for records sake here are the samples I looked at&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://revel.github.io/&#34;&gt;http://revel.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://beego.me/&#34;&gt;http://beego.me/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://martini.codegangsta.io/&#34;&gt;http://martini.codegangsta.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;BTW: Martini looked really cool. Light learning curve. I almost went with that, but felt like I could find better features in a purpose built app.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-blog-solution:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;A Blog Solution&lt;/h2&gt;
+
+&lt;p&gt;After meandering around with the frameworks I felt like I wanted to try something more stripped down. So I looked at micro sites and Hugo &lt;a href=&#34;https://gohugo.io/&#34;&gt;https://gohugo.io/&lt;/a&gt; stood out.  I figured I would know in a couple hours if it work work or not.&lt;/p&gt;
+
+&lt;h1 id=&#34;hugo-quick-start:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Hugo: Quick Start&lt;/h1&gt;
+
+&lt;p&gt;Installing go is awesome on mac. If you have a mac and do not have &lt;a href=&#34;http://brew.sh/&#34;&gt;homebrew&lt;/a&gt; - shame.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;brew install go 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Installing hugo as awesome.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;brew install hugo 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Creating a new site was extremely simple.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir newsite
+cd newsite
+hugo new site . 
+hugo new about.md
+hugo new post/first.md
+git clone https://github.com/dim0627/hugo_theme_beg themes/beg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Edit &lt;code&gt;config.yaml&lt;/code&gt; &amp;ndash; see my example
+Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Start the serve:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo server --buildDrafts --watch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;conclusion:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;This was very painless. I am kinda surprised. I was a little hesitant to get in here. Setting up virtual hosts and getting the code out there wasn&amp;rsquo;t elegant but wasn&amp;rsquo;t hard either. I just checked out my repo on the server.&lt;/p&gt;
+
+&lt;p&gt;I am going to start transfering some of my other blogs to this when I have the chance. I might even do something sophisticated to the sites that are more or dynamic or colorful.&lt;/p&gt;
+
+&lt;p&gt;Go Golang!&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

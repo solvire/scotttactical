@@ -5,6 +5,7 @@ date: 2015-10-12
 url: /interview-strategies-a-technology-hiring-manager/
 categories:
   - Tech
+tags: [technology, hiring, interviewing, jobs, managment, leadership]
 ---
 > If I stacked pennies from the ground to the top of the Empire State Bldg, would they all fit into this room? 
 
@@ -22,7 +23,7 @@ There is not much of an interview process normally. There is a selection process
 
 Once at the new job a ranking non-commissioned officer (sergeant) will walk up and assess how a soldier will perform, who they should bunk with, what weapon platform they are going to carry and if they can pull a girlfriend or not. Yes this happens instantly. Sometimes they get a bad apple, but it is not about refusing candidates since that is not their privilege. It is about getting the apples into the right baskets. Of course some NCOs may target people based on certain characteristics: height, weight, glasses, smug look or whatever caught their attention, but it normally only takes an initial look.
 
-[<img src="http://scotttactical.com/wp-content/uploads/2015/10/napoleon-bonaparte.jpg" alt="napoleon bonaparte" width="797" height="412" class="aligncenter size-full wp-image-288" />][1]
+<img src="http://scotttactical.com/wp-content/uploads/2015/10/napoleon-bonaparte.jpg" alt="napoleon bonaparte" width="797" height="412" class="aligncenter size-full wp-image-288" />
 
 > There are no bad soldiers, only bad officers. - Napoleon Bonaparte, General and Emperor
 

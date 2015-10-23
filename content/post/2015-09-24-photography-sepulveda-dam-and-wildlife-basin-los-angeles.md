@@ -5,6 +5,7 @@ date: 2015-09-24
 url: /photography-sepulveda-dam-and-wildlife-basin-los-angeles/
 categories:
   - Photography
+tags: [photography, california, nature, sunrises]
 ---
 # Taking Pictures at the Sepulveda Dam
 

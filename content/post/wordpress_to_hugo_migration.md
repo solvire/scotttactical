@@ -4,10 +4,24 @@ title: "Hugo: A replacement for Wordpress"
 url: /hugo-a-replacement-for-wordpress/
 categories:
   - Software
+tags: [go, golang, hugo, wordpress, blogging, software, programming]
 ---
 
 
 # Hugo: A Replacement for Wordpress
+
+## TL;DR
+
+- I researched go
+- Found Hugo
+- Setup a test
+- Migrated my Wordpress instance
+- Launched DigitalOcean Droplet
+- Deployed
+
+Total time: _6 hours_
+
+## Continued:
 
 My problems started almost a year before I took up this cause. At the time I only had 2 Wordpress sites. Very very low traffic.  Only a couple users a day.  They were mostly place holders for business sites.  
 
@@ -21,7 +35,7 @@ I reimaged the server, installed several performance plugins, cached anything I 
 
 Well eventually I decided it just needed more hardware. I went to 1G of memory for the 2 instances. That carshed as well. It was like watching the movie Carsh in slow motion. I added a couple gigs of swap, but then aws started acting funny and it would fill up the memory immediately. I then went to 2G ram and 2G of swap. Still - Carshon Daily show! 
 
-## It's the Future Already - 2015
+## It's the Future Already
 
 It's 2015. In honor of 2015 and #BackToTheFuture day I am getting over 2000's technology and moving on to something new. 
 
