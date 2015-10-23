@@ -123,7 +123,7 @@ After meandering around with the frameworks I felt like I wanted to try somethin
 
 # Hugo: Quick Start
 
-Installing go is awesome on mac. If you have a mac and do not have [homebrew](http://brew.sh/) - shame. 
+Installing go is awesome on mac. If you have a mac and do not have [homebrew](http://brew.sh/) - shame on you. 
 
     brew install go 
     
