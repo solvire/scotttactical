@@ -18,6 +18,7 @@ Indexes:
   tag: "tags"
 
 permalinks:
-  post: /post/:slug/
+  post: post/:slug/
+  gallery: gallery/:slug/
 
 MetadataFormat: "yaml"
