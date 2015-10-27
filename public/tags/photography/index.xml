@@ -2,20 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Tactical </title>
-    <link>http://scotttactical.com/tags/photography/</link>
+    <link>http://localhost:1313/tags/photography/</link>
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2015</rights>
-    <updated>2015-10-17 00:00:00 &#43;0000 UTC</updated>
+    <updated>2015-10-25 19:22:21 -0700 PDT</updated>
 
+    
+      
     
       
         <item>
           <title>Yosemite National Park, CA - October 9, 2015</title>
-          <link>http://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</link>
+          <link>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</link>
           <pubDate>Sat, 17 Oct 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</guid>
+          <guid>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</guid>
           <description>
 
 &lt;h1 id=&#34;hiking-yosemite-ca:1217abd15b682e31e138a95d5c798515&#34;&gt;Hiking Yosemite, CA&lt;/h1&gt;
@@ -82,10 +84,10 @@
       
         <item>
           <title>Yosemite Valley, CA - October 8, 2015</title>
-          <link>http://scotttactical.com/yosemite-valley-ca-october-8-2015/</link>
+          <link>http://localhost:1313/yosemite-valley-ca-october-8-2015/</link>
           <pubDate>Fri, 16 Oct 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/yosemite-valley-ca-october-8-2015/</guid>
+          <guid>http://localhost:1313/yosemite-valley-ca-october-8-2015/</guid>
           <description>
 
 &lt;h2 id=&#34;hiking-and-photography-yosemite-national-park:471fc8027a1daed0204178b5e3f891e3&#34;&gt;Hiking and Photography - Yosemite National Park&lt;/h2&gt;
@@ -110,10 +112,10 @@
       
         <item>
           <title>Photography Sepulveda Dam and WildLife Basin - Los Angeles</title>
-          <link>http://scotttactical.com/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</link>
+          <link>http://localhost:1313/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</link>
           <pubDate>Thu, 24 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</guid>
+          <guid>http://localhost:1313/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</guid>
           <description>
 
 &lt;h1 id=&#34;taking-pictures-at-the-sepulveda-dam:8e36b0e9fb32b76ab5695c5cb6c020d2&#34;&gt;Taking Pictures at the Sepulveda Dam&lt;/h1&gt;
