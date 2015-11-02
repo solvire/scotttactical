@@ -13,6 +13,7 @@ Params:
   ShowRelatedPost: True
   Disqus: "unresolved"
   SyntaxHighlightTheme: "github.min.css"
+  GalleryBaseUrl: "http://img.scotttactical.com/images/gallery/"
 
 Indexes:
   tag: "tags"

@@ -20,6 +20,11 @@
                 {{ .Content }}
             </div>
 
+
+            <div>
+                {{ partial "gallery/schema" . }}
+            </div>
+
             <aside>
                 {{ $baseurl := .Site.BaseURL }}
                 <ul class="list-inline post-tags">

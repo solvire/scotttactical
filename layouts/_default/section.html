@@ -1,0 +1,6 @@
+section html 
+<div class="gallery">
+        {{ range .Data.Pages }}
+        {{ .Render "li"}}
+        {{ end }}
+</div>

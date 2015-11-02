@@ -3,6 +3,9 @@ date: 2015-10-25T19:22:21-07:00
 draft: true
 title: A Test Gallery
 tags: [photography, hugo, gallery]
+galleryImages: [ "IMG_6331.jpg", "IMG_6350.jpg" ]
+galleryPath: yosemite-1009/
+
 ---
 
 # A sample gallery for hugo steve stuff 
@@ -27,33 +30,3 @@ tags: [photography, hugo, gallery]
 }
 </style>
 
-<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-	    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="http://scott-tactical.s3-website-us-west-2.amazonaws.com/images/gallery/IMG_6330.jpg" itemprop="contentUrl" data-size="800x1200">
-          <img src="http://scott-tactical.s3-website-us-west-2.amazonaws.com/images/gallery/IMG_6330_240.jpg" itemprop="thumbnail" alt="Mariah" />
-      </a>
-      <figcaption itemprop="caption description">Breakfast Erasor</figcaption>
-    </figure>
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="http://scott-tactical.s3-website-us-west-2.amazonaws.com/images/gallery/IMG_6331.jpg" itemprop="contentUrl" data-size="1200x800">
-          <img src="http://scott-tactical.s3-website-us-west-2.amazonaws.com/images/gallery/IMG_6331_240.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption 2</figcaption>
-    </figure>
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="http://scott-tactical.s3-website-us-west-2.amazonaws.com/images/gallery/IMG_6350.jpg" itemprop="contentUrl" data-size="1200x800">
-          <img src="http://scott-tactical.s3-website-us-west-2.amazonaws.com/images/gallery/IMG_6350_240.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption 3</figcaption>
-    </figure>
-</div>
-
-
-
-<!-- 
-![test1](http://scott-tactical.s3-website-us-west-2.amazonaws.com/images/gallery/IMG_6330_240.jpg)
-![test2](http://scott-tactical.s3-website-us-west-2.amazonaws.com/images/gallery/IMG_6331_240.jpg)
-![test3](http://scott-tactical.s3-website-us-west-2.amazonaws.com/images/gallery/IMG_6350_240.jpg)
-![test1](http://scott-tactical.s3-website-us-west-2.amazonaws.com/images/gallery/IMG_6330_240.jpg)
-
---> 

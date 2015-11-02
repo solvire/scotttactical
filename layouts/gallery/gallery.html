@@ -1,6 +1,18 @@
 gallery html 
 <div class="gallery">
-        {{ range .Data.Pages }}
-        {{ .Render "li"}}
-        {{ end }}
+
+
+Before XXX
+
+	{{ $j1 := getJSON "https://s3.amazonaws.com/img.scotttactical.com/images/gallery/yosemite-1009/IMG_6350.jpg.json" }}
+
+
+    {{ range $j1  }}
+       
+        	field {{ . }}
+      
+    {{ end }}
+
+after XXX
+
 </div>
