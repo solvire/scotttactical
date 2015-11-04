@@ -9,13 +9,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="About &middot; Scott Tactical">
+<meta property="og:title" content="phpunit slowness fixes &middot; Scott Tactical">
 
 <meta property="og:site_name" content="Scott Tactical">
 
 <title>
     
-    About
+    phpunit slowness fixes
     
 </title>
 
@@ -109,23 +109,191 @@
             <header>
                 <div class="post-date">
                     <span class="glyphicon glyphicon-calendar"></span>
-                    <time datetime="Wed, 21 Oct 2015 19:48:09 PDT">
-                        Wed, 21 Oct 2015 19:48:09 PDT
+                    <time datetime="Wed, 04 Nov 2015 12:57:42 PST">
+                        Wed, 04 Nov 2015 12:57:42 PST
                     </time>
                 </div>
                 <h1 class="post-title">
-                    <a href="http://localhost:1313/about/">About</a>
+                    <a href="http://localhost:1313/post/phpunit-slowness-fixes/">phpunit slowness fixes</a>
                 </h1>
             </header>
 
             <div class="post-content">
-                <p>A little about me.</p>
+                
+
+<h1 id="phpunit-is-slowness:d306273837598a7a2a686add086bab85">PHPUnit Is Slowness</h1>
+
+<h2 id="phpunit-is-painfully-slow:d306273837598a7a2a686add086bab85">PHPUnit is painfully slow.</h2>
+
+<p>Seriously. Though. Maybe having a concurrent environment it can run it would help. I worked at a place with 65,000 unit tests and if they ran as slow as our unit tests here it would never finish. It was literally taking 30-60 seconds per test. That is 65000 x 60 = 1083 hours or 45 days.</p>
+
+<p>For reference the 41 year old <a href="http://www.npr.org/sections/thetwo-way/2015/07/13/422610986/ultramarathoner-finishes-the-appalachian-trail-in-record-time">Scott Jurek</a> can walk the <a href="http://www.nps.gov/appa/index.htm">2000+ mile Appalachian Trail</a> in 45 days. Single threaded of course.</p>
+
+<h2 id="why-is-phpunit-anti-performant:d306273837598a7a2a686add086bab85">Why is PHPUnit Anti-Performant</h2>
+
+<p>Some thing that are inherent to unit tests that make them slow.
+- Tests are usually not well encapsulated
+- Many tests aren&rsquo;t true unit tests - @see integration tests
+- Databases must be built and destroyed for every test
+- Connections from local systems are slow
+- Writing to file on a local system is slow
+- Generating reports is intensive</p>
+
+<h1 id="strategies:d306273837598a7a2a686add086bab85">Strategies</h1>
+
+<h2 id="sqlite-in-memory:d306273837598a7a2a686add086bab85">SQLite - In Memory</h2>
+
+<p>Switch to an in-memory database. Even if you have SSD drives its going to be slow. <a href="https://www.sqlite.org/">SQLite</a> is on OS X out of the box I am fairly sure and comes with most &lsquo;nix flavors. Considering they embed it all over the place.</p>
+
+<p>Setting up Laravel it would be something like this:</p>
+
+<pre><code class="language-php">'sqlite' =&gt; [
+    'driver'   =&gt; 'sqlite',
+//  'database' =&gt; storage_path().'/database.sqlite',
+    'database' =&gt; ':memory:',
+    'prefix'   =&gt; '',
+],
+</code></pre>
+
+<p>Just comment out the hard path.
+Then add a record for the drive in your phpunit.xml
+I also like to make sure my host is set to not kill anything. I have wiped out a dev database or two.</p>
+
+<pre><code class="language-xml">&lt;env name=&quot;DATABASE_DRIVER&quot; value=&quot;sqlite&quot;/&gt;
+&lt;env name=&quot;DB_HOST&quot; value=&quot;NO&quot;/&gt;
+</code></pre>
+
+<h2 id="database-sometimes:d306273837598a7a2a686add086bab85">Database - Sometimes</h2>
+
+<p>I have two base test cases that I use for almost everything. One that wraps up Laravel or the big framework I&rsquo;m messing with or one that will just extend phpunit by itself.  It might even be better to have data groups into domains so that when you are running a group of tests that it only loads up those tables.</p>
+
+<p>We have a couple hundred tests. Not much.  But it takes 2-5 seconds to load up all the data. That adds up to minutes.  Can&rsquo;t handle that.</p>
+
+<h2 id="grouping-test-suites:d306273837598a7a2a686add086bab85">Grouping Test Suites</h2>
+
+<p>You have the ability to group your tests. I always have my developers add docblocks such as below so that PHPUnit will know how to group thing. The fields that I want them to use are:</p>
+
+<ul>
+<li>@author - for running all mine or someone&rsquo;s tests</li>
+<li>@group - I have them just put the package in this place</li>
+<li>@namespace - I think this works</li>
+</ul>
+
+<pre><code class="language-php">/**
+ * 
+ * @author solvire &lt;stevenjscott@gmail.com&gt;
+ * @package Rules
+ * @group Rules
+ * @namespace LeadFerret\Lib\Rules
+ */
+</code></pre>
+
+<p>Running <code>./vendor/bin/phpunit --list-groups</code> will give you an idea of what groups you can run.</p>
+
+<pre><code>./vendor/bin/phpunit --list-groups
+PHPUnit 4.8.16 by Sebastian Bergmann and contributors.
+
+Available test group(s):
+ - API
+ - Models
+ - Rules
+ - Transformers
+ - default
+ - solvire &lt;stevenjscott@gmail.com&gt;
+ 
+</code></pre>
+
+<h2 id="filter-your-tests:d306273837598a7a2a686add086bab85">Filter Your Tests</h2>
+
+<p>Run only the tests you need. Sometimes I&rsquo;m working with a class and I want to keep running that class.  Just filter by the test class name:</p>
+
+<p><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot;</code></p>
+
+<p>Make your test names interesting camel cases. If you run testdox it comes out easier to read:</p>
+
+<pre><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot; --testdox
+PHPUnit 4.8.16 by Sebastian Bergmann and contributors.
+
+LeadFerret\Lib\Rules\CompanyModifyRuleProvider
+ [x] Validate trusted can modify company
+
+</code></pre>
+
+<h2 id="turn-of-code-coverage:d306273837598a7a2a686add086bab85">Turn Of Code Coverage</h2>
+
+<p>You don&rsquo;t always have to run code coverage reports. In fact probably only before a deployment. Either you really love to see code coverage or you hate dealing with unit tests.  Doesn&rsquo;t really seem to be much between.</p>
+
+<h3 id="performance-tests:d306273837598a7a2a686add086bab85">Performance Tests</h3>
+
+<p>The difference was so staggering I that I was totally irritated I didn&rsquo;t find this sooner. I was even getting in trying to debug at the lower code level.</p>
+
+<pre><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot; --no-coverage
+PHPUnit 4.8.16 by Sebastian Bergmann and contributors.
+.
+Time: 3.98 seconds, Memory: 35.25Mb
+OK (1 test, 2 assertions)
+</code></pre>
+
+<p>And with coverage:</p>
+
+<pre><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot;
+PHPUnit 4.8.16 by Sebastian Bergmann and contributors.
+.
+Time: 48.54 seconds, Memory: 46.75Mb
+OK (1 test, 2 assertions)
+Generating code coverage report in HTML format ... done
+</code></pre>
+
+<p>FASTER!</p>
+
+<h2 id="javascript-for-the-assist:d306273837598a7a2a686add086bab85">JavaScript For The Assist</h2>
+
+<p>We have been toying with using <a href="http://gulpjs.com/">Gulp</a> / <a href="https://www.npmjs.com/">NPM</a> for setting up a better workflow.  It is simple enough that once a file is saved that scripts can kick off the appropriate unit tests. If your tests are completing in less than a couple seconds then it doesn&rsquo;t hurt to keep running them. If they break you may know it sooner.  This is also helpful for those people who refuse to use a full-featured IDE.  Probably also the same people that enjoy working on javascript in the dark.  I know who you are. O.o</p>
+
+<h1 id="conclusion:d306273837598a7a2a686add086bab85">Conclusion</h1>
+
+<p>Life is much better now.</p>
+
+<p>Test-driven development is a great way to go about things.  I highly suggest it. It makes your life easier in the long run and your credibility as an engineer is safer when you aren&rsquo;t worried about whether you are going to break things. If you automate the process and provide cool reports with graphs then you can build a friendly rivalry based on coverage rights.</p>
+
+<p>Build Quality Software
+Engineer; Don&rsquo;t Hack</p>
+
+<p>=st=</p>
 
             </div>
 
             <aside>
                 
                 <ul class="list-inline post-tags">
+                    
+                    <li>
+                        <a href="http://localhost:1313//tags/php">
+                            <i class="fa fa-tags"></i>
+                            php
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://localhost:1313//tags/testing">
+                            <i class="fa fa-tags"></i>
+                            testing
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://localhost:1313//tags/performance">
+                            <i class="fa fa-tags"></i>
+                            performance
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://localhost:1313//tags/software">
+                            <i class="fa fa-tags"></i>
+                            software
+                        </a>
+                    </li>
                     
                 </ul>
 
@@ -147,6 +315,7 @@
                     
                     
                     
+                    <li><a href="http://localhost:1313/deploying-hugo-golang-digitalocean-nginx">Deploying Hugo the Golang CMS on DigitalOcean - Nginx</a></li>
                     
                     
                     
@@ -154,6 +323,9 @@
                     
                     
                     
+                    
+                    
+                    <li><a href="http://localhost:1313/hugo-a-replacement-for-wordpress/">Hugo: A replacement for Wordpress</a></li>
                     
                     
                     
@@ -230,13 +402,13 @@
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="http://localhost:1313/deploying-hugo-golang-digitalocean-nginx"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="http://localhost:1313//post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="http://localhost:1313/hugo-a-replacement-for-wordpress/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
@@ -261,7 +433,7 @@
                 </div>
                 <div class="list-group">
                     
-                    <a href="/performance-suggestions-phpunit-slowness" class="list-group-item">PHPunit Slowness Performance Suggestions</a>
+                    <a href="/post/phpunit-slowness-fixes/" class="list-group-item">phpunit slowness fixes</a>
                     
                     <a href="/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/" class="list-group-item">Yosemite National Park, CA - October 9, 2015</a>
                     

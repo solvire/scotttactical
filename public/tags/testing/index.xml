@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scott Tactical </title>
+    <link>http://scotttactical.com/tags/testing/</link>
+    <language>en-us</language>
+    <author>Scott Tactical</author>
+    <rights>(C) 2015</rights>
+    <updated>2015-11-04 12:57:42 -0800 PST</updated>
+
+    
+      
+        <item>
+          <title>PHPunit Slowness Performance Suggestions</title>
+          <link>http://scotttactical.com/performance-suggestions-phpunit-slowness</link>
+          <pubDate>Wed, 04 Nov 2015 12:57:42 PST</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/performance-suggestions-phpunit-slowness</guid>
+          <description>
+
+&lt;h1 id=&#34;phpunit-is-slowness:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit Is Slowness&lt;/h1&gt;
+
+&lt;h2 id=&#34;phpunit-is-painfully-slow:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit is painfully slow.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/turtle-speed.jpg&#34; alt=&#34;PHPUnit Is Slow&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Seriously. Though. Maybe having a concurrent environment it can run it would help. I worked at a place with 65,000 unit tests and if they ran as slow as our unit tests here it would never finish. It was literally taking 30-60 seconds per test. That is 65000 x 60 = 1083 hours or 45 days.&lt;/p&gt;
+
+&lt;p&gt;For reference the 41 year old &lt;a href=&#34;http://www.npr.org/sections/thetwo-way/2015/07/13/422610986/ultramarathoner-finishes-the-appalachian-trail-in-record-time&#34;&gt;Scott Jurek&lt;/a&gt; can walk the &lt;a href=&#34;http://www.nps.gov/appa/index.htm&#34;&gt;2000+ mile Appalachian Trail&lt;/a&gt; in 45 days. Single threaded of course.&lt;/p&gt;
+
+&lt;h2 id=&#34;why-is-phpunit-anti-performant:d306273837598a7a2a686add086bab85&#34;&gt;Why is PHPUnit Anti-Performant&lt;/h2&gt;
+
+&lt;p&gt;Some thing that are inherent to unit tests that make them slow.
+- Tests are usually not well encapsulated
+- Many tests aren&amp;rsquo;t true unit tests - @see integration tests
+- Databases must be built and destroyed for every test
+- Connections from local systems are slow
+- Writing to file on a local system is slow
+- Generating reports is intensive&lt;/p&gt;
+
+&lt;h1 id=&#34;strategies:d306273837598a7a2a686add086bab85&#34;&gt;Strategies&lt;/h1&gt;
+
+&lt;h2 id=&#34;sqlite-in-memory:d306273837598a7a2a686add086bab85&#34;&gt;SQLite - In Memory&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/sqlite.gif&#34; alt=&#34;SQLite&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Switch to an in-memory database. Even if you have SSD drives its going to be slow. &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; is on OS X out of the box I am fairly sure and comes with most &amp;lsquo;nix flavors. Considering they embed it all over the place.&lt;/p&gt;
+
+&lt;p&gt;Setting up Laravel it would be something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&#39;sqlite&#39; =&amp;gt; [
+    &#39;driver&#39;   =&amp;gt; &#39;sqlite&#39;,
+//  &#39;database&#39; =&amp;gt; storage_path().&#39;/database.sqlite&#39;,
+    &#39;database&#39; =&amp;gt; &#39;:memory:&#39;,
+    &#39;prefix&#39;   =&amp;gt; &#39;&#39;,
+],
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Just comment out the hard path.
+Then add a record for the drive in your phpunit.xml
+I also like to make sure my host is set to not kill anything. I have wiped out a dev database or two.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;env name=&amp;quot;DATABASE_DRIVER&amp;quot; value=&amp;quot;sqlite&amp;quot;/&amp;gt;
+&amp;lt;env name=&amp;quot;DB_HOST&amp;quot; value=&amp;quot;NO&amp;quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;database-sometimes:d306273837598a7a2a686add086bab85&#34;&gt;Database - Sometimes&lt;/h2&gt;
+
+&lt;p&gt;I have two base test cases that I use for almost everything. One that wraps up Laravel or the big framework I&amp;rsquo;m messing with or one that will just extend phpunit by itself.  It might even be better to have data groups into domains so that when you are running a group of tests that it only loads up those tables.&lt;/p&gt;
+
+&lt;p&gt;We have a couple hundred tests. Not much.  But it takes 2-5 seconds to load up all the data. That adds up to minutes.  Can&amp;rsquo;t handle that.&lt;/p&gt;
+
+&lt;h2 id=&#34;grouping-test-suites:d306273837598a7a2a686add086bab85&#34;&gt;Grouping Test Suites&lt;/h2&gt;
+
+&lt;p&gt;You have the ability to group your tests. I always have my developers add docblocks such as below so that PHPUnit will know how to group thing. The fields that I want them to use are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;@author - for running all mine or someone&amp;rsquo;s tests&lt;/li&gt;
+&lt;li&gt;@group - I have them just put the package in this place&lt;/li&gt;
+&lt;li&gt;@namespace - I think this works&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;/**
+ * 
+ * @author solvire &amp;lt;stevenjscott@gmail.com&amp;gt;
+ * @package Rules
+ * @group Rules
+ * @namespace LeadFerret\Lib\Rules
+ */
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Running &lt;code&gt;./vendor/bin/phpunit --list-groups&lt;/code&gt; will give you an idea of what groups you can run.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./vendor/bin/phpunit --list-groups
+PHPUnit 4.8.16 by Sebastian Bergmann and contributors.
+
+Available test group(s):
+ - API
+ - Models
+ - Rules
+ - Transformers
+ - default
+ - solvire &amp;lt;stevenjscott@gmail.com&amp;gt;
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;filter-your-tests:d306273837598a7a2a686add086bab85&#34;&gt;Filter Your Tests&lt;/h2&gt;
+
+&lt;p&gt;Run only the tests you need. Sometimes I&amp;rsquo;m working with a class and I want to keep running that class.  Just filter by the test class name:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;./vendor/bin/phpunit --filter=&amp;quot;testValidateTrustedCanModifyCompany&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Make your test names interesting camel cases. If you run testdox it comes out easier to read:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./vendor/bin/phpunit --filter=&amp;quot;testValidateTrustedCanModifyCompany&amp;quot; --testdox
+PHPUnit 4.8.16 by Sebastian Bergmann and contributors.
+
+LeadFerret\Lib\Rules\CompanyModifyRuleProvider
+ [x] Validate trusted can modify company
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;turn-of-code-coverage:d306273837598a7a2a686add086bab85&#34;&gt;Turn Of Code Coverage&lt;/h2&gt;
+
+&lt;p&gt;You don&amp;rsquo;t always have to run code coverage reports. In fact probably only before a deployment. Either you really love to see code coverage or you hate dealing with unit tests.  Doesn&amp;rsquo;t really seem to be much between.&lt;/p&gt;
+
+&lt;h3 id=&#34;performance-tests:d306273837598a7a2a686add086bab85&#34;&gt;Performance Tests&lt;/h3&gt;
+
+&lt;p&gt;The difference was so staggering I that I was totally irritated I didn&amp;rsquo;t find this sooner. I was even getting in trying to debug at the lower code level.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./vendor/bin/phpunit --filter=&amp;quot;testValidateTrustedCanModifyCompany&amp;quot; --no-coverage
+PHPUnit 4.8.16 by Sebastian Bergmann and contributors.
+.
+Time: 3.98 seconds, Memory: 35.25Mb
+OK (1 test, 2 assertions)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And with coverage:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./vendor/bin/phpunit --filter=&amp;quot;testValidateTrustedCanModifyCompany&amp;quot;
+PHPUnit 4.8.16 by Sebastian Bergmann and contributors.
+.
+Time: 48.54 seconds, Memory: 46.75Mb
+OK (1 test, 2 assertions)
+Generating code coverage report in HTML format ... done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;FASTER!&lt;/p&gt;
+
+&lt;h2 id=&#34;javascript-for-the-assist:d306273837598a7a2a686add086bab85&#34;&gt;JavaScript For The Assist&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/gulp.png&#34; alt=&#34;GulpJS&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We have been toying with using &lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt; / &lt;a href=&#34;https://www.npmjs.com/&#34;&gt;NPM&lt;/a&gt; for setting up a better workflow.  It is simple enough that once a file is saved that scripts can kick off the appropriate unit tests. If your tests are completing in less than a couple seconds then it doesn&amp;rsquo;t hurt to keep running them. If they break you may know it sooner.  This is also helpful for those people who refuse to use a full-featured IDE.  Probably also the same people that enjoy working on javascript in the dark.  I know who you are. O.o&lt;/p&gt;
+
+&lt;h1 id=&#34;conclusion:d306273837598a7a2a686add086bab85&#34;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;Life is much better now.&lt;/p&gt;
+
+&lt;p&gt;Test-driven development is a great way to go about things.  I highly suggest it. It makes your life easier in the long run and your credibility as an engineer is safer when you aren&amp;rsquo;t worried about whether you are going to break things. If you automate the process and provide cool reports with graphs then you can build a friendly rivalry based on coverage rights.&lt;/p&gt;
+
+&lt;p&gt;Build Quality Software&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Engineer; Don&amp;rsquo;t Hack&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;=st=&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

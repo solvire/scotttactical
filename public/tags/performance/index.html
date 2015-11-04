@@ -126,56 +126,6 @@
 <hr>
 
     
-    
-<article class="post">
-    <header>
-        <div class="post-date">
-            <span class="glyphicon glyphicon-calendar"></span>
-            <time datetime="Thu, 22 Oct 2015 06:29:31 PDT">
-                Thu, 22 Oct 2015 06:29:31 PDT
-            </time>
-        </div>
-        <h1 class="post-title">
-            <a href="http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx">Deploying Hugo the Golang CMS on DigitalOcean - Nginx</a>
-        </h1>
-    </header>
-    <div class="post-content">
-        Deploying Hugo the Golang CMS on DigitalOcean Creating a Droplet I am a bit partial to CentOS. The lastest version as of this writing is CentOS Linux release 7.1.1503 (Core). Setting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done. Install Nginx Add the epel repo: yum install epel-release Install yum install nginx Start it service nginx start systemctl enable nginx Create the Folders mkdir -p /var/www/ursite/ chown -R nginx:nginx /var/www touch /var/www/ursite/index.html - or clone your site cp /etc/nginx/sites-available/default /etc/nginx/sites-available/ursite Configure nginx open the config file: vim /etc/nginx/conf.d/virtual.conf Add the following: # # A virtual host using mix of IP-, name-, and port-based configuration # server { listen 80; server_name scotttactical.com; server_alias go.scotttactical.com; location / { root /var/www/stac/public/; index index.html; } } Install Go + Hugo yum install go I decided to install from source Edit your bash script to have the proper variables in place.
-    </div>
-    <footer class="readon">
-        <a href="http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx" class="btn btn-default">
-            READ ON
-        </a>
-    </footer>
-</article>
-<hr>
-
-    
-    
-<article class="post">
-    <header>
-        <div class="post-date">
-            <span class="glyphicon glyphicon-calendar"></span>
-            <time datetime="Wed, 21 Oct 2015 15:39:13 PDT">
-                Wed, 21 Oct 2015 15:39:13 PDT
-            </time>
-        </div>
-        <h1 class="post-title">
-            <a href="http://scotttactical.com/hugo-a-replacement-for-wordpress/">Hugo: A replacement for Wordpress</a>
-        </h1>
-    </header>
-    <div class="post-content">
-        Hugo: A Replacement for Wordpress TL;DR I researched go Found Hugo Setup a test Migrated my Wordpress instance Launched DigitalOcean Droplet Deployed Total time: 6 hours Continued: My problems started almost a year before I took up this cause. At the time I only had 2 Wordpress sites. Very very low traffic. Only a couple users a day. They were mostly place holders for business sites. Wordpress is hungry What was annoying about the case was that they would randomly carsh!
-    </div>
-    <footer class="readon">
-        <a href="http://scotttactical.com/hugo-a-replacement-for-wordpress/" class="btn btn-default">
-            READ ON
-        </a>
-    </footer>
-</article>
-<hr>
-
-    
 </div>
 
 </div>
