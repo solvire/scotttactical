@@ -30,7 +30,7 @@
 
 		{{ $jsonData := getJSON $imgUrlBase $img ".json" }}
         <a href="{{ $imgUrlBase }}{{ $img }}" itemprop="contentUrl" data-size="{{ $jsonData.Composite.ImageSize }}">
-        	<img src="{{ $imgUrlBase }}thumbs/{{ $img }}" itemprop="thumbnail" alt="{{ $jsonData.IPTC.City }}, {{ $jsonData.IPTC.State }}" title="{{ $jsonData.IPTC.Province }}" />
+        	<img src="{{ $imgUrlBase }}thumbs/{{ $img }}" itemprop="thumbnail" alt="{{ $jsonData.IPTC.Caption }}" title="{{ $jsonData.IPTC.Province }}" />
         </a>
 
         <figcaption itemprop="caption description">{{ $jsonData.IPTC.Caption }}</figcaption>
@@ -52,7 +52,7 @@
         
         <!-- location -->
         <div itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Yosemite Valley, CA</span>
+          <span itemprop="name">{{ $jsonData.IPTC.City }}, {{ $jsonData.IPTC.State }}</span>
           <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
             Latitude: {{ $jsonData.Composite.GPSLatitude }} 
             Longitude: {{ $jsonData.Composite.GPSLongitude }}
