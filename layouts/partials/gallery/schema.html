@@ -1,79 +1,68 @@
-<div class="st_gallery" itemscope itemtype="http://schema.org/ImageGallery">
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+<style type="text/css">
+.my-gallery {
+  width: 100%;
+  float: left;
+}
+.my-gallery img {
+  width: 100%;
+  height: auto;
+}
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 150px;
+}
+.my-gallery figcaption {
+  display: none;
+}
+.my-gallery div, span {
+  display: none;
+}
+</style>
+
+
+<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
 	{{ $imgUrlBase := print .Site.Params.GalleryBaseUrl .Params.gallerypath }}
 	{{ range $img := .Params.galleryimages }}
+  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 
-		{{ $jsonDataUrl := print $imgUrlBase $img ".json" }}
-		{{ $state := 0 }}{{ $country := 0 }}
-
-
-
-
-		{{ $jsonData := getJSON $jsonDataUrl }}
-	    {{ range $schemaKey, $schemaData := $jsonData }}
-	        {{ if eq $schemaKey "IPTC" }}
-	        	{{ range $iptcKey, $iptcValue := $schemaData }}
-		        	{{ if eq $iptcKey "Province-State" }}{{ $state := $iptcValue }}{{ end }}
-		        	{{ if eq $iptcKey "Country-PrimaryLocationName" }}{{ $country := $iptcValue }}{{ end }}
-	        	{{ end }}
-	        {{ end }}
-	   	{{ end }}
-
-
-	   	
-
-        <a href="{{ $imgUrlBase }}{{ $img }}" itemprop="contentUrl" data-size="1200x800">
-        	<img src="{{ $imgUrlBase }}/thumbs{{ $img }}" itemprop="thumbnail" alt="{{ $jsonData.IPTC.ProvinceState }}" title="{{ $jsonData.IPTC.Province }}" />
+		{{ $jsonData := getJSON $imgUrlBase $img ".json" }}
+        <a href="{{ $imgUrlBase }}{{ $img }}" itemprop="contentUrl" data-size="{{ $jsonData.Composite.ImageSize }}">
+        	<img src="{{ $imgUrlBase }}thumbs/{{ $img }}" itemprop="thumbnail" alt="{{ $jsonData.IPTC.City }}, {{ $jsonData.IPTC.State }}" title="{{ $jsonData.IPTC.Province }}" />
         </a>
 
-        <figcaption itemprop="caption description">Caption Yosemite</figcaption>
-        By: <span itemprop="author">Scott Tactical</span>
-        At: <span itemprop="contentLocation">{{ $jsonData.IPTC.City }}, {{ $jsonData.IPTC["State"] }}</span>
-        When: <meta itemprop="datePublished" content="2008-01-25">Jan 25, 2008
-
-
+        <figcaption itemprop="caption description">{{ $jsonData.IPTC.Caption }}</figcaption>
+          <span itemprop="author">{{ $jsonData.IFD0.Artist }}</span>
+          <span itemprop="copyrightHolder creator">{{ $jsonData.IFD0.Copyright }}</span>
+          <span itemprop="contentLocation">{{ $jsonData.IPTC.City }}, {{ $jsonData.IPTC.State }}</span>
+          <span itemprop="keywords">{{ if isset $jsonData.IPTC "Keywords" }}{{ delimit $jsonData.IPTC.Keywords ", " }}{{ end }}</span>
+          <meta itemprop="datePublished" content="{{ $.Date.Format $.Site.Params.DateForm }}">
+          <span itemprop="dateCreated">{{ replace $jsonData.IPTC.DateCreated ":" "-" }}</span>
+            <span></span>
         <!-- exif -->
+        {{ range $exifKey, $exifVal := $jsonData.ExifIFD }}
         <div itemprop="exifData" itemscope itemtype="http://schema.org/PropertyValue">
-          <meta itemprop="name" content="Exposure Time">
-          <meta itemprop="value" content="1/659 sec.">
+          <meta itemprop="name" content="{{ $exifKey }}">
+          <meta itemprop="value" content="{{ $exifVal }}">
         </div>
-        <div itemprop="exifData" itemscope itemtype="http://schema.org/PropertyValue">
-          <meta itemprop="name" content="FNumber">
-          <meta itemprop="value" content="f/4.0">
-        </div>
-        <div itemprop="exifData" itemscope itemtype="http://schema.org/PropertyValue">
-          <meta itemprop="name" content="MaxApertureValue">
-          <meta itemprop="value" content="2.00">
-        </div>   
-        <div itemprop="exifData" itemscope itemtype="http://schema.org/PropertyValue">
-          <meta itemprop="name" content="Metering Mode">
-          <meta itemprop="value" content="Pattern">
-        </div>
-        <div itemprop="exifData" itemscope itemtype="http://schema.org/PropertyValue">
-          <meta itemprop="name" content="Flash">
-          <meta itemprop="value" content="Flash did not fire.">
-        </div>
-        
+        {{ end }}
         <!-- /exif -->
         
         <!-- location -->
         <div itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Yosemite Valley, CA</span></h1>
+          <span itemprop="name">Yosemite Valley, CA</span>
           <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
-            Latitude: 37°43'56" N
-            Longitude: 119°34'49" W
-            <meta itemprop="latitude" content="37.4356" />
-            <meta itemprop="longitude" content="-119.3449" />
+            Latitude: {{ $jsonData.Composite.GPSLatitude }} 
+            Longitude: {{ $jsonData.Composite.GPSLongitude }}
+            <meta itemprop="latitude" content="{{ $jsonData.Composite.Latitude }}" />
+            <meta itemprop="longitude" content="{{ $jsonData.Composite.Longitude }}" />
           </div>
         </div>
         <!-- /location -->
 
-	      
-	    
-
-        {{ end }}
-        
-    </figure>
-
+  </figure>
+  {{ end }}
+  
 </div>
