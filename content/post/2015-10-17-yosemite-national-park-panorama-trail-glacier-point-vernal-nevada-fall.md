@@ -3,6 +3,7 @@ title: Yosemite National Park, CA - October 9, 2015
 author: SScott
 date: 2015-10-17
 url: /yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/
+draft: true 
 categories:
   - Photography
 format: gallery
