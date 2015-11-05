@@ -121,6 +121,8 @@
 
 <h1 id="phpunit-is-slowness:d306273837598a7a2a686add086bab85">PHPUnit Is Slowness</h1>
 
+<p>I love <a href="https://phpunit.de/">PHPUnit</a> don&rsquo;t get me wrong. More than the library I like testing. Or having tests. It&rsquo;s like the code got my back bro! It can be better. It&rsquo;s 2015 already.</p>
+
 <h2 id="phpunit-is-painfully-slow:d306273837598a7a2a686add086bab85">PHPUnit is painfully slow.</h2>
 
 <p><img src="/images/turtle-speed.jpg" alt="PHPUnit Is Slow" /></p>
@@ -131,13 +133,16 @@
 
 <h2 id="why-is-phpunit-anti-performant:d306273837598a7a2a686add086bab85">Why is PHPUnit Anti-Performant</h2>
 
-<p>Some thing that are inherent to unit tests that make them slow.
-- Tests are usually not well encapsulated
-- Many tests aren&rsquo;t true unit tests - @see integration tests
-- Databases must be built and destroyed for every test
-- Connections from local systems are slow
-- Writing to file on a local system is slow
-- Generating reports is intensive</p>
+<p>Some thing that are inherent to unit tests that make them slow.</p>
+
+<ul>
+<li>Tests are usually not well encapsulated</li>
+<li>Many tests aren&rsquo;t true unit tests - @see integration tests</li>
+<li>Databases must be built and destroyed for every test</li>
+<li>Connections from local systems are slow</li>
+<li>Writing to file on a local system is slow</li>
+<li>Generating reports is intensive</li>
+</ul>
 
 <h1 id="strategies:d306273837598a7a2a686add086bab85">Strategies</h1>
 
@@ -221,7 +226,7 @@ LeadFerret\Lib\Rules\CompanyModifyRuleProvider
 
 </code></pre>
 
-<h2 id="turn-of-code-coverage:d306273837598a7a2a686add086bab85">Turn Of Code Coverage</h2>
+<h2 id="turn-off-code-coverage:d306273837598a7a2a686add086bab85">Turn Off Code Coverage</h2>
 
 <p>You don&rsquo;t always have to run code coverage reports. In fact probably only before a deployment. Either you really love to see code coverage or you hate dealing with unit tests.  Doesn&rsquo;t really seem to be much between.</p>
 

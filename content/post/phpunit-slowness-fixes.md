@@ -7,6 +7,8 @@ tags: [ php, testing, performance, software ]
 
 # PHPUnit Is Slowness 
 
+I love [PHPUnit](https://phpunit.de/) don't get me wrong. More than the library I like testing. Or having tests. It's like the code got my back bro! It can be better. It's 2015 already. 
+
 ## PHPUnit is painfully slow. 
 
 ![PHPUnit Is Slow](/images/turtle-speed.jpg)
@@ -19,6 +21,7 @@ For reference the 41 year old [Scott Jurek](http://www.npr.org/sections/thetwo-w
 
 
 Some thing that are inherent to unit tests that make them slow. 
+
 - Tests are usually not well encapsulated 
 - Many tests aren't true unit tests - @see integration tests
 - Databases must be built and destroyed for every test 
@@ -110,7 +113,7 @@ LeadFerret\Lib\Rules\CompanyModifyRuleProvider
 
 ```
 
-## Turn Of Code Coverage 
+## Turn Off Code Coverage 
 
 You don't always have to run code coverage reports. In fact probably only before a deployment. Either you really love to see code coverage or you hate dealing with unit tests.  Doesn't really seem to be much between.  
 

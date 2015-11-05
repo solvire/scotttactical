@@ -20,6 +20,8 @@
 
 &lt;h1 id=&#34;phpunit-is-slowness:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit Is Slowness&lt;/h1&gt;
 
+&lt;p&gt;I love &lt;a href=&#34;https://phpunit.de/&#34;&gt;PHPUnit&lt;/a&gt; don&amp;rsquo;t get me wrong. More than the library I like testing. Or having tests. It&amp;rsquo;s like the code got my back bro! It can be better. It&amp;rsquo;s 2015 already.&lt;/p&gt;
+
 &lt;h2 id=&#34;phpunit-is-painfully-slow:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit is painfully slow.&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/turtle-speed.jpg&#34; alt=&#34;PHPUnit Is Slow&#34; /&gt;&lt;/p&gt;
@@ -30,13 +32,16 @@
 
 &lt;h2 id=&#34;why-is-phpunit-anti-performant:d306273837598a7a2a686add086bab85&#34;&gt;Why is PHPUnit Anti-Performant&lt;/h2&gt;
 
-&lt;p&gt;Some thing that are inherent to unit tests that make them slow.
-- Tests are usually not well encapsulated
-- Many tests aren&amp;rsquo;t true unit tests - @see integration tests
-- Databases must be built and destroyed for every test
-- Connections from local systems are slow
-- Writing to file on a local system is slow
-- Generating reports is intensive&lt;/p&gt;
+&lt;p&gt;Some thing that are inherent to unit tests that make them slow.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tests are usually not well encapsulated&lt;/li&gt;
+&lt;li&gt;Many tests aren&amp;rsquo;t true unit tests - @see integration tests&lt;/li&gt;
+&lt;li&gt;Databases must be built and destroyed for every test&lt;/li&gt;
+&lt;li&gt;Connections from local systems are slow&lt;/li&gt;
+&lt;li&gt;Writing to file on a local system is slow&lt;/li&gt;
+&lt;li&gt;Generating reports is intensive&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&#34;strategies:d306273837598a7a2a686add086bab85&#34;&gt;Strategies&lt;/h1&gt;
 
@@ -120,7 +125,7 @@ LeadFerret\Lib\Rules\CompanyModifyRuleProvider
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;turn-of-code-coverage:d306273837598a7a2a686add086bab85&#34;&gt;Turn Of Code Coverage&lt;/h2&gt;
+&lt;h2 id=&#34;turn-off-code-coverage:d306273837598a7a2a686add086bab85&#34;&gt;Turn Off Code Coverage&lt;/h2&gt;
 
 &lt;p&gt;You don&amp;rsquo;t always have to run code coverage reports. In fact probably only before a deployment. Either you really love to see code coverage or you hate dealing with unit tests.  Doesn&amp;rsquo;t really seem to be much between.&lt;/p&gt;
 
