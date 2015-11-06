@@ -7,7 +7,9 @@ tags: [ php, testing, performance, software ]
 
 # PHPUnit Is Slowness 
 
-I love [PHPUnit](https://phpunit.de/) don't get me wrong. More than the library I like testing. Or having tests. It's like the code got my back bro! It can be better. It's 2015 already. 
+I love [PHPUnit](https://phpunit.de/) don't get me wrong. More than a testing library, I like testing, or having tests. It's like the code got yo back bro! Build code that lasts.
+
+_EDIT_: I know most of the problems are inherent with tests not the testing framework.  However, my requirements dictate how I use it to a certain extent.  Peace. 
 
 ## PHPUnit is painfully slow. 
 

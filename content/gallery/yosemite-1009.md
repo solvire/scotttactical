@@ -10,4 +10,12 @@ galleryImages: [ "IMG_1687.jpg", "IMG_1688.jpg", "IMG_1689.jpg", "IMG_6330.jpg",
 
 ---
 
-# A sample gallery for hugo steve stuff 
+# Yosemite National Park, CA 
+
+Hiking in Yosemite
+
+October 9 2015
+
+I need to add more content but the pictures should speak for me. Supposing you need more than 1000 words to get the point. 
+
+ 

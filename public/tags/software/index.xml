@@ -20,7 +20,9 @@
 
 &lt;h1 id=&#34;phpunit-is-slowness:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit Is Slowness&lt;/h1&gt;
 
-&lt;p&gt;I love &lt;a href=&#34;https://phpunit.de/&#34;&gt;PHPUnit&lt;/a&gt; don&amp;rsquo;t get me wrong. More than the library I like testing. Or having tests. It&amp;rsquo;s like the code got my back bro! It can be better. It&amp;rsquo;s 2015 already.&lt;/p&gt;
+&lt;p&gt;I love &lt;a href=&#34;https://phpunit.de/&#34;&gt;PHPUnit&lt;/a&gt; don&amp;rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&amp;rsquo;s like the code got yo back bro! Build code that lasts.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;EDIT&lt;/em&gt;: I know most of the problems are inherent with tests not the testing framework.  However, my requirements dictate how I use it to a certain extent.  Peace.&lt;/p&gt;
 
 &lt;h2 id=&#34;phpunit-is-painfully-slow:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit is painfully slow.&lt;/h2&gt;
 
