@@ -14,7 +14,12 @@ Well, here it is.  I'm finally finishing up my Hypermedia layer for our [Laravel
 
 ### In Production - Alpha
 
-Right now I have it in our very alpha phase version of the software running the [LeadFerret](http://docs.leadferretuser.apiary.io/#) business lead search system. It is slowly getting to where I would like it to be. Of course it takes a lot of work to manage business expectations since they and PHP devs tend to treat an API like a junk drawer. 
+Right now I have it in our very alpha phase version of the software running the [LeadFerret](http://docs.leadferretuser.apiary.io/#) business lead search system. 
+
+
+The project is on github here: [PHP Hypermedia API Layer for HATEOAS HTTP or REST Services](https://github.com/solvire/php-hypermedia-api)
+
+It is slowly getting to where I would like it to be. Of course it takes a lot of work to manage business expectations since they and PHP devs tend to treat an API like a junk drawer. 
 
 ### So why now?
 
