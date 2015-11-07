@@ -52,7 +52,7 @@
         
         <!-- location -->
         <div itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">{{ $jsonData.IPTC.City }}, {{ $jsonData.IPTC.State }}</span>
+          <span itemprop="name">{{ if isset $jsonData.IPTC "City" }}{{ $jsonData.IPTC.City }}, {{ end }}{{ $jsonData.IPTC.State }}</span>
           <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
             Latitude: {{ $jsonData.Composite.GPSLatitude }} 
             Longitude: {{ $jsonData.Composite.GPSLongitude }}
