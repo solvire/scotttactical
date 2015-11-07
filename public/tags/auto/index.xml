@@ -20,11 +20,55 @@
 
 &lt;p&gt;Before:&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0417.jpg&#34; rel=&#34;&#34; data-image-id=&#34;43&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0417.jpg&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0417.jpg&#34; data-title=&#34;4L80-E before&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0417.jpg&#34; alt=&#34;4L80-E before&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0417.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0417.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;4L80-E before&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;4L80-E before&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;After:&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0454-1.jpg&#34; rel=&#34;&#34; data-image-id=&#34;44&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0454-1.jpg&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0454-1.jpg&#34; data-title=&#34;4L80-E cleaned up and painted&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0454-1.jpg&#34; alt=&#34;4L80-E cleaned up and painted&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0454-1.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0454-1.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;4L80-E cleaned up and painted&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;4L80-E cleaned up and painted&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
