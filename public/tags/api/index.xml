@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Tactical </title>
-    <link>http://localhost:1313/tags/api/</link>
+    <link>http://scotttactical.com/tags/api/</link>
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2015</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>PHP Hypermedia REST API wrapper</title>
-          <link>http://localhost:1313/php-hypermedia-rest-api-wrapper/</link>
+          <link>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
           <pubDate>Tue, 08 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://localhost:1313/php-hypermedia-rest-api-wrapper/</guid>
+          <guid>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
           <description>
 
 &lt;h2 id=&#34;hypermedia-for-php-apis:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Hypermedia for PHP APIs.&lt;/h2&gt;
