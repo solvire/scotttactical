@@ -42,6 +42,7 @@ Switch to an in-memory database. Even if you have SSD drives its going to be slo
 Setting up Laravel it would be something like this: 
 
 ```php
+
 'sqlite' => [
     'driver'   => 'sqlite',
 //  'database' => storage_path().'/database.sqlite',
@@ -73,6 +74,7 @@ You have the ability to group your tests. I always have my developers add docblo
 - @namespace - I think this works
 
 ```php
+
 /**
  * 
  * @author solvire <stevenjscott@gmail.com>

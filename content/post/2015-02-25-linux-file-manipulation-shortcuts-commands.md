@@ -5,6 +5,7 @@ date: 2015-02-25
 url: /linux-file-manipulation-shortcuts-commands/
 categories:
   - Uncategorized
+tags: [ linux ]
 ---
 # Linux File Manipulation Commands
 

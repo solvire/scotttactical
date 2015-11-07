@@ -8,7 +8,7 @@ categories:
 ---
 # Laravel 5 - Enforcing HTTPS
 
-[<img src="http://scotttactical.com/wp-content/uploads/2015/09/Laravel-5-300x180.png" alt="Laravel 5" width="300" height="180" class="alignnone size-medium wp-image-195" />][1]
+[<img src="http://img.scotttactical.com/images/legacy/2015/09/Laravel-5-300x180.png" alt="Laravel 5" width="300" height="180" class="alignnone size-medium wp-image-195" />][1]
 
 I've used a lot of frameworks. <a href="http://laravel.com/" title="Laravel 5" target="_blank">Laravel</a> is great.
 
@@ -34,10 +34,11 @@ I went ahead and installed <a href="https://github.com/fideloper/TrustedProxy" t
 
 Follow his instructions. It's pretty straight forward. Here is what my \`config/trustedproxy.php\` looks like. 
 
-<pre class="brush: php; title: ; notranslate" title="">'proxies' =&gt; [
+```php
+'proxies' =&gt; [
     '172.31.0.0/16',
 ],
-</pre>
+```
 
 I knew after looking at my logs where my health checks were coming from:\`ELB-HealthChecker/1.0\`
   
@@ -47,13 +48,14 @@ Also set the proper header to look for.
   
 NOTE: I lost a couple hours trying to figure out why it wouldn't match. Read the docblock above it. It strips HTTP_  <img src="http://scotttactical.com/wp-includes/images/smilies/frownie.png" alt=":(" class="wp-smiley" style="height: 1em; max-height: 1em;" />
 
-<pre class="brush: php; title: ; notranslate" title="">'headers' =&gt; [
+```php
+'headers' =&gt; [
         \Illuminate\Http\Request::HEADER_CLIENT_IP    =&gt; 'X_FORWARDED_FOR',
         \Illuminate\Http\Request::HEADER_CLIENT_HOST  =&gt; 'FORWARDED_HOST',
         \Illuminate\Http\Request::HEADER_CLIENT_PROTO =&gt; 'X_FORWARDED_PROTO',
         \Illuminate\Http\Request::HEADER_CLIENT_PORT  =&gt; 'X_FORWARDED_PORT',
     ]
-</pre>
+```
 
 ## Add to Laravel Middleware
 
@@ -63,7 +65,8 @@ Thanks to the work from <a href="https://gist.github.com/nblackburn/a66e8e93561e
 
 What was weird about my environment is I was getting in a redirection loop because it would prepend \`public/\` on the front of my uri. I'm running multiple environments so I didn't have the luxury of pointing my root to that directory. I had to strip that off the front. 
 
-<pre class="brush: php; title: ; notranslate" title="">class Secure implements Middleware
+```php
+class Secure implements Middleware
 {
     public function handle($request, Closure $next)
     {
@@ -76,7 +79,7 @@ What was weird about my environment is I was getting in a redirection loop becau
         return $next($request);
     }
 }
-</pre>
+```
 
 Add it to your global middleware if you want it to run for all requests.
   
@@ -84,15 +87,16 @@ Open up: app/Http/Kernel.php
 
 I added 
 
-<pre class="brush: php; title: ; notranslate" title="">protected $middleware = [
+```php
+protected $middleware = [
 	    ...		
 		// trust the proxies from aws 
 		'Fideloper\Proxy\TrustProxies',
 		// then force it secure (if production)
 		'LeadFerret\Http\Middleware\Secure',
 	];
-</pre>
+```
 
 Now there are no more redirect loop hells.
 
- [1]: http://scotttactical.com/wp-content/uploads/2015/09/Laravel-5.png
+ [1]: http://img.scotttactical.com/images/legacy/2015/09/Laravel-5.png

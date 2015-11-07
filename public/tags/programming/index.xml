@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Tactical </title>
-    <link>http://scotttactical.com/tags/programming/</link>
+    <link>http://localhost:1313/tags/programming/</link>
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2015</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Deploying Hugo the Golang CMS on DigitalOcean - Nginx</title>
-          <link>http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx</link>
+          <link>http://localhost:1313/deploying-hugo-golang-digitalocean-nginx</link>
           <pubDate>Thu, 22 Oct 2015 06:29:31 PDT</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx</guid>
+          <guid>http://localhost:1313/deploying-hugo-golang-digitalocean-nginx</guid>
           <description>
 
 &lt;h1 id=&#34;deploying-hugo-the-golang-cms-on-digitalocean:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Deploying Hugo the Golang CMS on DigitalOcean&lt;/h1&gt;
@@ -96,10 +96,10 @@ cp $GOPATH/bin/hugo /usr/local/bin/
       
         <item>
           <title>Hugo: A replacement for Wordpress</title>
-          <link>http://scotttactical.com/hugo-a-replacement-for-wordpress/</link>
+          <link>http://localhost:1313/hugo-a-replacement-for-wordpress/</link>
           <pubDate>Wed, 21 Oct 2015 15:39:13 PDT</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/hugo-a-replacement-for-wordpress/</guid>
+          <guid>http://localhost:1313/hugo-a-replacement-for-wordpress/</guid>
           <description>
 
 &lt;h1 id=&#34;hugo-a-replacement-for-wordpress:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Hugo: A Replacement for Wordpress&lt;/h1&gt;

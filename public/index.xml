@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Tactical </title>
-    <link>http://scotttactical.com/</link>
+    <link>http://localhost:1313/</link>
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2015</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Eat For War</title>
-          <link>http://scotttactical.com/post/eat-for-war/</link>
+          <link>http://localhost:1313/post/eat-for-war/</link>
           <pubDate>Fri, 06 Nov 2015 01:23:11 PST</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/post/eat-for-war/</guid>
+          <guid>http://localhost:1313/post/eat-for-war/</guid>
           <description>
 
 &lt;blockquote&gt;
@@ -24,7 +24,7 @@
 
 &lt;h1 id=&#34;a-warrior-s-diet:62a5d67ac0510a562f183297b71bac75&#34;&gt;A Warrior&amp;rsquo;s Diet&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/gladiator-eating.jpg&#34; alt=&#34;Gladiators Love Vegetables&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/gladiator-eating.jpg&#34; alt=&#34;Gladiators Love Vegetables&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;What physically intimate activity do we participate in more than any other?&lt;/em&gt;&lt;/p&gt;
 
@@ -42,7 +42,7 @@
 
 &lt;p&gt;Again it is advantageous to think in the mind of our enemy. He is able to gain an upper hand by strategically supplying his enemy with high calorie low value and nutritionally wasted food. Even better he can cause the immune system of his enemy to be weakened so that a biological attack is possible. If the mind of the opponent can be made saturated with metals there opens a whole range of psychological attacks aimed at unbalancing the hormones of the body. Once our enemy can control just one of the emotions he can alter just about every other action and you are no longer valuable as a soldier except as fodder. It is simple in this age and not at all fantastic.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/lion-buffalo.jpg&#34; alt=&#34;Buffalo Bests Lion&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/lion-buffalo.jpg&#34; alt=&#34;Buffalo Bests Lion&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;NOTE&lt;/em&gt;&lt;/p&gt;
 
@@ -88,7 +88,7 @@
 
 &lt;h2 id=&#34;prayer-fasting-charity:62a5d67ac0510a562f183297b71bac75&#34;&gt;Prayer, Fasting, Charity&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/warrior-meditation.png&#34; alt=&#34;Warrior Meditation and the Path to Enlightenment&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/warrior-meditation.png&#34; alt=&#34;Warrior Meditation and the Path to Enlightenment&#34; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;There are three things, my brethren, by which faith stands firm, devotion remains constant, and virtue endures. They are prayer, fasting and mercy. Prayer knocks at the door, fasting obtains, mercy receives. Prayer, mercy and fasting: these three are one, and they give life to each other. Saint Peter Chrysologus&lt;/p&gt;
@@ -123,10 +123,10 @@ Being fat is bad. Eating it isn&amp;rsquo;t necessarily bad. Listen to your body
       
         <item>
           <title>PHPunit Slowness Performance Suggestions</title>
-          <link>http://scotttactical.com/performance-suggestions-phpunit-slowness</link>
+          <link>http://localhost:1313/performance-suggestions-phpunit-slowness</link>
           <pubDate>Wed, 04 Nov 2015 12:57:42 PST</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/performance-suggestions-phpunit-slowness</guid>
+          <guid>http://localhost:1313/performance-suggestions-phpunit-slowness</guid>
           <description>
 
 &lt;h1 id=&#34;phpunit-is-slowness:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit Is Slowness&lt;/h1&gt;
@@ -137,7 +137,7 @@ Being fat is bad. Eating it isn&amp;rsquo;t necessarily bad. Listen to your body
 
 &lt;h2 id=&#34;phpunit-is-painfully-slow:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit is painfully slow.&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/turtle-speed.jpg&#34; alt=&#34;PHPUnit Is Slow&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/turtle-speed.jpg&#34; alt=&#34;PHPUnit Is Slow&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Seriously. Though. Maybe having a concurrent environment it can run it would help. I worked at a place with 65,000 unit tests and if they ran as slow as our unit tests here it would never finish. It was literally taking 30-60 seconds per test. That is 65000 x 60 = 1083 hours or 45 days.&lt;/p&gt;
 
@@ -160,13 +160,14 @@ Being fat is bad. Eating it isn&amp;rsquo;t necessarily bad. Listen to your body
 
 &lt;h2 id=&#34;sqlite-in-memory:d306273837598a7a2a686add086bab85&#34;&gt;SQLite - In Memory&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/sqlite.gif&#34; alt=&#34;SQLite&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/sqlite.gif&#34; alt=&#34;SQLite&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Switch to an in-memory database. Even if you have SSD drives its going to be slow. &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; is on OS X out of the box I am fairly sure and comes with most &amp;lsquo;nix flavors. Considering they embed it all over the place.&lt;/p&gt;
 
 &lt;p&gt;Setting up Laravel it would be something like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&#39;sqlite&#39; =&amp;gt; [
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;
+&#39;sqlite&#39; =&amp;gt; [
     &#39;driver&#39;   =&amp;gt; &#39;sqlite&#39;,
 //  &#39;database&#39; =&amp;gt; storage_path().&#39;/database.sqlite&#39;,
     &#39;database&#39; =&amp;gt; &#39;:memory:&#39;,
@@ -198,7 +199,8 @@ I also like to make sure my host is set to not kill anything. I have wiped out a
 &lt;li&gt;@namespace - I think this works&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;/**
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;
+/**
  * 
  * @author solvire &amp;lt;stevenjscott@gmail.com&amp;gt;
  * @package Rules
@@ -267,7 +269,7 @@ Generating code coverage report in HTML format ... done
 
 &lt;h2 id=&#34;javascript-for-the-assist:d306273837598a7a2a686add086bab85&#34;&gt;JavaScript For The Assist&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/gulp.png&#34; alt=&#34;GulpJS&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/gulp.png&#34; alt=&#34;GulpJS&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We have been toying with using &lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt; / &lt;a href=&#34;https://www.npmjs.com/&#34;&gt;NPM&lt;/a&gt; for setting up a better workflow.  It is simple enough that once a file is saved that scripts can kick off the appropriate unit tests. If your tests are completing in less than a couple seconds then it doesn&amp;rsquo;t hurt to keep running them. If they break you may know it sooner.  This is also helpful for those people who refuse to use a full-featured IDE.  Probably also the same people that enjoy working on javascript in the dark.  I know who you are. O.o&lt;/p&gt;
 
@@ -291,10 +293,10 @@ Generating code coverage report in HTML format ... done
       
         <item>
           <title>Deploying Hugo the Golang CMS on DigitalOcean - Nginx</title>
-          <link>http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx</link>
+          <link>http://localhost:1313/deploying-hugo-golang-digitalocean-nginx</link>
           <pubDate>Thu, 22 Oct 2015 06:29:31 PDT</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx</guid>
+          <guid>http://localhost:1313/deploying-hugo-golang-digitalocean-nginx</guid>
           <description>
 
 &lt;h1 id=&#34;deploying-hugo-the-golang-cms-on-digitalocean:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Deploying Hugo the Golang CMS on DigitalOcean&lt;/h1&gt;
@@ -373,12 +375,14 @@ cp $GOPATH/bin/hugo /usr/local/bin/
       
     
       
+    
+      
         <item>
           <title>Hugo: A replacement for Wordpress</title>
-          <link>http://scotttactical.com/hugo-a-replacement-for-wordpress/</link>
+          <link>http://localhost:1313/hugo-a-replacement-for-wordpress/</link>
           <pubDate>Wed, 21 Oct 2015 15:39:13 PDT</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/hugo-a-replacement-for-wordpress/</guid>
+          <guid>http://localhost:1313/hugo-a-replacement-for-wordpress/</guid>
           <description>
 
 &lt;h1 id=&#34;hugo-a-replacement-for-wordpress:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Hugo: A Replacement for Wordpress&lt;/h1&gt;
@@ -541,11 +545,81 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
     
       
         <item>
+          <title>Yosemite National Park, CA - October 9, 2015</title>
+          <link>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</link>
+          <pubDate>Sat, 17 Oct 2015 00:00:00 UTC</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</guid>
+          <description>
+
+&lt;h1 id=&#34;hiking-yosemite-ca:1217abd15b682e31e138a95d5c798515&#34;&gt;Hiking Yosemite, CA&lt;/h1&gt;
+
+&lt;p&gt;&lt;img class=&#34;ngg_displayed_gallery mceItem&#34; src=&#34;http://scotttactical.com/nextgen-attach_to_post/preview/id--480&#34; alt=&#34;&#34; data-mce-placeholder=&#34;1&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;rimrise-and-shine:1217abd15b682e31e138a95d5c798515&#34;&gt;Rimrise and Shine&lt;/h2&gt;
+
+&lt;p&gt;Mornings in Yosemite Valley are breathtaking. The weather was perfect IMO.&lt;/p&gt;
+
+&lt;p&gt;We had some unfortunate luck with the camping and as you can see we could not get duplicate nights on our spot. See our note on getting your site well in advance.&lt;/p&gt;
+
+&lt;p&gt;Our wonderful neighbors were kind enough to help us out. They got us from the upper pines campsites out around the valley and back to the trailhead of the 4 mile trail. It is a pleasure to meet with good folks. Living in the San Fernando Valley, Los Angeles causes one to disparage the lack of humanity in the throngs of the masses.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;4-mile-trail:1217abd15b682e31e138a95d5c798515&#34;&gt;4 mile trail&lt;/h2&gt;
+
+&lt;p&gt;It was a whole day hike that took metered out around 17 miles. Give or take a little. Starting around 9am and coming in around 5pm.&lt;/p&gt;
+
+&lt;h2 id=&#34;glacier-point:1217abd15b682e31e138a95d5c798515&#34;&gt;Glacier Point&lt;/h2&gt;
+
+&lt;p&gt;Felt sooo good to summit the Glacier Point. It is up hill non-stop the whole way there for those 4 miles. What was odd was all the people with makeup and fancy shoes. I didn&amp;rsquo;t realize you could DRIVE THERE! Freakin A. As long as there is no ski lift to the top of half dome. Please no.&lt;/p&gt;
+
+&lt;p&gt;At the top there was a wedding going on. It was a beautiful place. I am hoping they charged for that. I am going to find the people up there. I didn&amp;rsquo;t take too many pictures so if anyone knows who they are please email me and I&amp;rsquo;ll send what I have.&lt;/p&gt;
+
+&lt;h2 id=&#34;half-dome:1217abd15b682e31e138a95d5c798515&#34;&gt;Half Dome&lt;/h2&gt;
+
+&lt;p&gt;Even though we didn&amp;rsquo;t get to summit Half Dome, there was a lot to see of it. Another Day I suppose.&lt;/p&gt;
+
+&lt;h2 id=&#34;panorama-trail:1217abd15b682e31e138a95d5c798515&#34;&gt;Panorama Trail&lt;/h2&gt;
+
+&lt;p&gt;This wound around, then wound back, then unwound, then zigged, and zagged, and my feet cracked, and my water leaked, and then a waterfall. It was a lot of sun getting here. Kinda hot. Even for Yosemite and California park weather. It was the direct sun and lack of wind.&lt;/p&gt;
+
+&lt;h2 id=&#34;illilouette-falls:1217abd15b682e31e138a95d5c798515&#34;&gt;Illilouette Falls&lt;/h2&gt;
+
+&lt;p&gt;The falls were kinda shallow. Not much going on there.&lt;/p&gt;
+
+&lt;h2 id=&#34;nevada-falls:1217abd15b682e31e138a95d5c798515&#34;&gt;Nevada Falls&lt;/h2&gt;
+
+&lt;p&gt;Finally. This was the top. Nothing but rugged rocky down hill. I stopped taking pictures. I was over it at this point.&lt;/p&gt;
+
+&lt;h2 id=&#34;vernal-fall-mist-trail:1217abd15b682e31e138a95d5c798515&#34;&gt;Vernal Fall, Mist Trail&lt;/h2&gt;
+
+&lt;p&gt;Water was light. There was a light fall, but no mist.&lt;/p&gt;
+
+&lt;p&gt;This was an epic hike for me. Yosemite lays it out like a buffet of beauty.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.everytrail.com/guide/the-mist-trail-vernal-and-nevada-falls/map&#34; target=&#34;_blank&#34;&gt;Mist Trail, Vernal Vall, Nevada Falls, MAP&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.everytrail.com/guide/glacier-point&#34; target=&#34;_blank&#34;&gt;Glacier Point - MAP&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.everytrail.com/guide/the-panorama-trail/map&#34; target=&#34;_blank&#34;&gt;Panorama Trail - MAP&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.yosemitehikes.com/glacier-point-road/panorama-trail/panorama-trail.htm&#34; target=&#34;_blank&#34;&gt;Panorama Trail Information&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
           <title>Yosemite Valley, CA - October 8, 2015</title>
-          <link>http://scotttactical.com/yosemite-valley-ca-october-8-2015/</link>
+          <link>http://localhost:1313/yosemite-valley-ca-october-8-2015/</link>
           <pubDate>Fri, 16 Oct 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/yosemite-valley-ca-october-8-2015/</guid>
+          <guid>http://localhost:1313/yosemite-valley-ca-october-8-2015/</guid>
           <description>
 
 &lt;h2 id=&#34;hiking-and-photography-yosemite-national-park:471fc8027a1daed0204178b5e3f891e3&#34;&gt;Hiking and Photography - Yosemite National Park&lt;/h2&gt;
@@ -570,10 +644,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>Interview Strategies: A Technology Hiring Manager Who Wins</title>
-          <link>http://scotttactical.com/interview-strategies-a-technology-hiring-manager/</link>
+          <link>http://localhost:1313/interview-strategies-a-technology-hiring-manager/</link>
           <pubDate>Mon, 12 Oct 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid>
+          <guid>http://localhost:1313/interview-strategies-a-technology-hiring-manager/</guid>
           <description>
 
 &lt;blockquote&gt;
@@ -594,7 +668,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Once at the new job a ranking non-commissioned officer (sergeant) will walk up and assess how a soldier will perform, who they should bunk with, what weapon platform they are going to carry and if they can pull a girlfriend or not. Yes this happens instantly. Sometimes they get a bad apple, but it is not about refusing candidates since that is not their privilege. It is about getting the apples into the right baskets. Of course some NCOs may target people based on certain characteristics: height, weight, glasses, smug look or whatever caught their attention, but it normally only takes an initial look.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/wp-content/uploads/2015/10/napoleon-bonaparte.jpg&#34; alt=&#34;napoleon bonaparte&#34; width=&#34;797&#34; height=&#34;412&#34; class=&#34;aligncenter size-full wp-image-288&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/10/napoleon-bonaparte.jpg&#34; alt=&#34;napoleon bonaparte&#34; width=&#34;797&#34; height=&#34;412&#34; class=&#34;aligncenter size-full wp-image-288&#34; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;There are no bad soldiers, only bad officers. - Napoleon Bonaparte, General and Emperor&lt;/p&gt;
@@ -664,10 +738,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>Photography Sepulveda Dam and WildLife Basin - Los Angeles</title>
-          <link>http://scotttactical.com/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</link>
+          <link>http://localhost:1313/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</link>
           <pubDate>Thu, 24 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</guid>
+          <guid>http://localhost:1313/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</guid>
           <description>
 
 &lt;h1 id=&#34;taking-pictures-at-the-sepulveda-dam:8e36b0e9fb32b76ab5695c5cb6c020d2&#34;&gt;Taking Pictures at the Sepulveda Dam&lt;/h1&gt;
@@ -690,15 +764,15 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>Download an Entire Site with wget - mac OSX</title>
-          <link>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</link>
+          <link>http://localhost:1313/download-an-entire-site-with-wget-mac-osx/</link>
           <pubDate>Mon, 21 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</guid>
+          <guid>http://localhost:1313/download-an-entire-site-with-wget-mac-osx/</guid>
           <description>
 
 &lt;h1 id=&#34;download-the-entire-site-with-wget:967adfa691414a6b957a247770983398&#34;&gt;Download the Entire Site with wget&lt;/h1&gt;
 
-&lt;p&gt;If you don&amp;rsquo;t have [homebrew][1] please install it. It will make all our lives easier.&lt;/p&gt;
+&lt;p&gt;If you don&amp;rsquo;t have &lt;a href=&#34;http://brew.sh/&#34;&gt;homebrew&lt;/a&gt; please install it. It will make all our lives easier.&lt;/p&gt;
 
 &lt;h2 id=&#34;howto:967adfa691414a6b957a247770983398&#34;&gt;Howto&lt;/h2&gt;
 
@@ -706,7 +780,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;On thing I would like to note is the wait and limit-rate. Make sure you don&amp;rsquo;t trip any throttles or piss off any website owners by leaving the pipes wide open.&lt;/p&gt;
 
-&lt;pre class=&#34;brush: bash; title: ; notranslate&#34; title=&#34;&#34;&gt;wget \
+&lt;pre&gt;&lt;code&gt;wget \
      --recursive \
      --no-clobber \
      --page-requisites \
@@ -715,16 +789,14 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
      --domains api.yoursite.com \
      --no-parent \
          http://api.yoursite.com/
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Alternate you can run the mirror command&lt;/p&gt;
 
-&lt;pre class=&#34;brush: bash; title: ; notranslate&#34; title=&#34;&#34;&gt;wget -m --wait=5 http://test.com
-&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;wget -m --wait=5 http://test.com
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;I am sure one can use lynx but this is what I like. And it&amp;rsquo;s handy on the mac.&lt;/p&gt;
-
-&lt;p&gt;[1]: &lt;a href=&#34;http://brew.sh/&#34;&gt;http://brew.sh/&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
       
@@ -732,10 +804,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>Hypermedia, API Philosophy, and Talking to Your Robot Overlords</title>
-          <link>http://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link>
+          <link>http://localhost:1313/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link>
           <pubDate>Thu, 17 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
+          <guid>http://localhost:1313/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
           <description>
 
 &lt;h2 id=&#34;in-the-beginning:324d0531f774f734df2f9eccd3031fc8&#34;&gt;In the Beginning&lt;/h2&gt;
@@ -808,7 +880,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;propagation-of-hamburgers:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Propagation of Hamburgers&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://scotttactical.com/wp-content/uploads/2015/09/innercowhero.jpg&#34;&gt;&lt;img src=&#34;http://scotttactical.com/wp-content/uploads/2015/09/innercowhero-300x185.jpg&#34; alt=&#34;Inner Cow&#34; width=&#34;300&#34; height=&#34;185&#34; class=&#34;alignnone size-medium wp-image-211&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/innercowhero.jpg&#34;&gt;&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/innercowhero-300x185.jpg&#34; alt=&#34;Inner Cow&#34; width=&#34;300&#34; height=&#34;185&#34; class=&#34;alignnone size-medium wp-image-211&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Most have this idea that in nature the strongest survive and thrive. What we see thriving the most are those things which are the most willing to be consumed. Sacrificial I suppose; but take for instance the domestic hamburger cow. The population dwarfs any other bovine. The African buffalo is an ass-kicker, but the species selected to thrive are those which are more willing to be consumed. Those things which are more desirable for consumption will eventually dictate to the now dependent consumer what is to be consumed.&lt;/p&gt;
 
@@ -818,7 +890,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;let-s-talk:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Let&amp;rsquo;s Talk&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://scotttactical.com/wp-content/uploads/2015/09/Symbrion.jpg&#34;&gt;&lt;img src=&#34;http://scotttactical.com/wp-content/uploads/2015/09/Symbrion-300x201.jpg&#34; alt=&#34;Symbrion bot swarm&#34; width=&#34;300&#34; height=&#34;201&#34; class=&#34;alignnone size-medium wp-image-209&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/Symbrion.jpg&#34;&gt;&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/Symbrion-300x201.jpg&#34; alt=&#34;Symbrion bot swarm&#34; width=&#34;300&#34; height=&#34;201&#34; class=&#34;alignnone size-medium wp-image-209&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Now all these machines with all their own impressions and ambitions want to spread their nets. Or maybe to grow to an auto-scaling cloud. Clouds are so 2013. Fog it.&lt;/p&gt;
 
@@ -834,11 +906,11 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;For more intelligent designs. You aren&amp;rsquo;t the consumer of the future. Your progeny programs are - the ones your users are building the data for right now. Machines aren&amp;rsquo;t emotional, inquisitive, or fickle. They want to hit every API they can find and they will naturally favor one that is easy to consume. And for that they will reward their hosts. Bad API design is holding back progress and that angers your &lt;a href=&#34;https://developers.google.com/discovery/?hl=en&#34; title=&#34;Google API Discovery&#34; target=&#34;_blank&#34;&gt;future robot overlords&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;[&lt;img src=&#34;http://scotttactical.com/wp-content/uploads/2015/09/developers-300x101.png&#34; alt=&#34;Google Developers&#34; width=&#34;300&#34; height=&#34;101&#34; class=&#34;alignnone size-medium wp-image-207&#34; /&gt;][3]&lt;/p&gt;
+&lt;p&gt;[&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/developers-300x101.png&#34; alt=&#34;Google Developers&#34; width=&#34;300&#34; height=&#34;101&#34; class=&#34;alignnone size-medium wp-image-207&#34; /&gt;][3]&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Fin.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;[3]: &lt;a href=&#34;http://scotttactical.com/wp-content/uploads/2015/09/developers.png&#34;&gt;http://scotttactical.com/wp-content/uploads/2015/09/developers.png&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[3]: &lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/developers.png&#34;&gt;http://img.scotttactical.com/images/legacy/2015/09/developers.png&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
       
@@ -846,15 +918,15 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</title>
-          <link>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
+          <link>http://localhost:1313/force-https-on-laravel-5-aws-elb-on-ec2/</link>
           <pubDate>Wed, 16 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
+          <guid>http://localhost:1313/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
           <description>
 
 &lt;h1 id=&#34;laravel-5-enforcing-https:03bc7a7611150669b29f3c91e572d932&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;
 
-&lt;p&gt;[&lt;img src=&#34;http://scotttactical.com/wp-content/uploads/2015/09/Laravel-5-300x180.png&#34; alt=&#34;Laravel 5&#34; width=&#34;300&#34; height=&#34;180&#34; class=&#34;alignnone size-medium wp-image-195&#34; /&gt;][1]&lt;/p&gt;
+&lt;p&gt;[&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/Laravel-5-300x180.png&#34; alt=&#34;Laravel 5&#34; width=&#34;300&#34; height=&#34;180&#34; class=&#34;alignnone size-medium wp-image-195&#34; /&gt;][1]&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve used a lot of frameworks. &lt;a href=&#34;http://laravel.com/&#34; title=&#34;Laravel 5&#34; target=&#34;_blank&#34;&gt;Laravel&lt;/a&gt; is great.&lt;/p&gt;
 
@@ -880,10 +952,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Follow his instructions. It&amp;rsquo;s pretty straight forward. Here is what my `config/trustedproxy.php` looks like.&lt;/p&gt;
 
-&lt;pre class=&#34;brush: php; title: ; notranslate&#34; title=&#34;&#34;&gt;&#39;proxies&#39; =&amp;gt; [
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&#39;proxies&#39; =&amp;amp;gt; [
     &#39;172.31.0.0/16&#39;,
 ],
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;I knew after looking at my logs where my health checks were coming from:`ELB-HealthChecker/1.0`&lt;/p&gt;
 
@@ -893,13 +965,13 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;NOTE: I lost a couple hours trying to figure out why it wouldn&amp;rsquo;t match. Read the docblock above it. It strips HTTP_  &lt;img src=&#34;http://scotttactical.com/wp-includes/images/smilies/frownie.png&#34; alt=&#34;:(&#34; class=&#34;wp-smiley&#34; style=&#34;height: 1em; max-height: 1em;&#34; /&gt;&lt;/p&gt;
 
-&lt;pre class=&#34;brush: php; title: ; notranslate&#34; title=&#34;&#34;&gt;&#39;headers&#39; =&amp;gt; [
-        \Illuminate\Http\Request::HEADER_CLIENT_IP    =&amp;gt; &#39;X_FORWARDED_FOR&#39;,
-        \Illuminate\Http\Request::HEADER_CLIENT_HOST  =&amp;gt; &#39;FORWARDED_HOST&#39;,
-        \Illuminate\Http\Request::HEADER_CLIENT_PROTO =&amp;gt; &#39;X_FORWARDED_PROTO&#39;,
-        \Illuminate\Http\Request::HEADER_CLIENT_PORT  =&amp;gt; &#39;X_FORWARDED_PORT&#39;,
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&#39;headers&#39; =&amp;amp;gt; [
+        \Illuminate\Http\Request::HEADER_CLIENT_IP    =&amp;amp;gt; &#39;X_FORWARDED_FOR&#39;,
+        \Illuminate\Http\Request::HEADER_CLIENT_HOST  =&amp;amp;gt; &#39;FORWARDED_HOST&#39;,
+        \Illuminate\Http\Request::HEADER_CLIENT_PROTO =&amp;amp;gt; &#39;X_FORWARDED_PROTO&#39;,
+        \Illuminate\Http\Request::HEADER_CLIENT_PORT  =&amp;amp;gt; &#39;X_FORWARDED_PORT&#39;,
     ]
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;add-to-laravel-middleware:03bc7a7611150669b29f3c91e572d932&#34;&gt;Add to Laravel Middleware&lt;/h2&gt;
 
@@ -909,20 +981,20 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;What was weird about my environment is I was getting in a redirection loop because it would prepend `public/` on the front of my uri. I&amp;rsquo;m running multiple environments so I didn&amp;rsquo;t have the luxury of pointing my root to that directory. I had to strip that off the front.&lt;/p&gt;
 
-&lt;pre class=&#34;brush: php; title: ; notranslate&#34; title=&#34;&#34;&gt;class Secure implements Middleware
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;class Secure implements Middleware
 {
     public function handle($request, Closure $next)
     {
-        if (! $request-&amp;gt;secure() &amp;&amp; app()-&amp;gt;environment(&#39;production&#39;)) {
+        if (! $request-&amp;amp;gt;secure() &amp;amp;&amp;amp; app()-&amp;amp;gt;environment(&#39;production&#39;)) {
             
             // this is a really ugly hack but it kept looping and prepnding public 
-            return redirect()-&amp;gt;secure(preg_replace(&#39;%/public%&#39;, &#39;&#39;, $request-&amp;gt;getRequestUri()));
+            return redirect()-&amp;amp;gt;secure(preg_replace(&#39;%/public%&#39;, &#39;&#39;, $request-&amp;amp;gt;getRequestUri()));
         }
         
         return $next($request);
     }
 }
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Add it to your global middleware if you want it to run for all requests.&lt;/p&gt;
 
@@ -930,18 +1002,18 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;I added&lt;/p&gt;
 
-&lt;pre class=&#34;brush: php; title: ; notranslate&#34; title=&#34;&#34;&gt;protected $middleware = [
-        ...     
-        // trust the proxies from aws 
-        &#39;Fideloper\Proxy\TrustProxies&#39;,
-        // then force it secure (if production)
-        &#39;LeadFerret\Http\Middleware\Secure&#39;,
-    ];
-&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;protected $middleware = [
+	    ...		
+		// trust the proxies from aws 
+		&#39;Fideloper\Proxy\TrustProxies&#39;,
+		// then force it secure (if production)
+		&#39;LeadFerret\Http\Middleware\Secure&#39;,
+	];
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Now there are no more redirect loop hells.&lt;/p&gt;
 
-&lt;p&gt;[1]: &lt;a href=&#34;http://scotttactical.com/wp-content/uploads/2015/09/Laravel-5.png&#34;&gt;http://scotttactical.com/wp-content/uploads/2015/09/Laravel-5.png&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[1]: &lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/Laravel-5.png&#34;&gt;http://img.scotttactical.com/images/legacy/2015/09/Laravel-5.png&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
       
@@ -949,10 +1021,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>PHP Hypermedia REST API wrapper</title>
-          <link>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
+          <link>http://localhost:1313/php-hypermedia-rest-api-wrapper/</link>
           <pubDate>Tue, 08 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
+          <guid>http://localhost:1313/php-hypermedia-rest-api-wrapper/</guid>
           <description>
 
 &lt;h2 id=&#34;hypermedia-for-php-apis:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Hypermedia for PHP APIs.&lt;/h2&gt;
@@ -1062,10 +1134,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>Linux File Manipulation Shortcuts and Commands</title>
-          <link>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</link>
+          <link>http://localhost:1313/linux-file-manipulation-shortcuts-commands/</link>
           <pubDate>Wed, 25 Feb 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid>
+          <guid>http://localhost:1313/linux-file-manipulation-shortcuts-commands/</guid>
           <description>
 
 &lt;h1 id=&#34;linux-file-manipulation-commands:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Linux File Manipulation Commands&lt;/h1&gt;
@@ -1122,10 +1194,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>To HipHop or Not - PHP and HHVM</title>
-          <link>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</link>
+          <link>http://localhost:1313/to-hiphop-or-not-php-hhvm/</link>
           <pubDate>Wed, 18 Feb 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</guid>
+          <guid>http://localhost:1313/to-hiphop-or-not-php-hhvm/</guid>
           <description>
 
 &lt;p&gt;We are discussing the plausibility of using HHVM inside this current infrastructure.&lt;/p&gt;
@@ -1300,19 +1372,19 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>GLA - 69 K5 &#43; 4L80-E</title>
-          <link>http://scotttactical.com/gla-69-k5-4l80-e/</link>
+          <link>http://localhost:1313/gla-69-k5-4l80-e/</link>
           <pubDate>Fri, 29 Aug 2014 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/gla-69-k5-4l80-e/</guid>
+          <guid>http://localhost:1313/gla-69-k5-4l80-e/</guid>
           <description>&lt;p&gt;Cleaned up the trans a little bit.  Tiny bit of cosmetics.  Taped up.  Then hit it with some nice paint.  I prefer for these to have paint. Keeps cleaning it easier.  Also I think the buyer will appreciate it.&lt;/p&gt;
 
 &lt;p&gt;Before:&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0417.jpg&#34; rel=&#34;&#34; data-image-id=&#34;43&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0417.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0417.jpg&#34; data-title=&#34;4L80-E before&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0417.jpg&#34; alt=&#34;4L80-E before&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0417.jpg&#34; rel=&#34;&#34; data-image-id=&#34;43&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0417.jpg&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0417.jpg&#34; data-title=&#34;4L80-E before&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0417.jpg&#34; alt=&#34;4L80-E before&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;After:&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0454-1.jpg&#34; rel=&#34;&#34; data-image-id=&#34;44&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0454-1.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0454-1.jpg&#34; data-title=&#34;4L80-E cleaned up and painted&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0454-1.jpg&#34; alt=&#34;4L80-E cleaned up and painted&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0454-1.jpg&#34; rel=&#34;&#34; data-image-id=&#34;44&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0454-1.jpg&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0454-1.jpg&#34; data-title=&#34;4L80-E cleaned up and painted&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0454-1.jpg&#34; alt=&#34;4L80-E cleaned up and painted&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
@@ -1389,17 +1461,17 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>GLA - 4L80e -1969 k5 blazer</title>
-          <link>http://scotttactical.com/gla-4l80e-1969-k5-blazer/</link>
+          <link>http://localhost:1313/gla-4l80e-1969-k5-blazer/</link>
           <pubDate>Thu, 28 Aug 2014 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/gla-4l80e-1969-k5-blazer/</guid>
+          <guid>http://localhost:1313/gla-4l80e-1969-k5-blazer/</guid>
           <description>&lt;p&gt;Just got the trans in from Brad at Transaction Transmission.&lt;/p&gt;
 
 &lt;p&gt;I have used him for a while now and he puts in the effort.  Components were upgraded and everything set new.  This should be strong for the newowner.  It was cleaned and painted at the shop but I am going to clean it up a little more and put on a coat of the &amp;ldquo;Mercenary Offroad&amp;rdquo; package graphite gray.&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34;4L80e ready for transplant&#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/photo-2.JPG&#34; rel=&#34;&#34; data-image-id=&#34;41&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/photo-2.JPG&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_photo-2.JPG&#34; data-title=&#34;4L80E Auto&#34; data-description=&#34;4L80e ready for transplant&#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_photo-2.JPG&#34; alt=&#34;4L80E Auto&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34;4L80e ready for transplant&#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/photo-2.JPG&#34; rel=&#34;&#34; data-image-id=&#34;41&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/photo-2.JPG&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_photo-2.JPG&#34; data-title=&#34;4L80E Auto&#34; data-description=&#34;4L80e ready for transplant&#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_photo-2.JPG&#34; alt=&#34;4L80E Auto&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34;4L80 from transaction ready for paint&#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/photo-1.JPG&#34; rel=&#34;&#34; data-image-id=&#34;40&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/photo-1.JPG&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_photo-1.JPG&#34; data-title=&#34;4L80e Automatic Transmission&#34; data-description=&#34;4L80 from transaction ready for paint&#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_photo-1.JPG&#34; alt=&#34;4L80e Automatic Transmission&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34;4L80 from transaction ready for paint&#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/photo-1.JPG&#34; rel=&#34;&#34; data-image-id=&#34;40&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/photo-1.JPG&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_photo-1.JPG&#34; data-title=&#34;4L80e Automatic Transmission&#34; data-description=&#34;4L80 from transaction ready for paint&#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_photo-1.JPG&#34; alt=&#34;4L80e Automatic Transmission&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
       
@@ -1407,19 +1479,19 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>GLA 69 K5 - bumper start</title>
-          <link>http://scotttactical.com/gla-69-k5-bumper-start/</link>
+          <link>http://localhost:1313/gla-69-k5-bumper-start/</link>
           <pubDate>Fri, 22 Aug 2014 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/gla-69-k5-bumper-start/</guid>
+          <guid>http://localhost:1313/gla-69-k5-bumper-start/</guid>
           <description>&lt;p&gt;Well, we got the truck running enough that I can drive it around.  It stops. We even locked it up and watched the black lines form up behind the tires. Not bad for 35&amp;rsquo;s.&lt;/p&gt;
 
 &lt;p&gt;It was moved over to Camarillo to the shop known as &lt;a href=&#34;http://mercenaryoffroad.com&#34;&gt;Mercenary Offroad&lt;/a&gt; where a custom bumper will be fabricated for it.  The designator for this bumper is also 001 as it will be the first one designed for this series truck.  I have wanted to have one of these commissioned.  The real-use high-clearance bumpers that are going on the HD dodge trucks are works of art.  I&amp;rsquo;m glad to be helping in this endeavor.  In only the fact that I showed up with the truck I still helped. Right?&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_3835.jpg&#34; rel=&#34;&#34; data-image-id=&#34;38&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_3835.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_3835.jpg&#34; data-title=&#34;IMG_3835&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_3835.jpg&#34; alt=&#34;1969 k5 custom bumper&#34; /&gt;&lt;/a&gt; &lt;a class=&#34;ngg-fancybox&#34; title=&#34;Ripped off the stock bumper&#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0157.jpg&#34; rel=&#34;&#34; data-image-id=&#34;37&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0157.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0157.jpg&#34; data-title=&#34;69 k5 bumper&#34; data-description=&#34;Ripped off the stock bumper&#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0157.jpg&#34; alt=&#34;69 k5 bumper&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3835.jpg&#34; rel=&#34;&#34; data-image-id=&#34;38&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3835.jpg&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3835.jpg&#34; data-title=&#34;IMG_3835&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3835.jpg&#34; alt=&#34;1969 k5 custom bumper&#34; /&gt;&lt;/a&gt; &lt;a class=&#34;ngg-fancybox&#34; title=&#34;Ripped off the stock bumper&#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0157.jpg&#34; rel=&#34;&#34; data-image-id=&#34;37&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0157.jpg&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0157.jpg&#34; data-title=&#34;69 k5 bumper&#34; data-description=&#34;Ripped off the stock bumper&#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0157.jpg&#34; alt=&#34;69 k5 bumper&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I ripped off the front bumper.  Apparently they had bumped something and it tweaked the tip of the frame a little bit.  So conclusion is that bumper was not stock. So no purists get on me for original steel. Just getting ahead of you all. It took two of strapping young men and a breaker bar to get that bumper to come off.  &lt;a href=&#34;https://www.google.com/maps/place/Pismo+Beach,+CA/@35.1547085,-120.6594929,14z/data=!3m1!4b1!4m2!3m1!1s0x80ec587dc3f7d8cf:0xb9cb5298f0426fa5&#34; title=&#34;Pismo Beach&#34;&gt;Pismo Beach&lt;/a&gt; and saltwear and sandwear.&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_3837.jpg&#34; rel=&#34;&#34; data-image-id=&#34;39&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_3837.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_3837.jpg&#34; data-title=&#34;IMG_3837&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_3837.jpg&#34; alt=&#34;69 k5 rear bumper&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3837.jpg&#34; rel=&#34;&#34; data-image-id=&#34;39&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3837.jpg&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3837.jpg&#34; data-title=&#34;IMG_3837&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3837.jpg&#34; alt=&#34;69 k5 rear bumper&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;To my horror the rear bumper was easy to get off.  In fact it was only being held on finger tight. A few bumps and it would have just been left on the highway.  Oh well. Time for new hardware.&lt;/p&gt;
 
@@ -1431,49 +1503,234 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>GLA 69 K5 Brakes</title>
-          <link>http://scotttactical.com/gla-69-k5-brakes/</link>
+          <link>http://localhost:1313/gla-69-k5-brakes/</link>
           <pubDate>Wed, 20 Aug 2014 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/gla-69-k5-brakes/</guid>
+          <guid>http://localhost:1313/gla-69-k5-brakes/</guid>
           <description>&lt;p&gt;So the PO was rough on the vehicle. Probably multiple PO&amp;rsquo;s.&lt;/p&gt;
 
 &lt;p&gt;Included are some pictures to show the detail we went to in repairing and rebuilding the brake systems.&lt;/p&gt;
 
 &lt;p&gt;The brake system had been WORKED.  They were pretty much shot.  When we got it the pedal hit the floor.  It didn&amp;rsquo;t want to stop so the ride to the shop was a bit of a terror show for that 2 miles.  Yes we sourced this model locally. Right down the street actually.&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34;K5 blazer drum brake rebuild&#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0113.jpg&#34; rel=&#34;&#34; data-image-id=&#34;31&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0113.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0113.jpg&#34; data-title=&#34;k5 blazer drum brake rear passenger&#34; data-description=&#34;K5 blazer drum brake rebuild&#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0113.jpg&#34; alt=&#34;k5 blazer drum brake rear passenger&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0113.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0113.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;K5 blazer drum brake rebuild&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;K5 blazer drum brake rebuild&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &amp;lt;!&amp;ndash; location &amp;ndash;&amp;gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &amp;lt;!&amp;ndash; /location &amp;ndash;&amp;gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;I decided to stick with the drum brakes that were included.  Given that we aren&amp;rsquo;t changing the dynamics of the vehicle much the rear brakes are just fine as drums.  We have a great mechanic that was able to knock out the drum rebuilds in a hurry.  He had obviously been doing this for a while.&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34;blazer drum brakes&#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_3750-3.jpg&#34; rel=&#34;&#34; data-image-id=&#34;20&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_3750-3.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_3750-3.jpg&#34; data-title=&#34;IMG_3750&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_3750-3.jpg&#34; alt=&#34;blazer drum brakes&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0114.jpg&#34; alt=&#34;disassembled drum brake k5&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; 1969 K5 blazer drum brakes&#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_3736.jpg&#34; rel=&#34;&#34; data-image-id=&#34;1&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_3736.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_3736.jpg&#34; data-title=&#34;k5_drum_brakes&#34; data-description=&#34; 1969 K5 blazer drum brakes&#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_3736.jpg&#34; alt=&#34;k5_drum_brakes&#34; width=&#34;134&#34; height=&#34;89&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3736.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3736.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;1969 K5 blazer drum brakes&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;1969 K5 blazer drum brakes&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;!-- location --&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- /location --&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;As you will notice it has discs up front.  We don&amp;rsquo;t know where those came from since the 1969 k5 and jimmy had drums up front to begin with as far as I can tell. We had to source parts based on the 1970+ models.  The front discs were beat pretty bad too.  On the driver&amp;rsquo;s side it was gouged to &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt;&amp;#8243; on each side of the rotor.  Ruined.&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34;severely gouged &#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_3768.jpg&#34; rel=&#34;&#34; data-image-id=&#34;10&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_3768.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_3768.jpg&#34; data-title=&#34;1969 k5 blazer disc brake drivers side&#34; data-description=&#34;severely gouged &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_3768.jpg&#34; alt=&#34;1969 k5 blazer disc brake drivers side&#34; width=&#34;175&#34; height=&#34;117&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3768.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3768.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;severely gouged&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;severely gouged&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;!-- location --&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- /location --&gt;
+&lt;/figure&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_3767.jpg&#34; rel=&#34;&#34; data-image-id=&#34;6&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_3767.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_3767.jpg&#34; data-title=&#34;1969 k5 blazer disc brake right&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_3767.jpg&#34; alt=&#34;1969 k5 blazer disc brake right&#34; width=&#34;173&#34; height=&#34;115&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3767.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3767.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;1969 K5 blazer drum brakes&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;1969 K5 blazer drum brakes&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;!-- location --&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- /location --&gt;
+&lt;/figure&gt;
+&amp;nbsp;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+It did have a dana 44 axle but some things had been modified.  The brake lines had to all be rebuilt because extensions were put on a strange fashion rather than simply getting extended lines.  As an aside I don&#39;t like steel braided.  They are known to fail and redirect hydro physics that was not originally intended for that area.  Lines were built locally by Oxnard hose.
 
-&lt;p&gt;It did have a dana 44 axle but some things had been modified.  The brake lines had to all be rebuilt because extensions were put on a strange fashion rather than simply getting extended lines.  As an aside I don&amp;rsquo;t like steel braided.  They are known to fail and redirect hydro physics that was not originally intended for that area.  Lines were built locally by Oxnard hose.&lt;/p&gt;
+The knuckles were removed and we replaced all the components.  Yes we stripped, blasted and sanded this after the ball joints were added.  The tech got ahead of us by a little.  It made it hard to clean up of course but we managed to work around it. We didn&#39;t just paint over the grime.
 
-&lt;p&gt;The knuckles were removed and we replaced all the components.  Yes we stripped, blasted and sanded this after the ball joints were added.  The tech got ahead of us by a little.  It made it hard to clean up of course but we managed to work around it. We didn&amp;rsquo;t just paint over the grime.&lt;/p&gt;
+&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0128.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0128.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;1969 K5 blazer drum brakes&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;1969 K5 blazer drum brakes&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;!-- location --&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- /location --&gt;
+&lt;/figure&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0128.jpg&#34; rel=&#34;&#34; data-image-id=&#34;35&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0128.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0128.jpg&#34; data-title=&#34;IMG_0128&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0128.jpg&#34; alt=&#34;IMG_0128&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0122.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0122.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;1969 K5 blazer drum brakes&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;1969 K5 blazer drum brakes&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;!-- location --&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- /location --&gt;
+&lt;/figure&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0122.jpg&#34; rel=&#34;&#34; data-image-id=&#34;33&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0122.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0122.jpg&#34; data-title=&#34;IMG_0122&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0122.jpg&#34; alt=&#34;IMG_0122&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0131.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0131.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;repainted k5 d44 knuckle&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;repainted k5 d44 knuckle&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;!-- location --&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- /location --&gt;
+&lt;/figure&gt;
+    
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0131.jpg&#34; rel=&#34;&#34; data-image-id=&#34;36&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0131.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0131.jpg&#34; data-title=&#34;IMG_0131&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0131.jpg&#34; alt=&#34;repainted k5 d44 knuckle &#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0104.jpg&#34; rel=&#34;&#34; data-image-id=&#34;29&#34; data-src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/IMG_0104.jpg&#34; data-thumbnail=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0104.jpg&#34; data-title=&#34;IMG_0104&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://scotttactical.com/wp-content/gallery/generalleeanne/thumbs/thumbs_IMG_0104.jpg&#34; alt=&#34;k5 1969 dana 44&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We replaced the driver&amp;rsquo;s side rotor and rebuilt the various internals replacing seals on everything except the inside of the pumpkin.  The oil all looked good so we didn&amp;rsquo;t want to explode it for this project.&lt;/p&gt;
+&lt;p&gt;&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0104.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0104.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;k5 1969 dana 44&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;k5 1969 dana 44&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &amp;lt;!&amp;ndash; location &amp;ndash;&amp;gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &amp;lt;!&amp;ndash; /location &amp;ndash;&amp;gt;
+&lt;/figure&gt;
+We replaced the driver&amp;rsquo;s side rotor and rebuilt the various internals replacing seals on everything except the inside of the pumpkin.  The oil all looked good so we didn&amp;rsquo;t want to explode it for this project.&lt;/p&gt;
 
 &lt;p&gt;There will be some more pictures coming, but we painted the axle shafts and everything and it is starting to look really clean. Next is off to &lt;a title=&#34;Mercenary Offroad&#34; href=&#34;http://mercenaryoffroad.com&#34; target=&#34;_blank&#34;&gt;Mercenary Offroad&lt;/a&gt; for bumper and fabrication work.  We are excited to see. This will be #001 first generation chevy bumper. More to come.&lt;/p&gt;
 
@@ -1485,10 +1742,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>General Lee-Anne 001</title>
-          <link>http://scotttactical.com/general-lee-anne-001/</link>
+          <link>http://localhost:1313/general-lee-anne-001/</link>
           <pubDate>Mon, 04 Aug 2014 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/general-lee-anne-001/</guid>
+          <guid>http://localhost:1313/general-lee-anne-001/</guid>
           <description>&lt;p&gt;Here we go.&lt;/p&gt;
 
 &lt;p&gt;1969 hugger orange rust bucket.&lt;/p&gt;
@@ -1497,13 +1754,19 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;And the adventure begins.  I&amp;rsquo;m using this truck as the first in my branded line of modified restorations.  Our focus for these trucks is somewhere in between utility and aesthetics.  Not just a mall crawler but something of a useful truck that also gets attention.  I will be formulating various levels of offerings so that we can set our branded restorations.  We can go all the way or just get it back to top mechanical levels and clean of rust.&lt;/p&gt;
 
-&lt;div id=&#34;attachment_28&#34; style=&#34;width: 1034px&#34; class=&#34;wp-caption alignnone&#34;&gt;
-  &lt;a href=&#34;http://scotttactical.com/wp-content/uploads/2014/08/IMG_0100.jpg&#34;&gt;&lt;img class=&#34;size-full wp-image-28&#34; src=&#34;http://scotttactical.com/wp-content/uploads/2014/08/IMG_0100.jpg&#34; alt=&#34;Hugger Orange 1969 K5 Blazer&#34; width=&#34;1024&#34; height=&#34;768&#34; /&gt;&lt;/a&gt;
-  
-  &lt;p class=&#34;wp-caption-text&#34;&gt;
-    Hugger Orange 1969 K5 Blazer
-  &lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://img.scotttactical.com/images/legacy/2014/08/IMG_0100.jpg&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Hugger Orange 1969 K5 Blazer&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
 </description>
         </item>
       

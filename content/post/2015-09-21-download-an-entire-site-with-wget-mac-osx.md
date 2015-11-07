@@ -8,7 +8,7 @@ categories:
 ---
 # Download the Entire Site with wget
 
-If you don't have [homebrew][1] please install it. It will make all our lives easier.
+If you don't have [homebrew](http://brew.sh/) please install it. It will make all our lives easier.
 
 ## Howto
 
@@ -16,7 +16,8 @@ This was kinda simple but I wanted to post it here for reference.
 
 On thing I would like to note is the wait and limit-rate. Make sure you don't trip any throttles or piss off any website owners by leaving the pipes wide open.
 
-<pre class="brush: bash; title: ; notranslate" title="">wget \
+```
+wget \
      --recursive \
      --no-clobber \
      --page-requisites \
@@ -25,13 +26,12 @@ On thing I would like to note is the wait and limit-rate. Make sure you don't tr
      --domains api.yoursite.com \
      --no-parent \
          http://api.yoursite.com/
-</pre>
+```
 
 Alternate you can run the mirror command
 
-<pre class="brush: bash; title: ; notranslate" title="">wget -m --wait=5 http://test.com
-</pre>
+```
+wget -m --wait=5 http://test.com
+```
 
 I am sure one can use lynx but this is what I like. And it's handy on the mac.
-
- [1]: http://brew.sh/

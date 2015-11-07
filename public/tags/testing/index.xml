@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Tactical </title>
-    <link>http://scotttactical.com/tags/testing/</link>
+    <link>http://localhost:1313/tags/testing/</link>
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2015</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>PHPunit Slowness Performance Suggestions</title>
-          <link>http://scotttactical.com/performance-suggestions-phpunit-slowness</link>
+          <link>http://localhost:1313/performance-suggestions-phpunit-slowness</link>
           <pubDate>Wed, 04 Nov 2015 12:57:42 PST</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/performance-suggestions-phpunit-slowness</guid>
+          <guid>http://localhost:1313/performance-suggestions-phpunit-slowness</guid>
           <description>
 
 &lt;h1 id=&#34;phpunit-is-slowness:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit Is Slowness&lt;/h1&gt;
@@ -26,7 +26,7 @@
 
 &lt;h2 id=&#34;phpunit-is-painfully-slow:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit is painfully slow.&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/turtle-speed.jpg&#34; alt=&#34;PHPUnit Is Slow&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/turtle-speed.jpg&#34; alt=&#34;PHPUnit Is Slow&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Seriously. Though. Maybe having a concurrent environment it can run it would help. I worked at a place with 65,000 unit tests and if they ran as slow as our unit tests here it would never finish. It was literally taking 30-60 seconds per test. That is 65000 x 60 = 1083 hours or 45 days.&lt;/p&gt;
 
@@ -49,13 +49,14 @@
 
 &lt;h2 id=&#34;sqlite-in-memory:d306273837598a7a2a686add086bab85&#34;&gt;SQLite - In Memory&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/sqlite.gif&#34; alt=&#34;SQLite&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/sqlite.gif&#34; alt=&#34;SQLite&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Switch to an in-memory database. Even if you have SSD drives its going to be slow. &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; is on OS X out of the box I am fairly sure and comes with most &amp;lsquo;nix flavors. Considering they embed it all over the place.&lt;/p&gt;
 
 &lt;p&gt;Setting up Laravel it would be something like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&#39;sqlite&#39; =&amp;gt; [
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;
+&#39;sqlite&#39; =&amp;gt; [
     &#39;driver&#39;   =&amp;gt; &#39;sqlite&#39;,
 //  &#39;database&#39; =&amp;gt; storage_path().&#39;/database.sqlite&#39;,
     &#39;database&#39; =&amp;gt; &#39;:memory:&#39;,
@@ -87,7 +88,8 @@ I also like to make sure my host is set to not kill anything. I have wiped out a
 &lt;li&gt;@namespace - I think this works&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;/**
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;
+/**
  * 
  * @author solvire &amp;lt;stevenjscott@gmail.com&amp;gt;
  * @package Rules
@@ -156,7 +158,7 @@ Generating code coverage report in HTML format ... done
 
 &lt;h2 id=&#34;javascript-for-the-assist:d306273837598a7a2a686add086bab85&#34;&gt;JavaScript For The Assist&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/gulp.png&#34; alt=&#34;GulpJS&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/gulp.png&#34; alt=&#34;GulpJS&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We have been toying with using &lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt; / &lt;a href=&#34;https://www.npmjs.com/&#34;&gt;NPM&lt;/a&gt; for setting up a better workflow.  It is simple enough that once a file is saved that scripts can kick off the appropriate unit tests. If your tests are completing in less than a couple seconds then it doesn&amp;rsquo;t hurt to keep running them. If they break you may know it sooner.  This is also helpful for those people who refuse to use a full-featured IDE.  Probably also the same people that enjoy working on javascript in the dark.  I know who you are. O.o&lt;/p&gt;
 

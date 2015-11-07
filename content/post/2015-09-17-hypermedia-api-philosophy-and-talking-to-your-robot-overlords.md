@@ -70,7 +70,7 @@ Training requires punishment and reward. So in this scenario the algorithms will
 
 ## Propagation of Hamburgers
 
-[<img src="http://scotttactical.com/wp-content/uploads/2015/09/innercowhero-300x185.jpg" alt="Inner Cow" width="300" height="185" class="alignnone size-medium wp-image-211" />][1]
+[<img src="http://img.scotttactical.com/images/legacy/2015/09/innercowhero-300x185.jpg" alt="Inner Cow" width="300" height="185" class="alignnone size-medium wp-image-211" />][1]
 
 Most have this idea that in nature the strongest survive and thrive. What we see thriving the most are those things which are the most willing to be consumed. Sacrificial I suppose; but take for instance the domestic hamburger cow. The population dwarfs any other bovine. The African buffalo is an ass-kicker, but the species selected to thrive are those which are more willing to be consumed. Those things which are more desirable for consumption will eventually dictate to the now dependent consumer what is to be consumed. 
 
@@ -80,7 +80,7 @@ I have several bots. Over time they have provided me with information that I can
 
 ## Let's Talk
 
-[<img src="http://scotttactical.com/wp-content/uploads/2015/09/Symbrion-300x201.jpg" alt="Symbrion bot swarm" width="300" height="201" class="alignnone size-medium wp-image-209" />][2]
+[<img src="http://img.scotttactical.com/images/legacy/2015/09/Symbrion-300x201.jpg" alt="Symbrion bot swarm" width="300" height="201" class="alignnone size-medium wp-image-209" />][2]
 
 Now all these machines with all their own impressions and ambitions want to spread their nets. Or maybe to grow to an auto-scaling cloud. Clouds are so 2013. Fog it.
   
@@ -96,10 +96,10 @@ So why all this lead up?
   
 For more intelligent designs. You aren't the consumer of the future. Your progeny programs are - the ones your users are building the data for right now. Machines aren't emotional, inquisitive, or fickle. They want to hit every API they can find and they will naturally favor one that is easy to consume. And for that they will reward their hosts. Bad API design is holding back progress and that angers your <a href="https://developers.google.com/discovery/?hl=en" title="Google API Discovery" target="_blank">future robot overlords</a>. 
 
-[<img src="http://scotttactical.com/wp-content/uploads/2015/09/developers-300x101.png" alt="Google Developers" width="300" height="101" class="alignnone size-medium wp-image-207" />][3]
+[<img src="http://img.scotttactical.com/images/legacy/2015/09/developers-300x101.png" alt="Google Developers" width="300" height="101" class="alignnone size-medium wp-image-207" />][3]
   
 _Fin._
 
- [1]: http://scotttactical.com/wp-content/uploads/2015/09/innercowhero.jpg
- [2]: http://scotttactical.com/wp-content/uploads/2015/09/Symbrion.jpg
- [3]: http://scotttactical.com/wp-content/uploads/2015/09/developers.png
+ [1]: http://img.scotttactical.com/images/legacy/2015/09/innercowhero.jpg
+ [2]: http://img.scotttactical.com/images/legacy/2015/09/Symbrion.jpg
+ [3]: http://img.scotttactical.com/images/legacy/2015/09/developers.png
