@@ -1441,9 +1441,53 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;I have used him for a while now and he puts in the effort.  Components were upgraded and everything set new.  This should be strong for the newowner.  It was cleaned and painted at the shop but I am going to clean it up a little more and put on a coat of the &amp;ldquo;Mercenary Offroad&amp;rdquo; package graphite gray.&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34;4L80e ready for transplant&#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/photo-2.JPG&#34; rel=&#34;&#34; data-image-id=&#34;41&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/photo-2.JPG&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_photo-2.JPG&#34; data-title=&#34;4L80E Auto&#34; data-description=&#34;4L80e ready for transplant&#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_photo-2.JPG&#34; alt=&#34;4L80E Auto&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/photo-2.JPG&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_photo-2.JPG&#34; itemprop=&#34;thumbnail&#34; alt=&#34;4L80e ready for transplant&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;4L80e ready for transplant&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34;4L80 from transaction ready for paint&#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/photo-1.JPG&#34; rel=&#34;&#34; data-image-id=&#34;40&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/photo-1.JPG&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_photo-1.JPG&#34; data-title=&#34;4L80e Automatic Transmission&#34; data-description=&#34;4L80 from transaction ready for paint&#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_photo-1.JPG&#34; alt=&#34;4L80e Automatic Transmission&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/photo-1.JPG&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_photo-1.JPG&#34; itemprop=&#34;thumbnail&#34; alt=&#34;4L80 from transaction ready for paint&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;4L80 Automatic Transmission from transaction ready for paint&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
 </description>
         </item>
       
