@@ -1503,11 +1503,79 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;It was moved over to Camarillo to the shop known as &lt;a href=&#34;http://mercenaryoffroad.com&#34;&gt;Mercenary Offroad&lt;/a&gt; where a custom bumper will be fabricated for it.  The designator for this bumper is also 001 as it will be the first one designed for this series truck.  I have wanted to have one of these commissioned.  The real-use high-clearance bumpers that are going on the HD dodge trucks are works of art.  I&amp;rsquo;m glad to be helping in this endeavor.  In only the fact that I showed up with the truck I still helped. Right?&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3835.jpg&#34; rel=&#34;&#34; data-image-id=&#34;38&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3835.jpg&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3835.jpg&#34; data-title=&#34;IMG_3835&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3835.jpg&#34; alt=&#34;1969 k5 custom bumper&#34; /&gt;&lt;/a&gt; &lt;a class=&#34;ngg-fancybox&#34; title=&#34;Ripped off the stock bumper&#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0157.jpg&#34; rel=&#34;&#34; data-image-id=&#34;37&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0157.jpg&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0157.jpg&#34; data-title=&#34;69 k5 bumper&#34; data-description=&#34;Ripped off the stock bumper&#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0157.jpg&#34; alt=&#34;69 k5 bumper&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3835.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3835.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;1969 k5 custom bumper&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;1969 k5 custom bumper&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0157.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_0157.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;Ripped off the stock bumper&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;Ripped off the stock bumper&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;I ripped off the front bumper.  Apparently they had bumped something and it tweaked the tip of the frame a little bit.  So conclusion is that bumper was not stock. So no purists get on me for original steel. Just getting ahead of you all. It took two of strapping young men and a breaker bar to get that bumper to come off.  &lt;a href=&#34;https://www.google.com/maps/place/Pismo+Beach,+CA/@35.1547085,-120.6594929,14z/data=!3m1!4b1!4m2!3m1!1s0x80ec587dc3f7d8cf:0xb9cb5298f0426fa5&#34; title=&#34;Pismo Beach&#34;&gt;Pismo Beach&lt;/a&gt; and saltwear and sandwear.&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&#34;ngg-fancybox&#34; title=&#34; &#34; href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3837.jpg&#34; rel=&#34;&#34; data-image-id=&#34;39&#34; data-src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3837.jpg&#34; data-thumbnail=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3837.jpg&#34; data-title=&#34;IMG_3837&#34; data-description=&#34; &#34;&gt;&lt;img class=&#34;ngg-singlepic ngg-none&#34; src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3837.jpg&#34; alt=&#34;69 k5 rear bumper&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_3837.jpg&#34; itemprop=&#34;contentUrl&#34; &gt;
+    &lt;img src=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/thumbs/thumbs_IMG_3837.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;69 k5 rear bumper&#34; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption itemprop=&#34;caption description&#34;&gt;69 k5 rear bumper&lt;/figcaption&gt;
+    &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
+    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
+        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
+          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
+          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
+          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
+          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
+        Latitude: 34.2171139
+        Longitude: -119.0966697
+        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
+        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;To my horror the rear bumper was easy to get off.  In fact it was only being held on finger tight. A few bumps and it would have just been left on the highway.  Oh well. Time for new hardware.&lt;/p&gt;
 
