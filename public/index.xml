@@ -1603,25 +1603,26 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
     &lt;/a&gt;
     &lt;figcaption itemprop=&#34;caption description&#34;&gt;K5 blazer drum brake rebuild&lt;/figcaption&gt;
     &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
-    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
-    &amp;lt;!&amp;ndash; location &amp;ndash;&amp;gt;
-    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
-      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
-        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
-          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
-          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
-          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
-          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
-        &lt;/div&gt;
-      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
-        Latitude: 34.2171139
-        Longitude: -119.0966697
-        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
-        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &amp;lt;!&amp;ndash; /location &amp;ndash;&amp;gt;
-&lt;/figure&gt;&lt;/p&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div itemscope itemtype=&amp;quot;http://schema.org/Place&amp;quot;&amp;gt;
+  &amp;lt;span itemprop=&amp;quot;name&amp;quot;&amp;gt;Mercenary Offroad&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt;
+    &amp;lt;div class=&amp;quot;address&amp;quot; itemprop=&amp;quot;address&amp;quot; itemscope itemtype=&amp;quot;http://schema.org/PostalAddress&amp;quot;&amp;gt;
+      &amp;lt;span itemprop=&amp;quot;streetAddress&amp;quot;&amp;gt;19 N Aviador St. Unit C&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;
+      &amp;lt;span itemprop=&amp;quot;addressLocality&amp;quot;&amp;gt;Camarillo&amp;lt;/span&amp;gt;,
+      &amp;lt;span itemprop=&amp;quot;addressRegion&amp;quot;&amp;gt;CA&amp;lt;/span&amp;gt;
+      &amp;lt;span itemprop=&amp;quot;postalCode&amp;quot;&amp;gt;93010&amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;div itemprop=&amp;quot;geo&amp;quot; itemscope itemtype=&amp;quot;http://schema.org/GeoCoordinates&amp;quot;&amp;gt;
+    Latitude: 34.2171139
+    Longitude: -119.0966697
+    &amp;lt;meta itemprop=&amp;quot;latitude&amp;quot; content=&amp;quot;34.2171139&amp;quot; /&amp;gt;
+    &amp;lt;meta itemprop=&amp;quot;longitude&amp;quot; content=&amp;quot;-119.0966697&amp;quot; /&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;I decided to stick with the drum brakes that were included.  Given that we aren&amp;rsquo;t changing the dynamics of the vehicle much the rear brakes are just fine as drums.  We have a great mechanic that was able to knock out the drum rebuilds in a hurry.  He had obviously been doing this for a while.&lt;/p&gt;
 
@@ -1632,7 +1633,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
     &lt;figcaption itemprop=&#34;caption description&#34;&gt;1969 K5 blazer drum brakes&lt;/figcaption&gt;
     &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
     &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
-    &lt;!-- location --&gt;
+
     &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
       &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
         &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
@@ -1648,7 +1649,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
         &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;!-- /location --&gt;
+
 &lt;/figure&gt;
 
 &lt;p&gt;As you will notice it has discs up front.  We don&amp;rsquo;t know where those came from since the 1969 k5 and jimmy had drums up front to begin with as far as I can tell. We had to source parts based on the 1970+ models.  The front discs were beat pretty bad too.  On the driver&amp;rsquo;s side it was gouged to &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt;&amp;#8243; on each side of the rotor.  Ruined.&lt;/p&gt;
@@ -1660,7 +1661,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
     &lt;figcaption itemprop=&#34;caption description&#34;&gt;severely gouged&lt;/figcaption&gt;
     &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
     &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
-    &lt;!-- location --&gt;
+
     &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
       &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
         &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
@@ -1676,7 +1677,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
         &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;!-- /location --&gt;
+
 &lt;/figure&gt;
 
 &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
@@ -1686,7 +1687,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
     &lt;figcaption itemprop=&#34;caption description&#34;&gt;1969 K5 blazer drum brakes&lt;/figcaption&gt;
     &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
     &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
-    &lt;!-- location --&gt;
+
     &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
       &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
         &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
@@ -1702,7 +1703,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
         &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;!-- /location --&gt;
+
 &lt;/figure&gt;
 &amp;nbsp;
 
@@ -1717,7 +1718,7 @@ The knuckles were removed and we replaced all the components.  Yes we stripped,
     &lt;figcaption itemprop=&#34;caption description&#34;&gt;1969 K5 blazer drum brakes&lt;/figcaption&gt;
     &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
     &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
-    &lt;!-- location --&gt;
+
     &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
       &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
         &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
@@ -1733,7 +1734,7 @@ The knuckles were removed and we replaced all the components.  Yes we stripped,
         &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;!-- /location --&gt;
+
 &lt;/figure&gt;
 
 &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
@@ -1743,7 +1744,7 @@ The knuckles were removed and we replaced all the components.  Yes we stripped,
     &lt;figcaption itemprop=&#34;caption description&#34;&gt;1969 K5 blazer drum brakes&lt;/figcaption&gt;
     &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
     &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
-    &lt;!-- location --&gt;
+
     &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
       &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
         &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
@@ -1759,7 +1760,7 @@ The knuckles were removed and we replaced all the components.  Yes we stripped,
         &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;!-- /location --&gt;
+
 &lt;/figure&gt;
 
 &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
@@ -1769,7 +1770,7 @@ The knuckles were removed and we replaced all the components.  Yes we stripped,
     &lt;figcaption itemprop=&#34;caption description&#34;&gt;repainted k5 d44 knuckle&lt;/figcaption&gt;
     &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
     &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
-    &lt;!-- location --&gt;
+
     &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
       &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
         &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
@@ -1785,7 +1786,7 @@ The knuckles were removed and we replaced all the components.  Yes we stripped,
         &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;!-- /location --&gt;
+
 &lt;/figure&gt;
     
 
@@ -1795,25 +1796,26 @@ The knuckles were removed and we replaced all the components.  Yes we stripped,
     &lt;/a&gt;
     &lt;figcaption itemprop=&#34;caption description&#34;&gt;k5 1969 dana 44&lt;/figcaption&gt;
     &lt;span itemprop=&#34;author&#34;&gt;Mercenary Offroad&lt;/span&gt;
-    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;
-    &amp;lt;!&amp;ndash; location &amp;ndash;&amp;gt;
-    &lt;div itemscope itemtype=&#34;http://schema.org/Place&#34;&gt;
-      &lt;span itemprop=&#34;name&#34;&gt;Mercenary Offroad&lt;/span&gt;&lt;/h1&gt;
-        &lt;div class=&#34;address&#34; itemprop=&#34;address&#34; itemscope itemtype=&#34;http://schema.org/PostalAddress&#34;&gt;
-          &lt;span itemprop=&#34;streetAddress&#34;&gt;19 N Aviador St. Unit C&lt;/span&gt;&lt;br&gt;
-          &lt;span itemprop=&#34;addressLocality&#34;&gt;Camarillo&lt;/span&gt;,
-          &lt;span itemprop=&#34;addressRegion&#34;&gt;CA&lt;/span&gt;
-          &lt;span itemprop=&#34;postalCode&#34;&gt;93010&lt;/span&gt;
-        &lt;/div&gt;
-      &lt;div itemprop=&#34;geo&#34; itemscope itemtype=&#34;http://schema.org/GeoCoordinates&#34;&gt;
-        Latitude: 34.2171139
-        Longitude: -119.0966697
-        &lt;meta itemprop=&#34;latitude&#34; content=&#34;34.2171139&#34; /&gt;
-        &lt;meta itemprop=&#34;longitude&#34; content=&#34;-119.0966697&#34; /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &amp;lt;!&amp;ndash; /location &amp;ndash;&amp;gt;
-&lt;/figure&gt;
+    &lt;span itemprop=&#34;contentLocation&#34;&gt;Camarillo, CA&lt;/span&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div itemscope itemtype=&amp;quot;http://schema.org/Place&amp;quot;&amp;gt;
+  &amp;lt;span itemprop=&amp;quot;name&amp;quot;&amp;gt;Mercenary Offroad&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt;
+    &amp;lt;div class=&amp;quot;address&amp;quot; itemprop=&amp;quot;address&amp;quot; itemscope itemtype=&amp;quot;http://schema.org/PostalAddress&amp;quot;&amp;gt;
+      &amp;lt;span itemprop=&amp;quot;streetAddress&amp;quot;&amp;gt;19 N Aviador St. Unit C&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;
+      &amp;lt;span itemprop=&amp;quot;addressLocality&amp;quot;&amp;gt;Camarillo&amp;lt;/span&amp;gt;,
+      &amp;lt;span itemprop=&amp;quot;addressRegion&amp;quot;&amp;gt;CA&amp;lt;/span&amp;gt;
+      &amp;lt;span itemprop=&amp;quot;postalCode&amp;quot;&amp;gt;93010&amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;div itemprop=&amp;quot;geo&amp;quot; itemscope itemtype=&amp;quot;http://schema.org/GeoCoordinates&amp;quot;&amp;gt;
+    Latitude: 34.2171139
+    Longitude: -119.0966697
+    &amp;lt;meta itemprop=&amp;quot;latitude&amp;quot; content=&amp;quot;34.2171139&amp;quot; /&amp;gt;
+    &amp;lt;meta itemprop=&amp;quot;longitude&amp;quot; content=&amp;quot;-119.0966697&amp;quot; /&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/figure&gt;
 We replaced the driver&amp;rsquo;s side rotor and rebuilt the various internals replacing seals on everything except the inside of the pumpkin.  The oil all looked good so we didn&amp;rsquo;t want to explode it for this project.&lt;/p&gt;
 
 &lt;p&gt;There will be some more pictures coming, but we painted the axle shafts and everything and it is starting to look really clean. Next is off to &lt;a title=&#34;Mercenary Offroad&#34; href=&#34;http://mercenaryoffroad.com&#34; target=&#34;_blank&#34;&gt;Mercenary Offroad&lt;/a&gt; for bumper and fabrication work.  We are excited to see. This will be #001 first generation chevy bumper. More to come.&lt;/p&gt;
