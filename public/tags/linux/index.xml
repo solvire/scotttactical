@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Tactical </title>
-    <link>http://localhost:1313/tags/linux/</link>
+    <link>http://scotttactical.com/tags/linux/</link>
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2015</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Linux File Manipulation Shortcuts and Commands</title>
-          <link>http://localhost:1313/linux-file-manipulation-shortcuts-commands/</link>
+          <link>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</link>
           <pubDate>Wed, 25 Feb 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://localhost:1313/linux-file-manipulation-shortcuts-commands/</guid>
+          <guid>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid>
           <description>
 
 &lt;h1 id=&#34;linux-file-manipulation-commands:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Linux File Manipulation Commands&lt;/h1&gt;
