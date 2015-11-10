@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Tactical </title>
-    <link>http://scotttactical.com/</link>
+    <link>http://localhost:1313/</link>
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2015</rights>
@@ -14,10 +14,10 @@
       
         <item>
           <title>Eat For War</title>
-          <link>http://scotttactical.com/post/eat-for-war/</link>
+          <link>http://localhost:1313/post/eat-for-war/</link>
           <pubDate>Fri, 06 Nov 2015 01:23:11 PST</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/post/eat-for-war/</guid>
+          <guid>http://localhost:1313/post/eat-for-war/</guid>
           <description>
 
 &lt;blockquote&gt;
@@ -26,7 +26,7 @@
 
 &lt;h1 id=&#34;a-warrior-s-diet:62a5d67ac0510a562f183297b71bac75&#34;&gt;A Warrior&amp;rsquo;s Diet&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/gladiator-eating.jpg&#34; alt=&#34;Gladiators Love Vegetables&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/gladiator-eating.jpg&#34; alt=&#34;Gladiators Love Vegetables&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;What physically intimate activity do we participate in more than any other?&lt;/em&gt;&lt;/p&gt;
 
@@ -52,7 +52,7 @@
 
 &lt;p&gt;Again it is advantageous to think in the mind of our enemy. He is able to gain an upper hand by strategically supplying his enemy with high calorie low value and nutritionally wasted food. Even better he can cause the immune system of his enemy to be weakened so that a biological attack is possible. If the mind of the opponent can be made saturated with metals there opens a whole range of psychological attacks aimed at unbalancing the hormones of the body. Once our enemy can control just one of the emotions he can alter just about every other action and you are no longer valuable as a soldier except as fodder. It is simple in this age and not at all fantastic.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/lion-buffalo.jpg&#34; alt=&#34;Buffalo Bests Lion&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/lion-buffalo.jpg&#34; alt=&#34;Buffalo Bests Lion&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;NOTE&lt;/em&gt;&lt;/p&gt;
 
@@ -98,7 +98,7 @@
 
 &lt;h2 id=&#34;prayer-fasting-charity:62a5d67ac0510a562f183297b71bac75&#34;&gt;Prayer, Fasting, Charity&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/warrior-meditation.png&#34; alt=&#34;Warrior Meditation and the Path to Enlightenment&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/warrior-meditation.png&#34; alt=&#34;Warrior Meditation and the Path to Enlightenment&#34; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;There are three things, my brethren, by which faith stands firm, devotion remains constant, and virtue endures. They are prayer, fasting and mercy. Prayer knocks at the door, fasting obtains, mercy receives. Prayer, mercy and fasting: these three are one, and they give life to each other. Saint Peter Chrysologus&lt;/p&gt;
@@ -133,10 +133,10 @@ Being fat is bad. Eating it isn&amp;rsquo;t necessarily bad. Listen to your body
       
         <item>
           <title>PHPunit Slowness Performance Suggestions</title>
-          <link>http://scotttactical.com/performance-suggestions-phpunit-slowness</link>
+          <link>http://localhost:1313/performance-suggestions-phpunit-slowness</link>
           <pubDate>Wed, 04 Nov 2015 12:57:42 PST</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/performance-suggestions-phpunit-slowness</guid>
+          <guid>http://localhost:1313/performance-suggestions-phpunit-slowness</guid>
           <description>
 
 &lt;h1 id=&#34;phpunit-is-slowness:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit Is Slowness&lt;/h1&gt;
@@ -147,7 +147,7 @@ Being fat is bad. Eating it isn&amp;rsquo;t necessarily bad. Listen to your body
 
 &lt;h2 id=&#34;phpunit-is-painfully-slow:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit is painfully slow.&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/turtle-speed.jpg&#34; alt=&#34;PHPUnit Is Slow&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/turtle-speed.jpg&#34; alt=&#34;PHPUnit Is Slow&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Seriously. Though. Maybe having a concurrent environment it can run it would help. I worked at a place with 65,000 unit tests and if they ran as slow as our unit tests here it would never finish. It was literally taking 30-60 seconds per test. That is 65000 x 60 = 1083 hours or 45 days.&lt;/p&gt;
 
@@ -170,7 +170,7 @@ Being fat is bad. Eating it isn&amp;rsquo;t necessarily bad. Listen to your body
 
 &lt;h2 id=&#34;sqlite-in-memory:d306273837598a7a2a686add086bab85&#34;&gt;SQLite - In Memory&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/sqlite.gif&#34; alt=&#34;SQLite&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/sqlite.gif&#34; alt=&#34;SQLite&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Switch to an in-memory database. Even if you have SSD drives its going to be slow. &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; is on OS X out of the box I am fairly sure and comes with most &amp;lsquo;nix flavors. Considering they embed it all over the place.&lt;/p&gt;
 
@@ -279,7 +279,7 @@ Generating code coverage report in HTML format ... done
 
 &lt;h2 id=&#34;javascript-for-the-assist:d306273837598a7a2a686add086bab85&#34;&gt;JavaScript For The Assist&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/gulp.png&#34; alt=&#34;GulpJS&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/gulp.png&#34; alt=&#34;GulpJS&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We have been toying with using &lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt; / &lt;a href=&#34;https://www.npmjs.com/&#34;&gt;NPM&lt;/a&gt; for setting up a better workflow.  It is simple enough that once a file is saved that scripts can kick off the appropriate unit tests. If your tests are completing in less than a couple seconds then it doesn&amp;rsquo;t hurt to keep running them. If they break you may know it sooner.  This is also helpful for those people who refuse to use a full-featured IDE.  Probably also the same people that enjoy working on javascript in the dark.  I know who you are. O.o&lt;/p&gt;
 
@@ -303,10 +303,10 @@ Generating code coverage report in HTML format ... done
       
         <item>
           <title>Deploying Hugo the Golang CMS on DigitalOcean - Nginx</title>
-          <link>http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx</link>
+          <link>http://localhost:1313/deploying-hugo-golang-digitalocean-nginx</link>
           <pubDate>Thu, 22 Oct 2015 06:29:31 PDT</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx</guid>
+          <guid>http://localhost:1313/deploying-hugo-golang-digitalocean-nginx</guid>
           <description>
 
 &lt;h1 id=&#34;deploying-hugo-the-golang-cms-on-digitalocean:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Deploying Hugo the Golang CMS on DigitalOcean&lt;/h1&gt;
@@ -385,12 +385,14 @@ cp $GOPATH/bin/hugo /usr/local/bin/
       
     
       
+    
+      
         <item>
           <title>Hugo: A replacement for Wordpress</title>
-          <link>http://scotttactical.com/hugo-a-replacement-for-wordpress/</link>
+          <link>http://localhost:1313/hugo-a-replacement-for-wordpress/</link>
           <pubDate>Wed, 21 Oct 2015 15:39:13 PDT</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/hugo-a-replacement-for-wordpress/</guid>
+          <guid>http://localhost:1313/hugo-a-replacement-for-wordpress/</guid>
           <description>
 
 &lt;h1 id=&#34;hugo-a-replacement-for-wordpress:af5d620423bd53c36ac9d8e74d1bb8f8&#34;&gt;Hugo: A Replacement for Wordpress&lt;/h1&gt;
@@ -553,11 +555,81 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
     
       
         <item>
+          <title>Yosemite National Park, CA - October 9, 2015</title>
+          <link>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</link>
+          <pubDate>Sat, 17 Oct 2015 00:00:00 UTC</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</guid>
+          <description>
+
+&lt;h1 id=&#34;hiking-yosemite-ca:1217abd15b682e31e138a95d5c798515&#34;&gt;Hiking Yosemite, CA&lt;/h1&gt;
+
+&lt;p&gt;&lt;img class=&#34;ngg_displayed_gallery mceItem&#34; src=&#34;http://scotttactical.com/nextgen-attach_to_post/preview/id--480&#34; alt=&#34;&#34; data-mce-placeholder=&#34;1&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;rimrise-and-shine:1217abd15b682e31e138a95d5c798515&#34;&gt;Rimrise and Shine&lt;/h2&gt;
+
+&lt;p&gt;Mornings in Yosemite Valley are breathtaking. The weather was perfect IMO.&lt;/p&gt;
+
+&lt;p&gt;We had some unfortunate luck with the camping and as you can see we could not get duplicate nights on our spot. See our note on getting your site well in advance.&lt;/p&gt;
+
+&lt;p&gt;Our wonderful neighbors were kind enough to help us out. They got us from the upper pines campsites out around the valley and back to the trailhead of the 4 mile trail. It is a pleasure to meet with good folks. Living in the San Fernando Valley, Los Angeles causes one to disparage the lack of humanity in the throngs of the masses.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;4-mile-trail:1217abd15b682e31e138a95d5c798515&#34;&gt;4 mile trail&lt;/h2&gt;
+
+&lt;p&gt;It was a whole day hike that took metered out around 17 miles. Give or take a little. Starting around 9am and coming in around 5pm.&lt;/p&gt;
+
+&lt;h2 id=&#34;glacier-point:1217abd15b682e31e138a95d5c798515&#34;&gt;Glacier Point&lt;/h2&gt;
+
+&lt;p&gt;Felt sooo good to summit the Glacier Point. It is up hill non-stop the whole way there for those 4 miles. What was odd was all the people with makeup and fancy shoes. I didn&amp;rsquo;t realize you could DRIVE THERE! Freakin A. As long as there is no ski lift to the top of half dome. Please no.&lt;/p&gt;
+
+&lt;p&gt;At the top there was a wedding going on. It was a beautiful place. I am hoping they charged for that. I am going to find the people up there. I didn&amp;rsquo;t take too many pictures so if anyone knows who they are please email me and I&amp;rsquo;ll send what I have.&lt;/p&gt;
+
+&lt;h2 id=&#34;half-dome:1217abd15b682e31e138a95d5c798515&#34;&gt;Half Dome&lt;/h2&gt;
+
+&lt;p&gt;Even though we didn&amp;rsquo;t get to summit Half Dome, there was a lot to see of it. Another Day I suppose.&lt;/p&gt;
+
+&lt;h2 id=&#34;panorama-trail:1217abd15b682e31e138a95d5c798515&#34;&gt;Panorama Trail&lt;/h2&gt;
+
+&lt;p&gt;This wound around, then wound back, then unwound, then zigged, and zagged, and my feet cracked, and my water leaked, and then a waterfall. It was a lot of sun getting here. Kinda hot. Even for Yosemite and California park weather. It was the direct sun and lack of wind.&lt;/p&gt;
+
+&lt;h2 id=&#34;illilouette-falls:1217abd15b682e31e138a95d5c798515&#34;&gt;Illilouette Falls&lt;/h2&gt;
+
+&lt;p&gt;The falls were kinda shallow. Not much going on there.&lt;/p&gt;
+
+&lt;h2 id=&#34;nevada-falls:1217abd15b682e31e138a95d5c798515&#34;&gt;Nevada Falls&lt;/h2&gt;
+
+&lt;p&gt;Finally. This was the top. Nothing but rugged rocky down hill. I stopped taking pictures. I was over it at this point.&lt;/p&gt;
+
+&lt;h2 id=&#34;vernal-fall-mist-trail:1217abd15b682e31e138a95d5c798515&#34;&gt;Vernal Fall, Mist Trail&lt;/h2&gt;
+
+&lt;p&gt;Water was light. There was a light fall, but no mist.&lt;/p&gt;
+
+&lt;p&gt;This was an epic hike for me. Yosemite lays it out like a buffet of beauty.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.everytrail.com/guide/the-mist-trail-vernal-and-nevada-falls/map&#34; target=&#34;_blank&#34;&gt;Mist Trail, Vernal Vall, Nevada Falls, MAP&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.everytrail.com/guide/glacier-point&#34; target=&#34;_blank&#34;&gt;Glacier Point - MAP&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.everytrail.com/guide/the-panorama-trail/map&#34; target=&#34;_blank&#34;&gt;Panorama Trail - MAP&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.yosemitehikes.com/glacier-point-road/panorama-trail/panorama-trail.htm&#34; target=&#34;_blank&#34;&gt;Panorama Trail Information&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
           <title>Yosemite Valley, CA - October 8, 2015</title>
-          <link>http://scotttactical.com/yosemite-valley-ca-october-8-2015/</link>
+          <link>http://localhost:1313/yosemite-valley-ca-october-8-2015/</link>
           <pubDate>Fri, 16 Oct 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/yosemite-valley-ca-october-8-2015/</guid>
+          <guid>http://localhost:1313/yosemite-valley-ca-october-8-2015/</guid>
           <description>
 
 &lt;h2 id=&#34;hiking-and-photography-yosemite-national-park:471fc8027a1daed0204178b5e3f891e3&#34;&gt;Hiking and Photography - Yosemite National Park&lt;/h2&gt;
@@ -582,10 +654,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>Interview Strategies: A Technology Hiring Manager Who Wins</title>
-          <link>http://scotttactical.com/interview-strategies-a-technology-hiring-manager/</link>
+          <link>http://localhost:1313/interview-strategies-a-technology-hiring-manager/</link>
           <pubDate>Mon, 12 Oct 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid>
+          <guid>http://localhost:1313/interview-strategies-a-technology-hiring-manager/</guid>
           <description>
 
 &lt;blockquote&gt;
@@ -674,12 +746,14 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
     
       
+    
+      
         <item>
           <title>Photography Sepulveda Dam and WildLife Basin - Los Angeles</title>
-          <link>http://scotttactical.com/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</link>
+          <link>http://localhost:1313/photography-sepulveda-dam-and-wildlife-basin-los-angeles-old/</link>
           <pubDate>Thu, 24 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</guid>
+          <guid>http://localhost:1313/photography-sepulveda-dam-and-wildlife-basin-los-angeles-old/</guid>
           <description>
 
 &lt;h1 id=&#34;taking-pictures-at-the-sepulveda-dam:8e36b0e9fb32b76ab5695c5cb6c020d2&#34;&gt;Taking Pictures at the Sepulveda Dam&lt;/h1&gt;
@@ -702,10 +776,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>Download an Entire Site with wget - mac OSX</title>
-          <link>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</link>
+          <link>http://localhost:1313/download-an-entire-site-with-wget-mac-osx/</link>
           <pubDate>Mon, 21 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</guid>
+          <guid>http://localhost:1313/download-an-entire-site-with-wget-mac-osx/</guid>
           <description>
 
 &lt;h1 id=&#34;download-the-entire-site-with-wget:967adfa691414a6b957a247770983398&#34;&gt;Download the Entire Site with wget&lt;/h1&gt;
@@ -742,10 +816,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>Hypermedia, API Philosophy, and Talking to Your Robot Overlords</title>
-          <link>http://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link>
+          <link>http://localhost:1313/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link>
           <pubDate>Thu, 17 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
+          <guid>http://localhost:1313/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
           <description>
 
 &lt;h2 id=&#34;in-the-beginning:324d0531f774f734df2f9eccd3031fc8&#34;&gt;In the Beginning&lt;/h2&gt;
@@ -856,10 +930,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</title>
-          <link>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
+          <link>http://localhost:1313/force-https-on-laravel-5-aws-elb-on-ec2/</link>
           <pubDate>Wed, 16 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
+          <guid>http://localhost:1313/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
           <description>
 
 &lt;h1 id=&#34;laravel-5-enforcing-https:03bc7a7611150669b29f3c91e572d932&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;
@@ -959,10 +1033,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>PHP Hypermedia REST API wrapper</title>
-          <link>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
+          <link>http://localhost:1313/php-hypermedia-rest-api-wrapper/</link>
           <pubDate>Tue, 08 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
+          <guid>http://localhost:1313/php-hypermedia-rest-api-wrapper/</guid>
           <description>
 
 &lt;h2 id=&#34;hypermedia-for-php-apis:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Hypermedia for PHP APIs.&lt;/h2&gt;
@@ -1072,10 +1146,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>Linux File Manipulation Shortcuts and Commands</title>
-          <link>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</link>
+          <link>http://localhost:1313/linux-file-manipulation-shortcuts-commands/</link>
           <pubDate>Wed, 25 Feb 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid>
+          <guid>http://localhost:1313/linux-file-manipulation-shortcuts-commands/</guid>
           <description>
 
 &lt;h1 id=&#34;linux-file-manipulation-commands:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Linux File Manipulation Commands&lt;/h1&gt;
@@ -1132,10 +1206,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>To HipHop or Not - PHP and HHVM</title>
-          <link>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</link>
+          <link>http://localhost:1313/to-hiphop-or-not-php-hhvm/</link>
           <pubDate>Wed, 18 Feb 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</guid>
+          <guid>http://localhost:1313/to-hiphop-or-not-php-hhvm/</guid>
           <description>
 
 &lt;p&gt;We are discussing the plausibility of using HHVM inside this current infrastructure.&lt;/p&gt;
@@ -1310,10 +1384,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>GLA - 69 K5 &#43; 4L80-E</title>
-          <link>http://scotttactical.com/gla-69-k5-4l80-e/</link>
+          <link>http://localhost:1313/gla-69-k5-4l80-e/</link>
           <pubDate>Fri, 29 Aug 2014 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/gla-69-k5-4l80-e/</guid>
+          <guid>http://localhost:1313/gla-69-k5-4l80-e/</guid>
           <description>&lt;p&gt;Cleaned up the trans a little bit.  Tiny bit of cosmetics.  Taped up.  Then hit it with some nice paint.  I prefer for these to have paint. Keeps cleaning it easier.  Also I think the buyer will appreciate it.&lt;/p&gt;
 
 &lt;p&gt;Before:&lt;/p&gt;
@@ -1443,10 +1517,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>GLA - 4L80e -1969 k5 blazer</title>
-          <link>http://scotttactical.com/gla-4l80e-1969-k5-blazer/</link>
+          <link>http://localhost:1313/gla-4l80e-1969-k5-blazer/</link>
           <pubDate>Thu, 28 Aug 2014 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/gla-4l80e-1969-k5-blazer/</guid>
+          <guid>http://localhost:1313/gla-4l80e-1969-k5-blazer/</guid>
           <description>&lt;p&gt;Just got the trans in from Brad at Transaction Transmission.&lt;/p&gt;
 
 &lt;p&gt;I have used him for a while now and he puts in the effort.  Components were upgraded and everything set new.  This should be strong for the newowner.  It was cleaned and painted at the shop but I am going to clean it up a little more and put on a coat of the &amp;ldquo;Mercenary Offroad&amp;rdquo; package graphite gray.&lt;/p&gt;
@@ -1505,10 +1579,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>GLA 69 K5 - bumper start</title>
-          <link>http://scotttactical.com/gla-69-k5-bumper-start/</link>
+          <link>http://localhost:1313/gla-69-k5-bumper-start/</link>
           <pubDate>Fri, 22 Aug 2014 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/gla-69-k5-bumper-start/</guid>
+          <guid>http://localhost:1313/gla-69-k5-bumper-start/</guid>
           <description>&lt;p&gt;Well, we got the truck running enough that I can drive it around.  It stops. We even locked it up and watched the black lines form up behind the tires. Not bad for 35&amp;rsquo;s.&lt;/p&gt;
 
 &lt;p&gt;It was moved over to Camarillo to the shop known as &lt;a href=&#34;http://mercenaryoffroad.com&#34;&gt;Mercenary Offroad&lt;/a&gt; where a custom bumper will be fabricated for it.  The designator for this bumper is also 001 as it will be the first one designed for this series truck.  I have wanted to have one of these commissioned.  The real-use high-clearance bumpers that are going on the HD dodge trucks are works of art.  I&amp;rsquo;m glad to be helping in this endeavor.  In only the fact that I showed up with the truck I still helped. Right?&lt;/p&gt;
@@ -1597,10 +1671,10 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
       
         <item>
           <title>GLA 69 K5 Brakes</title>
-          <link>http://scotttactical.com/gla-69-k5-brakes/</link>
+          <link>http://localhost:1313/gla-69-k5-brakes/</link>
           <pubDate>Wed, 20 Aug 2014 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/gla-69-k5-brakes/</guid>
+          <guid>http://localhost:1313/gla-69-k5-brakes/</guid>
           <description>&lt;p&gt;So the PO was rough on the vehicle. Probably multiple PO&amp;rsquo;s.&lt;/p&gt;
 
 &lt;p&gt;Included are some pictures to show the detail we went to in repairing and rebuilding the brake systems.&lt;/p&gt;
@@ -1835,10 +1909,10 @@ The knuckles were removed and we replaced all the components.  Yes we stripped,
       
         <item>
           <title>General Lee-Anne 001</title>
-          <link>http://scotttactical.com/general-lee-anne-001/</link>
+          <link>http://localhost:1313/general-lee-anne-001/</link>
           <pubDate>Mon, 04 Aug 2014 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/general-lee-anne-001/</guid>
+          <guid>http://localhost:1313/general-lee-anne-001/</guid>
           <description>&lt;p&gt;Here we go.&lt;/p&gt;
 
 &lt;p&gt;1969 hugger orange rust bucket.&lt;/p&gt;

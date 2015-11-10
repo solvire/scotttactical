@@ -2,7 +2,8 @@
 title: 'Photography Sepulveda Dam and WildLife Basin - Los Angeles'
 author: SScott
 date: 2015-09-24
-url: /photography-sepulveda-dam-and-wildlife-basin-los-angeles/
+draft: true 
+url: /photography-sepulveda-dam-and-wildlife-basin-los-angeles-old/
 categories:
   - Photography
 tags: [photography, california, nature, sunrises]
