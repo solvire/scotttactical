@@ -15,7 +15,17 @@ _What physically intimate activity do we participate in more than any other?_
 
 **Eating**  
 
-One of the more important factors in becoming awake is in the control of one's dietary intake. The *passion of hunger*. We take other living things into our bodies and literally become one with them. No strange occurrence happened that caused most religions incorporate some form of consumption into their ritual. It is part of every culture and one of those most important glues in uniting various traditions. Food is religion. 
+## The Philosophy
+
+One of the more immediate steps in becoming awake is overcoming the omnivore's dilemma. The *passion of hunger*. We take other living things into our bodies and literally become one with them. Most religions incorporate some form of consumption into their ritual. It is part of every culture and one of those most important glues in uniting various traditions. 
+
+Food is religion. 
+
+Food is health. 
+
+Food is life and death. 
+
+
 
 # TL;DR
 
