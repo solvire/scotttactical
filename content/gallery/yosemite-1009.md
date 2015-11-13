@@ -2,7 +2,7 @@
 date: 2015-10-25T19:22:21-07:00
 draft: false
 title: Yosemite National Park, CA - October 9, 2015
-tags: [photography, hugo, gallery]
+tags: [ photography, yosemite, california ]
 galleryPath: yosemite-1009/
 url: /yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/
 featuredImage: "IMG_6409.jpg"
