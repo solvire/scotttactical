@@ -90,7 +90,7 @@ I also like to make sure my host is set to not kill anything. I have wiped out a
 
 &lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;
 /**
- * 
+ *
  * @author solvire &amp;lt;stevenjscott@gmail.com&amp;gt;
  * @package Rules
  * @group Rules
@@ -110,7 +110,7 @@ Available test group(s):
  - Transformers
  - default
  - solvire &amp;lt;stevenjscott@gmail.com&amp;gt;
- 
+
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;filter-your-tests:d306273837598a7a2a686add086bab85&#34;&gt;Filter Your Tests&lt;/h2&gt;
@@ -208,7 +208,7 @@ Generating code coverage report in HTML format ... done
 
 &lt;h3 id=&#34;start-it:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Start it&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;service nginx start 
+&lt;pre&gt;&lt;code&gt;service nginx start
 systemctl enable nginx
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -216,7 +216,7 @@ systemctl enable nginx
 
 &lt;pre&gt;&lt;code&gt;mkdir -p /var/www/ursite/
 chown -R nginx:nginx /var/www
-touch /var/www/ursite/index.html - or clone your site 
+touch /var/www/ursite/index.html - or clone your site
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/ursite
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -244,13 +244,13 @@ server {
 
 &lt;h4 id=&#34;install-go-hugo:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Install  Go + Hugo&lt;/h4&gt;
 
-&lt;pre&gt;&lt;code&gt;yum install go 
+&lt;pre&gt;&lt;code&gt;yum install go
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;I decided to install from source
 Edit your bash script to have the proper variables in place.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;yum install git hg 
+&lt;pre&gt;&lt;code&gt;yum install git hg
 export GOPATH=$HOME/go
 go get -v github.com/spf13/hugo
 cp $GOPATH/bin/hugo /usr/local/bin/
@@ -391,19 +391,19 @@ cp $GOPATH/bin/hugo /usr/local/bin/
 
 &lt;p&gt;Installing go is awesome on mac. If you have a mac and do not have &lt;a href=&#34;http://brew.sh/&#34;&gt;homebrew&lt;/a&gt; - shame on you.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;brew install go 
+&lt;pre&gt;&lt;code&gt;brew install go
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Installing hugo as awesome.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;brew install hugo 
+&lt;pre&gt;&lt;code&gt;brew install hugo
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Creating a new site was extremely simple.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;mkdir newsite
 cd newsite
-hugo new site . 
+hugo new site .
 hugo new about.md
 hugo new post/first.md
 git clone https://github.com/dim0627/hugo_theme_beg themes/beg

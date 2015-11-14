@@ -24,8 +24,6 @@
 
 &lt;h1 id=&#34;a-warrior-s-diet:62a5d67ac0510a562f183297b71bac75&#34;&gt;A Warrior&amp;rsquo;s Diet&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/gladiator-eating.jpg&#34; alt=&#34;Gladiators Love Vegetables&#34; /&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;em&gt;What physically intimate activity do we participate in more than any other?&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Eating&lt;/strong&gt;&lt;/p&gt;
@@ -209,7 +207,7 @@ I also like to make sure my host is set to not kill anything. I have wiped out a
 
 &lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;
 /**
- * 
+ *
  * @author solvire &amp;lt;stevenjscott@gmail.com&amp;gt;
  * @package Rules
  * @group Rules
@@ -229,7 +227,7 @@ Available test group(s):
  - Transformers
  - default
  - solvire &amp;lt;stevenjscott@gmail.com&amp;gt;
- 
+
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;filter-your-tests:d306273837598a7a2a686add086bab85&#34;&gt;Filter Your Tests&lt;/h2&gt;
@@ -327,7 +325,7 @@ Generating code coverage report in HTML format ... done
 
 &lt;h3 id=&#34;start-it:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Start it&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;service nginx start 
+&lt;pre&gt;&lt;code&gt;service nginx start
 systemctl enable nginx
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -335,7 +333,7 @@ systemctl enable nginx
 
 &lt;pre&gt;&lt;code&gt;mkdir -p /var/www/ursite/
 chown -R nginx:nginx /var/www
-touch /var/www/ursite/index.html - or clone your site 
+touch /var/www/ursite/index.html - or clone your site
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/ursite
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -363,13 +361,13 @@ server {
 
 &lt;h4 id=&#34;install-go-hugo:05ba16f4d070e50db8ed0ad9d587f7eb&#34;&gt;Install  Go + Hugo&lt;/h4&gt;
 
-&lt;pre&gt;&lt;code&gt;yum install go 
+&lt;pre&gt;&lt;code&gt;yum install go
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;I decided to install from source
 Edit your bash script to have the proper variables in place.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;yum install git hg 
+&lt;pre&gt;&lt;code&gt;yum install git hg
 export GOPATH=$HOME/go
 go get -v github.com/spf13/hugo
 cp $GOPATH/bin/hugo /usr/local/bin/
@@ -510,19 +508,19 @@ cp $GOPATH/bin/hugo /usr/local/bin/
 
 &lt;p&gt;Installing go is awesome on mac. If you have a mac and do not have &lt;a href=&#34;http://brew.sh/&#34;&gt;homebrew&lt;/a&gt; - shame on you.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;brew install go 
+&lt;pre&gt;&lt;code&gt;brew install go
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Installing hugo as awesome.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;brew install hugo 
+&lt;pre&gt;&lt;code&gt;brew install hugo
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Creating a new site was extremely simple.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;mkdir newsite
 cd newsite
-hugo new site . 
+hugo new site .
 hugo new about.md
 hugo new post/first.md
 git clone https://github.com/dim0627/hugo_theme_beg themes/beg
@@ -632,7 +630,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;I like to see what technology they use. If it is only bleeding edge I will usually pass. That shows hubris and are probably willing to use the office as a lab. If they do not have anything current they might be slow to adopt so I make some notes to ask them.&lt;/p&gt;
 
-&lt;p&gt;I always ask [design patterns][2]. I believe that if someone cares about their career at all they know this stuff. If they do not know what design patterns are I pass, but I give them a couple study guides. At least know what they are.&lt;/p&gt;
+&lt;p&gt;I always ask &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_design_pattern&#34;&gt;design patterns&lt;/a&gt;. I believe that if someone cares about their career at all they know this stuff. If they do not know what design patterns are I pass, but I give them a couple study guides. At least know what they are.&lt;/p&gt;
 
 &lt;p&gt;The candidate can provide a list of stacks they are comfortable working with. They will most likely list them in order of confidence so I just keep note of that. Then I ask what versions they work with.&lt;/p&gt;
 
@@ -663,8 +661,6 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;PS. Given the height of the Empire State Building of 1,454&amp;#8242;. It takes 16 pennies to equal an inch. If you stacked pennies to that height it would take 16 x 12 x 1454 = 279,168, or slightly less than $3k. Let&amp;rsquo;s also say you have the ability to pass those through image recognition software grafted to a Diebold change machine to find rare and valuable pennies. Take that and apply the “coupon collector&amp;rsquo;s problem” with mint counts for the top 20 rare pennies and you come come out with odds or a wild ass guess (WAG) for how that $3k might be worth significantly more for the time and liberal application of available algorithms.&lt;/p&gt;
 
 &lt;p&gt;Smart people already figured out these things.&lt;/p&gt;
-
-&lt;p&gt;[2]: &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_design_pattern&#34;&gt;https://en.wikipedia.org/wiki/Software_design_pattern&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
       

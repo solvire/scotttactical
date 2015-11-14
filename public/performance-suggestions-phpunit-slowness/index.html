@@ -102,21 +102,25 @@
 
 <div class="row">
     <div class="col-md-8">
-        <article class="post">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
 
             <header>
                 <div class="post-date">
                     <span class="glyphicon glyphicon-calendar"></span>
-                    <time datetime="Wed, 04 Nov 2015 12:57:42 PST">
+                    <time itemprop="datePublished" datetime="Wed, 04 Nov 2015 12:57:42 PST">
                         Wed, 04 Nov 2015 12:57:42 PST
                     </time>
                 </div>
-                <h1 class="post-title">
+                <h1 class="post-title" itemprop="headline">
                     <a href="http://scotttactical.com/performance-suggestions-phpunit-slowness">PHPunit Slowness Performance Suggestions</a>
                 </h1>
+                <span >
+                  <img itemprop="image" alt="PHPunit Slowness Performance Suggestions" src="http://scotttactical.com/images/php-unit-logo.jpg">
+                </span>
             </header>
 
-            <div class="post-content">
+            <div class="post-content" itemprop="articleBody">
+              <hr />
                 
 
 <h1 id="phpunit-is-slowness:d306273837598a7a2a686add086bab85">PHPUnit Is Slowness</h1>
@@ -191,7 +195,7 @@ I also like to make sure my host is set to not kill anything. I have wiped out a
 
 <pre><code class="language-php">
 /**
- * 
+ *
  * @author solvire &lt;stevenjscott@gmail.com&gt;
  * @package Rules
  * @group Rules
@@ -211,7 +215,7 @@ Available test group(s):
  - Transformers
  - default
  - solvire &lt;stevenjscott@gmail.com&gt;
- 
+
 </code></pre>
 
 <h2 id="filter-your-tests:d306273837598a7a2a686add086bab85">Filter Your Tests</h2>
@@ -282,30 +286,30 @@ Generating code coverage report in HTML format ... done
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/php">
+                        <a href="http://scotttactical.com//tags/php" rel="tag">
                             <i class="fa fa-tags"></i>
-                            php
+                            <span itemprop="keywords">php</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/testing">
+                        <a href="http://scotttactical.com//tags/testing" rel="tag">
                             <i class="fa fa-tags"></i>
-                            testing
+                            <span itemprop="keywords">testing</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/performance">
+                        <a href="http://scotttactical.com//tags/performance" rel="tag">
                             <i class="fa fa-tags"></i>
-                            performance
+                            <span itemprop="keywords">performance</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/software">
+                        <a href="http://scotttactical.com//tags/software" rel="tag">
                             <i class="fa fa-tags"></i>
-                            software
+                            <span itemprop="keywords">software</span>
                         </a>
                     </li>
                     

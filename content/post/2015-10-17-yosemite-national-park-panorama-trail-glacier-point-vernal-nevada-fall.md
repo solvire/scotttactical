@@ -3,7 +3,7 @@ title: Yosemite National Park, CA - October 9, 2015
 author: SScott
 date: 2015-10-17
 url: /yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/
-draft: true 
+draft: true
 categories:
   - Photography
 format: gallery
@@ -11,17 +11,13 @@ tags: [photography, yosemite, national park, hiking, california]
 ---
 # Hiking Yosemite, CA
 
-<img class="ngg_displayed_gallery mceItem" src="http://scotttactical.com/nextgen-attach_to_post/preview/id--480" alt="" data-mce-placeholder="1" />
-
-&nbsp;
-
 ## Rimrise and Shine
 
-Mornings in Yosemite Valley are breathtaking. The weather was perfect IMO. 
+Mornings in Yosemite Valley are breathtaking. The weather was perfect IMO.
 
-We had some unfortunate luck with the camping and as you can see we could not get duplicate nights on our spot. See our note on getting your site well in advance. 
+We had some unfortunate luck with the camping and as you can see we could not get duplicate nights on our spot. See our note on getting your site well in advance.
 
-Our wonderful neighbors were kind enough to help us out. They got us from the upper pines campsites out around the valley and back to the trailhead of the 4 mile trail. It is a pleasure to meet with good folks. Living in the San Fernando Valley, Los Angeles causes one to disparage the lack of humanity in the throngs of the masses. 
+Our wonderful neighbors were kind enough to help us out. They got us from the upper pines campsites out around the valley and back to the trailhead of the 4 mile trail. It is a pleasure to meet with good folks. Living in the San Fernando Valley, Los Angeles causes one to disparage the lack of humanity in the throngs of the masses.
 
 &nbsp;
 
@@ -41,7 +37,7 @@ Even though we didn't get to summit Half Dome, there was a lot to see of it. Ano
 
 ## Panorama Trail
 
-This wound around, then wound back, then unwound, then zigged, and zagged, and my feet cracked, and my water leaked, and then a waterfall. It was a lot of sun getting here. Kinda hot. Even for Yosemite and California park weather. It was the direct sun and lack of wind. 
+This wound around, then wound back, then unwound, then zigged, and zagged, and my feet cracked, and my water leaked, and then a waterfall. It was a lot of sun getting here. Kinda hot. Even for Yosemite and California park weather. It was the direct sun and lack of wind.
 
 ## Illilouette Falls
 

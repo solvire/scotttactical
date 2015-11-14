@@ -90,7 +90,7 @@ I also like to make sure my host is set to not kill anything. I have wiped out a
 
 &lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;
 /**
- * 
+ *
  * @author solvire &amp;lt;stevenjscott@gmail.com&amp;gt;
  * @package Rules
  * @group Rules
@@ -110,7 +110,7 @@ Available test group(s):
  - Transformers
  - default
  - solvire &amp;lt;stevenjscott@gmail.com&amp;gt;
- 
+
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;filter-your-tests:d306273837598a7a2a686add086bab85&#34;&gt;Filter Your Tests&lt;/h2&gt;

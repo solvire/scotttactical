@@ -4,15 +4,16 @@ draft: false
 title: Deploying Hugo the Golang CMS on DigitalOcean - Nginx
 url: deploying-hugo-golang-digitalocean-nginx
 tags: [go, golang, hugo, wordpress, blogging, software, programming]
+image: images/hugo-logo.png
 ---
 
 # Deploying Hugo the Golang CMS on DigitalOcean
 
 ## Creating a Droplet
 
-I am a bit partial to CentOS. The lastest version as of this writing is _CentOS Linux release 7.1.1503 (Core)_. 
+I am a bit partial to CentOS. The lastest version as of this writing is _CentOS Linux release 7.1.1503 (Core)_.
 
-Setting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done. 
+Setting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done.
 
 ## Install Nginx
 
@@ -24,23 +25,23 @@ Setting up a droplet is always very simple. Just turn it on basically. Upload yo
 
 	yum install nginx
 
-### Start it 
+### Start it
 
-	service nginx start 
+	service nginx start
 	systemctl enable nginx
 
 ### Create the Folders
 
 	mkdir -p /var/www/ursite/
 	chown -R nginx:nginx /var/www
-	touch /var/www/ursite/index.html - or clone your site 
+	touch /var/www/ursite/index.html - or clone your site
 	cp /etc/nginx/sites-available/default /etc/nginx/sites-available/ursite
 
-### Configure nginx 
+### Configure nginx
 
 open the config file: `vim /etc/nginx/conf.d/virtual.conf`
 
-Add the following: 
+Add the following:
 
 ```conf
 #
@@ -61,16 +62,15 @@ server {
 
 #### Install  Go + Hugo
 
-	yum install go 
+	yum install go
 
 
-I decided to install from source 
-Edit your bash script to have the proper variables in place. 
+I decided to install from source
+Edit your bash script to have the proper variables in place.
 
-	yum install git hg 
+	yum install git hg
 	export GOPATH=$HOME/go
 	go get -v github.com/spf13/hugo
 	cp $GOPATH/bin/hugo /usr/local/bin/
 
-NOTE: THis actually isn't necessary.  Just check it out and go with it. Afer screwing with it a few minutes I facepalmed... they are static files. Doh! 
-
+NOTE: THis actually isn't necessary.  Just check it out and go with it. Afer screwing with it a few minutes I facepalmed... they are static files. Doh!

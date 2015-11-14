@@ -3,13 +3,14 @@ date: 2015-11-06T01:23:11-08:00
 draft: false
 title: Eat For War
 tags: [ nutrition, fitness, philosophy ]
+image: images/gladiator-eating.jpg
 ---
+
+
 
 > Bad men live that they may eat and drink, whereas good men eat and drink that they may live. Socrates - Plutarch, _How a Young Man Ought to Hear Poems_
 
 # A Warrior's Diet
-
-![Gladiators Love Vegetables](/images/gladiator-eating.jpg)
 
 _What physically intimate activity do we participate in more than any other?_  
 
@@ -17,19 +18,19 @@ _What physically intimate activity do we participate in more than any other?_
 
 ## The Philosophy
 
-One of the more immediate steps in becoming awake is overcoming the omnivore's dilemma. The *passion of hunger*. We take other living things into our bodies and literally become one with them. Most religions incorporate some form of consumption into their ritual. It is part of every culture and one of those most important glues in uniting various traditions. 
+One of the more immediate steps in becoming awake is overcoming the omnivore's dilemma. The *passion of hunger*. We take other living things into our bodies and literally become one with them. Most religions incorporate some form of consumption into their ritual. It is part of every culture and one of those most important glues in uniting various traditions.
 
-Food is religion. 
+Food is religion.
 
-Food is health. 
+Food is health.
 
-Food is life and death. 
+Food is life and death.
 
 
 
 # TL;DR
 
-Your diet is a long term wager that should reflect your ultimate goals and ethos. The outcome is measured over years. 
+Your diet is a long term wager that should reflect your ultimate goals and ethos. The outcome is measured over years.
 
 ## We Are What We Eat
 
@@ -41,15 +42,15 @@ Again it is advantageous to think in the mind of our enemy. He is able to gain a
 
 *NOTE*
 
-If you wish to attack these assertions do so knowing you are wagering your own body, and it is likely that I am physically above you in the food chain already. Be grateful for the constructs of society. This is philosophy. 
+If you wish to attack these assertions do so knowing you are wagering your own body, and it is likely that I am physically above you in the food chain already. Be grateful for the constructs of society. This is philosophy.
 
 
 
 ## Agriculture
 
-The closer to the earth you go the closer to life you will be. Generally the more times something is processed the less densely nutritional it will be for you and at some level may be harmful. Taking milk directly from the cow will inherit all those beneficial enzymes that we have accustomed our bodies to over the last few millennium. Pasteurized and ultra-pasteurized milk has been killed essentially. Also add the fact that highly processed diary has biological system altering antibiotic and hormonal additive levels in it. Foods that are highly processed corn byproducts are terrible for the mind and the body as well as damaging to the economy and feed the industrial war machine. High fructose corn syrup HFCS is the diseased blood of our flat lands. It should be boxed up and shipped to the front doors of our enemy in the sweetest form it can take. 
+The closer to the earth you go the closer to life you will be. Generally the more times something is processed the less densely nutritional it will be for you and at some level may be harmful. Taking milk directly from the cow will inherit all those beneficial enzymes that we have accustomed our bodies to over the last few millennium. Pasteurized and ultra-pasteurized milk has been killed essentially. Also add the fact that highly processed diary has biological system altering antibiotic and hormonal additive levels in it. Foods that are highly processed corn byproducts are terrible for the mind and the body as well as damaging to the economy and feed the industrial war machine. High fructose corn syrup HFCS is the diseased blood of our flat lands. It should be boxed up and shipped to the front doors of our enemy in the sweetest form it can take.
 
-> Strategy against terror states: Americanize their foodchain. 
+> Strategy against terror states: Americanize their foodchain.
 
 The older in the anthropological food chain you go the easier it is for you body to digest. It is unrealistic that humans were carnivores. We are omnivores and a special kind: one that does not inherit instincts as the animals do. We are dissimilar to every animal in nearly every decision we make and food is no difference. It took the institution of tradition to pass along the various things we learned about: what to eat and what not to. Culture defined the combinations and quantities of those things. The post pseudo-cosmopolitanism of the United States set the table for a feast to forsake Epicurus. We were determined to eat in our cars while driving. And now we are the wasteline [sic] of the world.
 
@@ -73,7 +74,7 @@ Listening to your body and maintaining a proper diet that is balanced by nature 
 
 There is some validity in the idea that big muscular dudes get the girls. It's nature. A woman wants a man that is going to be capable of giving her a child with the best chances of survival. A fat or broken man is going to have far fewer options when being selected. Within a few seconds of viewing a man it is possible for her to tell whether this person is above or below average in health, strength, social value, and whether he is dominant or passive. These are primal characteristics, but how do they relate to this? They weren't designed simply for the attraction of the other mate, but to bring glory back to God. The ultimate designer. Does someone who cannot tend their own body bring pride to anyone?
 
-We do not want people around us who cannot control their lives. Their diet is important to control and where vanity might be a good motivator it is easy to make this vice into a virtue. Eating well will grow our bodies into structures that are desirable to women, ourselves. At the end of our lives we should not necessarily turn in a pretty corpse but one that was driven so hard that the wheels fell off of it as it was being pulled into the garage. What keeps this from being vanity is _purpose_. It is because we get more miles on a fit healthy body that we find joy in what we have sculpted. True joy. Not transient chemical happiness. 
+We do not want people around us who cannot control their lives. Their diet is important to control and where vanity might be a good motivator it is easy to make this vice into a virtue. Eating well will grow our bodies into structures that are desirable to women, ourselves. At the end of our lives we should not necessarily turn in a pretty corpse but one that was driven so hard that the wheels fell off of it as it was being pulled into the garage. What keeps this from being vanity is _purpose_. It is because we get more miles on a fit healthy body that we find joy in what we have sculpted. True joy. Not transient chemical happiness.
 
 > Remember, bodies are made in the kitchen.
 
@@ -85,7 +86,7 @@ We do not want people around us who cannot control their lives. Their diet is im
 
 Here is where we get down to the real "meat" of the topic and with real scientific evidence to back this up. Your primal urges must be subdued regularly if you wish to elevate yourself. No, it will not hurt you. If it does you might be mentally or physically too weak to handle this program. What it will do is open your mind. Gandhi did it. Christ did it. Muhammad did it. The prophets did it. This is a must and should be incorporated into any leadership system. There are very few ways that we can unlock this deep primal part of our brains. If you have not been truly starving then you have not made yourself available.
 
-## Cattle and Sheeple 
+## Cattle and Sheeple
 
 Anthropologically we are not grazing animals. We are more appropriately scavengers and in some situations hunters. We are opportunists by nature. Humans were not found grazing on the range all day. These diets of eating many times in a day are just setting people up to be slaughter animals. Severely restricting the body will put us into a state of survival which releases all sorts of amazing hormones into the body. Our minds and bodies work at a higher operational level when in this state. It is exactly opposite of what most would think. In this hedonistic social paradigm we live in this is yet another anti-truism of common intuition. The only scientifically proven method of prolonging life is caloric restriction. If a longer life is a measure of health then there is no better credibility in this system.
 
@@ -100,7 +101,7 @@ Please, again do your own research and find out what you need to actually supple
 **Fat is Bad**  
 Being fat is bad. Eating it isn't necessarily bad. Listen to your body and make wise decisions. Another fad pushed by the US health industry that threw our whole dietary development into the fan.
 
-# Cornclusion 
+# Cornclusion
 
 Remember, it is up to you to determine what to eat and your decisions must be well researched and implemented. Once the best meals are put into place they need to be cast solid by repetition and then turned into a habit. Eventually they may become tradition and if enough of us pass these good habits forward they may become a cultural improvement that we can be proud of.
 

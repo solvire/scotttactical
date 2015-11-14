@@ -102,21 +102,25 @@
 
 <div class="row">
     <div class="col-md-8">
-        <article class="post">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
 
             <header>
                 <div class="post-date">
                     <span class="glyphicon glyphicon-calendar"></span>
-                    <time datetime="Thu, 22 Oct 2015 06:29:31 PDT">
+                    <time itemprop="datePublished" datetime="Thu, 22 Oct 2015 06:29:31 PDT">
                         Thu, 22 Oct 2015 06:29:31 PDT
                     </time>
                 </div>
-                <h1 class="post-title">
+                <h1 class="post-title" itemprop="headline">
                     <a href="http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx">Deploying Hugo the Golang CMS on DigitalOcean - Nginx</a>
                 </h1>
+                <span >
+                  <img itemprop="image" alt="Deploying Hugo the Golang CMS on DigitalOcean - Nginx" src="http://scotttactical.com/images/hugo-logo.png">
+                </span>
             </header>
 
-            <div class="post-content">
+            <div class="post-content" itemprop="articleBody">
+              <hr />
                 
 
 <h1 id="deploying-hugo-the-golang-cms-on-digitalocean:05ba16f4d070e50db8ed0ad9d587f7eb">Deploying Hugo the Golang CMS on DigitalOcean</h1>
@@ -141,7 +145,7 @@
 
 <h3 id="start-it:05ba16f4d070e50db8ed0ad9d587f7eb">Start it</h3>
 
-<pre><code>service nginx start 
+<pre><code>service nginx start
 systemctl enable nginx
 </code></pre>
 
@@ -149,7 +153,7 @@ systemctl enable nginx
 
 <pre><code>mkdir -p /var/www/ursite/
 chown -R nginx:nginx /var/www
-touch /var/www/ursite/index.html - or clone your site 
+touch /var/www/ursite/index.html - or clone your site
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/ursite
 </code></pre>
 
@@ -177,13 +181,13 @@ server {
 
 <h4 id="install-go-hugo:05ba16f4d070e50db8ed0ad9d587f7eb">Install  Go + Hugo</h4>
 
-<pre><code>yum install go 
+<pre><code>yum install go
 </code></pre>
 
 <p>I decided to install from source
 Edit your bash script to have the proper variables in place.</p>
 
-<pre><code>yum install git hg 
+<pre><code>yum install git hg
 export GOPATH=$HOME/go
 go get -v github.com/spf13/hugo
 cp $GOPATH/bin/hugo /usr/local/bin/
@@ -198,51 +202,51 @@ cp $GOPATH/bin/hugo /usr/local/bin/
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/go">
+                        <a href="http://scotttactical.com//tags/go" rel="tag">
                             <i class="fa fa-tags"></i>
-                            go
+                            <span itemprop="keywords">go</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/golang">
+                        <a href="http://scotttactical.com//tags/golang" rel="tag">
                             <i class="fa fa-tags"></i>
-                            golang
+                            <span itemprop="keywords">golang</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/hugo">
+                        <a href="http://scotttactical.com//tags/hugo" rel="tag">
                             <i class="fa fa-tags"></i>
-                            hugo
+                            <span itemprop="keywords">hugo</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/wordpress">
+                        <a href="http://scotttactical.com//tags/wordpress" rel="tag">
                             <i class="fa fa-tags"></i>
-                            wordpress
+                            <span itemprop="keywords">wordpress</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/blogging">
+                        <a href="http://scotttactical.com//tags/blogging" rel="tag">
                             <i class="fa fa-tags"></i>
-                            blogging
+                            <span itemprop="keywords">blogging</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/software">
+                        <a href="http://scotttactical.com//tags/software" rel="tag">
                             <i class="fa fa-tags"></i>
-                            software
+                            <span itemprop="keywords">software</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/programming">
+                        <a href="http://scotttactical.com//tags/programming" rel="tag">
                             <i class="fa fa-tags"></i>
-                            programming
+                            <span itemprop="keywords">programming</span>
                         </a>
                     </li>
                     
