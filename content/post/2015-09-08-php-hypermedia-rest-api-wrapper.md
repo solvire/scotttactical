@@ -6,6 +6,7 @@ url: /php-hypermedia-rest-api-wrapper/
 categories:
   - Software
 tags: [ php, hypermedia, api, laravel ]
+image: images/laravel-5.png
 ---
 ## Hypermedia for PHP APIs.
 
@@ -14,12 +15,12 @@ Well, here it is.  I'm finally finishing up my Hypermedia layer for our [Laravel
 
 ### In Production - Alpha
 
-Right now I have it in our very alpha phase version of the software running the [LeadFerret](http://docs.leadferretuser.apiary.io/#) business lead search system. 
+Right now I have it in our very alpha phase version of the software running the [LeadFerret](http://docs.leadferretuser.apiary.io/#) business lead search system.
 
 
 The project is on github here: [PHP Hypermedia API Layer for HATEOAS HTTP or REST Services](https://github.com/solvire/php-hypermedia-api)
 
-It is slowly getting to where I would like it to be. Of course it takes a lot of work to manage business expectations since they and PHP devs tend to treat an API like a junk drawer. 
+It is slowly getting to where I would like it to be. Of course it takes a lot of work to manage business expectations since they and PHP devs tend to treat an API like a junk drawer.
 
 ### So why now?
 
@@ -41,57 +42,57 @@ Sample JSON output with context
 ```JSON
 
 {
-    "currentItemCount": 1, 
+    "currentItemCount": 1,
     "items": [
         {
             "company": {
-                "address": "4209 Technology Drive", 
-                "alexa": 0, 
-                "area_code": 510, 
-                "city": "Fremont", 
-                "county": "Alameda", 
-                "domain": "3pardata.com", 
-                "employees": 15, 
-                "f1000": 0, 
-                "fbpage": "", 
-                "id": 38252, 
+                "address": "4209 Technology Drive",
+                "alexa": 0,
+                "area_code": 510,
+                "city": "Fremont",
+                "county": "Alameda",
+                "domain": "3pardata.com",
+                "employees": 15,
+                "f1000": 0,
+                "fbpage": "",
+                "id": 38252,
                 "location": {
-                    "latitude": 37.520000457764, 
+                    "latitude": 37.520000457764,
                     "longitude": -121.95999908447
-                }, 
-                "naics": 0, 
-                "name": "3PARdata, Inc.", 
-                "phone": "510-413-5999", 
-                "revenue": 35, 
-                "sic": "3572", 
-                "state": "CA", 
-                "year_founded": 1999, 
+                },
+                "naics": 0,
+                "name": "3PARdata, Inc.",
+                "phone": "510-413-5999",
+                "revenue": 35,
+                "sic": "3572",
+                "state": "CA",
+                "year_founded": 1999,
                 "zip": "94538"
-            }, 
+            },
             "created": {
-                "date": "2015-09-30 06:06:55.000000", 
-                "timezone": "UTC", 
+                "date": "2015-09-30 06:06:55.000000",
+                "timezone": "UTC",
                 "timezone_type": 3
-            }, 
-            "crowd_score": 0, 
-            "first_name": "Jeff", 
-            "gender": "male", 
-            "id": 12756, 
-            "last_name": "Price", 
-            "phone": "510-413-5999", 
+            },
+            "crowd_score": 0,
+            "first_name": "Jeff",
+            "gender": "male",
+            "id": 12756,
+            "last_name": "Price",
+            "phone": "510-413-5999",
             "professional_categories": [
-                "engineering", 
+                "engineering",
                 "photographer"
-            ], 
-            "score": 38, 
-            "title": "Vice President of Engineering and Founder", 
-            "title_level": "VP", 
+            ],
+            "score": 38,
+            "title": "Vice President of Engineering and Founder",
+            "title_level": "VP",
             "useragent": "Chrome"
         }
-    ], 
-    "itemsPerPage": "50", 
-    "pageIndex": 1, 
-    "totalItems": 1, 
+    ],
+    "itemsPerPage": "50",
+    "pageIndex": 1,
+    "totalItems": 1,
     "totalPages": 1
 }
 ```

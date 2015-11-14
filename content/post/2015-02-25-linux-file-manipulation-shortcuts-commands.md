@@ -6,10 +6,11 @@ url: /linux-file-manipulation-shortcuts-commands/
 categories:
   - Uncategorized
 tags: [ linux ]
+image: images/baveria.jpg
 ---
 # Linux File Manipulation Commands
 
-I'll keep updating this with various commands that I run into. If I find new ones I'll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place. 
+I'll keep updating this with various commands that I run into. If I find new ones I'll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.
 
 ## File Searching
 
@@ -25,7 +26,7 @@ To get the count then simply add \`wc\` command.
 
 ## Vim Commands
 
-To find non-ascii characters in your file: 
+To find non-ascii characters in your file:
 
 `/[^\x00-\x7F]`
 
@@ -43,7 +44,7 @@ Sort them
 
 `$ awk '{ print $1 } ' access_log | sort`
 
-They get only the unique items using the uniq command. You can count these if you want. 
+They get only the unique items using the uniq command. You can count these if you want.
 
 `$ awk '{ print $1 } ' access_log | sort | uniq`
 
