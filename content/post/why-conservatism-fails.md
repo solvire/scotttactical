@@ -1,6 +1,6 @@
 ---
 date: 2015-11-13T17:18:43-08:00
-draft: true
+draft: false
 title: Why Conservatism Fails
 url: why-conservatism-fails
 image: images/Thanksgiving-Rockwell.jpg

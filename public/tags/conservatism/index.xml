@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Tactical </title>
-    <link>http://localhost:1313/tags/conservatism/</link>
+    <link>http://scotttactical.com/tags/conservatism/</link>
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2015</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Why Conservatism Fails</title>
-          <link>http://localhost:1313/why-conservatism-fails</link>
+          <link>http://scotttactical.com/why-conservatism-fails</link>
           <pubDate>Fri, 13 Nov 2015 17:18:43 PST</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://localhost:1313/why-conservatism-fails</guid>
+          <guid>http://scotttactical.com/why-conservatism-fails</guid>
           <description>
 
 &lt;p&gt;This essay is not an attack on the people who claim membership to a philosophical outlook, but an exposition on the inherent difficulties which exist in maintaining traditional systems.&lt;/p&gt;
@@ -67,7 +67,7 @@
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://localhost:1313/images/Akropolis_by_Leo_von_Klenze.jpg&#34; /&gt;
+        &lt;img src=&#34;http://scotttactical.com/images/Akropolis_by_Leo_von_Klenze.jpg&#34; /&gt;
     
     
     &lt;figcaption&gt;
@@ -144,7 +144,7 @@
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://localhost:1313/images/babylon.jpg&#34; /&gt;
+        &lt;img src=&#34;http://scotttactical.com/images/babylon.jpg&#34; /&gt;
     
     
     &lt;figcaption&gt;
@@ -192,7 +192,7 @@
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://localhost:1313/images/Marcus_Porcius_Cato.jpg&#34; /&gt;
+        &lt;img src=&#34;http://scotttactical.com/images/Marcus_Porcius_Cato.jpg&#34; /&gt;
     
     
     &lt;figcaption&gt;
