@@ -115,7 +115,7 @@
                     <a href="http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/">Force HTTPS on Laravel 5 behind AWS ELB on EC2</a>
                 </h1>
                 <span >
-                  
+                  <img itemprop="image" alt="Force HTTPS on Laravel 5 behind AWS ELB on EC2" src="http://scotttactical.com/images/laravel-5.png">
                 </span>
             </header>
 
@@ -125,9 +125,7 @@
 
 <h1 id="laravel-5-enforcing-https:03bc7a7611150669b29f3c91e572d932">Laravel 5 - Enforcing HTTPS</h1>
 
-<p>[<img src="http://img.scotttactical.com/images/legacy/2015/09/Laravel-5-300x180.png" alt="Laravel 5" width="300" height="180" class="alignnone size-medium wp-image-195" />][1]</p>
-
-<p>I&rsquo;ve used a lot of frameworks. <a href="http://laravel.com/" title="Laravel 5" target="_blank">Laravel</a> is great.</p>
+<p>I&rsquo;ve used a lot of frameworks. <a href="http://laravel.com/">Laravel is great</a>.</p>
 
 <h2 id="dealing-with-a-load-balancer:03bc7a7611150669b29f3c91e572d932">Dealing with a load balancer</h2>
 
@@ -185,11 +183,11 @@
     public function handle($request, Closure $next)
     {
         if (! $request-&amp;gt;secure() &amp;&amp; app()-&amp;gt;environment('production')) {
-            
-            // this is a really ugly hack but it kept looping and prepnding public 
+
+            // this is a really ugly hack but it kept looping and prepnding public
             return redirect()-&amp;gt;secure(preg_replace('%/public%', '', $request-&amp;gt;getRequestUri()));
         }
-        
+
         return $next($request);
     }
 }
@@ -203,7 +201,7 @@
 
 <pre><code class="language-php">protected $middleware = [
 	    ...		
-		// trust the proxies from aws 
+		// trust the proxies from aws
 		'Fideloper\Proxy\TrustProxies',
 		// then force it secure (if production)
 		'LeadFerret\Http\Middleware\Secure',
@@ -212,13 +210,39 @@
 
 <p>Now there are no more redirect loop hells.</p>
 
-<p>[1]: <a href="http://img.scotttactical.com/images/legacy/2015/09/Laravel-5.png">http://img.scotttactical.com/images/legacy/2015/09/Laravel-5.png</a></p>
-
             </div>
 
             <aside>
                 
                 <ul class="list-inline post-tags">
+                    
+                    <li>
+                        <a href="http://scotttactical.com//tags/programming" rel="tag">
+                            <i class="fa fa-tags"></i>
+                            <span itemprop="keywords">programming</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://scotttactical.com//tags/php" rel="tag">
+                            <i class="fa fa-tags"></i>
+                            <span itemprop="keywords">php</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://scotttactical.com//tags/laravel" rel="tag">
+                            <i class="fa fa-tags"></i>
+                            <span itemprop="keywords">laravel</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://scotttactical.com//tags/devops" rel="tag">
+                            <i class="fa fa-tags"></i>
+                            <span itemprop="keywords">devops</span>
+                        </a>
+                    </li>
                     
                 </ul>
 
@@ -244,6 +268,23 @@
                     
                     
                     
+                    <li><a href="http://scotttactical.com/performance-suggestions-phpunit-slowness">PHPunit Slowness Performance Suggestions</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx">Deploying Hugo the Golang CMS on DigitalOcean - Nginx</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://scotttactical.com/hugo-a-replacement-for-wordpress/">Hugo: A replacement for Wordpress</a></li>
                     
                     
                     
@@ -273,6 +314,7 @@
                     
                     
                     
+                    <li><a href="http://scotttactical.com/php-hypermedia-rest-api-wrapper/">PHP Hypermedia REST API wrapper</a></li>
                     
                     
                     
@@ -282,15 +324,7 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    <li><a href="http://scotttactical.com/to-hiphop-or-not-php-hhvm/">To HipHop or Not - PHP and HHVM</a></li>
                     
                     
                     
@@ -421,6 +455,12 @@
                     </a>
                     
                     
+                    <a href="http://scotttactical.com//tags/devops" class="list-group-item">
+                        <span class="badge">1</span>
+                        devops
+                    </a>
+                    
+                    
                     <a href="http://scotttactical.com//tags/fitness" class="list-group-item">
                         <span class="badge">1</span>
                         fitness
@@ -488,7 +528,7 @@
                     
                     
                     <a href="http://scotttactical.com//tags/laravel" class="list-group-item">
-                        <span class="badge">1</span>
+                        <span class="badge">2</span>
                         laravel
                     </a>
                     
@@ -554,13 +594,13 @@
                     
                     
                     <a href="http://scotttactical.com//tags/php" class="list-group-item">
-                        <span class="badge">2</span>
+                        <span class="badge">4</span>
                         php
                     </a>
                     
                     
                     <a href="http://scotttactical.com//tags/programming" class="list-group-item">
-                        <span class="badge">2</span>
+                        <span class="badge">4</span>
                         programming
                     </a>
                     

@@ -5,6 +5,7 @@ date: 2015-09-21
 url: /download-an-entire-site-with-wget-mac-osx/
 categories:
   - DevOps
+image: images/homebrew.jpg
 ---
 # Download the Entire Site with wget
 

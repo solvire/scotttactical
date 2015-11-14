@@ -260,6 +260,283 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
         </item>
       
     
+      
+        <item>
+          <title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</title>
+          <link>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
+          <pubDate>Wed, 16 Sep 2015 00:00:00 UTC</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
+          <description>
+
+&lt;h1 id=&#34;laravel-5-enforcing-https:03bc7a7611150669b29f3c91e572d932&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;
+
+&lt;p&gt;I&amp;rsquo;ve used a lot of frameworks. &lt;a href=&#34;http://laravel.com/&#34;&gt;Laravel is great&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;dealing-with-a-load-balancer:03bc7a7611150669b29f3c91e572d932&#34;&gt;Dealing with a load balancer&lt;/h2&gt;
+
+&lt;p&gt;Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.&lt;/p&gt;
+
+&lt;p&gt;If you do not handle the redirect properly and just look for port 443 then you will get yourself into a &lt;strong&gt;redirection loop&lt;/strong&gt;. That is annoying because if you don&amp;rsquo;t test under an SSL you will deploy to production and then have to tell you boss why you&amp;rsquo;re loopy. Amazon is kind of a pain for this.&lt;/p&gt;
+
+&lt;h2 id=&#34;aws-elb-proxy-headers:03bc7a7611150669b29f3c91e572d932&#34;&gt;AWS ELB Proxy Headers&lt;/h2&gt;
+
+&lt;p&gt;Make sure you know what the request looks like to the accepting server.&lt;/p&gt;
+
+&lt;p&gt;This header is going to be passed over:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;HTTP_X_FORWARDED_PROTO&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The problem with just looking for this and accepting your solution based on this is that header can be forged trivially. You need to make sure you are only acknowledging that header from trusted sources.&lt;/p&gt;
+
+&lt;h2 id=&#34;setting-the-redirect:03bc7a7611150669b29f3c91e572d932&#34;&gt;Setting the Redirect&lt;/h2&gt;
+
+&lt;p&gt;I went ahead and installed &lt;a href=&#34;https://github.com/fideloper/TrustedProxy&#34; title=&#34;Laravel Trusted Proxies&#34; target=&#34;_blank&#34;&gt;Laravel Trusted Proxies&lt;/a&gt; from &lt;a href=&#34;https://github.com/fideloper&#34; title=&#34;Chris Fideo&#34; target=&#34;_blank&#34;&gt;Chris Fideo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Follow his instructions. It&amp;rsquo;s pretty straight forward. Here is what my `config/trustedproxy.php` looks like.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&#39;proxies&#39; =&amp;amp;gt; [
+    &#39;172.31.0.0/16&#39;,
+],
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I knew after looking at my logs where my health checks were coming from:`ELB-HealthChecker/1.0`&lt;/p&gt;
+
+&lt;p&gt;I figured if I just allow everything in that B block that I should be okay.&lt;/p&gt;
+
+&lt;p&gt;Also set the proper header to look for.&lt;/p&gt;
+
+&lt;p&gt;NOTE: I lost a couple hours trying to figure out why it wouldn&amp;rsquo;t match. Read the docblock above it. It strips HTTP_  &lt;img src=&#34;http://scotttactical.com/wp-includes/images/smilies/frownie.png&#34; alt=&#34;:(&#34; class=&#34;wp-smiley&#34; style=&#34;height: 1em; max-height: 1em;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&#39;headers&#39; =&amp;amp;gt; [
+        \Illuminate\Http\Request::HEADER_CLIENT_IP    =&amp;amp;gt; &#39;X_FORWARDED_FOR&#39;,
+        \Illuminate\Http\Request::HEADER_CLIENT_HOST  =&amp;amp;gt; &#39;FORWARDED_HOST&#39;,
+        \Illuminate\Http\Request::HEADER_CLIENT_PROTO =&amp;amp;gt; &#39;X_FORWARDED_PROTO&#39;,
+        \Illuminate\Http\Request::HEADER_CLIENT_PORT  =&amp;amp;gt; &#39;X_FORWARDED_PORT&#39;,
+    ]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;add-to-laravel-middleware:03bc7a7611150669b29f3c91e572d932&#34;&gt;Add to Laravel Middleware&lt;/h2&gt;
+
+&lt;p&gt;I created Secure.php and added it to app/Http/Middleware&lt;/p&gt;
+
+&lt;p&gt;Thanks to the work from &lt;a href=&#34;https://gist.github.com/nblackburn/a66e8e93561e277996aa&#34; title=&#34;nblackburn&#34; target=&#34;_blank&#34;&gt;@nblackburn&lt;/a&gt;. That was highly appreciated.&lt;/p&gt;
+
+&lt;p&gt;What was weird about my environment is I was getting in a redirection loop because it would prepend `public/` on the front of my uri. I&amp;rsquo;m running multiple environments so I didn&amp;rsquo;t have the luxury of pointing my root to that directory. I had to strip that off the front.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;class Secure implements Middleware
+{
+    public function handle($request, Closure $next)
+    {
+        if (! $request-&amp;amp;gt;secure() &amp;amp;&amp;amp; app()-&amp;amp;gt;environment(&#39;production&#39;)) {
+
+            // this is a really ugly hack but it kept looping and prepnding public
+            return redirect()-&amp;amp;gt;secure(preg_replace(&#39;%/public%&#39;, &#39;&#39;, $request-&amp;amp;gt;getRequestUri()));
+        }
+
+        return $next($request);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add it to your global middleware if you want it to run for all requests.&lt;/p&gt;
+
+&lt;p&gt;Open up: app/Http/Kernel.php&lt;/p&gt;
+
+&lt;p&gt;I added&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;protected $middleware = [
+	    ...		
+		// trust the proxies from aws
+		&#39;Fideloper\Proxy\TrustProxies&#39;,
+		// then force it secure (if production)
+		&#39;LeadFerret\Http\Middleware\Secure&#39;,
+	];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now there are no more redirect loop hells.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>To HipHop or Not - PHP and HHVM</title>
+          <link>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</link>
+          <pubDate>Wed, 18 Feb 2015 00:00:00 UTC</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</guid>
+          <description>
+
+&lt;p&gt;We are discussing the plausibility of using HHVM inside this current infrastructure.&lt;/p&gt;
+
+&lt;p&gt;Our requirements are not very application server CPU intensive so it isn&amp;rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.&lt;/p&gt;
+
+&lt;h2 id=&#34;short-history:64521b042c2931bf82be49be9d2c6916&#34;&gt;Short History&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://hhvm.com/&#34; alt=&#34;HHVM&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information. On the topic of sheeple for another day. For today, we thank you Facebook. May your stock price soar to the stars.&lt;/p&gt;
+
+&lt;p&gt;I wanted to know what the differences between &lt;a href=&#34;https://en.wikipedia.org/wiki/HipHop_Virtual_Machine&#34;&gt;HHVM&lt;/a&gt; and HipHop Orig was if there was any. HPHPc was the original source to source compiler that converted to C++. There were a lot of inherent problems there and the team later decided to switch tracks and make a JIT virtual machine instead: more formally [HipHop Virtual Machine] known as HHVM. I personally like this approach much better due to the portability. At some point I&amp;rsquo;ll write about my romance with the idea of compiling in tools for &lt;a href=&#34;https://en.wikipedia.org/wiki/Aspect-oriented_programming&#34;&gt;AOP - Aspect Oriented Programming&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Interestingly enough VKontakt is coding their own translator right along side Facebook. &lt;a href=&#34;https://en.wikipedia.org/wiki/KPHP&#34;&gt;KPHP&lt;/a&gt;. I guess old international habits die slowly.&lt;/p&gt;
+
+&lt;h3 id=&#34;hack-programming-language:64521b042c2931bf82be49be9d2c6916&#34;&gt;Hack (programming language)&lt;/h3&gt;
+
+&lt;p&gt;One of the best things I think this paradigm added is the enhanced &lt;a href=&#34;https://en.wikipedia.org/wiki/Hack_%28programming_language%29&#34;&gt;Hack&lt;/a&gt; programming language. It gave PHP a static or dynamic type syntax. For those who complain about PHP&amp;rsquo;s loose typing, well here you go.&lt;/p&gt;
+
+&lt;h2 id=&#34;benefits:64521b042c2931bf82be49be9d2c6916&#34;&gt;Benefits&lt;/h2&gt;
+
+&lt;p&gt;What are the benefits to having HipHop in place?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Performance&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;That is about the only noteworthy thing I can see. Having Hack around is nice, but my guys are not going to change any time soon to use this. PHP is built to be phast and loose. Fast as in &amp;ldquo;can you have this ready today&amp;rdquo; sadly. I&amp;rsquo;d rather have things up and running fast and deal with standards at the QA/unit test layer. Working with the majority of the code being legacy negates the benefit also.&lt;/p&gt;
+
+&lt;h2 id=&#34;our-stack:64521b042c2931bf82be49be9d2c6916&#34;&gt;Our stack&lt;/h2&gt;
+
+&lt;p&gt;Right now it&amp;rsquo;s so vanilla that it is disgusting.&lt;/p&gt;
+
+&lt;p&gt;Ubuntu in AWS&lt;/p&gt;
+
+&lt;p&gt;PHP 5.5.x&lt;/p&gt;
+
+&lt;p&gt;Mysql 5.6&lt;/p&gt;
+
+&lt;p&gt;Home strung framework&lt;/p&gt;
+
+&lt;p&gt;Laravel integrated&lt;/p&gt;
+
+&lt;p&gt;Memcached&lt;/p&gt;
+
+&lt;p&gt;Loaded Modules:&lt;/p&gt;
+
+&lt;p&gt;Core&lt;/p&gt;
+
+&lt;p&gt;date&lt;/p&gt;
+
+&lt;p&gt;ereg&lt;/p&gt;
+
+&lt;p&gt;libxml&lt;/p&gt;
+
+&lt;p&gt;openssl&lt;/p&gt;
+
+&lt;p&gt;pcre&lt;/p&gt;
+
+&lt;p&gt;zlib&lt;/p&gt;
+
+&lt;p&gt;bcmath&lt;/p&gt;
+
+&lt;p&gt;bz2&lt;/p&gt;
+
+&lt;p&gt;calendar&lt;/p&gt;
+
+&lt;p&gt;ctype&lt;/p&gt;
+
+&lt;p&gt;dba&lt;/p&gt;
+
+&lt;p&gt;dom&lt;/p&gt;
+
+&lt;p&gt;hash&lt;/p&gt;
+
+&lt;p&gt;fileinfo&lt;/p&gt;
+
+&lt;p&gt;filter&lt;/p&gt;
+
+&lt;p&gt;ftp&lt;/p&gt;
+
+&lt;p&gt;gettext&lt;/p&gt;
+
+&lt;p&gt;SPL&lt;/p&gt;
+
+&lt;p&gt;iconv&lt;/p&gt;
+
+&lt;p&gt;mbstring&lt;/p&gt;
+
+&lt;p&gt;pcntl&lt;/p&gt;
+
+&lt;p&gt;session&lt;/p&gt;
+
+&lt;p&gt;posix&lt;/p&gt;
+
+&lt;p&gt;Reflection&lt;/p&gt;
+
+&lt;p&gt;standard&lt;/p&gt;
+
+&lt;p&gt;shmop&lt;/p&gt;
+
+&lt;p&gt;SimpleXML&lt;/p&gt;
+
+&lt;p&gt;soap&lt;/p&gt;
+
+&lt;p&gt;sockets&lt;/p&gt;
+
+&lt;p&gt;Phar&lt;/p&gt;
+
+&lt;p&gt;exif&lt;/p&gt;
+
+&lt;p&gt;sysvmsg&lt;/p&gt;
+
+&lt;p&gt;sysvsem&lt;/p&gt;
+
+&lt;p&gt;sysvshm&lt;/p&gt;
+
+&lt;p&gt;tokenizer&lt;/p&gt;
+
+&lt;p&gt;wddx&lt;/p&gt;
+
+&lt;p&gt;xml&lt;/p&gt;
+
+&lt;p&gt;xmlreader&lt;/p&gt;
+
+&lt;p&gt;xmlwriter&lt;/p&gt;
+
+&lt;p&gt;zip&lt;/p&gt;
+
+&lt;p&gt;PDO&lt;/p&gt;
+
+&lt;p&gt;apcu&lt;/p&gt;
+
+&lt;p&gt;curl&lt;/p&gt;
+
+&lt;p&gt;gd&lt;/p&gt;
+
+&lt;p&gt;intl&lt;/p&gt;
+
+&lt;p&gt;json&lt;/p&gt;
+
+&lt;p&gt;mcrypt&lt;/p&gt;
+
+&lt;p&gt;memcached&lt;/p&gt;
+
+&lt;p&gt;mysql&lt;/p&gt;
+
+&lt;p&gt;mysqli&lt;/p&gt;
+
+&lt;p&gt;pdo_mysql&lt;/p&gt;
+
+&lt;p&gt;readline&lt;/p&gt;
+
+&lt;p&gt;redis&lt;/p&gt;
+
+&lt;p&gt;xmlrpc&lt;/p&gt;
+
+&lt;p&gt;mhash&lt;/p&gt;
+
+&lt;p&gt;apc&lt;/p&gt;
+
+&lt;p&gt;ZendOPcache&lt;/p&gt;
+
+&lt;h2 id=&#34;next-steps:64521b042c2931bf82be49be9d2c6916&#34;&gt;Next Steps&lt;/h2&gt;
+
+&lt;p&gt;I will be doing some performance tests coming up IF we are able to get this into play.&lt;/p&gt;
+
+&lt;p&gt;My plan is to run load test against our normal branch and then&lt;/p&gt;
+</description>
+        </item>
+      
+    
 
   </channel>
 </rss>

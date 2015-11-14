@@ -4,6 +4,7 @@ author: SScott
 date: 2014-08-22
 url: /gla-69-k5-bumper-start/
 tags: [ General Lee-Anne, 69 Blazer, Auto ]
+image: images/gla.jpg
 ---
 Well, we got the truck running enough that I can drive it around.  It stops. We even locked it up and watched the black lines form up behind the tires. Not bad for 35's.
 

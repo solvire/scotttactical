@@ -810,11 +810,9 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;For more intelligent designs. You aren&amp;rsquo;t the consumer of the future. Your progeny programs are - the ones your users are building the data for right now. Machines aren&amp;rsquo;t emotional, inquisitive, or fickle. They want to hit every API they can find and they will naturally favor one that is easy to consume. And for that they will reward their hosts. Bad API design is holding back progress and that angers your &lt;a href=&#34;https://developers.google.com/discovery/?hl=en&#34; title=&#34;Google API Discovery&#34; target=&#34;_blank&#34;&gt;future robot overlords&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;[&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/developers-300x101.png&#34; alt=&#34;Google Developers&#34; width=&#34;300&#34; height=&#34;101&#34; class=&#34;alignnone size-medium wp-image-207&#34; /&gt;][3]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/developers.png&#34;&gt;&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/developers-300x101.png&#34; alt=&#34;Google Developers&#34; width=&#34;300&#34; height=&#34;101&#34; class=&#34;alignnone size-medium wp-image-207&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Fin.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;[3]: &lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/developers.png&#34;&gt;http://img.scotttactical.com/images/legacy/2015/09/developers.png&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
       
@@ -830,9 +828,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;laravel-5-enforcing-https:03bc7a7611150669b29f3c91e572d932&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;
 
-&lt;p&gt;[&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/Laravel-5-300x180.png&#34; alt=&#34;Laravel 5&#34; width=&#34;300&#34; height=&#34;180&#34; class=&#34;alignnone size-medium wp-image-195&#34; /&gt;][1]&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve used a lot of frameworks. &lt;a href=&#34;http://laravel.com/&#34; title=&#34;Laravel 5&#34; target=&#34;_blank&#34;&gt;Laravel&lt;/a&gt; is great.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve used a lot of frameworks. &lt;a href=&#34;http://laravel.com/&#34;&gt;Laravel is great&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;dealing-with-a-load-balancer:03bc7a7611150669b29f3c91e572d932&#34;&gt;Dealing with a load balancer&lt;/h2&gt;
 
@@ -890,11 +886,11 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
     public function handle($request, Closure $next)
     {
         if (! $request-&amp;amp;gt;secure() &amp;amp;&amp;amp; app()-&amp;amp;gt;environment(&#39;production&#39;)) {
-            
-            // this is a really ugly hack but it kept looping and prepnding public 
+
+            // this is a really ugly hack but it kept looping and prepnding public
             return redirect()-&amp;amp;gt;secure(preg_replace(&#39;%/public%&#39;, &#39;&#39;, $request-&amp;amp;gt;getRequestUri()));
         }
-        
+
         return $next($request);
     }
 }
@@ -908,7 +904,7 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;protected $middleware = [
 	    ...		
-		// trust the proxies from aws 
+		// trust the proxies from aws
 		&#39;Fideloper\Proxy\TrustProxies&#39;,
 		// then force it secure (if production)
 		&#39;LeadFerret\Http\Middleware\Secure&#39;,
@@ -916,8 +912,6 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Now there are no more redirect loop hells.&lt;/p&gt;
-
-&lt;p&gt;[1]: &lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/Laravel-5.png&#34;&gt;http://img.scotttactical.com/images/legacy/2015/09/Laravel-5.png&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
       
@@ -1110,17 +1104,17 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;short-history:64521b042c2931bf82be49be9d2c6916&#34;&gt;Short History&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://hhvm.com/wp-content/themes/hhvm/hhvm.png&#34; alt=&#34;HHVM&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://hhvm.com/&#34; alt=&#34;HHVM&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information. On the topic of sheeple for another day. For today, we thank you Facebook. May your stock price soar to the stars.&lt;/p&gt;
 
-&lt;p&gt;I wanted to know what the differences between &lt;a href=&#34;http://hhvm.com/&#34; title=&#34;HHVM&#34;&gt;HHVM&lt;/a&gt; and HipHop Orig was if there was any. HPHPc was the original source to source compiler that converted to C++. There were a lot of inherent problems there and the team later decided to switch tracks and make a JIT virtual machine instead: more formally &lt;a href=&#34;https://en.wikipedia.org/wiki/HipHop_Virtual_Machine&#34; title=&#34;HipHop Virtual Machine&#34;&gt;HipHop Virtual Machine&lt;/a&gt; known as HHVM. I personally like this approach much better due to the portability. At some point I&amp;rsquo;ll write about my romance with the idea of compiling in tools for &lt;a href=&#34;https://en.wikipedia.org/wiki/Aspect-oriented_programming&#34; title=&#34;Aspect Oriented Programming &#34;&gt;AOP&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I wanted to know what the differences between &lt;a href=&#34;https://en.wikipedia.org/wiki/HipHop_Virtual_Machine&#34;&gt;HHVM&lt;/a&gt; and HipHop Orig was if there was any. HPHPc was the original source to source compiler that converted to C++. There were a lot of inherent problems there and the team later decided to switch tracks and make a JIT virtual machine instead: more formally [HipHop Virtual Machine] known as HHVM. I personally like this approach much better due to the portability. At some point I&amp;rsquo;ll write about my romance with the idea of compiling in tools for &lt;a href=&#34;https://en.wikipedia.org/wiki/Aspect-oriented_programming&#34;&gt;AOP - Aspect Oriented Programming&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Interestingly enough VKontakt is coding their own translator right along side Facebook. &lt;a href=&#34;https://en.wikipedia.org/wiki/KPHP&#34; title=&#34;KPHP&#34;&gt;KPHP&lt;/a&gt;. I guess old international habits die slowly.&lt;/p&gt;
+&lt;p&gt;Interestingly enough VKontakt is coding their own translator right along side Facebook. &lt;a href=&#34;https://en.wikipedia.org/wiki/KPHP&#34;&gt;KPHP&lt;/a&gt;. I guess old international habits die slowly.&lt;/p&gt;
 
 &lt;h3 id=&#34;hack-programming-language:64521b042c2931bf82be49be9d2c6916&#34;&gt;Hack (programming language)&lt;/h3&gt;
 
-&lt;p&gt;One of the best things I think this paradigm added is the enhanced &lt;a href=&#34;https://en.wikipedia.org/wiki/Hack_%28programming_language%29&#34; title=&#34;Hack&#34;&gt;Hack&lt;/a&gt; programming language. It gave PHP a static or dynamic type syntax. For those who complain about PHP&amp;rsquo;s loose typing, well here you go.&lt;/p&gt;
+&lt;p&gt;One of the best things I think this paradigm added is the enhanced &lt;a href=&#34;https://en.wikipedia.org/wiki/Hack_%28programming_language%29&#34;&gt;Hack&lt;/a&gt; programming language. It gave PHP a static or dynamic type syntax. For those who complain about PHP&amp;rsquo;s loose typing, well here you go.&lt;/p&gt;
 
 &lt;h2 id=&#34;benefits:64521b042c2931bf82be49be9d2c6916&#34;&gt;Benefits&lt;/h2&gt;
 
@@ -1358,41 +1352,41 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
     &lt;th&gt;
       1
     &lt;/th&gt;
-    
+
     &lt;th&gt;
       2
     &lt;/th&gt;
-    
+
     &lt;th&gt;
       3
     &lt;/th&gt;
-    
+
     &lt;th&gt;
       4
     &lt;/th&gt;
-    
+
     &lt;th&gt;
       R
     &lt;/th&gt;
   &lt;/tr&gt;
-  
+
   &lt;tr&gt;
     &lt;td&gt;
       2.48
     &lt;/td&gt;
-    
+
     &lt;td&gt;
       1.48
     &lt;/td&gt;
-    
+
     &lt;td&gt;
       1.00
     &lt;/td&gt;
-    
+
     &lt;td&gt;
       0.75
     &lt;/td&gt;
-    
+
     &lt;td&gt;
       2.07
     &lt;/td&gt;
@@ -1762,7 +1756,6 @@ The knuckles were removed and we replaced all the components.  Yes we stripped,
     &lt;/div&gt;
 
 &lt;/figure&gt;
-    
 
 &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
     &lt;a href=&#34;http://img.scotttactical.com/images/legacy/generalleeanne/IMG_0104.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;1200x800&#34;&gt;

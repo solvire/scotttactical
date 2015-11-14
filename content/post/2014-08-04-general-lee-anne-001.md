@@ -4,6 +4,7 @@ author: SScott
 date: 2014-08-04
 url: /general-lee-anne-001/
 tags: [ General Lee-Anne, 69 Blazer, Auto ]
+image: images/gla.jpg
 ---
 Here we go.
 
@@ -15,4 +16,3 @@ And the adventure begins.  I'm using this truck as the first in my branded line
 
 
 {{< figure src="http://img.scotttactical.com/images/legacy/2014/08/IMG_0100.jpg" title="Hugger Orange 1969 K5 Blazer" >}}
-
