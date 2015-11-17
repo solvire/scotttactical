@@ -6,6 +6,7 @@ categories:
   - Software
 tags: [go, golang, hugo, wordpress, blogging, software, programming]
 image: images/hugo-logo.png
+comments: true
 ---
 
 

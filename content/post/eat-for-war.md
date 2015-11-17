@@ -4,6 +4,7 @@ draft: false
 title: Eat For War
 tags: [ nutrition, fitness, philosophy ]
 image: images/gladiator-eating.jpg
+comments: true
 ---
 
 

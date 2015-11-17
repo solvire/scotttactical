@@ -11,7 +11,7 @@ Params:
   Twitter: "scott_tactical"
   Github: "solvire"
   ShowRelatedPost: True
-  Disqus: "unresolved"
+  Disqus: "scotttactical"
   SyntaxHighlightTheme: "github.min.css"
   GalleryBaseUrl: "http://img.scotttactical.com/images/gallery/"
 

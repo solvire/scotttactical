@@ -5,6 +5,7 @@ title: Why Conservatism Fails
 url: why-conservatism-fails
 image: images/Thanksgiving-Rockwell.jpg
 tags: [ philosophy, conservatism ]
+comments: true
 ---
 
 This essay is not an attack on the people who claim membership to a philosophical outlook, but an exposition on the inherent difficulties which exist in maintaining traditional systems.
