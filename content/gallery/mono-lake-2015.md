@@ -5,7 +5,7 @@ tags: [ California, photography ]
 galleryPath: mono-lake-2015/
 url: /mono-lake-2015/
 featuredImage: "IMG_6558.jpg"
-galleryImages: [ IMG_6535.jpg, IMG_6537.jpg, IMG_6539.jpg, IMG_6540.jpg, IMG_6541.jpg, IMG_6544.jpg, IMG_6546.jpg, IMG_6552.jpg, IMG_6555.jpg, IMG_6558.jpg, IMG_6560.jpg, IMG_6568-2.jpg, IMG_6568.jpg, IMG_6569.jpg, IMG_6580.jpg, IMG_6581.jpg, IMG_6590.jpg, IMG_6591.jpg, IMG_6592.jpg, IMG_6593.jpg, IMG_6594.jpg, IMG_6596.jpg, IMG_6597.jpg, IMG_6601.jpg, IMG_6603.jpg, IMG_6605.jpg, IMG_6609.jpg, IMG_6619.jpg, IMG_6624.jpg, IMG_6638.jpg, IMG_6639.jpg, IMG_6641.jpg, IMG_6643.jpg, IMG_6644.jpg, IMG_6649.jpg, IMG_6658.jpg, IMG_6659.jpg, IMG_6663.jpg, IMG_6671.jpg, IMG_6672.jpg, IMG_6675.jpg, IMG_6678.jpg, IMG_6685.jpg, IMG_6691.jpg, IMG_6692.jpg, IMG_6694.jpg, IMG_6697.jpg, IMG_6698.jpg, IMG_6703.jpg, IMG_6704.jpg, IMG_6708.jpg ]
+galleryImages: [ IMG_6535.jpg, IMG_6537.jpg, IMG_6539.jpg, IMG_6540.jpg, IMG_6541.jpg, IMG_6544.jpg, IMG_6546.jpg, IMG_6552.jpg, IMG_6555.jpg, IMG_6558-Edit.jpg, IMG_6560.jpg, IMG_6568-Edit.jpg, IMG_6568.jpg, IMG_6569.jpg, IMG_6580.jpg, IMG_6581.jpg, IMG_6590.jpg, IMG_6591-Edit-Edit.jpg, IMG_6592.jpg, IMG_6593.jpg, IMG_6594.jpg, IMG_6596.jpg, IMG_6597-Edit.jpg, IMG_6601.jpg, IMG_6603.jpg, IMG_6605.jpg, IMG_6609.jpg, IMG_6619.jpg, IMG_6624.jpg, IMG_6638.jpg, IMG_6639.jpg, IMG_6641.jpg, IMG_6643.jpg, IMG_6644.jpg, IMG_6649.jpg, IMG_6658.jpg, IMG_6659.jpg, IMG_6663.jpg, IMG_6671.jpg, IMG_6672.jpg, IMG_6675.jpg, IMG_6678.jpg, IMG_6685.jpg, IMG_6691.jpg, IMG_6692.jpg, IMG_6694.jpg, IMG_6697.jpg, IMG_6698.jpg, IMG_6703.jpg, IMG_6704.jpg, IMG_6708.jpg ]
 ---
 
 # Mono Lake
