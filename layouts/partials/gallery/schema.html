@@ -36,7 +36,19 @@
         <figcaption itemprop="caption description">{{ $jsonData.IPTC.Caption }}</figcaption>
           <span itemprop="author">{{ $jsonData.IFD0.Artist }}</span>
           <span itemprop="copyrightHolder creator">{{ $jsonData.IFD0.Copyright }}</span>
-          <span itemprop="contentLocation">{{ $jsonData.IPTC.City }}, {{ $jsonData.IPTC.State }}</span>
+          <!-- location -->
+          <div itemprop="contentLocation" itemscope itemtype="http://schema.org/Place">
+            <span itemprop="name">{{ if isset $jsonData.IPTC "City" }}{{ $jsonData.IPTC.City }}, {{ end }}{{ $jsonData.IPTC.State }}</span>
+            {{ if and ($jsonData.Composite.GPSLatitude)  ($jsonData.Composite.GPSLongitude) }}
+            <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+              Latitude: {{ $jsonData.Composite.GPSLatitude }}
+              Longitude: {{ $jsonData.Composite.GPSLongitude }}
+              <meta itemprop="latitude" content="{{ $jsonData.Composite.Latitude }}" />
+              <meta itemprop="longitude" content="{{ $jsonData.Composite.Longitude }}" />
+            </div>
+            {{ end }}
+          </div>
+          <!-- /location -->
           <span itemprop="keywords">{{ if isset $jsonData.IPTC "Keywords" }}{{ delimit $jsonData.IPTC.Keywords ", " }}{{ end }}</span>
           <meta itemprop="datePublished" content="{{ $.Date.Format $.Site.Params.DateForm }}">
           <span itemprop="dateCreated">{{ replace $jsonData.IPTC.DateCreated ":" "-" }}</span>
@@ -50,19 +62,6 @@
         {{ end }}
         <!-- /exif -->
 
-        <!-- location -->
-        <div itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">{{ if isset $jsonData.IPTC "City" }}{{ $jsonData.IPTC.City }}, {{ end }}{{ $jsonData.IPTC.State }}</span>
-          {{ if and ($jsonData.Composite.GPSLatitude)  ($jsonData.Composite.GPSLongitude) }}
-          <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
-            Latitude: {{ $jsonData.Composite.GPSLatitude }}
-            Longitude: {{ $jsonData.Composite.GPSLongitude }}
-            <meta itemprop="latitude" content="{{ $jsonData.Composite.Latitude }}" />
-            <meta itemprop="longitude" content="{{ $jsonData.Composite.Longitude }}" />
-          </div>
-          {{ end }}
-        </div>
-        <!-- /location -->
 
   </figure>
   {{ end }}
