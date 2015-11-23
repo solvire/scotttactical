@@ -16,7 +16,7 @@
 .my-gallery figcaption {
   display: none;
 }
-.my-gallery div, span {
+.my-gallery div, .my-gallery span {
   display: none;
 }
 </style>
@@ -49,13 +49,13 @@
         </div>
         {{ end }}
         <!-- /exif -->
-        
+
         <!-- location -->
         <div itemscope itemtype="http://schema.org/Place">
           <span itemprop="name">{{ if isset $jsonData.IPTC "City" }}{{ $jsonData.IPTC.City }}, {{ end }}{{ $jsonData.IPTC.State }}</span>
           {{ if and ($jsonData.Composite.GPSLatitude)  ($jsonData.Composite.GPSLongitude) }}
           <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
-            Latitude: {{ $jsonData.Composite.GPSLatitude }} 
+            Latitude: {{ $jsonData.Composite.GPSLatitude }}
             Longitude: {{ $jsonData.Composite.GPSLongitude }}
             <meta itemprop="latitude" content="{{ $jsonData.Composite.Latitude }}" />
             <meta itemprop="longitude" content="{{ $jsonData.Composite.Longitude }}" />
@@ -66,5 +66,5 @@
 
   </figure>
   {{ end }}
-  
+
 </div>
