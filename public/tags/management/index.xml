@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scott Tactical </title>
+    <link>http://localhost:1313/tags/management/</link>
+    <language>en-us</language>
+    <author>Scott Tactical</author>
+    <rights>(C) 2015</rights>
+    <updated>2015-12-01 09:53:52 -0800 PST</updated>
+
+    
+      
+        <item>
+          <title>Management for Quality Software Development Managers</title>
+          <link>http://localhost:1313/management-for-quality-software-development/</link>
+          <pubDate>Tue, 01 Dec 2015 09:53:52 PST</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://localhost:1313/management-for-quality-software-development/</guid>
+          <description>
+
+&lt;p&gt;This started as a list of notes for my boss on how I see the best way to manage technical professionals. I am trying to provide non-technical managers with the resources to direct technical teams in a way that will produce quality software and keep the engineering staff engaged and moving.&lt;/p&gt;
+
+&lt;p&gt;How do you build software that provides value to both clients, users, owners and engineers for the years to come?&lt;/p&gt;
+
+&lt;p&gt;This also assumes a state of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Knowing how to hire&lt;/li&gt;
+&lt;li&gt;Having some resources - not 8 figure funding but enough to pay market rate&lt;/li&gt;
+&lt;li&gt;Having a legitimate business model - I suppose it would work for a pr0n spammer too though&lt;/li&gt;
+&lt;li&gt;Embracing a genuine desire for quality, progress, and community&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;tl-dr:46b69cc651b36917739e2a1f57a8d295&#34;&gt;TL;DR:&lt;/h1&gt;
+
+&lt;p&gt;This document contains &amp;gt; 2k words.&lt;/p&gt;
+
+&lt;p&gt;See the terse version:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/try-not-2-fuck-up-ur-engineering/&#34;&gt;Try Not 2 Fuck Up Ur Engineering&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;software-shelf-life:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Software Shelf Life&lt;/h1&gt;
+
+&lt;p&gt;All software has a shelf life. Some software must last for a very long time whereas some software is disposable. Software longevity is derived by the leadership from the top of the organization and if software applications pass their usefulness it is due to the guidance of the leadership. It should not be assumed that long lasting software is the “best” type of software for every need and I will briefly attempt to give some very high level tools I use to determine the case by a set of criteria.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;We have achieved infinite software longevity!!! - NOT
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/mcd.gif&#34; alt=&#34;We Have Infinite Longevity! - not&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;shelf-life-definition:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Shelf Life Definition&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.popularmechanics.com/space/a17991/voyager-1-voyager-2-retiring-engineer/&#34;&gt;Nasa is looking for&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Fortran&#34;&gt;Fortran&lt;/a&gt; engineers to interact with the Voyager space probe. This is one of those exceedingly rare cases when the software outlasts the engineers. Also, I will throw up if anyone throws out the obligatory trope: “they do not build &amp;lsquo;um like they used to”.&lt;/p&gt;
+
+&lt;p&gt;I like to define shelf life in the following way. Software expiration has passed when both of the following criteria have been met.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It no longer produces enough value to support the maintenance of the code&lt;/li&gt;
+&lt;li&gt;The proposed value from software improvements is less than the cost of the improvements&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Intelligent managers can determine the above criteria by the numbers and without much confusion. Businesses who are in a state of going out of business will come upon these decision by running out of resources and will be forced to shut down projects or archive code.&lt;/p&gt;
+
+&lt;p&gt;It should be noted that time is a very important factor to consider in the calculations. It might be affordable financially to have cheap labor work on fixing code for extended months or years, but sometimes opportunity loss has to be calculated. Throwing resources at bad decisions is a recipe for losing. This is a relative of the sunk-cost fallacy.&lt;/p&gt;
+
+&lt;h2 id=&#34;predict-the-future:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Predict The Future&lt;/h2&gt;
+
+&lt;p&gt;This is a bit of art, but applying a timeline to the life of an application is hard. Not because one cannot estimate a project life, but because most managers are not truthful with themselves on the potential of their project. They assume that they can shoestring ultra-successful software that will last forever and if by some rare event bugs show up, well, they can be fixed later when the money is pouring in.&lt;/p&gt;
+
+&lt;p&gt;The “fix it later” mentality is the most common error I encounter. Considering that the majority of my career has been spent cleaning up bad decisions I am qualified to attest to this. Normally when in the “fix it” stage, business principles have lost their original love of the project and are looking for something else to work on. They are probably planning their exit strategy or engaging a new mistress.&lt;/p&gt;
+
+&lt;p&gt;It is not reasonable to say that a project is going to be highly successful and at the same time treating the project like it will only last 6 months. What I mean by this is the software lifespan is implied at six months or less if the management implements development principles that guarantee short-lived software.&lt;/p&gt;
+
+&lt;p&gt;Sometimes disposable software is appropriate. If you only need to scrape a website once then just write a quick and dirty script and then archive it. It is worth noting here that having an intuitive and organized archiving procedure for scripts will add a lot of value by turning a code trash pile into a tool chest.&lt;/p&gt;
+
+&lt;h2 id=&#34;plan-for-the-future:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Plan For The Future&lt;/h2&gt;
+
+&lt;p&gt;We do not really know what the future holds for us, but we should plan for it. One main reason we know about the champion societies of the past and can learn from them is they planned for future peoples to read their story. Monks and librarians have toiled meticulously in the storage and organization of these. This is in contrast to those “barbarian” societies that languish far behind and suffer the problems of a chaotic and backward people.&lt;/p&gt;
+
+&lt;p&gt;A manager can simply ask “where is this script stored and why?”. If it is only stored locally on someone&amp;rsquo;s machine: fail++. The answer to this will show if the coder cares about anything past the initial writing of the script. If there is documentation on the scripts linked from the organized repository then win. Generally that level of control can only come from an experienced technology leader.&lt;/p&gt;
+
+&lt;p&gt;I cannot quantify precisely but disorganized file storage and a lack of repository protocols accounts for a large portion of “code sin” and will absolutely contribute to the weak ROI in the future. It is a truism to say that most of the coding problems have been solved before and that at this point the coders are just building slightly on top of those before them.&lt;/p&gt;
+
+&lt;h1 id=&#34;bad-code-costs-more:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Bad Code Costs More&lt;/h1&gt;
+
+&lt;p&gt;Please see the below diagram. You can have any two of the following scenarios.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/good-fast-cheap-venn-diagram.jpg&#34; alt=&#34;Good Fast Cheap - Pick 2 - Venn Diagram&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There is no fix-it-later scenario.&lt;/li&gt;
+&lt;li&gt;There is no point where you are just chillin&amp;rsquo; counting yo monies while letting engineers clean code sin&lt;/li&gt;
+&lt;li&gt;There is no pattern that fixes an anti-pattern&lt;/li&gt;
+&lt;li&gt;There is no way to pause the businesses for your migration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;what-is-bad-code:46b69cc651b36917739e2a1f57a8d295&#34;&gt;What is Bad Code&lt;/h2&gt;
+
+&lt;p&gt;This is a hard one to explain. Many things can contribute to bad code.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/milton.jpg&#34; alt=&#34;Milton Office Space&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;the-why-of-bad-code:46b69cc651b36917739e2a1f57a8d295&#34;&gt;The “why” of bad code.&lt;/h3&gt;
+
+&lt;p&gt;Sometimes it is because a requirement is placed on the engineering team that pushes them to deliver something sooner than their estimations. Programmers are generally a timid and self-disparaging lot so they tend to over promise. They are afraid to tell business that things cannot be accomplished so they cut corners. All those combined is a recipe for faults and bugs.&lt;/p&gt;
+
+&lt;p&gt;Sometimes coders are lazy. You can spot those too. They do not really want to be coding or they do not like the job they are doing. On top of that business is probably pushing for them to move faster. What is the motivation not to stuff the sin under the rug.&lt;/p&gt;
+
+&lt;p&gt;Sometimes coders are just not any good. You hired them so now it is a management issue and the only way to keep bad code from getting into the repository is to have peer reviews and pull requests. That takes quite a bit of time so again you have not saved any money with your outsourced cheap stuff.&lt;/p&gt;
+
+&lt;p&gt;I will go into this topic in more detail in another article.&lt;/p&gt;
+
+&lt;h2 id=&#34;myth-of-the-parallel-rewrite:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Myth of the Parallel Rewrite&lt;/h2&gt;
+
+&lt;p&gt;It has been a common theme in my career to hear business folks tell us that they are going to refactor code while at the same time continuing development or maintaining the current code base while also not contributing more human or financial resources to the equation. And all of this will be done in 1/10th the time that the original code base was developed.&lt;/p&gt;
+
+&lt;p&gt;To paraphrase Presidente Macho Camacho&amp;rsquo;s State of the Union:&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/sGUNPMPrxvA&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;software-development-lifecycle:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Software Development Lifecycle&lt;/h1&gt;
+
+&lt;p&gt;A reasonable software lifecycle is imperative to delivering quality software. The terms of the lifecycle are entirely determined by the needs of the business, but doing away with an organized lifecycle is a recipe for failure. Maybe a business needs to fail to encourage the evolutionary aspect of the free market. Failure is not so beneficial though if no one learns from the mistake.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    &lt;a href=&#34;http://nvie.com/posts/a-successful-git-branching-model/&#34;&gt;
+        &lt;img src=&#34;http://localhost:1313/images/git-model.png&#34; /&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Git Model via Vincent Driessen&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;politics-of-the-lifecycle:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Politics of The Lifecycle&lt;/h2&gt;
+
+&lt;p&gt;I intend to write at more length about the politics behind the product lifecycle. At this time I will just leave the note that the deployment schedule reflects software critical value. Requesting a development team to constantly deploy denotes a lack of care regarding software quality and stability. There is no policy for a daily deployment to Curiosity rover on Mars and if the previous glitches are an indicator we can assume that even &lt;a href=&#34;http://www.space.com/23553-mars-rover-curiosity-software-glitch.html&#34;&gt;NASA has a high bug rate&lt;/a&gt; when dealing with rapid product deployments. Critical software needs a settling time.&lt;/p&gt;
+
+&lt;h1 id=&#34;optimal-relationships:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Optimal Relationships&lt;/h1&gt;
+
+&lt;p&gt;What is a development team without a solid lesson in &lt;a href=&#34;https://michaelochurch.wordpress.com/2014/12/&#34;&gt;CS 666&lt;/a&gt;. In such a petty manner, decent engineers will offset very good engineers to find their ways into the Herman/Miller of power. And given what we already know about politics + geekness; it is easy to see that the worst of a Klingon Game of Thrones will play out.&lt;/p&gt;
+
+&lt;p&gt;It is imperative for leaders to set managers in place who will put the team first instead of their careers. That kind of leadership rarely exists outside of sports and the military hence why I am well versed in tribal coalescence.&lt;/p&gt;
+
+&lt;p&gt;How can you spot a problem? It is beyond the scope of this article to provide a team-building dissertation but I will append a few items here that I look for.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Does the team easily share code&lt;/li&gt;
+&lt;li&gt;Do they internally set group functions (meetings/lunches/after-hours) – can also be dangerous&lt;/li&gt;
+&lt;li&gt;Can they tell you what others are working on&lt;/li&gt;
+&lt;li&gt;Are there a lot of complaints about coworkers&lt;/li&gt;
+&lt;li&gt;Ask them who the best employees are&lt;/li&gt;
+&lt;li&gt;Are there provisional methods for communicating concerns up the chain of command&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;executive-leadership:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Executive Leadership&lt;/h1&gt;
+
+&lt;p&gt;Bloated and ugly products start at the top and only the resources for good engineering begin there.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/jobs.jpg&#34; alt=&#34;Steve Jobs&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Even Steve Jobs got booted.&lt;/p&gt;
+
+&lt;p&gt;If the leadership is only concerned with making quick cash then the product quality is probably going to be garbage. If they are only in it for the money why would they care about the product. If they are in it for ego then the product will probably look like a cartoon.&lt;/p&gt;
+
+&lt;p&gt;Personally I love making things and my personal image comes with the work I do. From building cars to writing quality code, I try to create things that are valuable and last beyond my time.&lt;/p&gt;
+
+&lt;p&gt;Good leaders should just plant the idea, find the people that want to complete it and stand out of the way and watch the numbers. Sorry chief, if you want to be creative you gotta give up the title and join us heroes in the trenches. The three ways business leaders can add value is with numbers, numbers, numbers.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-business-requirement:46b69cc651b36917739e2a1f57a8d295&#34;&gt;The Business Requirement&lt;/h2&gt;
+
+&lt;p&gt;Write a business requirement that reflects specific details about a problem that the business is solving based on market research numbers. The problem must be defined with clear terms and with enough details so that anyone who is not familiar with the product can figure out how they are benefitting from the change. The product managers should be used to simply translating business requirements only so much as that they make sense to everyone involved. Engineers should be able to express the problem back to stakeholders in terms that the customer can understand.&lt;/p&gt;
+
+&lt;h2 id=&#34;feature-requests-r-bad:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Feature Requests R Bad&lt;/h2&gt;
+
+&lt;p&gt;I know you really want to. You think you know UI design and are well versed in using a browser. In reality you probably suck at engineering/UI/art though. If you are looking at a widget on another site and trying to “innovate” a feature into your product but lack any sort of market research data for that specific functionality then you can count yourself among most managers. It will probably dictate poor code and make employees short sighted and unhappy. Good luck hoss.&lt;/p&gt;
+
+&lt;p&gt;See previous paragraph sentence #1.&lt;/p&gt;
+
+&lt;h2 id=&#34;feature-driven-cycles-suck:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Feature-Driven Cycles Suck&lt;/h2&gt;
+
+&lt;p&gt;“When is the report download page going to be done?”&lt;/p&gt;
+
+&lt;p&gt;Not by the definition in wiki, but defined as the environment by which business determines short term goals in reference to features. Referencing a small block of public-facing functionality without any understanding of the iceberg underneath it does no service to the longevity of the code or the team and shows a lack of technical savvy. Savvy?&lt;/p&gt;
+
+&lt;p&gt;While the most common form of product life cycles in my experience I find it to be the least beneficial to morale and code quality. Of course every place I have worked has been “agile” really it was just agile in name and then when business wanted something they shoved a feature request at us asking for a button that does X or a report than shows better numbers on an always increasing trend.&lt;/p&gt;
+
+&lt;h2 id=&#34;business-vision:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Business Vision&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/clockwork-orange.jpg&#34; alt=&#34;Clockwork Orange&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Set a clear vision.&lt;/li&gt;
+&lt;li&gt;Make the vision both short and long term.&lt;/li&gt;
+&lt;li&gt;Do not pivot.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you say that the market has shown people moving toward X so you are going to help the company get there then actually do that. And if six months down the road you pivot and say that product Y is the new focus and that the previous work towards X is halted: well, then you loose leader cred. The market does not change every 6 months. You probably just listened to a pitch guy smooch his way onto your planning team and shine up the buzzword array of glory.&lt;/p&gt;
+
+&lt;h2 id=&#34;employee-goals:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Employee Goals&lt;/h2&gt;
+
+&lt;p&gt;Consider the employees goals in your vision. If you do not care about the employees&amp;rsquo; goals then they might be setting their own underneath you. We are not all building rockets or curing cancer. Have an idea of what motivates people. When you know your employees then you know how to help them. I tend to define the distinction between leaders and managers as those who take responsibility for those they lead vs those who who only care about pleasing their managers.&lt;/p&gt;
+
+&lt;p&gt;Make an employee goal the production of a quality product. Even if someone is not building rockets they can still have pride in something. If they are building crap however no one wants to tell their family about it.&lt;/p&gt;
+
+&lt;h1 id=&#34;hire-the-right-people:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Hire the Right People&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;Hire people smarter than you and get out of their way. - Multiple References
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I have written a little bit on the aspects of hiring technology employees. This is extremely important. You have not studied and worked 20 years in the engineering field so there is no way to teach you how to think like us. That is a separate skill. Just because you can drive your car and change the oil does not mean you can engineer a better motor.&lt;/p&gt;
+
+&lt;h1 id=&#34;test-for-the-love-of-all-that-is-sacred-test:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Test - For the Love of All That is Sacred, Test&lt;/h1&gt;
+
+&lt;p&gt;If you do not have tests your software probably sucks. Or maybe it just works fine and you do not realize that it sucks. Either way it is a nightmare.&lt;/p&gt;
+
+&lt;h2 id=&#34;tests-indemnify-engineers:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Tests Indemnify Engineers&lt;/h2&gt;
+
+&lt;p&gt;Engineers who have a broad and covering set of tests can enjoy the weekend knowing that new features probably will not break existing functionality.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, after every release the business managers will suspect any drop in traffic or margin to be associated to some change made by the engineering team. If there are no test cases covering anything then it is likely the engineers did break something.&lt;/p&gt;
+
+&lt;h2 id=&#34;wide-coverage-is-safety:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Wide Coverage Is Safety&lt;/h2&gt;
+
+&lt;p&gt;Have enough coverage so that coverage is a business requirement.  If there is no coverage at all on a 2 year old application then there is not much case for starting to create tests.  You probably should not be working there anyway, unless you have upside.  If however, most of the application is covered in a test then adding functionality without tests because businesses moved deadlines up sets onus back onto business for allocating resources for test writing.&lt;/p&gt;
+
+&lt;p&gt;Imagine this conversation:&lt;/p&gt;
+
+&lt;p&gt;Biz Guy - &amp;ldquo;The super widget functionality I had you put in there last month is not working. What did you guys break?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Programmer - &amp;ldquo;All tests are passing. I am looking and there are no tests covering any business requirements for such a feature. If you want we can take a look and write a test that covers this feature.&amp;rdquo;&lt;/p&gt;
+
+&lt;h2 id=&#34;know-your-tests:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Know Your Tests&lt;/h2&gt;
+
+&lt;p&gt;Business should know as much about tests as &amp;ldquo;features&amp;rdquo;. Granted if the user base does not care about quality then tests do not matter much.&lt;/p&gt;
+
+&lt;h1 id=&#34;conclusion:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;Go forth and create good things.
+Then give back to the world.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
