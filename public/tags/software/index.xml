@@ -27,8 +27,8 @@
 &lt;h1 id=&#34;executive-leadership:b95f08065f33835f1988c422d37af806&#34;&gt;Executive Leadership&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Bloated and ugly products start at the top and only the resources for good engineering begin there&lt;/li&gt;
-&lt;li&gt;The three ways business leaders can add value is with &lt;span class=&#34;T2&#34;&gt;numbers, numbers, numbers&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Bloated and ugly products are born at the top, but a good engineering environment may begin there&lt;/li&gt;
+&lt;li&gt;The three ways business leaders can add value is with &lt;em&gt;numbers, numbers, numbers&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Put your name on the product&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -40,7 +40,7 @@
 
 &lt;p&gt;I know you really want to. You think you know UI design and are well versed in using a browser. In reality you probably suck at engineering/UI/art.&lt;/p&gt;
 
-&lt;p&gt;See previous paragraph sentence #1.&lt;/p&gt;
+&lt;p&gt;See previous paragraph sentence 1.&lt;/p&gt;
 
 &lt;h2 id=&#34;feature-driven-cycles-suck:b95f08065f33835f1988c422d37af806&#34;&gt;Feature-Driven Cycles Suck&lt;/h2&gt;
 
@@ -54,16 +54,16 @@
 &lt;li&gt;Set a clear vision&lt;/li&gt;
 &lt;li&gt;Make the vision both short and long term&lt;/li&gt;
 &lt;li&gt;Don&amp;rsquo;t pivot&lt;/li&gt;
-&lt;li&gt;Avoid the buzzword glory pitchman&lt;/li&gt;
+&lt;li&gt;Avoid buzzword glory pitchmen&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;employee-goals:b95f08065f33835f1988c422d37af806&#34;&gt;Employee Goals&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Consider the employees goals in your vision.&lt;/li&gt;
-&lt;li&gt;If you do not care about the employees&amp;rsquo; goals then they might be setting their own.&lt;/li&gt;
-&lt;li&gt;Have an idea of what motivates people. We are not all building rockets or curing cancer.&lt;/li&gt;
-&lt;li&gt;Make an employee goal the production of a quality product.&lt;/li&gt;
+&lt;li&gt;Consider the employees goals in your vision&lt;/li&gt;
+&lt;li&gt;If you do not care about the employees&amp;rsquo; goals then they might set their own&lt;/li&gt;
+&lt;li&gt;Have an idea of what motivates people (We are not all building rockets or curing cancer)&lt;/li&gt;
+&lt;li&gt;Make an employee goal the production of a quality product&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;optimal-relationships:b95f08065f33835f1988c422d37af806&#34;&gt;Optimal Relationships&lt;/h1&gt;
@@ -79,13 +79,13 @@
 &lt;li&gt;Provide a way to communicate problems to leadership&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Devs need &lt;a href=&#34;https://michaelochurch.wordpress.com/2014/12/&#34;&gt;CS 666 Political Science&lt;/a&gt; training. It is annoying.&lt;/p&gt;
+&lt;p&gt;Devs need &lt;a href=&#34;https://michaelochurch.wordpress.com/2014/12/&#34;&gt;CS 666 Political Science&lt;/a&gt; training. Seriously.&lt;/p&gt;
 
 &lt;h1 id=&#34;hire-the-right-people:b95f08065f33835f1988c422d37af806&#34;&gt;Hire the Right People&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/milton.jpg&#34; alt=&#34;Milton Office Space&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Hire people smarter than you and get out of their way. Without the right team you are behind already.&lt;/p&gt;
+&lt;p&gt;Hire people smarter than you and get out of their way.&lt;/p&gt;
 
 &lt;p&gt;See my other articles on &lt;a href=&#34;http://scotttactical.com/interview-strategies-a-technology-hiring-manager/&#34;&gt;hiring technology professionals&lt;/a&gt;.&lt;/p&gt;
 
@@ -106,7 +106,7 @@
 
 &lt;h2 id=&#34;predict-the-futures:b95f08065f33835f1988c422d37af806&#34;&gt;Predict The Futures&lt;/h2&gt;
 
-&lt;p&gt;Applying a timeline to the life of an application is hard. Not because one cannot estimate a project life, but because most managers are not truthful with themselves on the potential of their project.&lt;/p&gt;
+&lt;p&gt;Applying a timeline to the life of an application is hard. Not because one cannot estimate a project life, but because most are not truthful with themselves on the potential of their project.&lt;/p&gt;
 
 &lt;p&gt;Ass.u.mption: shoestring ultra-successful software lasts forever and will fix rare bugs later when money is pouring.&lt;/p&gt;
 
@@ -119,8 +119,8 @@
 &lt;p&gt;We don&amp;rsquo;t really know what the future holds for us, but we should plan for it. Ask this:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&amp;ldquo;Where is this script stored and why?&amp;rdquo;.&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;Where is the documentation?&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Where is this script stored and why?&lt;/li&gt;
+&lt;li&gt;Where is the documentation?&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;If it is only stored locally and undocumented on someone&amp;rsquo;s machine: fail++.&lt;/p&gt;
@@ -146,17 +146,19 @@
 &lt;li&gt;Sometimes biz pushes devs to deliver sooner than estimates, so they cut corners.&lt;/li&gt;
 &lt;li&gt;Sometimes coders are lazy or do not really want to be on a project business is pushing them to move faster on.&lt;/li&gt;
 &lt;li&gt;Sometimes coders are just not any good. You hired them so now it is a containment issue.&lt;/li&gt;
-&lt;li&gt;Have peer reviews and pull requests, and yes, that costs. &lt;Outsourced cheap stuff&gt;&lt;/li&gt;
+&lt;li&gt;Have peer reviews and pull requests, and yes, that costs. See: &lt;em&gt;Outsourced cheap stuff&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;myth-of-the-parallel-rewrite:b95f08065f33835f1988c422d37af806&#34;&gt;Myth of the Parallel Rewrite&lt;/h2&gt;
 
+&lt;p&gt;Scenario:&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&amp;ldquo;Going to refactor code&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;Also continuing development or maintaining the current code base&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;Not contributing more human or financial resources&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;Done in &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt;&lt;span class=&#34;T1&#34;&gt;th&lt;/span&gt; the time that the original code base was developed&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;Macho Camacho for President!&lt;/li&gt;
+&lt;li&gt;Going to refactor legacy code&lt;/li&gt;
+&lt;li&gt;Also continuing development or maintaining the current code base&lt;/li&gt;
+&lt;li&gt;Not contributing more human or financial resources&lt;/li&gt;
+&lt;li&gt;Done in 1/10th the time that the original code base was developed&lt;/li&gt;
+&lt;li&gt;Macho Camacho for President!&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/sGUNPMPrxvA&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
@@ -171,9 +173,7 @@
 
 &lt;p&gt;I intend to write at more length about the politics behind the product lifecycle.&lt;/p&gt;
 
-&lt;p&gt;Case study: There is no policy for a daily deployment to Curiosity rover on Mars and if the previous glitches are an indicator we can assume that even NASA has a high bug rate when dealing with rapid product deployments.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.space.com/23553-mars-rover-curiosity-software-glitch.html&#34;&gt;http://www.space.com/23553-mars-rover-curiosity-software-glitch.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Case study: There is no policy for a daily deployment to Curiosity rover on Mars and if the previous glitches are an indicator we can assume that even &lt;a href=&#34;http://www.space.com/23553-mars-rover-curiosity-software-glitch.html&#34;&gt;NASA has a high bug rate&lt;/a&gt; when dealing with rapid product deployments.&lt;/p&gt;
 
 &lt;h1 id=&#34;test-for-the-love-of-all-that-is-sacred-test:b95f08065f33835f1988c422d37af806&#34;&gt;Test - For the Love of All That is Sacred, Test&lt;/h1&gt;
 
@@ -186,6 +186,7 @@
 &lt;li&gt;Wide Coverage Is Safety&lt;/li&gt;
 &lt;li&gt;Estimate tests writing time&lt;/li&gt;
 &lt;li&gt;Know your tests&lt;/li&gt;
+&lt;li&gt;Damn the tests - DO IT LIVE!&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Imagine this conversation:&lt;/p&gt;
