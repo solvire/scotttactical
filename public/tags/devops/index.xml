@@ -6,8 +6,48 @@
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2015</rights>
-    <updated>2015-09-16 00:00:00 &#43;0000 UTC</updated>
+    <updated>2015-09-21 00:00:00 &#43;0000 UTC</updated>
 
+    
+      
+        <item>
+          <title>Download an Entire Site with wget - mac OSX</title>
+          <link>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</link>
+          <pubDate>Mon, 21 Sep 2015 00:00:00 UTC</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</guid>
+          <description>
+
+&lt;h1 id=&#34;download-the-entire-site-with-wget:967adfa691414a6b957a247770983398&#34;&gt;Download the Entire Site with wget&lt;/h1&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t have &lt;a href=&#34;http://brew.sh/&#34;&gt;homebrew&lt;/a&gt; please install it. It will make all our lives easier.&lt;/p&gt;
+
+&lt;h2 id=&#34;howto:967adfa691414a6b957a247770983398&#34;&gt;Howto&lt;/h2&gt;
+
+&lt;p&gt;This was kinda simple but I wanted to post it here for reference.&lt;/p&gt;
+
+&lt;p&gt;On thing I would like to note is the wait and limit-rate. Make sure you don&amp;rsquo;t trip any throttles or piss off any website owners by leaving the pipes wide open.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget \
+     --recursive \
+     --no-clobber \
+     --page-requisites \
+     --convert-links \
+     --wait=5 --limit-rate=20K \
+     --domains api.yoursite.com \
+     --no-parent \
+         http://api.yoursite.com/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Alternate you can run the mirror command&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget -m --wait=5 http://test.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I am sure one can use lynx but this is what I like. And it&amp;rsquo;s handy on the mac.&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>

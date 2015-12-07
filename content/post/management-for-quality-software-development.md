@@ -4,6 +4,7 @@ title: Management for Quality Software Development Managers
 url: /management-for-quality-software-development/
 tags: [ software, leadership ]
 image: images/management-text.jpg
+comments: true
 ---
 
 This started as a list of notes for my boss on how I see the best way to manage technical professionals. I am trying to provide non-technical managers with the resources to direct technical teams in a way that will produce quality software and keep the engineering staff engaged and moving.  

@@ -3,6 +3,7 @@ date: 2015-12-01T10:43:58-08:00
 title: Try Not 2 Fuck Up Ur Engineering
 url: /try-not-2-fuck-up-ur-engineering/
 tags: [ software, leadership ]
+comments: true
 ---
 Leadership Checklist for Non-Technical Managers
 

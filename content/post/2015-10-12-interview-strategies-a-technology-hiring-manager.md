@@ -3,10 +3,9 @@ title: 'Interview Strategies: A Technology Hiring Manager Who Wins'
 author: SScott
 date: 2015-10-12
 url: /interview-strategies-a-technology-hiring-manager/
-categories:
-  - Tech
-tags: [technology, hiring, interviewing, jobs, managment, leadership]
+tags: [technology, interview, managment, leadership]
 image: images/esb.jpg
+comments: true
 ---
 > If I stacked pennies from the ground to the top of the Empire State Bldg, would they all fit into this room?
 

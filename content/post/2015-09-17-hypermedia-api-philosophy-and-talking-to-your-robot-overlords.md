@@ -3,9 +3,9 @@ title: Hypermedia, API Philosophy, and Talking to Your Robot Overlords
 author: SScott
 date: 2015-09-17
 url: /hypermedia-api-philosophy-and-talking-to-your-robot-overlords/
-categories:
-  - Software
+tags: [ technology, philosophy ]
 image: images/baveria.jpg
+comments: true
 ---
 ## In the Beginning
 

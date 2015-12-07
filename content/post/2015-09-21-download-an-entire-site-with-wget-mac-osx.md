@@ -3,9 +3,9 @@ title: 'Download an Entire Site with wget - mac OSX'
 author: SScott
 date: 2015-09-21
 url: /download-an-entire-site-with-wget-mac-osx/
-categories:
-  - DevOps
+tags: [ devops, technology ]
 image: images/homebrew.jpg
+comments: true
 ---
 # Download the Entire Site with wget
 

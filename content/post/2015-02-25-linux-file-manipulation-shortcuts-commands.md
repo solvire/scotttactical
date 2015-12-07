@@ -3,10 +3,9 @@ title: Linux File Manipulation Shortcuts and Commands
 author: SScott
 date: 2015-02-25
 url: /linux-file-manipulation-shortcuts-commands/
-categories:
-  - Uncategorized
-tags: [ linux ]
+tags: [ linux, system administration ]
 image: images/baveria.jpg
+comments: true
 ---
 # Linux File Manipulation Commands
 

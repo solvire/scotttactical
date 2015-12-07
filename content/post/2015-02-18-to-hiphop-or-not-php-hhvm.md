@@ -5,6 +5,7 @@ date: 2015-02-18
 url: /to-hiphop-or-not-php-hhvm/
 tags: [ php, programming ]
 image: images/hhvm.png
+comments: true
 ---
 We are discussing the plausibility of using HHVM inside this current infrastructure.
 

@@ -3,10 +3,9 @@ title: PHP Hypermedia REST API wrapper
 author: solvire
 date: 2015-09-08
 url: /php-hypermedia-rest-api-wrapper/
-categories:
-  - Software
 tags: [ php, hypermedia, api, laravel ]
 image: images/laravel-5.png
+comments: true
 ---
 ## Hypermedia for PHP APIs.
 
