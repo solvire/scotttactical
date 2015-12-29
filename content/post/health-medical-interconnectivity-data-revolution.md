@@ -3,7 +3,7 @@ date: 2015-12-10T07:34:17-08:00
 title: Health, Interconnectivity - The Data Revolution
 url: /health-medical-interconnectivity-data-revolution/
 comments: true
-tags: [ data, medicine, api ]
+tags: [ data, healthcare, api ]
 ---
 
 # Health, Medical Interconnectivity and The Coming Data Revolution

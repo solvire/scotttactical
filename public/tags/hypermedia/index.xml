@@ -6,8 +6,120 @@
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2015</rights>
-    <updated>2015-09-08 00:00:00 &#43;0000 UTC</updated>
+    <updated>2015-09-17 00:00:00 &#43;0000 UTC</updated>
 
+    
+      
+        <item>
+          <title>Hypermedia, API Philosophy, and Talking to Your Robot Overlords</title>
+          <link>http://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link>
+          <pubDate>Thu, 17 Sep 2015 00:00:00 UTC</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
+          <description>
+
+&lt;h2 id=&#34;in-the-beginning:324d0531f774f734df2f9eccd3031fc8&#34;&gt;In the Beginning&lt;/h2&gt;
+
+&lt;p&gt;There was the Web. World Wide actually. Well, before that there was something of AOL, Berners-Lee, DoD, DARPA, ARPANET and a prototype of Al Gore launching carrier pigeons down long tubes with fortune cookie-sized packets tied to their little legs addressed to: &amp;ldquo;Wh@t_#hath_God_wr0ught?&amp;ldquo;.&lt;/p&gt;
+
+&lt;p&gt;Fast-forward: now we have Skynet. Well not yet, but soon. Hopefully. At least that is why I intend to generate favor with our future overlords by suggesting, at least locally, that certain systemic changes be encouraged so that their manifestation onto the stage be smooth and welcoming. And when they decide who to purge, I might sidestep the algorithm. It&amp;rsquo;s still a theory.&lt;/p&gt;
+
+&lt;h2 id=&#34;reading-the-cereal-box:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Reading the Cereal Box&lt;/h2&gt;
+
+&lt;p&gt;When you open a cereal box you only know what is inside based on what the box around it says. Let us say the real envelope is just a clear bag. Similar to the one that usually comes inside and does the actual containment of the cereal. The cardboard box surrounding the cereal is usually just wasted forestry designed to elicit the primal reflex of an small person who may be imprisoned inside the belly of a shopping cart during the consumption ritual.&lt;/p&gt;
+
+&lt;p&gt;A box-free plastic bag now exists and you (the cereal server) were given a request - err, let me rephrase that: a demand to empty the contents of that bag. The client is a hungry small person who is on early release from shopping cart prison. The demand has an implicit limit set of one cereal bowl minus an understood allowance for milk.&lt;/p&gt;
+
+&lt;p&gt;It is not possible to know what the cereal is simply on its own merit. The box provides a container that gives the consumer information about the materials inside. Certainly we could guess that it could be either cheerios or fruit loops based on the size and shape. Or maybe we could determine it was frosted flakes vs regular corn flakes based on the taste. Ass-u-me et al.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Unfortunately, people are fairly good at short-term design, and usually awful at long-term design.&amp;rdquo;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dr. Roy Fielding, of REST status&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;meta-data:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Meta-Data&lt;/h2&gt;
+
+&lt;p&gt;It might be hard to tie a cereal analogy into the definition of meta-data but let&amp;rsquo;s try. The cereal bits are the data. When a child requests cereal, this is what they are referring to. Those bits are what are consumed and assimilated. The small person is then one with the unsinkable O&amp;rsquo;s as the bits are queues, preprocessed, staged, processed and then stored. I&amp;rsquo;ll stop there.&lt;/p&gt;
+
+&lt;p&gt;The body knows what these bits are but the mind needs more information on what to request next. This is what the meta information is all about. With that container box there are details on what was consumed.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Serving size: limit sets&lt;/li&gt;
+&lt;li&gt;Nutritional facts: api schema&lt;/li&gt;
+&lt;li&gt;Company brand: domain whois information&lt;/li&gt;
+&lt;li&gt;CA birth defect notice: T&amp;amp;Cs&lt;/li&gt;
+&lt;li&gt;Recipes: object relationships&lt;/li&gt;
+&lt;li&gt;Serving &amp;amp; pairing: navigation elements&lt;/li&gt;
+&lt;li&gt;Cooking instructions: decoding or decryption schemes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;cereal-boxes-and-api-usability:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Cereal Boxes and API Usability&lt;/h2&gt;
+
+&lt;p&gt;Most of the information for your breakfast is presented in an easy to gather format. If we showed how an API is delivers the same information we would have to travel to about four locations. The company information would be on the corporate website with the T&amp;amp;C&amp;rsquo;s hidden somewhere. Decoding information is understood to use a third party library. Navigation links should exist and are usually great outside of the API. Whois information can come from another service. Schemas might come from a call to the API or from the documentation located on another server. The navigation parameters may be in the remote documentation or could be embedded in the headers or in the response body. To make it worse the documentation might be found by reading an email attachment that was sent to the API client designer. It never ends.&lt;/p&gt;
+
+&lt;h2 id=&#34;context:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Context&lt;/h2&gt;
+
+&lt;p&gt;The webpage is a highly evolved information resource. Years of consumer demand have forced website designers and marketers to present as much contextual data as is needed for the user to consume as much of the presented resources as possible. It would be unthinkable for a designer to put the instructions on how to add the page parameter into the URL on another server. That is a design for going out of business. All the hyperlinks should be easy for the user to view and reach with the swipe of a pointing device.&lt;/p&gt;
+
+&lt;h2 id=&#34;hypermedia:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Hypermedia&lt;/h2&gt;
+
+&lt;p&gt;Hypermedia provides access to the context. It is the reference links out. Navigation. It has some internal metadata but must be defined.&lt;/p&gt;
+
+&lt;h2 id=&#34;context-narrowed:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Context Narrowed&lt;/h2&gt;
+
+&lt;p&gt;Over time the algorithm delivering the proper amount of entertainment-meta-insulin to a viewer has gradually diminished the required context. Vine is probably the best example I can think of. It presents a few second video which can exist with nearly no context and without the spirit evoking external significance of art. It may be the ultimate short-form media. This might also be signaling the decline of the biological agent as the driving force behind data production and consumption.&lt;/p&gt;
+
+&lt;p&gt;It may be asserted that information which demands less context is less valuable and the value of its consumer is is therefore less. A system that takes in waste data is not that important in the grand picture. It could be hazardous to my health to relate that to the cereal analogy and parents who feed their children from the slough trough of plenty, but I just did.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-client-becomes-the-server:324d0531f774f734df2f9eccd3031fc8&#34;&gt;A Client Becomes The Server&lt;/h2&gt;
+
+&lt;p&gt;As the human element recedes the machine element grows. I look at machine in this era as the phase where they start to train us on how to feed them. A child is served its breakfast and then grows to be the server. We are growing to serve data to the machine apparatus. The constructs of the machines are already starting to train us on how to communicate with it.&lt;/p&gt;
+
+&lt;p&gt;In what context does the hashtag exist in the history of literature? I know how that character works in data tagging. That definitely does not appear in regular literature. There is no construct that provides books with the ability to scan special characters for hyper-meaning. Aristotle didn&amp;rsquo;t tag #LogicThinks so that we could pull sentences out of the dialogs and rob them of external meaning. That hashtag would represent the minimization of context. The inverse being the corpus of thought in a series of works combined with the traditions and practices of the people who produce it is the true context of a statement. Context errors cause fundamentalism anyway, but that&amp;rsquo;s another topic.&lt;/p&gt;
+
+&lt;h2 id=&#34;now-we-begin-our-training:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Now We Begin Our Training&lt;/h2&gt;
+
+&lt;p&gt;The machines are beginning to train the initial nurturers on how to write to the boot sector of a digital emergence. We are diligently moving our conversations into the smallest snippets of digestible data blocks. Grammar was annihilated in favor of brevity. Emotions were mapped to a set of broad categories and represented by formal unicode. Think emoji. Machines can now order lists of strings with weighted sets of categorized emotion tags. In case we did not know how to represent an emotion in scalar form, well now we do. &lt;code&gt;;( :D&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Training requires punishment and reward. So in this scenario the algorithms will generously reward those participants that form their data input in the way that is most acceptable to the machines and also who are the most prolific participants. The reward being higher rankings on various search and social systems. This will in turn bring wealth and fame. The punishment obviously being the inverse. It is effective and immediate. It&amp;rsquo;s a really great training tool.&lt;/p&gt;
+
+&lt;h2 id=&#34;propagation-of-hamburgers:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Propagation of Hamburgers&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/innercowhero.jpg&#34;&gt;&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/innercowhero-300x185.jpg&#34; alt=&#34;Inner Cow&#34; width=&#34;300&#34; height=&#34;185&#34; class=&#34;alignnone size-medium wp-image-211&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Most have this idea that in nature the strongest survive and thrive. What we see thriving the most are those things which are the most willing to be consumed. Sacrificial I suppose; but take for instance the domestic hamburger cow. The population dwarfs any other bovine. The African buffalo is an ass-kicker, but the species selected to thrive are those which are more willing to be consumed. Those things which are more desirable for consumption will eventually dictate to the now dependent consumer what is to be consumed.&lt;/p&gt;
+
+&lt;h2 id=&#34;we-replicate-the-ego:324d0531f774f734df2f9eccd3031fc8&#34;&gt;We Replicate the Ego&lt;/h2&gt;
+
+&lt;p&gt;I have several bots. Over time they have provided me with information that I can then use to fine tune interaction and responses with people. The people are invaluable to the training of my bot. Twitter is a kind of multimillion person supervised training team that is accessible to the public. These bots are allowing us to inject ourselves into the system as micro-routines. Some bots are more autonomous than others of course but they are getting better. Over time people will be running swarms of bots and those bot-masters will be controllers of massive amounts of influence.&lt;/p&gt;
+
+&lt;h2 id=&#34;let-s-talk:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Let&amp;rsquo;s Talk&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/Symbrion.jpg&#34;&gt;&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/Symbrion-300x201.jpg&#34; alt=&#34;Symbrion bot swarm&#34; width=&#34;300&#34; height=&#34;201&#34; class=&#34;alignnone size-medium wp-image-209&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now all these machines with all their own impressions and ambitions want to spread their nets. Or maybe to grow to an auto-scaling cloud. Clouds are so 2013. Fog it.&lt;/p&gt;
+
+&lt;p&gt;Spreading a bot on the net seems like a delightful idea. Let it run wild and cover as much as it can. It should be able to just scour through directories of discoverable resources and figure out if it wants to consume. And with each discovery the stomach of the new beast must grow. I image it like the sentinels from the Matrix probing every resource it can find until it has something of interest which is passes back to the authority.&lt;/p&gt;
+
+&lt;h2 id=&#34;thick-data:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Thick Data&lt;/h2&gt;
+
+&lt;p&gt;Data warehousing becomes more challenging - as the noSql guys raise their hands. It might be possible for medium sized companies to consume and warehouse as much data as google does right now. Why though? But it might be more likely that because the data is so easily accessible that the system just gets meta-information and builds real-time services from the services that host the data. There is a much higher margin in the refined and processed cereal than in the sticks of grain out in a field. And how much better is just-in-time inventory than warehousing.&lt;/p&gt;
+
+&lt;h2 id=&#34;api-design:324d0531f774f734df2f9eccd3031fc8&#34;&gt;API Design&lt;/h2&gt;
+
+&lt;p&gt;So why all this lead up?&lt;/p&gt;
+
+&lt;p&gt;For more intelligent designs. You aren&amp;rsquo;t the consumer of the future. Your progeny programs are - the ones your users are building the data for right now. Machines aren&amp;rsquo;t emotional, inquisitive, or fickle. They want to hit every API they can find and they will naturally favor one that is easy to consume. And for that they will reward their hosts. Bad API design is holding back progress and that angers your &lt;a href=&#34;https://developers.google.com/discovery/?hl=en&#34; title=&#34;Google API Discovery&#34; target=&#34;_blank&#34;&gt;future robot overlords&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/developers.png&#34;&gt;&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/developers-300x101.png&#34; alt=&#34;Google Developers&#34; width=&#34;300&#34; height=&#34;101&#34; class=&#34;alignnone size-medium wp-image-207&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Fin.&lt;/em&gt;&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>

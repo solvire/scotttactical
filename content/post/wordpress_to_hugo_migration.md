@@ -4,7 +4,7 @@ title: "Hugo: A replacement for Wordpress"
 url: /hugo-a-replacement-for-wordpress/
 categories:
   - Software
-tags: [go, golang, hugo, wordpress, blogging, software, programming]
+tags: [go golang, hugo ]
 image: images/hugo-logo.png
 comments: true
 ---

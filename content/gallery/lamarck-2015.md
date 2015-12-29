@@ -2,7 +2,7 @@
 date: 2015-11-13T00:22:21-07:00
 draft: false
 title: Lamarck Lake Hiking, Bishop, CA - June 2015
-tags: [ photography, lamarck lake, hiking ]
+tags: [ photography, hiking, California ]
 galleryPath: lamarck-2015/
 url: /lamarck-lake-2015/
 featuredImage: "IMG_5303-Edit.jpg"
@@ -10,13 +10,12 @@ galleryImages: [ IMG_5261.jpg, IMG_5275.jpg, IMG_5278.jpg, IMG_5285.jpg, IMG_528
 
 ---
 
-# Hiking Lamarck Lake 
+# Hiking Lamarck Lake
 
 
 
 Originally shot in June 2015
 
-Some of the GPS coordinates are off a little. That will be corrected for upcoming galleries. I am just figuring all these tools out. 
+Some of the GPS coordinates are off a little. That will be corrected for upcoming galleries. I am just figuring all these tools out.
 
-BTW Sleeping on a hammock above Lake Lamarck is one of the best things ever. Worth the hike by itself. 
- 
+BTW Sleeping on a hammock above Lake Lamarck is one of the best things ever. Worth the hike by itself.

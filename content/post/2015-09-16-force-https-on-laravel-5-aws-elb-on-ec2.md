@@ -3,7 +3,7 @@ title: Force HTTPS on Laravel 5 behind AWS ELB on EC2
 author: SScott
 date: 2015-09-16
 url: /force-https-on-laravel-5-aws-elb-on-ec2/
-tags: [ programming, php, laravel, devops ]
+tags: [ php, laravel, devops ]
 image: images/laravel-5.png
 ---
 # Laravel 5 - Enforcing HTTPS

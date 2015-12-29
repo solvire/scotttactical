@@ -2,7 +2,7 @@
 date: 2015-12-01T09:53:52-08:00
 title: Management for Quality Software Development Managers
 url: /management-for-quality-software-development/
-tags: [ software, leadership ]
+tags: [ leadership ]
 image: images/management-text.jpg
 comments: true
 ---

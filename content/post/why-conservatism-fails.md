@@ -4,7 +4,7 @@ draft: false
 title: Why Conservatism Fails
 url: why-conservatism-fails
 image: images/Thanksgiving-Rockwell.jpg
-tags: [ philosophy, conservatism ]
+tags: [ philosophy, politics ]
 comments: true
 ---
 

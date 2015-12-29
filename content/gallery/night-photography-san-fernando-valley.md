@@ -1,7 +1,7 @@
 ---
 date: 2015-11-19
 title: Night Photography, San Fernando Valley, CA
-tags: [ photography, panorama, california ]
+tags: [ photography, panorama, California ]
 galleryPath: night-photography-san-fernando-valley/
 url: /night-photography-san-fernando-valley/
 featuredImage: "roof1.jpg"

@@ -4,7 +4,7 @@ author: SScott
 date: 2015-10-17
 url: /yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/
 draft: true
-tags: [ photography, yosemite, national park, hiking, california ]
+tags: [ photography, California ]
 
 ---
 # Hiking Yosemite, CA

@@ -1,7 +1,7 @@
 ---
 date: 2015-12-28T22:50:08-08:00
 title: Downtown Los Angeles California, Dec 2015
-tags: [ photography, los angeles, california, architecture ]
+tags: [ photography, California ]
 galleryPath: downtown-los-angeles-photography-dec-2015/
 url: /downtown-los-angeles-photography-dec-2015/
 featuredImage: IMG_7729.jpg

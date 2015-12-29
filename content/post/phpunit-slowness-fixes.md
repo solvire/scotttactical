@@ -2,7 +2,7 @@
 date: 2015-11-04T12:57:42-08:00
 title: PHPunit Slowness Performance Suggestions
 url: performance-suggestions-phpunit-slowness
-tags: [ php, testing, performance, software ]
+tags: [ php, testing, performance ]
 image: images/php-unit-logo.jpg
 comments: true
 ---
