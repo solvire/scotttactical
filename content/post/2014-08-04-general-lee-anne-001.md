@@ -3,7 +3,7 @@ title: General Lee-Anne 001
 author: SScott
 date: 2014-08-04
 url: /general-lee-anne-001/
-tags: [ General Lee-Anne, 69 Blazer, Auto ]
+tags: [ 69 Blazer, restoration ]
 image: images/gla.jpg
 ---
 Here we go.

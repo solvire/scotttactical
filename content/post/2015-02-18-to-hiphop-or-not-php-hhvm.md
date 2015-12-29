@@ -3,7 +3,7 @@ title: 'To HipHop or Not - PHP and HHVM'
 author: SScott
 date: 2015-02-18
 url: /to-hiphop-or-not-php-hhvm/
-tags: [ php, programming ]
+tags: [ php ]
 image: images/hhvm.png
 comments: true
 ---
