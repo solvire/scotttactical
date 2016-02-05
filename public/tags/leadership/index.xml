@@ -5,7 +5,7 @@
     <link>http://scotttactical.com/tags/leadership/</link>
     <language>en-us</language>
     <author>Scott Tactical</author>
-    <rights>(C) 2015</rights>
+    <rights>(C) 2016</rights>
     <updated>2015-12-01 10:43:58 -0800 PST</updated>
 
     
@@ -315,7 +315,7 @@
 
 &lt;p&gt;A reasonable software lifecycle is imperative to delivering quality software. The terms of the lifecycle are entirely determined by the needs of the business, but doing away with an organized lifecycle is a recipe for failure. Maybe a business needs to fail to encourage the evolutionary aspect of the free market. Failure is not so beneficial though if no one learns from the mistake.&lt;/p&gt;
 
-&lt;p&gt;
+
 &lt;figure &gt;
     &lt;a href=&#34;http://nvie.com/posts/a-successful-git-branching-model/&#34;&gt;
         &lt;img src=&#34;http://scotttactical.com/images/git-model.png&#34; /&gt;
@@ -327,7 +327,7 @@
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
-&lt;/p&gt;
+
 
 &lt;h2 id=&#34;politics-of-the-lifecycle:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Politics of The Lifecycle&lt;/h2&gt;
 
