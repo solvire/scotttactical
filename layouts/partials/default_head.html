@@ -20,6 +20,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="{{ .Site.BaseURL }}/post">All Posts</a></li>
                         <li><a href="{{ .Site.BaseURL }}/gallery">Galleries</a></li>
+                        <li><a href="{{ .Site.BaseURL }}/news">News</a></li>
                         <li><a href="{{ .Site.BaseURL }}/tags">Tags</a></li>
                         {{ range where .Site.Pages "Type" "page" }}
                         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>

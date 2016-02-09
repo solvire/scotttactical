@@ -18,9 +18,11 @@ Params:
 Indexes:
   tag: "tags"
   gallery: "galleries"
+  news: "news"
 
 permalinks:
   post: post/:slug/
   gallery: gallery/:slug/
+  news: :year/:month/:slug/
 
 MetadataFormat: "yaml"
