@@ -3,7 +3,7 @@
 
 Some instructions
 
-isntall hugo
+install hugo
 
     brew install hugo
 
@@ -16,7 +16,7 @@ install the JS stuff
 
     hugo server -w
 
-    hugo gen -b http://scotttactical.com
+    hugo -b http://scotttactical.com
 
 
 Run gulp before deployment to condense things

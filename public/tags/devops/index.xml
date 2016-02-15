@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Tactical </title>
-    <link>http://scotttactical.com/tags/devops/</link>
+    <link>scotttactical.com/tags/devops/</link>
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Download an Entire Site with wget - mac OSX</title>
-          <link>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</link>
+          <link>/scotttactical.com/download-an-entire-site-with-wget-mac-osx/</link>
           <pubDate>Mon, 21 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</guid>
+          <guid>/scotttactical.com/download-an-entire-site-with-wget-mac-osx/</guid>
           <description>
 
 &lt;h1 id=&#34;download-the-entire-site-with-wget:967adfa691414a6b957a247770983398&#34;&gt;Download the Entire Site with wget&lt;/h1&gt;
@@ -52,10 +52,10 @@
       
         <item>
           <title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</title>
-          <link>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
+          <link>/scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
           <pubDate>Wed, 16 Sep 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
+          <guid>/scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
           <description>
 
 &lt;h1 id=&#34;laravel-5-enforcing-https:03bc7a7611150669b29f3c91e572d932&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;
