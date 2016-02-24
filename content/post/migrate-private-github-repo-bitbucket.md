@@ -8,13 +8,13 @@ comments: true
 
 # Why Not GitHub
 
-## GitHub is great.
+## GitHub is Great
 
 Don't get me wrong. I would recommend using this service for a number of reasons that are not fiscally motivated. It isn't whether GitHub.com is good or not. There is a matter of economics at play though.
 
-As a startup I just don't have the extra 25/mo to throw into GitHub business account. It looks cool that I have an organization there and there are more badges.  But it doesn't work at 12 X $25 = $300/yr.
+As a startup I just don't have the extra 25/mo to throw into GitHub business account. It looks cool that I have an organization there and there are more badges.  But it doesn't work at 12 X $25 = $300/yr. Bottom account. Bronze I think it is. 
 
-## GitHub is not cheap.  
+## GitHub is Mas Rico
 
 It is cheap if you are a big corporation but for a small shop or a single coder with some sensitive code it doesn't make sense.
 

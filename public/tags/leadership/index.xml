@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Tactical </title>
-    <link>http://scotttactical.com/tags/leadership/</link>
+    <link>scotttactical.com/tags/leadership/</link>
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2016</rights>
@@ -12,17 +12,17 @@
       
         <item>
           <title>Try Not 2 Fuck Up Ur Engineering</title>
-          <link>http://scotttactical.com/try-not-2-fuck-up-ur-engineering/</link>
+          <link>/scotttactical.com/try-not-2-fuck-up-ur-engineering/</link>
           <pubDate>Tue, 01 Dec 2015 10:43:58 PST</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/try-not-2-fuck-up-ur-engineering/</guid>
+          <guid>/scotttactical.com/try-not-2-fuck-up-ur-engineering/</guid>
           <description>
 
 &lt;p&gt;Leadership Checklist for Non-Technical Managers&lt;/p&gt;
 
 &lt;p&gt;How do you build software that provides value to both clients, owners and engineers?&lt;/p&gt;
 
-&lt;p&gt;This list has started as a list of notes that I kept over the last few years. Yes, this is the abbreviated version of &lt;a href=&#34;http://scotttactical.com/management-for-quality-software-development/&#34;&gt;Management For Quality Software&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This list has started as a list of notes that I kept over the last few years. Yes, this is the abbreviated version of &lt;a href=&#34;scotttactical.com/management-for-quality-software-development/&#34;&gt;Management For Quality Software&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h1 id=&#34;executive-leadership:b95f08065f33835f1988c422d37af806&#34;&gt;Executive Leadership&lt;/h1&gt;
 
@@ -83,11 +83,11 @@
 
 &lt;h1 id=&#34;hire-the-right-people:b95f08065f33835f1988c422d37af806&#34;&gt;Hire the Right People&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/milton.jpg&#34; alt=&#34;Milton Office Space&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;scotttactical.com/images/milton.jpg&#34; alt=&#34;Milton Office Space&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hire people smarter than you and get out of their way.&lt;/p&gt;
 
-&lt;p&gt;See my other articles on &lt;a href=&#34;http://scotttactical.com/interview-strategies-a-technology-hiring-manager/&#34;&gt;hiring technology professionals&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See my other articles on &lt;a href=&#34;scotttactical.com/interview-strategies-a-technology-hiring-manager/&#34;&gt;hiring technology professionals&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;don-t-micromanage:b95f08065f33835f1988c422d37af806&#34;&gt;Don&amp;rsquo;t Micromanage&lt;/h2&gt;
 
@@ -136,7 +136,7 @@
 
 &lt;p&gt;You can only pick 2:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/good-fast-cheap-venn-diagram.jpg&#34; alt=&#34;Good Fast Cheap - Pick 2 - Venn Diagram&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;scotttactical.com/images/good-fast-cheap-venn-diagram.jpg&#34; alt=&#34;Good Fast Cheap - Pick 2 - Venn Diagram&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;what-is-bad-code:b95f08065f33835f1988c422d37af806&#34;&gt;What is Bad Code&lt;/h2&gt;
 
@@ -205,10 +205,10 @@
       
         <item>
           <title>Management for Quality Software Development Managers</title>
-          <link>http://scotttactical.com/management-for-quality-software-development/</link>
+          <link>/scotttactical.com/management-for-quality-software-development/</link>
           <pubDate>Tue, 01 Dec 2015 09:53:52 PST</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/management-for-quality-software-development/</guid>
+          <guid>/scotttactical.com/management-for-quality-software-development/</guid>
           <description>
 
 &lt;p&gt;This started as a list of notes for my boss on how I see the best way to manage technical professionals. I am trying to provide non-technical managers with the resources to direct technical teams in a way that will produce quality software and keep the engineering staff engaged and moving.&lt;/p&gt;
@@ -230,7 +230,7 @@
 
 &lt;p&gt;See the terse version:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://scotttactical.com/try-not-2-fuck-up-ur-engineering/&#34;&gt;Try Not 2 Fuck Up Ur Engineering&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;scotttactical.com/try-not-2-fuck-up-ur-engineering/&#34;&gt;Try Not 2 Fuck Up Ur Engineering&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;software-shelf-life:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Software Shelf Life&lt;/h1&gt;
 
@@ -239,7 +239,7 @@
 &lt;pre&gt;&lt;code&gt;We have achieved infinite software longevity!!! - NOT
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/mcd.gif&#34; alt=&#34;We Have Infinite Longevity! - not&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;scotttactical.com/images/mcd.gif&#34; alt=&#34;We Have Infinite Longevity! - not&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;shelf-life-definition:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Shelf Life Definition&lt;/h2&gt;
 
@@ -278,7 +278,7 @@
 
 &lt;p&gt;Please see the below diagram. You can have any two of the following scenarios.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/good-fast-cheap-venn-diagram.jpg&#34; alt=&#34;Good Fast Cheap - Pick 2 - Venn Diagram&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;scotttactical.com/images/good-fast-cheap-venn-diagram.jpg&#34; alt=&#34;Good Fast Cheap - Pick 2 - Venn Diagram&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;There is no fix-it-later scenario.&lt;/li&gt;
@@ -291,7 +291,7 @@
 
 &lt;p&gt;This is a hard one to explain. Many things can contribute to bad code.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/milton.jpg&#34; alt=&#34;Milton Office Space&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;scotttactical.com/images/milton.jpg&#34; alt=&#34;Milton Office Space&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;the-why-of-bad-code:46b69cc651b36917739e2a1f57a8d295&#34;&gt;The “why” of bad code.&lt;/h3&gt;
 
@@ -318,7 +318,7 @@
 
 &lt;figure &gt;
     &lt;a href=&#34;http://nvie.com/posts/a-successful-git-branching-model/&#34;&gt;
-        &lt;img src=&#34;http://scotttactical.com/images/git-model.png&#34; /&gt;
+        &lt;img src=&#34;scotttactical.com/images/git-model.png&#34; /&gt;
     &lt;/a&gt;
     
     &lt;figcaption&gt;
@@ -354,7 +354,7 @@
 
 &lt;p&gt;Bloated and ugly products start at the top and only the resources for good engineering begin there.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/jobs.jpg&#34; alt=&#34;Steve Jobs&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;scotttactical.com/images/jobs.jpg&#34; alt=&#34;Steve Jobs&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Even Steve Jobs got booted.&lt;/p&gt;
 
@@ -384,7 +384,7 @@
 
 &lt;h2 id=&#34;business-vision:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Business Vision&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/clockwork-orange.jpg&#34; alt=&#34;Clockwork Orange&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;scotttactical.com/images/clockwork-orange.jpg&#34; alt=&#34;Clockwork Orange&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Set a clear vision.&lt;/li&gt;
@@ -442,10 +442,10 @@ Then give back to the world.&lt;/p&gt;
       
         <item>
           <title>Interview Strategies: A Technology Hiring Manager Who Wins</title>
-          <link>http://scotttactical.com/interview-strategies-a-technology-hiring-manager/</link>
+          <link>/scotttactical.com/interview-strategies-a-technology-hiring-manager/</link>
           <pubDate>Mon, 12 Oct 2015 00:00:00 UTC</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid>
+          <guid>/scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid>
           <description>
 
 &lt;blockquote&gt;
