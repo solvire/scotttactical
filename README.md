@@ -18,5 +18,6 @@ install the JS stuff
 
     hugo -b http://scotttactical.com
 
-
 Run gulp before deployment to condense things
+
+    gulp 
