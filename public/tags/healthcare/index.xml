@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Tactical </title>
-    <link>scotttactical.com/tags/healthcare/</link>
+    <link>http://scotttactical.com/tags/healthcare/</link>
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2016</rights>
@@ -12,15 +12,15 @@
       
         <item>
           <title>Health, Interconnectivity - The Data Revolution</title>
-          <link>/scotttactical.com/health-medical-interconnectivity-data-revolution/</link>
+          <link>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</link>
           <pubDate>Thu, 10 Dec 2015 07:34:17 PST</pubDate>
           <author>Scott Tactical</author>
-          <guid>/scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
+          <guid>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
           <description>
 
 &lt;h1 id=&#34;health-medical-interconnectivity-and-the-coming-data-revolution:4b5599adc5f806914ce8863e57f40566&#34;&gt;Health, Medical Interconnectivity and The Coming Data Revolution&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&#34;scotttactical.com/images/future-medicine-small.jpg&#34; alt=&#34;Medicine In The Future&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/future-medicine-small.jpg&#34; alt=&#34;Medicine In The Future&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;johnson-davis-walk:4b5599adc5f806914ce8863e57f40566&#34;&gt;Johnson Davis&amp;rsquo; Walk&lt;/h2&gt;
 
@@ -50,7 +50,7 @@
 
 &lt;h2 id=&#34;action:4b5599adc5f806914ce8863e57f40566&#34;&gt;Action&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;scotttactical.com/images/doctor-future1.jpg&#34; alt=&#34;Future Doctors&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/doctor-future1.jpg&#34; alt=&#34;Future Doctors&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;ldquo;Let&amp;rsquo;s try to contact his physician and then see if we can give mister Davis a call to see if he is okay.&amp;rdquo; A supervisor requests access to the wearers full records. Most data is stored in a database holding of a majority of the nation&amp;rsquo;s citizens, but some has to come from other sources. That request triggers cascading data requests from a list of Application Programming Interfaces (API) approved for the supervisors access and appropriate for the given threats. Each call is validated by a central HIPAA authorization service API that checks access controls for internal and external data.&lt;/p&gt;
 
