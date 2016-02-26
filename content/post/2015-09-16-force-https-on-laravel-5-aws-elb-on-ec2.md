@@ -5,6 +5,7 @@ date: 2015-09-16
 url: /force-https-on-laravel-5-aws-elb-on-ec2/
 tags: [ php, devops, laravel ]
 image: images/laravel-5.png
+comments: true
 ---
 # Laravel 5 - Enforcing HTTPS
 

@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://scotttactical.com/</loc>
-    <lastmod>2016-02-23T21:28:23-08:00</lastmod>
+    <lastmod>2016-02-24T23:20:36-08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/</loc>
+    <lastmod>2016-02-24T23:20:36-08:00</lastmod>
   </url>
   
   <url>

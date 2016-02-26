@@ -6,8 +6,87 @@
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2016</rights>
-    <updated>2016-02-23 21:28:23 -0800 PST</updated>
+    <updated>2016-02-24 23:20:36 -0800 PST</updated>
 
+    
+      
+        <item>
+          <title>Dump Django Databases and Create Fixtures for Testing</title>
+          <link>http://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/</link>
+          <pubDate>Wed, 24 Feb 2016 23:20:36 PST</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/</guid>
+          <description>
+
+&lt;h1 id=&#34;fixtures-are-a-messy-mess:25f7c7e781c9bc5fa7e4fc70ab13d75c&#34;&gt;Fixtures are a Messy Mess&lt;/h1&gt;
+
+&lt;p&gt;It is quite a pain to maintain fixtures it seems. I am not sure why yet. Maybe there hasn&amp;rsquo;t been quite enough time on this piece of the product for it to mature.&lt;/p&gt;
+
+&lt;h1 id=&#34;django-dumpdata:25f7c7e781c9bc5fa7e4fc70ab13d75c&#34;&gt;Django dumpdata&lt;/h1&gt;
+
+&lt;p&gt;I tried several different variations to dump the data. I&amp;rsquo;ll include a few of them here since they might actually work for someone else.&lt;/p&gt;
+
+&lt;p&gt;python manage.py dumpdata &amp;gt; fixture.json&lt;/p&gt;
+
+&lt;p&gt;I kept getting various key errors.&lt;/p&gt;
+
+&lt;p&gt;Could not load contenttypes.ContentType(pk=23): duplicate key value violates unique constraint &amp;ldquo;django_content_type_app_label_76bd3d3b_uniq&amp;rdquo;
+  DETAIL:  Key (app_label, model)=(businesses, business) already exists.&lt;/p&gt;
+
+&lt;p&gt;Eventually turned into this:&lt;/p&gt;
+
+&lt;p&gt;python manage.py dumpdata &amp;ndash;indent=4 -e contenttypes -e auth.Permission -e admin &amp;ndash;natural-foreign &amp;gt; fixture.json&lt;/p&gt;
+
+&lt;p&gt;OR&lt;/p&gt;
+
+&lt;p&gt;python manage.py dumpdata &amp;ndash;natural-foreign &amp;ndash;natural-primary &amp;ndash;indent=4 &amp;gt; fixture.json&lt;/p&gt;
+
+&lt;p&gt;gave me this:&lt;/p&gt;
+
+&lt;p&gt;Could not load object.User(pk=None): null value in column &amp;ldquo;user_ptr_id&amp;rdquo; violates not-null constraint&lt;/p&gt;
+
+&lt;h1 id=&#34;dumpdata-alternatives:25f7c7e781c9bc5fa7e4fc70ab13d75c&#34;&gt;DumpData Alternatives&lt;/h1&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://www.djangopackages.com/grids/g/fixtures/&#34;&gt;django grid&lt;/a&gt; to the rescue again.&lt;/p&gt;
+
+&lt;p&gt;A lot of the packages were for generating testing fixtures. I don&amp;rsquo;t need that. What I need is basically a data backup tool so that whichever dev has the best copy of the data to be able to create the deployment fixture.&lt;/p&gt;
+
+&lt;p&gt;I decided to give &lt;a href=&#34;https://github.com/davedash/django-fixture-magic&#34;&gt;Fixture Magic&lt;/a&gt; a try.&lt;/p&gt;
+
+&lt;h2 id=&#34;fixture-magic:25f7c7e781c9bc5fa7e4fc70ab13d75c&#34;&gt;Fixture Magic&lt;/h2&gt;
+
+&lt;p&gt;My initial test wasn&amp;rsquo;t very promising.&lt;/p&gt;
+
+&lt;p&gt;ImportError: cannot import name loading&lt;/p&gt;
+
+&lt;p&gt;But apparently I wasn&amp;rsquo;t the &lt;a href=&#34;https://github.com/davedash/django-fixture-magic/issues/37&#34;&gt;only one.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;-e git://github.com/davedash/django-fixture-magic@42c6df73d11512d76e3170453f175164ff22db02#egg=django_fixture_magic&lt;/p&gt;
+
+&lt;p&gt;Then I found out that I can&amp;rsquo;t have non-int keys. Since most of my objects use UUID that was the end of F-Magic.&lt;/p&gt;
+
+&lt;h1 id=&#34;i-gave-up-on-fixtures:25f7c7e781c9bc5fa7e4fc70ab13d75c&#34;&gt;I Gave Up On Fixtures&lt;/h1&gt;
+
+&lt;p&gt;This data model must just be too complex.&lt;/p&gt;
+
+&lt;p&gt;Deploying dev environment now consists of setting up the db and loading a full DB dump.&lt;/p&gt;
+
+&lt;p&gt;pg_dump APP &amp;gt; APP/fixtures/pg_dump.latest.sql&lt;/p&gt;
+
+&lt;p&gt;Load it up with a script when deploying dev.&lt;/p&gt;
+
+&lt;p&gt;psql APP &amp;lt; APP/fixtures/pg_dump.latest.sql&lt;/p&gt;
+
+&lt;h1 id=&#34;how-now-tests:25f7c7e781c9bc5fa7e4fc70ab13d75c&#34;&gt;How Now Tests?&lt;/h1&gt;
+
+&lt;p&gt;I know. Fixtures are kinda important with tests. I went ahead and installed &lt;a href=&#34;https://github.com/rbarrois/factory_boy&#34;&gt;Factory boy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Good enough for now.&lt;/p&gt;
+
+&lt;p&gt;Sorry Django Fixtures. You kinda suck.&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
