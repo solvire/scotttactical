@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scott Tactical </title>
+    <link>http://scotttactical.com/tags/hardware/</link>
+    <language>en-us</language>
+    <author>Scott Tactical</author>
+    <rights>(C) 2016</rights>
+    <updated>2016-03-29 16:14:48 -0700 PDT</updated>
+
+    
+      
+        <item>
+          <title>Dymo LabelWriter on Mac OSX - JavaScript</title>
+          <link>http://scotttactical.com/setup-dymo-labelwriter-mac-javascript</link>
+          <pubDate>Tue, 29 Mar 2016 16:14:48 PDT</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/setup-dymo-labelwriter-mac-javascript</guid>
+          <description>
+
+&lt;h1 id=&#34;setup-dymo-labelwriter-450-on-mac-osx:f54a9dc0e540fe971017dc4c52f5599e&#34;&gt;Setup - Dymo LabelWriter 450 on Mac OSX&lt;/h1&gt;
+
+&lt;p&gt;The clinic software requires the ability to print labels adhoc and by event. This requires that the client be able to initiate the labels. There are no requirements that the backend server be able to print labels. Thank goodness. That requires something akin to a fulfillment center and probably integration with a 3rd app. Welcome: disparate stand-alone boxes.&lt;/p&gt;
+
+&lt;h2 id=&#34;install-app-and-drivers:f54a9dc0e540fe971017dc4c52f5599e&#34;&gt;Install App and Drivers&lt;/h2&gt;
+
+&lt;p&gt;Good job guys. You get a big thumbs up for having a brew recipe.&lt;/p&gt;
+
+&lt;p&gt;brew install Caskroom/cask/dymo-label&lt;/p&gt;
+
+&lt;p&gt;After running this I was able to hit the app from the Applications directory.&lt;/p&gt;
+
+&lt;p&gt;And then after that I had to retract my praise. The app was well out of date. It might have worked but I wasn&amp;rsquo;t going to test it. I need latest greatest. Please use &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt; or some public repository with the uncompressed source. :) Tnx.&lt;/p&gt;
+
+&lt;h2 id=&#34;reinstall-installer:f54a9dc0e540fe971017dc4c52f5599e&#34;&gt;Reinstall Installer&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://developers.dymo.com/2016/01/05/dymo-label-software-version-8-5-3-for-patch-release-macwin/&#34;&gt;http://developers.dymo.com/2016/01/05/dymo-label-software-version-8-5-3-for-patch-release-macwin/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This got me up to 8.5.3 and support for El Cap.&lt;/p&gt;
+
+&lt;p&gt;I did not install the M$ Office support junk. Thanks but no.&lt;/p&gt;
+
+&lt;h2 id=&#34;add-printer:f54a9dc0e540fe971017dc4c52f5599e&#34;&gt;Add Printer&lt;/h2&gt;
+
+&lt;p&gt;This was simple as well. I went to options and added the printer. Thanks for making that easy Dymo.&lt;/p&gt;
+
+&lt;h1 id=&#34;coding-with-dymo-javascript-sdk:f54a9dc0e540fe971017dc4c52f5599e&#34;&gt;Coding with Dymo Javascript SDK&lt;/h1&gt;
+
+&lt;p&gt;This SDK wasn&amp;rsquo;t too hard to work with.&lt;/p&gt;
+
+&lt;p&gt;I took the &lt;a href=&#34;http://developers.dymo.com/2011/12/16/printing-qr-code-part-2/&#34;&gt;example&lt;/a&gt; with the included &lt;a href=&#34;http://labelwriter.com/software/dls/sdk/samples/js/QRCode/QRCode.html&#34;&gt;html&lt;/a&gt; and &lt;a href=&#34;http://labelwriter.com/software/dls/sdk/samples/js/QRCode/QRCode.js&#34;&gt;javascript&lt;/a&gt;. This saved me a ton of time. I have a pretty specific use case so I was able to remove most of the unnecessary code.&lt;/p&gt;
+
+&lt;h2 id=&#34;allow-to-run:f54a9dc0e540fe971017dc4c52f5599e&#34;&gt;Allow to Run&lt;/h2&gt;
+
+&lt;p&gt;The browser will allow you to run &amp;ldquo;DYMO Label&amp;rdquo; app so you are prompted to allow. Just allow it permanently. Then you will need to refresh so the init can pick up the printer.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Printing from dymo JavaScript sdk &lt;a href=&#34;https://t.co/NbwIdx0QtT&#34;&gt;https://t.co/NbwIdx0QtT&lt;/a&gt;&lt;/p&gt;&amp;mdash; Scott Tactical (@Scott_Tactical) &lt;a href=&#34;https://twitter.com/Scott_Tactical/status/715214655044644865&#34;&gt;March 30, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

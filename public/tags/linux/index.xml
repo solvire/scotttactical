@@ -34,6 +34,16 @@
 
 &lt;p&gt;&lt;code&gt;find . -type f -name &amp;quot;*.*&amp;quot; ! -path &amp;quot;./.git/*&amp;quot; | awk -F. &#39;!a[$NF]++{print $NF}&#39; | wc -l&lt;/code&gt;&lt;/p&gt;
 
+&lt;h2 id=&#34;file-information:87c17eeb99a01ec14432498a29300fb3&#34;&gt;File Information&lt;/h2&gt;
+
+&lt;p&gt;Print the longest line in a file&lt;/p&gt;
+
+&lt;p&gt;awk &amp;lsquo;length &amp;gt; m { m = length; a = $0 } END { print a }&amp;rsquo; input-file&lt;/p&gt;
+
+&lt;p&gt;Get the line number of the longest line&lt;/p&gt;
+
+&lt;p&gt;awk &amp;lsquo;length &amp;gt; m { m = length; a = NR } END { print a }&amp;rsquo; input-file&lt;/p&gt;
+
 &lt;h2 id=&#34;vim-commands:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Vim Commands&lt;/h2&gt;
 
 &lt;p&gt;To find non-ascii characters in your file:&lt;/p&gt;
