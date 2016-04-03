@@ -1,0 +1,13 @@
+---
+date: 2016-03-21T00:22:21-07:00
+title: Moab Utah - Area BFE 2016
+tags: [ wheeling, adventure ]
+galleryPath: moab-utah-area-bfe-2016-03-22/
+url: moab-utah-area-bfe-2016-03-22
+featuredImage: "IMG_9133.jp"
+galleryImages: [ IMG_9132.jpg, IMG_9133.jpg, IMG_9134.jpg, IMG_9135.jpg, IMG_9136.jpg, IMG_9137.jpg, IMG_9138.jpg, IMG_9139.jpg, IMG_9140.jpg, IMG_9141.jpg, IMG_9142.jpg, IMG_9143.jpg, IMG_9144.jpg, IMG_9145.jpg, IMG_9146.jpg, IMG_9147.jpg, IMG_9148.jpg, IMG_9149.jpg, IMG_9150.jpg, IMG_9151.jpg, IMG_9152.jpg, IMG_9153.jpg, IMG_9154.jpg, IMG_9155.jpg, IMG_9156.jpg, IMG_9157.jpg, IMG_9158.jpg, IMG_9159.jpg, IMG_9160.jpg, IMG_9161.jpg, IMG_9162.jpg, IMG_9163.jpg, IMG_9164.jpg, IMG_9165.jpg, IMG_9166.jpg, IMG_9167.jpg, IMG_9168.jpg, IMG_9169.jpg, IMG_9170.jpg, IMG_9171.jpg, IMG_9172.jpg, IMG_9173.jpg, IMG_9174.jpg, IMG_9175.jpg, IMG_9176.jpg, IMG_9177.jpg, IMG_9178.jpg, IMG_9179.jpg, IMG_9180.jpg, IMG_9181.jpg, IMG_9182.jpg, IMG_9183.jpg, IMG_9184.jpg, IMG_9185.jpg, IMG_9186.jpg, IMG_9187.jpg, IMG_9188.jpg, IMG_9189.jpg, IMG_9190.jpg, IMG_9191.jpg, IMG_9192.jpg, IMG_9193.jpg, IMG_9194.jpg, IMG_9195.jpg, IMG_9196.jpg, IMG_9197.jpg, IMG_9198.jpg, IMG_9199.jpg, IMG_9200.jpg, IMG_9201.jpg, IMG_9202.jpg, IMG_9203.jpg, IMG_9204.jpg, IMG_9205.jpg, IMG_9206.jpg, IMG_9207.jpg, IMG_9208.jpg, IMG_9209.jpg, IMG_9210.jpg, IMG_9211.jpg, IMG_9212.jpg, IMG_9213.jpg, IMG_9214.jpg, IMG_9215.jpg, IMG_9216.jpg, IMG_9217.jpg, IMG_9218.jpg, IMG_9219.jpg, IMG_9220.jpg, IMG_9221.jpg, IMG_9222.jpg, IMG_9223.jpg, IMG_9224.jpg, IMG_9225-Edit.jpg, IMG_9225.jpg, IMG_9226.jpg, IMG_9227.jpg, IMG_9228.jpg, IMG_9229.jpg, IMG_9230.jpg, IMG_9231.jpg, IMG_9232.jpg, IMG_9233.jpg, IMG_9234.jpg, IMG_9235.jpg, IMG_9236.jpg, IMG_9237.jpg, IMG_9238.jpg, IMG_9239.jpg, IMG_9240.jpg, IMG_9241.jpg, IMG_9242.jpg, IMG_9243.jpg, IMG_9244.jpg, IMG_9245.jpg, IMG_9246.jpg, IMG_9247.jpg, IMG_9248.jpg, IMG_9249.jpg, IMG_9250.jpg, IMG_9251.jpg, IMG_9252.jpg, IMG_9253.jpg, IMG_9254.jpg, IMG_9255.jpg, IMG_9256.jpg, IMG_9257.jpg, IMG_9258.jpg, IMG_9259.jpg, IMG_9260.jpg, IMG_9261.jpg, IMG_9262.jpg, IMG_9263.jpg, IMG_9264.jpg, IMG_9265.jpg, IMG_9266.jpg, IMG_9267.jpg, IMG_9268.jpg, IMG_9269.jpg, IMG_9270.jpg, IMG_9271.jpg, IMG_9272.jpg, IMG_9273.jpg, IMG_9274.jpg, IMG_9275.jpg, IMG_9276.jpg, IMG_9277.jpg, IMG_9278.jpg, IMG_9280.jpg, IMG_9281.jpg, IMG_9282.jpg, IMG_9283.jpg, IMG_9284.jpg, IMG_9286.jpg, IMG_9287.jpg, IMG_9288.jpg, IMG_9289.jpg, IMG_9290.jpg, IMG_9291.jpg, IMG_9292.jpg, IMG_9293.jpg, IMG_9294.jpg, IMG_9295.jpg, IMG_9296.jpg, IMG_9297.jpg, IMG_9298.jpg, IMG_9299.jpg, IMG_9300.jpg, IMG_9301.jpg, IMG_9304.jpg, IMG_9305.jpg, IMG_9306.jpg ]
+---
+
+# Area BFE
+
+The guys out wheeling on the [Area BFE](http://www.areabfe.com/) proving grounds.

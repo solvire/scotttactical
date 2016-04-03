@@ -30,7 +30,7 @@
 
 		{{ $jsonData := getJSON $imgUrlBase $img ".json" }}
         <a href="{{ $imgUrlBase }}{{ $img }}" itemprop="contentUrl" data-size="{{ $jsonData.Composite.ImageSize }}">
-        	<img src="{{ $imgUrlBase }}thumbs/{{ $img }}" itemprop="thumbnail" alt="{{ $jsonData.IPTC.Caption }}" title="{{ $jsonData.IPTC.Province }}" />
+        	<img src="{{ $imgUrlBase }}thumbs/{{ $img }}" itemprop="thumbnail" alt="{{ $jsonData.IPTC.Caption }}" title="{{ $jsonData.IPTC.ObjectName }}" />
         </a>
 
         <figcaption itemprop="caption description">{{ $jsonData.IPTC.Caption }}</figcaption>

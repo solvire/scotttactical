@@ -23,6 +23,18 @@ To get the count then simply add \`wc\` command.
 
 `find . -type f -name "*.*" ! -path "./.git/*" | awk -F. '!a[$NF]++{print $NF}' | wc -l`
 
+## File Information
+
+Print the longest line in a file
+
+  awk 'length > m { m = length; a = $0 } END { print a }' input-file
+
+
+Get the line number of the longest line
+
+  awk 'length > m { m = length; a = NR } END { print a }' input-file
+
+
 ## Vim Commands
 
 To find non-ascii characters in your file:
