@@ -6,8 +6,158 @@
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2016</rights>
-    <updated>2016-02-24 23:20:36 -0800 PST</updated>
+    <updated>2016-03-29 16:14:48 -0700 PDT</updated>
 
+    
+      
+        <item>
+          <title>Dymo LabelWriter on Mac OSX - JavaScript</title>
+          <link>http://scotttactical.com/setup-dymo-labelwriter-mac-javascript</link>
+          <pubDate>Tue, 29 Mar 2016 16:14:48 PDT</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/setup-dymo-labelwriter-mac-javascript</guid>
+          <description>
+
+&lt;h1 id=&#34;setup-dymo-labelwriter-450-on-mac-osx:f54a9dc0e540fe971017dc4c52f5599e&#34;&gt;Setup - Dymo LabelWriter 450 on Mac OSX&lt;/h1&gt;
+
+&lt;p&gt;The clinic software requires the ability to print labels adhoc and by event. This requires that the client be able to initiate the labels. There are no requirements that the backend server be able to print labels. Thank goodness. That requires something akin to a fulfillment center and probably integration with a 3rd app. Welcome: disparate stand-alone boxes.&lt;/p&gt;
+
+&lt;h2 id=&#34;install-app-and-drivers:f54a9dc0e540fe971017dc4c52f5599e&#34;&gt;Install App and Drivers&lt;/h2&gt;
+
+&lt;p&gt;Good job guys. You get a big thumbs up for having a brew recipe.&lt;/p&gt;
+
+&lt;p&gt;brew install Caskroom/cask/dymo-label&lt;/p&gt;
+
+&lt;p&gt;After running this I was able to hit the app from the Applications directory.&lt;/p&gt;
+
+&lt;p&gt;And then after that I had to retract my praise. The app was well out of date. It might have worked but I wasn&amp;rsquo;t going to test it. I need latest greatest. Please use &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt; or some public repository with the uncompressed source. :) Tnx.&lt;/p&gt;
+
+&lt;h2 id=&#34;reinstall-installer:f54a9dc0e540fe971017dc4c52f5599e&#34;&gt;Reinstall Installer&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://developers.dymo.com/2016/01/05/dymo-label-software-version-8-5-3-for-patch-release-macwin/&#34;&gt;http://developers.dymo.com/2016/01/05/dymo-label-software-version-8-5-3-for-patch-release-macwin/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This got me up to 8.5.3 and support for El Cap.&lt;/p&gt;
+
+&lt;p&gt;I did not install the M$ Office support junk. Thanks but no.&lt;/p&gt;
+
+&lt;h2 id=&#34;add-printer:f54a9dc0e540fe971017dc4c52f5599e&#34;&gt;Add Printer&lt;/h2&gt;
+
+&lt;p&gt;This was simple as well. I went to options and added the printer. Thanks for making that easy Dymo.&lt;/p&gt;
+
+&lt;h1 id=&#34;coding-with-dymo-javascript-sdk:f54a9dc0e540fe971017dc4c52f5599e&#34;&gt;Coding with Dymo Javascript SDK&lt;/h1&gt;
+
+&lt;p&gt;This SDK wasn&amp;rsquo;t too hard to work with.&lt;/p&gt;
+
+&lt;p&gt;I took the &lt;a href=&#34;http://developers.dymo.com/2011/12/16/printing-qr-code-part-2/&#34;&gt;example&lt;/a&gt; with the included &lt;a href=&#34;http://labelwriter.com/software/dls/sdk/samples/js/QRCode/QRCode.html&#34;&gt;html&lt;/a&gt; and &lt;a href=&#34;http://labelwriter.com/software/dls/sdk/samples/js/QRCode/QRCode.js&#34;&gt;javascript&lt;/a&gt;. This saved me a ton of time. I have a pretty specific use case so I was able to remove most of the unnecessary code.&lt;/p&gt;
+
+&lt;h2 id=&#34;allow-to-run:f54a9dc0e540fe971017dc4c52f5599e&#34;&gt;Allow to Run&lt;/h2&gt;
+
+&lt;p&gt;The browser will allow you to run &amp;ldquo;DYMO Label&amp;rdquo; app so you are prompted to allow. Just allow it permanently. Then you will need to refresh so the init can pick up the printer.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Printing from dymo JavaScript sdk &lt;a href=&#34;https://t.co/NbwIdx0QtT&#34;&gt;https://t.co/NbwIdx0QtT&lt;/a&gt;&lt;/p&gt;&amp;mdash; Scott Tactical (@Scott_Tactical) &lt;a href=&#34;https://twitter.com/Scott_Tactical/status/715214655044644865&#34;&gt;March 30, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Django Search: Multiple Fields and Full Text</title>
+          <link>http://scotttactical.com/django-search-multiple-fields</link>
+          <pubDate>Tue, 22 Mar 2016 22:34:50 PDT</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/django-search-multiple-fields</guid>
+          <description>
+
+&lt;h1 id=&#34;text-search-django-model-fields:7b9a1438010ac7a2f51e76a3ddfaa0e1&#34;&gt;Text Search - Django Model Fields&lt;/h1&gt;
+
+&lt;p&gt;Django has a pretty flexible ORM, but sometimes clients need a free-form text search to get down to the content that you are looking for. It is beyond the capability of most engineers to build a comprehensive search tool and shoehorn it into an existing application. There are people working on these problems for years.&lt;/p&gt;
+
+&lt;p&gt;This does remind me of a senior boss that asked me to add a fuzzy search field to an application and that it was &amp;ldquo;super simple&amp;rdquo;. He said &amp;ldquo;you just do a LIKE statement against all the fields we care about!&amp;rdquo; and proceeded to pseudo code it for me. He should read my post about how not to F&amp;rsquo;k up your engineering staff.&lt;/p&gt;
+
+&lt;h2 id=&#34;searching-with-like-statements:7b9a1438010ac7a2f51e76a3ddfaa0e1&#34;&gt;Searching with Like Statements&lt;/h2&gt;
+
+&lt;p&gt;This is probably the first place an inexperienced engineer will start. Just pick the field and do a LIKE statement against it.&lt;/p&gt;
+
+&lt;p&gt;ex:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;User.objects.filter(username__icontains=keyword)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which will result in:
+&lt;code&gt;SELECT * FROM ... WHERE USERNAME LIKE&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This doesn&amp;rsquo;t scale. It&amp;rsquo;s amateurish.&lt;/p&gt;
+
+&lt;p&gt;But this will satisfy an annoying manager for the time being considering they probably know little about computer science.&lt;/p&gt;
+
+&lt;h2 id=&#34;using-q-objects:7b9a1438010ac7a2f51e76a3ddfaa0e1&#34;&gt;Using Q Objects&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://docs.djangoproject.com/en/dev/topics/db/queries/#complex-lookups-with-q-objects&#34;&gt;Q object&lt;/a&gt; in Django is kinda nice. It wraps the queryset. I need a little more information on it to be able to speak intelligently. But that aside I decided to use it in a few places where dynamic queries were valuable.&lt;/p&gt;
+
+&lt;p&gt;After doing a little looking I found this response on &lt;a href=&#34;http://stackoverflow.com/questions/26634874/how-can-i-make-django-search-in-multiple-fields-using-querysets-and-mysql-full&#34;&gt;stack overflow&lt;/a&gt; where they suggested using this. I can tell immediately that it&amp;rsquo;s not very scalable under big load.  At the least I can get it going now with only minor levels of sin.&lt;/p&gt;
+
+&lt;p&gt;That post is apparently taken from &lt;a href=&#34;http://julienphalip.com/post/2825034077/adding-search-to-a-django-site-in-a-snap&#34;&gt;Julien Phalip - adding search to django in a snap.&lt;/a&gt;. So credit is given. Nice work.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def normalize_query(query_string,
+    findterms=re.compile(r&#39;&amp;quot;([^&amp;quot;]+)&amp;quot;|(\S+)&#39;).findall,
+    normspace=re.compile(r&#39;\s{2,}&#39;).sub):
+
+    &#39;&#39;&#39;
+    Splits the query string in invidual keywords, getting rid of unecessary spaces and grouping quoted words together.
+    Example:
+    &amp;gt;&amp;gt;&amp;gt; normalize_query(&#39;  some random  words &amp;quot;with   quotes  &amp;quot; and   spaces&#39;)
+        [&#39;some&#39;, &#39;random&#39;, &#39;words&#39;, &#39;with quotes&#39;, &#39;and&#39;, &#39;spaces&#39;]
+    &#39;&#39;&#39;
+
+    return [normspace(&#39;&#39;,(t[0] or t[1]).strip()) for t in findterms(query_string)]
+
+def get_query(query_string, search_fields):
+
+    &#39;&#39;&#39;
+    Returns a query, that is a combination of Q objects.
+    That combination aims to search keywords within a model by testing the given search fields.
+    &#39;&#39;&#39;
+
+    query = None # Query to search for every search term
+    terms = normalize_query(query_string)
+    for term in terms:
+        or_query = None # Query to search for a given term in each field
+        for field_name in search_fields:
+            q = Q(**{&amp;quot;%s__icontains&amp;quot; % field_name: term})
+            if or_query is None:
+                or_query = q
+            else:
+                or_query = or_query | q
+        if query is None:
+            query = or_query
+        else:
+            query = query &amp;amp; or_query
+
+def search_for_something(request):
+   query_string = &#39;&#39;
+   found_entries = None
+   if (&#39;q&#39; in request.GET) and request.GET[&#39;q&#39;].strip():
+       query_string = request.GET[&#39;q&#39;]
+       entry_query = get_query(query_string, [&#39;field1&#39;, &#39;field2&#39;, &#39;field3&#39;])
+       found_entries = Model.objects.filter(entry_query).order_by(&#39;-something&#39;)
+
+   return render_to_response(&#39;app/template-result.html&#39;,
+           { &#39;query_string&#39;: query_string, &#39;found_entries&#39;: found_entries },
+           context_instance=RequestContext(request)
+       )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Another helpful resource was from &lt;a href=&#34;https://yeti.co/blog/global-search-in-django-rest-framework/&#34;&gt;Yeti&lt;/a&gt; adding in some global search. A bit outdated but a nice resource.&lt;/p&gt;
+
+&lt;h2 id=&#34;search-library:7b9a1438010ac7a2f51e76a3ddfaa0e1&#34;&gt;Search Library&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/django-haystack/django-haystack&#34;&gt;https://github.com/django-haystack/django-haystack&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/etianen/django-watson&#34;&gt;https://github.com/etianen/django-watson&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
@@ -2014,6 +2164,16 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;To get the count then simply add `wc` command.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;find . -type f -name &amp;quot;*.*&amp;quot; ! -path &amp;quot;./.git/*&amp;quot; | awk -F. &#39;!a[$NF]++{print $NF}&#39; | wc -l&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;file-information:87c17eeb99a01ec14432498a29300fb3&#34;&gt;File Information&lt;/h2&gt;
+
+&lt;p&gt;Print the longest line in a file&lt;/p&gt;
+
+&lt;p&gt;awk &amp;lsquo;length &amp;gt; m { m = length; a = $0 } END { print a }&amp;rsquo; input-file&lt;/p&gt;
+
+&lt;p&gt;Get the line number of the longest line&lt;/p&gt;
+
+&lt;p&gt;awk &amp;lsquo;length &amp;gt; m { m = length; a = NR } END { print a }&amp;rsquo; input-file&lt;/p&gt;
 
 &lt;h2 id=&#34;vim-commands:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Vim Commands&lt;/h2&gt;
 
