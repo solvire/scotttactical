@@ -1,6 +1,6 @@
 ---
 date: 2016-04-17T15:59:17-08:00
-title: Purdue University Predicts Success"
+title: "Purdue University Predicts Success"
 image: images/cloud-1.jpg
 tags: [ data ]
 ---
