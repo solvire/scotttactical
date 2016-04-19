@@ -10,12 +10,18 @@
                     <time itemprop="datePublished" datetime="{{ .Date.Format .Site.Params.DateForm }}">
                         {{ .Date.Format .Site.Params.DateForm }}
                     </time>
+                    <time itemprop="dateModified" datetime="{{ .Date.Format .Site.Params.DateForm }}">
+                        {{ .Date.Format .Site.Params.DateForm }}
+                    </time>
                 </div>
                 <h1 class="post-title" itemprop="headline">
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                 </h1>
                 <span >
-                  {{ if isset .Params "image" }}<img itemprop="image" alt="{{ .Title }}" src="{{ .Site.BaseURL }}{{ .Params.image | urlize }}">{{ end }}
+                  {{ if isset .Params "image" }}<img itemprop="image" alt="{{ .Title }}" src="{{ .Site.BaseURL }}{{ .Params.image | urlize }}" /><br />{{ end }}
+                  <span itemprop="author">Scott Tactical</span><br />
+                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">{{ .Title }}</span></a><br />
+                  <span itemprop="publisher">Scott Tactical</span><br />
                 </span>
             </header>
 
