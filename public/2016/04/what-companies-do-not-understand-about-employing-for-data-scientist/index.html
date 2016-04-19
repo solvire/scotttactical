@@ -9,13 +9,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Dump Django Databases and Create Fixtures for Testing &middot; Scott Tactical">
+<meta property="og:title" content="What Companies Do Not Understand About Employing for Data Scientist &middot; Scott Tactical">
 
 <meta property="og:site_name" content="Scott Tactical">
 
 <title>
     
-    Dump Django Databases and Create Fixtures for Testing
+    What Companies Do Not Understand About Employing for Data Scientist
     
 </title>
 
@@ -96,93 +96,36 @@
 
 <div class="row">
     <div class="col-md-8">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+        <article class="post">
 
             <header>
                 <div class="post-date">
                     <span class="glyphicon glyphicon-calendar"></span>
-                    <time itemprop="datePublished" datetime="Wed, 24 Feb 2016 23:20:36 PST">
-                        Wed, 24 Feb 2016 23:20:36 PST
+                    <time datetime="Thu, 14 Apr 2016 15:59:17 -0800">
+                        Thu, 14 Apr 2016 15:59:17 -0800
                     </time>
                 </div>
-                <h1 class="post-title" itemprop="headline">
-                    <a href="http://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/">Dump Django Databases and Create Fixtures for Testing</a>
+                <h1 class="post-title">
+                    <a href="http://scotttactical.com/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/">What Companies Do Not Understand About Employing for Data Scientist</a>
                 </h1>
-                <span >
-                  <img itemprop="image" alt="Dump Django Databases and Create Fixtures for Testing" src="http://scotttactical.com/images/django_pony.jpg">
-                </span>
             </header>
 
-            <div class="post-content" itemprop="articleBody">
-              <hr />
+            <div class="post-content">
                 
 
-<h1 id="fixtures-are-a-messy-mess:25f7c7e781c9bc5fa7e4fc70ab13d75c">Fixtures are a Messy Mess</h1>
+<h1 id="what-companies-do-not-understand-about-employing-for-data-scientist:965b0d758f44e981b4a174a00d17ce1b">What Companies Do Not Understand About Employing for Data Scientist</h1>
 
-<p>It is quite a pain to maintain fixtures it seems. I am not sure why yet. Maybe there hasn&rsquo;t been quite enough time on this piece of the product for it to mature.</p>
+<p>Within <a href="https://www.thedataincubator.com/?utm_source=entrepreneur&amp;utm_medium=blog&amp;utm_campaign=hiringmanagers">The Data Incubator</a>, I&rsquo;ve spoken to hundreds of companies searching to make use of the expertise of data scientists - particularly people with advanced levels. Due to the hype surrounding big data nowadays, it&rsquo;s unsurprising that there&rsquo;s as much floating around as there are facts. Sadly, employing managers frequently be a victim of believing many common misconceptions actually was. Listed below are three particulars about data science that employing managers may not understand:</p>
 
-<h1 id="django-dumpdata:25f7c7e781c9bc5fa7e4fc70ab13d75c">Django dumpdata</h1>
+<ol>
+<li><a href="https://targetjobs.co.uk/employer-hubs/rolbac-ltd/440765-software-engineers-and-data-scientist-nlpmachine-learning">Data scientists and software engineers</a> are not the same.</li>
+<li>Big data is more than <a href="http://tech.mit.edu/V136/N9/minor.html">statistics</a> and intelligence.</li>
+<li>Data scientists need to understand the business.</li>
+</ol>
 
-<p>I tried several different variations to dump the data. I&rsquo;ll include a few of them here since they might actually work for someone else.</p>
+<p>Data science requires a mix of the best engineering, statistical, and business skills to be able to build the very best models. Understanding this is actually the initial step for any employing manager searching to get the best data science talent for his or her company.</p>
 
-<p>python manage.py dumpdata &gt; fixture.json</p>
-
-<p>I kept getting various key errors.</p>
-
-<p>Could not load contenttypes.ContentType(pk=23): duplicate key value violates unique constraint &ldquo;django_content_type_app_label_76bd3d3b_uniq&rdquo;
-  DETAIL:  Key (app_label, model)=(businesses, business) already exists.</p>
-
-<p>Eventually turned into this:</p>
-
-<p>python manage.py dumpdata &ndash;indent=4 -e contenttypes -e auth.Permission -e admin &ndash;natural-foreign &gt; fixture.json</p>
-
-<p>OR</p>
-
-<p>python manage.py dumpdata &ndash;natural-foreign &ndash;natural-primary &ndash;indent=4 &gt; fixture.json</p>
-
-<p>gave me this:</p>
-
-<p>Could not load object.User(pk=None): null value in column &ldquo;user_ptr_id&rdquo; violates not-null constraint</p>
-
-<h1 id="dumpdata-alternatives:25f7c7e781c9bc5fa7e4fc70ab13d75c">DumpData Alternatives</h1>
-
-<p>The <a href="https://www.djangopackages.com/grids/g/fixtures/">django grid</a> to the rescue again.</p>
-
-<p>A lot of the packages were for generating testing fixtures. I don&rsquo;t need that. What I need is basically a data backup tool so that whichever dev has the best copy of the data to be able to create the deployment fixture.</p>
-
-<p>I decided to give <a href="https://github.com/davedash/django-fixture-magic">Fixture Magic</a> a try.</p>
-
-<h2 id="fixture-magic:25f7c7e781c9bc5fa7e4fc70ab13d75c">Fixture Magic</h2>
-
-<p>My initial test wasn&rsquo;t very promising.</p>
-
-<p>ImportError: cannot import name loading</p>
-
-<p>But apparently I wasn&rsquo;t the <a href="https://github.com/davedash/django-fixture-magic/issues/37">only one.</a></p>
-
-<p>-e git://github.com/davedash/django-fixture-magic@42c6df73d11512d76e3170453f175164ff22db02#egg=django_fixture_magic</p>
-
-<p>Then I found out that I can&rsquo;t have non-int keys. Since most of my objects use UUID that was the end of F-Magic.</p>
-
-<h1 id="i-gave-up-on-fixtures:25f7c7e781c9bc5fa7e4fc70ab13d75c">I Gave Up On Fixtures</h1>
-
-<p>This data model must just be too complex.</p>
-
-<p>Deploying dev environment now consists of setting up the db and loading a full DB dump.</p>
-
-<p>pg_dump APP &gt; APP/fixtures/pg_dump.latest.sql</p>
-
-<p>Load it up with a script when deploying dev.</p>
-
-<p>psql APP &lt; APP/fixtures/pg_dump.latest.sql</p>
-
-<h1 id="how-now-tests:25f7c7e781c9bc5fa7e4fc70ab13d75c">How Now Tests?</h1>
-
-<p>I know. Fixtures are kinda important with tests. I went ahead and installed <a href="https://github.com/rbarrois/factory_boy">Factory boy</a>.</p>
-
-<p>Good enough for now.</p>
-
-<p>Sorry Django Fixtures. You kinda suck.</p>
+<p>Read more about this news at <a href="https://www.entrepreneur.com/article/269919">https://www.entrepreneur.com/article/269919</a>.</p>
 
             </div>
 
@@ -191,9 +134,9 @@
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/django" rel="tag">
+                        <a href="http://scotttactical.com//tags/data">
                             <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">django</span>
+                            data
                         </a>
                     </li>
                     
@@ -213,6 +156,19 @@
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/purdue-university-predicts-success/">Purdue University Predicts Success</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://scotttactical.com/2016/04/the-fast-growing-data-center-segment/">The Fast-Growing Data Center Segment</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://scotttactical.com/2016/04/better-communication-through-big-data/">Better Communication Through Big Data</a></li>
                     
                     
                     
@@ -222,40 +178,49 @@
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/3-reasons-why-data-centers-are-eco-friendly/">3 Reasons Why Data Centers Are Eco-Friendly</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/data-science-building-workplace-diversities/">Data Science: Building Workplace Diversities</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/choosing-your-data-warehouse-product/">Choosing Your Data Warehouse Product</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/solving-societys-problems-with-data/">Solving Society&#39;s Problems With Data</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/data-science-job-search/">Data Science Job Search</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/why-data-science-in-marketing-is-rising/">Why Data Science in Marketing is Rising</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/big-data-and-storage-what-are-the-trends/">Big Data and Storage: What are the Trends?</a></li>
                     
                     
                     
                     
+                    
+                    <li><a href="http://scotttactical.com/2016/04/the-myths-of-big-data/">The Myths of Big Data</a></li>
                     
                     
                     
@@ -291,6 +256,19 @@
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/02/big-data-on-a-budget/">Big Data on a Budget</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://scotttactical.com/2016/02/microsoft-accelerator-seattle-machine-learning-funding/">Microsoft Accelerator Seattle Machine Learning Funding</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://scotttactical.com/what-does-data-scientist-do">What Does a Data Scientist Do</a></li>
                     
                     
                     
@@ -300,12 +278,7 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
+                    <li><a href="http://scotttactical.com/health-medical-interconnectivity-data-revolution/">Health, Interconnectivity - The Data Revolution</a></li>
                     
                     
                     
@@ -422,34 +395,19 @@
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="http://scotttactical.com/moab-utah-hells-revenge-2016-03-21/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous"><a href="http://scotttactical.com/2016/04/better-communication-through-big-data/"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="http://scotttactical.com//post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="http://scotttactical.com/migrate-private-github-repo-bitbucket">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="http://scotttactical.com/2016/04/3-reasons-why-data-centers-are-eco-friendly/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
                 </nav>
 
                 
-                
-                
-                <div id="disqus_thread"></div>
-                <script type="text/javascript">
- 
-var disqus_shortname = 'scotttactical'; 
-
- 
-(function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 
                 
             </footer>
