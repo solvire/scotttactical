@@ -1,13 +1,199 @@
-<!DOCTYPE html><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1"><meta property=og:url content="http://scotttactical.com/"><meta property=og:type content=article><meta property=og:title content="PHPunit Slowness Performance Suggestions &middot; Scott Tactical"><meta property=og:site_name content="Scott Tactical"><title>PHPunit Slowness Performance Suggestions</title><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css><link rel=stylesheet href=//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css><link rel=stylesheet href=//yandex.st/highlightjs/8.0/styles/github.min.css><link rel=stylesheet href=http://scotttactical.com/css/main.css><script src=http://scotttactical.com//js/photo-swipe/photoswipe.min.js></script><script src=http://scotttactical.com//js/photo-swipe/photoswipe-ui-default.min.js></script><link rel="shortcut icon" href=http://scotttactical.com//assets/favicon.ico><link rel=alternate type=application/rss+xml title=RSS href=http://scotttactical.com//index.xml><div class=container><header class=nav><nav class="navbar navbar-default"><div class=container-fluid><div class=navbar-header><button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#navbar-collapse><span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span></button> <a class=navbar-brand href="http://scotttactical.com/">Scott Tactical</a></div><div class="collapse navbar-collapse" id=navbar-collapse><ul class="nav navbar-nav"><li><a href=http://scotttactical.com/post>All Posts</a></li><li><a href=http://scotttactical.com/gallery>Galleries</a></li><li><a href=http://scotttactical.com/news>News</a></li><li><a href=http://scotttactical.com/tags>Tags</a></li><li><a href="http://scotttactical.com/">Home</a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href=https://www.facebook.com/100005012745496 target=_blank><i class="fa fa-facebook-square"></i> Facebook</a></li><li><a href=https://twitter.com/scott_tactical target=_blank><i class="fa fa-twitter-square"></i> Twitter</a></li><li><a href=https://github.com/solvire target=_blank><i class="fa fa-github-square"></i> GitHub</a></li></ul></div></div></nav></header><div class=row><div class=col-md-8><article class=post itemscope="" itemtype=http://schema.org/BlogPosting><header><div class=post-date><span class="glyphicon glyphicon-calendar"></span><time itemprop=datePublished datetime="Wed, 04 Nov 2015 12:57:42 PST">Wed, 04 Nov 2015 12:57:42 PST</time><time itemprop=dateModified datetime="Wed, 04 Nov 2015 12:57:42 PST">Wed, 04 Nov 2015 12:57:42 PST</time></div><h1 class=post-title itemprop=headline><a href=http://scotttactical.com/performance-suggestions-phpunit-slowness>PHPunit Slowness Performance Suggestions</a></h1><span><img itemprop=image alt="PHPunit Slowness Performance Suggestions" src=http://scotttactical.com/images/php-unit-logo.jpg><br><span itemprop=author>Scott Tactical</span><br><a itemprop=mainEntityOfPage href=#><span itemprop=name>PHPunit Slowness Performance Suggestions</span></a><br><span itemprop=publisher>Scott Tactical</span><br></span></header><div class=post-content itemprop=articleBody><hr><h1 id=phpunit-is-slowness:d306273837598a7a2a686add086bab85>PHPUnit Is Slowness</h1><p>I love <a href="https://phpunit.de/">PHPUnit</a> don&rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&rsquo;s like the code got yo back bro! Build code that lasts.</p><p><em>EDIT</em>: I know most of the problems are inherent with tests not the testing framework. However, my requirements dictate how I use it to a certain extent. Peace.</p><h2 id=phpunit-is-painfully-slow:d306273837598a7a2a686add086bab85>PHPUnit is painfully slow.</h2><p><img src=/images/turtle-speed.jpg alt="PHPUnit Is Slow"></p><p>Seriously. Though. Maybe having a concurrent environment it can run it would help. I worked at a place with 65,000 unit tests and if they ran as slow as our unit tests here it would never finish. It was literally taking 30-60 seconds per test. That is 65000 x 60 = 1083 hours or 45 days.</p><p>For reference the 41 year old <a href=http://www.npr.org/sections/thetwo-way/2015/07/13/422610986/ultramarathoner-finishes-the-appalachian-trail-in-record-time>Scott Jurek</a> can walk the <a href=http://www.nps.gov/appa/index.htm>2000+ mile Appalachian Trail</a> in 45 days. Single threaded of course.</p><h2 id=why-is-phpunit-anti-performant:d306273837598a7a2a686add086bab85>Why is PHPUnit Anti-Performant</h2><p>Some thing that are inherent to unit tests that make them slow.</p><ul><li>Tests are usually not well encapsulated</li><li>Many tests aren&rsquo;t true unit tests - @see integration tests</li><li>Databases must be built and destroyed for every test</li><li>Connections from local systems are slow</li><li>Writing to file on a local system is slow</li><li>Generating reports is intensive</li></ul><h1 id=strategies:d306273837598a7a2a686add086bab85>Strategies</h1><h2 id=sqlite-in-memory:d306273837598a7a2a686add086bab85>SQLite - In Memory</h2><p><img src=/images/sqlite.gif alt=SQLite></p><p>Switch to an in-memory database. Even if you have SSD drives its going to be slow. <a href="https://www.sqlite.org/">SQLite</a> is on OS X out of the box I am fairly sure and comes with most &lsquo;nix flavors. Considering they embed it all over the place.</p><p>Setting up Laravel it would be something like this:</p><pre><code class=language-php>
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta property="og:url" content="http://scotttactical.com/">
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHPunit Slowness Performance Suggestions &middot; Scott Tactical">
+
+<meta property="og:site_name" content="Scott Tactical">
+
+<title>
+    
+    PHPunit Slowness Performance Suggestions
+    
+</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/github.min.css">
+<link rel="stylesheet" href="http://scotttactical.com/css/main.css">
+
+
+<script src="http://scotttactical.com//js/photo-swipe/photoswipe.min.js"></script>
+
+<script src="http://scotttactical.com//js/photo-swipe/photoswipe-ui-default.min.js"></script>
+
+
+
+<link rel="shortcut icon" href="http://scotttactical.com//assets/favicon.ico">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://scotttactical.com//index.xml">
+
+
+<div class="container">
+    <header class="nav">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://scotttactical.com/">Scott Tactical</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="http://scotttactical.com/post">All Posts</a></li>
+                        <li><a href="http://scotttactical.com/gallery">Galleries</a></li>
+                        <li><a href="http://scotttactical.com/news">News</a></li>
+                        <li><a href="http://scotttactical.com/tags">Tags</a></li>
+                        
+                        <li><a href="http://scotttactical.com/">Home</a></li>
+                        
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        <li>
+                            <a href="https://www.facebook.com/100005012745496" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                                Facebook</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="https://twitter.com/scott_tactical" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                                Twitter</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="https://github.com/solvire" target="_blank">
+                                <i class="fa fa-github-square"></i>
+                                GitHub
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+
+            <header>
+                <div class="post-date">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    <time itemprop="datePublished" datetime="Wed, 04 Nov 2015 12:57:42 PST">
+                        Wed, 04 Nov 2015 12:57:42 PST
+                    </time>
+                    <time itemprop="dateModified" datetime="Wed, 04 Nov 2015 12:57:42 PST">
+                        Wed, 04 Nov 2015 12:57:42 PST
+                    </time>
+                </div>
+                <h1 class="post-title" itemprop="headline">
+                    <a href="http://scotttactical.com/performance-suggestions-phpunit-slowness">PHPunit Slowness Performance Suggestions</a>
+                </h1>
+                <span >
+                  <img itemprop="image" alt="PHPunit Slowness Performance Suggestions" src="http://scotttactical.com/images/php-unit-logo.jpg" /><br />
+                  <span itemprop="author">Scott Tactical</span><br />
+                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">PHPunit Slowness Performance Suggestions</span></a><br />
+                  <span itemprop="publisher">Scott Tactical</span><br />
+                </span>
+            </header>
+
+            <div class="post-content" itemprop="articleBody">
+              <hr />
+                
+
+<h1 id="phpunit-is-slowness:d306273837598a7a2a686add086bab85">PHPUnit Is Slowness</h1>
+
+<p>I love <a href="https://phpunit.de/">PHPUnit</a> don&rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&rsquo;s like the code got yo back bro! Build code that lasts.</p>
+
+<p><em>EDIT</em>: I know most of the problems are inherent with tests not the testing framework.  However, my requirements dictate how I use it to a certain extent.  Peace.</p>
+
+<h2 id="phpunit-is-painfully-slow:d306273837598a7a2a686add086bab85">PHPUnit is painfully slow.</h2>
+
+<p><img src="/images/turtle-speed.jpg" alt="PHPUnit Is Slow" /></p>
+
+<p>Seriously. Though. Maybe having a concurrent environment it can run it would help. I worked at a place with 65,000 unit tests and if they ran as slow as our unit tests here it would never finish. It was literally taking 30-60 seconds per test. That is 65000 x 60 = 1083 hours or 45 days.</p>
+
+<p>For reference the 41 year old <a href="http://www.npr.org/sections/thetwo-way/2015/07/13/422610986/ultramarathoner-finishes-the-appalachian-trail-in-record-time">Scott Jurek</a> can walk the <a href="http://www.nps.gov/appa/index.htm">2000+ mile Appalachian Trail</a> in 45 days. Single threaded of course.</p>
+
+<h2 id="why-is-phpunit-anti-performant:d306273837598a7a2a686add086bab85">Why is PHPUnit Anti-Performant</h2>
+
+<p>Some thing that are inherent to unit tests that make them slow.</p>
+
+<ul>
+<li>Tests are usually not well encapsulated</li>
+<li>Many tests aren&rsquo;t true unit tests - @see integration tests</li>
+<li>Databases must be built and destroyed for every test</li>
+<li>Connections from local systems are slow</li>
+<li>Writing to file on a local system is slow</li>
+<li>Generating reports is intensive</li>
+</ul>
+
+<h1 id="strategies:d306273837598a7a2a686add086bab85">Strategies</h1>
+
+<h2 id="sqlite-in-memory:d306273837598a7a2a686add086bab85">SQLite - In Memory</h2>
+
+<p><img src="/images/sqlite.gif" alt="SQLite" /></p>
+
+<p>Switch to an in-memory database. Even if you have SSD drives its going to be slow. <a href="https://www.sqlite.org/">SQLite</a> is on OS X out of the box I am fairly sure and comes with most &lsquo;nix flavors. Considering they embed it all over the place.</p>
+
+<p>Setting up Laravel it would be something like this:</p>
+
+<pre><code class="language-php">
 'sqlite' =&gt; [
     'driver'   =&gt; 'sqlite',
 //  'database' =&gt; storage_path().'/database.sqlite',
     'database' =&gt; ':memory:',
     'prefix'   =&gt; '',
 ],
-</code></pre><p>Just comment out the hard path. Then add a record for the drive in your phpunit.xml I also like to make sure my host is set to not kill anything. I have wiped out a dev database or two.</p><pre><code class=language-xml>&lt;env name=&quot;DATABASE_DRIVER&quot; value=&quot;sqlite&quot;/&gt;
+</code></pre>
+
+<p>Just comment out the hard path.
+Then add a record for the drive in your phpunit.xml
+I also like to make sure my host is set to not kill anything. I have wiped out a dev database or two.</p>
+
+<pre><code class="language-xml">&lt;env name=&quot;DATABASE_DRIVER&quot; value=&quot;sqlite&quot;/&gt;
 &lt;env name=&quot;DB_HOST&quot; value=&quot;NO&quot;/&gt;
-</code></pre><h2 id=database-sometimes:d306273837598a7a2a686add086bab85>Database - Sometimes</h2><p>I have two base test cases that I use for almost everything. One that wraps up Laravel or the big framework I&rsquo;m messing with or one that will just extend phpunit by itself. It might even be better to have data groups into domains so that when you are running a group of tests that it only loads up those tables.</p><p>We have a couple hundred tests. Not much. But it takes 2-5 seconds to load up all the data. That adds up to minutes. Can&rsquo;t handle that.</p><h2 id=grouping-test-suites:d306273837598a7a2a686add086bab85>Grouping Test Suites</h2><p>You have the ability to group your tests. I always have my developers add docblocks such as below so that PHPUnit will know how to group thing. The fields that I want them to use are:</p><ul><li>@author - for running all mine or someone&rsquo;s tests</li><li>@group - I have them just put the package in this place</li><li>@namespace - I think this works</li></ul><pre><code class=language-php>
+</code></pre>
+
+<h2 id="database-sometimes:d306273837598a7a2a686add086bab85">Database - Sometimes</h2>
+
+<p>I have two base test cases that I use for almost everything. One that wraps up Laravel or the big framework I&rsquo;m messing with or one that will just extend phpunit by itself.  It might even be better to have data groups into domains so that when you are running a group of tests that it only loads up those tables.</p>
+
+<p>We have a couple hundred tests. Not much.  But it takes 2-5 seconds to load up all the data. That adds up to minutes.  Can&rsquo;t handle that.</p>
+
+<h2 id="grouping-test-suites:d306273837598a7a2a686add086bab85">Grouping Test Suites</h2>
+
+<p>You have the ability to group your tests. I always have my developers add docblocks such as below so that PHPUnit will know how to group thing. The fields that I want them to use are:</p>
+
+<ul>
+<li>@author - for running all mine or someone&rsquo;s tests</li>
+<li>@group - I have them just put the package in this place</li>
+<li>@namespace - I think this works</li>
+</ul>
+
+<pre><code class="language-php">
 /**
  *
  * @author solvire &lt;stevenjscott@gmail.com&gt;
@@ -15,7 +201,11 @@
  * @group Rules
  * @namespace LeadFerret\Lib\Rules
  */
-</code></pre><p>Running <code>./vendor/bin/phpunit --list-groups</code> will give you an idea of what groups you can run.</p><pre><code>./vendor/bin/phpunit --list-groups
+</code></pre>
+
+<p>Running <code>./vendor/bin/phpunit --list-groups</code> will give you an idea of what groups you can run.</p>
+
+<pre><code>./vendor/bin/phpunit --list-groups
 PHPUnit 4.8.16 by Sebastian Bergmann and contributors.
 
 Available test group(s):
@@ -26,24 +216,358 @@ Available test group(s):
  - default
  - solvire &lt;stevenjscott@gmail.com&gt;
 
-</code></pre><h2 id=filter-your-tests:d306273837598a7a2a686add086bab85>Filter Your Tests</h2><p>Run only the tests you need. Sometimes I&rsquo;m working with a class and I want to keep running that class. Just filter by the test class name:</p><p><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot;</code></p><p>Make your test names interesting camel cases. If you run testdox it comes out easier to read:</p><pre><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot; --testdox
+</code></pre>
+
+<h2 id="filter-your-tests:d306273837598a7a2a686add086bab85">Filter Your Tests</h2>
+
+<p>Run only the tests you need. Sometimes I&rsquo;m working with a class and I want to keep running that class.  Just filter by the test class name:</p>
+
+<p><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot;</code></p>
+
+<p>Make your test names interesting camel cases. If you run testdox it comes out easier to read:</p>
+
+<pre><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot; --testdox
 PHPUnit 4.8.16 by Sebastian Bergmann and contributors.
 
 LeadFerret\Lib\Rules\CompanyModifyRuleProvider
  [x] Validate trusted can modify company
 
-</code></pre><h2 id=turn-off-code-coverage:d306273837598a7a2a686add086bab85>Turn Off Code Coverage</h2><p>You don&rsquo;t always have to run code coverage reports. In fact probably only before a deployment. Either you really love to see code coverage or you hate dealing with unit tests. Doesn&rsquo;t really seem to be much between.</p><h3 id=performance-tests:d306273837598a7a2a686add086bab85>Performance Tests</h3><p>The difference was so staggering I that I was totally irritated I didn&rsquo;t find this sooner. I was even getting in trying to debug at the lower code level.</p><pre><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot; --no-coverage
+</code></pre>
+
+<h2 id="turn-off-code-coverage:d306273837598a7a2a686add086bab85">Turn Off Code Coverage</h2>
+
+<p>You don&rsquo;t always have to run code coverage reports. In fact probably only before a deployment. Either you really love to see code coverage or you hate dealing with unit tests.  Doesn&rsquo;t really seem to be much between.</p>
+
+<h3 id="performance-tests:d306273837598a7a2a686add086bab85">Performance Tests</h3>
+
+<p>The difference was so staggering I that I was totally irritated I didn&rsquo;t find this sooner. I was even getting in trying to debug at the lower code level.</p>
+
+<pre><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot; --no-coverage
 PHPUnit 4.8.16 by Sebastian Bergmann and contributors.
 .
 Time: 3.98 seconds, Memory: 35.25Mb
 OK (1 test, 2 assertions)
-</code></pre><p>And with coverage:</p><pre><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot;
+</code></pre>
+
+<p>And with coverage:</p>
+
+<pre><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot;
 PHPUnit 4.8.16 by Sebastian Bergmann and contributors.
 .
 Time: 48.54 seconds, Memory: 46.75Mb
 OK (1 test, 2 assertions)
 Generating code coverage report in HTML format ... done
-</code></pre><p>FASTER!</p><h2 id=javascript-for-the-assist:d306273837598a7a2a686add086bab85>JavaScript For The Assist</h2><p><img src=/images/gulp.png alt=GulpJS></p><p>We have been toying with using <a href="http://gulpjs.com/">Gulp</a> / <a href="https://www.npmjs.com/">NPM</a> for setting up a better workflow. It is simple enough that once a file is saved that scripts can kick off the appropriate unit tests. If your tests are completing in less than a couple seconds then it doesn&rsquo;t hurt to keep running them. If they break you may know it sooner. This is also helpful for those people who refuse to use a full-featured IDE. Probably also the same people that enjoy working on javascript in the dark. I know who you are. O.o</p><h1 id=conclusion:d306273837598a7a2a686add086bab85>Conclusion</h1><p>Life is much better now.</p><p>Test-driven development is a great way to go about things. I highly suggest it. It makes your life easier in the long run and your credibility as an engineer is safer when you aren&rsquo;t worried about whether you are going to break things. If you automate the process and provide cool reports with graphs then you can build a friendly rivalry based on coverage rights.</p><p>Build Quality Software</p><p><em>Engineer; Don&rsquo;t Hack</em></p><p>=st=</p></div><aside><ul class="list-inline post-tags"><li><a href=http://scotttactical.com//tags/php rel=tag><i class="fa fa-tags"></i> <span itemprop=keywords>php</span></a></li><li><a href=http://scotttactical.com//tags/testing rel=tag><i class="fa fa-tags"></i> <span itemprop=keywords>testing</span></a></li><li><a href=http://scotttactical.com//tags/performance rel=tag><i class="fa fa-tags"></i> <span itemprop=keywords>performance</span></a></li></ul><h3>Related Post</h3><ul class=post-rels><li><a href="http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/">Force HTTPS on Laravel 5 behind AWS ELB on EC2</a></li><li><a href="http://scotttactical.com/php-hypermedia-rest-api-wrapper/">PHP Hypermedia REST API wrapper</a></li><li><a href="http://scotttactical.com/to-hiphop-or-not-php-hhvm/">To HipHop or Not - PHP and HHVM</a></li></ul></aside><footer><nav><ul class=pager><li class=previous><a href="http://scotttactical.com/post/eat-for-war/"><span aria-hidden=true>&larr;</span> Older</a></li><li><a href=http://scotttactical.com//post>All Posts</a></li><li class=next><a href="http://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/">Newer <span aria-hidden=true>&rarr;</span></a></li></ul></nav><div id=disqus_thread></div><script type=text/javascript>
+</code></pre>
+
+<p>FASTER!</p>
+
+<h2 id="javascript-for-the-assist:d306273837598a7a2a686add086bab85">JavaScript For The Assist</h2>
+
+<p><img src="/images/gulp.png" alt="GulpJS" /></p>
+
+<p>We have been toying with using <a href="http://gulpjs.com/">Gulp</a> / <a href="https://www.npmjs.com/">NPM</a> for setting up a better workflow.  It is simple enough that once a file is saved that scripts can kick off the appropriate unit tests. If your tests are completing in less than a couple seconds then it doesn&rsquo;t hurt to keep running them. If they break you may know it sooner.  This is also helpful for those people who refuse to use a full-featured IDE.  Probably also the same people that enjoy working on javascript in the dark.  I know who you are. O.o</p>
+
+<h1 id="conclusion:d306273837598a7a2a686add086bab85">Conclusion</h1>
+
+<p>Life is much better now.</p>
+
+<p>Test-driven development is a great way to go about things.  I highly suggest it. It makes your life easier in the long run and your credibility as an engineer is safer when you aren&rsquo;t worried about whether you are going to break things. If you automate the process and provide cool reports with graphs then you can build a friendly rivalry based on coverage rights.</p>
+
+<p>Build Quality Software</p>
+
+<p><em>Engineer; Don&rsquo;t Hack</em></p>
+
+<p>=st=</p>
+
+            </div>
+
+            <aside>
+                
+                <ul class="list-inline post-tags">
+                    
+                    <li>
+                        <a href="http://scotttactical.com//tags/php" rel="tag">
+                            <i class="fa fa-tags"></i>
+                            <span itemprop="keywords">php</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://scotttactical.com//tags/testing" rel="tag">
+                            <i class="fa fa-tags"></i>
+                            <span itemprop="keywords">testing</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://scotttactical.com//tags/performance" rel="tag">
+                            <i class="fa fa-tags"></i>
+                            <span itemprop="keywords">performance</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+                
+                
+                <h3>Related Post</h3>
+                <ul class="post-rels">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/">Force HTTPS on Laravel 5 behind AWS ELB on EC2</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://scotttactical.com/php-hypermedia-rest-api-wrapper/">PHP Hypermedia REST API wrapper</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://scotttactical.com/to-hiphop-or-not-php-hhvm/">To HipHop or Not - PHP and HHVM</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+            </aside>
+            
+            
+            <footer>
+
+                <nav>
+                    <ul class="pager">
+
+                        
+                        <li class="previous"><a href="http://scotttactical.com/post/eat-for-war/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        
+
+                        <li><a href="http://scotttactical.com//post">All Posts</a></li>
+
+                        
+                        <li class="next"><a href="http://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        
+
+                    </ul>
+                </nav>
+
+                
+                
+                
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
  
 var disqus_shortname = 'scotttactical'; 
 
@@ -53,7 +577,262 @@ var disqus_shortname = 'scotttactical';
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
-                </script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></footer></article></div><div class=col-md-4><aside><div class=row><div class="col-xs-12 col-sm-4 col-md-12"><div class="panel panel-default"><div class=panel-heading><h2 class=panel-title>Recent Posts</h2></div><div class=list-group><a href=/moab-utah-fins-and-things-2016-03-22 class=list-group-item>Moab Utah - Fins and Things 2016</a> <a href="/2016/04/purdue-university-predicts-success/" class=list-group-item>Purdue University Predicts Success</a> <a href="/2016/04/the-fast-growing-data-center-segment/" class=list-group-item>The Fast-Growing Data Center Segment</a> <a href="/2016/04/better-communication-through-big-data/" class=list-group-item>Better Communication Through Big Data</a> <a href="/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/" class=list-group-item>What Companies Do Not Understand About Employing for Data Scientist</a> <a href="/2016/04/3-reasons-why-data-centers-are-eco-friendly/" class=list-group-item>3 Reasons Why Data Centers Are Eco-Friendly</a> <a href="/2016/04/data-science-building-workplace-diversities/" class=list-group-item>Data Science: Building Workplace Diversities</a> <a href="/2016/04/choosing-your-data-warehouse-product/" class=list-group-item>Choosing Your Data Warehouse Product</a> <a href="/2016/04/solving-societys-problems-with-data/" class=list-group-item>Solving Society&#39;s Problems With Data</a> <a href="/2016/04/data-science-job-search/" class=list-group-item>Data Science Job Search</a></div></div></div><div class="col-xs-12 col-sm-4 col-md-12"><div class="panel panel-default"><div class=panel-heading><h2 class=panel-title>Tags</h2></div><div class=list-group><a href=http://scotttactical.com//tags/69-blazer class=list-group-item><span class=badge>5</span> 69-blazer</a> <a href=http://scotttactical.com//tags/adventure class=list-group-item><span class=badge>4</span> adventure</a> <a href=http://scotttactical.com//tags/api class=list-group-item><span class=badge>2</span> api</a> <a href=http://scotttactical.com//tags/california class=list-group-item><span class=badge>7</span> california</a> <a href=http://scotttactical.com//tags/data class=list-group-item><span class=badge>17</span> data</a> <a href=http://scotttactical.com//tags/devops class=list-group-item><span class=badge>2</span> devops</a> <a href=http://scotttactical.com//tags/django class=list-group-item><span class=badge>2</span> django</a> <a href=http://scotttactical.com//tags/fitness class=list-group-item><span class=badge>1</span> fitness</a> <a href=http://scotttactical.com//tags/go-golang class=list-group-item><span class=badge>2</span> go-golang</a> <a href=http://scotttactical.com//tags/hardware class=list-group-item><span class=badge>1</span> hardware</a> <a href=http://scotttactical.com//tags/healthcare class=list-group-item><span class=badge>1</span> healthcare</a> <a href=http://scotttactical.com//tags/hiking class=list-group-item><span class=badge>2</span> hiking</a> <a href=http://scotttactical.com//tags/hugo class=list-group-item><span class=badge>2</span> hugo</a> <a href=http://scotttactical.com//tags/hypermedia class=list-group-item><span class=badge>2</span> hypermedia</a> <a href=http://scotttactical.com//tags/laravel class=list-group-item><span class=badge>2</span> laravel</a> <a href=http://scotttactical.com//tags/leadership class=list-group-item><span class=badge>3</span> leadership</a> <a href=http://scotttactical.com//tags/linux class=list-group-item><span class=badge>1</span> linux</a> <a href=http://scotttactical.com//tags/nutrition class=list-group-item><span class=badge>1</span> nutrition</a> <a href=http://scotttactical.com//tags/panorama class=list-group-item><span class=badge>2</span> panorama</a> <a href=http://scotttactical.com//tags/performance class=list-group-item><span class=badge>1</span> performance</a> <a href=http://scotttactical.com//tags/philosophy class=list-group-item><span class=badge>3</span> philosophy</a> <a href=http://scotttactical.com//tags/photography class=list-group-item><span class=badge>7</span> photography</a> <a href=http://scotttactical.com//tags/php class=list-group-item><span class=badge>4</span> php</a> <a href=http://scotttactical.com//tags/politics class=list-group-item><span class=badge>1</span> politics</a> <a href=http://scotttactical.com//tags/restoration class=list-group-item><span class=badge>5</span> restoration</a> <a href=http://scotttactical.com//tags/software class=list-group-item><span class=badge>4</span> software</a> <a href=http://scotttactical.com//tags/system-administration class=list-group-item><span class=badge>1</span> system-administration</a> <a href=http://scotttactical.com//tags/technology class=list-group-item><span class=badge>1</span> technology</a> <a href=http://scotttactical.com//tags/testing class=list-group-item><span class=badge>1</span> testing</a> <a href=http://scotttactical.com//tags/wheeling class=list-group-item><span class=badge>4</span> wheeling</a></div></div></div></div></aside></div></div></div><hr><footer class="container copy"><p>&copy; 2016 Scott Tactical</p><p>Powered by <a href=http://gohugo.io target=_blank>Hugo</a></p></footer><script src=//code.jquery.com/jquery-2.1.3.min.js></script><script src=//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js></script><script src=//yandex.st/highlightjs/8.0/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script><script>
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                
+                
+            </footer>
+
+        </article>
+    </div>
+    <div class="col-md-4">
+        
+<aside>
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Recent Posts</h2>
+                </div>
+                <div class="list-group">
+                    
+                    <a href="/grand-central-market-2016-04" class="list-group-item">Grand Central Market, Los Angeles, 2016</a>
+                    
+                    <a href="/moab-utah-fins-and-things-2016-03-22" class="list-group-item">Moab Utah - Fins and Things 2016</a>
+                    
+                    <a href="/2016/04/purdue-university-predicts-success/" class="list-group-item">Purdue University Predicts Success</a>
+                    
+                    <a href="/2016/04/the-fast-growing-data-center-segment/" class="list-group-item">The Fast-Growing Data Center Segment</a>
+                    
+                    <a href="/2016/04/better-communication-through-big-data/" class="list-group-item">Better Communication Through Big Data</a>
+                    
+                    <a href="/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/" class="list-group-item">What Companies Do Not Understand About Employing for Data Scientist</a>
+                    
+                    <a href="/2016/04/3-reasons-why-data-centers-are-eco-friendly/" class="list-group-item">3 Reasons Why Data Centers Are Eco-Friendly</a>
+                    
+                    <a href="/2016/04/data-science-building-workplace-diversities/" class="list-group-item">Data Science: Building Workplace Diversities</a>
+                    
+                    <a href="/2016/04/choosing-your-data-warehouse-product/" class="list-group-item">Choosing Your Data Warehouse Product</a>
+                    
+                    <a href="/2016/04/solving-societys-problems-with-data/" class="list-group-item">Solving Society&#39;s Problems With Data</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Tags</h2>
+                </div>
+                <div class="list-group">
+                    
+                    
+                    
+                    <a href="http://scotttactical.com//tags/69-blazer" class="list-group-item">
+                        <span class="badge">5</span>
+                        69-blazer
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/adventure" class="list-group-item">
+                        <span class="badge">4</span>
+                        adventure
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/api" class="list-group-item">
+                        <span class="badge">2</span>
+                        api
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/california" class="list-group-item">
+                        <span class="badge">8</span>
+                        california
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/data" class="list-group-item">
+                        <span class="badge">17</span>
+                        data
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/devops" class="list-group-item">
+                        <span class="badge">2</span>
+                        devops
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/django" class="list-group-item">
+                        <span class="badge">2</span>
+                        django
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/fitness" class="list-group-item">
+                        <span class="badge">1</span>
+                        fitness
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/go-golang" class="list-group-item">
+                        <span class="badge">2</span>
+                        go-golang
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/hardware" class="list-group-item">
+                        <span class="badge">1</span>
+                        hardware
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/healthcare" class="list-group-item">
+                        <span class="badge">1</span>
+                        healthcare
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/hiking" class="list-group-item">
+                        <span class="badge">2</span>
+                        hiking
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/hugo" class="list-group-item">
+                        <span class="badge">2</span>
+                        hugo
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/hypermedia" class="list-group-item">
+                        <span class="badge">2</span>
+                        hypermedia
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/laravel" class="list-group-item">
+                        <span class="badge">2</span>
+                        laravel
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/leadership" class="list-group-item">
+                        <span class="badge">3</span>
+                        leadership
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/linux" class="list-group-item">
+                        <span class="badge">1</span>
+                        linux
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/nutrition" class="list-group-item">
+                        <span class="badge">1</span>
+                        nutrition
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/panorama" class="list-group-item">
+                        <span class="badge">2</span>
+                        panorama
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/performance" class="list-group-item">
+                        <span class="badge">1</span>
+                        performance
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/philosophy" class="list-group-item">
+                        <span class="badge">3</span>
+                        philosophy
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/photography" class="list-group-item">
+                        <span class="badge">8</span>
+                        photography
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/php" class="list-group-item">
+                        <span class="badge">4</span>
+                        php
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/politics" class="list-group-item">
+                        <span class="badge">1</span>
+                        politics
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/restoration" class="list-group-item">
+                        <span class="badge">5</span>
+                        restoration
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/software" class="list-group-item">
+                        <span class="badge">4</span>
+                        software
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/system-administration" class="list-group-item">
+                        <span class="badge">1</span>
+                        system-administration
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/technology" class="list-group-item">
+                        <span class="badge">1</span>
+                        technology
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/testing" class="list-group-item">
+                        <span class="badge">1</span>
+                        testing
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/wheeling" class="list-group-item">
+                        <span class="badge">4</span>
+                        wheeling
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</aside>
+
+    </div>
+</div>
+
+</div>
+<hr>
+
+<footer class="container copy">
+    <p>&copy; 2016  Scott Tactical </p>
+	<p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a></p>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -62,6 +841,9 @@ var disqus_shortname = 'scotttactical';
 ga('create', 'UA-53440065-2', 'auto');
 ga('send', 'pageview');
 
-</script><script>
+</script>
+
+<script>
 document.write('<script src="//sharebutton.net/plugin/sharebutton.php?type=horizontal&u=' + encodeURIComponent(document.location.href) + '"></scr' + 'ipt>');
 </script>
+
