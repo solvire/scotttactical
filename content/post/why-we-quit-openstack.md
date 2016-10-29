@@ -16,7 +16,7 @@ I will probably write another article that outlines all the questions that I sho
 
 ## Backstory
 
-Several people asked me about a way to do big data(ish) at an affordable price. I owning hardware and infrastructure and from a business perspective that is a fairly decent endeavor in terms of equity. The two of those items intersected and I decided to take on the task of bringing in some data clients and see if I could beat the prices and services of other competitors and give them a better experience.
+Several people asked me about a way to do big data(ish) at an affordable price. I enjoy owning hardware and infrastructure and from a business perspective that is a fairly decent endeavor in terms of static equity. I was bored with coding. The two of those items intersected and I decided to take on the task of bringing in some data clients and see if I could beat the services of other competitors and give them a better experience.
 
 Disclosure: This site is currently running on our openstack deployment in [DTAC's](http://dtac.io) private cloud
 
