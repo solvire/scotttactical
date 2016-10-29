@@ -54,13 +54,15 @@ A side note: Most tech professionals also said they were getting a "great deal" 
 My response: Well most nerds have near-0 business strategy. Also this indicates there is a massive gap in talent so I'd like to be here.
 
 
-## Babylon Fortuna Enterprise-Ready
+## Babylon Fortuna ergo Enterprise-Ready
 
 The codebase is huge. And kinda old at this point. In internet years it's about 50 years old.
 
 My response: It is mature enough to use. I should be ashamed of myself. I deployed IBM Websphere and should have known better.
 
-## It Is Complicated
+## It is Complicated
+
+![It's Complicated](/images/fb_complicated.png)
 
 Look at the diagram. Seriously Siri WHERE IS MY CAR!?!?!
 
