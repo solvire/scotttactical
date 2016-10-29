@@ -6,19 +6,21 @@ url: why-we-quit-openstack
 image: images/openstack.jpg
 tags: [ tech, data, devops ]
 comments: true
+author: solvire
 ---
 
-# Why We Quit OpenStack: or How I Lost 2 Months
+## Backstory
 
 Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn't bad for some people. For most institutions it is just _wrong_.
 
 I will probably write another article that outlines all the questions that I should have asked before starting this. My assumptions were not all quite there, but I did have a sneaking suspicion given a couple very relevant experiences.
 
-## Backstory
-
 Several people asked me about a way to do big data(ish) at an affordable price. I enjoy owning hardware and infrastructure and from a business perspective that is a fairly decent endeavor in terms of static equity. I was bored with coding. The two of those items intersected and I decided to take on the task of bringing in some data clients and see if I could beat the services of other competitors and give them a better experience.
 
 Disclosure: This site is currently running on our openstack deployment in [DTAC's](http://dtac.io) private cloud
+
+.
+.
 
 
 ![Full OpenStack](/images/full_openstack.jpg)
