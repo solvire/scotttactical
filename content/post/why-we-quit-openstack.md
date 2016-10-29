@@ -3,7 +3,7 @@ date: 2016-10-28T20:07:57-07:00
 draft: false
 title: 'Why We Quit OpenStack: or How I Lost 2 Months of My Life'
 url: why-we-quit-openstack
-image: images/full_openstack.jpg
+image: images/openstack.jpg
 tags: [ tech, data, devops ]
 comments: true
 ---
@@ -18,12 +18,14 @@ I will probably write another article that outlines all the questions that I sho
 
 Several people asked me about a way to do big data(ish) at an affordable price. I owning hardware and infrastructure and from a business perspective that is a fairly decent endeavor in terms of equity. The two of those items intersected and I decided to take on the task of bringing in some data clients and see if I could beat the prices and services of other competitors and give them a better experience.
 
+Disclosure: This site is currently running on our openstack deployment in [DTAC's](http://dtac.io) private cloud
 
-![Full OpenStack](images/full_openstack.jpg)
+
+![Full OpenStack](/images/full_openstack.jpg)
 
 # Cloud Red Flags
 
-  Where there are _clouds_ of smoke, there is probably fire. - An Indian Truism
+> Where there are _clouds_ of smoke, there is probably fire. - An Indian Truism
 
 ## It Took Forever
 
@@ -41,11 +43,13 @@ My response: I kinda need those bells and whistles so it's worth dealing with mo
 
 ## Nerds (heart) AWS
 
-Searching for OpenStack talent was like looking for unbias political trends on twitter. It just ain't there.  People not only didn't know it well, but most people that had it on their resumes didn't want to want to deploy it. Out of every 50 people I talked to about a private cloud 49 said they could help me set up with Amazon AW$.  It is entirely confusing to ask someone to help you with your private cloud and they offer to help what is essentially a competitor.
+> When there is blood in the streets, buy land. - Contrarian Invetors' Proverb
 
-A side note: Most tech professionals also said they were getting a "great deal" at Amazon. No financial officer I talked to shared this sentiment.
+Searching for OpenStack talent was like looking for unbias political trends on twitter. It just ain't there.  Techs not only didn't know it well, but most applicants that had it on their resumes didn't want to want to deploy it. Out of every 50 consultant I talked with about private cloud work, 49 said they could help me set up with Amazon AW$.  It is entirely confusing to ask someone to help you with your private cloud and they offer to help what is essentially a competitor.
 
-My response: Well most nerds have near-0 business sense. Also this indicates there is a massive gap in talent so I'd like to be here.
+A side note: Most tech professionals also said they were getting a "great deal" at Amazon. No financial officer I talked to shared this sentiment. Food for thought.
+
+My response: Well most nerds have near-0 business strategy. Also this indicates there is a massive gap in talent so I'd like to be here.
 
 
 ## Babylon Fortuna Enterprise-Ready
@@ -56,7 +60,7 @@ My response: It is mature enough to use. I should be ashamed of myself. I deploy
 
 ## It Is Complicated
 
-Look at the diagram. Seriously Siri.
+Look at the diagram. Seriously Siri WHERE IS MY CAR!?!?!
 
 ![OpenStack](http://docs.openstack.org/icehouse/training-guides/content/figures/5/a/figures/openstack-arch-havana-logical-v1.jpg)
 

@@ -6,8 +6,120 @@
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2016</rights>
-    <updated>2016-04-17 15:59:17 -0800 -0800</updated>
+    <updated>2016-10-28 20:07:57 -0700 PDT</updated>
 
+    
+      
+        <item>
+          <title>Why We Quit OpenStack: or How I Lost 2 Months of My Life</title>
+          <link>http://scotttactical.com/why-we-quit-openstack</link>
+          <pubDate>Fri, 28 Oct 2016 20:07:57 PDT</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/why-we-quit-openstack</guid>
+          <description>
+
+&lt;h1 id=&#34;why-we-quit-openstack-or-how-i-lost-2-months:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Why We Quit OpenStack: or How I Lost 2 Months&lt;/h1&gt;
+
+&lt;p&gt;Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just &lt;em&gt;wrong&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I will probably write another article that outlines all the questions that I should have asked before starting this. My assumptions were not all quite there, but I did have a sneaking suspicion given a couple very relevant experiences.&lt;/p&gt;
+
+&lt;h2 id=&#34;backstory:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Backstory&lt;/h2&gt;
+
+&lt;p&gt;Several people asked me about a way to do big data(ish) at an affordable price. I owning hardware and infrastructure and from a business perspective that is a fairly decent endeavor in terms of equity. The two of those items intersected and I decided to take on the task of bringing in some data clients and see if I could beat the prices and services of other competitors and give them a better experience.&lt;/p&gt;
+
+&lt;p&gt;Disclosure: This site is currently running on our openstack deployment in &lt;a href=&#34;http://dtac.io&#34;&gt;DTAC&amp;rsquo;s&lt;/a&gt; private cloud&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/full_openstack.jpg&#34; alt=&#34;Full OpenStack&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;cloud-red-flags:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Cloud Red Flags&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Where there are &lt;em&gt;clouds&lt;/em&gt; of smoke, there is probably fire. - An Indian Truism&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;it-took-forever:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;It Took Forever&lt;/h2&gt;
+
+&lt;p&gt;I witnessed an ambitious project slide face-first into the blue and white parking stall of the private cloud mall. Then later used as leverage out every participant. I mostly attributed the breakdown to lack of time resources, OS talent and political infighting.  &lt;em&gt;nerds (heart) aws&lt;/em&gt; but more on that elsewhere.  Given those red flags I figured my sysadmin abilities would be able to figure things out and surpass them.&lt;/p&gt;
+
+&lt;p&gt;The project took the best part of a year and I don&amp;rsquo;t think was every really fully consuming of all the infrastructures.&lt;/p&gt;
+
+&lt;p&gt;My response: I got sysadmin skills and no politics. I&amp;rsquo;ve never not been able to raise a datacenter infrastructure.&lt;/p&gt;
+
+&lt;h2 id=&#34;openstack-hate-speech:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;OpenStack Hate Speech&lt;/h2&gt;
+
+&lt;p&gt;There was plenty of hating over OpenStack. More specifically there was a lot of negative commentary about Nova, Neutron and Cinder. Basically the heart of the application.&lt;/p&gt;
+
+&lt;p&gt;My response: I kinda need those bells and whistles so it&amp;rsquo;s worth dealing with monolithic bloat because that&amp;rsquo;s my only option.&lt;/p&gt;
+
+&lt;h2 id=&#34;nerds-heart-aws:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Nerds (heart) AWS&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;When there is blood in the streets, buy land. - Contrarian Invetors&amp;rsquo; Proverb&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Searching for OpenStack talent was like looking for unbias political trends on twitter. It just ain&amp;rsquo;t there.  Techs not only didn&amp;rsquo;t know it well, but most applicants that had it on their resumes didn&amp;rsquo;t want to want to deploy it. Out of every 50 consultant I talked with about private cloud work, 49 said they could help me set up with Amazon AW$.  It is entirely confusing to ask someone to help you with your private cloud and they offer to help what is essentially a competitor.&lt;/p&gt;
+
+&lt;p&gt;A side note: Most tech professionals also said they were getting a &amp;ldquo;great deal&amp;rdquo; at Amazon. No financial officer I talked to shared this sentiment. Food for thought.&lt;/p&gt;
+
+&lt;p&gt;My response: Well most nerds have near-0 business strategy. Also this indicates there is a massive gap in talent so I&amp;rsquo;d like to be here.&lt;/p&gt;
+
+&lt;h2 id=&#34;babylon-fortuna-enterprise-ready:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Babylon Fortuna Enterprise-Ready&lt;/h2&gt;
+
+&lt;p&gt;The codebase is huge. And kinda old at this point. In internet years it&amp;rsquo;s about 50 years old.&lt;/p&gt;
+
+&lt;p&gt;My response: It is mature enough to use. I should be ashamed of myself. I deployed IBM Websphere and should have known better.&lt;/p&gt;
+
+&lt;h2 id=&#34;it-is-complicated:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;It Is Complicated&lt;/h2&gt;
+
+&lt;p&gt;Look at the diagram. Seriously Siri WHERE IS MY CAR!?!?!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://docs.openstack.org/icehouse/training-guides/content/figures/5/a/figures/openstack-arch-havana-logical-v1.jpg&#34; alt=&#34;OpenStack&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;BTW this image is taken from the OpenStack &amp;ldquo;Getting Started&amp;rdquo; section.&lt;/p&gt;
+
+&lt;p&gt;My response: Well, shit. Guess I&amp;rsquo;ve dealt with worse. I hope there isn&amp;rsquo;t magic happening. I&amp;rsquo;ll trust the Fuel installers.&lt;/p&gt;
+
+&lt;h2 id=&#34;it-is-fragile:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;It Is Fragile&lt;/h2&gt;
+
+&lt;p&gt;Refer to the previous diagram. With so many moving parts and given the lack of talent capable of managing it there is a serious level of risk in trusting a critical production environment on this.&lt;/p&gt;
+
+&lt;p&gt;My response: Keep my public cloud fail overs built and ready to deploy. I&amp;rsquo;m a cheat.&lt;/p&gt;
+
+&lt;h2 id=&#34;it-is-vendor-driven:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;It Is Vendor Driven&lt;/h2&gt;
+
+&lt;p&gt;I kinda knew that the growth of OpenStack was tainted by vendor intrigue. I have run into this spending a considerable amount of time working with OAuth 2.0 when the &amp;ldquo;framework&amp;rdquo; was going through proprosals and the lead writers were walking off.&lt;/p&gt;
+
+&lt;p&gt;Cite: &lt;a href=&#34;https://www.openstack.org/summit/vancouver-2015/summit-videos/presentation/openstack-is-doomed-and-it-is-your-fault&#34;&gt;OpenStack is Doomed - Andy (termie) Smith&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;My response: Ick&lt;/p&gt;
+
+&lt;h1 id=&#34;the-final-decision:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;The Final Decision&lt;/h1&gt;
+
+&lt;p&gt;While it might work for a team like RackSpace, I don&amp;rsquo;t think it fits what we need. The cost benefit of having a few drivers and some prebuilt scripts to managing images wasn&amp;rsquo;t enough to justify the cost and risk of having a system that is so fragile.&lt;/p&gt;
+
+&lt;p&gt;The risk and the knowns of unknowns inside the massive spaghetti of scope creep was enough that I couldn&amp;rsquo;t justify that I wouldn&amp;rsquo;t be able to jump in and fix something within less than a day. Pretty much every code fix I had to make took more than a day. More of 3-5 days to figure out each bug.&lt;/p&gt;
+
+&lt;h2 id=&#34;opennebula:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;OpenNebula&lt;/h2&gt;
+
+&lt;p&gt;We tried other stacks and I launched a multiple node infrastructure with OpenNebula. It was refreshingly vertical and self-contained. But still felt like it wanted to follow the hypervisor slipstream of OpenStack.&lt;/p&gt;
+
+&lt;h2 id=&#34;blah-stack:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Blah-Stack&lt;/h2&gt;
+
+&lt;p&gt;There was a lot of other options but I was burned out at this point.&lt;/p&gt;
+
+&lt;h1 id=&#34;conclusion:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Conclusion&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There is no free ride. (Development is an Expect to Work Employment)&lt;/li&gt;
+&lt;li&gt;Swiss army knives suck for self-defense and bayonets&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t expect to launch a cloud out of the box that will fit your business needs&lt;/li&gt;
+&lt;li&gt;If you believe the marketing - baaah&lt;/li&gt;
+&lt;li&gt;Community first, politics last&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+      
     
       
     
