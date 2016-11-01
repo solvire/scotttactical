@@ -24,13 +24,13 @@
 
 <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-	{{ $imgUrlBase := print .Site.Params.GalleryBaseUrl .Params.gallerypath }}
-	{{ range $img := .Params.galleryimages }}
+  {{ $imgUrlBase := print .Site.Params.GalleryBaseUrl .Params.gallerypath }}
+  {{ range $img := .Params.galleryimages }}
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 
-		{{ $jsonData := getJSON $imgUrlBase $img ".json" }}
+    {{ $jsonData := getJSON $imgUrlBase $img ".json" }}
         <a href="{{ $imgUrlBase }}{{ $img }}" itemprop="contentUrl" data-size="{{ $jsonData.Composite.ImageSize }}">
-        	<img src="{{ $imgUrlBase }}thumbs/{{ $img }}" itemprop="thumbnail" alt="{{ $jsonData.IPTC.Caption }}" title="{{ $jsonData.IPTC.ObjectName }}" />
+          <img src="{{ $imgUrlBase }}thumbs/{{ $img }}" itemprop="thumbnail" alt="{{ $jsonData.IPTC.Caption }}" title="{{ $jsonData.IPTC.ObjectName }}" />
         </a>
 
         <figcaption itemprop="caption description">{{ $jsonData.IPTC.Caption }}</figcaption>
@@ -52,7 +52,7 @@
           </div>
           <!-- /location -->
           <span itemprop="keywords">{{ if isset $jsonData.IPTC "Keywords" }}{{ delimit $jsonData.IPTC.Keywords ", " }}{{ end }}</span>
-          <meta itemprop="datePublished" content="{{ $.Date.Format $.Site.Params.DateForm }}">
+          <meta itemprop="datePublished" content="{{ $.Date.Format $.Site.Params.ISO8601 }}">
           <span itemprop="dateCreated">{{ replace $jsonData.IPTC.DateCreated ":" "-" }}</span>
             <span></span>
         <!-- exif -->

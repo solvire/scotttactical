@@ -7,12 +7,14 @@
             <header>
                 <div class="post-date">
                     <span class="glyphicon glyphicon-calendar"></span>
-                    <time itemprop="datePublished" datetime="{{ .Date.Format .Site.Params.DateForm }}">
+                    <time itemprop="datePublished" datetime="{{ .Date.Format $.Site.Params.ISO8601 }}">
                         {{ .Date.Format .Site.Params.DateForm }}
                     </time>
-                    <time itemprop="dateModified" datetime="{{ .Date.Format .Site.Params.DateForm }}">
-                        {{ .Date.Format .Site.Params.DateForm }}
+                    {{ if isset .Params "modified" }}
+                    <time itemprop="dateModified" datetime="{{ .Lastmod.Format $.Site.Params.ISO8601 }}">
+                        Last Updated: {{ .Lastmod.Format .Site.Params.DateForm }}
                     </time>
+                    {{ end }}
                 </div>
                 <h1 class="post-title" itemprop="headline">
                     <a href="{{ .Permalink }}">{{ .Title }}</a>

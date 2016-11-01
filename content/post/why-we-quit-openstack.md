@@ -1,5 +1,6 @@
 ---
 date: 2016-10-28T20:07:57-07:00
+modified: 2016-10-29T13:02:00-07:00
 draft: false
 title: 'Why We Quit OpenStack: or How I Lost 2 Months of My Life'
 url: why-we-quit-openstack
