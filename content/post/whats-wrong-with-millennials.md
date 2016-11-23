@@ -8,7 +8,9 @@ tags: [ philosophy ]
 
 # What is Up With Those Millennials?
 
-Ah, yes. The click bait. A marketing construct of the X-generation: pornographic gossip and not payoff.  But, since you are here...
+Ah, yes. The click bait. A marketing construct of the GenX'ers: pornographic gossip without the payoff.  
+
+But, since you are here...
 
 ## My Motivation: Agism
 
