@@ -112,7 +112,7 @@ All those choices and options weren't...  It was consolidation.  Freedom of thou
 
 > Spend Don't Mend - Brave New World Jingle
 
-X'ers were the last age of men.  They went the way of the muscle car mustache. This was when women took over the country.  Millenials are an entire generation raised by women.  
+X'ers were the last age of men.  They went the way of the muscle car mustache. This was when women took over the country.  Millennials are an entire generation raised by women.  
 
 > Show Me The Money! - Tom Cruise Missile
 
@@ -146,13 +146,13 @@ Remember the American Dream equation. The X'ers still believed it.  Rightfully s
 
 That was garbage too. Inflation is a taxation on savings.  We inflated ourselves out of the situation the 70's left us with.  And it wrecked incomes ever since. Instead of trying to correct the problem the train sped forward. Women joined the workforce and families spent less time together.  Negative social capital must be repaid with future social interest.
 
-Even with the addition of women into the workforce, the household income didn't keep pace with inflation. It has been pretty much flat since 1980.  The purchasing power of us today is about 1/5 of what it was for people starting their careers in 1980 with a single income earner.  Do your own math.  Or better yet ask a Millenial to do it for you.  At least they won't be as bias.
+Even with the addition of women into the workforce, the household income didn't keep pace with inflation. It has been pretty much flat since 1980.  The purchasing power of us today is about 1/5 of what it was for people starting their careers in 1980 with a single income earner.  Do your own math.  Or better yet ask a Millennial to do it for you.  At least they won't be as bias.
 
 ## Planet Changers
 
 Gen X'ers did give us the most powerful communication tool in history.  We have the Internet, and the planet has been changed. It is one of the greatest inventions. To elevate it more it was an organic collective innovation. That is something to be proud of.  And it is almost entirely because of the X'ers foundation and entrepreneurial spirit.
 
-# Millenials
+# Millennials
 
 ## The Best Educated Generation In History
 
@@ -174,7 +174,7 @@ Let's talk briefly about entitlement. Considering that one sector of the society
 
 Right now the Boomers control a disproportional amount of spending power. I don't want to get into the math because it was mind numbing to deal with.  Maybe they earned it I don't know. Maybe I'm way off base.
 
-X'ers want their day in the sun though. They want everyone else to buy into the system. Some of them took on student debt and want Millenials to.  They mortgaged their future buying cars and homes. They went all in.  Dammit if these snotty kids are going to ruin it.  
+X'ers want their day in the sun though. They want everyone else to buy into the system. Some of them took on student debt and want Millennials to.  They mortgaged their future buying cars and homes. They went all in.  Dammit if these snotty kids are going to ruin it.  
 
 ## Cleanex Diplomas
 
@@ -188,7 +188,7 @@ Why put in the effort?  Wake the fuck up, homey.  The Dream is literally over.  
 
 For the last hundred years, we have been inculcated that IQ is the king metric for human capacity.  I will assert that all history, all commerce, and all human events are a perception-based phenomenon.  Every transaction is a human transaction.  All power is human power. Power over and power through.  Money is fiat. Communication is the protocol to make everything happen. The measure of aptitude inside that ecosystem is the Emotional Quotient.  
 
-The Millenials were set on free-range mode by their parents and developed a new sense of communication.  Its purity is slowly being eroded by the Internet but this type of communication is global and rapidly evolving.
+The Millennials were set on free-range mode by their parents and developed a new sense of communication.  Its purity is slowly being eroded by the Internet but this type of communication is global and rapidly evolving.
 
 > Get To The Time Machine Marty!
 
