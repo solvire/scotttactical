@@ -5,7 +5,7 @@ draft: false
 title: 'Why We Quit OpenStack: or How I Lost 2 Months of My Life'
 url: why-we-quit-openstack
 image: images/openstack.jpg
-tags: [ tech, data, devops ]
+tags: [ technology, data, devops ]
 comments: true
 author: solvire
 ---

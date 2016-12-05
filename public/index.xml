@@ -6,8 +6,166 @@
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2016</rights>
-    <updated>2016-11-18 20:00:32 -0800 PST</updated>
+    <updated>2016-12-04 13:13:26 -0800 PST</updated>
 
+    
+      
+        <item>
+          <title>Internet 3rd Wave and Rise of the Technology Fascist</title>
+          <link>http://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</link>
+          <pubDate>Sun, 04 Dec 2016 13:13:26 PST</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</guid>
+          <description>
+
+&lt;h1 id=&#34;the-waves-of-technology-professional:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;The Waves of Technology Professional&lt;/h1&gt;
+
+&lt;p&gt;I like to consider 2001 the tail edge of the Internet bubble.  It was a brutal time to be in a computer science field. There weren&amp;rsquo;t many jobs. The jobs that were being squatted on were jealously guarded. I needed the one thing that nobody would provide. Experience. So instead I grinded projects and studied unceasingly.&lt;/p&gt;
+
+&lt;p&gt;In 2001 I had to take a job as an &amp;ldquo;integration specialist&amp;rdquo;.  That is basically a programmer job with a crappy title, so they didn&amp;rsquo;t have to pay me much. I was making $12.50/hr, and it was business casual dress code.  Meaning I worked for barely enough to pay my bills, but I had to wear a tie to work. This Internet revolution was starting to look like a failed promise. I should have realized then.&lt;/p&gt;
+
+&lt;p&gt;The point of this writing is not to sound weepy or nostalgic. It is to point out the direction of this trade and to try to illuminate the evil of being efficient only for the sake of being efficient.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-1st-technology-wave:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;The 1st Technology Wave&lt;/h1&gt;
+
+&lt;p&gt;My father is a software engineer approaching retirement. He programmed midrange and mainframes, so I was exposed to this stuff my whole life. Ironically I loathed computers and vowed to go into the military where money and schooling wouldn&amp;rsquo;t matter, but that&amp;rsquo;s another story.&lt;/p&gt;
+
+&lt;p&gt;In the pre-boom days, there were a lot of people coming up with ways to make things happen.  People were building web servers and writing routines to return data in formats that web browsers could read. My roommate in the Army was a very rare computer science major and helped me start building Linux boxes in my bedroom in 1998.&lt;/p&gt;
+
+&lt;p&gt;The first technologists in this field were doing their best to get computer hardware to do new things. A narrow field of technology started to form around TCP/IP and HTTP. We were creating a boom culture.&lt;/p&gt;
+
+&lt;h1 id=&#34;1st-wave-engineers:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;1st Wave Engineers&lt;/h1&gt;
+
+&lt;p&gt;The guys working on internet technologies before 1995 were completely different than the ones nowadays. These were engineers in the old sense. They wore suits to the office. They had a 9-6 job usually.  They were seen in a similar manner as industrial engineers, electrical engineers, chemists, or mathematicians.&lt;/p&gt;
+
+&lt;p&gt;These guys seemed to be relatively conservative with their approach. They didn&amp;rsquo;t have a lot to go on and sorta made things work.  There wasn&amp;rsquo;t much focus on design or art at all. It was purely pragmatic.  Bits in and bits out.&lt;/p&gt;
+
+&lt;p&gt;Imagine a problem today. You don&amp;rsquo;t have Google. You have a 1,000-page document on your operating system. Now figure out how to get your server to print to a dot matrix printer over serial.&lt;/p&gt;
+
+&lt;h1 id=&#34;dotcom-boom:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;DotCom Boom&lt;/h1&gt;
+
+&lt;p&gt;The people I initially started working with were a mix of self-taught programmers and people who were left over from the big machine era. The field was getting flooded with engineering speculators. The idea of moving to California and striking it rich with technology was too hard to resist so I foolishly was caught up into the surge. I packed up and moved to Simi Valley with a former military buddy of mine as we set out to gain our fortunes.  Boy, was I in for a surprise.&lt;/p&gt;
+
+&lt;h1 id=&#34;stepping-over-opportunities:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Stepping Over Opportunities&lt;/h1&gt;
+
+&lt;p&gt;I was offered a few opportunities that were less than ethical. Some porn, some spam, some malware. I turned them all down, because I was here to help change the world for the better. I wanted to work with a big organization that did great things. That never manifested and I realized that there isn&amp;rsquo;t any great company helping the world. They all have an uber-powerful dark side that powers their facade.  The CMO is the bishop of this church.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-clickpocalypse:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;The Clickpocalypse&lt;/h1&gt;
+
+&lt;p&gt;By 2005 I found myself working for a company that was running an offer path. Basically one of those sites where you enter your email and get a free iPod. It made an obscene amount of money. It was super dirty too.  Myself and a couple other engineers stood up a site in 3 months and starting bringing on hundreds of thousands of new users a day.  It was pouring in money. There were all sorts of Italian sports cars in the parking lot.  People were partying hard.  Except the nerds. We were locked into the office while they flew all over the world having fun.&lt;/p&gt;
+
+&lt;p&gt;Our biggest target was middle and later aged people who were at home with nothing better to do. Majority women. I think 60% was a number I saw a lot.  It exploited a demographic incredibly well.  From time to time I thought that there couldn&amp;rsquo;t possibly be this many suckers out there.  Could there be an unlimited supply? Apparently so.&lt;/p&gt;
+
+&lt;p&gt;We ran on cheap commodity hardware and buily our own rack in a data center. We didn&amp;rsquo;t have anyone helping us out. The coders were as likely to be going down and compiling at the data center as anyone. We handled as much traffic back then as any company I have worked at since then.&lt;/p&gt;
+
+&lt;p&gt;We spread our data out wide. We were doing things that didn&amp;rsquo;t have names yet. We were buffering with local disks and clustering on shared storage. We were aggregating streams of log files. It was quite the learning experience.&lt;/p&gt;
+
+&lt;h1 id=&#34;engineering-conservatism:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Engineering Conservatism&lt;/h1&gt;
+
+&lt;p&gt;Back in this period, there was still a mentality of being conservative with our decisions.  The cutting edge was generally considered suicide.  Not that it was unstable, but that you are betting your reputation and career on that gamble.  If your very basic business problem could be solved with mature technologies then that is what you used.  These days failure is grounds for a promotion and telling your boss you plan to do something cool is actually as good as doing what the business needs.&lt;/p&gt;
+
+&lt;p&gt;We used a kernel from BSD or RedHat that had been vetted in the field for multiple years.  We stripped layers of unknown from the presentation languages. Most of the code was in Perl and PHP and we compiled those ourselves.  It was incredibly lightweight. Because we built the OS stack, we were able to fine-tune to squeeze everything out of the boxes.  People were coding in production and deploying nonstop. It was a flying chaos.&lt;/p&gt;
+
+&lt;p&gt;With a stack of 7-8 web servers with between &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; and 2GB of RAM, we were able to handle more traffic than many Grande sized deployments on AWS.&lt;/p&gt;
+
+&lt;h1 id=&#34;gluten-free-buzzwords:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Gluten Free Buzzwords&lt;/h1&gt;
+
+&lt;p&gt;I didn&amp;rsquo;t start getting swept up into the buzzword mania until after 2010. It began to seem that if I wasn&amp;rsquo;t using some new technology thing that I was irrelevant. I started consuming new technologies like crazy.&lt;/p&gt;
+
+&lt;p&gt;Buzzword technology replaced computer science discipline. Before 2010 I spent time learning basics of architecture and design patterns. After 2010 I spent all my time plugging in some nebulous new appliance into my bloated and overweight stack.  Before 2010 I was learning how memory allocation and database calculations work. After 2010 I was trying to figure out how to grow my instances inside the AWS monolith.&lt;/p&gt;
+
+&lt;p&gt;It seemed as though every software geek was intoxicated with the pace of change.  Their value was in the number of technologies they touched. This silicon zealotry was almost like the mob movements seen in nationalism or tribalism.  Giant herds of people storming the gates.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-3rd-wave:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;The 3rd Wave&lt;/h1&gt;
+
+&lt;h2 id=&#34;aws-github-winning:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;AWS:GITHUB Winning&lt;/h2&gt;
+
+&lt;p&gt;AWS won. They removed the cost of entry for people to get a server up and going and allowed for a new breed of engineers to enter. One of the biggest costs to getting large sites up and hosted was learning how to build and deploy hardware and networking, and then fine tune it. Amazon capitalized on this need for speed. It wasn&amp;rsquo;t about getting a stable product to market faster: it was the sales pitch of being able to use a bunch of buzzwords and then show a prototype to investors very quickly. Amazon knew that this is how it would go.&lt;/p&gt;
+
+&lt;h2 id=&#34;constant-deployment:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Constant Deployment&lt;/h2&gt;
+
+&lt;p&gt;This is an especially important mindset of 3rd wavers: they have a very low sociopolitical self-worth. What I mean by this is there is a massive race to the floor when it comes to their control over what they deliver to business and stakeholders.  They have embraced the &amp;ldquo;fail fast&amp;rdquo; mentality and reduced the quality of their trade.   The deployment lifecycle might be the most valuable tool in maintaining power at the engineering and systems level.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s take two scenarios. One person is an engineer for an avionics company. The other for a social media company.&lt;/p&gt;
+
+&lt;p&gt;These avionics engineers probably work fewer hours and have better perks. They are probably not bullied by sales and product management and also have insight into how the company grows.  They are very concerned about quality control principles and advanced engineering disciplines. Their average age is 48 and are mixed with Baby Boomers, X&amp;rsquo;ers and a few Millennials.  They  support multi-billion dollar contracts.&lt;/p&gt;
+
+&lt;p&gt;The devs working on the social media product were probably contracted from BFE for $25/hr and will be dumped as soon as the project is over. They work insane hours and are constantly berated by their management, sales and teammates. Their average age is 28 and are part of the Millennial caste. So, basically every place I have worked since 2009.&lt;/p&gt;
+
+&lt;p&gt;Business would listen to us if we worked together. There is plenty of money there for us to carve out a stable future.&lt;/p&gt;
+
+&lt;h2 id=&#34;bugpocalypse:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Bugpocalypse&lt;/h2&gt;
+
+&lt;p&gt;Is this rapid progress good? I would say software is no more stable than it was before. Statistics do not allude to fewer bugs. In fact, in the near future, we could be looking at a major problem with zero-day vulnerabilities, IoT, the Java monoculture, and the flood of inferior engineering skills in the last 8 years.&lt;/p&gt;
+
+&lt;p&gt;Internet tech is following a similar &amp;ldquo;population explosion&amp;rdquo; path that exists in biology.&lt;/p&gt;
+
+&lt;h1 id=&#34;technofacist:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Technofacist&lt;/h1&gt;
+
+&lt;p&gt;The Internet applications industry seems to be taking the exact same route that terrestrial radio and cable television took. They had huge explosion of small companies and then an all-consuming consolidation into a few major players followed by governmental and special interest group integration. My assumption is that it will be 3 for us: Google, Facebook, Amazon.&lt;/p&gt;
+
+&lt;p&gt;The 3 horsemen are poised to dominate everything online.  You might think this is totally fine with the whole economy of scale nonsense, but you might also want to look at history.  Powerful systems usually will move fast to crush competition and control their constituents.  This consolidation of power is facilitated by the unquestioning loyalty to the system.  Because the system gives us one-click purchases and the ability to see our friends&amp;rsquo; cat habits any time of the day we are okay with letting them brand us and feed us garbage. They are turning the Internet into Walmart and Costco.&lt;/p&gt;
+
+&lt;p&gt;The new generation of engineers have very limited understanding of the things that it takes to keep all this equipment going. Within a few years, there will be very few people left that understand the entire stack.  The systems administrators are the first to sell off their souls to Amazon which is tantamount to sawing off the tree branch you are standing on. Once Amazon provides enough buttons, then all we need to do is move the jobs overseas.&lt;/p&gt;
+
+&lt;p&gt;More than once I have heard a DevOps engineer tell management that their goal is to code away their job.  Please, tech people! Stop sucking at politics and curb your enthusiasm.&lt;/p&gt;
+
+&lt;p&gt;Soon it will be powered mostly by offshore companies, weakly skilled coders stabbing at each other over scraps and the very few good engineers working inside giant monolithic companies, mired under lack of progress and nonstop political infighting. Maybe I should just focus on getting a job at one of those places, or go back and get an MBA and push around technies.&lt;/p&gt;
+
+&lt;h1 id=&#34;conclusion:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;It is probably too late to reverse the trend. It is disappointing to see the greatest communication medium ever developed, turned over to a handful of massive corporations.&lt;/p&gt;
+
+&lt;p&gt;Make Internet Grate Again&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>HowTo Bind Multiple Terminals MacOS-X</title>
+          <link>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</link>
+          <pubDate>Tue, 29 Nov 2016 19:09:21 PST</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</guid>
+          <description>
+
+&lt;h1 id=&#34;binding-multiple-terminals:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;Binding Multiple Terminals&lt;/h1&gt;
+
+&lt;p&gt;I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.&lt;/p&gt;
+
+&lt;p&gt;I tried a few other terminal apps. Particularly &lt;a href=&#34;https://www.iterm2.com/documentation-one-page.html&#34;&gt;iTerm2&lt;/a&gt; that has some nice broadcasting. But I didn&amp;rsquo;t like having to deal with the tabs and keystrokes. I kinda liked having multiple windows and the ease of launching with csshX&lt;/p&gt;
+
+&lt;h1 id=&#34;csshx-installation:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;csshX Installation&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;csshX - Cluster SSH tool using MacOS-X Terminal.app&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Installation is trivial.&lt;/p&gt;
+
+&lt;p&gt;brew install csshx&lt;/p&gt;
+
+&lt;p&gt;See if you have a working copy&lt;/p&gt;
+
+&lt;p&gt;csshx &amp;ndash;help&lt;/p&gt;
+
+&lt;h1 id=&#34;configure-csshx:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;Configure csshX&lt;/h1&gt;
+
+&lt;p&gt;Create a config file. I chose to set up an rc file in my home directory.&lt;/p&gt;
+
+&lt;p&gt;touch ~/.csshrc&lt;/p&gt;
+
+&lt;h2 id=&#34;logging-in-with-ssh-keys:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;Logging In With SSH Keys&lt;/h2&gt;
+
+&lt;p&gt;You are going to need this. Pretty much all cloud servers require keys.&lt;/p&gt;
+
+&lt;p&gt;csshx &amp;ndash;login ubuntu &amp;ndash;ssh_args &amp;ldquo;-i .ssh/your_private_key&amp;rdquo; host1 host2&lt;/p&gt;
+
+&lt;p&gt;That should get you pretty far.&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
@@ -2667,254 +2825,6 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Probably not an acceptable instruction, but it&amp;rsquo;s a start. I&amp;rsquo;ll keep posting as I can.&lt;/p&gt;
 
 &lt;p&gt;ST&lt;/p&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Linux File Manipulation Shortcuts and Commands</title>
-          <link>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</link>
-          <pubDate>Wed, 25 Feb 2015 00:00:00 UTC</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid>
-          <description>
-
-&lt;h1 id=&#34;linux-file-manipulation-commands:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Linux File Manipulation Commands&lt;/h1&gt;
-
-&lt;p&gt;I&amp;rsquo;ll keep updating this with various commands that I run into. If I find new ones I&amp;rsquo;ll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.&lt;/p&gt;
-
-&lt;h2 id=&#34;file-searching:87c17eeb99a01ec14432498a29300fb3&#34;&gt;File Searching&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;List of file extensions.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;awk + grep : find all the file extensions. It will also skip your &amp;ldquo;git&amp;rdquo; repository.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;find . -type f -name &amp;quot;*.*&amp;quot; ! -path &amp;quot;./.git/*&amp;quot; | awk -F. &#39;!a[$NF]++{print $NF}&#39;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;To get the count then simply add `wc` command.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;find . -type f -name &amp;quot;*.*&amp;quot; ! -path &amp;quot;./.git/*&amp;quot; | awk -F. &#39;!a[$NF]++{print $NF}&#39; | wc -l&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;file-information:87c17eeb99a01ec14432498a29300fb3&#34;&gt;File Information&lt;/h2&gt;
-
-&lt;p&gt;Print the longest line in a file&lt;/p&gt;
-
-&lt;p&gt;awk &amp;lsquo;length &amp;gt; m { m = length; a = $0 } END { print a }&amp;rsquo; input-file&lt;/p&gt;
-
-&lt;p&gt;Get the line number of the longest line&lt;/p&gt;
-
-&lt;p&gt;awk &amp;lsquo;length &amp;gt; m { m = length; a = NR } END { print a }&amp;rsquo; input-file&lt;/p&gt;
-
-&lt;h2 id=&#34;vim-commands:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Vim Commands&lt;/h2&gt;
-
-&lt;p&gt;To find non-ascii characters in your file:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/[^\x00-\x7F]&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;logs:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Logs&lt;/h2&gt;
-
-&lt;h3 id=&#34;apache-logs:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Apache Logs&lt;/h3&gt;
-
-&lt;p&gt;Find count of unique IP addresses&lt;/p&gt;
-
-&lt;p&gt;Get the IP&amp;rsquo;s - usually the first item&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ awk &#39;{ print $1 } &#39; access_log&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Sort them&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ awk &#39;{ print $1 } &#39; access_log | sort&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;They get only the unique items using the uniq command. You can count these if you want.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ awk &#39;{ print $1 } &#39; access_log | sort | uniq&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;To get the counts and sort them by totals.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ awk &#39;{ print $1 } &#39; access_log | sort | uniq -c | sort -n -k 1&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If you only want to show the highest numbers.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ awk &#39;{ print $1 } &#39; access_log | sort | uniq -c | sort -n -k 1 | tail&lt;/code&gt;&lt;/p&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>To HipHop or Not - PHP and HHVM</title>
-          <link>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</link>
-          <pubDate>Wed, 18 Feb 2015 00:00:00 UTC</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</guid>
-          <description>
-
-&lt;p&gt;We are discussing the plausibility of using HHVM inside this current infrastructure.&lt;/p&gt;
-
-&lt;p&gt;Our requirements are not very application server CPU intensive so it isn&amp;rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.&lt;/p&gt;
-
-&lt;h2 id=&#34;short-history:64521b042c2931bf82be49be9d2c6916&#34;&gt;Short History&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://hhvm.com/&#34; alt=&#34;HHVM&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information. On the topic of sheeple for another day. For today, we thank you Facebook. May your stock price soar to the stars.&lt;/p&gt;
-
-&lt;p&gt;I wanted to know what the differences between &lt;a href=&#34;https://en.wikipedia.org/wiki/HipHop_Virtual_Machine&#34;&gt;HHVM&lt;/a&gt; and HipHop Orig was if there was any. HPHPc was the original source to source compiler that converted to C++. There were a lot of inherent problems there and the team later decided to switch tracks and make a JIT virtual machine instead: more formally [HipHop Virtual Machine] known as HHVM. I personally like this approach much better due to the portability. At some point I&amp;rsquo;ll write about my romance with the idea of compiling in tools for &lt;a href=&#34;https://en.wikipedia.org/wiki/Aspect-oriented_programming&#34;&gt;AOP - Aspect Oriented Programming&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Interestingly enough VKontakt is coding their own translator right along side Facebook. &lt;a href=&#34;https://en.wikipedia.org/wiki/KPHP&#34;&gt;KPHP&lt;/a&gt;. I guess old international habits die slowly.&lt;/p&gt;
-
-&lt;h3 id=&#34;hack-programming-language:64521b042c2931bf82be49be9d2c6916&#34;&gt;Hack (programming language)&lt;/h3&gt;
-
-&lt;p&gt;One of the best things I think this paradigm added is the enhanced &lt;a href=&#34;https://en.wikipedia.org/wiki/Hack_%28programming_language%29&#34;&gt;Hack&lt;/a&gt; programming language. It gave PHP a static or dynamic type syntax. For those who complain about PHP&amp;rsquo;s loose typing, well here you go.&lt;/p&gt;
-
-&lt;h2 id=&#34;benefits:64521b042c2931bf82be49be9d2c6916&#34;&gt;Benefits&lt;/h2&gt;
-
-&lt;p&gt;What are the benefits to having HipHop in place?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Performance&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;That is about the only noteworthy thing I can see. Having Hack around is nice, but my guys are not going to change any time soon to use this. PHP is built to be phast and loose. Fast as in &amp;ldquo;can you have this ready today&amp;rdquo; sadly. I&amp;rsquo;d rather have things up and running fast and deal with standards at the QA/unit test layer. Working with the majority of the code being legacy negates the benefit also.&lt;/p&gt;
-
-&lt;h2 id=&#34;our-stack:64521b042c2931bf82be49be9d2c6916&#34;&gt;Our stack&lt;/h2&gt;
-
-&lt;p&gt;Right now it&amp;rsquo;s so vanilla that it is disgusting.&lt;/p&gt;
-
-&lt;p&gt;Ubuntu in AWS&lt;/p&gt;
-
-&lt;p&gt;PHP 5.5.x&lt;/p&gt;
-
-&lt;p&gt;Mysql 5.6&lt;/p&gt;
-
-&lt;p&gt;Home strung framework&lt;/p&gt;
-
-&lt;p&gt;Laravel integrated&lt;/p&gt;
-
-&lt;p&gt;Memcached&lt;/p&gt;
-
-&lt;p&gt;Loaded Modules:&lt;/p&gt;
-
-&lt;p&gt;Core&lt;/p&gt;
-
-&lt;p&gt;date&lt;/p&gt;
-
-&lt;p&gt;ereg&lt;/p&gt;
-
-&lt;p&gt;libxml&lt;/p&gt;
-
-&lt;p&gt;openssl&lt;/p&gt;
-
-&lt;p&gt;pcre&lt;/p&gt;
-
-&lt;p&gt;zlib&lt;/p&gt;
-
-&lt;p&gt;bcmath&lt;/p&gt;
-
-&lt;p&gt;bz2&lt;/p&gt;
-
-&lt;p&gt;calendar&lt;/p&gt;
-
-&lt;p&gt;ctype&lt;/p&gt;
-
-&lt;p&gt;dba&lt;/p&gt;
-
-&lt;p&gt;dom&lt;/p&gt;
-
-&lt;p&gt;hash&lt;/p&gt;
-
-&lt;p&gt;fileinfo&lt;/p&gt;
-
-&lt;p&gt;filter&lt;/p&gt;
-
-&lt;p&gt;ftp&lt;/p&gt;
-
-&lt;p&gt;gettext&lt;/p&gt;
-
-&lt;p&gt;SPL&lt;/p&gt;
-
-&lt;p&gt;iconv&lt;/p&gt;
-
-&lt;p&gt;mbstring&lt;/p&gt;
-
-&lt;p&gt;pcntl&lt;/p&gt;
-
-&lt;p&gt;session&lt;/p&gt;
-
-&lt;p&gt;posix&lt;/p&gt;
-
-&lt;p&gt;Reflection&lt;/p&gt;
-
-&lt;p&gt;standard&lt;/p&gt;
-
-&lt;p&gt;shmop&lt;/p&gt;
-
-&lt;p&gt;SimpleXML&lt;/p&gt;
-
-&lt;p&gt;soap&lt;/p&gt;
-
-&lt;p&gt;sockets&lt;/p&gt;
-
-&lt;p&gt;Phar&lt;/p&gt;
-
-&lt;p&gt;exif&lt;/p&gt;
-
-&lt;p&gt;sysvmsg&lt;/p&gt;
-
-&lt;p&gt;sysvsem&lt;/p&gt;
-
-&lt;p&gt;sysvshm&lt;/p&gt;
-
-&lt;p&gt;tokenizer&lt;/p&gt;
-
-&lt;p&gt;wddx&lt;/p&gt;
-
-&lt;p&gt;xml&lt;/p&gt;
-
-&lt;p&gt;xmlreader&lt;/p&gt;
-
-&lt;p&gt;xmlwriter&lt;/p&gt;
-
-&lt;p&gt;zip&lt;/p&gt;
-
-&lt;p&gt;PDO&lt;/p&gt;
-
-&lt;p&gt;apcu&lt;/p&gt;
-
-&lt;p&gt;curl&lt;/p&gt;
-
-&lt;p&gt;gd&lt;/p&gt;
-
-&lt;p&gt;intl&lt;/p&gt;
-
-&lt;p&gt;json&lt;/p&gt;
-
-&lt;p&gt;mcrypt&lt;/p&gt;
-
-&lt;p&gt;memcached&lt;/p&gt;
-
-&lt;p&gt;mysql&lt;/p&gt;
-
-&lt;p&gt;mysqli&lt;/p&gt;
-
-&lt;p&gt;pdo_mysql&lt;/p&gt;
-
-&lt;p&gt;readline&lt;/p&gt;
-
-&lt;p&gt;redis&lt;/p&gt;
-
-&lt;p&gt;xmlrpc&lt;/p&gt;
-
-&lt;p&gt;mhash&lt;/p&gt;
-
-&lt;p&gt;apc&lt;/p&gt;
-
-&lt;p&gt;ZendOPcache&lt;/p&gt;
-
-&lt;h2 id=&#34;next-steps:64521b042c2931bf82be49be9d2c6916&#34;&gt;Next Steps&lt;/h2&gt;
-
-&lt;p&gt;I will be doing some performance tests coming up IF we are able to get this into play.&lt;/p&gt;
-
-&lt;p&gt;My plan is to run load test against our normal branch and then&lt;/p&gt;
 </description>
         </item>
       

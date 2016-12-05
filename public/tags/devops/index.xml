@@ -6,8 +6,54 @@
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2016</rights>
-    <updated>2016-10-28 20:07:57 -0700 PDT</updated>
+    <updated>2016-11-29 19:09:21 -0800 PST</updated>
 
+    
+      
+        <item>
+          <title>HowTo Bind Multiple Terminals MacOS-X</title>
+          <link>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</link>
+          <pubDate>Tue, 29 Nov 2016 19:09:21 PST</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</guid>
+          <description>
+
+&lt;h1 id=&#34;binding-multiple-terminals:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;Binding Multiple Terminals&lt;/h1&gt;
+
+&lt;p&gt;I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.&lt;/p&gt;
+
+&lt;p&gt;I tried a few other terminal apps. Particularly &lt;a href=&#34;https://www.iterm2.com/documentation-one-page.html&#34;&gt;iTerm2&lt;/a&gt; that has some nice broadcasting. But I didn&amp;rsquo;t like having to deal with the tabs and keystrokes. I kinda liked having multiple windows and the ease of launching with csshX&lt;/p&gt;
+
+&lt;h1 id=&#34;csshx-installation:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;csshX Installation&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;csshX - Cluster SSH tool using MacOS-X Terminal.app&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Installation is trivial.&lt;/p&gt;
+
+&lt;p&gt;brew install csshx&lt;/p&gt;
+
+&lt;p&gt;See if you have a working copy&lt;/p&gt;
+
+&lt;p&gt;csshx &amp;ndash;help&lt;/p&gt;
+
+&lt;h1 id=&#34;configure-csshx:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;Configure csshX&lt;/h1&gt;
+
+&lt;p&gt;Create a config file. I chose to set up an rc file in my home directory.&lt;/p&gt;
+
+&lt;p&gt;touch ~/.csshrc&lt;/p&gt;
+
+&lt;h2 id=&#34;logging-in-with-ssh-keys:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;Logging In With SSH Keys&lt;/h2&gt;
+
+&lt;p&gt;You are going to need this. Pretty much all cloud servers require keys.&lt;/p&gt;
+
+&lt;p&gt;csshx &amp;ndash;login ubuntu &amp;ndash;ssh_args &amp;ldquo;-i .ssh/your_private_key&amp;rdquo; host1 host2&lt;/p&gt;
+
+&lt;p&gt;That should get you pretty far.&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
