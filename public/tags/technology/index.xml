@@ -72,8 +72,16 @@
 &lt;li&gt;&lt;p&gt;Why do you make me fill in 8!!! lines of information to start a live chat. Seriously. If I am logged in just open the chat window and start talking. Is this a game? Don&amp;rsquo;t make me mask my phone number with special characters&amp;hellip; Especially if you know it&amp;rsquo;s going to just be integers.  (###) ###-####  no! I don&amp;rsquo;t like that format. I use dots because i&amp;rsquo;m not older than 50 and know how to use a 10key. What if I was doing this on a mobile device. Have you even watched Office Space? Do you want someone to red stapler your website?&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Why is &amp;ldquo;report a change&amp;rdquo; hovering in some dead zone where a lady and a baby are. Is that lady and baby supposed to make me think men don&amp;rsquo;t apply or that I should be taking out more coverage because there are family health issues at stake here. Report a change should show up when you log in. Just get people to log in and then present the info in order.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;h2 id=&#34;navigation-as-path-not-choices:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;Navigation as Path not Choices&lt;/h2&gt;
+
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;The ordering of your navigation is not industry best practices.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;On the right&amp;hellip; those options? Some are grayed out. You aren&amp;rsquo;t looking at this the right way. It is highly confusing. Are they headers or do they just disappear? If they are disabled why? Why can&amp;rsquo;t I discontinue any time?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You need to control state on your navigation. For instance: if i am signed up and you dont&amp;rsquo; want to show &amp;ldquo;select a plan&amp;rdquo; and instead make &amp;ldquo;change plan&amp;rdquo; the path then you dont&amp;rsquo; leave &amp;ldquo;select a plan&amp;rdquo; still there and just gray it out. Why? If it&amp;rsquo;s not available then remove it. It&amp;rsquo;s like when you are editing something you don&amp;rsquo;t have two buttons for create and save next to each other and just gray out  create. You remove it. It&amp;rsquo;s not relevant or part of the user state.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;loco-help:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;Loco Help&lt;/h2&gt;

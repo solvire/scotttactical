@@ -51,7 +51,13 @@ I have several things listed below. Things I find to be of poor design or just p
 
 - Why is "report a change" hovering in some dead zone where a lady and a baby are. Is that lady and baby supposed to make me think men don't apply or that I should be taking out more coverage because there are family health issues at stake here. Report a change should show up when you log in. Just get people to log in and then present the info in order.
 
+## Navigation as Path not Choices
+
 - The ordering of your navigation is not industry best practices.  
+
+- On the right... those options? Some are grayed out. You aren't looking at this the right way. It is highly confusing. Are they headers or do they just disappear? If they are disabled why? Why can't I discontinue any time?
+
+- You need to control state on your navigation. For instance: if i am signed up and you dont' want to show "select a plan" and instead make "change plan" the path then you dont' leave "select a plan" still there and just gray it out. Why? If it's not available then remove it. It's like when you are editing something you don't have two buttons for create and save next to each other and just gray out  create. You remove it. It's not relevant or part of the user state. 
 
 ## Loco Help
 
