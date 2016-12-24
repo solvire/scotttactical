@@ -6,8 +6,117 @@
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2016</rights>
-    <updated>2016-12-09 08:52:58 -0800 PST</updated>
+    <updated>2016-12-24 06:41:07 -0800 PST</updated>
 
+    
+      
+        <item>
+          <title>Encrypt PostgreSQL Backup to S3</title>
+          <link>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</link>
+          <pubDate>Sat, 24 Dec 2016 06:41:07 PST</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</guid>
+          <description>
+
+&lt;h1 id=&#34;encrypt-your-db-backups:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Encrypt Your DB Backups&lt;/h1&gt;
+
+&lt;p&gt;I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.&lt;/p&gt;
+
+&lt;h2 id=&#34;generate-keys:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Generate Keys&lt;/h2&gt;
+
+&lt;p&gt;From your user&amp;rsquo;s home directory:&lt;/p&gt;
+
+&lt;p&gt;openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub&lt;/p&gt;
+
+&lt;p&gt;Fill out the questions appropriately. Or not. I don&amp;rsquo;t think it matters really.&lt;/p&gt;
+
+&lt;p&gt;That will create the public and private keys.&lt;/p&gt;
+
+&lt;p&gt;backup_key.pem - private key
+  backup_key.pem.pub - public key&lt;/p&gt;
+
+&lt;h2 id=&#34;add-aws-keys:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Add AWS Keys&lt;/h2&gt;
+
+&lt;p&gt;Create a file to hold your AWS keys.&lt;/p&gt;
+
+&lt;p&gt;mkdir ~/.aws
+  vi ~/.aws/credentials&lt;/p&gt;
+
+&lt;p&gt;Here is the format:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[default]
+aws_access_key_id = ACCESSKEY
+aws_secret_access_key = SECRETKEY
+aws_region = us-east-1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;backup-script:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Backup Script&lt;/h1&gt;
+
+&lt;p&gt;I don&amp;rsquo;t want to bore with details but here is what this script will do from a high level:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Take DB name&lt;/li&gt;
+&lt;li&gt;Set the backup file name with timestamp&lt;/li&gt;
+&lt;li&gt;dump the DB with pg_dump&lt;/li&gt;
+&lt;li&gt;remove the old versions&lt;/li&gt;
+&lt;li&gt;copy to s3 for storage&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;!/bin/bash
+# #######################
+
+# Database Name
+database_name=&amp;quot;$1&amp;quot;
+backup_public_key=&amp;quot;/HOMDIR/.ssh/backup_key.pem.pub&amp;quot;
+
+# Location to place backups.
+backup_dir=&amp;quot;/tmp/db_backups/&amp;quot;
+# Numbers of days you want to keep copies of your databases
+
+number_of_days=10
+if [ -z &amp;quot;${database_name}&amp;quot; ]
+then
+ echo &amp;quot;Please specify a database name as the first argument&amp;quot;
+ exit 1
+fi
+
+# String to append to the name of the backup files
+backup_date=`date +%Y-%m-%d-%H-%M-%S`
+backup_name=&amp;quot;${database_name}.${backup_date}.sql.bz2.enc&amp;quot;
+echo &amp;quot;Dumping ${database_name} to ${backup_dir}${backup_name}&amp;quot;
+
+pg_dump ${database_name}|bzip2|openssl smime -encrypt \
+ -aes256 -binary -outform DEM \
+ -out ${backup_dir}${backup_name} \
+ &amp;quot;${backup_public_key}&amp;quot;
+
+find ${backup_dir} -type f -prune -mtime \
+    +${number_of_days} -exec rm -f {} \;
+
+# push file to S3
+aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;crontab:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Crontab&lt;/h2&gt;
+
+&lt;p&gt;Set up a crontab for this script. This one fires off at 3am PT daily. Change as needed.&lt;/p&gt;
+
+&lt;p&gt;crontab -e
+  0 3 * * * /location/pg_backup.sh YOURDB&lt;/p&gt;
+
+&lt;h1 id=&#34;decrypt:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Decrypt&lt;/h1&gt;
+
+&lt;p&gt;Decryption is pretty straight forward. Get your private key and pull the file from S3.&lt;/p&gt;
+
+&lt;p&gt;openssl smime -decrypt -in my_database.sql.sql.bz2.enc -binary -inform DEM -inkey private.pem | bzcat &amp;gt;  my_database.sql.sql&lt;/p&gt;
+
+&lt;h1 id=&#34;credits:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Credits&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/&#34;&gt;https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
@@ -2715,105 +2824,6 @@ Add &lt;code&gt;theme = &amp;quot;beg&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/developers.png&#34;&gt;&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/developers-300x101.png&#34; alt=&#34;Google Developers&#34; width=&#34;300&#34; height=&#34;101&#34; class=&#34;alignnone size-medium wp-image-207&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Fin.&lt;/em&gt;&lt;/p&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</title>
-          <link>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
-          <pubDate>Wed, 16 Sep 2015 00:00:00 UTC</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
-          <description>
-
-&lt;h1 id=&#34;laravel-5-enforcing-https:03bc7a7611150669b29f3c91e572d932&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;
-
-&lt;p&gt;I&amp;rsquo;ve used a lot of frameworks. &lt;a href=&#34;http://laravel.com/&#34;&gt;Laravel is great&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;dealing-with-a-load-balancer:03bc7a7611150669b29f3c91e572d932&#34;&gt;Dealing with a load balancer&lt;/h2&gt;
-
-&lt;p&gt;Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.&lt;/p&gt;
-
-&lt;p&gt;If you do not handle the redirect properly and just look for port 443 then you will get yourself into a &lt;strong&gt;redirection loop&lt;/strong&gt;. That is annoying because if you don&amp;rsquo;t test under an SSL you will deploy to production and then have to tell you boss why you&amp;rsquo;re loopy. Amazon is kind of a pain for this.&lt;/p&gt;
-
-&lt;h2 id=&#34;aws-elb-proxy-headers:03bc7a7611150669b29f3c91e572d932&#34;&gt;AWS ELB Proxy Headers&lt;/h2&gt;
-
-&lt;p&gt;Make sure you know what the request looks like to the accepting server.&lt;/p&gt;
-
-&lt;p&gt;This header is going to be passed over:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;HTTP_X_FORWARDED_PROTO&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The problem with just looking for this and accepting your solution based on this is that header can be forged trivially. You need to make sure you are only acknowledging that header from trusted sources.&lt;/p&gt;
-
-&lt;h2 id=&#34;setting-the-redirect:03bc7a7611150669b29f3c91e572d932&#34;&gt;Setting the Redirect&lt;/h2&gt;
-
-&lt;p&gt;I went ahead and installed &lt;a href=&#34;https://github.com/fideloper/TrustedProxy&#34; title=&#34;Laravel Trusted Proxies&#34; target=&#34;_blank&#34;&gt;Laravel Trusted Proxies&lt;/a&gt; from &lt;a href=&#34;https://github.com/fideloper&#34; title=&#34;Chris Fideo&#34; target=&#34;_blank&#34;&gt;Chris Fideo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Follow his instructions. It&amp;rsquo;s pretty straight forward. Here is what my `config/trustedproxy.php` looks like.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&#39;proxies&#39; =&amp;amp;gt; [
-    &#39;172.31.0.0/16&#39;,
-],
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I knew after looking at my logs where my health checks were coming from:`ELB-HealthChecker/1.0`&lt;/p&gt;
-
-&lt;p&gt;I figured if I just allow everything in that B block that I should be okay.&lt;/p&gt;
-
-&lt;p&gt;Also set the proper header to look for.&lt;/p&gt;
-
-&lt;p&gt;NOTE: I lost a couple hours trying to figure out why it wouldn&amp;rsquo;t match. Read the docblock above it. It strips HTTP_  &lt;img src=&#34;http://scotttactical.com/wp-includes/images/smilies/frownie.png&#34; alt=&#34;:(&#34; class=&#34;wp-smiley&#34; style=&#34;height: 1em; max-height: 1em;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&#39;headers&#39; =&amp;amp;gt; [
-        \Illuminate\Http\Request::HEADER_CLIENT_IP    =&amp;amp;gt; &#39;X_FORWARDED_FOR&#39;,
-        \Illuminate\Http\Request::HEADER_CLIENT_HOST  =&amp;amp;gt; &#39;FORWARDED_HOST&#39;,
-        \Illuminate\Http\Request::HEADER_CLIENT_PROTO =&amp;amp;gt; &#39;X_FORWARDED_PROTO&#39;,
-        \Illuminate\Http\Request::HEADER_CLIENT_PORT  =&amp;amp;gt; &#39;X_FORWARDED_PORT&#39;,
-    ]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;add-to-laravel-middleware:03bc7a7611150669b29f3c91e572d932&#34;&gt;Add to Laravel Middleware&lt;/h2&gt;
-
-&lt;p&gt;I created Secure.php and added it to app/Http/Middleware&lt;/p&gt;
-
-&lt;p&gt;Thanks to the work from &lt;a href=&#34;https://gist.github.com/nblackburn/a66e8e93561e277996aa&#34; title=&#34;nblackburn&#34; target=&#34;_blank&#34;&gt;@nblackburn&lt;/a&gt;. That was highly appreciated.&lt;/p&gt;
-
-&lt;p&gt;What was weird about my environment is I was getting in a redirection loop because it would prepend `public/` on the front of my uri. I&amp;rsquo;m running multiple environments so I didn&amp;rsquo;t have the luxury of pointing my root to that directory. I had to strip that off the front.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;class Secure implements Middleware
-{
-    public function handle($request, Closure $next)
-    {
-        if (! $request-&amp;amp;gt;secure() &amp;amp;&amp;amp; app()-&amp;amp;gt;environment(&#39;production&#39;)) {
-
-            // this is a really ugly hack but it kept looping and prepnding public
-            return redirect()-&amp;amp;gt;secure(preg_replace(&#39;%/public%&#39;, &#39;&#39;, $request-&amp;amp;gt;getRequestUri()));
-        }
-
-        return $next($request);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Add it to your global middleware if you want it to run for all requests.&lt;/p&gt;
-
-&lt;p&gt;Open up: app/Http/Kernel.php&lt;/p&gt;
-
-&lt;p&gt;I added&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;protected $middleware = [
-	    ...		
-		// trust the proxies from aws
-		&#39;Fideloper\Proxy\TrustProxies&#39;,
-		// then force it secure (if production)
-		&#39;LeadFerret\Http\Middleware\Secure&#39;,
-	];
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now there are no more redirect loop hells.&lt;/p&gt;
 </description>
         </item>
       

@@ -9,13 +9,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="HowTo Bind Multiple Terminals MacOS-X &middot; Scott Tactical">
+<meta property="og:title" content="Encrypt PostgreSQL Backup to S3 &middot; Scott Tactical">
 
 <meta property="og:site_name" content="Scott Tactical">
 
 <title>
     
-    HowTo Bind Multiple Terminals MacOS-X
+    Encrypt PostgreSQL Backup to S3
     
 </title>
 
@@ -101,18 +101,18 @@
             <header>
                 <div class="post-date">
                     <span class="glyphicon glyphicon-calendar"></span>
-                    <time itemprop="datePublished" datetime="2016-11-29T19:09:21-08:00">
-                        Tue, 29 Nov 2016 19:09:21 PST
+                    <time itemprop="datePublished" datetime="2016-12-24T06:41:07-08:00">
+                        Sat, 24 Dec 2016 06:41:07 PST
                     </time>
                     
                 </div>
                 <h1 class="post-title" itemprop="headline">
-                    <a href="http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/">HowTo Bind Multiple Terminals MacOS-X</a>
+                    <a href="http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">Encrypt PostgreSQL Backup to S3</a>
                 </h1>
                 <span >
                   
                   <span itemprop="author">Scott Tactical</span><br />
-                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">HowTo Bind Multiple Terminals MacOS-X</span></a><br />
+                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">Encrypt PostgreSQL Backup to S3</span></a><br />
                   <span itemprop="publisher">Scott Tactical</span><br />
                 </span>
             </header>
@@ -121,39 +121,102 @@
               <hr />
                 
 
-<h1 id="binding-multiple-terminals:763c5c7c581e44ba4ac71791c31d5d75">Binding Multiple Terminals</h1>
+<h1 id="encrypt-your-db-backups:8a22a6a1c3678bce48f6c1db128e57b7">Encrypt Your DB Backups</h1>
 
-<p>I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.</p>
+<p>I&rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.</p>
 
-<p>I tried a few other terminal apps. Particularly <a href="https://www.iterm2.com/documentation-one-page.html">iTerm2</a> that has some nice broadcasting. But I didn&rsquo;t like having to deal with the tabs and keystrokes. I kinda liked having multiple windows and the ease of launching with csshX</p>
+<h2 id="generate-keys:8a22a6a1c3678bce48f6c1db128e57b7">Generate Keys</h2>
 
-<h1 id="csshx-installation:763c5c7c581e44ba4ac71791c31d5d75">csshX Installation</h1>
+<p>From your user&rsquo;s home directory:</p>
 
-<blockquote>
-<p>csshX - Cluster SSH tool using MacOS-X Terminal.app</p>
-</blockquote>
+<p>openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub</p>
 
-<p>Installation is trivial.</p>
+<p>Fill out the questions appropriately. Or not. I don&rsquo;t think it matters really.</p>
 
-<p>brew install csshx</p>
+<p>That will create the public and private keys.</p>
 
-<p>See if you have a working copy</p>
+<p>backup_key.pem - private key
+  backup_key.pem.pub - public key</p>
 
-<p>csshx &ndash;help</p>
+<h2 id="add-aws-keys:8a22a6a1c3678bce48f6c1db128e57b7">Add AWS Keys</h2>
 
-<h1 id="configure-csshx:763c5c7c581e44ba4ac71791c31d5d75">Configure csshX</h1>
+<p>Create a file to hold your AWS keys.</p>
 
-<p>Create a config file. I chose to set up an rc file in my home directory.</p>
+<p>mkdir ~/.aws
+  vi ~/.aws/credentials</p>
 
-<p>touch ~/.csshrc</p>
+<p>Here is the format:</p>
 
-<h2 id="logging-in-with-ssh-keys:763c5c7c581e44ba4ac71791c31d5d75">Logging In With SSH Keys</h2>
+<pre><code>[default]
+aws_access_key_id = ACCESSKEY
+aws_secret_access_key = SECRETKEY
+aws_region = us-east-1
+</code></pre>
 
-<p>You are going to need this. Pretty much all cloud servers require keys.</p>
+<h1 id="backup-script:8a22a6a1c3678bce48f6c1db128e57b7">Backup Script</h1>
 
-<p>csshx &ndash;login ubuntu &ndash;ssh_args &ldquo;-i .ssh/your_private_key&rdquo; host1 host2</p>
+<p>I don&rsquo;t want to bore with details but here is what this script will do from a high level:</p>
 
-<p>That should get you pretty far.</p>
+<ol>
+<li>Take DB name</li>
+<li>Set the backup file name with timestamp</li>
+<li>dump the DB with pg_dump</li>
+<li>remove the old versions</li>
+<li>copy to s3 for storage</li>
+</ol>
+
+<pre><code class="language-bash">!/bin/bash
+# #######################
+
+# Database Name
+database_name=&quot;$1&quot;
+backup_public_key=&quot;/HOMDIR/.ssh/backup_key.pem.pub&quot;
+
+# Location to place backups.
+backup_dir=&quot;/tmp/db_backups/&quot;
+# Numbers of days you want to keep copies of your databases
+
+number_of_days=10
+if [ -z &quot;${database_name}&quot; ]
+then
+ echo &quot;Please specify a database name as the first argument&quot;
+ exit 1
+fi
+
+# String to append to the name of the backup files
+backup_date=`date +%Y-%m-%d-%H-%M-%S`
+backup_name=&quot;${database_name}.${backup_date}.sql.bz2.enc&quot;
+echo &quot;Dumping ${database_name} to ${backup_dir}${backup_name}&quot;
+
+pg_dump ${database_name}|bzip2|openssl smime -encrypt \
+ -aes256 -binary -outform DEM \
+ -out ${backup_dir}${backup_name} \
+ &quot;${backup_public_key}&quot;
+
+find ${backup_dir} -type f -prune -mtime \
+    +${number_of_days} -exec rm -f {} \;
+
+# push file to S3
+aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
+
+</code></pre>
+
+<h2 id="crontab:8a22a6a1c3678bce48f6c1db128e57b7">Crontab</h2>
+
+<p>Set up a crontab for this script. This one fires off at 3am PT daily. Change as needed.</p>
+
+<p>crontab -e
+  0 3 * * * /location/pg_backup.sh YOURDB</p>
+
+<h1 id="decrypt:8a22a6a1c3678bce48f6c1db128e57b7">Decrypt</h1>
+
+<p>Decryption is pretty straight forward. Get your private key and pull the file from S3.</p>
+
+<p>openssl smime -decrypt -in my_database.sql.sql.bz2.enc -binary -inform DEM -inkey private.pem | bzcat &gt;  my_database.sql.sql</p>
+
+<h1 id="credits:8a22a6a1c3678bce48f6c1db128e57b7">Credits</h1>
+
+<p><a href="https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/">https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/</a></p>
 
             </div>
 
@@ -162,16 +225,16 @@
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/technology" rel="tag">
+                        <a href="http://scotttactical.com//tags/devops" rel="tag">
                             <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">technology</span>
+                            <span itemprop="keywords">devops</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/devops" rel="tag">
+                        <a href="http://scotttactical.com//tags/data" rel="tag">
                             <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">devops</span>
+                            <span itemprop="keywords">data</span>
                         </a>
                     </li>
                     
@@ -187,19 +250,6 @@
                     
                     
                     
-                    <li><a href="http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">Encrypt PostgreSQL Backup to S3</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="http://scotttactical.com/post/why-the-covered-california-website-sucks/">Why The Covered California Website Sucks</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="http://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/">Internet 3rd Wave and Rise of the Technology Fascist</a></li>
                     
                     
                     
@@ -212,8 +262,15 @@
                     
                     
                     
+                    <li><a href="http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/">HowTo Bind Multiple Terminals MacOS-X</a></li>
                     
-                    <li><a href="http://scotttactical.com/writing-novels-in-markdown-part1/">Writing Novels in Markdown Part 1</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -237,61 +294,73 @@
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/purdue-university-predicts-success/">Purdue University Predicts Success</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/the-fast-growing-data-center-segment/">The Fast-Growing Data Center Segment</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/better-communication-through-big-data/">Better Communication Through Big Data</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/">What Companies Do Not Understand About Employing for Data Scientist</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/3-reasons-why-data-centers-are-eco-friendly/">3 Reasons Why Data Centers Are Eco-Friendly</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/data-science-building-workplace-diversities/">Data Science: Building Workplace Diversities</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/choosing-your-data-warehouse-product/">Choosing Your Data Warehouse Product</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/solving-societys-problems-with-data/">Solving Society&#39;s Problems With Data</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/data-science-job-search/">Data Science Job Search</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/why-data-science-in-marketing-is-rising/">Why Data Science in Marketing is Rising</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/big-data-and-storage-what-are-the-trends/">Big Data and Storage: What are the Trends?</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/04/the-myths-of-big-data/">The Myths of Big Data</a></li>
                     
                     
                     
@@ -305,6 +374,7 @@
                     
                     
                     
+                    <li><a href="http://scotttactical.com/django-search-multiple-fields">Django Search: Multiple Fields and Full Text</a></li>
                     
                     
                     
@@ -326,16 +396,19 @@
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/02/big-data-on-a-budget/">Big Data on a Budget</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/2016/02/microsoft-accelerator-seattle-machine-learning-funding/">Microsoft Accelerator Seattle Machine Learning Funding</a></li>
                     
                     
                     
                     
                     
+                    <li><a href="http://scotttactical.com/what-does-data-scientist-do">What Does a Data Scientist Do</a></li>
                     
                     
                     
@@ -345,6 +418,7 @@
                     
                     
                     
+                    <li><a href="http://scotttactical.com/health-medical-interconnectivity-data-revolution/">Health, Interconnectivity - The Data Revolution</a></li>
                     
                     
                     
@@ -381,7 +455,22 @@
                     
                     
                     
-                    <li><a href="http://scotttactical.com/interview-strategies-a-technology-hiring-manager/">Interview Strategies: A Technology Hiring Manager Who Wins</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -462,19 +551,34 @@
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="http://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="http://scotttactical.com//post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="http://scotttactical.com/whats-wrong-with-millennials">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="http://scotttactical.com/post/why-the-covered-california-website-sucks/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
                 </nav>
 
                 
+                
+                
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+ 
+var disqus_shortname = 'scotttactical'; 
+
+ 
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 
                 
             </footer>

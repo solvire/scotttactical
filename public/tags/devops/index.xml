@@ -6,8 +6,117 @@
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2016</rights>
-    <updated>2016-11-29 19:09:21 -0800 PST</updated>
+    <updated>2016-12-24 06:41:07 -0800 PST</updated>
 
+    
+      
+        <item>
+          <title>Encrypt PostgreSQL Backup to S3</title>
+          <link>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</link>
+          <pubDate>Sat, 24 Dec 2016 06:41:07 PST</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</guid>
+          <description>
+
+&lt;h1 id=&#34;encrypt-your-db-backups:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Encrypt Your DB Backups&lt;/h1&gt;
+
+&lt;p&gt;I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.&lt;/p&gt;
+
+&lt;h2 id=&#34;generate-keys:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Generate Keys&lt;/h2&gt;
+
+&lt;p&gt;From your user&amp;rsquo;s home directory:&lt;/p&gt;
+
+&lt;p&gt;openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub&lt;/p&gt;
+
+&lt;p&gt;Fill out the questions appropriately. Or not. I don&amp;rsquo;t think it matters really.&lt;/p&gt;
+
+&lt;p&gt;That will create the public and private keys.&lt;/p&gt;
+
+&lt;p&gt;backup_key.pem - private key
+  backup_key.pem.pub - public key&lt;/p&gt;
+
+&lt;h2 id=&#34;add-aws-keys:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Add AWS Keys&lt;/h2&gt;
+
+&lt;p&gt;Create a file to hold your AWS keys.&lt;/p&gt;
+
+&lt;p&gt;mkdir ~/.aws
+  vi ~/.aws/credentials&lt;/p&gt;
+
+&lt;p&gt;Here is the format:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[default]
+aws_access_key_id = ACCESSKEY
+aws_secret_access_key = SECRETKEY
+aws_region = us-east-1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;backup-script:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Backup Script&lt;/h1&gt;
+
+&lt;p&gt;I don&amp;rsquo;t want to bore with details but here is what this script will do from a high level:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Take DB name&lt;/li&gt;
+&lt;li&gt;Set the backup file name with timestamp&lt;/li&gt;
+&lt;li&gt;dump the DB with pg_dump&lt;/li&gt;
+&lt;li&gt;remove the old versions&lt;/li&gt;
+&lt;li&gt;copy to s3 for storage&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;!/bin/bash
+# #######################
+
+# Database Name
+database_name=&amp;quot;$1&amp;quot;
+backup_public_key=&amp;quot;/HOMDIR/.ssh/backup_key.pem.pub&amp;quot;
+
+# Location to place backups.
+backup_dir=&amp;quot;/tmp/db_backups/&amp;quot;
+# Numbers of days you want to keep copies of your databases
+
+number_of_days=10
+if [ -z &amp;quot;${database_name}&amp;quot; ]
+then
+ echo &amp;quot;Please specify a database name as the first argument&amp;quot;
+ exit 1
+fi
+
+# String to append to the name of the backup files
+backup_date=`date +%Y-%m-%d-%H-%M-%S`
+backup_name=&amp;quot;${database_name}.${backup_date}.sql.bz2.enc&amp;quot;
+echo &amp;quot;Dumping ${database_name} to ${backup_dir}${backup_name}&amp;quot;
+
+pg_dump ${database_name}|bzip2|openssl smime -encrypt \
+ -aes256 -binary -outform DEM \
+ -out ${backup_dir}${backup_name} \
+ &amp;quot;${backup_public_key}&amp;quot;
+
+find ${backup_dir} -type f -prune -mtime \
+    +${number_of_days} -exec rm -f {} \;
+
+# push file to S3
+aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;crontab:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Crontab&lt;/h2&gt;
+
+&lt;p&gt;Set up a crontab for this script. This one fires off at 3am PT daily. Change as needed.&lt;/p&gt;
+
+&lt;p&gt;crontab -e
+  0 3 * * * /location/pg_backup.sh YOURDB&lt;/p&gt;
+
+&lt;h1 id=&#34;decrypt:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Decrypt&lt;/h1&gt;
+
+&lt;p&gt;Decryption is pretty straight forward. Get your private key and pull the file from S3.&lt;/p&gt;
+
+&lt;p&gt;openssl smime -decrypt -in my_database.sql.sql.bz2.enc -binary -inform DEM -inkey private.pem | bzcat &amp;gt;  my_database.sql.sql&lt;/p&gt;
+
+&lt;h1 id=&#34;credits:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Credits&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/&#34;&gt;https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>

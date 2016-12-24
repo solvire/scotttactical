@@ -105,6 +105,31 @@
     <header>
         <div class="post-date">
             <span class="glyphicon glyphicon-calendar"></span>
+            <time datetime="Sat, 24 Dec 2016 06:41:07 PST">
+                Sat, 24 Dec 2016 06:41:07 PST
+            </time>
+        </div>
+        <h1 class="post-title">
+            <a href="http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">Encrypt PostgreSQL Backup to S3</a>
+        </h1>
+    </header>
+    <div class="post-content">
+        Encrypt Your DB Backups I&rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are. Generate Keys From your user&rsquo;s home directory: openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub Fill out the questions appropriately. Or not. I don&rsquo;t think it matters really. That will create the public and private keys. backup_key.pem - private key backup_key.pem.pub - public key Add AWS Keys Create a file to hold your AWS keys.
+    </div>
+    <footer class="readon">
+        <a href="http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/" class="btn btn-default">
+            READ ON
+        </a>
+    </footer>
+</article>
+<hr>
+
+            
+            
+<article class="post">
+    <header>
+        <div class="post-date">
+            <span class="glyphicon glyphicon-calendar"></span>
             <time datetime="Fri, 09 Dec 2016 08:52:58 PST">
                 Fri, 09 Dec 2016 08:52:58 PST
             </time>
@@ -325,31 +350,6 @@
 <hr>
 
             
-            
-<article class="post">
-    <header>
-        <div class="post-date">
-            <span class="glyphicon glyphicon-calendar"></span>
-            <time datetime="Wed, 24 Feb 2016 23:20:36 PST">
-                Wed, 24 Feb 2016 23:20:36 PST
-            </time>
-        </div>
-        <h1 class="post-title">
-            <a href="http://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/">Dump Django Databases and Create Fixtures for Testing</a>
-        </h1>
-    </header>
-    <div class="post-content">
-        Fixtures are a Messy Mess It is quite a pain to maintain fixtures it seems. I am not sure why yet. Maybe there hasn&rsquo;t been quite enough time on this piece of the product for it to mature. Django dumpdata I tried several different variations to dump the data. I&rsquo;ll include a few of them here since they might actually work for someone else. python manage.py dumpdata &gt; fixture.json I kept getting various key errors.
-    </div>
-    <footer class="readon">
-        <a href="http://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/" class="btn btn-default">
-            READ ON
-        </a>
-    </footer>
-</article>
-<hr>
-
-            
             <nav>
                 <ul class="pager">
                     <li><a href="http://scotttactical.com//post">All Posts</a></li>
@@ -370,6 +370,8 @@
                 </div>
                 <div class="list-group">
                     
+                    <a href="/post/encrypt-postgresql-backup-to-s3/" class="list-group-item">Encrypt PostgreSQL Backup to S3</a>
+                    
                     <a href="/post/why-the-covered-california-website-sucks/" class="list-group-item">Why The Covered California Website Sucks</a>
                     
                     <a href="/post/internet-3rd-wave-and-rise-of-the-technology-fascist/" class="list-group-item">Internet 3rd Wave and Rise of the Technology Fascist</a>
@@ -387,8 +389,6 @@
                     <a href="/grand-central-market-2016-04" class="list-group-item">Grand Central Market, Los Angeles, 2016</a>
                     
                     <a href="/moab-utah-fins-and-things-2016-03-22" class="list-group-item">Moab Utah - Fins and Things 2016</a>
-                    
-                    <a href="/2016/04/purdue-university-predicts-success/" class="list-group-item">Purdue University Predicts Success</a>
                     
                 </div>
             </div>
@@ -428,7 +428,7 @@
                     
                     
                     <a href="http://scotttactical.com//tags/data" class="list-group-item">
-                        <span class="badge">18</span>
+                        <span class="badge">19</span>
                         data
                     </a>
                     
@@ -440,7 +440,7 @@
                     
                     
                     <a href="http://scotttactical.com//tags/devops" class="list-group-item">
-                        <span class="badge">4</span>
+                        <span class="badge">5</span>
                         devops
                     </a>
                     

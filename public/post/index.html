@@ -100,6 +100,31 @@
     <header>
         <div class="post-date">
             <span class="glyphicon glyphicon-calendar"></span>
+            <time datetime="Sat, 24 Dec 2016 06:41:07 PST">
+                Sat, 24 Dec 2016 06:41:07 PST
+            </time>
+        </div>
+        <h1 class="post-title">
+            <a href="http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">Encrypt PostgreSQL Backup to S3</a>
+        </h1>
+    </header>
+    <div class="post-content">
+        Encrypt Your DB Backups I&rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are. Generate Keys From your user&rsquo;s home directory: openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub Fill out the questions appropriately. Or not. I don&rsquo;t think it matters really. That will create the public and private keys. backup_key.pem - private key backup_key.pem.pub - public key Add AWS Keys Create a file to hold your AWS keys.
+    </div>
+    <footer class="readon">
+        <a href="http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/" class="btn btn-default">
+            READ ON
+        </a>
+    </footer>
+</article>
+<hr>
+
+        
+        
+<article class="post">
+    <header>
+        <div class="post-date">
+            <span class="glyphicon glyphicon-calendar"></span>
             <time datetime="Fri, 09 Dec 2016 08:52:58 PST">
                 Fri, 09 Dec 2016 08:52:58 PST
             </time>
