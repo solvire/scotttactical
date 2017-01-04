@@ -9,13 +9,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Data Science: Building Workplace Diversities &middot; Scott Tactical">
+<meta property="og:title" content="SFP vs. QSFP &middot; Scott Tactical">
 
 <meta property="og:site_name" content="Scott Tactical">
 
 <title>
     
-    Data Science: Building Workplace Diversities
+    SFP vs. QSFP
     
 </title>
 
@@ -96,30 +96,103 @@
 
 <div class="row">
     <div class="col-md-8">
-        <article class="post">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
 
             <header>
                 <div class="post-date">
                     <span class="glyphicon glyphicon-calendar"></span>
-                    <time datetime="Sat, 09 Apr 2016 15:59:17 -0800">
-                        Sat, 09 Apr 2016 15:59:17 -0800
+                    <time itemprop="datePublished" datetime="2017-01-04T06:41:07-08:00">
+                        Wed, 04 Jan 2017 06:41:07 PST
                     </time>
+                    
                 </div>
-                <h1 class="post-title">
-                    <a href="http://scotttactical.com/2016/04/data-science-building-workplace-diversities/">Data Science: Building Workplace Diversities</a>
+                <h1 class="post-title" itemprop="headline">
+                    <a href="http://scotttactical.com/post/sfp-vs.-qsfp/">SFP vs. QSFP</a>
                 </h1>
+                <span >
+                  
+                  <span itemprop="author">Scott Tactical</span><br />
+                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">SFP vs. QSFP</span></a><br />
+                  <span itemprop="publisher">Scott Tactical</span><br />
+                </span>
             </header>
 
-            <div class="post-content">
+            <div class="post-content" itemprop="articleBody">
+              <hr />
                 
 
-<h1 id="data-science-building-workplace-diversities:4504ccef5546911e8748dda67141b47d">Data Science: Building Workplace Diversities</h1>
+<h1 id="networking-transceivers:3125daabc78eff59037f4f7201f144bc">Networking Transceivers</h1>
 
-<p>Romantic relationships mixed with someone&rsquo;s personal career and place of work might be a recipe for trouble but <a href="http://www.eharmony.com/">eHarmony</a> thinks mingling these two might provide the ability to create a comfortable work environment while bringing people together at the jobs they love.</p>
+<p>This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent.  After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.</p>
 
-<p>Being that eHarmony&rsquo;s algorithms can improve diversity in the workplace, there are numerous <a href="http://www.truth-out.org/buzzflash/commentary/creating-a-chasm-of-income-inequality-in-silicon-valley">Silicon Valley companies</a> that want to evaluate the possibility.  This is obviously a heated topic without a quick solution. (puns)</p>
+<p>Again this page is mostly for my notes.</p>
 
-<p>Continue reading this news at <a href="http://www.zdnet.com/article/the-limits-of-building-diversity-in-the-workplace/">http://www.zdnet.com/article/the-limits-of-building-diversity-in-the-workplace/</a>.</p>
+<h1 id="sfp-and-sfp:3125daabc78eff59037f4f7201f144bc">SFP and SFP+</h1>
+
+<p>SFP stands for &ldquo;small form-factor pluggable&rdquo;. It is a hot-pluggable transceiver. It allows for connecting devices via a fiber optic cable or copper cable. I have mostly seen fiber optics in data centers but didn&rsquo;t really know what they were about.</p>
+
+<p>See <a href="https://en.wikipedia.org/wiki/Small_Form_Factor_Committee">Small Form Factor Committee</a> for more information.</p>
+
+<h2 id="data-rates-by-type:3125daabc78eff59037f4f7201f144bc">Data Rates by Type</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/Small_form-factor_pluggable_transceiver">SFP</a> is rated for 1Gb, 2.5Gb and 10Gb/s traffic.</p>
+
+<p>There different distance ratings of the cabling based on specifications outside my expertise.</p>
+
+<p>SFP+ takes the data rate up to 10Gb/sec and is supposed to move 16Gb/sec but at that point you are probably limited by your hardware.</p>
+
+<p>SFP28 enhances the transceiver again by moving toward the 100Gb rates by allowing for multiple 25G channels. This is an advantage because the channels of 1/10/40/100 require more power and cooling compared to the 1/25/50/100 channels of the proposed gear. Again, it is above my skill level.</p>
+
+<h2 id="csfp:3125daabc78eff59037f4f7201f144bc">CSFP</h2>
+
+<p>CSFP stands for compact small form-factor pluggable (CSFP). I haven&rsquo;t used this but it seems to be designed for higher density and bi-directional traffic.</p>
+
+<h1 id="qsfp-and-qsfp:3125daabc78eff59037f4f7201f144bc">QSFP and QSFP+</h1>
+
+<p>Here is where things get a little more interesting. I didn&rsquo;t realize before that to get more bandwidth they were basically stacking technologies.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/QSFP-40G-SR4_Transceiver.jpg" alt="Wiki" /></p>
+
+<p><a href="https://en.wikipedia.org/wiki/QSFP">QSFP</a> stands for Quad Small Form-factor Pluggable. It is just as you suspect. 4 X SFP. 4 channels of SFP traffic.</p>
+
+<p>So the math is fairly easy. If you have 4 times the 10G traffic of an SFP+ then you have 40G potential. Pretty cool.</p>
+
+<p>Here are some examples:</p>
+
+<ul>
+<li>4 x 4 Gbit/s QSFP</li>
+<li>4 x 10 Gbit/s QSFP+
+
+<ul>
+<li>10GbE, FC, Infiniband</li>
+<li>Combined to 40Gb</li>
+</ul></li>
+<li>4 x 14 Gbit/s QSFP+ (QSFP14)
+
+<ul>
+<li>FDR Infiniband and SAS-3</li>
+</ul></li>
+<li>4 x 28 Gbit/s QSFP+ (QSFP28)
+
+<ul>
+<li>100GbE</li>
+<li>Infiniband</li>
+</ul></li>
+</ul>
+
+<h1 id="fanout-or-breakout-cables:3125daabc78eff59037f4f7201f144bc">Fanout or Breakout Cables</h1>
+
+<p>I thought this was really cool. Similar to SAS controllers you can split the connections of the channels out. Essentially you use one port to power 4 10G nics. This is great if you have a switch with many high density ports.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Optical_breakout_cable.jpg" alt="Breakout" /></p>
+
+<p><img src="http://www.sfpopticaltransceiver.com/photo/pc1313968-extreme_qsfp_copper_cable_qsfp_to_sfp_fan_out_cable_for_network.jpg" alt="sfpopticaltransceiver.com" /></p>
+
+<h1 id="conclusion:3125daabc78eff59037f4f7201f144bc">Conclusion</h1>
+
+<p>I will write my notes down regarding the technologies that employ these connectors. That is even more interesting. Basically this type of networking puts supercomputing into the hands of mere mortals.</p>
+
+<p>Please feel free to correct me if I am wrong in the comments below. I am open to suggestion.</p>
 
             </div>
 
@@ -128,9 +201,16 @@
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/data">
+                        <a href="http://scotttactical.com//tags/data" rel="tag">
                             <i class="fa fa-tags"></i>
-                            data
+                            <span itemprop="keywords">data</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://scotttactical.com//tags/networkign" rel="tag">
+                            <i class="fa fa-tags"></i>
+                            <span itemprop="keywords">networkign</span>
                         </a>
                     </li>
                     
@@ -145,8 +225,6 @@
                     
                     
                     
-                    
-                    <li><a href="http://scotttactical.com/post/sfp-vs.-qsfp/">SFP vs. QSFP</a></li>
                     
                     
                     
@@ -225,6 +303,8 @@
                     
                     
                     
+                    
+                    <li><a href="http://scotttactical.com/2016/04/data-science-building-workplace-diversities/">Data Science: Building Workplace Diversities</a></li>
                     
                     
                     
@@ -447,19 +527,34 @@
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="http://scotttactical.com/2016/04/3-reasons-why-data-centers-are-eco-friendly/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="http://scotttactical.com//post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="http://scotttactical.com/2016/04/choosing-your-data-warehouse-product/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
                 </nav>
 
                 
+                
+                
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+ 
+var disqus_shortname = 'scotttactical'; 
+
+ 
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 
                 
             </footer>
