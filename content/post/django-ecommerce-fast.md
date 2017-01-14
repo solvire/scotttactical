@@ -2,7 +2,6 @@
 date: 2017-01-14T16:00:07-08:00
 draft: false
 title: "Django eCommerce in 30+ Minutes"
-url: /
 comments: true
 tags: [ technology, django ]
 ---
@@ -330,4 +329,4 @@ The application felt kinda slow. Maybe it can be optimized, but for a starter, I
 
 ## Will it Stay
 
-I still have to look through [Saleor](http://getsaleor.com/) and [Cartrige on Mezzanine](http://mezzanine.jupo.org/) which were very appealing. I also wanted to have a hand at setting up an ecommerce app in Go, but the lack of templating and abstraction that python is good at was a knock down. 
+I still have to look through [Saleor](http://getsaleor.com/) and [Cartrige on Mezzanine](http://mezzanine.jupo.org/) which were very appealing. I also wanted to have a hand at setting up an ecommerce app in Go, but the lack of templating and abstraction that python is good at was a knock down.
