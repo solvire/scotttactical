@@ -31,7 +31,7 @@ Here are a couple details about my stack.
 - Local development: Mac OS X El Cap
 - Bitbucket (it's free for private accounts)
 - Python VirtualenvWrapper
-- Django 1.9
+- Django 1.10.5
 - PostgreSQL 9.5
 - Django-Oscar
 

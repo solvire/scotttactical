@@ -44,7 +44,7 @@
 &lt;li&gt;Local development: Mac OS X El Cap&lt;/li&gt;
 &lt;li&gt;Bitbucket (it&amp;rsquo;s free for private accounts)&lt;/li&gt;
 &lt;li&gt;Python VirtualenvWrapper&lt;/li&gt;
-&lt;li&gt;Django 1.9&lt;/li&gt;
+&lt;li&gt;Django 1.10.5&lt;/li&gt;
 &lt;li&gt;PostgreSQL 9.5&lt;/li&gt;
 &lt;li&gt;Django-Oscar&lt;/li&gt;
 &lt;/ul&gt;
