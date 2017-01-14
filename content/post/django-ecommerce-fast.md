@@ -10,7 +10,7 @@ tags: [ technology, django ]
 
 # TL;DR
 
-Python has potential for eCommerce. I went through the [well known products](https://djangopackages.org/grids/g/ecommerce/) and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.
+I like Python and want to use it for eCommerce, so I went through the [well known products](https://djangopackages.org/grids/g/ecommerce/) and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.
 
 # Preface
 
@@ -19,6 +19,10 @@ Let me say this took me almost 2 days to get through and evaluate, which I'm use
 # Backstory
 
 I was contacted by a business partner to see if we could kick off a project to distribute some substances that newly became legal here in CA. I thought I could spin up an ecommerce app in a couple hours and be taking payments in a week. I wanted to see how fast I could do this with Django. Most my previous eCommerce deployments (many) were in PHP and many of them were in [magento](https://magento.com). Had a few in ASP, Perl, (Websphere) Java. I'm over that pain.
+
+Online retail - E-commerce - as an industry, is very mature. It requires a TON of flexibility and features to compete. There isn't a lot of waste.
+
+# Pre-setup
 
 I will append this by saying a few things were already installed like PostgreSQL and Python VirtualenvWrapper.
 
