@@ -3,7 +3,7 @@ date: 2017-01-04T06:41:07-08:00
 draft: false
 title: "SFP vs. QSFP"
 comments: true
-tags: [ data, networkign ]
+tags: [ data, networking ]
 ---
 
 # Networking Transceivers
@@ -68,4 +68,4 @@ I thought this was really cool. Similar to SAS controllers you can split the con
 
 I will write my notes down regarding the technologies that employ these connectors. That is even more interesting. Basically this type of networking puts supercomputing into the hands of mere mortals.
 
-Please feel free to correct me if I am wrong in the comments below. I am open to suggestion. 
+Please feel free to correct me if I am wrong in the comments below. I am open to suggestion.

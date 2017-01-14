@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta property="og:url" content="http://scotttactical.com/">
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="How To Setup a MapR Cluster on Ubuntu &middot; Scott Tactical">
+
+<meta property="og:site_name" content="Scott Tactical">
+
+<title>
+    
+    How To Setup a MapR Cluster on Ubuntu
+    
+</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/github.min.css">
+<link rel="stylesheet" href="http://scotttactical.com/css/main.css">
+
+
+<script src="http://scotttactical.com//js/photo-swipe/photoswipe.min.js"></script>
+
+<script src="http://scotttactical.com//js/photo-swipe/photoswipe-ui-default.min.js"></script>
+
+
+
+<link rel="shortcut icon" href="http://scotttactical.com//assets/favicon.ico">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://scotttactical.com//index.xml">
+
+
+<div class="container">
+    <header class="nav">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://scotttactical.com/">Scott Tactical</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="http://scotttactical.com/post">All Posts</a></li>
+                        <li><a href="http://scotttactical.com/gallery">Galleries</a></li>
+                        <li><a href="http://scotttactical.com/news">News</a></li>
+                        <li><a href="http://scotttactical.com/tags">Tags</a></li>
+                        
+                        <li><a href="http://scotttactical.com/">Home</a></li>
+                        
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        <li>
+                            <a href="https://www.facebook.com/100005012745496" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                                Facebook</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="https://twitter.com/scott_tactical" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                                Twitter</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="https://github.com/solvire" target="_blank">
+                                <i class="fa fa-github-square"></i>
+                                GitHub
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+
+            <header>
+                <div class="post-date">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    <time itemprop="datePublished" datetime="2017-01-05T16:18:32-08:00">
+                        Thu, 05 Jan 2017 16:18:32 PST
+                    </time>
+                    
+                </div>
+                <h1 class="post-title" itemprop="headline">
+                    <a href="http://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/">How To Setup a MapR Cluster on Ubuntu</a>
+                </h1>
+                <span >
+                  
+                  <span itemprop="author">Scott Tactical</span><br />
+                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">How To Setup a MapR Cluster on Ubuntu</span></a><br />
+                  <span itemprop="publisher">Scott Tactical</span><br />
+                </span>
+            </header>
+
+            <div class="post-content" itemprop="articleBody">
+              <hr />
+                
+
+<h1 id="how-to-install-mapr-test-cluster:c682fca6fa803356fb401ed7f644a0f5">How To Install MapR Test Cluster</h1>
+
+<p>This document covers my installation of MapR Converged Platform on an Ubuntu 14.04 cluster.</p>
+
+<p>We are running on the DTAC private cloud so some of the screenshots will show our internal interface. All instances are running in a VM.</p>
+
+<p>Most of this follows the suggested flow given in the lab manual from MapR. Initially I launched the cluster on CentOS 7.3 but that wasn&rsquo;t supported and it failed. The same with Ubuntu 16.</p>
+
+<h2 id="launch-virtual-machines:c682fca6fa803356fb401ed7f644a0f5">Launch Virtual Machines</h2>
+
+<p>I launched 4 virtual machines with the following specs:</p>
+
+<ul>
+<li>OS: Ubuntu 14.04</li>
+<li>2 processer cores</li>
+<li>8GB memory</li>
+<li>4 disks total</li>
+<li>1 OS disk @ 8GB</li>
+<li>3 unformatted disks @ 20GB</li>
+<li>1 public IP nic  1GbE</li>
+<li>1 private IP nic  1GbE</li>
+</ul>
+
+<p><img src="/images/mapr1.png" alt="OpenNebula" /></p>
+
+<h2 id="csshx:c682fca6fa803356fb401ed7f644a0f5">CsshX</h2>
+
+<p>If you are working on multiple servers it&rsquo;s best to use a unified command broadcast tool. It makes life so much easier. This is not the same as the clustershell that will be used from node to node.</p>
+
+<pre><code>csshx --login root --ssh_args &quot;-i .ssh/YOURKEY&quot; host1 host2 host3 host4
+</code></pre>
+
+<p><img src="/images/mapr2.png" alt="csshx" /></p>
+
+<h2 id="ssh-keys:c682fca6fa803356fb401ed7f644a0f5">SSH keys</h2>
+
+<p>You will need to setup passwordless authentication on all the severs. I always do that for external acounts but you need it make sure you can get from node to node.</p>
+
+<h2 id="housekeeping:c682fca6fa803356fb401ed7f644a0f5">HouseKeeping</h2>
+
+<pre><code>apt update
+apt upgrade
+apt install wget unzip clustershell vim htop nfs-common openjdk-7-jdk ntp ntpdate
+</code></pre>
+
+<h3 id="open-security:c682fca6fa803356fb401ed7f644a0f5">Open Security</h3>
+
+<p>I don&rsquo;t like this but MapR likes to have the app armor off. I&rsquo;ll be working on getting that or selinux for CentOS back. It could save you some pain later.</p>
+
+<pre><code>service apparmor stop
+update-rc.d -f apparmor remove
+</code></pre>
+
+<h2 id="keys-for-nodes:c682fca6fa803356fb401ed7f644a0f5">Keys for Nodes</h2>
+
+<p>Set up user mapr and give it keys. Generate keys for the nodes. See <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Generate SSH Keys</a> from Github.</p>
+
+<pre><code>useradd -m mapr
+usermod -aG sudo mapr
+mkdir /home/mapr/.ssh
+cp ~/.ssh/authorized_keys /home/mapr/.ssh/
+vim ~/.ssh/id_rsa
+cp ~/.ssh/id_rsa /home/mapr/.ssh/
+chmod 600 ~/.ssh/id_rsa /home/mapr/.ssh/id_rsa /home/mapr/.ssh/authorized_keys
+chown mapr:mapr -R /home/mapr/.ssh
+</code></pre>
+
+<h2 id="hostnames:c682fca6fa803356fb401ed7f644a0f5">Hostnames</h2>
+
+<p>It is important for the servers to have the hostnames to the local internal IP addresses set. I use AWS Route53 and that seems to work fine. Of course I need external connectivity to get out to their DNS. I set up the internal host names as mapr1-4 and add a DNS search parameter to the resolv.conf</p>
+
+<h2 id="clustershell:c682fca6fa803356fb401ed7f644a0f5">Clustershell</h2>
+
+<p>The cluster shell should have been installed via apt above.</p>
+
+<p>Edit the cluster shell config.</p>
+
+<pre><code>vim /etc/clustershell/groups
+echo &quot;all: &lt;IP addr 1&gt; &lt;IP addr 1&gt; &lt;IP addr 2&gt; &lt;IP addr 4&gt;&quot; &gt;&gt; /etc/clustershell/groups
+</code></pre>
+
+<p>Then scan for the keys.</p>
+
+<p>As root and mapr</p>
+
+<pre><code>ssh-keyscan &lt;IP addr 1&gt; &lt;IP addr 1&gt; &lt;IP addr 2&gt; &lt;IP addr 4&gt; &gt;&gt; ~/.ssh/known_hosts
+</code></pre>
+
+<p>Test it:</p>
+
+<pre><code>clush -a date
+</code></pre>
+
+<h2 id="set-up-ntpd:c682fca6fa803356fb401ed7f644a0f5">Set up ntpd</h2>
+
+<p>You will need to set up a local ntp server according to your own documentation. This is recommended by the MapR documentation.</p>
+
+<h1 id="install-mapr:c682fca6fa803356fb401ed7f644a0f5">Install MapR</h1>
+
+<h2 id="download-the-lab-files:c682fca6fa803356fb401ed7f644a0f5">Download the Lab Files</h2>
+
+<p>This install was done while going through the MapR training lab. So I have used their files for this purpose.</p>
+
+<pre><code>mkdir /opt/mapr
+cd /opt/mapr
+wget http://course-files.mapr.com/ADM2000/ADM200_Lab1.2.zip
+unzip ADM200_Lab1.2.zip
+ls labfiles
+</code></pre>
+
+<h2 id="run-validation:c682fca6fa803356fb401ed7f644a0f5">Run Validation</h2>
+
+<h3 id="run-a-cluster-audit:c682fca6fa803356fb401ed7f644a0f5">Run a Cluster Audit</h3>
+
+<pre><code>./labfiles/cluster-audit.sh | tee cluster-audit.log
+</code></pre>
+
+<p>You shouldn&rsquo;t see any errors or exit codes. Please fix if you find them.</p>
+
+<h3 id="evaluate-network-bandwidth:c682fca6fa803356fb401ed7f644a0f5">Evaluate Network Bandwidth</h3>
+
+<p>Here is where I really realized that I need faster networking in our data center. I will be posting an updated article after I have had time to build and upgrade the networking.</p>
+
+<pre><code>./labfiles/network-test.sh | tee network-test.log
+
+172.16.0.50: server-172.16.0.48-rpctest.log:Rate:  58.65 mb/s, time: 89.4174 sec, #rpcs 20007, rpcs/sec 223.748
+172.16.0.49: server-172.16.0.47-rpctest.log:Rate:  58.65 mb/s, time: 89.4173 sec, #rpcs 20007, rpcs/sec 223.749
+</code></pre>
+
+<h3 id="evaluate-data-flow:c682fca6fa803356fb401ed7f644a0f5">Evaluate Data Flow</h3>
+
+<pre><code>clush -Ba /opt/mapr/labfiles/memory-test.sh | tee memory-test.log
+</code></pre>
+
+<p>Stream will give you some interesting information about your throughput.</p>
+
+<pre><code>-------------------------------------------------------------
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       13793.8268       0.0963       0.0928       0.1045
+Scale:      15898.8540       0.0843       0.0805       0.1087
+Add:        20007.9099       0.0993       0.0960       0.1102
+Triad:      19926.1249       0.0994       0.0964       0.1068
+</code></pre>
+
+<h3 id="evaluate-raw-disk-performance:c682fca6fa803356fb401ed7f644a0f5">Evaluate Raw Disk Performance</h3>
+
+<p>Be careful. This will erase everything on the disks. We set up 3 disks on each node but since they are obviously virtual let&rsquo;s just run it on one. I also don&rsquo;t feel like beating up SSD&rsquo;s like this so I skip it sometimes.</p>
+
+<pre><code>clush -Ba /opt/mapr/labfiles/disk-test.sh
+</code></pre>
+
+<h2 id="install-a-mapr-cluster:c682fca6fa803356fb401ed7f644a0f5">Install A MapR Cluster</h2>
+
+<h3 id="get-the-installer:c682fca6fa803356fb401ed7f644a0f5">Get the Installer</h3>
+
+<pre><code>wget http://package.mapr.com/releases/installer/mapr-setup.sh
+bash mapr-setup.sh
+</code></pre>
+
+<p>Run through the setup and let it know what you decide. It will probably try to install several dependencies.</p>
+
+<p><img src="/images/mapr3.png" alt="MapR Installer" /></p>
+
+<h2 id="finish-install:c682fca6fa803356fb401ed7f644a0f5">Finish Install</h2>
+
+<p>Go to the GUI and run through the rest of the install. The installer will give you the url and the port.</p>
+
+<pre><code>https://YOURHOST:9443/
+</code></pre>
+
+<p><img src="/images/mapr4.png" alt="MapR GUI Installer" /></p>
+
+<p>You will be notified of any discrepancies. It is best not to ignore these in a production environment. Of course I didn&rsquo;t have enough room on certain things, but I went ahead anyway.</p>
+
+<p><img src="/images/mapr5.png" alt="MapR GUI Installer" /></p>
+
+            </div>
+
+            <aside>
+                
+                <ul class="list-inline post-tags">
+                    
+                </ul>
+
+                
+                
+                <h3>Related Post</h3>
+                <ul class="post-rels">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+            </aside>
+            
+            
+            <footer>
+
+                <nav>
+                    <ul class="pager">
+
+                        
+                        <li class="previous"><a href="http://scotttactical.com/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        
+
+                        <li><a href="http://scotttactical.com//post">All Posts</a></li>
+
+                        
+                        <li class="next"><a href="http://scotttactical.com/post/sfp-vs.-qsfp/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        
+
+                    </ul>
+                </nav>
+
+                
+                
+                
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+ 
+var disqus_shortname = 'scotttactical'; 
+
+ 
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                
+                
+            </footer>
+
+        </article>
+    </div>
+    <div class="col-md-4">
+        
+<aside>
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Recent Posts</h2>
+                </div>
+                <div class="list-group">
+                    
+                    <a href="/" class="list-group-item">Django eCommerce in 30&#43; Minutes</a>
+                    
+                    <a href="/post/how-to-setup-a-mapr-cluster-on-ubuntu/" class="list-group-item">How To Setup a MapR Cluster on Ubuntu</a>
+                    
+                    <a href="/post/sfp-vs.-qsfp/" class="list-group-item">SFP vs. QSFP</a>
+                    
+                    <a href="/post/encrypt-postgresql-backup-to-s3/" class="list-group-item">Encrypt PostgreSQL Backup to S3</a>
+                    
+                    <a href="/post/why-the-covered-california-website-sucks/" class="list-group-item">Why The Covered California Website Sucks</a>
+                    
+                    <a href="/post/internet-3rd-wave-and-rise-of-the-technology-fascist/" class="list-group-item">Internet 3rd Wave and Rise of the Technology Fascist</a>
+                    
+                    <a href="/post/howto-bind-multiple-terminals-macos-x/" class="list-group-item">HowTo Bind Multiple Terminals MacOS-X</a>
+                    
+                    <a href="/whats-wrong-with-millennials" class="list-group-item">What is Wrong With Millennials</a>
+                    
+                    <a href="/writing-novels-in-markdown-part1/" class="list-group-item">Writing Novels in Markdown Part 1</a>
+                    
+                    <a href="/why-we-quit-openstack" class="list-group-item">Why We Quit OpenStack: or How I Lost 2 Months of My Life</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Tags</h2>
+                </div>
+                <div class="list-group">
+                    
+                    
+                    
+                    <a href="http://scotttactical.com//tags/69-blazer" class="list-group-item">
+                        <span class="badge">6</span>
+                        69-blazer
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/adventure" class="list-group-item">
+                        <span class="badge">4</span>
+                        adventure
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/api" class="list-group-item">
+                        <span class="badge">2</span>
+                        api
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/california" class="list-group-item">
+                        <span class="badge">8</span>
+                        california
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/data" class="list-group-item">
+                        <span class="badge">20</span>
+                        data
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/design" class="list-group-item">
+                        <span class="badge">1</span>
+                        design
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/devops" class="list-group-item">
+                        <span class="badge">5</span>
+                        devops
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/django" class="list-group-item">
+                        <span class="badge">3</span>
+                        django
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/fitness" class="list-group-item">
+                        <span class="badge">1</span>
+                        fitness
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/go-golang" class="list-group-item">
+                        <span class="badge">2</span>
+                        go-golang
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/hardware" class="list-group-item">
+                        <span class="badge">1</span>
+                        hardware
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/healthcare" class="list-group-item">
+                        <span class="badge">1</span>
+                        healthcare
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/hiking" class="list-group-item">
+                        <span class="badge">2</span>
+                        hiking
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/hugo" class="list-group-item">
+                        <span class="badge">2</span>
+                        hugo
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/hypermedia" class="list-group-item">
+                        <span class="badge">2</span>
+                        hypermedia
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/laravel" class="list-group-item">
+                        <span class="badge">2</span>
+                        laravel
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/leadership" class="list-group-item">
+                        <span class="badge">3</span>
+                        leadership
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/linux" class="list-group-item">
+                        <span class="badge">1</span>
+                        linux
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/networking" class="list-group-item">
+                        <span class="badge">1</span>
+                        networking
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/nutrition" class="list-group-item">
+                        <span class="badge">1</span>
+                        nutrition
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/panorama" class="list-group-item">
+                        <span class="badge">2</span>
+                        panorama
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/performance" class="list-group-item">
+                        <span class="badge">1</span>
+                        performance
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/philosophy" class="list-group-item">
+                        <span class="badge">4</span>
+                        philosophy
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/photography" class="list-group-item">
+                        <span class="badge">8</span>
+                        photography
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/php" class="list-group-item">
+                        <span class="badge">4</span>
+                        php
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/politics" class="list-group-item">
+                        <span class="badge">3</span>
+                        politics
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/restoration" class="list-group-item">
+                        <span class="badge">6</span>
+                        restoration
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/software" class="list-group-item">
+                        <span class="badge">4</span>
+                        software
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/system-administration" class="list-group-item">
+                        <span class="badge">1</span>
+                        system-administration
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/technology" class="list-group-item">
+                        <span class="badge">7</span>
+                        technology
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/testing" class="list-group-item">
+                        <span class="badge">1</span>
+                        testing
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/wheeling" class="list-group-item">
+                        <span class="badge">4</span>
+                        wheeling
+                    </a>
+                    
+                    
+                    <a href="http://scotttactical.com//tags/writing" class="list-group-item">
+                        <span class="badge">1</span>
+                        writing
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</aside>
+
+    </div>
+</div>
+
+</div>
+<hr>
+
+<footer class="container copy">
+    <p>&copy; 2017  Scott Tactical </p>
+	<p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a></p>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-53440065-2', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+<script>
+document.write('<script src="//sharebutton.net/plugin/sharebutton.php?type=horizontal&u=' + encodeURIComponent(document.location.href) + '"></scr' + 'ipt>');
+</script>
+
