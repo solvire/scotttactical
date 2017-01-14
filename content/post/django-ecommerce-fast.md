@@ -10,15 +10,15 @@ tags: [ technology, django ]
 
 # TL;DR
 
-Python has great potential for eCommerce. I went through the [well known products](https://djangopackages.org/grids/g/ecommerce/) and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for companies to migrate away.
+Python has potential for eCommerce. I went through the [well known products](https://djangopackages.org/grids/g/ecommerce/) and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.
 
 # Preface
 
-Let me say this took me almost 2 days to get through and evaluate, which I'm used to having a demo site up in minutes. After having gone through, I think this could be launched in half an hour.  
+Let me say this took me almost 2 days to get through and evaluate, which I'm used to having a demo site up in minutes. After having gone through, I think this could be launched in half an hour.  Below are my notes of the process.
 
 # Backstory
 
-I was contacted by a business partner to see if we could kick off a project to distribute some substances that newly became legal here in CA. I thought I could spin up an ecommerce app in a couple hours and be taking payments in a week. I wanted to see how fast I could do this with Django. All my previous eCommerce deployments (there have been many) were in PHP and many of them were in [magento](https://magento.com). I'm over that noise.
+I was contacted by a business partner to see if we could kick off a project to distribute some substances that newly became legal here in CA. I thought I could spin up an ecommerce app in a couple hours and be taking payments in a week. I wanted to see how fast I could do this with Django. Most my previous eCommerce deployments (many) were in PHP and many of them were in [magento](https://magento.com). Had a few in ASP, Perl, (Websphere) Java. I'm over that pain.
 
 I will append this by saying a few things were already installed like PostgreSQL and Python VirtualenvWrapper.
 
