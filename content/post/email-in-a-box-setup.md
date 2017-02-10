@@ -10,7 +10,7 @@ tags: [ technology ]
 
 # TL;DR
 
-I set up [Mail-in-a-Box](https://mailinabox.email/) and it was ...
+I set up [Mail-in-a-Box](https://mailinabox.email/) and it was a quick and painless experience. 
 
 # Preface
 
