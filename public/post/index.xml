@@ -6,8 +6,259 @@
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2017</rights>
-    <updated>2017-01-14 16:00:07 -0800 PST</updated>
+    <updated>2017-01-15 16:00:07 -0800 PST</updated>
 
+    
+      
+        <item>
+          <title>Django Saleor eCommerce Review</title>
+          <link>http://scotttactical.com/post/django-saleor-ecommerce-review/</link>
+          <pubDate>Sun, 15 Jan 2017 16:00:07 PST</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/post/django-saleor-ecommerce-review/</guid>
+          <description>
+
+&lt;h1 id=&#34;django-and-ecommerce:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Django And eCommerce&lt;/h1&gt;
+
+&lt;h1 id=&#34;tl-dr:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;TL;DR&lt;/h1&gt;
+
+&lt;p&gt;I setup &lt;a href=&#34;http://oscarcommerce.com/&#34;&gt;Oscar&lt;/a&gt; as a demo ecommerce project in the &lt;a href=&#34;http://scotttactical.com/post/django-ecommerce-in-30-minutes/&#34;&gt;previous post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;preface:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Preface&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/saleor2.png&#34; alt=&#34;Saleor&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;backstory:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Backstory&lt;/h1&gt;
+
+&lt;p&gt;I just finished a post about setting up eCommerce with Python Django and wasn&amp;rsquo;t totally pleased with the process. Also I don&amp;rsquo;t think it is fair to only demo a single application.  I decided to give &lt;a href=&#34;http://getsaleor.com/&#34;&gt;Saleor&lt;/a&gt; my second slot after talking with several people online and looking through its source. The parent company has a number of nice products which was confidence building.&lt;/p&gt;
+
+&lt;h1 id=&#34;pre-setup:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Pre-setup&lt;/h1&gt;
+
+&lt;p&gt;As in the previous article, a few things were already installed like PostgreSQL and Python VirtualenvWrapper.&lt;/p&gt;
+
+&lt;p&gt;Here are a couple details about my stack.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Local development: Mac OS X El Cap&lt;/li&gt;
+&lt;li&gt;Bitbucket (it&amp;rsquo;s free for private accounts)&lt;/li&gt;
+&lt;li&gt;Python VirtualenvWrapper&lt;/li&gt;
+&lt;li&gt;Django 1.10.5&lt;/li&gt;
+&lt;li&gt;pip 9.0.1&lt;/li&gt;
+&lt;li&gt;PostgreSQL 9.5&lt;/li&gt;
+&lt;li&gt;Saleor - master branch&lt;/li&gt;
+&lt;li&gt;npm 3.8.6&lt;/li&gt;
+&lt;li&gt;node v6.0.0&lt;/li&gt;
+&lt;li&gt;Python 2.7&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let&amp;rsquo;s Begin&lt;/p&gt;
+
+&lt;h1 id=&#34;local-setup:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Local Setup&lt;/h1&gt;
+
+&lt;p&gt;I&amp;rsquo;ll be following the setup listed in the &lt;a href=&#34;https://saleor.readthedocs.io/en/latest/installation.html&#34;&gt;Saleor Documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;setup-postgresql:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Setup PostgreSQL&lt;/h1&gt;
+
+&lt;p&gt;I have installed PostgreSQL locally already. Please see the documentation for more information.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;PostgreSQL 9.5.3 on x86_64-apple-darwin15.4.0, compiled by Apple LLVM version 7.3.0 (clang-703.0.31), 64-bit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create a database for yourself. You will probably be hitting this locally with socket.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;createdb saleor
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;javascript:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;JavaScript&lt;/h2&gt;
+
+&lt;p&gt;Install the appropriate / required JavaScript components.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm i webpack -g
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;virtual-environment-python:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Virtual Environment - Python&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;mkvirtualenv saleor
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;clone-the-source:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Clone The Source&lt;/h2&gt;
+
+&lt;p&gt;CD into a directory beneath your source location. I like to do /project/source/*&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/mirumee/saleor.git
+cd saleor/
+pip install -r requirements.txt
+export SECRET_KEY=`openssl rand -base64 9`
+echo $SECRET_KEY
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Keep track of that secret key.&lt;/p&gt;
+
+&lt;h2 id=&#34;build-the-schema:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Build The Schema&lt;/h2&gt;
+
+&lt;p&gt;I am running PostgreSQL locally.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sed -i &#39;&#39; &#39;s/saleor:saleor@//&#39; saleor/settings.py
+python manage.py migrate
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;build-front-end:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Build Front-End&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install
+npm run build-assets
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Node package install took a while. I thought it was hung so I restarted it and ran it in verbose to know it wasn&amp;rsquo;t dead.&lt;/p&gt;
+
+&lt;h2 id=&#34;dump-schema:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Dump Schema&lt;/h2&gt;
+
+&lt;p&gt;I want to add the test data to play with but I may not want it and don&amp;rsquo;t want to have to recreate the database so I dumped the initial schema.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pg_dump saleor &amp;gt; saleor_orig.sql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then I added the test data.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./manage.py populatedb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;your-shop:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Your Shop&lt;/h1&gt;
+
+&lt;h2 id=&#34;run-the-server:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Run The Server&lt;/h2&gt;
+
+&lt;p&gt;Kick it off&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./manage.py runserver
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you did everything right you should be able to see your shop running at &lt;a href=&#34;http://localhost:8000&#34;&gt;http://localhost:8000&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I went to create a test account and of course it blew up on the redirect. But that will be investigated later.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/saleor3.png&#34; alt=&#34;Saleor Home Page&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;view-dashboard:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;View Dashboard&lt;/h2&gt;
+
+&lt;p&gt;From the command line I created a superuser so I could see the dashboard.&lt;/p&gt;
+
+&lt;p&gt;I liked the dashboard. I think the single page app style is pretty dangerous, but I wanted to give it a try.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/saleor4.png&#34; alt=&#34;Saleor Home Page&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;git-add:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Git Add&lt;/h2&gt;
+
+&lt;p&gt;Add the new files to the remote repository and push it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git init
+git add .
+git commit -m &amp;quot;first commit&amp;quot;
+git remote set-url origin yourname@bitbucket.com:yourapp/yourapp.git
+git push
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;conclusions:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Conclusions&lt;/h1&gt;
+
+&lt;h2 id=&#34;code-structure:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Code Structure&lt;/h2&gt;
+
+&lt;p&gt;I liked this code layout better than Oscar. It was easier to find my around and seemed cleaner overall. Linting is important to me.&lt;/p&gt;
+
+&lt;p&gt;I would have liked to have a separate settings file for local/testing/production such as is in various cookiecutter templates.&lt;/p&gt;
+
+&lt;h2 id=&#34;building:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Building&lt;/h2&gt;
+
+&lt;p&gt;It was easier to build this. Launching it into Heroku blew up on me but this local build did not. That was acceptable. The test data was good enough to play with too.&lt;/p&gt;
+
+&lt;h2 id=&#34;no-rest-for-me:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;No REST for me&lt;/h2&gt;
+
+&lt;p&gt;Again, I was disappointed with how hard it was to find information about the REST layer. Please favor mobile and JS heavy deployments. Make things API based first.&lt;/p&gt;
+
+&lt;h2 id=&#34;will-it-stay:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Will it Stay&lt;/h2&gt;
+
+&lt;p&gt;This is probably the one. I still have to go through a little more testing of course, but I think I am set for now.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>eMail In A Box: Setup</title>
+          <link>http://scotttactical.com/post/email-in-a-box-setup/</link>
+          <pubDate>Sun, 15 Jan 2017 16:00:07 PST</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/post/email-in-a-box-setup/</guid>
+          <description>
+
+&lt;h1 id=&#34;test-drive-mail-in-a-box:c965dd197236415b2ebb070edbb434a4&#34;&gt;Test Drive: Mail In A Box&lt;/h1&gt;
+
+&lt;h1 id=&#34;tl-dr:c965dd197236415b2ebb070edbb434a4&#34;&gt;TL;DR&lt;/h1&gt;
+
+&lt;p&gt;I set up &lt;a href=&#34;https://mailinabox.email/&#34;&gt;Mail-in-a-Box&lt;/a&gt; and it was &amp;hellip;&lt;/p&gt;
+
+&lt;h1 id=&#34;preface:c965dd197236415b2ebb070edbb434a4&#34;&gt;Preface&lt;/h1&gt;
+
+&lt;p&gt;I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day. This is obviously much different, but it&amp;rsquo;s cool to work in low volume transactional environments. I also hate HATE managing email.&lt;/p&gt;
+
+&lt;h1 id=&#34;pre-setup:c965dd197236415b2ebb070edbb434a4&#34;&gt;Pre-setup&lt;/h1&gt;
+
+&lt;p&gt;Here are a couple details about my stack.&lt;/p&gt;
+
+&lt;p&gt;I am hosting on &lt;a href=&#34;http://dtac.io&#34;&gt;http://dtac.io&lt;/a&gt; cloud VPS with the following specs.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ubuntu 14.04 LTS&lt;/li&gt;
+&lt;li&gt;2GB memory&lt;/li&gt;
+&lt;li&gt;40GB HD&lt;/li&gt;
+&lt;li&gt;1 local private ip&lt;/li&gt;
+&lt;li&gt;1 public ip&lt;/li&gt;
+&lt;li&gt;1 ipv6 public&lt;/li&gt;
+&lt;li&gt;1 piv6 private&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/mib1.png&#34; alt=&#34;DTAC Cloud Instance&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Make sure to update ubuntu with all the latest fixes. My SSH keys and all that stuff were already deployed with my personal images.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s Begin&lt;/p&gt;
+
+&lt;h1 id=&#34;domain-configuration:c965dd197236415b2ebb070edbb434a4&#34;&gt;Domain Configuration&lt;/h1&gt;
+
+&lt;p&gt;I am using &lt;a href=&#34;https://aws.amazon.com/ses/&#34;&gt;Amazon AWS SES&lt;/a&gt; on their free tier to handle the transactional outgoing email, so this is mostly for incoming mail. If you have dealt with deliverability this is a huge thing for me.&lt;/p&gt;
+
+&lt;p&gt;I am also using &lt;a href=&#34;https://aws.amazon.com/route53/&#34;&gt;Amazon Route 53&lt;/a&gt; for managing the DNS. It&amp;rsquo;s free and I don&amp;rsquo;t want to deal with name servers.&lt;/p&gt;
+
+&lt;p&gt;I created an A record for box.theduber.club to my IP. I then set the hostname of the box locally. Make sure to set up reverse DNS as well. &lt;a href=&#34;https://aws.amazon.com/premiumsupport/knowledge-center/route-53-reverse-dns/&#34;&gt;https://aws.amazon.com/premiumsupport/knowledge-center/route-53-reverse-dns/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Waiting for your ISP to get rDNS might be the longest thing.&lt;/p&gt;
+
+&lt;p&gt;For those who wrote the documentation. It was dialed down a little much. It actually took longer to set up because of the dummyproofing that was going on.&lt;/p&gt;
+
+&lt;h1 id=&#34;installation:c965dd197236415b2ebb070edbb434a4&#34;&gt;Installation&lt;/h1&gt;
+
+&lt;p&gt;As root:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl -s https://mailinabox.email/setup.sh | sudo bash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It gave me a nice TUI to go through graphic-ish setup.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/mib2.png&#34; alt=&#34;DTAC Cloud Instance&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/mib3.png&#34; alt=&#34;DTAC Cloud Instance&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;configuration:c965dd197236415b2ebb070edbb434a4&#34;&gt;Configuration&lt;/h1&gt;
+
+&lt;p&gt;You should be able to log into your console. &lt;a href=&#34;https://box.yourdomain.com/admin&#34;&gt;https://box.yourdomain.com/admin&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It will tell you what it is missing. The &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt; feature is great. Totally love that part! Seriously, it saves days of my life.&lt;/p&gt;
+
+&lt;h1 id=&#34;conclusions:c965dd197236415b2ebb070edbb434a4&#34;&gt;Conclusions&lt;/h1&gt;
+
+&lt;p&gt;I&amp;rsquo;m totally into this. Thanks to &lt;a href=&#34;https://twitter.com/mailinabox&#34;&gt;https://twitter.com/mailinabox&lt;/a&gt; for all the great work compiling this thing.&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
