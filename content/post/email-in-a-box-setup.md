@@ -1,9 +1,9 @@
 ---
-date: 2017-01-15T16:00:07-08:00
+date: 2017-02-09T16:00:07-08:00
 draft: false
 title: "eMail In A Box: Setup"
 comments: true
-tags: [ technology, django ]
+tags: [ technology ]
 ---
 
 # Test Drive: Mail In A Box

@@ -6,8 +6,89 @@
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2017</rights>
-    <updated>2017-01-15 16:00:07 -0800 PST</updated>
+    <updated>2017-02-09 16:00:07 -0800 PST</updated>
 
+    
+      
+        <item>
+          <title>eMail In A Box: Setup</title>
+          <link>http://scotttactical.com/post/email-in-a-box-setup/</link>
+          <pubDate>Thu, 09 Feb 2017 16:00:07 PST</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/post/email-in-a-box-setup/</guid>
+          <description>
+
+&lt;h1 id=&#34;test-drive-mail-in-a-box:c965dd197236415b2ebb070edbb434a4&#34;&gt;Test Drive: Mail In A Box&lt;/h1&gt;
+
+&lt;h1 id=&#34;tl-dr:c965dd197236415b2ebb070edbb434a4&#34;&gt;TL;DR&lt;/h1&gt;
+
+&lt;p&gt;I set up &lt;a href=&#34;https://mailinabox.email/&#34;&gt;Mail-in-a-Box&lt;/a&gt; and it was &amp;hellip;&lt;/p&gt;
+
+&lt;h1 id=&#34;preface:c965dd197236415b2ebb070edbb434a4&#34;&gt;Preface&lt;/h1&gt;
+
+&lt;p&gt;I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day. This is obviously much different, but it&amp;rsquo;s cool to work in low volume transactional environments. I also hate HATE managing email.&lt;/p&gt;
+
+&lt;h1 id=&#34;pre-setup:c965dd197236415b2ebb070edbb434a4&#34;&gt;Pre-setup&lt;/h1&gt;
+
+&lt;p&gt;Here are a couple details about my stack.&lt;/p&gt;
+
+&lt;p&gt;I am hosting on &lt;a href=&#34;http://dtac.io&#34;&gt;http://dtac.io&lt;/a&gt; cloud VPS with the following specs.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ubuntu 14.04 LTS&lt;/li&gt;
+&lt;li&gt;2GB memory&lt;/li&gt;
+&lt;li&gt;40GB HD&lt;/li&gt;
+&lt;li&gt;1 local private ip&lt;/li&gt;
+&lt;li&gt;1 public ip&lt;/li&gt;
+&lt;li&gt;1 ipv6 public&lt;/li&gt;
+&lt;li&gt;1 piv6 private&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/mib1.png&#34; alt=&#34;DTAC Cloud Instance&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Make sure to update ubuntu with all the latest fixes. My SSH keys and all that stuff were already deployed with my personal images.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s Begin&lt;/p&gt;
+
+&lt;h1 id=&#34;domain-configuration:c965dd197236415b2ebb070edbb434a4&#34;&gt;Domain Configuration&lt;/h1&gt;
+
+&lt;p&gt;I am using &lt;a href=&#34;https://aws.amazon.com/ses/&#34;&gt;Amazon AWS SES&lt;/a&gt; on their free tier to handle the transactional outgoing email, so this is mostly for incoming mail. If you have dealt with deliverability this is a huge thing for me.&lt;/p&gt;
+
+&lt;p&gt;I am also using &lt;a href=&#34;https://aws.amazon.com/route53/&#34;&gt;Amazon Route 53&lt;/a&gt; for managing the DNS. It&amp;rsquo;s free and I don&amp;rsquo;t want to deal with name servers.&lt;/p&gt;
+
+&lt;p&gt;I created an A record for box.theduber.club to my IP. I then set the hostname of the box locally. Make sure to set up reverse DNS as well. &lt;a href=&#34;https://aws.amazon.com/premiumsupport/knowledge-center/route-53-reverse-dns/&#34;&gt;https://aws.amazon.com/premiumsupport/knowledge-center/route-53-reverse-dns/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Waiting for your ISP to get rDNS might be the longest thing.&lt;/p&gt;
+
+&lt;p&gt;For those who wrote the documentation. It was dialed down a little much. It actually took longer to set up because of the dummyproofing that was going on.&lt;/p&gt;
+
+&lt;h1 id=&#34;installation:c965dd197236415b2ebb070edbb434a4&#34;&gt;Installation&lt;/h1&gt;
+
+&lt;p&gt;As root:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl -s https://mailinabox.email/setup.sh | sudo bash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It gave me a nice TUI to go through graphic-ish setup.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/mib2.png&#34; alt=&#34;DTAC Cloud Instance&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/mib3.png&#34; alt=&#34;DTAC Cloud Instance&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;configuration:c965dd197236415b2ebb070edbb434a4&#34;&gt;Configuration&lt;/h1&gt;
+
+&lt;p&gt;You should be able to log into your console. &lt;a href=&#34;https://box.yourdomain.com/admin&#34;&gt;https://box.yourdomain.com/admin&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It will tell you what it is missing. The &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt; feature is great. Totally love that part! Seriously, it saves days of my life.&lt;/p&gt;
+
+&lt;h1 id=&#34;conclusions:c965dd197236415b2ebb070edbb434a4&#34;&gt;Conclusions&lt;/h1&gt;
+
+&lt;p&gt;I&amp;rsquo;m totally into this. Thanks to &lt;a href=&#34;https://twitter.com/mailinabox&#34;&gt;https://twitter.com/mailinabox&lt;/a&gt; for all the great work compiling this thing.&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
@@ -175,87 +256,6 @@ git push
 &lt;h2 id=&#34;will-it-stay:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Will it Stay&lt;/h2&gt;
 
 &lt;p&gt;This is probably the one. I still have to go through a little more testing of course, but I think I am set for now.&lt;/p&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>eMail In A Box: Setup</title>
-          <link>http://scotttactical.com/post/email-in-a-box-setup/</link>
-          <pubDate>Sun, 15 Jan 2017 16:00:07 PST</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/post/email-in-a-box-setup/</guid>
-          <description>
-
-&lt;h1 id=&#34;test-drive-mail-in-a-box:c965dd197236415b2ebb070edbb434a4&#34;&gt;Test Drive: Mail In A Box&lt;/h1&gt;
-
-&lt;h1 id=&#34;tl-dr:c965dd197236415b2ebb070edbb434a4&#34;&gt;TL;DR&lt;/h1&gt;
-
-&lt;p&gt;I set up &lt;a href=&#34;https://mailinabox.email/&#34;&gt;Mail-in-a-Box&lt;/a&gt; and it was &amp;hellip;&lt;/p&gt;
-
-&lt;h1 id=&#34;preface:c965dd197236415b2ebb070edbb434a4&#34;&gt;Preface&lt;/h1&gt;
-
-&lt;p&gt;I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day. This is obviously much different, but it&amp;rsquo;s cool to work in low volume transactional environments. I also hate HATE managing email.&lt;/p&gt;
-
-&lt;h1 id=&#34;pre-setup:c965dd197236415b2ebb070edbb434a4&#34;&gt;Pre-setup&lt;/h1&gt;
-
-&lt;p&gt;Here are a couple details about my stack.&lt;/p&gt;
-
-&lt;p&gt;I am hosting on &lt;a href=&#34;http://dtac.io&#34;&gt;http://dtac.io&lt;/a&gt; cloud VPS with the following specs.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Ubuntu 14.04 LTS&lt;/li&gt;
-&lt;li&gt;2GB memory&lt;/li&gt;
-&lt;li&gt;40GB HD&lt;/li&gt;
-&lt;li&gt;1 local private ip&lt;/li&gt;
-&lt;li&gt;1 public ip&lt;/li&gt;
-&lt;li&gt;1 ipv6 public&lt;/li&gt;
-&lt;li&gt;1 piv6 private&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/mib1.png&#34; alt=&#34;DTAC Cloud Instance&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Make sure to update ubuntu with all the latest fixes. My SSH keys and all that stuff were already deployed with my personal images.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s Begin&lt;/p&gt;
-
-&lt;h1 id=&#34;domain-configuration:c965dd197236415b2ebb070edbb434a4&#34;&gt;Domain Configuration&lt;/h1&gt;
-
-&lt;p&gt;I am using &lt;a href=&#34;https://aws.amazon.com/ses/&#34;&gt;Amazon AWS SES&lt;/a&gt; on their free tier to handle the transactional outgoing email, so this is mostly for incoming mail. If you have dealt with deliverability this is a huge thing for me.&lt;/p&gt;
-
-&lt;p&gt;I am also using &lt;a href=&#34;https://aws.amazon.com/route53/&#34;&gt;Amazon Route 53&lt;/a&gt; for managing the DNS. It&amp;rsquo;s free and I don&amp;rsquo;t want to deal with name servers.&lt;/p&gt;
-
-&lt;p&gt;I created an A record for box.theduber.club to my IP. I then set the hostname of the box locally. Make sure to set up reverse DNS as well. &lt;a href=&#34;https://aws.amazon.com/premiumsupport/knowledge-center/route-53-reverse-dns/&#34;&gt;https://aws.amazon.com/premiumsupport/knowledge-center/route-53-reverse-dns/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Waiting for your ISP to get rDNS might be the longest thing.&lt;/p&gt;
-
-&lt;p&gt;For those who wrote the documentation. It was dialed down a little much. It actually took longer to set up because of the dummyproofing that was going on.&lt;/p&gt;
-
-&lt;h1 id=&#34;installation:c965dd197236415b2ebb070edbb434a4&#34;&gt;Installation&lt;/h1&gt;
-
-&lt;p&gt;As root:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;curl -s https://mailinabox.email/setup.sh | sudo bash
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It gave me a nice TUI to go through graphic-ish setup.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/mib2.png&#34; alt=&#34;DTAC Cloud Instance&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/mib3.png&#34; alt=&#34;DTAC Cloud Instance&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;configuration:c965dd197236415b2ebb070edbb434a4&#34;&gt;Configuration&lt;/h1&gt;
-
-&lt;p&gt;You should be able to log into your console. &lt;a href=&#34;https://box.yourdomain.com/admin&#34;&gt;https://box.yourdomain.com/admin&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It will tell you what it is missing. The &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt; feature is great. Totally love that part! Seriously, it saves days of my life.&lt;/p&gt;
-
-&lt;h1 id=&#34;conclusions:c965dd197236415b2ebb070edbb434a4&#34;&gt;Conclusions&lt;/h1&gt;
-
-&lt;p&gt;I&amp;rsquo;m totally into this. Thanks to &lt;a href=&#34;https://twitter.com/mailinabox&#34;&gt;https://twitter.com/mailinabox&lt;/a&gt; for all the great work compiling this thing.&lt;/p&gt;
 </description>
         </item>
       
