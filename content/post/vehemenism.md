@@ -48,7 +48,7 @@ Leadership is something that has mostly vanished in modern society. Many people 
 
 Leadership is directly linked to the long-term survival of the tribe. There is an imprint of the leader of the pack on that pack. What makes a tribe different from a squad, company, sports team, or any other fiscal endeavor is the tribe is for life.  A manager doesn't expect to be involved with a group for more than a few months or years. His priority is his personal advancement.
 
-Packs need an alpha to be a pack. At least one. Many alphas types can exist in a group, and all males should seek to live as alphas even if they are in subordinate roles. Followers are just as important as leaders.  
+Packs need an alpha to be a pack. At least one. Many alpha types can exist in a group, and all males should seek to live as alphas even if they are in subordinate roles. Followers are just as important as leaders.  
 
 Right now there is a general dearth of qualified or capable males for these roles. Most do not understand or care to learn what base virtues are required in the making of an alpha.
 
