@@ -3,7 +3,7 @@
 
 <footer class="container copy">
     <p>&copy; {{ .Site.LastChange.Year }} {{ if isset .Site.Params "Author" }} {{ .Site.Params.Author }} {{ else }} {{ .Site.Title }} {{ end }}</p>
-	<p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a></p>
+    <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a></p>
 </footer>
 
 <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -20,8 +20,4 @@
 ga('create', '{{ .Site.Params.GoogleAnalyticsUserID }}', 'auto');
 ga('send', 'pageview');
 
-</script>
-
-<script>
-document.write('<script src="//sharebutton.net/plugin/sharebutton.php?type=horizontal&u=' + encodeURIComponent(document.location.href) + '"></scr' + 'ipt>');
 </script>
