@@ -6,7 +6,7 @@ url: what-is-link-unfurling
 tags: [ technology ]
 ---
 
-# How do I Those Rich Effects On My Website
+# How To Get Rich Effects On My Website
 
 I posted a [link to Slack](https://api.slack.com/docs/message-link-unfurling) once and it loaded up all this cool information.  I couldn't figure out what was going on but was sure that it just ripped a ton of stuff out of the HTML headers. The METADATA.  
 
