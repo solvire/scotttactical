@@ -6,8 +6,98 @@
     <language>en-us</language>
     <author>Scott Tactical</author>
     <rights>(C) 2017</rights>
-    <updated>2017-04-14 18:51:01 -0700 PDT</updated>
+    <updated>2017-05-05 18:51:01 -0700 PDT</updated>
 
+    
+      
+        <item>
+          <title>A Weed Delivery Service</title>
+          <link>http://scotttactical.com/post/a-weed-delivery-service/</link>
+          <pubDate>Fri, 05 May 2017 18:51:01 PDT</pubDate>
+          <author>Scott Tactical</author>
+          <guid>http://scotttactical.com/post/a-weed-delivery-service/</guid>
+          <description>
+
+&lt;h1 id=&#34;the-duber-a-weed-delivery-service:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;The Duber - A Weed Delivery Service&lt;/h1&gt;
+
+&lt;p&gt;About 6 months ago I decided to take on the task of building a delivery app for the cannabis industry. Here are a few notes from the journey so far.&lt;/p&gt;
+
+&lt;h2 id=&#34;why:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;I had just come off building software for Methadone suppliers. It tracked people coming off of harder opiates. As we all know here there is a very strong opiate problem in the United States. It has even caused the redefined &lt;a href=&#34;https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm&#34;&gt;CDC Guidelines on Prescribing Opioids for Pain&lt;/a&gt;.  When the CDC has to step in and scold a country full of doctors we know we have a problem.&lt;/p&gt;
+
+&lt;p&gt;My philosophy has always been very classical. In some cases that would &amp;ldquo;trigger&amp;rdquo; a nerd. But, no dear, your holy progress is not impeded because some of still intend to do things the old fashioned way.  This is a gamble for your life, and those people who you choose to listen to should at least have some track record of having your best interest in mind. Large corporation and alphabet agencies never put individuals over their profits and power.&lt;/p&gt;
+
+&lt;h2 id=&#34;an-industry-in-the-shadows:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;An Industry In The Shadows&lt;/h2&gt;
+
+&lt;p&gt;Similar to the conventional medical sector, the Marijuana Sector has been operating in the shadows. You might think they are unrelated, but in fact they are quite related. Both are covered by the years of bureaucracy that have been built up to protect certain industries.  &lt;a href=&#34;http://www.mayoclinic.org/healthy-lifestyle/consumer-health/in-depth/medical-marijuana/art-20137855&#34;&gt;Marijuana is known to treat many conditions&lt;/a&gt; such as the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Amyotrophic lateral sclerosis (ALS)&lt;/li&gt;
+&lt;li&gt;Anorexia due to HIV/AIDS&lt;/li&gt;
+&lt;li&gt;Chronic pain&lt;/li&gt;
+&lt;li&gt;Crohn&amp;rsquo;s disease&lt;/li&gt;
+&lt;li&gt;Epilepsy or seizures&lt;/li&gt;
+&lt;li&gt;Glaucoma, although the American Academy of Ophthalmology doesn&amp;rsquo;t recommend medical marijuana&lt;/li&gt;
+&lt;li&gt;Multiple sclerosis or severe muscle spasms&lt;/li&gt;
+&lt;li&gt;Nausea, vomiting or severe wasting associated with cancer treatment&lt;/li&gt;
+&lt;li&gt;Terminal illness&lt;/li&gt;
+&lt;li&gt;Tourette syndrome&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have medicine that is easily produceable by the general population and unable to be patented by large profitable corporations then you have a perfect recipe for a prohibition.&lt;/p&gt;
+
+&lt;h2 id=&#34;needs-for-technology:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;Needs For Technology&lt;/h2&gt;
+
+&lt;p&gt;The gran medical institutions have plenty of money to put into their technology. A lot more than Cannabis companies do.  They will only change if they have to. Right now they are swimming in money and don&amp;rsquo;t care much about user experience.  They don&amp;rsquo;t have to.&lt;/p&gt;
+
+&lt;p&gt;My initial journey started when I attempted to &lt;a href=&#34;https://theduber.club/weblog/2017/05/27/how-do-you-purchase-medical-marijuana/&#34;&gt;buy weed online&lt;/a&gt;. It was super shady and not a very appealing experience. The fact that the steps that were required didn&amp;rsquo;t help either.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll write an article later on what it takes to buy online.&lt;/p&gt;
+
+&lt;h2 id=&#34;sunlight-is-the-best-disinfectant:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;Sunlight Is The Best Disinfectant&lt;/h2&gt;
+
+&lt;p&gt;Immediately I noticed the things that have to change. It needs some fresh air and sunlight.  These companies need visibility and to air things out.&lt;/p&gt;
+
+&lt;h3 id=&#34;ecommerce:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;Ecommerce&lt;/h3&gt;
+
+&lt;p&gt;I have a long history in ecommerce. I don&amp;rsquo;t really like it much, but it seems to still be growing and maturing.  It&amp;rsquo;s always a little dirty. If a company is making a lot of money selling online, then there is probably something fishy going on.  That&amp;rsquo;s another story tho.&lt;/p&gt;
+
+&lt;p&gt;What I could not find at all was a coherent shopping experience online. At least the modicum of a shopping experience. The pillar of weed marketing is (&lt;a href=&#34;http://weedmaps.com&#34;&gt;http://weedmaps.com&lt;/a&gt;) and they have one of the worst UX I have ever gone through.&lt;/p&gt;
+
+&lt;p&gt;I have to keep reminding myself that UX doesn&amp;rsquo;t really matter though. It&amp;rsquo;s all about data and controlling traffic. Data + Traffic. Thats it. If you own the traffic you can poop in a box and sell it all day.&lt;/p&gt;
+
+&lt;h3 id=&#34;vetting-and-credibility:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;Vetting And Credibility&lt;/h3&gt;
+
+&lt;p&gt;Talking to delivery professionals was painful. I shouldn&amp;rsquo;t call them professionals.  Shady drug neighborhood drug dealers that happened to have their site listed on weedmaps. That is about all you have for credibility and vetting.&lt;/p&gt;
+
+&lt;p&gt;No one wants some shady dudes coming up to their home at 9pm smelling like chronic. It&amp;rsquo;s just not what you do if you have a family or a reputation.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-duber:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;The Duber&lt;/h1&gt;
+
+&lt;h2 id=&#34;uber-for-weed-https-theduber-club:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;&lt;a href=&#34;https://theduber.club/&#34;&gt;Uber for Weed&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;That was what popped into my head. &amp;ldquo;Why can&amp;rsquo;t I just go online and order a drop off right here?&amp;rdquo;  The only way for this to work seemed to be in this rare narrow market that has both, a lack of maturity, a healthy margin, and an audience that is both a little rebellious and also ready for some change.&lt;/p&gt;
+
+&lt;p&gt;Here is what I envisioned.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Go online and find a delivery service&lt;/li&gt;
+&lt;li&gt;Get my &lt;a href=&#34;https://theduber.club/weblog/2017/05/29/how-get-med-card/&#34;&gt;Medical Marijuana Recommendation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Upload my ID&lt;/li&gt;
+&lt;li&gt;Pick my product&lt;/li&gt;
+&lt;li&gt;Set my delivery&lt;/li&gt;
+&lt;li&gt;Chillax&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I knew I could do this.&lt;/p&gt;
+
+&lt;p&gt;Later I&amp;rsquo;ll explain how I went about it.&lt;/p&gt;
+
+&lt;p&gt;Feedback is highly welcomed.&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
