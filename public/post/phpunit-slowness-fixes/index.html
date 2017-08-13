@@ -8,7 +8,7 @@
 &lt;env name=&quot;DB_HOST&quot; value=&quot;NO&quot;/&gt;
 </code></pre><h2 id=database-sometimes:d306273837598a7a2a686add086bab85>Database - Sometimes</h2><p>I have two base test cases that I use for almost everything. One that wraps up Laravel or the big framework I&rsquo;m messing with or one that will just extend phpunit by itself. It might even be better to have data groups into domains so that when you are running a group of tests that it only loads up those tables.</p><p>We have a couple hundred tests. Not much. But it takes 2-5 seconds to load up all the data. That adds up to minutes. Can&rsquo;t handle that.</p><h2 id=grouping-test-suites:d306273837598a7a2a686add086bab85>Grouping Test Suites</h2><p>You have the ability to group your tests. I always have my developers add docblocks such as below so that PHPUnit will know how to group thing. The fields that I want them to use are:</p><ul><li>@author - for running all mine or someone&rsquo;s tests</li><li>@group - I have them just put the package in this place</li><li>@namespace - I think this works</li></ul><pre><code class=language-php>/**
  * 
- * @author solvire &lt;stevenjscott@gmail.com&gt;
+ * @author solvire &lt;info@scotttactical.com&gt;
  * @package Rules
  * @group Rules
  * @namespace LeadFerret\Lib\Rules
@@ -22,7 +22,7 @@ Available test group(s):
  - Rules
  - Transformers
  - default
- - solvire &lt;stevenjscott@gmail.com&gt;
+ - solvire &lt;info@scotttactical.com&gt;
  
 </code></pre><h2 id=filter-your-tests:d306273837598a7a2a686add086bab85>Filter Your Tests</h2><p>Run only the tests you need. Sometimes I&rsquo;m working with a class and I want to keep running that class. Just filter by the test class name:</p><p><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot;</code></p><p>Make your test names interesting camel cases. If you run testdox it comes out easier to read:</p><pre><code>./vendor/bin/phpunit --filter=&quot;testValidateTrustedCanModifyCompany&quot; --testdox
 PHPUnit 4.8.16 by Sebastian Bergmann and contributors.

@@ -24,7 +24,7 @@
 
 &lt;p&gt;This list has started as a list of notes that I kept over the last few years. Yes, this is the abbreviated version of &lt;a href=&#34;http://scotttactical.com/management-for-quality-software-development/&#34;&gt;Management For Quality Software&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;executive-leadership:b95f08065f33835f1988c422d37af806&#34;&gt;Executive Leadership&lt;/h1&gt;
+&lt;h1 id=&#34;executive-leadership&#34;&gt;Executive Leadership&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Bloated and ugly products are born at the top, but a good engineering environment may begin there&lt;/li&gt;
@@ -32,23 +32,23 @@
 &lt;li&gt;Put your name on the product&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;the-business-requirement:b95f08065f33835f1988c422d37af806&#34;&gt;The Business Requirement&lt;/h2&gt;
+&lt;h2 id=&#34;the-business-requirement&#34;&gt;The Business Requirement&lt;/h2&gt;
 
 &lt;p&gt;Write a business requirement that reflects specific details about a problem that the business is solving based on market research numbers. A full description is beyond this terse scope.&lt;/p&gt;
 
-&lt;h2 id=&#34;feature-requests-r-bad:b95f08065f33835f1988c422d37af806&#34;&gt;Feature Requests R Bad&lt;/h2&gt;
+&lt;h2 id=&#34;feature-requests-r-bad&#34;&gt;Feature Requests R Bad&lt;/h2&gt;
 
 &lt;p&gt;I know you really want to. You think you know UI design and are well versed in using a browser. In reality you probably suck at engineering/UI/art.&lt;/p&gt;
 
 &lt;p&gt;See previous paragraph sentence 1.&lt;/p&gt;
 
-&lt;h2 id=&#34;feature-driven-cycles-suck:b95f08065f33835f1988c422d37af806&#34;&gt;Feature-Driven Cycles Suck&lt;/h2&gt;
+&lt;h2 id=&#34;feature-driven-cycles-suck&#34;&gt;Feature-Driven Cycles Suck&lt;/h2&gt;
 
 &lt;p&gt;&amp;ldquo;When is the report download page going to be done?&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;Not by the definition in agile dictionaries, but defined as the environment by which business determines short term goals in reference to features.&lt;/p&gt;
 
-&lt;h2 id=&#34;business-vision:b95f08065f33835f1988c422d37af806&#34;&gt;Business Vision&lt;/h2&gt;
+&lt;h2 id=&#34;business-vision&#34;&gt;Business Vision&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Set a clear vision&lt;/li&gt;
@@ -57,7 +57,7 @@
 &lt;li&gt;Avoid buzzword glory pitchmen&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;employee-goals:b95f08065f33835f1988c422d37af806&#34;&gt;Employee Goals&lt;/h2&gt;
+&lt;h2 id=&#34;employee-goals&#34;&gt;Employee Goals&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Consider the employees goals in your vision&lt;/li&gt;
@@ -66,7 +66,7 @@
 &lt;li&gt;Make an employee goal the production of a quality product&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;optimal-relationships:b95f08065f33835f1988c422d37af806&#34;&gt;Optimal Relationships&lt;/h1&gt;
+&lt;h1 id=&#34;optimal-relationships&#34;&gt;Optimal Relationships&lt;/h1&gt;
 
 &lt;p&gt;A few items here that I look for:&lt;/p&gt;
 
@@ -81,7 +81,7 @@
 
 &lt;p&gt;Devs need &lt;a href=&#34;https://michaelochurch.wordpress.com/2014/12/&#34;&gt;CS 666 Political Science&lt;/a&gt; training. Seriously.&lt;/p&gt;
 
-&lt;h1 id=&#34;hire-the-right-people:b95f08065f33835f1988c422d37af806&#34;&gt;Hire the Right People&lt;/h1&gt;
+&lt;h1 id=&#34;hire-the-right-people&#34;&gt;Hire the Right People&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/milton.jpg&#34; alt=&#34;Milton Office Space&#34; /&gt;&lt;/p&gt;
 
@@ -89,13 +89,13 @@
 
 &lt;p&gt;See my other articles on &lt;a href=&#34;http://scotttactical.com/interview-strategies-a-technology-hiring-manager/&#34;&gt;hiring technology professionals&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;don-t-micromanage:b95f08065f33835f1988c422d37af806&#34;&gt;Don&amp;rsquo;t Micromanage&lt;/h2&gt;
+&lt;h2 id=&#34;don-t-micromanage&#34;&gt;Don&amp;rsquo;t Micromanage&lt;/h2&gt;
 
 &lt;p&gt;Nuff said else failed previous item.&lt;/p&gt;
 
-&lt;h1 id=&#34;understand-software-shelf-life:b95f08065f33835f1988c422d37af806&#34;&gt;Understand Software Shelf Life&lt;/h1&gt;
+&lt;h1 id=&#34;understand-software-shelf-life&#34;&gt;Understand Software Shelf Life&lt;/h1&gt;
 
-&lt;h2 id=&#34;shelf-life-definition:b95f08065f33835f1988c422d37af806&#34;&gt;Shelf Life Definition&lt;/h2&gt;
+&lt;h2 id=&#34;shelf-life-definition&#34;&gt;Shelf Life Definition&lt;/h2&gt;
 
 &lt;p&gt;Software expiration has passed when both of the following criteria have been met:&lt;/p&gt;
 
@@ -104,17 +104,17 @@
 &lt;li&gt;The proposed value from software improvements is less than the cost of the improvements&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;predict-the-futures:b95f08065f33835f1988c422d37af806&#34;&gt;Predict The Futures&lt;/h2&gt;
+&lt;h2 id=&#34;predict-the-futures&#34;&gt;Predict The Futures&lt;/h2&gt;
 
 &lt;p&gt;Applying a timeline to the life of an application is hard. Not because one cannot estimate a project life, but because most are not truthful with themselves on the potential of their project.&lt;/p&gt;
 
 &lt;p&gt;Ass.u.mption: shoestring ultra-successful software lasts forever and will fix rare bugs later when money is pouring.&lt;/p&gt;
 
-&lt;h2 id=&#34;yeah-fix-it-later:b95f08065f33835f1988c422d37af806&#34;&gt;Yeah – Fix It Later&lt;/h2&gt;
+&lt;h2 id=&#34;yeah-fix-it-later&#34;&gt;Yeah – Fix It Later&lt;/h2&gt;
 
 &lt;p&gt;Don&amp;rsquo;t fail the &amp;ldquo;fix it later&amp;rdquo; mentality. Sometimes disposable software is appropriate. If you only need to scrape a website once then just write a quick and dirty script and then archive it.&lt;/p&gt;
 
-&lt;h2 id=&#34;plan-for-the-futures:b95f08065f33835f1988c422d37af806&#34;&gt;Plan For The Futures&lt;/h2&gt;
+&lt;h2 id=&#34;plan-for-the-futures&#34;&gt;Plan For The Futures&lt;/h2&gt;
 
 &lt;p&gt;We don&amp;rsquo;t really know what the future holds for us, but we should plan for it. Ask this:&lt;/p&gt;
 
@@ -125,7 +125,7 @@
 
 &lt;p&gt;If it is only stored locally and undocumented on someone&amp;rsquo;s machine: fail++.&lt;/p&gt;
 
-&lt;h1 id=&#34;bad-code-costs-moar:b95f08065f33835f1988c422d37af806&#34;&gt;Bad Code Costs Moar&lt;/h1&gt;
+&lt;h1 id=&#34;bad-code-costs-moar&#34;&gt;Bad Code Costs Moar&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;There is no fix-it-later scenario.&lt;/li&gt;
@@ -138,7 +138,7 @@
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/good-fast-cheap-venn-diagram.jpg&#34; alt=&#34;Good Fast Cheap - Pick 2 - Venn Diagram&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;what-is-bad-code:b95f08065f33835f1988c422d37af806&#34;&gt;What is Bad Code&lt;/h2&gt;
+&lt;h2 id=&#34;what-is-bad-code&#34;&gt;What is Bad Code&lt;/h2&gt;
 
 &lt;p&gt;This is a hard one to explain.&lt;/p&gt;
 
@@ -149,7 +149,7 @@
 &lt;li&gt;Have peer reviews and pull requests, and yes, that costs. See: &lt;em&gt;Outsourced cheap stuff&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;myth-of-the-parallel-rewrite:b95f08065f33835f1988c422d37af806&#34;&gt;Myth of the Parallel Rewrite&lt;/h2&gt;
+&lt;h2 id=&#34;myth-of-the-parallel-rewrite&#34;&gt;Myth of the Parallel Rewrite&lt;/h2&gt;
 
 &lt;p&gt;Scenario:&lt;/p&gt;
 
@@ -163,19 +163,19 @@
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/sGUNPMPrxvA&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;h1 id=&#34;software-development-lifecycle:b95f08065f33835f1988c422d37af806&#34;&gt;Software Development Lifecycle&lt;/h1&gt;
+&lt;h1 id=&#34;software-development-lifecycle&#34;&gt;Software Development Lifecycle&lt;/h1&gt;
 
 &lt;p&gt;A reasonable software lifecycle is imperative to delivering quality software.&lt;/p&gt;
 
 &lt;p&gt;No cycle == Bad mkay&lt;/p&gt;
 
-&lt;h2 id=&#34;politics-of-the-lifecycle:b95f08065f33835f1988c422d37af806&#34;&gt;Politics of The Lifecycle&lt;/h2&gt;
+&lt;h2 id=&#34;politics-of-the-lifecycle&#34;&gt;Politics of The Lifecycle&lt;/h2&gt;
 
 &lt;p&gt;I intend to write at more length about the politics behind the product lifecycle.&lt;/p&gt;
 
 &lt;p&gt;Case study: There is no policy for a daily deployment to Curiosity rover on Mars and if the previous glitches are an indicator we can assume that even &lt;a href=&#34;http://www.space.com/23553-mars-rover-curiosity-software-glitch.html&#34;&gt;NASA has a high bug rate&lt;/a&gt; when dealing with rapid product deployments.&lt;/p&gt;
 
-&lt;h1 id=&#34;test-for-the-love-of-all-that-is-sacred-test:b95f08065f33835f1988c422d37af806&#34;&gt;Test - For the Love of All That is Sacred, Test&lt;/h1&gt;
+&lt;h1 id=&#34;test-for-the-love-of-all-that-is-sacred-test&#34;&gt;Test - For the Love of All That is Sacred, Test&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;If you do not have tests your software probably sucks&lt;/li&gt;
@@ -195,7 +195,7 @@
 
 &lt;p&gt;Programmer - &amp;ldquo;All tests are passing. I am looking and there are no tests covering any business requirements for such a feature. If you want we can take a look and write a test that covers this feature.&amp;rdquo;&lt;/p&gt;
 
-&lt;h1 id=&#34;conclusion:b95f08065f33835f1988c422d37af806&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 
 &lt;p&gt;Build things that make the world better. Treat employees like people. Give back.&lt;/p&gt;
 </description>
@@ -224,7 +224,7 @@
 &lt;li&gt;Embracing a genuine desire for quality, progress, and community&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;tl-dr:46b69cc651b36917739e2a1f57a8d295&#34;&gt;TL;DR:&lt;/h1&gt;
+&lt;h1 id=&#34;tl-dr&#34;&gt;TL;DR:&lt;/h1&gt;
 
 &lt;p&gt;This document contains &amp;gt; 2k words.&lt;/p&gt;
 
@@ -232,7 +232,7 @@
 
 &lt;p&gt;&lt;a href=&#34;http://scotttactical.com/try-not-2-fuck-up-ur-engineering/&#34;&gt;Try Not 2 Fuck Up Ur Engineering&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;software-shelf-life:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Software Shelf Life&lt;/h1&gt;
+&lt;h1 id=&#34;software-shelf-life&#34;&gt;Software Shelf Life&lt;/h1&gt;
 
 &lt;p&gt;All software has a shelf life. Some software must last for a very long time whereas some software is disposable. Software longevity is derived by the leadership from the top of the organization and if software applications pass their usefulness it is due to the guidance of the leadership. It should not be assumed that long lasting software is the “best” type of software for every need and I will briefly attempt to give some very high level tools I use to determine the case by a set of criteria.&lt;/p&gt;
 
@@ -241,7 +241,7 @@
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/mcd.gif&#34; alt=&#34;We Have Infinite Longevity! - not&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;shelf-life-definition:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Shelf Life Definition&lt;/h2&gt;
+&lt;h2 id=&#34;shelf-life-definition&#34;&gt;Shelf Life Definition&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.popularmechanics.com/space/a17991/voyager-1-voyager-2-retiring-engineer/&#34;&gt;Nasa is looking for&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Fortran&#34;&gt;Fortran&lt;/a&gt; engineers to interact with the Voyager space probe. This is one of those exceedingly rare cases when the software outlasts the engineers. Also, I will throw up if anyone throws out the obligatory trope: “they do not build &amp;lsquo;um like they used to”.&lt;/p&gt;
 
@@ -256,7 +256,7 @@
 
 &lt;p&gt;It should be noted that time is a very important factor to consider in the calculations. It might be affordable financially to have cheap labor work on fixing code for extended months or years, but sometimes opportunity loss has to be calculated. Throwing resources at bad decisions is a recipe for losing. This is a relative of the sunk-cost fallacy.&lt;/p&gt;
 
-&lt;h2 id=&#34;predict-the-future:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Predict The Future&lt;/h2&gt;
+&lt;h2 id=&#34;predict-the-future&#34;&gt;Predict The Future&lt;/h2&gt;
 
 &lt;p&gt;This is a bit of art, but applying a timeline to the life of an application is hard. Not because one cannot estimate a project life, but because most managers are not truthful with themselves on the potential of their project. They assume that they can shoestring ultra-successful software that will last forever and if by some rare event bugs show up, well, they can be fixed later when the money is pouring in.&lt;/p&gt;
 
@@ -266,7 +266,7 @@
 
 &lt;p&gt;Sometimes disposable software is appropriate. If you only need to scrape a website once then just write a quick and dirty script and then archive it. It is worth noting here that having an intuitive and organized archiving procedure for scripts will add a lot of value by turning a code trash pile into a tool chest.&lt;/p&gt;
 
-&lt;h2 id=&#34;plan-for-the-future:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Plan For The Future&lt;/h2&gt;
+&lt;h2 id=&#34;plan-for-the-future&#34;&gt;Plan For The Future&lt;/h2&gt;
 
 &lt;p&gt;We do not really know what the future holds for us, but we should plan for it. One main reason we know about the champion societies of the past and can learn from them is they planned for future peoples to read their story. Monks and librarians have toiled meticulously in the storage and organization of these. This is in contrast to those “barbarian” societies that languish far behind and suffer the problems of a chaotic and backward people.&lt;/p&gt;
 
@@ -274,7 +274,7 @@
 
 &lt;p&gt;I cannot quantify precisely but disorganized file storage and a lack of repository protocols accounts for a large portion of “code sin” and will absolutely contribute to the weak ROI in the future. It is a truism to say that most of the coding problems have been solved before and that at this point the coders are just building slightly on top of those before them.&lt;/p&gt;
 
-&lt;h1 id=&#34;bad-code-costs-more:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Bad Code Costs More&lt;/h1&gt;
+&lt;h1 id=&#34;bad-code-costs-more&#34;&gt;Bad Code Costs More&lt;/h1&gt;
 
 &lt;p&gt;Please see the below diagram. You can have any two of the following scenarios.&lt;/p&gt;
 
@@ -287,13 +287,13 @@
 &lt;li&gt;There is no way to pause the businesses for your migration&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;what-is-bad-code:46b69cc651b36917739e2a1f57a8d295&#34;&gt;What is Bad Code&lt;/h2&gt;
+&lt;h2 id=&#34;what-is-bad-code&#34;&gt;What is Bad Code&lt;/h2&gt;
 
 &lt;p&gt;This is a hard one to explain. Many things can contribute to bad code.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/milton.jpg&#34; alt=&#34;Milton Office Space&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;the-why-of-bad-code:46b69cc651b36917739e2a1f57a8d295&#34;&gt;The “why” of bad code.&lt;/h3&gt;
+&lt;h3 id=&#34;the-why-of-bad-code&#34;&gt;The “why” of bad code.&lt;/h3&gt;
 
 &lt;p&gt;Sometimes it is because a requirement is placed on the engineering team that pushes them to deliver something sooner than their estimations. Programmers are generally a timid and self-disparaging lot so they tend to over promise. They are afraid to tell business that things cannot be accomplished so they cut corners. All those combined is a recipe for faults and bugs.&lt;/p&gt;
 
@@ -303,7 +303,7 @@
 
 &lt;p&gt;I will go into this topic in more detail in another article.&lt;/p&gt;
 
-&lt;h2 id=&#34;myth-of-the-parallel-rewrite:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Myth of the Parallel Rewrite&lt;/h2&gt;
+&lt;h2 id=&#34;myth-of-the-parallel-rewrite&#34;&gt;Myth of the Parallel Rewrite&lt;/h2&gt;
 
 &lt;p&gt;It has been a common theme in my career to hear business folks tell us that they are going to refactor code while at the same time continuing development or maintaining the current code base while also not contributing more human or financial resources to the equation. And all of this will be done in 1/10th the time that the original code base was developed.&lt;/p&gt;
 
@@ -311,7 +311,7 @@
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/sGUNPMPrxvA&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;h1 id=&#34;software-development-lifecycle:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Software Development Lifecycle&lt;/h1&gt;
+&lt;h1 id=&#34;software-development-lifecycle&#34;&gt;Software Development Lifecycle&lt;/h1&gt;
 
 &lt;p&gt;A reasonable software lifecycle is imperative to delivering quality software. The terms of the lifecycle are entirely determined by the needs of the business, but doing away with an organized lifecycle is a recipe for failure. Maybe a business needs to fail to encourage the evolutionary aspect of the free market. Failure is not so beneficial though if no one learns from the mistake.&lt;/p&gt;
 
@@ -329,11 +329,11 @@
 &lt;/figure&gt;
 
 
-&lt;h2 id=&#34;politics-of-the-lifecycle:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Politics of The Lifecycle&lt;/h2&gt;
+&lt;h2 id=&#34;politics-of-the-lifecycle&#34;&gt;Politics of The Lifecycle&lt;/h2&gt;
 
 &lt;p&gt;I intend to write at more length about the politics behind the product lifecycle. At this time I will just leave the note that the deployment schedule reflects software critical value. Requesting a development team to constantly deploy denotes a lack of care regarding software quality and stability. There is no policy for a daily deployment to Curiosity rover on Mars and if the previous glitches are an indicator we can assume that even &lt;a href=&#34;http://www.space.com/23553-mars-rover-curiosity-software-glitch.html&#34;&gt;NASA has a high bug rate&lt;/a&gt; when dealing with rapid product deployments. Critical software needs a settling time.&lt;/p&gt;
 
-&lt;h1 id=&#34;optimal-relationships:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Optimal Relationships&lt;/h1&gt;
+&lt;h1 id=&#34;optimal-relationships&#34;&gt;Optimal Relationships&lt;/h1&gt;
 
 &lt;p&gt;What is a development team without a solid lesson in &lt;a href=&#34;https://michaelochurch.wordpress.com/2014/12/&#34;&gt;CS 666&lt;/a&gt;. In such a petty manner, decent engineers will offset very good engineers to find their ways into the Herman/Miller of power. And given what we already know about politics + geekness; it is easy to see that the worst of a Klingon Game of Thrones will play out.&lt;/p&gt;
 
@@ -350,7 +350,7 @@
 &lt;li&gt;Are there provisional methods for communicating concerns up the chain of command&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;executive-leadership:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Executive Leadership&lt;/h1&gt;
+&lt;h1 id=&#34;executive-leadership&#34;&gt;Executive Leadership&lt;/h1&gt;
 
 &lt;p&gt;Bloated and ugly products start at the top and only the resources for good engineering begin there.&lt;/p&gt;
 
@@ -364,17 +364,17 @@
 
 &lt;p&gt;Good leaders should just plant the idea, find the people that want to complete it and stand out of the way and watch the numbers. Sorry chief, if you want to be creative you gotta give up the title and join us heroes in the trenches. The three ways business leaders can add value is with numbers, numbers, numbers.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-business-requirement:46b69cc651b36917739e2a1f57a8d295&#34;&gt;The Business Requirement&lt;/h2&gt;
+&lt;h2 id=&#34;the-business-requirement&#34;&gt;The Business Requirement&lt;/h2&gt;
 
 &lt;p&gt;Write a business requirement that reflects specific details about a problem that the business is solving based on market research numbers. The problem must be defined with clear terms and with enough details so that anyone who is not familiar with the product can figure out how they are benefitting from the change. The product managers should be used to simply translating business requirements only so much as that they make sense to everyone involved. Engineers should be able to express the problem back to stakeholders in terms that the customer can understand.&lt;/p&gt;
 
-&lt;h2 id=&#34;feature-requests-r-bad:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Feature Requests R Bad&lt;/h2&gt;
+&lt;h2 id=&#34;feature-requests-r-bad&#34;&gt;Feature Requests R Bad&lt;/h2&gt;
 
 &lt;p&gt;I know you really want to. You think you know UI design and are well versed in using a browser. In reality you probably suck at engineering/UI/art though. If you are looking at a widget on another site and trying to “innovate” a feature into your product but lack any sort of market research data for that specific functionality then you can count yourself among most managers. It will probably dictate poor code and make employees short sighted and unhappy. Good luck hoss.&lt;/p&gt;
 
 &lt;p&gt;See previous paragraph sentence #1.&lt;/p&gt;
 
-&lt;h2 id=&#34;feature-driven-cycles-suck:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Feature-Driven Cycles Suck&lt;/h2&gt;
+&lt;h2 id=&#34;feature-driven-cycles-suck&#34;&gt;Feature-Driven Cycles Suck&lt;/h2&gt;
 
 &lt;p&gt;“When is the report download page going to be done?”&lt;/p&gt;
 
@@ -382,7 +382,7 @@
 
 &lt;p&gt;While the most common form of product life cycles in my experience I find it to be the least beneficial to morale and code quality. Of course every place I have worked has been “agile” really it was just agile in name and then when business wanted something they shoved a feature request at us asking for a button that does X or a report than shows better numbers on an always increasing trend.&lt;/p&gt;
 
-&lt;h2 id=&#34;business-vision:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Business Vision&lt;/h2&gt;
+&lt;h2 id=&#34;business-vision&#34;&gt;Business Vision&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/clockwork-orange.jpg&#34; alt=&#34;Clockwork Orange&#34; /&gt;&lt;/p&gt;
 
@@ -394,30 +394,30 @@
 
 &lt;p&gt;If you say that the market has shown people moving toward X so you are going to help the company get there then actually do that. And if six months down the road you pivot and say that product Y is the new focus and that the previous work towards X is halted: well, then you loose leader cred. The market does not change every 6 months. You probably just listened to a pitch guy smooch his way onto your planning team and shine up the buzzword array of glory.&lt;/p&gt;
 
-&lt;h2 id=&#34;employee-goals:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Employee Goals&lt;/h2&gt;
+&lt;h2 id=&#34;employee-goals&#34;&gt;Employee Goals&lt;/h2&gt;
 
 &lt;p&gt;Consider the employees goals in your vision. If you do not care about the employees&amp;rsquo; goals then they might be setting their own underneath you. We are not all building rockets or curing cancer. Have an idea of what motivates people. When you know your employees then you know how to help them. I tend to define the distinction between leaders and managers as those who take responsibility for those they lead vs those who who only care about pleasing their managers.&lt;/p&gt;
 
 &lt;p&gt;Make an employee goal the production of a quality product. Even if someone is not building rockets they can still have pride in something. If they are building crap however no one wants to tell their family about it.&lt;/p&gt;
 
-&lt;h1 id=&#34;hire-the-right-people:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Hire the Right People&lt;/h1&gt;
+&lt;h1 id=&#34;hire-the-right-people&#34;&gt;Hire the Right People&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;Hire people smarter than you and get out of their way. - Multiple References
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;I have written a little bit on the aspects of hiring technology employees. This is extremely important. You have not studied and worked 20 years in the engineering field so there is no way to teach you how to think like us. That is a separate skill. Just because you can drive your car and change the oil does not mean you can engineer a better motor.&lt;/p&gt;
 
-&lt;h1 id=&#34;test-for-the-love-of-all-that-is-sacred-test:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Test - For the Love of All That is Sacred, Test&lt;/h1&gt;
+&lt;h1 id=&#34;test-for-the-love-of-all-that-is-sacred-test&#34;&gt;Test - For the Love of All That is Sacred, Test&lt;/h1&gt;
 
 &lt;p&gt;If you do not have tests your software probably sucks. Or maybe it just works fine and you do not realize that it sucks. Either way it is a nightmare.&lt;/p&gt;
 
-&lt;h2 id=&#34;tests-indemnify-engineers:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Tests Indemnify Engineers&lt;/h2&gt;
+&lt;h2 id=&#34;tests-indemnify-engineers&#34;&gt;Tests Indemnify Engineers&lt;/h2&gt;
 
 &lt;p&gt;Engineers who have a broad and covering set of tests can enjoy the weekend knowing that new features probably will not break existing functionality.&lt;/p&gt;
 
 &lt;p&gt;On the other hand, after every release the business managers will suspect any drop in traffic or margin to be associated to some change made by the engineering team. If there are no test cases covering anything then it is likely the engineers did break something.&lt;/p&gt;
 
-&lt;h2 id=&#34;wide-coverage-is-safety:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Wide Coverage Is Safety&lt;/h2&gt;
+&lt;h2 id=&#34;wide-coverage-is-safety&#34;&gt;Wide Coverage Is Safety&lt;/h2&gt;
 
 &lt;p&gt;Have enough coverage so that coverage is a business requirement.  If there is no coverage at all on a 2 year old application then there is not much case for starting to create tests.  You probably should not be working there anyway, unless you have upside.  If however, most of the application is covered in a test then adding functionality without tests because businesses moved deadlines up sets onus back onto business for allocating resources for test writing.&lt;/p&gt;
 
@@ -427,11 +427,11 @@
 
 &lt;p&gt;Programmer - &amp;ldquo;All tests are passing. I am looking and there are no tests covering any business requirements for such a feature. If you want we can take a look and write a test that covers this feature.&amp;rdquo;&lt;/p&gt;
 
-&lt;h2 id=&#34;know-your-tests:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Know Your Tests&lt;/h2&gt;
+&lt;h2 id=&#34;know-your-tests&#34;&gt;Know Your Tests&lt;/h2&gt;
 
 &lt;p&gt;Business should know as much about tests as &amp;ldquo;features&amp;rdquo;. Granted if the user base does not care about quality then tests do not matter much.&lt;/p&gt;
 
-&lt;h1 id=&#34;conclusion:46b69cc651b36917739e2a1f57a8d295&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 
 &lt;p&gt;Go forth and create good things.
 Then give back to the world.&lt;/p&gt;
@@ -488,7 +488,7 @@ Then give back to the world.&lt;/p&gt;
 &lt;li&gt;How far is the commute.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;decoding-requirements-reading-a-resume:0180bc8b1de3d2a16a176d2974fd5842&#34;&gt;Decoding Requirements: Reading a Resume&lt;/h2&gt;
+&lt;h2 id=&#34;decoding-requirements-reading-a-resume&#34;&gt;Decoding Requirements: Reading a Resume&lt;/h2&gt;
 
 &lt;p&gt;A few of those items I can get before hand. I will scan down the resume and see what they have done. Normally I do not go past the skills list though. If I do I just look across a few major keywords in their list.&lt;/p&gt;
 
@@ -508,13 +508,13 @@ Then give back to the world.&lt;/p&gt;
 
 &lt;p&gt;I try to check social media. If they can not keep their laundry tidy we probably will not work well.&lt;/p&gt;
 
-&lt;h2 id=&#34;every-body-says-it-nonverbal-cues:0180bc8b1de3d2a16a176d2974fd5842&#34;&gt;Every Body Says It: Nonverbal Cues&lt;/h2&gt;
+&lt;h2 id=&#34;every-body-says-it-nonverbal-cues&#34;&gt;Every Body Says It: Nonverbal Cues&lt;/h2&gt;
 
 &lt;p&gt;During the conversation I get a sense for their comfort based on how they approach the interview. If they are sitting in a respectful but confident posture either they are really good at faking it or they are solid in the skills they are projecting. Clothes do not matter. We are not hired on our costume skills.&lt;/p&gt;
 
 &lt;p&gt;This sort of cold reading is outside the scope of this document, but I highly suggest studying topics related to body language and nonverbal communication. The exact percentage is debatable but most of our communication is nonverbal. At least have a phone conversation before proceeding. This will be the most telling item concerning someone&amp;rsquo;s “cultural” fit.&lt;/p&gt;
 
-&lt;h2 id=&#34;conclusion:0180bc8b1de3d2a16a176d2974fd5842&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Of those items listed there are no right or wrong answers. They simply show me what basket I can allocate someone to. My baskets are very limited sometimes so if I do not have one to fill then I just cannot invent one. That is bizdev&amp;rsquo;s job.&lt;/p&gt;
 

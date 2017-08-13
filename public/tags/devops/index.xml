@@ -18,11 +18,11 @@
           <guid>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</guid>
           <description>
 
-&lt;h1 id=&#34;encrypt-your-db-backups:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Encrypt Your DB Backups&lt;/h1&gt;
+&lt;h1 id=&#34;encrypt-your-db-backups&#34;&gt;Encrypt Your DB Backups&lt;/h1&gt;
 
 &lt;p&gt;I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.&lt;/p&gt;
 
-&lt;h2 id=&#34;generate-keys:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Generate Keys&lt;/h2&gt;
+&lt;h2 id=&#34;generate-keys&#34;&gt;Generate Keys&lt;/h2&gt;
 
 &lt;p&gt;From your user&amp;rsquo;s home directory:&lt;/p&gt;
 
@@ -35,7 +35,7 @@
 &lt;p&gt;backup_key.pem - private key
   backup_key.pem.pub - public key&lt;/p&gt;
 
-&lt;h2 id=&#34;add-aws-keys:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Add AWS Keys&lt;/h2&gt;
+&lt;h2 id=&#34;add-aws-keys&#34;&gt;Add AWS Keys&lt;/h2&gt;
 
 &lt;p&gt;Create a file to hold your AWS keys.&lt;/p&gt;
 
@@ -50,7 +50,7 @@ aws_secret_access_key = SECRETKEY
 aws_region = us-east-1
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;backup-script:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Backup Script&lt;/h1&gt;
+&lt;h1 id=&#34;backup-script&#34;&gt;Backup Script&lt;/h1&gt;
 
 &lt;p&gt;I don&amp;rsquo;t want to bore with details but here is what this script will do from a high level:&lt;/p&gt;
 
@@ -98,20 +98,20 @@ aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;crontab:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Crontab&lt;/h2&gt;
+&lt;h2 id=&#34;crontab&#34;&gt;Crontab&lt;/h2&gt;
 
 &lt;p&gt;Set up a crontab for this script. This one fires off at 3am PT daily. Change as needed.&lt;/p&gt;
 
 &lt;p&gt;crontab -e
   0 3 * * * /location/pg_backup.sh YOURDB&lt;/p&gt;
 
-&lt;h1 id=&#34;decrypt:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Decrypt&lt;/h1&gt;
+&lt;h1 id=&#34;decrypt&#34;&gt;Decrypt&lt;/h1&gt;
 
 &lt;p&gt;Decryption is pretty straight forward. Get your private key and pull the file from S3.&lt;/p&gt;
 
 &lt;p&gt;openssl smime -decrypt -in my_database.sql.sql.bz2.enc -binary -inform DEM -inkey private.pem | bzcat &amp;gt;  my_database.sql.sql&lt;/p&gt;
 
-&lt;h1 id=&#34;credits:8a22a6a1c3678bce48f6c1db128e57b7&#34;&gt;Credits&lt;/h1&gt;
+&lt;h1 id=&#34;credits&#34;&gt;Credits&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/&#34;&gt;https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -127,13 +127,13 @@ aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
           <guid>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</guid>
           <description>
 
-&lt;h1 id=&#34;binding-multiple-terminals:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;Binding Multiple Terminals&lt;/h1&gt;
+&lt;h1 id=&#34;binding-multiple-terminals&#34;&gt;Binding Multiple Terminals&lt;/h1&gt;
 
 &lt;p&gt;I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.&lt;/p&gt;
 
 &lt;p&gt;I tried a few other terminal apps. Particularly &lt;a href=&#34;https://www.iterm2.com/documentation-one-page.html&#34;&gt;iTerm2&lt;/a&gt; that has some nice broadcasting. But I didn&amp;rsquo;t like having to deal with the tabs and keystrokes. I kinda liked having multiple windows and the ease of launching with csshX&lt;/p&gt;
 
-&lt;h1 id=&#34;csshx-installation:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;csshX Installation&lt;/h1&gt;
+&lt;h1 id=&#34;csshx-installation&#34;&gt;csshX Installation&lt;/h1&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;csshX - Cluster SSH tool using MacOS-X Terminal.app&lt;/p&gt;
@@ -147,13 +147,13 @@ aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
 
 &lt;p&gt;csshx &amp;ndash;help&lt;/p&gt;
 
-&lt;h1 id=&#34;configure-csshx:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;Configure csshX&lt;/h1&gt;
+&lt;h1 id=&#34;configure-csshx&#34;&gt;Configure csshX&lt;/h1&gt;
 
 &lt;p&gt;Create a config file. I chose to set up an rc file in my home directory.&lt;/p&gt;
 
 &lt;p&gt;touch ~/.csshrc&lt;/p&gt;
 
-&lt;h2 id=&#34;logging-in-with-ssh-keys:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;Logging In With SSH Keys&lt;/h2&gt;
+&lt;h2 id=&#34;logging-in-with-ssh-keys&#34;&gt;Logging In With SSH Keys&lt;/h2&gt;
 
 &lt;p&gt;You are going to need this. Pretty much all cloud servers require keys.&lt;/p&gt;
 
@@ -167,17 +167,17 @@ aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
       
         <item>
           <title>Why We Quit OpenStack: or How I Lost 2 Months of My Life</title>
-          <link>http://scotttactical.com/why-we-quit-openstack</link>
+          <link>http://scotttactical.com/why-we-quit-openstack/</link>
           <pubDate>Fri, 28 Oct 2016 20:07:57 PDT</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/why-we-quit-openstack</guid>
+          <guid>http://scotttactical.com/why-we-quit-openstack/</guid>
           <description>
 
-&lt;h2 id=&#34;tl-dr:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
 
 &lt;p&gt;OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.&lt;/p&gt;
 
-&lt;h1 id=&#34;backstory:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Backstory&lt;/h1&gt;
+&lt;h1 id=&#34;backstory&#34;&gt;Backstory&lt;/h1&gt;
 
 &lt;p&gt;Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just &lt;em&gt;wrong&lt;/em&gt;.&lt;/p&gt;
 
@@ -192,25 +192,25 @@ aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/full_openstack.jpg&#34; alt=&#34;Full OpenStack&#34; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;red-flags:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Red Flags&lt;/h1&gt;
+&lt;h1 id=&#34;red-flags&#34;&gt;Red Flags&lt;/h1&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Where there are &lt;em&gt;clouds&lt;/em&gt; of smoke, there is probably fire. - An Indian Truism&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;it-took-forever:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;It Took Forever&lt;/h2&gt;
+&lt;h2 id=&#34;it-took-forever&#34;&gt;It Took Forever&lt;/h2&gt;
 
 &lt;p&gt;I witnessed an ambitious project slide face-first into the blue and white parking stall of the private cloud mall. Then later it was used as leverage to out every participant. I mostly attributed the breakdown to lack of time resources, OS talent and political infighting.  &lt;em&gt;nerds (heart) aws&lt;/em&gt; but more on that elsewhere.  Ignoring those huge red flags I figured my sysadmin abilities would be able to figure things out and surpass them.&lt;/p&gt;
 
 &lt;p&gt;My response: I got sysadmin skills and no politics. I&amp;rsquo;ve never failed to raise a datacenter infrastructure.&lt;/p&gt;
 
-&lt;h2 id=&#34;openstack-hate-speech:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;OpenStack Hate Speech&lt;/h2&gt;
+&lt;h2 id=&#34;openstack-hate-speech&#34;&gt;OpenStack Hate Speech&lt;/h2&gt;
 
 &lt;p&gt;There was plenty of hating over OpenStack. More specifically there was a lot of negative commentary about Nova, Neutron and Cinder. Basically the heart of the application.&lt;/p&gt;
 
 &lt;p&gt;My response: I kinda need those bells and whistles so it&amp;rsquo;s worth dealing with monolithic bloat because that&amp;rsquo;s my only option.&lt;/p&gt;
 
-&lt;h2 id=&#34;nerds-heart-aws:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Nerds (heart) AWS&lt;/h2&gt;
+&lt;h2 id=&#34;nerds-heart-aws&#34;&gt;Nerds (heart) AWS&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;When there is blood in the streets, buy land. - Contrarian Invetors&amp;rsquo; Proverb&lt;/p&gt;
@@ -222,13 +222,13 @@ aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
 
 &lt;p&gt;My response: Well most nerds have near-0 business strategy. Also this indicates there is a massive gap in talent so I&amp;rsquo;d like to be here.&lt;/p&gt;
 
-&lt;h2 id=&#34;babylon-fortuna-ergo-enterprise-ready:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Babylon Fortuna ergo Enterprise-Ready&lt;/h2&gt;
+&lt;h2 id=&#34;babylon-fortuna-ergo-enterprise-ready&#34;&gt;Babylon Fortuna ergo Enterprise-Ready&lt;/h2&gt;
 
 &lt;p&gt;The codebase is huge. And kinda old at this point. In internet years it&amp;rsquo;s about 50 years old.&lt;/p&gt;
 
 &lt;p&gt;My response: It is mature enough to use. I should be ashamed of myself. I deployed IBM Websphere and should have known better.&lt;/p&gt;
 
-&lt;h2 id=&#34;it-is-complicated:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;It is Complicated&lt;/h2&gt;
+&lt;h2 id=&#34;it-is-complicated&#34;&gt;It is Complicated&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/fb_complicated.png&#34; alt=&#34;It&#39;s Complicated&#34; /&gt;&lt;/p&gt;
 
@@ -240,13 +240,13 @@ aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
 
 &lt;p&gt;My response: Well, shit. Guess I&amp;rsquo;ve dealt with worse. I hope there isn&amp;rsquo;t magic happening. I&amp;rsquo;ll trust the Fuel installers. Oh God Fuel! don&amp;rsquo;t fail me!&lt;/p&gt;
 
-&lt;h2 id=&#34;it-is-fragile:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;It Is Fragile&lt;/h2&gt;
+&lt;h2 id=&#34;it-is-fragile&#34;&gt;It Is Fragile&lt;/h2&gt;
 
 &lt;p&gt;Refer to the previous diagram. With so many moving parts and given the lack of talent capable of managing it there is a serious level of risk in trusting a critical production environment on this.&lt;/p&gt;
 
 &lt;p&gt;My response: Keep my public cloud fail overs built and ready to deploy. I&amp;rsquo;m a cheat.&lt;/p&gt;
 
-&lt;h2 id=&#34;it-is-vendor-driven:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;It Is Vendor Driven&lt;/h2&gt;
+&lt;h2 id=&#34;it-is-vendor-driven&#34;&gt;It Is Vendor Driven&lt;/h2&gt;
 
 &lt;p&gt;I kinda knew that the growth of OpenStack was tainted by vendor intrigue. I have run into this spending a considerable amount of time working with OAuth 2.0 when the &amp;ldquo;framework&amp;rdquo; was going through proposals and the lead writers were splitting.&lt;/p&gt;
 
@@ -254,25 +254,25 @@ aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
 
 &lt;p&gt;My response: Ick&lt;/p&gt;
 
-&lt;h1 id=&#34;the-final-decision:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;The Final Decision&lt;/h1&gt;
+&lt;h1 id=&#34;the-final-decision&#34;&gt;The Final Decision&lt;/h1&gt;
 
 &lt;p&gt;While it might work for a team like RackSpace, I don&amp;rsquo;t think it fits what we need. The cost benefit of having a few drivers and some prebuilt scripts to managing images wasn&amp;rsquo;t enough to justify the cost and risk of having a system that is so fragile.&lt;/p&gt;
 
 &lt;p&gt;The risk and the knowns of unknowns inside the massive spaghetti of scope creep was enough that I couldn&amp;rsquo;t justify that I wouldn&amp;rsquo;t be able to jump in and fix something within less than a day. Pretty much every code fix I had to make took more than a day. More of 3-5 days to figure out each bug. That was the last straw.&lt;/p&gt;
 
-&lt;h2 id=&#34;opennebula:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;OpenNebula&lt;/h2&gt;
+&lt;h2 id=&#34;opennebula&#34;&gt;OpenNebula&lt;/h2&gt;
 
 &lt;p&gt;We tried other stacks and I launched a multiple node infrastructure with OpenNebula. It was refreshingly vertical and self-contained. But still felt like it wanted to follow the hypervisor slipstream of OpenStack.&lt;/p&gt;
 
-&lt;h2 id=&#34;blah-stack:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Blah-Stack&lt;/h2&gt;
+&lt;h2 id=&#34;blah-stack&#34;&gt;Blah-Stack&lt;/h2&gt;
 
 &lt;p&gt;There was a lot of other options but I was burned out at this point.&lt;/p&gt;
 
-&lt;h2 id=&#34;future-plans:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Future Plans&lt;/h2&gt;
+&lt;h2 id=&#34;future-plans&#34;&gt;Future Plans&lt;/h2&gt;
 
 &lt;p&gt;The focus internally is more on bare-metal and OS containers. So far so good.&lt;/p&gt;
 
-&lt;h1 id=&#34;conclusion:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;There is no free ride. (Development is an Expect 2 Work Employment)&lt;/li&gt;
@@ -294,11 +294,11 @@ aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
           <guid>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</guid>
           <description>
 
-&lt;h1 id=&#34;download-the-entire-site-with-wget:967adfa691414a6b957a247770983398&#34;&gt;Download the Entire Site with wget&lt;/h1&gt;
+&lt;h1 id=&#34;download-the-entire-site-with-wget&#34;&gt;Download the Entire Site with wget&lt;/h1&gt;
 
 &lt;p&gt;If you don&amp;rsquo;t have &lt;a href=&#34;http://brew.sh/&#34;&gt;homebrew&lt;/a&gt; please install it. It will make all our lives easier.&lt;/p&gt;
 
-&lt;h2 id=&#34;howto:967adfa691414a6b957a247770983398&#34;&gt;Howto&lt;/h2&gt;
+&lt;h2 id=&#34;howto&#34;&gt;Howto&lt;/h2&gt;
 
 &lt;p&gt;This was kinda simple but I wanted to post it here for reference.&lt;/p&gt;
 
@@ -334,17 +334,17 @@ aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
           <guid>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
           <description>
 
-&lt;h1 id=&#34;laravel-5-enforcing-https:03bc7a7611150669b29f3c91e572d932&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;
+&lt;h1 id=&#34;laravel-5-enforcing-https&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;
 
 &lt;p&gt;I&amp;rsquo;ve used a lot of frameworks. &lt;a href=&#34;http://laravel.com/&#34;&gt;Laravel is great&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;dealing-with-a-load-balancer:03bc7a7611150669b29f3c91e572d932&#34;&gt;Dealing with a load balancer&lt;/h2&gt;
+&lt;h2 id=&#34;dealing-with-a-load-balancer&#34;&gt;Dealing with a load balancer&lt;/h2&gt;
 
 &lt;p&gt;Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.&lt;/p&gt;
 
 &lt;p&gt;If you do not handle the redirect properly and just look for port 443 then you will get yourself into a &lt;strong&gt;redirection loop&lt;/strong&gt;. That is annoying because if you don&amp;rsquo;t test under an SSL you will deploy to production and then have to tell you boss why you&amp;rsquo;re loopy. Amazon is kind of a pain for this.&lt;/p&gt;
 
-&lt;h2 id=&#34;aws-elb-proxy-headers:03bc7a7611150669b29f3c91e572d932&#34;&gt;AWS ELB Proxy Headers&lt;/h2&gt;
+&lt;h2 id=&#34;aws-elb-proxy-headers&#34;&gt;AWS ELB Proxy Headers&lt;/h2&gt;
 
 &lt;p&gt;Make sure you know what the request looks like to the accepting server.&lt;/p&gt;
 
@@ -354,7 +354,7 @@ aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
 
 &lt;p&gt;The problem with just looking for this and accepting your solution based on this is that header can be forged trivially. You need to make sure you are only acknowledging that header from trusted sources.&lt;/p&gt;
 
-&lt;h2 id=&#34;setting-the-redirect:03bc7a7611150669b29f3c91e572d932&#34;&gt;Setting the Redirect&lt;/h2&gt;
+&lt;h2 id=&#34;setting-the-redirect&#34;&gt;Setting the Redirect&lt;/h2&gt;
 
 &lt;p&gt;I went ahead and installed &lt;a href=&#34;https://github.com/fideloper/TrustedProxy&#34; title=&#34;Laravel Trusted Proxies&#34; target=&#34;_blank&#34;&gt;Laravel Trusted Proxies&lt;/a&gt; from &lt;a href=&#34;https://github.com/fideloper&#34; title=&#34;Chris Fideo&#34; target=&#34;_blank&#34;&gt;Chris Fideo&lt;/a&gt;.&lt;/p&gt;
 
@@ -381,7 +381,7 @@ aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
     ]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;add-to-laravel-middleware:03bc7a7611150669b29f3c91e572d932&#34;&gt;Add to Laravel Middleware&lt;/h2&gt;
+&lt;h2 id=&#34;add-to-laravel-middleware&#34;&gt;Add to Laravel Middleware&lt;/h2&gt;
 
 &lt;p&gt;I created Secure.php and added it to app/Http/Middleware&lt;/p&gt;
 

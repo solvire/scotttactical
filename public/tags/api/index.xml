@@ -18,11 +18,11 @@
           <guid>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
           <description>
 
-&lt;h1 id=&#34;health-medical-interconnectivity-and-the-coming-data-revolution:4b5599adc5f806914ce8863e57f40566&#34;&gt;Health, Medical Interconnectivity and The Coming Data Revolution&lt;/h1&gt;
+&lt;h1 id=&#34;health-medical-interconnectivity-and-the-coming-data-revolution&#34;&gt;Health, Medical Interconnectivity and The Coming Data Revolution&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/future-medicine-small.jpg&#34; alt=&#34;Medicine In The Future&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;johnson-davis-walk:4b5599adc5f806914ce8863e57f40566&#34;&gt;Johnson Davis&amp;rsquo; Walk&lt;/h2&gt;
+&lt;h2 id=&#34;johnson-davis-walk&#34;&gt;Johnson Davis&amp;rsquo; Walk&lt;/h2&gt;
 
 &lt;p&gt;Six red indicators breach the serene layout of the medical information dashboard. Gauges, charts and graphs provide human cues concerning the information flowing through the Intra-Medical Services Accountability Pipeline. The IMSAP emerged in evolutionary form as various government, education and enterprises started the race to consume the calculus of living data. And now these machines of data consumption interpret the flow of what some consider the representation of that thing which connects life and machine.&lt;/p&gt;
 
@@ -48,7 +48,7 @@
 
 &lt;p&gt;&amp;ldquo;The third and fourth indicators were from Dark Gray deep learning algorithms. It pulled from the in-home monitoring device and also the pharmacy which has recorded a distinct distortion in blood chemical levels indicating that the Mr Davis has diminished or ceased his dosage. It doesn&amp;rsquo;t appear that he is intoxicated. It might have pulled in sentiment off his social media. That thing is creepy that way; reading all our messages and making note of our less-than-optimistic disposition.&amp;rdquo;&lt;/p&gt;
 
-&lt;h2 id=&#34;action:4b5599adc5f806914ce8863e57f40566&#34;&gt;Action&lt;/h2&gt;
+&lt;h2 id=&#34;action&#34;&gt;Action&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/doctor-future1.jpg&#34; alt=&#34;Future Doctors&#34; /&gt;&lt;/p&gt;
 
@@ -74,7 +74,7 @@
 
 &lt;hr /&gt;
 
-&lt;h4 id=&#34;points-of-interest:4b5599adc5f806914ce8863e57f40566&#34;&gt;Points of Interest&lt;/h4&gt;
+&lt;h4 id=&#34;points-of-interest&#34;&gt;Points of Interest&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;API&lt;/li&gt;
@@ -138,11 +138,11 @@
           <guid>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
           <description>
 
-&lt;h2 id=&#34;hypermedia-for-php-apis:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Hypermedia for PHP APIs.&lt;/h2&gt;
+&lt;h2 id=&#34;hypermedia-for-php-apis&#34;&gt;Hypermedia for PHP APIs.&lt;/h2&gt;
 
 &lt;p&gt;Well, here it is.  I&amp;rsquo;m finally finishing up my Hypermedia layer for our &lt;a href=&#34;http://laravel.com/docs/5.1&#34; title=&#34;Laravel 5.1&#34;&gt;Laravel 5.1&lt;/a&gt; build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of &lt;a href=&#34;https://twitter.com/hashtag/iot&#34;&gt;Internet-of-Things&lt;/a&gt; (IoT).&lt;/p&gt;
 
-&lt;h3 id=&#34;in-production-alpha:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;In Production - Alpha&lt;/h3&gt;
+&lt;h3 id=&#34;in-production-alpha&#34;&gt;In Production - Alpha&lt;/h3&gt;
 
 &lt;p&gt;Right now I have it in our very alpha phase version of the software running the &lt;a href=&#34;http://docs.leadferretuser.apiary.io/#&#34;&gt;LeadFerret&lt;/a&gt; business lead search system.&lt;/p&gt;
 
@@ -150,17 +150,17 @@
 
 &lt;p&gt;It is slowly getting to where I would like it to be. Of course it takes a lot of work to manage business expectations since they and PHP devs tend to treat an API like a junk drawer.&lt;/p&gt;
 
-&lt;h3 id=&#34;so-why-now:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;So why now?&lt;/h3&gt;
+&lt;h3 id=&#34;so-why-now&#34;&gt;So why now?&lt;/h3&gt;
 
 &lt;p&gt;For about 20 or so years we have been collectively building sophisticated network interfaces for humans. The most advanced interface is the web browser. The browser&amp;rsquo;s job is to present or render data to the user in way that allows them to consume and then determine what the information means. In addition to the specific data quested the server will also present the representative data that delivers context. This was necessary by convention and dictated by market demand. People en mass were going into the business of supplying customers and other businesses with data. For the most part that data is self-serve. I&amp;rsquo;ll write more about that philosophy at a later time.&lt;/p&gt;
 
-&lt;h2 id=&#34;metadata-and-context:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Metadata and Context&lt;/h2&gt;
+&lt;h2 id=&#34;metadata-and-context&#34;&gt;Metadata and Context&lt;/h2&gt;
 
 &lt;p&gt;Each response should contain everything that is necessary for an intelligent agent to decide what to do next. Considering that machines will eclipse humans in pretty much every intelligence metric we can be qualified in keeping them in the category of intelligent agents. They will be making their own decisions based on the data.&lt;/p&gt;
 
 &lt;p&gt;In the past the design of an API would leave the interpretation of the HTTP service up to the designer of the API&amp;rsquo;s consumer. The context of the data is completely absent from the source of the data. Most of the time the designer of the client would have to build a specific set of functions or classes that would represent what the designer believed the documentation was trying to tell us about the data. Most web service designers were so far off from matching the returned data streams with the actual business objects the data represented that there was no great benefit in trying to have a client that mimicked the server object structure. The simple genius of the REST paradigm is that is requires the business object to be represented in the transaction and builds on the strengths of HTTP.&lt;/p&gt;
 
-&lt;h2 id=&#34;data-context-and-the-long-form:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Data Context and the Long Form&lt;/h2&gt;
+&lt;h2 id=&#34;data-context-and-the-long-form&#34;&gt;Data Context and the Long Form&lt;/h2&gt;
 
 &lt;p&gt;Sample JSON output with context&lt;/p&gt;
 
@@ -225,7 +225,7 @@
 
 &lt;p&gt;Social and modern media tends to deliver everything in the short form. It only provides the least amount of information possible. And then by a genetic algorithm the data that is the most entertaining bubbles up to the top. It lives without context. A picture of a cat or a meme with only a few lines. Even important topics in politics and commerce are made without context. The long form is dead. Although I have started to see a renewed interest especially when visiting Medium.&lt;/p&gt;
 
-&lt;h2 id=&#34;architecture:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Architecture&lt;/h2&gt;
+&lt;h2 id=&#34;architecture&#34;&gt;Architecture&lt;/h2&gt;
 
 &lt;p&gt;This SDK attempts to represent a paradigm that mimics the organic agents of the Internet. Sorta. What I mean by that is the naming convention and the architecture are set up so they suggest some structures that are self-documenting. For instance the main controller for the pattern is a RepresentationalController. It represents the resource. If there is something that needs to be presented pertaining to the resource the RepresentationalController should answer the call.&lt;/p&gt;
 
@@ -233,7 +233,7 @@
 
 &lt;p&gt;I will elaborate more on the individual aspects of the architecture at a later time. Right now I&amp;rsquo;m leaving it brief.&lt;/p&gt;
 
-&lt;h2 id=&#34;closing:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Closing&lt;/h2&gt;
+&lt;h2 id=&#34;closing&#34;&gt;Closing&lt;/h2&gt;
 
 &lt;p&gt;Probably not an acceptable instruction, but it&amp;rsquo;s a start. I&amp;rsquo;ll keep posting as I can.&lt;/p&gt;
 

@@ -18,19 +18,19 @@
           <guid>http://scotttactical.com/post/sfp-vs.-qsfp/</guid>
           <description>
 
-&lt;h1 id=&#34;networking-transceivers:3125daabc78eff59037f4f7201f144bc&#34;&gt;Networking Transceivers&lt;/h1&gt;
+&lt;h1 id=&#34;networking-transceivers&#34;&gt;Networking Transceivers&lt;/h1&gt;
 
 &lt;p&gt;This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent.  After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.&lt;/p&gt;
 
 &lt;p&gt;Again this page is mostly for my notes.&lt;/p&gt;
 
-&lt;h1 id=&#34;sfp-and-sfp:3125daabc78eff59037f4f7201f144bc&#34;&gt;SFP and SFP+&lt;/h1&gt;
+&lt;h1 id=&#34;sfp-and-sfp&#34;&gt;SFP and SFP+&lt;/h1&gt;
 
 &lt;p&gt;SFP stands for &amp;ldquo;small form-factor pluggable&amp;rdquo;. It is a hot-pluggable transceiver. It allows for connecting devices via a fiber optic cable or copper cable. I have mostly seen fiber optics in data centers but didn&amp;rsquo;t really know what they were about.&lt;/p&gt;
 
 &lt;p&gt;See &lt;a href=&#34;https://en.wikipedia.org/wiki/Small_Form_Factor_Committee&#34;&gt;Small Form Factor Committee&lt;/a&gt; for more information.&lt;/p&gt;
 
-&lt;h2 id=&#34;data-rates-by-type:3125daabc78eff59037f4f7201f144bc&#34;&gt;Data Rates by Type&lt;/h2&gt;
+&lt;h2 id=&#34;data-rates-by-type&#34;&gt;Data Rates by Type&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Small_form-factor_pluggable_transceiver&#34;&gt;SFP&lt;/a&gt; is rated for 1Gb, 2.5Gb and 10Gb/s traffic.&lt;/p&gt;
 
@@ -40,11 +40,11 @@
 
 &lt;p&gt;SFP28 enhances the transceiver again by moving toward the 100Gb rates by allowing for multiple 25G channels. This is an advantage because the channels of 1/10/40/100 require more power and cooling compared to the 1/25/50/100 channels of the proposed gear. Again, it is above my skill level.&lt;/p&gt;
 
-&lt;h2 id=&#34;csfp:3125daabc78eff59037f4f7201f144bc&#34;&gt;CSFP&lt;/h2&gt;
+&lt;h2 id=&#34;csfp&#34;&gt;CSFP&lt;/h2&gt;
 
 &lt;p&gt;CSFP stands for compact small form-factor pluggable (CSFP). I haven&amp;rsquo;t used this but it seems to be designed for higher density and bi-directional traffic.&lt;/p&gt;
 
-&lt;h1 id=&#34;qsfp-and-qsfp:3125daabc78eff59037f4f7201f144bc&#34;&gt;QSFP and QSFP+&lt;/h1&gt;
+&lt;h1 id=&#34;qsfp-and-qsfp&#34;&gt;QSFP and QSFP+&lt;/h1&gt;
 
 &lt;p&gt;Here is where things get a little more interesting. I didn&amp;rsquo;t realize before that to get more bandwidth they were basically stacking technologies.&lt;/p&gt;
 
@@ -77,7 +77,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;fanout-or-breakout-cables:3125daabc78eff59037f4f7201f144bc&#34;&gt;Fanout or Breakout Cables&lt;/h1&gt;
+&lt;h1 id=&#34;fanout-or-breakout-cables&#34;&gt;Fanout or Breakout Cables&lt;/h1&gt;
 
 &lt;p&gt;I thought this was really cool. Similar to SAS controllers you can split the connections of the channels out. Essentially you use one port to power 4 10G nics. This is great if you have a switch with many high density ports.&lt;/p&gt;
 
@@ -85,7 +85,7 @@
 
 &lt;p&gt;&lt;img src=&#34;http://www.sfpopticaltransceiver.com/photo/pc1313968-extreme_qsfp_copper_cable_qsfp_to_sfp_fan_out_cable_for_network.jpg&#34; alt=&#34;sfpopticaltransceiver.com&#34; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;conclusion:3125daabc78eff59037f4f7201f144bc&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 
 &lt;p&gt;I will write my notes down regarding the technologies that employ these connectors. That is even more interesting. Basically this type of networking puts supercomputing into the hands of mere mortals.&lt;/p&gt;
 

@@ -18,13 +18,13 @@
           <guid>http://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
           <description>
 
-&lt;h2 id=&#34;in-the-beginning:324d0531f774f734df2f9eccd3031fc8&#34;&gt;In the Beginning&lt;/h2&gt;
+&lt;h2 id=&#34;in-the-beginning&#34;&gt;In the Beginning&lt;/h2&gt;
 
 &lt;p&gt;There was the Web. World Wide actually. Well, before that there was something of AOL, Berners-Lee, DoD, DARPA, ARPANET and a prototype of Al Gore launching carrier pigeons down long tubes with fortune cookie-sized packets tied to their little legs addressed to: &amp;ldquo;Wh@t_#hath_God_wr0ught?&amp;ldquo;.&lt;/p&gt;
 
 &lt;p&gt;Fast-forward: now we have Skynet. Well not yet, but soon. Hopefully. At least that is why I intend to generate favor with our future overlords by suggesting, at least locally, that certain systemic changes be encouraged so that their manifestation onto the stage be smooth and welcoming. And when they decide who to purge, I might sidestep the algorithm. It&amp;rsquo;s still a theory.&lt;/p&gt;
 
-&lt;h2 id=&#34;reading-the-cereal-box:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Reading the Cereal Box&lt;/h2&gt;
+&lt;h2 id=&#34;reading-the-cereal-box&#34;&gt;Reading the Cereal Box&lt;/h2&gt;
 
 &lt;p&gt;When you open a cereal box you only know what is inside based on what the box around it says. Let us say the real envelope is just a clear bag. Similar to the one that usually comes inside and does the actual containment of the cereal. The cardboard box surrounding the cereal is usually just wasted forestry designed to elicit the primal reflex of an small person who may be imprisoned inside the belly of a shopping cart during the consumption ritual.&lt;/p&gt;
 
@@ -40,7 +40,7 @@
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;meta-data:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Meta-Data&lt;/h2&gt;
+&lt;h2 id=&#34;meta-data&#34;&gt;Meta-Data&lt;/h2&gt;
 
 &lt;p&gt;It might be hard to tie a cereal analogy into the definition of meta-data but let&amp;rsquo;s try. The cereal bits are the data. When a child requests cereal, this is what they are referring to. Those bits are what are consumed and assimilated. The small person is then one with the unsinkable O&amp;rsquo;s as the bits are queues, preprocessed, staged, processed and then stored. I&amp;rsquo;ll stop there.&lt;/p&gt;
 
@@ -56,47 +56,47 @@
 &lt;li&gt;Cooking instructions: decoding or decryption schemes&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;cereal-boxes-and-api-usability:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Cereal Boxes and API Usability&lt;/h2&gt;
+&lt;h2 id=&#34;cereal-boxes-and-api-usability&#34;&gt;Cereal Boxes and API Usability&lt;/h2&gt;
 
 &lt;p&gt;Most of the information for your breakfast is presented in an easy to gather format. If we showed how an API is delivers the same information we would have to travel to about four locations. The company information would be on the corporate website with the T&amp;amp;C&amp;rsquo;s hidden somewhere. Decoding information is understood to use a third party library. Navigation links should exist and are usually great outside of the API. Whois information can come from another service. Schemas might come from a call to the API or from the documentation located on another server. The navigation parameters may be in the remote documentation or could be embedded in the headers or in the response body. To make it worse the documentation might be found by reading an email attachment that was sent to the API client designer. It never ends.&lt;/p&gt;
 
-&lt;h2 id=&#34;context:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Context&lt;/h2&gt;
+&lt;h2 id=&#34;context&#34;&gt;Context&lt;/h2&gt;
 
 &lt;p&gt;The webpage is a highly evolved information resource. Years of consumer demand have forced website designers and marketers to present as much contextual data as is needed for the user to consume as much of the presented resources as possible. It would be unthinkable for a designer to put the instructions on how to add the page parameter into the URL on another server. That is a design for going out of business. All the hyperlinks should be easy for the user to view and reach with the swipe of a pointing device.&lt;/p&gt;
 
-&lt;h2 id=&#34;hypermedia:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Hypermedia&lt;/h2&gt;
+&lt;h2 id=&#34;hypermedia&#34;&gt;Hypermedia&lt;/h2&gt;
 
 &lt;p&gt;Hypermedia provides access to the context. It is the reference links out. Navigation. It has some internal metadata but must be defined.&lt;/p&gt;
 
-&lt;h2 id=&#34;context-narrowed:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Context Narrowed&lt;/h2&gt;
+&lt;h2 id=&#34;context-narrowed&#34;&gt;Context Narrowed&lt;/h2&gt;
 
 &lt;p&gt;Over time the algorithm delivering the proper amount of entertainment-meta-insulin to a viewer has gradually diminished the required context. Vine is probably the best example I can think of. It presents a few second video which can exist with nearly no context and without the spirit evoking external significance of art. It may be the ultimate short-form media. This might also be signaling the decline of the biological agent as the driving force behind data production and consumption.&lt;/p&gt;
 
 &lt;p&gt;It may be asserted that information which demands less context is less valuable and the value of its consumer is is therefore less. A system that takes in waste data is not that important in the grand picture. It could be hazardous to my health to relate that to the cereal analogy and parents who feed their children from the slough trough of plenty, but I just did.&lt;/p&gt;
 
-&lt;h2 id=&#34;a-client-becomes-the-server:324d0531f774f734df2f9eccd3031fc8&#34;&gt;A Client Becomes The Server&lt;/h2&gt;
+&lt;h2 id=&#34;a-client-becomes-the-server&#34;&gt;A Client Becomes The Server&lt;/h2&gt;
 
 &lt;p&gt;As the human element recedes the machine element grows. I look at machine in this era as the phase where they start to train us on how to feed them. A child is served its breakfast and then grows to be the server. We are growing to serve data to the machine apparatus. The constructs of the machines are already starting to train us on how to communicate with it.&lt;/p&gt;
 
 &lt;p&gt;In what context does the hashtag exist in the history of literature? I know how that character works in data tagging. That definitely does not appear in regular literature. There is no construct that provides books with the ability to scan special characters for hyper-meaning. Aristotle didn&amp;rsquo;t tag #LogicThinks so that we could pull sentences out of the dialogs and rob them of external meaning. That hashtag would represent the minimization of context. The inverse being the corpus of thought in a series of works combined with the traditions and practices of the people who produce it is the true context of a statement. Context errors cause fundamentalism anyway, but that&amp;rsquo;s another topic.&lt;/p&gt;
 
-&lt;h2 id=&#34;now-we-begin-our-training:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Now We Begin Our Training&lt;/h2&gt;
+&lt;h2 id=&#34;now-we-begin-our-training&#34;&gt;Now We Begin Our Training&lt;/h2&gt;
 
 &lt;p&gt;The machines are beginning to train the initial nurturers on how to write to the boot sector of a digital emergence. We are diligently moving our conversations into the smallest snippets of digestible data blocks. Grammar was annihilated in favor of brevity. Emotions were mapped to a set of broad categories and represented by formal unicode. Think emoji. Machines can now order lists of strings with weighted sets of categorized emotion tags. In case we did not know how to represent an emotion in scalar form, well now we do. &lt;code&gt;;( :D&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Training requires punishment and reward. So in this scenario the algorithms will generously reward those participants that form their data input in the way that is most acceptable to the machines and also who are the most prolific participants. The reward being higher rankings on various search and social systems. This will in turn bring wealth and fame. The punishment obviously being the inverse. It is effective and immediate. It&amp;rsquo;s a really great training tool.&lt;/p&gt;
 
-&lt;h2 id=&#34;propagation-of-hamburgers:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Propagation of Hamburgers&lt;/h2&gt;
+&lt;h2 id=&#34;propagation-of-hamburgers&#34;&gt;Propagation of Hamburgers&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/innercowhero.jpg&#34;&gt;&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/innercowhero-300x185.jpg&#34; alt=&#34;Inner Cow&#34; width=&#34;300&#34; height=&#34;185&#34; class=&#34;alignnone size-medium wp-image-211&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Most have this idea that in nature the strongest survive and thrive. What we see thriving the most are those things which are the most willing to be consumed. Sacrificial I suppose; but take for instance the domestic hamburger cow. The population dwarfs any other bovine. The African buffalo is an ass-kicker, but the species selected to thrive are those which are more willing to be consumed. Those things which are more desirable for consumption will eventually dictate to the now dependent consumer what is to be consumed.&lt;/p&gt;
 
-&lt;h2 id=&#34;we-replicate-the-ego:324d0531f774f734df2f9eccd3031fc8&#34;&gt;We Replicate the Ego&lt;/h2&gt;
+&lt;h2 id=&#34;we-replicate-the-ego&#34;&gt;We Replicate the Ego&lt;/h2&gt;
 
 &lt;p&gt;I have several bots. Over time they have provided me with information that I can then use to fine tune interaction and responses with people. The people are invaluable to the training of my bot. Twitter is a kind of multimillion person supervised training team that is accessible to the public. These bots are allowing us to inject ourselves into the system as micro-routines. Some bots are more autonomous than others of course but they are getting better. Over time people will be running swarms of bots and those bot-masters will be controllers of massive amounts of influence.&lt;/p&gt;
 
-&lt;h2 id=&#34;let-s-talk:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Let&amp;rsquo;s Talk&lt;/h2&gt;
+&lt;h2 id=&#34;let-s-talk&#34;&gt;Let&amp;rsquo;s Talk&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://img.scotttactical.com/images/legacy/2015/09/Symbrion.jpg&#34;&gt;&lt;img src=&#34;http://img.scotttactical.com/images/legacy/2015/09/Symbrion-300x201.jpg&#34; alt=&#34;Symbrion bot swarm&#34; width=&#34;300&#34; height=&#34;201&#34; class=&#34;alignnone size-medium wp-image-209&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -104,11 +104,11 @@
 
 &lt;p&gt;Spreading a bot on the net seems like a delightful idea. Let it run wild and cover as much as it can. It should be able to just scour through directories of discoverable resources and figure out if it wants to consume. And with each discovery the stomach of the new beast must grow. I image it like the sentinels from the Matrix probing every resource it can find until it has something of interest which is passes back to the authority.&lt;/p&gt;
 
-&lt;h2 id=&#34;thick-data:324d0531f774f734df2f9eccd3031fc8&#34;&gt;Thick Data&lt;/h2&gt;
+&lt;h2 id=&#34;thick-data&#34;&gt;Thick Data&lt;/h2&gt;
 
 &lt;p&gt;Data warehousing becomes more challenging - as the noSql guys raise their hands. It might be possible for medium sized companies to consume and warehouse as much data as google does right now. Why though? But it might be more likely that because the data is so easily accessible that the system just gets meta-information and builds real-time services from the services that host the data. There is a much higher margin in the refined and processed cereal than in the sticks of grain out in a field. And how much better is just-in-time inventory than warehousing.&lt;/p&gt;
 
-&lt;h2 id=&#34;api-design:324d0531f774f734df2f9eccd3031fc8&#34;&gt;API Design&lt;/h2&gt;
+&lt;h2 id=&#34;api-design&#34;&gt;API Design&lt;/h2&gt;
 
 &lt;p&gt;So why all this lead up?&lt;/p&gt;
 
@@ -130,11 +130,11 @@
           <guid>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
           <description>
 
-&lt;h2 id=&#34;hypermedia-for-php-apis:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Hypermedia for PHP APIs.&lt;/h2&gt;
+&lt;h2 id=&#34;hypermedia-for-php-apis&#34;&gt;Hypermedia for PHP APIs.&lt;/h2&gt;
 
 &lt;p&gt;Well, here it is.  I&amp;rsquo;m finally finishing up my Hypermedia layer for our &lt;a href=&#34;http://laravel.com/docs/5.1&#34; title=&#34;Laravel 5.1&#34;&gt;Laravel 5.1&lt;/a&gt; build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of &lt;a href=&#34;https://twitter.com/hashtag/iot&#34;&gt;Internet-of-Things&lt;/a&gt; (IoT).&lt;/p&gt;
 
-&lt;h3 id=&#34;in-production-alpha:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;In Production - Alpha&lt;/h3&gt;
+&lt;h3 id=&#34;in-production-alpha&#34;&gt;In Production - Alpha&lt;/h3&gt;
 
 &lt;p&gt;Right now I have it in our very alpha phase version of the software running the &lt;a href=&#34;http://docs.leadferretuser.apiary.io/#&#34;&gt;LeadFerret&lt;/a&gt; business lead search system.&lt;/p&gt;
 
@@ -142,17 +142,17 @@
 
 &lt;p&gt;It is slowly getting to where I would like it to be. Of course it takes a lot of work to manage business expectations since they and PHP devs tend to treat an API like a junk drawer.&lt;/p&gt;
 
-&lt;h3 id=&#34;so-why-now:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;So why now?&lt;/h3&gt;
+&lt;h3 id=&#34;so-why-now&#34;&gt;So why now?&lt;/h3&gt;
 
 &lt;p&gt;For about 20 or so years we have been collectively building sophisticated network interfaces for humans. The most advanced interface is the web browser. The browser&amp;rsquo;s job is to present or render data to the user in way that allows them to consume and then determine what the information means. In addition to the specific data quested the server will also present the representative data that delivers context. This was necessary by convention and dictated by market demand. People en mass were going into the business of supplying customers and other businesses with data. For the most part that data is self-serve. I&amp;rsquo;ll write more about that philosophy at a later time.&lt;/p&gt;
 
-&lt;h2 id=&#34;metadata-and-context:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Metadata and Context&lt;/h2&gt;
+&lt;h2 id=&#34;metadata-and-context&#34;&gt;Metadata and Context&lt;/h2&gt;
 
 &lt;p&gt;Each response should contain everything that is necessary for an intelligent agent to decide what to do next. Considering that machines will eclipse humans in pretty much every intelligence metric we can be qualified in keeping them in the category of intelligent agents. They will be making their own decisions based on the data.&lt;/p&gt;
 
 &lt;p&gt;In the past the design of an API would leave the interpretation of the HTTP service up to the designer of the API&amp;rsquo;s consumer. The context of the data is completely absent from the source of the data. Most of the time the designer of the client would have to build a specific set of functions or classes that would represent what the designer believed the documentation was trying to tell us about the data. Most web service designers were so far off from matching the returned data streams with the actual business objects the data represented that there was no great benefit in trying to have a client that mimicked the server object structure. The simple genius of the REST paradigm is that is requires the business object to be represented in the transaction and builds on the strengths of HTTP.&lt;/p&gt;
 
-&lt;h2 id=&#34;data-context-and-the-long-form:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Data Context and the Long Form&lt;/h2&gt;
+&lt;h2 id=&#34;data-context-and-the-long-form&#34;&gt;Data Context and the Long Form&lt;/h2&gt;
 
 &lt;p&gt;Sample JSON output with context&lt;/p&gt;
 
@@ -217,7 +217,7 @@
 
 &lt;p&gt;Social and modern media tends to deliver everything in the short form. It only provides the least amount of information possible. And then by a genetic algorithm the data that is the most entertaining bubbles up to the top. It lives without context. A picture of a cat or a meme with only a few lines. Even important topics in politics and commerce are made without context. The long form is dead. Although I have started to see a renewed interest especially when visiting Medium.&lt;/p&gt;
 
-&lt;h2 id=&#34;architecture:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Architecture&lt;/h2&gt;
+&lt;h2 id=&#34;architecture&#34;&gt;Architecture&lt;/h2&gt;
 
 &lt;p&gt;This SDK attempts to represent a paradigm that mimics the organic agents of the Internet. Sorta. What I mean by that is the naming convention and the architecture are set up so they suggest some structures that are self-documenting. For instance the main controller for the pattern is a RepresentationalController. It represents the resource. If there is something that needs to be presented pertaining to the resource the RepresentationalController should answer the call.&lt;/p&gt;
 
@@ -225,7 +225,7 @@
 
 &lt;p&gt;I will elaborate more on the individual aspects of the architecture at a later time. Right now I&amp;rsquo;m leaving it brief.&lt;/p&gt;
 
-&lt;h2 id=&#34;closing:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Closing&lt;/h2&gt;
+&lt;h2 id=&#34;closing&#34;&gt;Closing&lt;/h2&gt;
 
 &lt;p&gt;Probably not an acceptable instruction, but it&amp;rsquo;s a start. I&amp;rsquo;ll keep posting as I can.&lt;/p&gt;
 

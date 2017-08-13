@@ -12,19 +12,19 @@
       
         <item>
           <title>PHPunit Slowness Performance Suggestions</title>
-          <link>http://scotttactical.com/performance-suggestions-phpunit-slowness</link>
+          <link>http://scotttactical.com/performance-suggestions-phpunit-slowness/</link>
           <pubDate>Wed, 04 Nov 2015 12:57:42 PST</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/performance-suggestions-phpunit-slowness</guid>
+          <guid>http://scotttactical.com/performance-suggestions-phpunit-slowness/</guid>
           <description>
 
-&lt;h1 id=&#34;phpunit-is-slowness:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit Is Slowness&lt;/h1&gt;
+&lt;h1 id=&#34;phpunit-is-slowness&#34;&gt;PHPUnit Is Slowness&lt;/h1&gt;
 
 &lt;p&gt;I love &lt;a href=&#34;https://phpunit.de/&#34;&gt;PHPUnit&lt;/a&gt; don&amp;rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&amp;rsquo;s like the code got yo back bro! Build code that lasts.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;EDIT&lt;/em&gt;: I know most of the problems are inherent with tests not the testing framework.  However, my requirements dictate how I use it to a certain extent.  Peace.&lt;/p&gt;
 
-&lt;h2 id=&#34;phpunit-is-painfully-slow:d306273837598a7a2a686add086bab85&#34;&gt;PHPUnit is painfully slow.&lt;/h2&gt;
+&lt;h2 id=&#34;phpunit-is-painfully-slow&#34;&gt;PHPUnit is painfully slow.&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/turtle-speed.jpg&#34; alt=&#34;PHPUnit Is Slow&#34; /&gt;&lt;/p&gt;
 
@@ -32,7 +32,7 @@
 
 &lt;p&gt;For reference the 41 year old &lt;a href=&#34;http://www.npr.org/sections/thetwo-way/2015/07/13/422610986/ultramarathoner-finishes-the-appalachian-trail-in-record-time&#34;&gt;Scott Jurek&lt;/a&gt; can walk the &lt;a href=&#34;http://www.nps.gov/appa/index.htm&#34;&gt;2000+ mile Appalachian Trail&lt;/a&gt; in 45 days. Single threaded of course.&lt;/p&gt;
 
-&lt;h2 id=&#34;why-is-phpunit-anti-performant:d306273837598a7a2a686add086bab85&#34;&gt;Why is PHPUnit Anti-Performant&lt;/h2&gt;
+&lt;h2 id=&#34;why-is-phpunit-anti-performant&#34;&gt;Why is PHPUnit Anti-Performant&lt;/h2&gt;
 
 &lt;p&gt;Some thing that are inherent to unit tests that make them slow.&lt;/p&gt;
 
@@ -45,9 +45,9 @@
 &lt;li&gt;Generating reports is intensive&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;strategies:d306273837598a7a2a686add086bab85&#34;&gt;Strategies&lt;/h1&gt;
+&lt;h1 id=&#34;strategies&#34;&gt;Strategies&lt;/h1&gt;
 
-&lt;h2 id=&#34;sqlite-in-memory:d306273837598a7a2a686add086bab85&#34;&gt;SQLite - In Memory&lt;/h2&gt;
+&lt;h2 id=&#34;sqlite-in-memory&#34;&gt;SQLite - In Memory&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/sqlite.gif&#34; alt=&#34;SQLite&#34; /&gt;&lt;/p&gt;
 
@@ -72,13 +72,13 @@ I also like to make sure my host is set to not kill anything. I have wiped out a
 &amp;lt;env name=&amp;quot;DB_HOST&amp;quot; value=&amp;quot;NO&amp;quot;/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;database-sometimes:d306273837598a7a2a686add086bab85&#34;&gt;Database - Sometimes&lt;/h2&gt;
+&lt;h2 id=&#34;database-sometimes&#34;&gt;Database - Sometimes&lt;/h2&gt;
 
 &lt;p&gt;I have two base test cases that I use for almost everything. One that wraps up Laravel or the big framework I&amp;rsquo;m messing with or one that will just extend phpunit by itself.  It might even be better to have data groups into domains so that when you are running a group of tests that it only loads up those tables.&lt;/p&gt;
 
 &lt;p&gt;We have a couple hundred tests. Not much.  But it takes 2-5 seconds to load up all the data. That adds up to minutes.  Can&amp;rsquo;t handle that.&lt;/p&gt;
 
-&lt;h2 id=&#34;grouping-test-suites:d306273837598a7a2a686add086bab85&#34;&gt;Grouping Test Suites&lt;/h2&gt;
+&lt;h2 id=&#34;grouping-test-suites&#34;&gt;Grouping Test Suites&lt;/h2&gt;
 
 &lt;p&gt;You have the ability to group your tests. I always have my developers add docblocks such as below so that PHPUnit will know how to group thing. The fields that I want them to use are:&lt;/p&gt;
 
@@ -91,7 +91,7 @@ I also like to make sure my host is set to not kill anything. I have wiped out a
 &lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;
 /**
  *
- * @author solvire &amp;lt;stevenjscott@gmail.com&amp;gt;
+ * @author solvire &amp;lt;info@scotttactical.com&amp;gt;
  * @package Rules
  * @group Rules
  * @namespace LeadFerret\Lib\Rules
@@ -109,11 +109,11 @@ Available test group(s):
  - Rules
  - Transformers
  - default
- - solvire &amp;lt;stevenjscott@gmail.com&amp;gt;
+ - solvire &amp;lt;info@scotttactical.com&amp;gt;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;filter-your-tests:d306273837598a7a2a686add086bab85&#34;&gt;Filter Your Tests&lt;/h2&gt;
+&lt;h2 id=&#34;filter-your-tests&#34;&gt;Filter Your Tests&lt;/h2&gt;
 
 &lt;p&gt;Run only the tests you need. Sometimes I&amp;rsquo;m working with a class and I want to keep running that class.  Just filter by the test class name:&lt;/p&gt;
 
@@ -129,11 +129,11 @@ LeadFerret\Lib\Rules\CompanyModifyRuleProvider
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;turn-off-code-coverage:d306273837598a7a2a686add086bab85&#34;&gt;Turn Off Code Coverage&lt;/h2&gt;
+&lt;h2 id=&#34;turn-off-code-coverage&#34;&gt;Turn Off Code Coverage&lt;/h2&gt;
 
 &lt;p&gt;You don&amp;rsquo;t always have to run code coverage reports. In fact probably only before a deployment. Either you really love to see code coverage or you hate dealing with unit tests.  Doesn&amp;rsquo;t really seem to be much between.&lt;/p&gt;
 
-&lt;h3 id=&#34;performance-tests:d306273837598a7a2a686add086bab85&#34;&gt;Performance Tests&lt;/h3&gt;
+&lt;h3 id=&#34;performance-tests&#34;&gt;Performance Tests&lt;/h3&gt;
 
 &lt;p&gt;The difference was so staggering I that I was totally irritated I didn&amp;rsquo;t find this sooner. I was even getting in trying to debug at the lower code level.&lt;/p&gt;
 
@@ -156,13 +156,13 @@ Generating code coverage report in HTML format ... done
 
 &lt;p&gt;FASTER!&lt;/p&gt;
 
-&lt;h2 id=&#34;javascript-for-the-assist:d306273837598a7a2a686add086bab85&#34;&gt;JavaScript For The Assist&lt;/h2&gt;
+&lt;h2 id=&#34;javascript-for-the-assist&#34;&gt;JavaScript For The Assist&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/gulp.png&#34; alt=&#34;GulpJS&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We have been toying with using &lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt; / &lt;a href=&#34;https://www.npmjs.com/&#34;&gt;NPM&lt;/a&gt; for setting up a better workflow.  It is simple enough that once a file is saved that scripts can kick off the appropriate unit tests. If your tests are completing in less than a couple seconds then it doesn&amp;rsquo;t hurt to keep running them. If they break you may know it sooner.  This is also helpful for those people who refuse to use a full-featured IDE.  Probably also the same people that enjoy working on javascript in the dark.  I know who you are. O.o&lt;/p&gt;
 
-&lt;h1 id=&#34;conclusion:d306273837598a7a2a686add086bab85&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 
 &lt;p&gt;Life is much better now.&lt;/p&gt;
 
@@ -186,17 +186,17 @@ Generating code coverage report in HTML format ... done
           <guid>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
           <description>
 
-&lt;h1 id=&#34;laravel-5-enforcing-https:03bc7a7611150669b29f3c91e572d932&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;
+&lt;h1 id=&#34;laravel-5-enforcing-https&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;
 
 &lt;p&gt;I&amp;rsquo;ve used a lot of frameworks. &lt;a href=&#34;http://laravel.com/&#34;&gt;Laravel is great&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;dealing-with-a-load-balancer:03bc7a7611150669b29f3c91e572d932&#34;&gt;Dealing with a load balancer&lt;/h2&gt;
+&lt;h2 id=&#34;dealing-with-a-load-balancer&#34;&gt;Dealing with a load balancer&lt;/h2&gt;
 
 &lt;p&gt;Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.&lt;/p&gt;
 
 &lt;p&gt;If you do not handle the redirect properly and just look for port 443 then you will get yourself into a &lt;strong&gt;redirection loop&lt;/strong&gt;. That is annoying because if you don&amp;rsquo;t test under an SSL you will deploy to production and then have to tell you boss why you&amp;rsquo;re loopy. Amazon is kind of a pain for this.&lt;/p&gt;
 
-&lt;h2 id=&#34;aws-elb-proxy-headers:03bc7a7611150669b29f3c91e572d932&#34;&gt;AWS ELB Proxy Headers&lt;/h2&gt;
+&lt;h2 id=&#34;aws-elb-proxy-headers&#34;&gt;AWS ELB Proxy Headers&lt;/h2&gt;
 
 &lt;p&gt;Make sure you know what the request looks like to the accepting server.&lt;/p&gt;
 
@@ -206,7 +206,7 @@ Generating code coverage report in HTML format ... done
 
 &lt;p&gt;The problem with just looking for this and accepting your solution based on this is that header can be forged trivially. You need to make sure you are only acknowledging that header from trusted sources.&lt;/p&gt;
 
-&lt;h2 id=&#34;setting-the-redirect:03bc7a7611150669b29f3c91e572d932&#34;&gt;Setting the Redirect&lt;/h2&gt;
+&lt;h2 id=&#34;setting-the-redirect&#34;&gt;Setting the Redirect&lt;/h2&gt;
 
 &lt;p&gt;I went ahead and installed &lt;a href=&#34;https://github.com/fideloper/TrustedProxy&#34; title=&#34;Laravel Trusted Proxies&#34; target=&#34;_blank&#34;&gt;Laravel Trusted Proxies&lt;/a&gt; from &lt;a href=&#34;https://github.com/fideloper&#34; title=&#34;Chris Fideo&#34; target=&#34;_blank&#34;&gt;Chris Fideo&lt;/a&gt;.&lt;/p&gt;
 
@@ -233,7 +233,7 @@ Generating code coverage report in HTML format ... done
     ]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;add-to-laravel-middleware:03bc7a7611150669b29f3c91e572d932&#34;&gt;Add to Laravel Middleware&lt;/h2&gt;
+&lt;h2 id=&#34;add-to-laravel-middleware&#34;&gt;Add to Laravel Middleware&lt;/h2&gt;
 
 &lt;p&gt;I created Secure.php and added it to app/Http/Middleware&lt;/p&gt;
 
@@ -285,11 +285,11 @@ Generating code coverage report in HTML format ... done
           <guid>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
           <description>
 
-&lt;h2 id=&#34;hypermedia-for-php-apis:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Hypermedia for PHP APIs.&lt;/h2&gt;
+&lt;h2 id=&#34;hypermedia-for-php-apis&#34;&gt;Hypermedia for PHP APIs.&lt;/h2&gt;
 
 &lt;p&gt;Well, here it is.  I&amp;rsquo;m finally finishing up my Hypermedia layer for our &lt;a href=&#34;http://laravel.com/docs/5.1&#34; title=&#34;Laravel 5.1&#34;&gt;Laravel 5.1&lt;/a&gt; build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of &lt;a href=&#34;https://twitter.com/hashtag/iot&#34;&gt;Internet-of-Things&lt;/a&gt; (IoT).&lt;/p&gt;
 
-&lt;h3 id=&#34;in-production-alpha:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;In Production - Alpha&lt;/h3&gt;
+&lt;h3 id=&#34;in-production-alpha&#34;&gt;In Production - Alpha&lt;/h3&gt;
 
 &lt;p&gt;Right now I have it in our very alpha phase version of the software running the &lt;a href=&#34;http://docs.leadferretuser.apiary.io/#&#34;&gt;LeadFerret&lt;/a&gt; business lead search system.&lt;/p&gt;
 
@@ -297,17 +297,17 @@ Generating code coverage report in HTML format ... done
 
 &lt;p&gt;It is slowly getting to where I would like it to be. Of course it takes a lot of work to manage business expectations since they and PHP devs tend to treat an API like a junk drawer.&lt;/p&gt;
 
-&lt;h3 id=&#34;so-why-now:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;So why now?&lt;/h3&gt;
+&lt;h3 id=&#34;so-why-now&#34;&gt;So why now?&lt;/h3&gt;
 
 &lt;p&gt;For about 20 or so years we have been collectively building sophisticated network interfaces for humans. The most advanced interface is the web browser. The browser&amp;rsquo;s job is to present or render data to the user in way that allows them to consume and then determine what the information means. In addition to the specific data quested the server will also present the representative data that delivers context. This was necessary by convention and dictated by market demand. People en mass were going into the business of supplying customers and other businesses with data. For the most part that data is self-serve. I&amp;rsquo;ll write more about that philosophy at a later time.&lt;/p&gt;
 
-&lt;h2 id=&#34;metadata-and-context:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Metadata and Context&lt;/h2&gt;
+&lt;h2 id=&#34;metadata-and-context&#34;&gt;Metadata and Context&lt;/h2&gt;
 
 &lt;p&gt;Each response should contain everything that is necessary for an intelligent agent to decide what to do next. Considering that machines will eclipse humans in pretty much every intelligence metric we can be qualified in keeping them in the category of intelligent agents. They will be making their own decisions based on the data.&lt;/p&gt;
 
 &lt;p&gt;In the past the design of an API would leave the interpretation of the HTTP service up to the designer of the API&amp;rsquo;s consumer. The context of the data is completely absent from the source of the data. Most of the time the designer of the client would have to build a specific set of functions or classes that would represent what the designer believed the documentation was trying to tell us about the data. Most web service designers were so far off from matching the returned data streams with the actual business objects the data represented that there was no great benefit in trying to have a client that mimicked the server object structure. The simple genius of the REST paradigm is that is requires the business object to be represented in the transaction and builds on the strengths of HTTP.&lt;/p&gt;
 
-&lt;h2 id=&#34;data-context-and-the-long-form:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Data Context and the Long Form&lt;/h2&gt;
+&lt;h2 id=&#34;data-context-and-the-long-form&#34;&gt;Data Context and the Long Form&lt;/h2&gt;
 
 &lt;p&gt;Sample JSON output with context&lt;/p&gt;
 
@@ -372,7 +372,7 @@ Generating code coverage report in HTML format ... done
 
 &lt;p&gt;Social and modern media tends to deliver everything in the short form. It only provides the least amount of information possible. And then by a genetic algorithm the data that is the most entertaining bubbles up to the top. It lives without context. A picture of a cat or a meme with only a few lines. Even important topics in politics and commerce are made without context. The long form is dead. Although I have started to see a renewed interest especially when visiting Medium.&lt;/p&gt;
 
-&lt;h2 id=&#34;architecture:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Architecture&lt;/h2&gt;
+&lt;h2 id=&#34;architecture&#34;&gt;Architecture&lt;/h2&gt;
 
 &lt;p&gt;This SDK attempts to represent a paradigm that mimics the organic agents of the Internet. Sorta. What I mean by that is the naming convention and the architecture are set up so they suggest some structures that are self-documenting. For instance the main controller for the pattern is a RepresentationalController. It represents the resource. If there is something that needs to be presented pertaining to the resource the RepresentationalController should answer the call.&lt;/p&gt;
 
@@ -380,7 +380,7 @@ Generating code coverage report in HTML format ... done
 
 &lt;p&gt;I will elaborate more on the individual aspects of the architecture at a later time. Right now I&amp;rsquo;m leaving it brief.&lt;/p&gt;
 
-&lt;h2 id=&#34;closing:25373a7577ce5a1592137b8a28eee7f4&#34;&gt;Closing&lt;/h2&gt;
+&lt;h2 id=&#34;closing&#34;&gt;Closing&lt;/h2&gt;
 
 &lt;p&gt;Probably not an acceptable instruction, but it&amp;rsquo;s a start. I&amp;rsquo;ll keep posting as I can.&lt;/p&gt;
 
@@ -402,7 +402,7 @@ Generating code coverage report in HTML format ... done
 
 &lt;p&gt;Our requirements are not very application server CPU intensive so it isn&amp;rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.&lt;/p&gt;
 
-&lt;h2 id=&#34;short-history:64521b042c2931bf82be49be9d2c6916&#34;&gt;Short History&lt;/h2&gt;
+&lt;h2 id=&#34;short-history&#34;&gt;Short History&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://hhvm.com/&#34; alt=&#34;HHVM&#34; /&gt;&lt;/p&gt;
 
@@ -412,11 +412,11 @@ Generating code coverage report in HTML format ... done
 
 &lt;p&gt;Interestingly enough VKontakt is coding their own translator right along side Facebook. &lt;a href=&#34;https://en.wikipedia.org/wiki/KPHP&#34;&gt;KPHP&lt;/a&gt;. I guess old international habits die slowly.&lt;/p&gt;
 
-&lt;h3 id=&#34;hack-programming-language:64521b042c2931bf82be49be9d2c6916&#34;&gt;Hack (programming language)&lt;/h3&gt;
+&lt;h3 id=&#34;hack-programming-language&#34;&gt;Hack (programming language)&lt;/h3&gt;
 
 &lt;p&gt;One of the best things I think this paradigm added is the enhanced &lt;a href=&#34;https://en.wikipedia.org/wiki/Hack_%28programming_language%29&#34;&gt;Hack&lt;/a&gt; programming language. It gave PHP a static or dynamic type syntax. For those who complain about PHP&amp;rsquo;s loose typing, well here you go.&lt;/p&gt;
 
-&lt;h2 id=&#34;benefits:64521b042c2931bf82be49be9d2c6916&#34;&gt;Benefits&lt;/h2&gt;
+&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;
 
 &lt;p&gt;What are the benefits to having HipHop in place?&lt;/p&gt;
 
@@ -424,7 +424,7 @@ Generating code coverage report in HTML format ... done
 
 &lt;p&gt;That is about the only noteworthy thing I can see. Having Hack around is nice, but my guys are not going to change any time soon to use this. PHP is built to be phast and loose. Fast as in &amp;ldquo;can you have this ready today&amp;rdquo; sadly. I&amp;rsquo;d rather have things up and running fast and deal with standards at the QA/unit test layer. Working with the majority of the code being legacy negates the benefit also.&lt;/p&gt;
 
-&lt;h2 id=&#34;our-stack:64521b042c2931bf82be49be9d2c6916&#34;&gt;Our stack&lt;/h2&gt;
+&lt;h2 id=&#34;our-stack&#34;&gt;Our stack&lt;/h2&gt;
 
 &lt;p&gt;Right now it&amp;rsquo;s so vanilla that it is disgusting.&lt;/p&gt;
 
@@ -558,7 +558,7 @@ Generating code coverage report in HTML format ... done
 
 &lt;p&gt;ZendOPcache&lt;/p&gt;
 
-&lt;h2 id=&#34;next-steps:64521b042c2931bf82be49be9d2c6916&#34;&gt;Next Steps&lt;/h2&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;
 
 &lt;p&gt;I will be doing some performance tests coming up IF we are able to get this into play.&lt;/p&gt;
 

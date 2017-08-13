@@ -18,11 +18,11 @@
           <guid>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid>
           <description>
 
-&lt;h1 id=&#34;linux-file-manipulation-commands:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Linux File Manipulation Commands&lt;/h1&gt;
+&lt;h1 id=&#34;linux-file-manipulation-commands&#34;&gt;Linux File Manipulation Commands&lt;/h1&gt;
 
 &lt;p&gt;I&amp;rsquo;ll keep updating this with various commands that I run into. If I find new ones I&amp;rsquo;ll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.&lt;/p&gt;
 
-&lt;h2 id=&#34;file-searching:87c17eeb99a01ec14432498a29300fb3&#34;&gt;File Searching&lt;/h2&gt;
+&lt;h2 id=&#34;file-searching&#34;&gt;File Searching&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;List of file extensions.&lt;/strong&gt;&lt;/p&gt;
 
@@ -34,7 +34,7 @@
 
 &lt;p&gt;&lt;code&gt;find . -type f -name &amp;quot;*.*&amp;quot; ! -path &amp;quot;./.git/*&amp;quot; | awk -F. &#39;!a[$NF]++{print $NF}&#39; | wc -l&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;file-information:87c17eeb99a01ec14432498a29300fb3&#34;&gt;File Information&lt;/h2&gt;
+&lt;h2 id=&#34;file-information&#34;&gt;File Information&lt;/h2&gt;
 
 &lt;p&gt;Print the longest line in a file&lt;/p&gt;
 
@@ -44,15 +44,15 @@
 
 &lt;p&gt;awk &amp;lsquo;length &amp;gt; m { m = length; a = NR } END { print a }&amp;rsquo; input-file&lt;/p&gt;
 
-&lt;h2 id=&#34;vim-commands:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Vim Commands&lt;/h2&gt;
+&lt;h2 id=&#34;vim-commands&#34;&gt;Vim Commands&lt;/h2&gt;
 
 &lt;p&gt;To find non-ascii characters in your file:&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;/[^\x00-\x7F]&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;logs:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Logs&lt;/h2&gt;
+&lt;h2 id=&#34;logs&#34;&gt;Logs&lt;/h2&gt;
 
-&lt;h3 id=&#34;apache-logs:87c17eeb99a01ec14432498a29300fb3&#34;&gt;Apache Logs&lt;/h3&gt;
+&lt;h3 id=&#34;apache-logs&#34;&gt;Apache Logs&lt;/h3&gt;
 
 &lt;p&gt;Find count of unique IP addresses&lt;/p&gt;
 

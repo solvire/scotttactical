@@ -5,7 +5,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-<meta property="og:url" content="http://scotttactical.com/">
+<meta property="og:url" content="http://scotttactical.com">
 
 
 <meta property="og:type" content="article">
@@ -23,19 +23,19 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/github.min.css">
-<link rel="stylesheet" href="http://scotttactical.com/css/main.css">
+<link rel="stylesheet" href="http://scotttactical.comcss/main.css">
 
 
-<script src="http://scotttactical.com//js/photo-swipe/photoswipe.min.js"></script>
+<script src="http://scotttactical.com/js/photo-swipe/photoswipe.min.js"></script>
 
-<script src="http://scotttactical.com//js/photo-swipe/photoswipe-ui-default.min.js"></script>
-
-
-
-<link rel="shortcut icon" href="http://scotttactical.com//assets/favicon.ico">
+<script src="http://scotttactical.com/js/photo-swipe/photoswipe-ui-default.min.js"></script>
 
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://scotttactical.com//index.xml">
+
+<link rel="shortcut icon" href="http://scotttactical.com/assets/favicon.ico">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://scotttactical.com/index.xml">
 
 
 <div class="container">
@@ -49,42 +49,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="http://scotttactical.com/">Scott Tactical</a>
+                    <a class="navbar-brand" href="http://scotttactical.com">Scott Tactical</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="http://scotttactical.com/post">All Posts</a></li>
-                        <li><a href="http://scotttactical.com/gallery">Galleries</a></li>
-                        <li><a href="http://scotttactical.com/news">News</a></li>
-                        <li><a href="http://scotttactical.com/tags">Tags</a></li>
-                        
-                        <li><a href="http://scotttactical.com/">Home</a></li>
-                        
+                        <li><a href="http://scotttactical.compost">All Posts</a></li>
+                        <li><a href="http://scotttactical.comgallery">Galleries</a></li>
+                        <li><a href="http://scotttactical.comnews">News</a></li>
+                        <li><a href="http://scotttactical.comtags">Tags</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                         
-                        <li>
-                            <a href="https://www.facebook.com/100005012745496" target="_blank">
-                                <i class="fa fa-facebook-square"></i>
-                                Facebook</a>
-                        </li>
                         
-                        
-                        <li>
-                            <a href="https://twitter.com/scott_tactical" target="_blank">
-                                <i class="fa fa-twitter-square"></i>
-                                Twitter</a>
-                        </li>
-                        
-                        
-                        <li>
-                            <a href="https://github.com/solvire" target="_blank">
-                                <i class="fa fa-github-square"></i>
-                                GitHub
-                            </a>
-                        </li>
                         
                         
                     </ul>
@@ -107,7 +85,7 @@
                     
                 </div>
                 <h1 class="post-title" itemprop="headline">
-                    <a href="http://scotttactical.com/django-search-multiple-fields">Django Search: Multiple Fields and Full Text</a>
+                    <a href="http://scotttactical.com/django-search-multiple-fields/">Django Search: Multiple Fields and Full Text</a>
                 </h1>
                 <span >
                   
@@ -121,13 +99,13 @@
               <hr />
                 
 
-<h1 id="text-search-django-model-fields:7b9a1438010ac7a2f51e76a3ddfaa0e1">Text Search - Django Model Fields</h1>
+<h1 id="text-search-django-model-fields">Text Search - Django Model Fields</h1>
 
 <p>Django has a pretty flexible ORM, but sometimes clients need a free-form text search to get down to the content that you are looking for. It is beyond the capability of most engineers to build a comprehensive search tool and shoehorn it into an existing application. There are people working on these problems for years.</p>
 
 <p>This does remind me of a senior boss that asked me to add a fuzzy search field to an application and that it was &ldquo;super simple&rdquo;. He said &ldquo;you just do a LIKE statement against all the fields we care about!&rdquo; and proceeded to pseudo code it for me. He should read my post about how not to F&rsquo;k up your engineering staff.</p>
 
-<h2 id="searching-with-like-statements:7b9a1438010ac7a2f51e76a3ddfaa0e1">Searching with Like Statements</h2>
+<h2 id="searching-with-like-statements">Searching with Like Statements</h2>
 
 <p>This is probably the first place an inexperienced engineer will start. Just pick the field and do a LIKE statement against it.</p>
 
@@ -143,7 +121,7 @@
 
 <p>But this will satisfy an annoying manager for the time being considering they probably know little about computer science.</p>
 
-<h2 id="using-q-objects:7b9a1438010ac7a2f51e76a3ddfaa0e1">Using Q Objects</h2>
+<h2 id="using-q-objects">Using Q Objects</h2>
 
 <p>The <a href="https://docs.djangoproject.com/en/dev/topics/db/queries/#complex-lookups-with-q-objects">Q object</a> in Django is kinda nice. It wraps the queryset. I need a little more information on it to be able to speak intelligently. But that aside I decided to use it in a few places where dynamic queries were valuable.</p>
 
@@ -202,7 +180,7 @@ def search_for_something(request):
 
 <p>Another helpful resource was from <a href="https://yeti.co/blog/global-search-in-django-rest-framework/">Yeti</a> adding in some global search. A bit outdated but a nice resource.</p>
 
-<h2 id="search-library:7b9a1438010ac7a2f51e76a3ddfaa0e1">Search Library</h2>
+<h2 id="search-library">Search Library</h2>
 
 <p><a href="https://github.com/django-haystack/django-haystack">https://github.com/django-haystack/django-haystack</a></p>
 
@@ -215,21 +193,21 @@ def search_for_something(request):
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/software" rel="tag">
+                        <a href="http://scotttactical.com/tags/software" rel="tag">
                             <i class="fa fa-tags"></i>
                             <span itemprop="keywords">software</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/django" rel="tag">
+                        <a href="http://scotttactical.com/tags/django" rel="tag">
                             <i class="fa fa-tags"></i>
                             <span itemprop="keywords">django</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/data" rel="tag">
+                        <a href="http://scotttactical.com/tags/data" rel="tag">
                             <i class="fa fa-tags"></i>
                             <span itemprop="keywords">data</span>
                         </a>
@@ -259,13 +237,17 @@ def search_for_something(request):
                     
                     
                     
+                    
+                    
+                    
+                    
                     <li><a href="http://scotttactical.com/post/django-saleor-ecommerce-review/">Django Saleor eCommerce Review</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="http://scotttactical.com/post/django-ecommerce-in-30-minutes/">Django eCommerce in 30&#43; Minutes</a></li>
+                    <li><a href="http://scotttactical.com/post/django-ecommerce-in-30--minutes/">Django eCommerce in 30&#43; Minutes</a></li>
                     
                     
                     
@@ -307,7 +289,7 @@ def search_for_something(request):
                     
                     
                     
-                    <li><a href="http://scotttactical.com/why-we-quit-openstack">Why We Quit OpenStack: or How I Lost 2 Months of My Life</a></li>
+                    <li><a href="http://scotttactical.com/why-we-quit-openstack/">Why We Quit OpenStack: or How I Lost 2 Months of My Life</a></li>
                     
                     
                     
@@ -401,7 +383,7 @@ def search_for_something(request):
                     
                     
                     
-                    <li><a href="http://scotttactical.com/setup-dymo-labelwriter-mac-javascript">Dymo LabelWriter on Mac OSX - JavaScript</a></li>
+                    <li><a href="http://scotttactical.com/setup-dymo-labelwriter-mac-javascript/">Dymo LabelWriter on Mac OSX - JavaScript</a></li>
                     
                     
                     
@@ -425,7 +407,7 @@ def search_for_something(request):
                     
                     
                     
-                    <li><a href="http://scotttactical.com/migrate-private-github-repo-bitbucket">Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps</a></li>
+                    <li><a href="http://scotttactical.com/migrate-private-github-repo-bitbucket/">Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps</a></li>
                     
                     
                     
@@ -443,7 +425,7 @@ def search_for_something(request):
                     
                     
                     
-                    <li><a href="http://scotttactical.com/what-does-data-scientist-do">What Does a Data Scientist Do</a></li>
+                    <li><a href="http://scotttactical.com/what-does-data-scientist-do/">What Does a Data Scientist Do</a></li>
                     
                     
                     
@@ -574,6 +556,166 @@ def search_for_something(request):
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                 </ul>
             </aside>
             
@@ -584,20 +726,18 @@ def search_for_something(request):
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="http://scotttactical.com/setup-dymo-labelwriter-mac-javascript"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous"><a href="http://scotttactical.com/setup-dymo-labelwriter-mac-javascript/"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
-                        <li><a href="http://scotttactical.com//post">All Posts</a></li>
+                        <li><a href="http://scotttactical.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="http://scotttactical.com/moab-utah-area-bfe-2016-03-22">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="http://scotttactical.com/moab-utah-area-bfe-2016-03-22/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
                 </nav>
 
-                
-                
                 
             </footer>
 
@@ -615,6 +755,8 @@ def search_for_something(request):
                 </div>
                 <div class="list-group">
                     
+                    <a href="/post/blockchain-end-of-war/" class="list-group-item">Blockchain: End Of War</a>
+                    
                     <a href="/post/a-weed-delivery-service/" class="list-group-item">A Weed Delivery Service</a>
                     
                     <a href="/post/vehemenism/" class="list-group-item">Vehemenism</a>
@@ -623,7 +765,7 @@ def search_for_something(request):
                     
                     <a href="/post/django-saleor-ecommerce-review/" class="list-group-item">Django Saleor eCommerce Review</a>
                     
-                    <a href="/post/django-ecommerce-in-30-minutes/" class="list-group-item">Django eCommerce in 30&#43; Minutes</a>
+                    <a href="/post/django-ecommerce-in-30--minutes/" class="list-group-item">Django eCommerce in 30&#43; Minutes</a>
                     
                     <a href="/post/how-to-setup-a-mapr-cluster-on-ubuntu/" class="list-group-item">How To Setup a MapR Cluster on Ubuntu</a>
                     
@@ -632,8 +774,6 @@ def search_for_something(request):
                     <a href="/post/encrypt-postgresql-backup-to-s3/" class="list-group-item">Encrypt PostgreSQL Backup to S3</a>
                     
                     <a href="/post/why-the-covered-california-website-sucks/" class="list-group-item">Why The Covered California Website Sucks</a>
-                    
-                    <a href="/post/internet-3rd-wave-and-rise-of-the-technology-fascist/" class="list-group-item">Internet 3rd Wave and Rise of the Technology Fascist</a>
                     
                 </div>
             </div>
@@ -648,199 +788,199 @@ def search_for_something(request):
                     
                     
                     
-                    <a href="http://scotttactical.com//tags/69-blazer" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/69-blazer" class="list-group-item">
                         <span class="badge">6</span>
                         69-blazer
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/adventure" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/adventure" class="list-group-item">
                         <span class="badge">4</span>
                         adventure
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/api" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/api" class="list-group-item">
                         <span class="badge">2</span>
                         api
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/california" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/california" class="list-group-item">
                         <span class="badge">8</span>
                         california
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/data" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/data" class="list-group-item">
                         <span class="badge">20</span>
                         data
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/design" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/design" class="list-group-item">
                         <span class="badge">1</span>
                         design
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/devops" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/devops" class="list-group-item">
                         <span class="badge">5</span>
                         devops
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/django" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/django" class="list-group-item">
                         <span class="badge">4</span>
                         django
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/fitness" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/fitness" class="list-group-item">
                         <span class="badge">1</span>
                         fitness
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/go-golang" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/go-golang" class="list-group-item">
                         <span class="badge">2</span>
                         go-golang
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/hardware" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/hardware" class="list-group-item">
                         <span class="badge">1</span>
                         hardware
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/healthcare" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/healthcare" class="list-group-item">
                         <span class="badge">1</span>
                         healthcare
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/hiking" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/hiking" class="list-group-item">
                         <span class="badge">2</span>
                         hiking
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/hugo" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/hugo" class="list-group-item">
                         <span class="badge">2</span>
                         hugo
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/hypermedia" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/hypermedia" class="list-group-item">
                         <span class="badge">2</span>
                         hypermedia
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/laravel" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/laravel" class="list-group-item">
                         <span class="badge">2</span>
                         laravel
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/leadership" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/leadership" class="list-group-item">
                         <span class="badge">3</span>
                         leadership
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/linux" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/linux" class="list-group-item">
                         <span class="badge">1</span>
                         linux
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/networking" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/networking" class="list-group-item">
                         <span class="badge">1</span>
                         networking
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/nutrition" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/nutrition" class="list-group-item">
                         <span class="badge">1</span>
                         nutrition
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/panorama" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/panorama" class="list-group-item">
                         <span class="badge">2</span>
                         panorama
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/performance" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/performance" class="list-group-item">
                         <span class="badge">1</span>
                         performance
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/philosophy" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/philosophy" class="list-group-item">
                         <span class="badge">5</span>
                         philosophy
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/photography" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/photography" class="list-group-item">
                         <span class="badge">8</span>
                         photography
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/php" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/php" class="list-group-item">
                         <span class="badge">4</span>
                         php
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/politics" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/politics" class="list-group-item">
                         <span class="badge">4</span>
                         politics
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/restoration" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/restoration" class="list-group-item">
                         <span class="badge">6</span>
                         restoration
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/software" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/software" class="list-group-item">
                         <span class="badge">4</span>
                         software
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/system-administration" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/system-administration" class="list-group-item">
                         <span class="badge">1</span>
                         system-administration
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/technology" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/technology" class="list-group-item">
                         <span class="badge">10</span>
                         technology
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/testing" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/testing" class="list-group-item">
                         <span class="badge">1</span>
                         testing
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/wheeling" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/wheeling" class="list-group-item">
                         <span class="badge">4</span>
                         wheeling
                     </a>
                     
                     
-                    <a href="http://scotttactical.com//tags/writing" class="list-group-item">
+                    <a href="http://scotttactical.com/tags/writing" class="list-group-item">
                         <span class="badge">1</span>
                         writing
                     </a>

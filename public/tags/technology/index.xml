@@ -18,17 +18,17 @@
           <guid>http://scotttactical.com/post/a-weed-delivery-service/</guid>
           <description>
 
-&lt;h1 id=&#34;the-duber-a-weed-delivery-service:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;The Duber - A Weed Delivery Service&lt;/h1&gt;
+&lt;h1 id=&#34;the-duber-a-weed-delivery-service&#34;&gt;The Duber - A Weed Delivery Service&lt;/h1&gt;
 
 &lt;p&gt;About 6 months ago I decided to take on the task of building a delivery app for the cannabis industry. Here are a few notes from the journey so far.&lt;/p&gt;
 
-&lt;h2 id=&#34;why:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;Why?&lt;/h2&gt;
+&lt;h2 id=&#34;why&#34;&gt;Why?&lt;/h2&gt;
 
 &lt;p&gt;I had just come off building software for Methadone suppliers. It tracked people coming off of harder opiates. As we all know here there is a very strong opiate problem in the United States. It has even caused the redefined &lt;a href=&#34;https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm&#34;&gt;CDC Guidelines on Prescribing Opioids for Pain&lt;/a&gt;.  When the CDC has to step in and scold a country full of doctors we know we have a problem.&lt;/p&gt;
 
 &lt;p&gt;My philosophy has always been very classical. In some cases that would &amp;ldquo;trigger&amp;rdquo; a nerd. But, no dear, your holy progress is not impeded because some of still intend to do things the old fashioned way.  This is a gamble for your life, and those people who you choose to listen to should at least have some track record of having your best interest in mind. Large corporation and alphabet agencies never put individuals over their profits and power.&lt;/p&gt;
 
-&lt;h2 id=&#34;an-industry-in-the-shadows:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;An Industry In The Shadows&lt;/h2&gt;
+&lt;h2 id=&#34;an-industry-in-the-shadows&#34;&gt;An Industry In The Shadows&lt;/h2&gt;
 
 &lt;p&gt;Similar to the conventional medical sector, the Marijuana Sector has been operating in the shadows. You might think they are unrelated, but in fact they are quite related. Both are covered by the years of bureaucracy that have been built up to protect certain industries.  &lt;a href=&#34;http://www.mayoclinic.org/healthy-lifestyle/consumer-health/in-depth/medical-marijuana/art-20137855&#34;&gt;Marijuana is known to treat many conditions&lt;/a&gt; such as the following:&lt;/p&gt;
 
@@ -47,7 +47,7 @@
 
 &lt;p&gt;If you have medicine that is easily produceable by the general population and unable to be patented by large profitable corporations then you have a perfect recipe for a prohibition.&lt;/p&gt;
 
-&lt;h2 id=&#34;needs-for-technology:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;Needs For Technology&lt;/h2&gt;
+&lt;h2 id=&#34;needs-for-technology&#34;&gt;Needs For Technology&lt;/h2&gt;
 
 &lt;p&gt;The gran medical institutions have plenty of money to put into their technology. A lot more than Cannabis companies do.  They will only change if they have to. Right now they are swimming in money and don&amp;rsquo;t care much about user experience.  They don&amp;rsquo;t have to.&lt;/p&gt;
 
@@ -55,11 +55,11 @@
 
 &lt;p&gt;I&amp;rsquo;ll write an article later on what it takes to buy online.&lt;/p&gt;
 
-&lt;h2 id=&#34;sunlight-is-the-best-disinfectant:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;Sunlight Is The Best Disinfectant&lt;/h2&gt;
+&lt;h2 id=&#34;sunlight-is-the-best-disinfectant&#34;&gt;Sunlight Is The Best Disinfectant&lt;/h2&gt;
 
 &lt;p&gt;Immediately I noticed the things that have to change. It needs some fresh air and sunlight.  These companies need visibility and to air things out.&lt;/p&gt;
 
-&lt;h3 id=&#34;ecommerce:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;Ecommerce&lt;/h3&gt;
+&lt;h3 id=&#34;ecommerce&#34;&gt;Ecommerce&lt;/h3&gt;
 
 &lt;p&gt;I have a long history in ecommerce. I don&amp;rsquo;t really like it much, but it seems to still be growing and maturing.  It&amp;rsquo;s always a little dirty. If a company is making a lot of money selling online, then there is probably something fishy going on.  That&amp;rsquo;s another story tho.&lt;/p&gt;
 
@@ -67,15 +67,15 @@
 
 &lt;p&gt;I have to keep reminding myself that UX doesn&amp;rsquo;t really matter though. It&amp;rsquo;s all about data and controlling traffic. Data + Traffic. Thats it. If you own the traffic you can poop in a box and sell it all day.&lt;/p&gt;
 
-&lt;h3 id=&#34;vetting-and-credibility:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;Vetting And Credibility&lt;/h3&gt;
+&lt;h3 id=&#34;vetting-and-credibility&#34;&gt;Vetting And Credibility&lt;/h3&gt;
 
 &lt;p&gt;Talking to delivery professionals was painful. I shouldn&amp;rsquo;t call them professionals.  Shady drug neighborhood drug dealers that happened to have their site listed on weedmaps. That is about all you have for credibility and vetting.&lt;/p&gt;
 
 &lt;p&gt;No one wants some shady dudes coming up to their home at 9pm smelling like chronic. It&amp;rsquo;s just not what you do if you have a family or a reputation.&lt;/p&gt;
 
-&lt;h1 id=&#34;the-duber:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;The Duber&lt;/h1&gt;
+&lt;h1 id=&#34;the-duber&#34;&gt;The Duber&lt;/h1&gt;
 
-&lt;h2 id=&#34;uber-for-weed-https-theduber-club:105252a680db5b6a3dbdb44758d92a0c&#34;&gt;&lt;a href=&#34;https://theduber.club/&#34;&gt;Uber for Weed&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;uber-for-weed-https-theduber-club&#34;&gt;&lt;a href=&#34;https://theduber.club/&#34;&gt;Uber for Weed&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;That was what popped into my head. &amp;ldquo;Why can&amp;rsquo;t I just go online and order a drop off right here?&amp;rdquo;  The only way for this to work seemed to be in this rare narrow market that has both, a lack of maturity, a healthy margin, and an audience that is both a little rebellious and also ready for some change.&lt;/p&gt;
 
@@ -108,19 +108,19 @@
           <guid>http://scotttactical.com/post/email-in-a-box-setup/</guid>
           <description>
 
-&lt;h1 id=&#34;test-drive-mail-in-a-box:c965dd197236415b2ebb070edbb434a4&#34;&gt;Test Drive: Mail In A Box&lt;/h1&gt;
+&lt;h1 id=&#34;test-drive-mail-in-a-box&#34;&gt;Test Drive: Mail In A Box&lt;/h1&gt;
 
-&lt;h1 id=&#34;tl-dr:c965dd197236415b2ebb070edbb434a4&#34;&gt;TL;DR&lt;/h1&gt;
+&lt;h1 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h1&gt;
 
 &lt;p&gt;I set up &lt;a href=&#34;https://mailinabox.email/&#34;&gt;Mail-in-a-Box&lt;/a&gt; and it was a quick and painless experience.&lt;/p&gt;
 
-&lt;h1 id=&#34;preface:c965dd197236415b2ebb070edbb434a4&#34;&gt;Preface&lt;/h1&gt;
+&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;
 
 &lt;p&gt;I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day. This is obviously much different, but it&amp;rsquo;s cool to work in low volume transactional environments. I also hate HATE managing email.&lt;/p&gt;
 
-&lt;h1 id=&#34;pre-setup:c965dd197236415b2ebb070edbb434a4&#34;&gt;Pre-setup&lt;/h1&gt;
+&lt;h1 id=&#34;pre-setup&#34;&gt;Pre-setup&lt;/h1&gt;
 
 &lt;p&gt;Here are a couple details about my stack.&lt;/p&gt;
 
@@ -142,7 +142,7 @@
 
 &lt;p&gt;Let&amp;rsquo;s Begin&lt;/p&gt;
 
-&lt;h1 id=&#34;domain-configuration:c965dd197236415b2ebb070edbb434a4&#34;&gt;Domain Configuration&lt;/h1&gt;
+&lt;h1 id=&#34;domain-configuration&#34;&gt;Domain Configuration&lt;/h1&gt;
 
 &lt;p&gt;I am using &lt;a href=&#34;https://aws.amazon.com/ses/&#34;&gt;Amazon AWS SES&lt;/a&gt; on their free tier to handle the transactional outgoing email, so this is mostly for incoming mail. If you have dealt with deliverability this is a huge thing for me.&lt;/p&gt;
 
@@ -154,7 +154,7 @@
 
 &lt;p&gt;For those who wrote the documentation. It was dialed down a little much. It actually took longer to set up because of the dummyproofing that was going on.&lt;/p&gt;
 
-&lt;h1 id=&#34;installation:c965dd197236415b2ebb070edbb434a4&#34;&gt;Installation&lt;/h1&gt;
+&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
 
 &lt;p&gt;As root:&lt;/p&gt;
 
@@ -167,13 +167,13 @@
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/mib3.png&#34; alt=&#34;DTAC Cloud Instance&#34; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;configuration:c965dd197236415b2ebb070edbb434a4&#34;&gt;Configuration&lt;/h1&gt;
+&lt;h1 id=&#34;configuration&#34;&gt;Configuration&lt;/h1&gt;
 
 &lt;p&gt;You should be able to log into your console. &lt;a href=&#34;https://box.yourdomain.com/admin&#34;&gt;https://box.yourdomain.com/admin&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;It will tell you what it is missing. The &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt; feature is great. Totally love that part! Seriously, it saves days of my life.&lt;/p&gt;
 
-&lt;h1 id=&#34;conclusions:c965dd197236415b2ebb070edbb434a4&#34;&gt;Conclusions&lt;/h1&gt;
+&lt;h1 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h1&gt;
 
 &lt;p&gt;I&amp;rsquo;m totally into this. Thanks to &lt;a href=&#34;https://twitter.com/mailinabox&#34;&gt;https://twitter.com/mailinabox&lt;/a&gt; for all the great work compiling this thing.&lt;/p&gt;
 </description>
@@ -189,21 +189,21 @@
           <guid>http://scotttactical.com/post/django-saleor-ecommerce-review/</guid>
           <description>
 
-&lt;h1 id=&#34;django-and-ecommerce:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Django And eCommerce&lt;/h1&gt;
+&lt;h1 id=&#34;django-and-ecommerce&#34;&gt;Django And eCommerce&lt;/h1&gt;
 
-&lt;h1 id=&#34;tl-dr:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;TL;DR&lt;/h1&gt;
+&lt;h1 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h1&gt;
 
 &lt;p&gt;I setup &lt;a href=&#34;http://oscarcommerce.com/&#34;&gt;Oscar&lt;/a&gt; as a demo ecommerce project in the &lt;a href=&#34;http://scotttactical.com/post/django-ecommerce-in-30-minutes/&#34;&gt;previous post&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;preface:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Preface&lt;/h1&gt;
+&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/saleor2.png&#34; alt=&#34;Saleor&#34; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;backstory:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Backstory&lt;/h1&gt;
+&lt;h1 id=&#34;backstory&#34;&gt;Backstory&lt;/h1&gt;
 
 &lt;p&gt;I just finished a post about setting up eCommerce with Python Django and wasn&amp;rsquo;t totally pleased with the process. Also I don&amp;rsquo;t think it is fair to only demo a single application.  I decided to give &lt;a href=&#34;http://getsaleor.com/&#34;&gt;Saleor&lt;/a&gt; my second slot after talking with several people online and looking through its source. The parent company has a number of nice products which was confidence building.&lt;/p&gt;
 
-&lt;h1 id=&#34;pre-setup:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Pre-setup&lt;/h1&gt;
+&lt;h1 id=&#34;pre-setup&#34;&gt;Pre-setup&lt;/h1&gt;
 
 &lt;p&gt;As in the previous article, a few things were already installed like PostgreSQL and Python VirtualenvWrapper.&lt;/p&gt;
 
@@ -224,11 +224,11 @@
 
 &lt;p&gt;Let&amp;rsquo;s Begin&lt;/p&gt;
 
-&lt;h1 id=&#34;local-setup:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Local Setup&lt;/h1&gt;
+&lt;h1 id=&#34;local-setup&#34;&gt;Local Setup&lt;/h1&gt;
 
 &lt;p&gt;I&amp;rsquo;ll be following the setup listed in the &lt;a href=&#34;https://saleor.readthedocs.io/en/latest/installation.html&#34;&gt;Saleor Documentation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;setup-postgresql:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Setup PostgreSQL&lt;/h1&gt;
+&lt;h1 id=&#34;setup-postgresql&#34;&gt;Setup PostgreSQL&lt;/h1&gt;
 
 &lt;p&gt;I have installed PostgreSQL locally already. Please see the documentation for more information.&lt;/p&gt;
 
@@ -240,19 +240,19 @@
 &lt;pre&gt;&lt;code&gt;createdb saleor
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;javascript:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;JavaScript&lt;/h2&gt;
+&lt;h2 id=&#34;javascript&#34;&gt;JavaScript&lt;/h2&gt;
 
 &lt;p&gt;Install the appropriate / required JavaScript components.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm i webpack -g
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;virtual-environment-python:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Virtual Environment - Python&lt;/h2&gt;
+&lt;h2 id=&#34;virtual-environment-python&#34;&gt;Virtual Environment - Python&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;mkvirtualenv saleor
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;clone-the-source:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Clone The Source&lt;/h2&gt;
+&lt;h2 id=&#34;clone-the-source&#34;&gt;Clone The Source&lt;/h2&gt;
 
 &lt;p&gt;CD into a directory beneath your source location. I like to do /project/source/*&lt;/p&gt;
 
@@ -265,7 +265,7 @@ echo $SECRET_KEY
 
 &lt;p&gt;Keep track of that secret key.&lt;/p&gt;
 
-&lt;h2 id=&#34;build-the-schema:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Build The Schema&lt;/h2&gt;
+&lt;h2 id=&#34;build-the-schema&#34;&gt;Build The Schema&lt;/h2&gt;
 
 &lt;p&gt;I am running PostgreSQL locally.&lt;/p&gt;
 
@@ -273,7 +273,7 @@ echo $SECRET_KEY
 python manage.py migrate
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;build-front-end:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Build Front-End&lt;/h2&gt;
+&lt;h2 id=&#34;build-front-end&#34;&gt;Build Front-End&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install
 npm run build-assets
@@ -281,7 +281,7 @@ npm run build-assets
 
 &lt;p&gt;Node package install took a while. I thought it was hung so I restarted it and ran it in verbose to know it wasn&amp;rsquo;t dead.&lt;/p&gt;
 
-&lt;h2 id=&#34;dump-schema:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Dump Schema&lt;/h2&gt;
+&lt;h2 id=&#34;dump-schema&#34;&gt;Dump Schema&lt;/h2&gt;
 
 &lt;p&gt;I want to add the test data to play with but I may not want it and don&amp;rsquo;t want to have to recreate the database so I dumped the initial schema.&lt;/p&gt;
 
@@ -293,9 +293,9 @@ npm run build-assets
 &lt;pre&gt;&lt;code&gt;./manage.py populatedb
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;your-shop:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Your Shop&lt;/h1&gt;
+&lt;h1 id=&#34;your-shop&#34;&gt;Your Shop&lt;/h1&gt;
 
-&lt;h2 id=&#34;run-the-server:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Run The Server&lt;/h2&gt;
+&lt;h2 id=&#34;run-the-server&#34;&gt;Run The Server&lt;/h2&gt;
 
 &lt;p&gt;Kick it off&lt;/p&gt;
 
@@ -308,7 +308,7 @@ npm run build-assets
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/saleor3.png&#34; alt=&#34;Saleor Home Page&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;view-dashboard:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;View Dashboard&lt;/h2&gt;
+&lt;h2 id=&#34;view-dashboard&#34;&gt;View Dashboard&lt;/h2&gt;
 
 &lt;p&gt;From the command line I created a superuser so I could see the dashboard.&lt;/p&gt;
 
@@ -316,7 +316,7 @@ npm run build-assets
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/saleor4.png&#34; alt=&#34;Saleor Home Page&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;git-add:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Git Add&lt;/h2&gt;
+&lt;h2 id=&#34;git-add&#34;&gt;Git Add&lt;/h2&gt;
 
 &lt;p&gt;Add the new files to the remote repository and push it.&lt;/p&gt;
 
@@ -327,23 +327,23 @@ git remote set-url origin yourname@bitbucket.com:yourapp/yourapp.git
 git push
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;conclusions:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Conclusions&lt;/h1&gt;
+&lt;h1 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h1&gt;
 
-&lt;h2 id=&#34;code-structure:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Code Structure&lt;/h2&gt;
+&lt;h2 id=&#34;code-structure&#34;&gt;Code Structure&lt;/h2&gt;
 
 &lt;p&gt;I liked this code layout better than Oscar. It was easier to find my around and seemed cleaner overall. Linting is important to me.&lt;/p&gt;
 
 &lt;p&gt;I would have liked to have a separate settings file for local/testing/production such as is in various cookiecutter templates.&lt;/p&gt;
 
-&lt;h2 id=&#34;building:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Building&lt;/h2&gt;
+&lt;h2 id=&#34;building&#34;&gt;Building&lt;/h2&gt;
 
 &lt;p&gt;It was easier to build this. Launching it into Heroku blew up on me but this local build did not. That was acceptable. The test data was good enough to play with too.&lt;/p&gt;
 
-&lt;h2 id=&#34;no-rest-for-me:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;No REST for me&lt;/h2&gt;
+&lt;h2 id=&#34;no-rest-for-me&#34;&gt;No REST for me&lt;/h2&gt;
 
 &lt;p&gt;Again, I was disappointed with how hard it was to find information about the REST layer. Please favor mobile and JS heavy deployments. Make things API based first.&lt;/p&gt;
 
-&lt;h2 id=&#34;will-it-stay:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Will it Stay&lt;/h2&gt;
+&lt;h2 id=&#34;will-it-stay&#34;&gt;Will it Stay&lt;/h2&gt;
 
 &lt;p&gt;This is probably the one. I still have to go through a little more testing of course, but I think I am set for now.&lt;/p&gt;
 </description>
@@ -353,29 +353,29 @@ git push
       
         <item>
           <title>Django eCommerce in 30&#43; Minutes</title>
-          <link>http://scotttactical.com/post/django-ecommerce-in-30-minutes/</link>
+          <link>http://scotttactical.com/post/django-ecommerce-in-30--minutes/</link>
           <pubDate>Sat, 14 Jan 2017 16:00:07 PST</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/post/django-ecommerce-in-30-minutes/</guid>
+          <guid>http://scotttactical.com/post/django-ecommerce-in-30--minutes/</guid>
           <description>
 
-&lt;h1 id=&#34;django-and-ecommerce:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Django And eCommerce&lt;/h1&gt;
+&lt;h1 id=&#34;django-and-ecommerce&#34;&gt;Django And eCommerce&lt;/h1&gt;
 
-&lt;h1 id=&#34;tl-dr:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;TL;DR&lt;/h1&gt;
+&lt;h1 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h1&gt;
 
 &lt;p&gt;I like Python and want to use it for eCommerce, so I went through the &lt;a href=&#34;https://djangopackages.org/grids/g/ecommerce/&#34;&gt;well known products&lt;/a&gt; and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.&lt;/p&gt;
 
-&lt;h1 id=&#34;preface:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Preface&lt;/h1&gt;
+&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;
 
 &lt;p&gt;Let me say this took me almost 2 days to get through and evaluate, which I&amp;rsquo;m used to having a demo site up in minutes. After having gone through, I think this could be launched in half an hour.  Below are my notes of the process.&lt;/p&gt;
 
-&lt;h1 id=&#34;backstory:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Backstory&lt;/h1&gt;
+&lt;h1 id=&#34;backstory&#34;&gt;Backstory&lt;/h1&gt;
 
 &lt;p&gt;I was contacted by a business partner to see if we could kick off a project to distribute some substances that newly became legal here in CA. I thought I could spin up an ecommerce app in a couple hours and be taking payments in a week. I wanted to see how fast I could do this with Django. Most my previous eCommerce deployments (many) were in PHP and many of them were in &lt;a href=&#34;https://magento.com&#34;&gt;magento&lt;/a&gt;. Had a few in ASP, Perl, (Websphere) Java. I&amp;rsquo;m over that pain.&lt;/p&gt;
 
 &lt;p&gt;Online retail - E-commerce - as an industry, is very mature. It requires a TON of flexibility and features to compete. There isn&amp;rsquo;t a lot of waste.&lt;/p&gt;
 
-&lt;h1 id=&#34;pre-setup:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Pre-setup&lt;/h1&gt;
+&lt;h1 id=&#34;pre-setup&#34;&gt;Pre-setup&lt;/h1&gt;
 
 &lt;p&gt;I will append this by saying a few things were already installed like PostgreSQL and Python VirtualenvWrapper.&lt;/p&gt;
 
@@ -392,9 +392,9 @@ git push
 
 &lt;p&gt;Let&amp;rsquo;s Begin&lt;/p&gt;
 
-&lt;h1 id=&#34;local-setup:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Local Setup&lt;/h1&gt;
+&lt;h1 id=&#34;local-setup&#34;&gt;Local Setup&lt;/h1&gt;
 
-&lt;h1 id=&#34;setup-postgresql:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Setup PostgreSQL&lt;/h1&gt;
+&lt;h1 id=&#34;setup-postgresql&#34;&gt;Setup PostgreSQL&lt;/h1&gt;
 
 &lt;p&gt;I have installed PostgreSQL locally already. Please see the documentation for more information.&lt;/p&gt;
 
@@ -406,7 +406,7 @@ git push
 &lt;pre&gt;&lt;code&gt;createdb [project_slug]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;virtual-environment-python:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Virtual Environment - Python&lt;/h2&gt;
+&lt;h2 id=&#34;virtual-environment-python&#34;&gt;Virtual Environment - Python&lt;/h2&gt;
 
 &lt;p&gt;Python 2.7&lt;/p&gt;
 
@@ -419,7 +419,7 @@ git push
 
 &lt;p&gt;CD into a directory beneath your source location. I always do /project/source/*&lt;/p&gt;
 
-&lt;h2 id=&#34;install-cookiecutter-django:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Install cookiecutter-django&lt;/h2&gt;
+&lt;h2 id=&#34;install-cookiecutter-django&#34;&gt;Install cookiecutter-django&lt;/h2&gt;
 
 &lt;p&gt;I have used this &lt;a href=&#34;https://github.com/pydanny/cookiecutter-django&#34;&gt;cookiecutter&lt;/a&gt; before so I stick with what I know.&lt;/p&gt;
 
@@ -437,7 +437,7 @@ git remote add origin yourname@bitbucket.com:yourapp/yourapp.git
 git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;django-setup:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Django Setup&lt;/h2&gt;
+&lt;h2 id=&#34;django-setup&#34;&gt;Django Setup&lt;/h2&gt;
 
 &lt;p&gt;I decided to try out Django Oscar. I figure it is the most popular. And also hoping it isn&amp;rsquo;t the most bloated.&lt;/p&gt;
 
@@ -468,7 +468,7 @@ pycountry==17.1.8
 &lt;pre&gt;&lt;code&gt;./manage.py
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;set-up-oscar:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Set Up Oscar&lt;/h1&gt;
+&lt;h1 id=&#34;set-up-oscar&#34;&gt;Set Up Oscar&lt;/h1&gt;
 
 &lt;p&gt;in &lt;code&gt;yourapp/config/settings/common.py&lt;/code&gt;&lt;/p&gt;
 
@@ -581,7 +581,7 @@ THIRD_PARTY_APPS = (
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;set-the-urls:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Set the URLs&lt;/h2&gt;
+&lt;h2 id=&#34;set-the-urls&#34;&gt;Set the URLs&lt;/h2&gt;
 
 &lt;p&gt;Here is my url file.&lt;/p&gt;
 
@@ -609,14 +609,14 @@ if settings.DEBUG:
     ...
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;build-schema:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Build Schema&lt;/h2&gt;
+&lt;h2 id=&#34;build-schema&#34;&gt;Build Schema&lt;/h2&gt;
 
 &lt;p&gt;If the database is created and you set up everything properly you should be able to build the DB schema now.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;./manage.py migrate
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;start-local:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Start Local&lt;/h2&gt;
+&lt;h2 id=&#34;start-local&#34;&gt;Start Local&lt;/h2&gt;
 
 &lt;p&gt;Kick off the local server.&lt;/p&gt;
 
@@ -625,11 +625,11 @@ if settings.DEBUG:
 
 &lt;p&gt;If everything works properly you should be able to go to &lt;a href=&#34;http://localhost:8000/&#34;&gt;http://localhost:8000/&lt;/a&gt; and see your new project running.&lt;/p&gt;
 
-&lt;h1 id=&#34;store-setup:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Store Setup&lt;/h1&gt;
+&lt;h1 id=&#34;store-setup&#34;&gt;Store Setup&lt;/h1&gt;
 
 &lt;p&gt;This wasn&amp;rsquo;t quite enough for me so I needed to add some products into the application really quickly to see the catalogue.&lt;/p&gt;
 
-&lt;h2 id=&#34;install-shipping-countries:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Install Shipping Countries&lt;/h2&gt;
+&lt;h2 id=&#34;install-shipping-countries&#34;&gt;Install Shipping Countries&lt;/h2&gt;
 
 &lt;p&gt;Pycountry should have been installed already, and it was suggested to load all the countries in the oscar documentation.&lt;/p&gt;
 
@@ -640,7 +640,7 @@ if settings.DEBUG:
 
 &lt;p&gt;I&amp;rsquo;m annoyed at pycountry for a menial change like that. Or provide a better SDK.&lt;/p&gt;
 
-&lt;h2 id=&#34;where-templates-are:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Where Templates Are?&lt;/h2&gt;
+&lt;h2 id=&#34;where-templates-are&#34;&gt;Where Templates Are?&lt;/h2&gt;
 
 &lt;p&gt;I realized that the templates were not seen even though they were in the path. I just copied them from the oscar sandbox example so that I had more to go off of.&lt;/p&gt;
 
@@ -652,13 +652,13 @@ if settings.DEBUG:
 &lt;pre&gt;&lt;code&gt;/src/oscar/static/oscar/img &amp;gt; yourapp/static
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;dashboard:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Dashboard&lt;/h2&gt;
+&lt;h2 id=&#34;dashboard&#34;&gt;Dashboard&lt;/h2&gt;
 
 &lt;p&gt;Make sure you created a superuser account.&lt;/p&gt;
 
 &lt;p&gt;Login and travel to the dashboard: &lt;a href=&#34;http://127.0.0.1:8000/dashboard/&#34;&gt;http://127.0.0.1:8000/dashboard/&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;product-setup:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Product Setup&lt;/h2&gt;
+&lt;h2 id=&#34;product-setup&#34;&gt;Product Setup&lt;/h2&gt;
 
 &lt;p&gt;You need to have a category and a shipper. That is easy enough to set up. I added a couple products and viewed them on the&lt;/p&gt;
 
@@ -666,27 +666,27 @@ if settings.DEBUG:
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/oscar2.png&#34; alt=&#34;Dashboard&#34; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;conclusions:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Conclusions&lt;/h1&gt;
+&lt;h1 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h1&gt;
 
-&lt;h2 id=&#34;code-structure:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Code Structure&lt;/h2&gt;
+&lt;h2 id=&#34;code-structure&#34;&gt;Code Structure&lt;/h2&gt;
 
 &lt;p&gt;This looked fine to me. I was able to find my way around very easily compared to the likes of Magento, IBM, SAP. Thank goodness. That is stuff of nightmares.&lt;/p&gt;
 
-&lt;h2 id=&#34;loaders:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Loaders&lt;/h2&gt;
+&lt;h2 id=&#34;loaders&#34;&gt;Loaders&lt;/h2&gt;
 
 &lt;p&gt;The framework is important to me. I like to see proper recognizable patterns. There were red flags with the model class &amp;ldquo;loader&amp;rdquo; paradigm when I expected to see Django objects. I think that is unnecessary with a framework that has good bootstrapping functionality such as Django. Maybe someone can explain where my thinking is in error.&lt;/p&gt;
 
-&lt;h2 id=&#34;no-rest-for-me:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;No REST for me&lt;/h2&gt;
+&lt;h2 id=&#34;no-rest-for-me&#34;&gt;No REST for me&lt;/h2&gt;
 
 &lt;p&gt;I was disappointed with how hard it was to find information about oscar and an integration with a REST layer. Most sites MUST support mobile. And probably should support mobile FIRST. The old days of a monolithic website stack are kinda over. Especially with javascript running rampage over the facades of the interwebs.&lt;/p&gt;
 
 &lt;p&gt;Yes, I know there is &lt;a href=&#34;https://github.com/django-oscar/django-oscar-api&#34;&gt;django oscar api&lt;/a&gt; - It needs more thorough documentation, and matrix of supported features would be nice. Overall it looks promising.&lt;/p&gt;
 
-&lt;h2 id=&#34;performance:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Performance&lt;/h2&gt;
+&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;
 
 &lt;p&gt;The application felt kinda slow. Maybe it can be optimized, but for a starter, I felt like it should be more responsive. The feel of other apps was a little better. With ecommerce the most important thing is checkout flow followed by performance and product data.  Don&amp;rsquo;t skimp on ANY of those things.  Let the design languish if you have budget for a performance hacker. I&amp;rsquo;ve launched large ecommerce sites and this is what killed most of them once traffic rolled in.&lt;/p&gt;
 
-&lt;h2 id=&#34;will-it-stay:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Will it Stay&lt;/h2&gt;
+&lt;h2 id=&#34;will-it-stay&#34;&gt;Will it Stay&lt;/h2&gt;
 
 &lt;p&gt;I still have to look through &lt;a href=&#34;http://getsaleor.com/&#34;&gt;Saleor&lt;/a&gt; and &lt;a href=&#34;http://mezzanine.jupo.org/&#34;&gt;Cartrige on Mezzanine&lt;/a&gt; which were very appealing. I also wanted to have a hand at setting up an ecommerce app in Go, but the lack of templating and abstraction that python is good at was a knock down.&lt;/p&gt;
 </description>
@@ -702,15 +702,15 @@ if settings.DEBUG:
           <guid>http://scotttactical.com/post/why-the-covered-california-website-sucks/</guid>
           <description>
 
-&lt;h1 id=&#34;why-it-needs-help-my-letter:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;Why It Needs Help - My Letter&lt;/h1&gt;
+&lt;h1 id=&#34;why-it-needs-help-my-letter&#34;&gt;Why It Needs Help - My Letter&lt;/h1&gt;
 
 &lt;p&gt;This is an open letter to the Covered California website designer, administrators, bureaucrats and contractors.&lt;/p&gt;
 
-&lt;h1 id=&#34;website-design-and-usability:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;Website Design and Usability&lt;/h1&gt;
+&lt;h1 id=&#34;website-design-and-usability&#34;&gt;Website Design and Usability&lt;/h1&gt;
 
 &lt;p&gt;I have several things listed below. Things I find to be of poor design or just plain broken.&lt;/p&gt;
 
-&lt;h2 id=&#34;you-don-t-got-mail:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;You Don&amp;rsquo;t Got Mail!&lt;/h2&gt;
+&lt;h2 id=&#34;you-don-t-got-mail&#34;&gt;You Don&amp;rsquo;t Got Mail!&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&amp;ldquo;Secure Mailbox (2)&amp;rdquo; even though nothing was in my mail box.&lt;/p&gt;&lt;/li&gt;
@@ -718,7 +718,7 @@ if settings.DEBUG:
 &lt;li&gt;&lt;p&gt;It randomly logged me out.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;go-on-click-me-if-ya-can:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;GO&amp;rsquo;ON CLICK ME IF YA CAN&lt;/h2&gt;
+&lt;h2 id=&#34;go-on-click-me-if-ya-can&#34;&gt;GO&amp;rsquo;ON CLICK ME IF YA CAN&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;I am low on time for open enrollment and it gave me a &amp;ldquo;Pay Now&amp;rdquo; button in order to do it faster, but the button was broken. It would pop up and then if I tried to pay it would throw a JavaScript error in my console and close out. Now I can&amp;rsquo;t pay. It&amp;rsquo;s weird when people don&amp;rsquo;t want my money.&lt;/p&gt;&lt;/li&gt;
@@ -726,7 +726,7 @@ if settings.DEBUG:
 &lt;li&gt;&lt;p&gt;The page refreshing on every submission of information is mind numbing. Just cache it. Or make the template more clean. Or make it more responsive.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;all-your-accounts-all-belong-to-us:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;All your accounts all belong to us!&lt;/h2&gt;
+&lt;h2 id=&#34;all-your-accounts-all-belong-to-us&#34;&gt;All your accounts all belong to us!&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;My Account section has almost nothing about what plans I selected. I am glad I was taking screenshots along the way. How do you guys even know what I selected. Isn&amp;rsquo;t there a table with a key that can simply show what my plans look like? How do I get back to that information? It shouldn&amp;rsquo;t be this hard. Do you even care about me getting to my coverage?&lt;/p&gt;&lt;/li&gt;
@@ -734,7 +734,7 @@ if settings.DEBUG:
 &lt;li&gt;&lt;p&gt;You sent me zero email notifications based on what I was signing up for. And I specifically put that email was my preferred contact method. Instead you handed it off to someone else and washed your hands. They will be mailing me things. I don&amp;rsquo;t go to my mailbox every day. It&amp;rsquo;s a drive. I&amp;rsquo;m not some home loafer who waits by his mailbox.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;penrose-navigation:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;Penrose Navigation&lt;/h2&gt;
+&lt;h2 id=&#34;penrose-navigation&#34;&gt;Penrose Navigation&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;The layout of the pages is all wrong. It&amp;rsquo;s got too much nonsense on it. Right hand home page &amp;ldquo;extra&amp;rdquo; navigation is hard to see and nonintuitive.&lt;/p&gt;&lt;/li&gt;
@@ -742,7 +742,7 @@ if settings.DEBUG:
 &lt;li&gt;&lt;p&gt;You have an informational video on the bottom left barely under the fold. Why? Shouldn&amp;rsquo;t there be an info section or a knowledge base. Just use another website for an example.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;we-are-up-100-of-the-time-50-of-the-day:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;We are up 100% of the time 50% of the day!&lt;/h2&gt;
+&lt;h2 id=&#34;we-are-up-100-of-the-time-50-of-the-day&#34;&gt;We are up 100% of the time 50% of the day!&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Work on reliability. The site will be down or throwing errors half the time I got through.&lt;/p&gt;&lt;/li&gt;
@@ -750,7 +750,7 @@ if settings.DEBUG:
 &lt;li&gt;&lt;p&gt;It took me 5 tries to actually get through this whole process.  It was painful. No commercial company would survive this.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;we-not-home:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;We Not Home&lt;/h2&gt;
+&lt;h2 id=&#34;we-not-home&#34;&gt;We Not Home&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Why do you make me fill in 8!!! lines of information to start a live chat. Seriously. If I am logged in just open the chat window and start talking. Is this a game? Don&amp;rsquo;t make me mask my phone number with special characters&amp;hellip; Especially if you know it&amp;rsquo;s going to just be integers.  (###) ###-####  no! I don&amp;rsquo;t like that format. I use dots because i&amp;rsquo;m not older than 50 and know how to use a 10key. What if I was doing this on a mobile device. Have you even watched Office Space? Do you want someone to red stapler your website?&lt;/p&gt;&lt;/li&gt;
@@ -758,7 +758,7 @@ if settings.DEBUG:
 &lt;li&gt;&lt;p&gt;Why is &amp;ldquo;report a change&amp;rdquo; hovering in some dead zone where a lady and a baby are. Is that lady and baby supposed to make me think men don&amp;rsquo;t apply or that I should be taking out more coverage because there are family health issues at stake here. Report a change should show up when you log in. Just get people to log in and then present the info in order.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;navigation-as-path-not-choices:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;Navigation as Path not Choices&lt;/h2&gt;
+&lt;h2 id=&#34;navigation-as-path-not-choices&#34;&gt;Navigation as Path not Choices&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;The ordering of your navigation is not industry best practices.&lt;/p&gt;&lt;/li&gt;
@@ -768,7 +768,7 @@ if settings.DEBUG:
 &lt;li&gt;&lt;p&gt;You need to control state on your navigation. For instance: if i am signed up and you dont&amp;rsquo; want to show &amp;ldquo;select a plan&amp;rdquo; and instead make &amp;ldquo;change plan&amp;rdquo; the path then you dont&amp;rsquo; leave &amp;ldquo;select a plan&amp;rdquo; still there and just gray it out. Why? If it&amp;rsquo;s not available then remove it. It&amp;rsquo;s like when you are editing something you don&amp;rsquo;t have two buttons for create and save next to each other and just gray out  create. You remove it. It&amp;rsquo;s not relevant or part of the user state.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;loco-help:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;Loco Help&lt;/h2&gt;
+&lt;h2 id=&#34;loco-help&#34;&gt;Loco Help&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;BTW I tried the &amp;ldquo;Find Local Help&amp;rdquo; button and all the people I called on that suggested list said they don&amp;rsquo;t help with Medical or Covered CA. I&amp;rsquo;m not sure what your intention is there.&lt;/p&gt;&lt;/li&gt;
@@ -776,7 +776,7 @@ if settings.DEBUG:
 &lt;li&gt;&lt;p&gt;The &amp;ldquo;Español ▼&amp;rdquo; dropdown should actually be a drop down. I went to click on espanol and it just changed the language instead of actually giving me the drop down. You are doing double duty on that field and it&amp;rsquo;s misleading.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;mobiles-need-not-apply:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;Mobiles Need Not Apply&lt;/h2&gt;
+&lt;h2 id=&#34;mobiles-need-not-apply&#34;&gt;Mobiles Need Not Apply&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;This website is NOT mobile friendly.  Big sin buddies. Are none of your constituents under 30?&lt;/li&gt;
@@ -784,7 +784,7 @@ if settings.DEBUG:
 
 &lt;p&gt;That is pretty much all I picked up today.&lt;/p&gt;
 
-&lt;h1 id=&#34;conclusion:6fc9dbe0e4c93911a33da0d91571ac2c&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 
 &lt;p&gt;Stop hiring crony consultants and design firms. Give respectable shops a chance to do it right. You might actually save some money and have some customer satisfaction.&lt;/p&gt;
 
@@ -804,7 +804,7 @@ if settings.DEBUG:
           <guid>http://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</guid>
           <description>
 
-&lt;h1 id=&#34;the-waves-of-technology-professional:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;The Waves of Technology Professional&lt;/h1&gt;
+&lt;h1 id=&#34;the-waves-of-technology-professional&#34;&gt;The Waves of Technology Professional&lt;/h1&gt;
 
 &lt;p&gt;I like to consider 2001 the tail edge of the Internet bubble.  It was a brutal time to be in a computer science field. There weren&amp;rsquo;t many jobs. The jobs that were being squatted on were jealously guarded. I needed the one thing that nobody would provide. Experience. So instead I grinded projects and studied unceasingly.&lt;/p&gt;
 
@@ -812,7 +812,7 @@ if settings.DEBUG:
 
 &lt;p&gt;The point of this writing is not to sound weepy or nostalgic. It is to point out the direction of this trade and to try to illuminate the evil of being efficient only for the sake of being efficient.&lt;/p&gt;
 
-&lt;h1 id=&#34;the-1st-technology-wave:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;The 1st Technology Wave&lt;/h1&gt;
+&lt;h1 id=&#34;the-1st-technology-wave&#34;&gt;The 1st Technology Wave&lt;/h1&gt;
 
 &lt;p&gt;My father is a software engineer approaching retirement. He programmed midrange and mainframes, so I was exposed to this stuff my whole life. Ironically I loathed computers and vowed to go into the military where money and schooling wouldn&amp;rsquo;t matter, but that&amp;rsquo;s another story.&lt;/p&gt;
 
@@ -820,7 +820,7 @@ if settings.DEBUG:
 
 &lt;p&gt;The first technologists in this field were doing their best to get computer hardware to do new things. A narrow field of technology started to form around TCP/IP and HTTP. We were creating a boom culture.&lt;/p&gt;
 
-&lt;h1 id=&#34;1st-wave-engineers:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;1st Wave Engineers&lt;/h1&gt;
+&lt;h1 id=&#34;1st-wave-engineers&#34;&gt;1st Wave Engineers&lt;/h1&gt;
 
 &lt;p&gt;The guys working on internet technologies before 1995 were completely different than the ones nowadays. These were engineers in the old sense. They wore suits to the office. They had a 9-6 job usually.  They were seen in a similar manner as industrial engineers, electrical engineers, chemists, or mathematicians.&lt;/p&gt;
 
@@ -828,15 +828,15 @@ if settings.DEBUG:
 
 &lt;p&gt;Imagine a problem today. You don&amp;rsquo;t have Google. You have a 1,000-page document on your operating system. Now figure out how to get your server to print to a dot matrix printer over serial.&lt;/p&gt;
 
-&lt;h1 id=&#34;dotcom-boom:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;DotCom Boom&lt;/h1&gt;
+&lt;h1 id=&#34;dotcom-boom&#34;&gt;DotCom Boom&lt;/h1&gt;
 
 &lt;p&gt;The people I initially started working with were a mix of self-taught programmers and people who were left over from the big machine era. The field was getting flooded with engineering speculators. The idea of moving to California and striking it rich with technology was too hard to resist so I foolishly was caught up into the surge. I packed up and moved to Simi Valley with a former military buddy of mine as we set out to gain our fortunes.  Boy, was I in for a surprise.&lt;/p&gt;
 
-&lt;h1 id=&#34;stepping-over-opportunities:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Stepping Over Opportunities&lt;/h1&gt;
+&lt;h1 id=&#34;stepping-over-opportunities&#34;&gt;Stepping Over Opportunities&lt;/h1&gt;
 
 &lt;p&gt;I was offered a few opportunities that were less than ethical. Some porn, some spam, some malware. I turned them all down, because I was here to help change the world for the better. I wanted to work with a big organization that did great things. That never manifested and I realized that there isn&amp;rsquo;t any great company helping the world. They all have an uber-powerful dark side that powers their facade.  The CMO is the bishop of this church.&lt;/p&gt;
 
-&lt;h1 id=&#34;the-clickpocalypse:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;The Clickpocalypse&lt;/h1&gt;
+&lt;h1 id=&#34;the-clickpocalypse&#34;&gt;The Clickpocalypse&lt;/h1&gt;
 
 &lt;p&gt;By 2005 I found myself working for a company that was running an offer path. Basically one of those sites where you enter your email and get a free iPod. It made an obscene amount of money. It was super dirty too.  Myself and a couple other engineers stood up a site in 3 months and starting bringing on hundreds of thousands of new users a day.  It was pouring in money. There were all sorts of Italian sports cars in the parking lot.  People were partying hard.  Except the nerds. We were locked into the office while they flew all over the world having fun.&lt;/p&gt;
 
@@ -846,7 +846,7 @@ if settings.DEBUG:
 
 &lt;p&gt;We spread our data out wide. We were doing things that didn&amp;rsquo;t have names yet. We were buffering with local disks and clustering on shared storage. We were aggregating streams of log files. It was quite the learning experience.&lt;/p&gt;
 
-&lt;h1 id=&#34;engineering-conservatism:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Engineering Conservatism&lt;/h1&gt;
+&lt;h1 id=&#34;engineering-conservatism&#34;&gt;Engineering Conservatism&lt;/h1&gt;
 
 &lt;p&gt;Back in this period, there was still a mentality of being conservative with our decisions.  The cutting edge was generally considered suicide.  Not that it was unstable, but that you are betting your reputation and career on that gamble.  If your very basic business problem could be solved with mature technologies then that is what you used.  These days failure is grounds for a promotion and telling your boss you plan to do something cool is actually as good as doing what the business needs.&lt;/p&gt;
 
@@ -854,7 +854,7 @@ if settings.DEBUG:
 
 &lt;p&gt;With a stack of 7-8 web servers with between &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; and 2GB of RAM, we were able to handle more traffic than many Grande sized deployments on AWS.&lt;/p&gt;
 
-&lt;h1 id=&#34;gluten-free-buzzwords:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Gluten Free Buzzwords&lt;/h1&gt;
+&lt;h1 id=&#34;gluten-free-buzzwords&#34;&gt;Gluten Free Buzzwords&lt;/h1&gt;
 
 &lt;p&gt;I didn&amp;rsquo;t start getting swept up into the buzzword mania until after 2010. It began to seem that if I wasn&amp;rsquo;t using some new technology thing that I was irrelevant. I started consuming new technologies like crazy.&lt;/p&gt;
 
@@ -862,13 +862,13 @@ if settings.DEBUG:
 
 &lt;p&gt;It seemed as though every software geek was intoxicated with the pace of change.  Their value was in the number of technologies they touched. This silicon zealotry was almost like the mob movements seen in nationalism or tribalism.  Giant herds of people storming the gates.&lt;/p&gt;
 
-&lt;h1 id=&#34;the-3rd-wave:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;The 3rd Wave&lt;/h1&gt;
+&lt;h1 id=&#34;the-3rd-wave&#34;&gt;The 3rd Wave&lt;/h1&gt;
 
-&lt;h2 id=&#34;aws-github-winning:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;AWS:GITHUB Winning&lt;/h2&gt;
+&lt;h2 id=&#34;aws-github-winning&#34;&gt;AWS:GITHUB Winning&lt;/h2&gt;
 
 &lt;p&gt;AWS won. They removed the cost of entry for people to get a server up and going and allowed for a new breed of engineers to enter. One of the biggest costs to getting large sites up and hosted was learning how to build and deploy hardware and networking, and then fine tune it. Amazon capitalized on this need for speed. It wasn&amp;rsquo;t about getting a stable product to market faster: it was the sales pitch of being able to use a bunch of buzzwords and then show a prototype to investors very quickly. Amazon knew that this is how it would go.&lt;/p&gt;
 
-&lt;h2 id=&#34;constant-deployment:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Constant Deployment&lt;/h2&gt;
+&lt;h2 id=&#34;constant-deployment&#34;&gt;Constant Deployment&lt;/h2&gt;
 
 &lt;p&gt;This is an especially important mindset of 3rd wavers: they have a very low sociopolitical self-worth. What I mean by this is there is a massive race to the floor when it comes to their control over what they deliver to business and stakeholders.  They have embraced the &amp;ldquo;fail fast&amp;rdquo; mentality and reduced the quality of their trade.   The deployment lifecycle might be the most valuable tool in maintaining power at the engineering and systems level.&lt;/p&gt;
 
@@ -880,13 +880,13 @@ if settings.DEBUG:
 
 &lt;p&gt;Business would listen to us if we worked together. There is plenty of money there for us to carve out a stable future.&lt;/p&gt;
 
-&lt;h2 id=&#34;bugpocalypse:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Bugpocalypse&lt;/h2&gt;
+&lt;h2 id=&#34;bugpocalypse&#34;&gt;Bugpocalypse&lt;/h2&gt;
 
 &lt;p&gt;Is this rapid progress good? I would say software is no more stable than it was before. Statistics do not allude to fewer bugs. In fact, in the near future, we could be looking at a major problem with zero-day vulnerabilities, IoT, the Java monoculture, and the flood of inferior engineering skills in the last 8 years.&lt;/p&gt;
 
 &lt;p&gt;Internet tech is following a similar &amp;ldquo;population explosion&amp;rdquo; path that exists in biology.&lt;/p&gt;
 
-&lt;h1 id=&#34;technofacist:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Technofacist&lt;/h1&gt;
+&lt;h1 id=&#34;technofacist&#34;&gt;Technofacist&lt;/h1&gt;
 
 &lt;p&gt;The Internet applications industry seems to be taking the exact same route that terrestrial radio and cable television took. They had huge explosion of small companies and then an all-consuming consolidation into a few major players followed by governmental and special interest group integration. My assumption is that it will be 3 for us: Google, Facebook, Amazon.&lt;/p&gt;
 
@@ -898,7 +898,7 @@ if settings.DEBUG:
 
 &lt;p&gt;Soon it will be powered mostly by offshore companies, weakly skilled coders stabbing at each other over scraps and the very few good engineers working inside giant monolithic companies, mired under lack of progress and nonstop political infighting. Maybe I should just focus on getting a job at one of those places, or go back and get an MBA and push around technies.&lt;/p&gt;
 
-&lt;h1 id=&#34;conclusion:5c2ece4c22166c8b10604511b8c82a7b&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 
 &lt;p&gt;It is probably too late to reverse the trend. It is disappointing to see the greatest communication medium ever developed, turned over to a handful of massive corporations.&lt;/p&gt;
 
@@ -916,13 +916,13 @@ if settings.DEBUG:
           <guid>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</guid>
           <description>
 
-&lt;h1 id=&#34;binding-multiple-terminals:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;Binding Multiple Terminals&lt;/h1&gt;
+&lt;h1 id=&#34;binding-multiple-terminals&#34;&gt;Binding Multiple Terminals&lt;/h1&gt;
 
 &lt;p&gt;I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.&lt;/p&gt;
 
 &lt;p&gt;I tried a few other terminal apps. Particularly &lt;a href=&#34;https://www.iterm2.com/documentation-one-page.html&#34;&gt;iTerm2&lt;/a&gt; that has some nice broadcasting. But I didn&amp;rsquo;t like having to deal with the tabs and keystrokes. I kinda liked having multiple windows and the ease of launching with csshX&lt;/p&gt;
 
-&lt;h1 id=&#34;csshx-installation:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;csshX Installation&lt;/h1&gt;
+&lt;h1 id=&#34;csshx-installation&#34;&gt;csshX Installation&lt;/h1&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;csshX - Cluster SSH tool using MacOS-X Terminal.app&lt;/p&gt;
@@ -936,13 +936,13 @@ if settings.DEBUG:
 
 &lt;p&gt;csshx &amp;ndash;help&lt;/p&gt;
 
-&lt;h1 id=&#34;configure-csshx:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;Configure csshX&lt;/h1&gt;
+&lt;h1 id=&#34;configure-csshx&#34;&gt;Configure csshX&lt;/h1&gt;
 
 &lt;p&gt;Create a config file. I chose to set up an rc file in my home directory.&lt;/p&gt;
 
 &lt;p&gt;touch ~/.csshrc&lt;/p&gt;
 
-&lt;h2 id=&#34;logging-in-with-ssh-keys:763c5c7c581e44ba4ac71791c31d5d75&#34;&gt;Logging In With SSH Keys&lt;/h2&gt;
+&lt;h2 id=&#34;logging-in-with-ssh-keys&#34;&gt;Logging In With SSH Keys&lt;/h2&gt;
 
 &lt;p&gt;You are going to need this. Pretty much all cloud servers require keys.&lt;/p&gt;
 
@@ -962,11 +962,11 @@ if settings.DEBUG:
           <guid>http://scotttactical.com/writing-novels-in-markdown-part1/</guid>
           <description>
 
-&lt;h1 id=&#34;writing-in-markdown:f66853f3398525872cad9091a5df51e1&#34;&gt;Writing in Markdown&lt;/h1&gt;
+&lt;h1 id=&#34;writing-in-markdown&#34;&gt;Writing in Markdown&lt;/h1&gt;
 
 &lt;p&gt;If you haven&amp;rsquo;t used &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;Markdown&lt;/a&gt; to write in a rich(er) text format, then you are missing out. I pretty much write all my technical documentation in Markdown. It&amp;rsquo;s pretty awesome and I don&amp;rsquo;t know why it took me so long to find it. I didn&amp;rsquo;t start using it until around 2013.&lt;/p&gt;
 
-&lt;h2 id=&#34;what-is-markdown:f66853f3398525872cad9091a5df51e1&#34;&gt;What is Markdown&lt;/h2&gt;
+&lt;h2 id=&#34;what-is-markdown&#34;&gt;What is Markdown&lt;/h2&gt;
 
 &lt;p&gt;Markdown was created by &lt;a href=&#34;https://en.wikipedia.org/wiki/John_Gruber&#34;&gt;John Gruber&lt;/a&gt;.&lt;/p&gt;
 
@@ -980,15 +980,15 @@ if settings.DEBUG:
 
 &lt;p&gt;I&amp;rsquo;m still not sure how DaringFireball made any money, but I guess once you get traffic it&amp;rsquo;s all gravy.&lt;/p&gt;
 
-&lt;h1 id=&#34;the-objectives:f66853f3398525872cad9091a5df51e1&#34;&gt;The Objectives&lt;/h1&gt;
+&lt;h1 id=&#34;the-objectives&#34;&gt;The Objectives&lt;/h1&gt;
 
-&lt;h2 id=&#34;time-management:f66853f3398525872cad9091a5df51e1&#34;&gt;Time Management&lt;/h2&gt;
+&lt;h2 id=&#34;time-management&#34;&gt;Time Management&lt;/h2&gt;
 
 &lt;p&gt;I write on various applications and in various places. I am always just jotting stuff down in Evernote, voice notes on my phone, sketching on my Post-it pad, etc.  I&amp;rsquo;m totally distributed. I think everywhere so I might as well be able to write everywhere.&lt;/p&gt;
 
 &lt;p&gt;There are so few minutes of available time in my day that I want to make use of them. If I tallied up all my available time in a day and aggregated it I would have easily written a few novels by now. But that is another topic.&lt;/p&gt;
 
-&lt;h2 id=&#34;deficiency-analysis:f66853f3398525872cad9091a5df51e1&#34;&gt;Deficiency Analysis&lt;/h2&gt;
+&lt;h2 id=&#34;deficiency-analysis&#34;&gt;Deficiency Analysis&lt;/h2&gt;
 
 &lt;p&gt;I tried to identify all the areas that were keeping me from writing.  The biggest was obviously motivation and getting back in the flow. I fail the biggest recommendation I have read: write every day.&lt;/p&gt;
 
@@ -996,7 +996,7 @@ if settings.DEBUG:
 
 &lt;p&gt;The third problem was that my project was getting too ambitious and I couldn&amp;rsquo;t keep all the links to the ideas. Part of that reason was the gaps in writing time.&lt;/p&gt;
 
-&lt;h1 id=&#34;workflow:f66853f3398525872cad9091a5df51e1&#34;&gt;Workflow&lt;/h1&gt;
+&lt;h1 id=&#34;workflow&#34;&gt;Workflow&lt;/h1&gt;
 
 &lt;p&gt;This is my proposed workflow. It will be adjusted over time.&lt;/p&gt;
 
@@ -1021,17 +1021,17 @@ if settings.DEBUG:
       
         <item>
           <title>Why We Quit OpenStack: or How I Lost 2 Months of My Life</title>
-          <link>http://scotttactical.com/why-we-quit-openstack</link>
+          <link>http://scotttactical.com/why-we-quit-openstack/</link>
           <pubDate>Fri, 28 Oct 2016 20:07:57 PDT</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/why-we-quit-openstack</guid>
+          <guid>http://scotttactical.com/why-we-quit-openstack/</guid>
           <description>
 
-&lt;h2 id=&#34;tl-dr:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
 
 &lt;p&gt;OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.&lt;/p&gt;
 
-&lt;h1 id=&#34;backstory:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Backstory&lt;/h1&gt;
+&lt;h1 id=&#34;backstory&#34;&gt;Backstory&lt;/h1&gt;
 
 &lt;p&gt;Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just &lt;em&gt;wrong&lt;/em&gt;.&lt;/p&gt;
 
@@ -1046,25 +1046,25 @@ if settings.DEBUG:
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/full_openstack.jpg&#34; alt=&#34;Full OpenStack&#34; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;red-flags:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Red Flags&lt;/h1&gt;
+&lt;h1 id=&#34;red-flags&#34;&gt;Red Flags&lt;/h1&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Where there are &lt;em&gt;clouds&lt;/em&gt; of smoke, there is probably fire. - An Indian Truism&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;it-took-forever:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;It Took Forever&lt;/h2&gt;
+&lt;h2 id=&#34;it-took-forever&#34;&gt;It Took Forever&lt;/h2&gt;
 
 &lt;p&gt;I witnessed an ambitious project slide face-first into the blue and white parking stall of the private cloud mall. Then later it was used as leverage to out every participant. I mostly attributed the breakdown to lack of time resources, OS talent and political infighting.  &lt;em&gt;nerds (heart) aws&lt;/em&gt; but more on that elsewhere.  Ignoring those huge red flags I figured my sysadmin abilities would be able to figure things out and surpass them.&lt;/p&gt;
 
 &lt;p&gt;My response: I got sysadmin skills and no politics. I&amp;rsquo;ve never failed to raise a datacenter infrastructure.&lt;/p&gt;
 
-&lt;h2 id=&#34;openstack-hate-speech:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;OpenStack Hate Speech&lt;/h2&gt;
+&lt;h2 id=&#34;openstack-hate-speech&#34;&gt;OpenStack Hate Speech&lt;/h2&gt;
 
 &lt;p&gt;There was plenty of hating over OpenStack. More specifically there was a lot of negative commentary about Nova, Neutron and Cinder. Basically the heart of the application.&lt;/p&gt;
 
 &lt;p&gt;My response: I kinda need those bells and whistles so it&amp;rsquo;s worth dealing with monolithic bloat because that&amp;rsquo;s my only option.&lt;/p&gt;
 
-&lt;h2 id=&#34;nerds-heart-aws:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Nerds (heart) AWS&lt;/h2&gt;
+&lt;h2 id=&#34;nerds-heart-aws&#34;&gt;Nerds (heart) AWS&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;When there is blood in the streets, buy land. - Contrarian Invetors&amp;rsquo; Proverb&lt;/p&gt;
@@ -1076,13 +1076,13 @@ if settings.DEBUG:
 
 &lt;p&gt;My response: Well most nerds have near-0 business strategy. Also this indicates there is a massive gap in talent so I&amp;rsquo;d like to be here.&lt;/p&gt;
 
-&lt;h2 id=&#34;babylon-fortuna-ergo-enterprise-ready:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Babylon Fortuna ergo Enterprise-Ready&lt;/h2&gt;
+&lt;h2 id=&#34;babylon-fortuna-ergo-enterprise-ready&#34;&gt;Babylon Fortuna ergo Enterprise-Ready&lt;/h2&gt;
 
 &lt;p&gt;The codebase is huge. And kinda old at this point. In internet years it&amp;rsquo;s about 50 years old.&lt;/p&gt;
 
 &lt;p&gt;My response: It is mature enough to use. I should be ashamed of myself. I deployed IBM Websphere and should have known better.&lt;/p&gt;
 
-&lt;h2 id=&#34;it-is-complicated:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;It is Complicated&lt;/h2&gt;
+&lt;h2 id=&#34;it-is-complicated&#34;&gt;It is Complicated&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/fb_complicated.png&#34; alt=&#34;It&#39;s Complicated&#34; /&gt;&lt;/p&gt;
 
@@ -1094,13 +1094,13 @@ if settings.DEBUG:
 
 &lt;p&gt;My response: Well, shit. Guess I&amp;rsquo;ve dealt with worse. I hope there isn&amp;rsquo;t magic happening. I&amp;rsquo;ll trust the Fuel installers. Oh God Fuel! don&amp;rsquo;t fail me!&lt;/p&gt;
 
-&lt;h2 id=&#34;it-is-fragile:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;It Is Fragile&lt;/h2&gt;
+&lt;h2 id=&#34;it-is-fragile&#34;&gt;It Is Fragile&lt;/h2&gt;
 
 &lt;p&gt;Refer to the previous diagram. With so many moving parts and given the lack of talent capable of managing it there is a serious level of risk in trusting a critical production environment on this.&lt;/p&gt;
 
 &lt;p&gt;My response: Keep my public cloud fail overs built and ready to deploy. I&amp;rsquo;m a cheat.&lt;/p&gt;
 
-&lt;h2 id=&#34;it-is-vendor-driven:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;It Is Vendor Driven&lt;/h2&gt;
+&lt;h2 id=&#34;it-is-vendor-driven&#34;&gt;It Is Vendor Driven&lt;/h2&gt;
 
 &lt;p&gt;I kinda knew that the growth of OpenStack was tainted by vendor intrigue. I have run into this spending a considerable amount of time working with OAuth 2.0 when the &amp;ldquo;framework&amp;rdquo; was going through proposals and the lead writers were splitting.&lt;/p&gt;
 
@@ -1108,25 +1108,25 @@ if settings.DEBUG:
 
 &lt;p&gt;My response: Ick&lt;/p&gt;
 
-&lt;h1 id=&#34;the-final-decision:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;The Final Decision&lt;/h1&gt;
+&lt;h1 id=&#34;the-final-decision&#34;&gt;The Final Decision&lt;/h1&gt;
 
 &lt;p&gt;While it might work for a team like RackSpace, I don&amp;rsquo;t think it fits what we need. The cost benefit of having a few drivers and some prebuilt scripts to managing images wasn&amp;rsquo;t enough to justify the cost and risk of having a system that is so fragile.&lt;/p&gt;
 
 &lt;p&gt;The risk and the knowns of unknowns inside the massive spaghetti of scope creep was enough that I couldn&amp;rsquo;t justify that I wouldn&amp;rsquo;t be able to jump in and fix something within less than a day. Pretty much every code fix I had to make took more than a day. More of 3-5 days to figure out each bug. That was the last straw.&lt;/p&gt;
 
-&lt;h2 id=&#34;opennebula:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;OpenNebula&lt;/h2&gt;
+&lt;h2 id=&#34;opennebula&#34;&gt;OpenNebula&lt;/h2&gt;
 
 &lt;p&gt;We tried other stacks and I launched a multiple node infrastructure with OpenNebula. It was refreshingly vertical and self-contained. But still felt like it wanted to follow the hypervisor slipstream of OpenStack.&lt;/p&gt;
 
-&lt;h2 id=&#34;blah-stack:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Blah-Stack&lt;/h2&gt;
+&lt;h2 id=&#34;blah-stack&#34;&gt;Blah-Stack&lt;/h2&gt;
 
 &lt;p&gt;There was a lot of other options but I was burned out at this point.&lt;/p&gt;
 
-&lt;h2 id=&#34;future-plans:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Future Plans&lt;/h2&gt;
+&lt;h2 id=&#34;future-plans&#34;&gt;Future Plans&lt;/h2&gt;
 
 &lt;p&gt;The focus internally is more on bare-metal and OS containers. So far so good.&lt;/p&gt;
 
-&lt;h1 id=&#34;conclusion:b85c7312ab9bb2e49c842e2b5c6f0ec6&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;There is no free ride. (Development is an Expect 2 Work Employment)&lt;/li&gt;
@@ -1188,7 +1188,7 @@ if settings.DEBUG:
 &lt;li&gt;How far is the commute.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;decoding-requirements-reading-a-resume:0180bc8b1de3d2a16a176d2974fd5842&#34;&gt;Decoding Requirements: Reading a Resume&lt;/h2&gt;
+&lt;h2 id=&#34;decoding-requirements-reading-a-resume&#34;&gt;Decoding Requirements: Reading a Resume&lt;/h2&gt;
 
 &lt;p&gt;A few of those items I can get before hand. I will scan down the resume and see what they have done. Normally I do not go past the skills list though. If I do I just look across a few major keywords in their list.&lt;/p&gt;
 
@@ -1208,13 +1208,13 @@ if settings.DEBUG:
 
 &lt;p&gt;I try to check social media. If they can not keep their laundry tidy we probably will not work well.&lt;/p&gt;
 
-&lt;h2 id=&#34;every-body-says-it-nonverbal-cues:0180bc8b1de3d2a16a176d2974fd5842&#34;&gt;Every Body Says It: Nonverbal Cues&lt;/h2&gt;
+&lt;h2 id=&#34;every-body-says-it-nonverbal-cues&#34;&gt;Every Body Says It: Nonverbal Cues&lt;/h2&gt;
 
 &lt;p&gt;During the conversation I get a sense for their comfort based on how they approach the interview. If they are sitting in a respectful but confident posture either they are really good at faking it or they are solid in the skills they are projecting. Clothes do not matter. We are not hired on our costume skills.&lt;/p&gt;
 
 &lt;p&gt;This sort of cold reading is outside the scope of this document, but I highly suggest studying topics related to body language and nonverbal communication. The exact percentage is debatable but most of our communication is nonverbal. At least have a phone conversation before proceeding. This will be the most telling item concerning someone&amp;rsquo;s “cultural” fit.&lt;/p&gt;
 
-&lt;h2 id=&#34;conclusion:0180bc8b1de3d2a16a176d2974fd5842&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Of those items listed there are no right or wrong answers. They simply show me what basket I can allocate someone to. My baskets are very limited sometimes so if I do not have one to fill then I just cannot invent one. That is bizdev&amp;rsquo;s job.&lt;/p&gt;
 

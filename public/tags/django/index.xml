@@ -18,21 +18,21 @@
           <guid>http://scotttactical.com/post/django-saleor-ecommerce-review/</guid>
           <description>
 
-&lt;h1 id=&#34;django-and-ecommerce:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Django And eCommerce&lt;/h1&gt;
+&lt;h1 id=&#34;django-and-ecommerce&#34;&gt;Django And eCommerce&lt;/h1&gt;
 
-&lt;h1 id=&#34;tl-dr:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;TL;DR&lt;/h1&gt;
+&lt;h1 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h1&gt;
 
 &lt;p&gt;I setup &lt;a href=&#34;http://oscarcommerce.com/&#34;&gt;Oscar&lt;/a&gt; as a demo ecommerce project in the &lt;a href=&#34;http://scotttactical.com/post/django-ecommerce-in-30-minutes/&#34;&gt;previous post&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;preface:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Preface&lt;/h1&gt;
+&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/saleor2.png&#34; alt=&#34;Saleor&#34; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;backstory:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Backstory&lt;/h1&gt;
+&lt;h1 id=&#34;backstory&#34;&gt;Backstory&lt;/h1&gt;
 
 &lt;p&gt;I just finished a post about setting up eCommerce with Python Django and wasn&amp;rsquo;t totally pleased with the process. Also I don&amp;rsquo;t think it is fair to only demo a single application.  I decided to give &lt;a href=&#34;http://getsaleor.com/&#34;&gt;Saleor&lt;/a&gt; my second slot after talking with several people online and looking through its source. The parent company has a number of nice products which was confidence building.&lt;/p&gt;
 
-&lt;h1 id=&#34;pre-setup:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Pre-setup&lt;/h1&gt;
+&lt;h1 id=&#34;pre-setup&#34;&gt;Pre-setup&lt;/h1&gt;
 
 &lt;p&gt;As in the previous article, a few things were already installed like PostgreSQL and Python VirtualenvWrapper.&lt;/p&gt;
 
@@ -53,11 +53,11 @@
 
 &lt;p&gt;Let&amp;rsquo;s Begin&lt;/p&gt;
 
-&lt;h1 id=&#34;local-setup:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Local Setup&lt;/h1&gt;
+&lt;h1 id=&#34;local-setup&#34;&gt;Local Setup&lt;/h1&gt;
 
 &lt;p&gt;I&amp;rsquo;ll be following the setup listed in the &lt;a href=&#34;https://saleor.readthedocs.io/en/latest/installation.html&#34;&gt;Saleor Documentation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;setup-postgresql:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Setup PostgreSQL&lt;/h1&gt;
+&lt;h1 id=&#34;setup-postgresql&#34;&gt;Setup PostgreSQL&lt;/h1&gt;
 
 &lt;p&gt;I have installed PostgreSQL locally already. Please see the documentation for more information.&lt;/p&gt;
 
@@ -69,19 +69,19 @@
 &lt;pre&gt;&lt;code&gt;createdb saleor
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;javascript:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;JavaScript&lt;/h2&gt;
+&lt;h2 id=&#34;javascript&#34;&gt;JavaScript&lt;/h2&gt;
 
 &lt;p&gt;Install the appropriate / required JavaScript components.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm i webpack -g
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;virtual-environment-python:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Virtual Environment - Python&lt;/h2&gt;
+&lt;h2 id=&#34;virtual-environment-python&#34;&gt;Virtual Environment - Python&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;mkvirtualenv saleor
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;clone-the-source:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Clone The Source&lt;/h2&gt;
+&lt;h2 id=&#34;clone-the-source&#34;&gt;Clone The Source&lt;/h2&gt;
 
 &lt;p&gt;CD into a directory beneath your source location. I like to do /project/source/*&lt;/p&gt;
 
@@ -94,7 +94,7 @@ echo $SECRET_KEY
 
 &lt;p&gt;Keep track of that secret key.&lt;/p&gt;
 
-&lt;h2 id=&#34;build-the-schema:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Build The Schema&lt;/h2&gt;
+&lt;h2 id=&#34;build-the-schema&#34;&gt;Build The Schema&lt;/h2&gt;
 
 &lt;p&gt;I am running PostgreSQL locally.&lt;/p&gt;
 
@@ -102,7 +102,7 @@ echo $SECRET_KEY
 python manage.py migrate
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;build-front-end:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Build Front-End&lt;/h2&gt;
+&lt;h2 id=&#34;build-front-end&#34;&gt;Build Front-End&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install
 npm run build-assets
@@ -110,7 +110,7 @@ npm run build-assets
 
 &lt;p&gt;Node package install took a while. I thought it was hung so I restarted it and ran it in verbose to know it wasn&amp;rsquo;t dead.&lt;/p&gt;
 
-&lt;h2 id=&#34;dump-schema:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Dump Schema&lt;/h2&gt;
+&lt;h2 id=&#34;dump-schema&#34;&gt;Dump Schema&lt;/h2&gt;
 
 &lt;p&gt;I want to add the test data to play with but I may not want it and don&amp;rsquo;t want to have to recreate the database so I dumped the initial schema.&lt;/p&gt;
 
@@ -122,9 +122,9 @@ npm run build-assets
 &lt;pre&gt;&lt;code&gt;./manage.py populatedb
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;your-shop:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Your Shop&lt;/h1&gt;
+&lt;h1 id=&#34;your-shop&#34;&gt;Your Shop&lt;/h1&gt;
 
-&lt;h2 id=&#34;run-the-server:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Run The Server&lt;/h2&gt;
+&lt;h2 id=&#34;run-the-server&#34;&gt;Run The Server&lt;/h2&gt;
 
 &lt;p&gt;Kick it off&lt;/p&gt;
 
@@ -137,7 +137,7 @@ npm run build-assets
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/saleor3.png&#34; alt=&#34;Saleor Home Page&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;view-dashboard:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;View Dashboard&lt;/h2&gt;
+&lt;h2 id=&#34;view-dashboard&#34;&gt;View Dashboard&lt;/h2&gt;
 
 &lt;p&gt;From the command line I created a superuser so I could see the dashboard.&lt;/p&gt;
 
@@ -145,7 +145,7 @@ npm run build-assets
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/saleor4.png&#34; alt=&#34;Saleor Home Page&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;git-add:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Git Add&lt;/h2&gt;
+&lt;h2 id=&#34;git-add&#34;&gt;Git Add&lt;/h2&gt;
 
 &lt;p&gt;Add the new files to the remote repository and push it.&lt;/p&gt;
 
@@ -156,23 +156,23 @@ git remote set-url origin yourname@bitbucket.com:yourapp/yourapp.git
 git push
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;conclusions:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Conclusions&lt;/h1&gt;
+&lt;h1 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h1&gt;
 
-&lt;h2 id=&#34;code-structure:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Code Structure&lt;/h2&gt;
+&lt;h2 id=&#34;code-structure&#34;&gt;Code Structure&lt;/h2&gt;
 
 &lt;p&gt;I liked this code layout better than Oscar. It was easier to find my around and seemed cleaner overall. Linting is important to me.&lt;/p&gt;
 
 &lt;p&gt;I would have liked to have a separate settings file for local/testing/production such as is in various cookiecutter templates.&lt;/p&gt;
 
-&lt;h2 id=&#34;building:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Building&lt;/h2&gt;
+&lt;h2 id=&#34;building&#34;&gt;Building&lt;/h2&gt;
 
 &lt;p&gt;It was easier to build this. Launching it into Heroku blew up on me but this local build did not. That was acceptable. The test data was good enough to play with too.&lt;/p&gt;
 
-&lt;h2 id=&#34;no-rest-for-me:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;No REST for me&lt;/h2&gt;
+&lt;h2 id=&#34;no-rest-for-me&#34;&gt;No REST for me&lt;/h2&gt;
 
 &lt;p&gt;Again, I was disappointed with how hard it was to find information about the REST layer. Please favor mobile and JS heavy deployments. Make things API based first.&lt;/p&gt;
 
-&lt;h2 id=&#34;will-it-stay:c3e32ebf1502e124de50d7317313b5b7&#34;&gt;Will it Stay&lt;/h2&gt;
+&lt;h2 id=&#34;will-it-stay&#34;&gt;Will it Stay&lt;/h2&gt;
 
 &lt;p&gt;This is probably the one. I still have to go through a little more testing of course, but I think I am set for now.&lt;/p&gt;
 </description>
@@ -182,29 +182,29 @@ git push
       
         <item>
           <title>Django eCommerce in 30&#43; Minutes</title>
-          <link>http://scotttactical.com/post/django-ecommerce-in-30-minutes/</link>
+          <link>http://scotttactical.com/post/django-ecommerce-in-30--minutes/</link>
           <pubDate>Sat, 14 Jan 2017 16:00:07 PST</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/post/django-ecommerce-in-30-minutes/</guid>
+          <guid>http://scotttactical.com/post/django-ecommerce-in-30--minutes/</guid>
           <description>
 
-&lt;h1 id=&#34;django-and-ecommerce:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Django And eCommerce&lt;/h1&gt;
+&lt;h1 id=&#34;django-and-ecommerce&#34;&gt;Django And eCommerce&lt;/h1&gt;
 
-&lt;h1 id=&#34;tl-dr:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;TL;DR&lt;/h1&gt;
+&lt;h1 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h1&gt;
 
 &lt;p&gt;I like Python and want to use it for eCommerce, so I went through the &lt;a href=&#34;https://djangopackages.org/grids/g/ecommerce/&#34;&gt;well known products&lt;/a&gt; and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.&lt;/p&gt;
 
-&lt;h1 id=&#34;preface:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Preface&lt;/h1&gt;
+&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;
 
 &lt;p&gt;Let me say this took me almost 2 days to get through and evaluate, which I&amp;rsquo;m used to having a demo site up in minutes. After having gone through, I think this could be launched in half an hour.  Below are my notes of the process.&lt;/p&gt;
 
-&lt;h1 id=&#34;backstory:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Backstory&lt;/h1&gt;
+&lt;h1 id=&#34;backstory&#34;&gt;Backstory&lt;/h1&gt;
 
 &lt;p&gt;I was contacted by a business partner to see if we could kick off a project to distribute some substances that newly became legal here in CA. I thought I could spin up an ecommerce app in a couple hours and be taking payments in a week. I wanted to see how fast I could do this with Django. Most my previous eCommerce deployments (many) were in PHP and many of them were in &lt;a href=&#34;https://magento.com&#34;&gt;magento&lt;/a&gt;. Had a few in ASP, Perl, (Websphere) Java. I&amp;rsquo;m over that pain.&lt;/p&gt;
 
 &lt;p&gt;Online retail - E-commerce - as an industry, is very mature. It requires a TON of flexibility and features to compete. There isn&amp;rsquo;t a lot of waste.&lt;/p&gt;
 
-&lt;h1 id=&#34;pre-setup:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Pre-setup&lt;/h1&gt;
+&lt;h1 id=&#34;pre-setup&#34;&gt;Pre-setup&lt;/h1&gt;
 
 &lt;p&gt;I will append this by saying a few things were already installed like PostgreSQL and Python VirtualenvWrapper.&lt;/p&gt;
 
@@ -221,9 +221,9 @@ git push
 
 &lt;p&gt;Let&amp;rsquo;s Begin&lt;/p&gt;
 
-&lt;h1 id=&#34;local-setup:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Local Setup&lt;/h1&gt;
+&lt;h1 id=&#34;local-setup&#34;&gt;Local Setup&lt;/h1&gt;
 
-&lt;h1 id=&#34;setup-postgresql:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Setup PostgreSQL&lt;/h1&gt;
+&lt;h1 id=&#34;setup-postgresql&#34;&gt;Setup PostgreSQL&lt;/h1&gt;
 
 &lt;p&gt;I have installed PostgreSQL locally already. Please see the documentation for more information.&lt;/p&gt;
 
@@ -235,7 +235,7 @@ git push
 &lt;pre&gt;&lt;code&gt;createdb [project_slug]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;virtual-environment-python:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Virtual Environment - Python&lt;/h2&gt;
+&lt;h2 id=&#34;virtual-environment-python&#34;&gt;Virtual Environment - Python&lt;/h2&gt;
 
 &lt;p&gt;Python 2.7&lt;/p&gt;
 
@@ -248,7 +248,7 @@ git push
 
 &lt;p&gt;CD into a directory beneath your source location. I always do /project/source/*&lt;/p&gt;
 
-&lt;h2 id=&#34;install-cookiecutter-django:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Install cookiecutter-django&lt;/h2&gt;
+&lt;h2 id=&#34;install-cookiecutter-django&#34;&gt;Install cookiecutter-django&lt;/h2&gt;
 
 &lt;p&gt;I have used this &lt;a href=&#34;https://github.com/pydanny/cookiecutter-django&#34;&gt;cookiecutter&lt;/a&gt; before so I stick with what I know.&lt;/p&gt;
 
@@ -266,7 +266,7 @@ git remote add origin yourname@bitbucket.com:yourapp/yourapp.git
 git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;django-setup:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Django Setup&lt;/h2&gt;
+&lt;h2 id=&#34;django-setup&#34;&gt;Django Setup&lt;/h2&gt;
 
 &lt;p&gt;I decided to try out Django Oscar. I figure it is the most popular. And also hoping it isn&amp;rsquo;t the most bloated.&lt;/p&gt;
 
@@ -297,7 +297,7 @@ pycountry==17.1.8
 &lt;pre&gt;&lt;code&gt;./manage.py
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;set-up-oscar:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Set Up Oscar&lt;/h1&gt;
+&lt;h1 id=&#34;set-up-oscar&#34;&gt;Set Up Oscar&lt;/h1&gt;
 
 &lt;p&gt;in &lt;code&gt;yourapp/config/settings/common.py&lt;/code&gt;&lt;/p&gt;
 
@@ -410,7 +410,7 @@ THIRD_PARTY_APPS = (
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;set-the-urls:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Set the URLs&lt;/h2&gt;
+&lt;h2 id=&#34;set-the-urls&#34;&gt;Set the URLs&lt;/h2&gt;
 
 &lt;p&gt;Here is my url file.&lt;/p&gt;
 
@@ -438,14 +438,14 @@ if settings.DEBUG:
     ...
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;build-schema:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Build Schema&lt;/h2&gt;
+&lt;h2 id=&#34;build-schema&#34;&gt;Build Schema&lt;/h2&gt;
 
 &lt;p&gt;If the database is created and you set up everything properly you should be able to build the DB schema now.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;./manage.py migrate
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;start-local:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Start Local&lt;/h2&gt;
+&lt;h2 id=&#34;start-local&#34;&gt;Start Local&lt;/h2&gt;
 
 &lt;p&gt;Kick off the local server.&lt;/p&gt;
 
@@ -454,11 +454,11 @@ if settings.DEBUG:
 
 &lt;p&gt;If everything works properly you should be able to go to &lt;a href=&#34;http://localhost:8000/&#34;&gt;http://localhost:8000/&lt;/a&gt; and see your new project running.&lt;/p&gt;
 
-&lt;h1 id=&#34;store-setup:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Store Setup&lt;/h1&gt;
+&lt;h1 id=&#34;store-setup&#34;&gt;Store Setup&lt;/h1&gt;
 
 &lt;p&gt;This wasn&amp;rsquo;t quite enough for me so I needed to add some products into the application really quickly to see the catalogue.&lt;/p&gt;
 
-&lt;h2 id=&#34;install-shipping-countries:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Install Shipping Countries&lt;/h2&gt;
+&lt;h2 id=&#34;install-shipping-countries&#34;&gt;Install Shipping Countries&lt;/h2&gt;
 
 &lt;p&gt;Pycountry should have been installed already, and it was suggested to load all the countries in the oscar documentation.&lt;/p&gt;
 
@@ -469,7 +469,7 @@ if settings.DEBUG:
 
 &lt;p&gt;I&amp;rsquo;m annoyed at pycountry for a menial change like that. Or provide a better SDK.&lt;/p&gt;
 
-&lt;h2 id=&#34;where-templates-are:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Where Templates Are?&lt;/h2&gt;
+&lt;h2 id=&#34;where-templates-are&#34;&gt;Where Templates Are?&lt;/h2&gt;
 
 &lt;p&gt;I realized that the templates were not seen even though they were in the path. I just copied them from the oscar sandbox example so that I had more to go off of.&lt;/p&gt;
 
@@ -481,13 +481,13 @@ if settings.DEBUG:
 &lt;pre&gt;&lt;code&gt;/src/oscar/static/oscar/img &amp;gt; yourapp/static
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;dashboard:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Dashboard&lt;/h2&gt;
+&lt;h2 id=&#34;dashboard&#34;&gt;Dashboard&lt;/h2&gt;
 
 &lt;p&gt;Make sure you created a superuser account.&lt;/p&gt;
 
 &lt;p&gt;Login and travel to the dashboard: &lt;a href=&#34;http://127.0.0.1:8000/dashboard/&#34;&gt;http://127.0.0.1:8000/dashboard/&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;product-setup:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Product Setup&lt;/h2&gt;
+&lt;h2 id=&#34;product-setup&#34;&gt;Product Setup&lt;/h2&gt;
 
 &lt;p&gt;You need to have a category and a shipper. That is easy enough to set up. I added a couple products and viewed them on the&lt;/p&gt;
 
@@ -495,27 +495,27 @@ if settings.DEBUG:
 
 &lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/oscar2.png&#34; alt=&#34;Dashboard&#34; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;conclusions:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Conclusions&lt;/h1&gt;
+&lt;h1 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h1&gt;
 
-&lt;h2 id=&#34;code-structure:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Code Structure&lt;/h2&gt;
+&lt;h2 id=&#34;code-structure&#34;&gt;Code Structure&lt;/h2&gt;
 
 &lt;p&gt;This looked fine to me. I was able to find my way around very easily compared to the likes of Magento, IBM, SAP. Thank goodness. That is stuff of nightmares.&lt;/p&gt;
 
-&lt;h2 id=&#34;loaders:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Loaders&lt;/h2&gt;
+&lt;h2 id=&#34;loaders&#34;&gt;Loaders&lt;/h2&gt;
 
 &lt;p&gt;The framework is important to me. I like to see proper recognizable patterns. There were red flags with the model class &amp;ldquo;loader&amp;rdquo; paradigm when I expected to see Django objects. I think that is unnecessary with a framework that has good bootstrapping functionality such as Django. Maybe someone can explain where my thinking is in error.&lt;/p&gt;
 
-&lt;h2 id=&#34;no-rest-for-me:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;No REST for me&lt;/h2&gt;
+&lt;h2 id=&#34;no-rest-for-me&#34;&gt;No REST for me&lt;/h2&gt;
 
 &lt;p&gt;I was disappointed with how hard it was to find information about oscar and an integration with a REST layer. Most sites MUST support mobile. And probably should support mobile FIRST. The old days of a monolithic website stack are kinda over. Especially with javascript running rampage over the facades of the interwebs.&lt;/p&gt;
 
 &lt;p&gt;Yes, I know there is &lt;a href=&#34;https://github.com/django-oscar/django-oscar-api&#34;&gt;django oscar api&lt;/a&gt; - It needs more thorough documentation, and matrix of supported features would be nice. Overall it looks promising.&lt;/p&gt;
 
-&lt;h2 id=&#34;performance:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Performance&lt;/h2&gt;
+&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;
 
 &lt;p&gt;The application felt kinda slow. Maybe it can be optimized, but for a starter, I felt like it should be more responsive. The feel of other apps was a little better. With ecommerce the most important thing is checkout flow followed by performance and product data.  Don&amp;rsquo;t skimp on ANY of those things.  Let the design languish if you have budget for a performance hacker. I&amp;rsquo;ve launched large ecommerce sites and this is what killed most of them once traffic rolled in.&lt;/p&gt;
 
-&lt;h2 id=&#34;will-it-stay:b4021289b9cd78d0572b4b30b6bfd1a4&#34;&gt;Will it Stay&lt;/h2&gt;
+&lt;h2 id=&#34;will-it-stay&#34;&gt;Will it Stay&lt;/h2&gt;
 
 &lt;p&gt;I still have to look through &lt;a href=&#34;http://getsaleor.com/&#34;&gt;Saleor&lt;/a&gt; and &lt;a href=&#34;http://mezzanine.jupo.org/&#34;&gt;Cartrige on Mezzanine&lt;/a&gt; which were very appealing. I also wanted to have a hand at setting up an ecommerce app in Go, but the lack of templating and abstraction that python is good at was a knock down.&lt;/p&gt;
 </description>
@@ -525,19 +525,19 @@ if settings.DEBUG:
       
         <item>
           <title>Django Search: Multiple Fields and Full Text</title>
-          <link>http://scotttactical.com/django-search-multiple-fields</link>
+          <link>http://scotttactical.com/django-search-multiple-fields/</link>
           <pubDate>Tue, 22 Mar 2016 22:34:50 PDT</pubDate>
           <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/django-search-multiple-fields</guid>
+          <guid>http://scotttactical.com/django-search-multiple-fields/</guid>
           <description>
 
-&lt;h1 id=&#34;text-search-django-model-fields:7b9a1438010ac7a2f51e76a3ddfaa0e1&#34;&gt;Text Search - Django Model Fields&lt;/h1&gt;
+&lt;h1 id=&#34;text-search-django-model-fields&#34;&gt;Text Search - Django Model Fields&lt;/h1&gt;
 
 &lt;p&gt;Django has a pretty flexible ORM, but sometimes clients need a free-form text search to get down to the content that you are looking for. It is beyond the capability of most engineers to build a comprehensive search tool and shoehorn it into an existing application. There are people working on these problems for years.&lt;/p&gt;
 
 &lt;p&gt;This does remind me of a senior boss that asked me to add a fuzzy search field to an application and that it was &amp;ldquo;super simple&amp;rdquo;. He said &amp;ldquo;you just do a LIKE statement against all the fields we care about!&amp;rdquo; and proceeded to pseudo code it for me. He should read my post about how not to F&amp;rsquo;k up your engineering staff.&lt;/p&gt;
 
-&lt;h2 id=&#34;searching-with-like-statements:7b9a1438010ac7a2f51e76a3ddfaa0e1&#34;&gt;Searching with Like Statements&lt;/h2&gt;
+&lt;h2 id=&#34;searching-with-like-statements&#34;&gt;Searching with Like Statements&lt;/h2&gt;
 
 &lt;p&gt;This is probably the first place an inexperienced engineer will start. Just pick the field and do a LIKE statement against it.&lt;/p&gt;
 
@@ -553,7 +553,7 @@ if settings.DEBUG:
 
 &lt;p&gt;But this will satisfy an annoying manager for the time being considering they probably know little about computer science.&lt;/p&gt;
 
-&lt;h2 id=&#34;using-q-objects:7b9a1438010ac7a2f51e76a3ddfaa0e1&#34;&gt;Using Q Objects&lt;/h2&gt;
+&lt;h2 id=&#34;using-q-objects&#34;&gt;Using Q Objects&lt;/h2&gt;
 
 &lt;p&gt;The &lt;a href=&#34;https://docs.djangoproject.com/en/dev/topics/db/queries/#complex-lookups-with-q-objects&#34;&gt;Q object&lt;/a&gt; in Django is kinda nice. It wraps the queryset. I need a little more information on it to be able to speak intelligently. But that aside I decided to use it in a few places where dynamic queries were valuable.&lt;/p&gt;
 
@@ -612,7 +612,7 @@ def search_for_something(request):
 
 &lt;p&gt;Another helpful resource was from &lt;a href=&#34;https://yeti.co/blog/global-search-in-django-rest-framework/&#34;&gt;Yeti&lt;/a&gt; adding in some global search. A bit outdated but a nice resource.&lt;/p&gt;
 
-&lt;h2 id=&#34;search-library:7b9a1438010ac7a2f51e76a3ddfaa0e1&#34;&gt;Search Library&lt;/h2&gt;
+&lt;h2 id=&#34;search-library&#34;&gt;Search Library&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/django-haystack/django-haystack&#34;&gt;https://github.com/django-haystack/django-haystack&lt;/a&gt;&lt;/p&gt;
 
@@ -630,11 +630,11 @@ def search_for_something(request):
           <guid>http://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/</guid>
           <description>
 
-&lt;h1 id=&#34;fixtures-are-a-messy-mess:25f7c7e781c9bc5fa7e4fc70ab13d75c&#34;&gt;Fixtures are a Messy Mess&lt;/h1&gt;
+&lt;h1 id=&#34;fixtures-are-a-messy-mess&#34;&gt;Fixtures are a Messy Mess&lt;/h1&gt;
 
 &lt;p&gt;It is quite a pain to maintain fixtures it seems. I am not sure why yet. Maybe there hasn&amp;rsquo;t been quite enough time on this piece of the product for it to mature.&lt;/p&gt;
 
-&lt;h1 id=&#34;django-dumpdata:25f7c7e781c9bc5fa7e4fc70ab13d75c&#34;&gt;Django dumpdata&lt;/h1&gt;
+&lt;h1 id=&#34;django-dumpdata&#34;&gt;Django dumpdata&lt;/h1&gt;
 
 &lt;p&gt;I tried several different variations to dump the data. I&amp;rsquo;ll include a few of them here since they might actually work for someone else.&lt;/p&gt;
 
@@ -657,7 +657,7 @@ def search_for_something(request):
 
 &lt;p&gt;Could not load object.User(pk=None): null value in column &amp;ldquo;user_ptr_id&amp;rdquo; violates not-null constraint&lt;/p&gt;
 
-&lt;h1 id=&#34;dumpdata-alternatives:25f7c7e781c9bc5fa7e4fc70ab13d75c&#34;&gt;DumpData Alternatives&lt;/h1&gt;
+&lt;h1 id=&#34;dumpdata-alternatives&#34;&gt;DumpData Alternatives&lt;/h1&gt;
 
 &lt;p&gt;The &lt;a href=&#34;https://www.djangopackages.com/grids/g/fixtures/&#34;&gt;django grid&lt;/a&gt; to the rescue again.&lt;/p&gt;
 
@@ -665,7 +665,7 @@ def search_for_something(request):
 
 &lt;p&gt;I decided to give &lt;a href=&#34;https://github.com/davedash/django-fixture-magic&#34;&gt;Fixture Magic&lt;/a&gt; a try.&lt;/p&gt;
 
-&lt;h2 id=&#34;fixture-magic:25f7c7e781c9bc5fa7e4fc70ab13d75c&#34;&gt;Fixture Magic&lt;/h2&gt;
+&lt;h2 id=&#34;fixture-magic&#34;&gt;Fixture Magic&lt;/h2&gt;
 
 &lt;p&gt;My initial test wasn&amp;rsquo;t very promising.&lt;/p&gt;
 
@@ -677,7 +677,7 @@ def search_for_something(request):
 
 &lt;p&gt;Then I found out that I can&amp;rsquo;t have non-int keys. Since most of my objects use UUID that was the end of F-Magic.&lt;/p&gt;
 
-&lt;h1 id=&#34;i-gave-up-on-fixtures:25f7c7e781c9bc5fa7e4fc70ab13d75c&#34;&gt;I Gave Up On Fixtures&lt;/h1&gt;
+&lt;h1 id=&#34;i-gave-up-on-fixtures&#34;&gt;I Gave Up On Fixtures&lt;/h1&gt;
 
 &lt;p&gt;This data model must just be too complex.&lt;/p&gt;
 
@@ -689,7 +689,7 @@ def search_for_something(request):
 
 &lt;p&gt;psql APP &amp;lt; APP/fixtures/pg_dump.latest.sql&lt;/p&gt;
 
-&lt;h1 id=&#34;how-now-tests:25f7c7e781c9bc5fa7e4fc70ab13d75c&#34;&gt;How Now Tests?&lt;/h1&gt;
+&lt;h1 id=&#34;how-now-tests&#34;&gt;How Now Tests?&lt;/h1&gt;
 
 &lt;p&gt;I know. Fixtures are kinda important with tests. I went ahead and installed &lt;a href=&#34;https://github.com/rbarrois/factory_boy&#34;&gt;Factory boy&lt;/a&gt;.&lt;/p&gt;
 

@@ -79,7 +79,7 @@ You have the ability to group your tests. I always have my developers add docblo
 
 /**
  *
- * @author solvire <stevenjscott@gmail.com>
+ * @author solvire <info@scotttactical.com>
  * @package Rules
  * @group Rules
  * @namespace LeadFerret\Lib\Rules
@@ -98,7 +98,7 @@ Available test group(s):
  - Rules
  - Transformers
  - default
- - solvire <stevenjscott@gmail.com>
+ - solvire <info@scotttactical.com>
 
 ```
 
