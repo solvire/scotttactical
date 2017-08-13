@@ -11,7 +11,7 @@ comments: true
 
 Opening letter to future ultra-violent men.
 
-We stand at a transition. Either at the bottom of a cliff we may ascend, or at the precipice of one we will be pushed from. This "we" is addressed to men alone. Only we are the ones presented with this unique problem.  It is a problem of perspective and one that contains many recursive questions.  The answer to these questions will ultimately decide whether or not the observer was indeed a man. That question will ultimately distil to a single query: "Am I to destroy myself?"
+We stand at a transition. Either at the bottom of a cliff we may ascend, or at the precipice of one we will be pushed from. This "we" is addressed to men alone. Only we are the ones presented with this unique problem.  It is a problem of perspective and one that contains many recursive questions.  The answer to these questions will ultimately decide whether or not the observer was indeed a man. That question will ultimately distill to a single query: "Am I to destroy myself?"
 
 There are few men left, and that number is decreasing rapidly. Daily, men are swept up into situations of dramatic tone or superficial satisfaction, and thus lose track of their primary objective of continuing their growth as men. Essentially they die in place or regress back into boyhood.  It is not the goal of this philosophy to determine whether someone is in a state inside or outside of natural balance. It is not the job of philosophy to find the man and teach him. It is the man's job to find the Truth and come to terms with that.
 

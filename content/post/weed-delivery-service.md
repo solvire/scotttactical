@@ -7,7 +7,7 @@ comments: true
 ---
 
 
-# The Duber - A Weed Delivery Service
+# A Weed Delivery Service
 
 About 6 months ago I decided to take on the task of building a delivery app for the cannabis industry. Here are a few notes from the journey so far.
 
