@@ -1,612 +1,217 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scott Tactical </title>
+    <title>Data on Scott Tactical</title>
     <link>http://scotttactical.com/tags/data/</link>
+    <description>Recent content in Data on Scott Tactical</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Scott Tactical</author>
-    <rights>(C) 2017</rights>
-    <updated>2017-01-04 06:41:07 -0800 PST</updated>
-
+    <lastBuildDate>Wed, 04 Jan 2017 06:41:07 -0800</lastBuildDate>
     
-      
-        <item>
-          <title>SFP vs. QSFP</title>
-          <link>http://scotttactical.com/post/sfp-vs.-qsfp/</link>
-          <pubDate>Wed, 04 Jan 2017 06:41:07 PST</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/post/sfp-vs.-qsfp/</guid>
-          <description>
-
-&lt;h1 id=&#34;networking-transceivers&#34;&gt;Networking Transceivers&lt;/h1&gt;
-
-&lt;p&gt;This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent.  After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.&lt;/p&gt;
-
-&lt;p&gt;Again this page is mostly for my notes.&lt;/p&gt;
-
-&lt;h1 id=&#34;sfp-and-sfp&#34;&gt;SFP and SFP+&lt;/h1&gt;
-
-&lt;p&gt;SFP stands for &amp;ldquo;small form-factor pluggable&amp;rdquo;. It is a hot-pluggable transceiver. It allows for connecting devices via a fiber optic cable or copper cable. I have mostly seen fiber optics in data centers but didn&amp;rsquo;t really know what they were about.&lt;/p&gt;
-
-&lt;p&gt;See &lt;a href=&#34;https://en.wikipedia.org/wiki/Small_Form_Factor_Committee&#34;&gt;Small Form Factor Committee&lt;/a&gt; for more information.&lt;/p&gt;
-
-&lt;h2 id=&#34;data-rates-by-type&#34;&gt;Data Rates by Type&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Small_form-factor_pluggable_transceiver&#34;&gt;SFP&lt;/a&gt; is rated for 1Gb, 2.5Gb and 10Gb/s traffic.&lt;/p&gt;
-
-&lt;p&gt;There different distance ratings of the cabling based on specifications outside my expertise.&lt;/p&gt;
-
-&lt;p&gt;SFP+ takes the data rate up to 10Gb/sec and is supposed to move 16Gb/sec but at that point you are probably limited by your hardware.&lt;/p&gt;
-
-&lt;p&gt;SFP28 enhances the transceiver again by moving toward the 100Gb rates by allowing for multiple 25G channels. This is an advantage because the channels of 1/10/40/100 require more power and cooling compared to the 1/25/50/100 channels of the proposed gear. Again, it is above my skill level.&lt;/p&gt;
-
-&lt;h2 id=&#34;csfp&#34;&gt;CSFP&lt;/h2&gt;
-
-&lt;p&gt;CSFP stands for compact small form-factor pluggable (CSFP). I haven&amp;rsquo;t used this but it seems to be designed for higher density and bi-directional traffic.&lt;/p&gt;
-
-&lt;h1 id=&#34;qsfp-and-qsfp&#34;&gt;QSFP and QSFP+&lt;/h1&gt;
-
-&lt;p&gt;Here is where things get a little more interesting. I didn&amp;rsquo;t realize before that to get more bandwidth they were basically stacking technologies.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/0/0e/QSFP-40G-SR4_Transceiver.jpg&#34; alt=&#34;Wiki&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/QSFP&#34;&gt;QSFP&lt;/a&gt; stands for Quad Small Form-factor Pluggable. It is just as you suspect. 4 X SFP. 4 channels of SFP traffic.&lt;/p&gt;
-
-&lt;p&gt;So the math is fairly easy. If you have 4 times the 10G traffic of an SFP+ then you have 40G potential. Pretty cool.&lt;/p&gt;
-
-&lt;p&gt;Here are some examples:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;4 x 4 Gbit/s QSFP&lt;/li&gt;
-&lt;li&gt;4 x 10 Gbit/s QSFP+
-
-&lt;ul&gt;
-&lt;li&gt;10GbE, FC, Infiniband&lt;/li&gt;
-&lt;li&gt;Combined to 40Gb&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;4 x 14 Gbit/s QSFP+ (QSFP14)
-
-&lt;ul&gt;
-&lt;li&gt;FDR Infiniband and SAS-3&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;4 x 28 Gbit/s QSFP+ (QSFP28)
-
-&lt;ul&gt;
-&lt;li&gt;100GbE&lt;/li&gt;
-&lt;li&gt;Infiniband&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;fanout-or-breakout-cables&#34;&gt;Fanout or Breakout Cables&lt;/h1&gt;
-
-&lt;p&gt;I thought this was really cool. Similar to SAS controllers you can split the connections of the channels out. Essentially you use one port to power 4 10G nics. This is great if you have a switch with many high density ports.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/e/e6/Optical_breakout_cable.jpg&#34; alt=&#34;Breakout&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://www.sfpopticaltransceiver.com/photo/pc1313968-extreme_qsfp_copper_cable_qsfp_to_sfp_fan_out_cable_for_network.jpg&#34; alt=&#34;sfpopticaltransceiver.com&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
-
-&lt;p&gt;I will write my notes down regarding the technologies that employ these connectors. That is even more interesting. Basically this type of networking puts supercomputing into the hands of mere mortals.&lt;/p&gt;
-
-&lt;p&gt;Please feel free to correct me if I am wrong in the comments below. I am open to suggestion.&lt;/p&gt;
-</description>
-        </item>
-      
+	<atom:link href="http://scotttactical.com/tags/data/index.xml" rel="self" type="application/rss+xml" />
     
-      
-        <item>
-          <title>Encrypt PostgreSQL Backup to S3</title>
-          <link>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</link>
-          <pubDate>Sat, 24 Dec 2016 06:41:07 PST</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</guid>
-          <description>
-
-&lt;h1 id=&#34;encrypt-your-db-backups&#34;&gt;Encrypt Your DB Backups&lt;/h1&gt;
-
-&lt;p&gt;I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.&lt;/p&gt;
-
-&lt;h2 id=&#34;generate-keys&#34;&gt;Generate Keys&lt;/h2&gt;
-
-&lt;p&gt;From your user&amp;rsquo;s home directory:&lt;/p&gt;
-
-&lt;p&gt;openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub&lt;/p&gt;
-
-&lt;p&gt;Fill out the questions appropriately. Or not. I don&amp;rsquo;t think it matters really.&lt;/p&gt;
-
-&lt;p&gt;That will create the public and private keys.&lt;/p&gt;
-
-&lt;p&gt;backup_key.pem - private key
-  backup_key.pem.pub - public key&lt;/p&gt;
-
-&lt;h2 id=&#34;add-aws-keys&#34;&gt;Add AWS Keys&lt;/h2&gt;
-
-&lt;p&gt;Create a file to hold your AWS keys.&lt;/p&gt;
-
-&lt;p&gt;mkdir ~/.aws
-  vi ~/.aws/credentials&lt;/p&gt;
-
-&lt;p&gt;Here is the format:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[default]
-aws_access_key_id = ACCESSKEY
-aws_secret_access_key = SECRETKEY
-aws_region = us-east-1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;backup-script&#34;&gt;Backup Script&lt;/h1&gt;
-
-&lt;p&gt;I don&amp;rsquo;t want to bore with details but here is what this script will do from a high level:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Take DB name&lt;/li&gt;
-&lt;li&gt;Set the backup file name with timestamp&lt;/li&gt;
-&lt;li&gt;dump the DB with pg_dump&lt;/li&gt;
-&lt;li&gt;remove the old versions&lt;/li&gt;
-&lt;li&gt;copy to s3 for storage&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;!/bin/bash
-# #######################
-
-# Database Name
-database_name=&amp;quot;$1&amp;quot;
-backup_public_key=&amp;quot;/HOMDIR/.ssh/backup_key.pem.pub&amp;quot;
-
-# Location to place backups.
-backup_dir=&amp;quot;/tmp/db_backups/&amp;quot;
-# Numbers of days you want to keep copies of your databases
-
-number_of_days=10
-if [ -z &amp;quot;${database_name}&amp;quot; ]
-then
- echo &amp;quot;Please specify a database name as the first argument&amp;quot;
- exit 1
-fi
-
-# String to append to the name of the backup files
-backup_date=`date +%Y-%m-%d-%H-%M-%S`
-backup_name=&amp;quot;${database_name}.${backup_date}.sql.bz2.enc&amp;quot;
-echo &amp;quot;Dumping ${database_name} to ${backup_dir}${backup_name}&amp;quot;
-
-pg_dump ${database_name}|bzip2|openssl smime -encrypt \
- -aes256 -binary -outform DEM \
- -out ${backup_dir}${backup_name} \
- &amp;quot;${backup_public_key}&amp;quot;
-
-find ${backup_dir} -type f -prune -mtime \
-    +${number_of_days} -exec rm -f {} \;
-
-# push file to S3
-aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;crontab&#34;&gt;Crontab&lt;/h2&gt;
-
-&lt;p&gt;Set up a crontab for this script. This one fires off at 3am PT daily. Change as needed.&lt;/p&gt;
-
-&lt;p&gt;crontab -e
-  0 3 * * * /location/pg_backup.sh YOURDB&lt;/p&gt;
-
-&lt;h1 id=&#34;decrypt&#34;&gt;Decrypt&lt;/h1&gt;
-
-&lt;p&gt;Decryption is pretty straight forward. Get your private key and pull the file from S3.&lt;/p&gt;
-
-&lt;p&gt;openssl smime -decrypt -in my_database.sql.sql.bz2.enc -binary -inform DEM -inkey private.pem | bzcat &amp;gt;  my_database.sql.sql&lt;/p&gt;
-
-&lt;h1 id=&#34;credits&#34;&gt;Credits&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/&#34;&gt;https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-      
     
+    <item>
+      <title>SFP vs. QSFP</title>
+      <link>http://scotttactical.com/post/sfp-vs.-qsfp/</link>
+      <pubDate>Wed, 04 Jan 2017 06:41:07 -0800</pubDate>
       
-        <item>
-          <title>Why We Quit OpenStack: or How I Lost 2 Months of My Life</title>
-          <link>http://scotttactical.com/why-we-quit-openstack/</link>
-          <pubDate>Fri, 28 Oct 2016 20:07:57 PDT</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/why-we-quit-openstack/</guid>
-          <description>
-
-&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
-
-&lt;p&gt;OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.&lt;/p&gt;
-
-&lt;h1 id=&#34;backstory&#34;&gt;Backstory&lt;/h1&gt;
-
-&lt;p&gt;Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just &lt;em&gt;wrong&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;I will probably write another article that outlines all the questions that I should have asked before starting this. My assumptions were not all quite valid, but I did have a sneaking suspicion given a couple very relevant experiences.&lt;/p&gt;
-
-&lt;p&gt;Several people asked me about a way to do big(ish) data at an affordable price. I enjoy owning hardware and infrastructure and from a business perspective that is a fairly decent endeavor in terms of static equity. I was bored with coding. The two of those items intersected and I decided to take on the task of bringing in some data clients and see if I could beat the services of other competitors and give them a better experience.&lt;/p&gt;
-
-&lt;p&gt;Disclosure: This site is currently running on our openstack deployment in &lt;a href=&#34;http://dtac.io&#34;&gt;DTAC&amp;rsquo;s&lt;/a&gt; private cloud&lt;/p&gt;
-
-&lt;p&gt;.
-.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/full_openstack.jpg&#34; alt=&#34;Full OpenStack&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;red-flags&#34;&gt;Red Flags&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Where there are &lt;em&gt;clouds&lt;/em&gt; of smoke, there is probably fire. - An Indian Truism&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;it-took-forever&#34;&gt;It Took Forever&lt;/h2&gt;
-
-&lt;p&gt;I witnessed an ambitious project slide face-first into the blue and white parking stall of the private cloud mall. Then later it was used as leverage to out every participant. I mostly attributed the breakdown to lack of time resources, OS talent and political infighting.  &lt;em&gt;nerds (heart) aws&lt;/em&gt; but more on that elsewhere.  Ignoring those huge red flags I figured my sysadmin abilities would be able to figure things out and surpass them.&lt;/p&gt;
-
-&lt;p&gt;My response: I got sysadmin skills and no politics. I&amp;rsquo;ve never failed to raise a datacenter infrastructure.&lt;/p&gt;
-
-&lt;h2 id=&#34;openstack-hate-speech&#34;&gt;OpenStack Hate Speech&lt;/h2&gt;
-
-&lt;p&gt;There was plenty of hating over OpenStack. More specifically there was a lot of negative commentary about Nova, Neutron and Cinder. Basically the heart of the application.&lt;/p&gt;
-
-&lt;p&gt;My response: I kinda need those bells and whistles so it&amp;rsquo;s worth dealing with monolithic bloat because that&amp;rsquo;s my only option.&lt;/p&gt;
-
-&lt;h2 id=&#34;nerds-heart-aws&#34;&gt;Nerds (heart) AWS&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;When there is blood in the streets, buy land. - Contrarian Invetors&amp;rsquo; Proverb&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Searching for OpenStack talent was like looking for unbiased political commentary on twitter. Just ain&amp;rsquo;t there.  Techs not only didn&amp;rsquo;t know it well, but most applicants that had it on their resumes didn&amp;rsquo;t want to deploy it. Out of 50 techs I talked with about private cloud work, 49 said they could help me set up with Amazon AW$.  It is entirely confusing to ask someone to help you with your private cloud and they offer to help what is essentially a competing public cloud.&lt;/p&gt;
-
-&lt;p&gt;A side note: Most tech professionals also said they were getting a &amp;ldquo;great deal&amp;rdquo; at Amazon. No financial officer I talked to shared this sentiment. I&amp;rsquo;m sure business math was never part of comp-sci. Food for thought.&lt;/p&gt;
-
-&lt;p&gt;My response: Well most nerds have near-0 business strategy. Also this indicates there is a massive gap in talent so I&amp;rsquo;d like to be here.&lt;/p&gt;
-
-&lt;h2 id=&#34;babylon-fortuna-ergo-enterprise-ready&#34;&gt;Babylon Fortuna ergo Enterprise-Ready&lt;/h2&gt;
-
-&lt;p&gt;The codebase is huge. And kinda old at this point. In internet years it&amp;rsquo;s about 50 years old.&lt;/p&gt;
-
-&lt;p&gt;My response: It is mature enough to use. I should be ashamed of myself. I deployed IBM Websphere and should have known better.&lt;/p&gt;
-
-&lt;h2 id=&#34;it-is-complicated&#34;&gt;It is Complicated&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/fb_complicated.png&#34; alt=&#34;It&#39;s Complicated&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Look at the diagram. Seriously Siri WHERE IS MY CAR!?!?!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://docs.openstack.org/icehouse/training-guides/content/figures/5/a/figures/openstack-arch-havana-logical-v1.jpg&#34; alt=&#34;OpenStack&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;BTW this image is taken from the OpenStack &amp;ldquo;Getting Started&amp;rdquo; section.&lt;/p&gt;
-
-&lt;p&gt;My response: Well, shit. Guess I&amp;rsquo;ve dealt with worse. I hope there isn&amp;rsquo;t magic happening. I&amp;rsquo;ll trust the Fuel installers. Oh God Fuel! don&amp;rsquo;t fail me!&lt;/p&gt;
-
-&lt;h2 id=&#34;it-is-fragile&#34;&gt;It Is Fragile&lt;/h2&gt;
-
-&lt;p&gt;Refer to the previous diagram. With so many moving parts and given the lack of talent capable of managing it there is a serious level of risk in trusting a critical production environment on this.&lt;/p&gt;
-
-&lt;p&gt;My response: Keep my public cloud fail overs built and ready to deploy. I&amp;rsquo;m a cheat.&lt;/p&gt;
-
-&lt;h2 id=&#34;it-is-vendor-driven&#34;&gt;It Is Vendor Driven&lt;/h2&gt;
-
-&lt;p&gt;I kinda knew that the growth of OpenStack was tainted by vendor intrigue. I have run into this spending a considerable amount of time working with OAuth 2.0 when the &amp;ldquo;framework&amp;rdquo; was going through proposals and the lead writers were splitting.&lt;/p&gt;
-
-&lt;p&gt;Cite: &lt;a href=&#34;https://www.openstack.org/summit/vancouver-2015/summit-videos/presentation/openstack-is-doomed-and-it-is-your-fault&#34;&gt;OpenStack is Doomed - Andy (termie) Smith&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;My response: Ick&lt;/p&gt;
-
-&lt;h1 id=&#34;the-final-decision&#34;&gt;The Final Decision&lt;/h1&gt;
-
-&lt;p&gt;While it might work for a team like RackSpace, I don&amp;rsquo;t think it fits what we need. The cost benefit of having a few drivers and some prebuilt scripts to managing images wasn&amp;rsquo;t enough to justify the cost and risk of having a system that is so fragile.&lt;/p&gt;
-
-&lt;p&gt;The risk and the knowns of unknowns inside the massive spaghetti of scope creep was enough that I couldn&amp;rsquo;t justify that I wouldn&amp;rsquo;t be able to jump in and fix something within less than a day. Pretty much every code fix I had to make took more than a day. More of 3-5 days to figure out each bug. That was the last straw.&lt;/p&gt;
-
-&lt;h2 id=&#34;opennebula&#34;&gt;OpenNebula&lt;/h2&gt;
-
-&lt;p&gt;We tried other stacks and I launched a multiple node infrastructure with OpenNebula. It was refreshingly vertical and self-contained. But still felt like it wanted to follow the hypervisor slipstream of OpenStack.&lt;/p&gt;
-
-&lt;h2 id=&#34;blah-stack&#34;&gt;Blah-Stack&lt;/h2&gt;
-
-&lt;p&gt;There was a lot of other options but I was burned out at this point.&lt;/p&gt;
-
-&lt;h2 id=&#34;future-plans&#34;&gt;Future Plans&lt;/h2&gt;
-
-&lt;p&gt;The focus internally is more on bare-metal and OS containers. So far so good.&lt;/p&gt;
-
-&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;There is no free ride. (Development is an Expect 2 Work Employment)&lt;/li&gt;
-&lt;li&gt;Swiss army knives suck for self-defense and bayonets&lt;/li&gt;
-&lt;li&gt;Don&amp;rsquo;t expect to launch a cloud out of the box that will fit your business needs&lt;/li&gt;
-&lt;li&gt;If you believe the marketing - baaah&lt;/li&gt;
-&lt;li&gt;Community first, politics last&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-      
+      <guid>http://scotttactical.com/post/sfp-vs.-qsfp/</guid>
+      <description>Networking Transceivers This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent. After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.
+Again this page is mostly for my notes.</description>
+    </item>
     
+    <item>
+      <title>Encrypt PostgreSQL Backup to S3</title>
+      <link>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</link>
+      <pubDate>Sat, 24 Dec 2016 06:41:07 -0800</pubDate>
       
+      <guid>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</guid>
+      <description>Encrypt Your DB Backups I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.
+Generate Keys From your user&amp;rsquo;s home directory:
+openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub
+Fill out the questions appropriately. Or not. I don&amp;rsquo;t think it matters really.
+That will create the public and private keys.
+backup_key.pem - private key backup_key.</description>
+    </item>
     
+    <item>
+      <title>Why We Quit OpenStack: or How I Lost 2 Months of My Life</title>
+      <link>http://scotttactical.com/why-we-quit-openstack/</link>
+      <pubDate>Fri, 28 Oct 2016 20:07:57 -0700</pubDate>
       
+      <guid>http://scotttactical.com/why-we-quit-openstack/</guid>
+      <description>TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.
+Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.
+I will probably write another article that outlines all the questions that I should have asked before starting this.</description>
+    </item>
     
+    <item>
+      <title>Purdue University Predicts Success</title>
+      <link>http://scotttactical.com/2016/04/purdue-university-predicts-success/</link>
+      <pubDate>Sun, 17 Apr 2016 15:59:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/2016/04/purdue-university-predicts-success/</guid>
+      <description>Purdue University Predicts Student Success Using Data Science Most people know that the student who is doing well inside a class may likely prosper in another class, but tend to you anticipate whether students would succeed according to the number of occasions they joined into the campus network?
+Using the explosion of information sets available now, Purdue University could evaluate data from hundreds of thousands of excellent and successful graduates, to assist conjecture models for graduation rates as well as on-time graduations.</description>
+    </item>
     
+    <item>
+      <title>The Fast-Growing Data Center Segment</title>
+      <link>http://scotttactical.com/2016/04/the-fast-growing-data-center-segment/</link>
+      <pubDate>Sat, 16 Apr 2016 15:59:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/2016/04/the-fast-growing-data-center-segment/</guid>
+      <description>How Fast-Growing Data Center Segment Bridges Corporate Networks and the Cloud Companies, searching to achieve the very best performance in the cloud, are putting a greater value on lowering the physical distance between their servers and their respective cloud providers. Colocation data centers, where their machines share space, emerged as a key point in enterprise cloud strategy.
+For CIOs, a significant advantage of colocation would be that the closeness to cloud providers makes connections faster.</description>
+    </item>
     
+    <item>
+      <title>Better Communication Through Big Data</title>
+      <link>http://scotttactical.com/2016/04/better-communication-through-big-data/</link>
+      <pubDate>Fri, 15 Apr 2016 15:59:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/2016/04/better-communication-through-big-data/</guid>
+      <description>Better Communication Through Big Data We&amp;rsquo;ve heard the word &amp;lsquo;Big Data&amp;rsquo; tossed around more recently. This is actually the idea of computationally examining very large data sets to show designs, trends, and associations, especially relevant to human behavior and interactions. Even though it still appears farfetched that the computer algorithm can improve personal connections, a lot of companies really are leveraging fraxel treatments through apps and gamification to enhance connections using their clients.</description>
+    </item>
     
+    <item>
+      <title>What Companies Do Not Understand About Employing for Data Scientist</title>
+      <link>http://scotttactical.com/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/</link>
+      <pubDate>Thu, 14 Apr 2016 15:59:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/</guid>
+      <description>What Companies Do Not Understand About Employing for Data Scientist Within The Data Incubator, I&amp;rsquo;ve spoken to hundreds of companies searching to make use of the expertise of data scientists - particularly people with advanced levels. Due to the hype surrounding big data nowadays, it&amp;rsquo;s unsurprising that there&amp;rsquo;s as much floating around as there are facts. Sadly, employing managers frequently be a victim of believing many common misconceptions actually was.</description>
+    </item>
     
+    <item>
+      <title>3 Reasons Why Data Centers Are Eco-Friendly</title>
+      <link>http://scotttactical.com/2016/04/3-reasons-why-data-centers-are-eco-friendly/</link>
+      <pubDate>Wed, 13 Apr 2016 15:59:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/2016/04/3-reasons-why-data-centers-are-eco-friendly/</guid>
+      <description>Reasons Why Data Centers Are Eco-Friendly Within the thick of the exciting election year, I figured it&amp;rsquo;d be interesting to go to politics. Not to endorse one of the candidates or predict a winner, actually, but to recall a telling moment before the inauguration in our current president.
+It had been December 2008, when Barbara Walters questioned President Barack Obama and his wife Michelle throughout a prime time ABC television special.</description>
+    </item>
     
+    <item>
+      <title>Data Science: Building Workplace Diversities</title>
+      <link>http://scotttactical.com/2016/04/data-science-building-workplace-diversities/</link>
+      <pubDate>Sat, 09 Apr 2016 15:59:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/2016/04/data-science-building-workplace-diversities/</guid>
+      <description>Data Science: Building Workplace Diversities Romantic relationships mixed with someone&amp;rsquo;s personal career and place of work might be a recipe for trouble but eHarmony thinks mingling these two might provide the ability to create a comfortable work environment while bringing people together at the jobs they love.
+Being that eHarmony&amp;rsquo;s algorithms can improve diversity in the workplace, there are numerous Silicon Valley companies that want to evaluate the possibility. This is obviously a heated topic without a quick solution.</description>
+    </item>
     
+    <item>
+      <title>Choosing Your Data Warehouse Product</title>
+      <link>http://scotttactical.com/2016/04/choosing-your-data-warehouse-product/</link>
+      <pubDate>Fri, 08 Apr 2016 15:59:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/2016/04/choosing-your-data-warehouse-product/</guid>
+      <description>Factors to Consider in Choosing Your Data Warehouse Product How big is your company, and what resources are at your disposal? What exactly are your performance needs? Responding to these questions and others will help you pick the best data warehouse platform.
+Once you have made the decision to build a new data warehouse, or expand a current one, you will want to pick the right technology for the organization.</description>
+    </item>
     
+    <item>
+      <title>Solving Society&#39;s Problems With Data</title>
+      <link>http://scotttactical.com/2016/04/solving-societys-problems-with-data/</link>
+      <pubDate>Thu, 07 Apr 2016 15:59:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/2016/04/solving-societys-problems-with-data/</guid>
+      <description>How Data Science can Solve Society&amp;rsquo;s Problems During the Data Science Bowl, scientists focused on real problems - how to build solutions that will benefit society. The 2010 competition centered particularly on cardiovascular disease.
+During the last decade, data science has developed this promising idea into a mainstream tool that companies and institutions have used at an entirely different level. Obviously, data science can also be valuable for addressing an increasing variety of problems in areas including medicine and</description>
+    </item>
     
+    <item>
+      <title>Data Science Job Search</title>
+      <link>http://scotttactical.com/2016/04/data-science-job-search/</link>
+      <pubDate>Wed, 06 Apr 2016 15:59:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/2016/04/data-science-job-search/</guid>
+      <description>How to Search for Data Science Jobs No one can stop the fast-faced growth of data science, and we all can see it everywhere in this world. Every day, we can see organizations and companies creating more data. But they cannot maximize the benefits of this huge amount of information because of the talent shortage in the industry. We have great amounts of data, yet they will become useless if they are never managed the right way.</description>
+    </item>
     
+    <item>
+      <title>Why Data Science in Marketing is Rising</title>
+      <link>http://scotttactical.com/2016/04/why-data-science-in-marketing-is-rising/</link>
+      <pubDate>Tue, 05 Apr 2016 15:59:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/2016/04/why-data-science-in-marketing-is-rising/</guid>
+      <description>The Rise of Data Science in Marketing As the &amp;ldquo;digital&amp;rdquo; age gets to be more of a lifestyle for everyone, a surge of information emerges by which actions and interactions could be planned to a particular behavior with enough precision. It has brought towards the rise of information science-or, in simpler terms, critical business information that brings clearness to how people interact within the digital world.
+Data science is essential for marketers since it helps local companies achieve, target, engage, and convert potential clients with increased granularity and precision.</description>
+    </item>
     
+    <item>
+      <title>Big Data and Storage: What are the Trends?</title>
+      <link>http://scotttactical.com/2016/04/big-data-and-storage-what-are-the-trends/</link>
+      <pubDate>Mon, 04 Apr 2016 15:59:17 -0800</pubDate>
       
-        <item>
-          <title>Django Search: Multiple Fields and Full Text</title>
-          <link>http://scotttactical.com/django-search-multiple-fields/</link>
-          <pubDate>Tue, 22 Mar 2016 22:34:50 PDT</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/django-search-multiple-fields/</guid>
-          <description>
-
-&lt;h1 id=&#34;text-search-django-model-fields&#34;&gt;Text Search - Django Model Fields&lt;/h1&gt;
-
-&lt;p&gt;Django has a pretty flexible ORM, but sometimes clients need a free-form text search to get down to the content that you are looking for. It is beyond the capability of most engineers to build a comprehensive search tool and shoehorn it into an existing application. There are people working on these problems for years.&lt;/p&gt;
-
-&lt;p&gt;This does remind me of a senior boss that asked me to add a fuzzy search field to an application and that it was &amp;ldquo;super simple&amp;rdquo;. He said &amp;ldquo;you just do a LIKE statement against all the fields we care about!&amp;rdquo; and proceeded to pseudo code it for me. He should read my post about how not to F&amp;rsquo;k up your engineering staff.&lt;/p&gt;
-
-&lt;h2 id=&#34;searching-with-like-statements&#34;&gt;Searching with Like Statements&lt;/h2&gt;
-
-&lt;p&gt;This is probably the first place an inexperienced engineer will start. Just pick the field and do a LIKE statement against it.&lt;/p&gt;
-
-&lt;p&gt;ex:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;User.objects.filter(username__icontains=keyword)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Which will result in:
-&lt;code&gt;SELECT * FROM ... WHERE USERNAME LIKE&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This doesn&amp;rsquo;t scale. It&amp;rsquo;s amateurish.&lt;/p&gt;
-
-&lt;p&gt;But this will satisfy an annoying manager for the time being considering they probably know little about computer science.&lt;/p&gt;
-
-&lt;h2 id=&#34;using-q-objects&#34;&gt;Using Q Objects&lt;/h2&gt;
-
-&lt;p&gt;The &lt;a href=&#34;https://docs.djangoproject.com/en/dev/topics/db/queries/#complex-lookups-with-q-objects&#34;&gt;Q object&lt;/a&gt; in Django is kinda nice. It wraps the queryset. I need a little more information on it to be able to speak intelligently. But that aside I decided to use it in a few places where dynamic queries were valuable.&lt;/p&gt;
-
-&lt;p&gt;After doing a little looking I found this response on &lt;a href=&#34;http://stackoverflow.com/questions/26634874/how-can-i-make-django-search-in-multiple-fields-using-querysets-and-mysql-full&#34;&gt;stack overflow&lt;/a&gt; where they suggested using this. I can tell immediately that it&amp;rsquo;s not very scalable under big load.  At the least I can get it going now with only minor levels of sin.&lt;/p&gt;
-
-&lt;p&gt;That post is apparently taken from &lt;a href=&#34;http://julienphalip.com/post/2825034077/adding-search-to-a-django-site-in-a-snap&#34;&gt;Julien Phalip - adding search to django in a snap.&lt;/a&gt;. So credit is given. Nice work.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def normalize_query(query_string,
-    findterms=re.compile(r&#39;&amp;quot;([^&amp;quot;]+)&amp;quot;|(\S+)&#39;).findall,
-    normspace=re.compile(r&#39;\s{2,}&#39;).sub):
-
-    &#39;&#39;&#39;
-    Splits the query string in invidual keywords, getting rid of unecessary spaces and grouping quoted words together.
-    Example:
-    &amp;gt;&amp;gt;&amp;gt; normalize_query(&#39;  some random  words &amp;quot;with   quotes  &amp;quot; and   spaces&#39;)
-        [&#39;some&#39;, &#39;random&#39;, &#39;words&#39;, &#39;with quotes&#39;, &#39;and&#39;, &#39;spaces&#39;]
-    &#39;&#39;&#39;
-
-    return [normspace(&#39;&#39;,(t[0] or t[1]).strip()) for t in findterms(query_string)]
-
-def get_query(query_string, search_fields):
-
-    &#39;&#39;&#39;
-    Returns a query, that is a combination of Q objects.
-    That combination aims to search keywords within a model by testing the given search fields.
-    &#39;&#39;&#39;
-
-    query = None # Query to search for every search term
-    terms = normalize_query(query_string)
-    for term in terms:
-        or_query = None # Query to search for a given term in each field
-        for field_name in search_fields:
-            q = Q(**{&amp;quot;%s__icontains&amp;quot; % field_name: term})
-            if or_query is None:
-                or_query = q
-            else:
-                or_query = or_query | q
-        if query is None:
-            query = or_query
-        else:
-            query = query &amp;amp; or_query
-
-def search_for_something(request):
-   query_string = &#39;&#39;
-   found_entries = None
-   if (&#39;q&#39; in request.GET) and request.GET[&#39;q&#39;].strip():
-       query_string = request.GET[&#39;q&#39;]
-       entry_query = get_query(query_string, [&#39;field1&#39;, &#39;field2&#39;, &#39;field3&#39;])
-       found_entries = Model.objects.filter(entry_query).order_by(&#39;-something&#39;)
-
-   return render_to_response(&#39;app/template-result.html&#39;,
-           { &#39;query_string&#39;: query_string, &#39;found_entries&#39;: found_entries },
-           context_instance=RequestContext(request)
-       )
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Another helpful resource was from &lt;a href=&#34;https://yeti.co/blog/global-search-in-django-rest-framework/&#34;&gt;Yeti&lt;/a&gt; adding in some global search. A bit outdated but a nice resource.&lt;/p&gt;
-
-&lt;h2 id=&#34;search-library&#34;&gt;Search Library&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/django-haystack/django-haystack&#34;&gt;https://github.com/django-haystack/django-haystack&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/etianen/django-watson&#34;&gt;https://github.com/etianen/django-watson&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-      
+      <guid>http://scotttactical.com/2016/04/big-data-and-storage-what-are-the-trends/</guid>
+      <description>Big Data and Storage: What are the Trends? As cloud computing is constantly disrupting traditional business models and large data keeps growing at tremendous rates, techies and traders alike are searching for top trends which will change the way we conduct business in 2016 and beyond. From emotional robots to driverless cars, here are five breakthrough improvements to keep track of as the year unfolds:
+ Hybrid and public clouds Machine learning Advancing automotive technology Emotion recognition software Big data simplified  Once we live in a future dominated by big data, cloud computing, driverless cars, and emotionally available robots, real life technology is rivaling as well as exceeding everything you&amp;rsquo;ve seen in sci-fi.</description>
+    </item>
     
+    <item>
+      <title>The Myths of Big Data</title>
+      <link>http://scotttactical.com/2016/04/the-myths-of-big-data/</link>
+      <pubDate>Mon, 04 Apr 2016 15:59:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/2016/04/the-myths-of-big-data/</guid>
+      <description>The Myths of Big Data – From Analysts’ Point of View As Big Data is constantly gaining prominence in the enterprise and consumer sector, keeping pace with developing technology has become a necessity for individuals wishing to stay relevant.
+In the last hours of BigDataSV 2016, theCUBE is covering #BigDataWeek, news concerning the #StrataHadoop conference, John Furrier (@furrier), Shaun Frick (@JeffFrick) and Peter Burris (@plburris). The cohosts of theCUBE from the SiliconANGLE Media team met to break down information they gathered during the conference and to provide selected quotes they’d collected throughout their time in the event.</description>
+    </item>
     
+    <item>
+      <title>Django Search: Multiple Fields and Full Text</title>
+      <link>http://scotttactical.com/django-search-multiple-fields/</link>
+      <pubDate>Tue, 22 Mar 2016 22:34:50 -0700</pubDate>
       
+      <guid>http://scotttactical.com/django-search-multiple-fields/</guid>
+      <description>Text Search - Django Model Fields Django has a pretty flexible ORM, but sometimes clients need a free-form text search to get down to the content that you are looking for. It is beyond the capability of most engineers to build a comprehensive search tool and shoehorn it into an existing application. There are people working on these problems for years.
+This does remind me of a senior boss that asked me to add a fuzzy search field to an application and that it was &amp;ldquo;super simple&amp;rdquo;.</description>
+    </item>
     
+    <item>
+      <title>Big Data on a Budget</title>
+      <link>http://scotttactical.com/2016/02/big-data-on-a-budget/</link>
+      <pubDate>Sun, 14 Feb 2016 15:59:17 -0800</pubDate>
       
-        <item>
-          <title>What Does a Data Scientist Do</title>
-          <link>http://scotttactical.com/what-does-data-scientist-do/</link>
-          <pubDate>Tue, 02 Feb 2016 12:57:42 PST</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/what-does-data-scientist-do/</guid>
-          <description>
-
-&lt;h1 id=&#34;what-does-a-data-scientist-do&#34;&gt;What Does a Data Scientist Do&lt;/h1&gt;
-
-&lt;h2 id=&#34;uncovering-the-key-capabilities-of-a-data-scientist&#34;&gt;Uncovering the Key Capabilities of a Data Scientist&lt;/h2&gt;
-
-&lt;p&gt;Are you thinking of pursuing a career as a data scientist? It has been published that being in this field could mean you will be in-demand for many companies. So, it is not surprising if the number of individuals turning to data science is fast increasing.&lt;/p&gt;
-
-&lt;p&gt;But being a data scientist will also bring you huge responsibilities. You will cover various roles from different industries and organizations, with academia, finance and government being just some of them. Some of them will differ from each other. The skills and duties that you will carry, as a data scientist, will hugely vary from each other.&lt;/p&gt;
-
-&lt;p&gt;Dr &lt;a href=&#34;https://www.linkedin.com/in/hankssteve&#34;&gt;Steve Hanks&lt;/a&gt;, a man who leads a team who is responsible of all analytical works in &lt;a href=&#34;http://whitepages.com&#34;&gt;whitePages.com&lt;/a&gt;, tells us that there are three things that every data scientist should understand. These three thoughts must always be kept in mind by those who are in the field.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Data has a MEANING.&lt;/li&gt;
-&lt;li&gt;Understand the problem that needs solution, and how data RELATES to it.&lt;/li&gt;
-&lt;li&gt;Understand the ENGINEERING.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Curated from: &lt;a href=&#34;http://www.forbes.com/sites/bernardmarr/&#34;&gt;Bernard Marr&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Read more:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.datasciencecentral.com/profiles/blogs/what-does-a-data-scientist-really-do-2&#34;&gt;http://www.datasciencecentral.com/profiles/blogs/what-does-a-data-scientist-really-do-2&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.forbes.com/sites/bernardmarr/2016/01/07/big-data-uncovered-what-does-a-data-scientist-really-do/#2715e4857a0b34f9a86e6f7f&#34;&gt;http://www.forbes.com/sites/bernardmarr/2016/01/07/big-data-uncovered-what-does-a-data-scientist-really-do/#2715e4857a0b34f9a86e6f7f&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-      
+      <guid>http://scotttactical.com/2016/02/big-data-on-a-budget/</guid>
+      <description>Big Data on a Budget: How To Do It?
+Investing in big data could mean getting those tools and services that are needed to make it effective - Software, Hardware and a new staff. These will surely add to your expenses, and most business owners never aimed for that.
+Good thing, there are ways that you can minimize your costs with big data. These tips and ideas will be very helpful for every company who are looking for further help and innovation that big data can bring.</description>
+    </item>
     
+    <item>
+      <title>Microsoft Accelerator Seattle Machine Learning Funding</title>
+      <link>http://scotttactical.com/2016/02/microsoft-accelerator-seattle-machine-learning-funding/</link>
+      <pubDate>Tue, 02 Feb 2016 12:57:42 -0800</pubDate>
       
-        <item>
-          <title>Health, Interconnectivity - The Data Revolution</title>
-          <link>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</link>
-          <pubDate>Thu, 10 Dec 2015 07:34:17 PST</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
-          <description>
-
-&lt;h1 id=&#34;health-medical-interconnectivity-and-the-coming-data-revolution&#34;&gt;Health, Medical Interconnectivity and The Coming Data Revolution&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/future-medicine-small.jpg&#34; alt=&#34;Medicine In The Future&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;johnson-davis-walk&#34;&gt;Johnson Davis&amp;rsquo; Walk&lt;/h2&gt;
-
-&lt;p&gt;Six red indicators breach the serene layout of the medical information dashboard. Gauges, charts and graphs provide human cues concerning the information flowing through the Intra-Medical Services Accountability Pipeline. The IMSAP emerged in evolutionary form as various government, education and enterprises started the race to consume the calculus of living data. And now these machines of data consumption interpret the flow of what some consider the representation of that thing which connects life and machine.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;This is already too far out of alignment. Go ahead and authorize a broadcast.&amp;rdquo; The leather on a reclined command chair squeaks as a technical nurse analyst operating somewhere in west cornfield office Omaha adjusts his virtual reality enhanced workstation. He then presses a projected button in front of him to broadcast a reactionary command to the IMSAP allowing it to commence with corrective actions.&lt;/p&gt;
-
-&lt;p&gt;A thirty two character hash appears above those six red indicators. Each indicator represents a series of tests that have either passed or failed. The metrics on this dashboard are human readable graphs and gauges which represent the aggregations that were formed before various disparate machines decided to trigger these events.&lt;/p&gt;
-
-&lt;p&gt;Helped by a generous grant from the Department of Health, one US company started providing a selection of wearable transmission and monitoring devices to anyone who requested one. A super watch. Stylish enough and nearly indestructible: each one is paired to the owner&amp;rsquo;s own DNA sub-sequence so basically safe from theft or ending up on Pawn Stars. Inside the grayish protective shell is a lithium battery that can power the device well beyond the normal span of customary planned obsolescence.&lt;/p&gt;
-
-&lt;p&gt;Each watch powers various monitors that track not only the wearer&amp;rsquo;s location and environment but will also track a number of vitals and chemical indicators. Literally the entire band is an array of sensors. It can tell if the wearer is hydrated, if the skin started perspiring, if the glucose levels are spiking, or if the wearer is above the legal intoxication level for driving. Some watches have become an insurance imperative for obvious reasons.&lt;/p&gt;
-
-&lt;p&gt;Early wearable devices were tethered to phones or computers which would store and transmit to remote servers. These new devices record, buffer and broadcast their data continuously. The device will buffer several gigabytes of data and burst them out in order of importance once the wearer passes an access point relay station. With the interconnectivity of utilities, vehicles, city-wide wifi or personal hotspots the device has plenty of bandwidth to upload gigabytes of raw data every day into storage vaults holding petabytes of human biometrics.&lt;/p&gt;
-
-&lt;p&gt;Each relay station will bounce data around and apply its own level of security. The data is eventually aggregated and stored at any number of server farms which catalog and move the data based on the tasks.&lt;/p&gt;
-
-&lt;p&gt;Several companies and healthcare organizations have &amp;ldquo;subscribed&amp;rdquo; to this firehose of data with each promising to monitor or monetize the flow of data in a slightly different way. Because the data is identified by strings of characters or hashes the data can be recorded or parsed and then reported on without having to identify personal information. Much of the data is broken into blocks and only understandable by those consumers who own the tracking codes to piece them together.&lt;/p&gt;
-
-&lt;p&gt;Wearers can subscribe to a service and match to their hash for real-time health tracking or companies can do the same for bulk users. Some companies pull in various other data streams to allow machines to find correlations between data from other devices with the data coming from the wearer.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;The initial report shows the first indicator was an anxiety and flight risk flag coming from the HHS. His transportation pattern altered radically from normal routes and the account has a flag on it for persons of known risk.&amp;rdquo; announces the technical operator. &amp;ldquo;His records are coming up now. He is Mr. Johnson Davis of Phoenix, Arizona. It appears he has gone on a spontaneous and brisk walk.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;The second indicator comes from the medical office tracking his progress which says that the device accelerometer is showing extreme body movements coupled with lower skin temperatures and higher levels of perspiration. {Serotonin levels are out of the bracket} It broke a trend line that was tracking depression recovery progress&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;The third and fourth indicators were from Dark Gray deep learning algorithms. It pulled from the in-home monitoring device and also the pharmacy which has recorded a distinct distortion in blood chemical levels indicating that the Mr Davis has diminished or ceased his dosage. It doesn&amp;rsquo;t appear that he is intoxicated. It might have pulled in sentiment off his social media. That thing is creepy that way; reading all our messages and making note of our less-than-optimistic disposition.&amp;rdquo;&lt;/p&gt;
-
-&lt;h2 id=&#34;action&#34;&gt;Action&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/doctor-future1.jpg&#34; alt=&#34;Future Doctors&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Let&amp;rsquo;s try to contact his physician and then see if we can give mister Davis a call to see if he is okay.&amp;rdquo; A supervisor requests access to the wearers full records. Most data is stored in a database holding of a majority of the nation&amp;rsquo;s citizens, but some has to come from other sources. That request triggers cascading data requests from a list of Application Programming Interfaces (API) approved for the supervisors access and appropriate for the given threats. Each call is validated by a central HIPAA authorization service API that checks access controls for internal and external data.&lt;/p&gt;
-
-&lt;p&gt;After a couple seconds all the API calls return and the data is aggregated into a patient data record object that is both human and machine readable. After considerable debate and mangling an industry-wide format for data records was created allowing for the creation of generic interfaces that can easy view any type of patient record using the best in user interfaces.&lt;/p&gt;
-
-&lt;p&gt;Hypermedia embeds metadata about how to transverse the record including ways to find those first degree contacts associated to the record. The supervisors access and need allowed for the receipt of links to the medical organizations and professionals associated to the wearer.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;I have the vitals from the device here but it stopped. I think that is why indicator five went off. He is too far away from any access points so maybe Johnny is walking out into the woods. It will probably get a GPS blip in a couple minutes though.&amp;rdquo; reports the technician again. &amp;ldquo;The sixth IMSAP went off because both his cellphone is shut off or broken in addition to indicator five and two being active. It catches old folks who fall mostly.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;He was diagnosed with a major depressive disorder and prescribed medication. The physician is on chat and is getting a prescription recommendation based on the feed.&amp;rdquo; says the supervisor.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Was he at the golf course?&amp;rdquo; asks the technician jokingly.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;No he was asleep. He&amp;rsquo;s in India.&amp;rdquo; responds the supervisor.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Okay, I have dropped a marker and a care worker has already added into his route.&amp;rdquo; indicates the technician pointing at a map overlay of the area. &amp;ldquo;And the doctor has submitted the suggested drug formula from the feed to the API at the drug lab which is starting to print the pills right now. He will be in the area with the corrective prescription in a couple minutes.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Pushing back into his chair the tech relaxes, &amp;ldquo;Evening, mister Davis. Your cocktail is queued.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;fin.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;points-of-interest&#34;&gt;Points of Interest&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;API&lt;/li&gt;
-&lt;li&gt;Data format
-
-&lt;ul&gt;
-&lt;li&gt;Related records&lt;/li&gt;
-&lt;li&gt;Social media&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Machine learning
-
-&lt;ul&gt;
-&lt;li&gt;Deep learning&lt;/li&gt;
-&lt;li&gt;Integration / collaboration&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Storage size&lt;/li&gt;
-&lt;li&gt;Authorization (HIPAA)
-
-&lt;ul&gt;
-&lt;li&gt;Centralized controls&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Authentication
-
-&lt;ul&gt;
-&lt;li&gt;Devices&lt;/li&gt;
-&lt;li&gt;Agents&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Outsourcing medicine&lt;/li&gt;
-&lt;li&gt;Personalized prescriptions
-
-&lt;ul&gt;
-&lt;li&gt;3D printed&lt;/li&gt;
-&lt;li&gt;Matched to DNA&lt;/li&gt;
-&lt;li&gt;On demand&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.wearable-technologies.com/2015/06/one-single-device-to-diagnose-a-set-of-15-medical-conditions/&#34;&gt;https://www.wearable-technologies.com/2015/06/one-single-device-to-diagnose-a-set-of-15-medical-conditions/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.mckinsey.com/insights/pharmaceuticals_and_medical_products/the_role_of_big_data_in_medicine&#34;&gt;http://www.mckinsey.com/insights/pharmaceuticals_and_medical_products/the_role_of_big_data_in_medicine&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.wired.com/insights/2014/08/patient-monitoring-big-data-future-healthcare/&#34;&gt;http://www.wired.com/insights/2014/08/patient-monitoring-big-data-future-healthcare/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.withings.com/us/en/products/pulse&#34;&gt;http://www.withings.com/us/en/products/pulse&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.washingtonpost.com/news/innovations/wp/2015/08/11/why-it-matters-that-the-fda-just-approved-the-first-3d-printed-drug/&#34;&gt;https://www.washingtonpost.com/news/innovations/wp/2015/08/11/why-it-matters-that-the-fda-just-approved-the-first-3d-printed-drug/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://genomemag.com/what-is-personalized-medicine/#.VmmrzXurau4&#34;&gt;http://genomemag.com/what-is-personalized-medicine/#.VmmrzXurau4&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.magicleap.com/#/home&#34;&gt;http://www.magicleap.com/#/home&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-      
+      <guid>http://scotttactical.com/2016/02/microsoft-accelerator-seattle-machine-learning-funding/</guid>
+      <description>Microsoft&amp;rsquo;s Seattle Accelerator Presents the 10 Machine Learning and Data Science Startups In 2014, Microsoft&amp;rsquo; accelerator in Seattle was launched with the group of home automation startups. In the year 2015, it opened the door of opportunities for the &amp;ldquo;digital work&amp;rdquo; companies as their second batch.
+This 2016, along with their discovery that there is a $1 billion venture capital invested in data science and machine learning over the past 2 years, Microsoft welcomed their third cohort - the group for cognitive technology.</description>
+    </item>
     
-
+    <item>
+      <title>What Does a Data Scientist Do</title>
+      <link>http://scotttactical.com/what-does-data-scientist-do/</link>
+      <pubDate>Tue, 02 Feb 2016 12:57:42 -0800</pubDate>
+      
+      <guid>http://scotttactical.com/what-does-data-scientist-do/</guid>
+      <description>What Does a Data Scientist Do Uncovering the Key Capabilities of a Data Scientist Are you thinking of pursuing a career as a data scientist? It has been published that being in this field could mean you will be in-demand for many companies. So, it is not surprising if the number of individuals turning to data science is fast increasing.
+But being a data scientist will also bring you huge responsibilities.</description>
+    </item>
+    
+    <item>
+      <title>Health, Interconnectivity - The Data Revolution</title>
+      <link>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</link>
+      <pubDate>Thu, 10 Dec 2015 07:34:17 -0800</pubDate>
+      
+      <guid>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
+      <description>Health, Medical Interconnectivity and The Coming Data Revolution Johnson Davis&amp;rsquo; Walk Six red indicators breach the serene layout of the medical information dashboard. Gauges, charts and graphs provide human cues concerning the information flowing through the Intra-Medical Services Accountability Pipeline. The IMSAP emerged in evolutionary form as various government, education and enterprises started the race to consume the calculus of living data. And now these machines of data consumption interpret the flow of what some consider the representation of that thing which connects life and machine.</description>
+    </item>
+    
   </channel>
 </rss>

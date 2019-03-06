@@ -1,84 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scott Tactical </title>
+    <title>Linux on Scott Tactical</title>
     <link>http://scotttactical.com/tags/linux/</link>
+    <description>Recent content in Linux on Scott Tactical</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Scott Tactical</author>
-    <rights>(C) 2017</rights>
-    <updated>2015-02-25 00:00:00 &#43;0000 UTC</updated>
-
+    <lastBuildDate>Wed, 25 Feb 2015 00:00:00 +0000</lastBuildDate>
     
-      
-        <item>
-          <title>Linux File Manipulation Shortcuts and Commands</title>
-          <link>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</link>
-          <pubDate>Wed, 25 Feb 2015 00:00:00 UTC</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid>
-          <description>
-
-&lt;h1 id=&#34;linux-file-manipulation-commands&#34;&gt;Linux File Manipulation Commands&lt;/h1&gt;
-
-&lt;p&gt;I&amp;rsquo;ll keep updating this with various commands that I run into. If I find new ones I&amp;rsquo;ll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.&lt;/p&gt;
-
-&lt;h2 id=&#34;file-searching&#34;&gt;File Searching&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;List of file extensions.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;awk + grep : find all the file extensions. It will also skip your &amp;ldquo;git&amp;rdquo; repository.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;find . -type f -name &amp;quot;*.*&amp;quot; ! -path &amp;quot;./.git/*&amp;quot; | awk -F. &#39;!a[$NF]++{print $NF}&#39;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;To get the count then simply add `wc` command.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;find . -type f -name &amp;quot;*.*&amp;quot; ! -path &amp;quot;./.git/*&amp;quot; | awk -F. &#39;!a[$NF]++{print $NF}&#39; | wc -l&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;file-information&#34;&gt;File Information&lt;/h2&gt;
-
-&lt;p&gt;Print the longest line in a file&lt;/p&gt;
-
-&lt;p&gt;awk &amp;lsquo;length &amp;gt; m { m = length; a = $0 } END { print a }&amp;rsquo; input-file&lt;/p&gt;
-
-&lt;p&gt;Get the line number of the longest line&lt;/p&gt;
-
-&lt;p&gt;awk &amp;lsquo;length &amp;gt; m { m = length; a = NR } END { print a }&amp;rsquo; input-file&lt;/p&gt;
-
-&lt;h2 id=&#34;vim-commands&#34;&gt;Vim Commands&lt;/h2&gt;
-
-&lt;p&gt;To find non-ascii characters in your file:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/[^\x00-\x7F]&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;logs&#34;&gt;Logs&lt;/h2&gt;
-
-&lt;h3 id=&#34;apache-logs&#34;&gt;Apache Logs&lt;/h3&gt;
-
-&lt;p&gt;Find count of unique IP addresses&lt;/p&gt;
-
-&lt;p&gt;Get the IP&amp;rsquo;s - usually the first item&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ awk &#39;{ print $1 } &#39; access_log&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Sort them&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ awk &#39;{ print $1 } &#39; access_log | sort&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;They get only the unique items using the uniq command. You can count these if you want.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ awk &#39;{ print $1 } &#39; access_log | sort | uniq&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;To get the counts and sort them by totals.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ awk &#39;{ print $1 } &#39; access_log | sort | uniq -c | sort -n -k 1&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If you only want to show the highest numbers.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ awk &#39;{ print $1 } &#39; access_log | sort | uniq -c | sort -n -k 1 | tail&lt;/code&gt;&lt;/p&gt;
-</description>
-        </item>
-      
+	<atom:link href="http://scotttactical.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
-
+    
+    <item>
+      <title>Linux File Manipulation Shortcuts and Commands</title>
+      <link>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</link>
+      <pubDate>Wed, 25 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid>
+      <description>Linux File Manipulation Commands I&amp;rsquo;ll keep updating this with various commands that I run into. If I find new ones I&amp;rsquo;ll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.
+File Searching List of file extensions.
+awk + grep : find all the file extensions. It will also skip your &amp;ldquo;git&amp;rdquo; repository.
+find . -type f -name &amp;quot;*.</description>
+    </item>
+    
   </channel>
 </rss>

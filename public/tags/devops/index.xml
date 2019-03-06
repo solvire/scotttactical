@@ -1,429 +1,72 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scott Tactical </title>
+    <title>Devops on Scott Tactical</title>
     <link>http://scotttactical.com/tags/devops/</link>
+    <description>Recent content in Devops on Scott Tactical</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Scott Tactical</author>
-    <rights>(C) 2017</rights>
-    <updated>2016-12-24 06:41:07 -0800 PST</updated>
-
+    <lastBuildDate>Sat, 24 Dec 2016 06:41:07 -0800</lastBuildDate>
     
-      
-        <item>
-          <title>Encrypt PostgreSQL Backup to S3</title>
-          <link>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</link>
-          <pubDate>Sat, 24 Dec 2016 06:41:07 PST</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</guid>
-          <description>
-
-&lt;h1 id=&#34;encrypt-your-db-backups&#34;&gt;Encrypt Your DB Backups&lt;/h1&gt;
-
-&lt;p&gt;I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.&lt;/p&gt;
-
-&lt;h2 id=&#34;generate-keys&#34;&gt;Generate Keys&lt;/h2&gt;
-
-&lt;p&gt;From your user&amp;rsquo;s home directory:&lt;/p&gt;
-
-&lt;p&gt;openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub&lt;/p&gt;
-
-&lt;p&gt;Fill out the questions appropriately. Or not. I don&amp;rsquo;t think it matters really.&lt;/p&gt;
-
-&lt;p&gt;That will create the public and private keys.&lt;/p&gt;
-
-&lt;p&gt;backup_key.pem - private key
-  backup_key.pem.pub - public key&lt;/p&gt;
-
-&lt;h2 id=&#34;add-aws-keys&#34;&gt;Add AWS Keys&lt;/h2&gt;
-
-&lt;p&gt;Create a file to hold your AWS keys.&lt;/p&gt;
-
-&lt;p&gt;mkdir ~/.aws
-  vi ~/.aws/credentials&lt;/p&gt;
-
-&lt;p&gt;Here is the format:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[default]
-aws_access_key_id = ACCESSKEY
-aws_secret_access_key = SECRETKEY
-aws_region = us-east-1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;backup-script&#34;&gt;Backup Script&lt;/h1&gt;
-
-&lt;p&gt;I don&amp;rsquo;t want to bore with details but here is what this script will do from a high level:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Take DB name&lt;/li&gt;
-&lt;li&gt;Set the backup file name with timestamp&lt;/li&gt;
-&lt;li&gt;dump the DB with pg_dump&lt;/li&gt;
-&lt;li&gt;remove the old versions&lt;/li&gt;
-&lt;li&gt;copy to s3 for storage&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;!/bin/bash
-# #######################
-
-# Database Name
-database_name=&amp;quot;$1&amp;quot;
-backup_public_key=&amp;quot;/HOMDIR/.ssh/backup_key.pem.pub&amp;quot;
-
-# Location to place backups.
-backup_dir=&amp;quot;/tmp/db_backups/&amp;quot;
-# Numbers of days you want to keep copies of your databases
-
-number_of_days=10
-if [ -z &amp;quot;${database_name}&amp;quot; ]
-then
- echo &amp;quot;Please specify a database name as the first argument&amp;quot;
- exit 1
-fi
-
-# String to append to the name of the backup files
-backup_date=`date +%Y-%m-%d-%H-%M-%S`
-backup_name=&amp;quot;${database_name}.${backup_date}.sql.bz2.enc&amp;quot;
-echo &amp;quot;Dumping ${database_name} to ${backup_dir}${backup_name}&amp;quot;
-
-pg_dump ${database_name}|bzip2|openssl smime -encrypt \
- -aes256 -binary -outform DEM \
- -out ${backup_dir}${backup_name} \
- &amp;quot;${backup_public_key}&amp;quot;
-
-find ${backup_dir} -type f -prune -mtime \
-    +${number_of_days} -exec rm -f {} \;
-
-# push file to S3
-aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;crontab&#34;&gt;Crontab&lt;/h2&gt;
-
-&lt;p&gt;Set up a crontab for this script. This one fires off at 3am PT daily. Change as needed.&lt;/p&gt;
-
-&lt;p&gt;crontab -e
-  0 3 * * * /location/pg_backup.sh YOURDB&lt;/p&gt;
-
-&lt;h1 id=&#34;decrypt&#34;&gt;Decrypt&lt;/h1&gt;
-
-&lt;p&gt;Decryption is pretty straight forward. Get your private key and pull the file from S3.&lt;/p&gt;
-
-&lt;p&gt;openssl smime -decrypt -in my_database.sql.sql.bz2.enc -binary -inform DEM -inkey private.pem | bzcat &amp;gt;  my_database.sql.sql&lt;/p&gt;
-
-&lt;h1 id=&#34;credits&#34;&gt;Credits&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/&#34;&gt;https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-      
+	<atom:link href="http://scotttactical.com/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
-      
-        <item>
-          <title>HowTo Bind Multiple Terminals MacOS-X</title>
-          <link>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</link>
-          <pubDate>Tue, 29 Nov 2016 19:09:21 PST</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</guid>
-          <description>
-
-&lt;h1 id=&#34;binding-multiple-terminals&#34;&gt;Binding Multiple Terminals&lt;/h1&gt;
-
-&lt;p&gt;I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.&lt;/p&gt;
-
-&lt;p&gt;I tried a few other terminal apps. Particularly &lt;a href=&#34;https://www.iterm2.com/documentation-one-page.html&#34;&gt;iTerm2&lt;/a&gt; that has some nice broadcasting. But I didn&amp;rsquo;t like having to deal with the tabs and keystrokes. I kinda liked having multiple windows and the ease of launching with csshX&lt;/p&gt;
-
-&lt;h1 id=&#34;csshx-installation&#34;&gt;csshX Installation&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;csshX - Cluster SSH tool using MacOS-X Terminal.app&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Installation is trivial.&lt;/p&gt;
-
-&lt;p&gt;brew install csshx&lt;/p&gt;
-
-&lt;p&gt;See if you have a working copy&lt;/p&gt;
-
-&lt;p&gt;csshx &amp;ndash;help&lt;/p&gt;
-
-&lt;h1 id=&#34;configure-csshx&#34;&gt;Configure csshX&lt;/h1&gt;
-
-&lt;p&gt;Create a config file. I chose to set up an rc file in my home directory.&lt;/p&gt;
-
-&lt;p&gt;touch ~/.csshrc&lt;/p&gt;
-
-&lt;h2 id=&#34;logging-in-with-ssh-keys&#34;&gt;Logging In With SSH Keys&lt;/h2&gt;
-
-&lt;p&gt;You are going to need this. Pretty much all cloud servers require keys.&lt;/p&gt;
-
-&lt;p&gt;csshx &amp;ndash;login ubuntu &amp;ndash;ssh_args &amp;ldquo;-i .ssh/your_private_key&amp;rdquo; host1 host2&lt;/p&gt;
-
-&lt;p&gt;That should get you pretty far.&lt;/p&gt;
-</description>
-        </item>
-      
     
+    <item>
+      <title>Encrypt PostgreSQL Backup to S3</title>
+      <link>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</link>
+      <pubDate>Sat, 24 Dec 2016 06:41:07 -0800</pubDate>
       
-        <item>
-          <title>Why We Quit OpenStack: or How I Lost 2 Months of My Life</title>
-          <link>http://scotttactical.com/why-we-quit-openstack/</link>
-          <pubDate>Fri, 28 Oct 2016 20:07:57 PDT</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/why-we-quit-openstack/</guid>
-          <description>
-
-&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
-
-&lt;p&gt;OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.&lt;/p&gt;
-
-&lt;h1 id=&#34;backstory&#34;&gt;Backstory&lt;/h1&gt;
-
-&lt;p&gt;Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just &lt;em&gt;wrong&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;I will probably write another article that outlines all the questions that I should have asked before starting this. My assumptions were not all quite valid, but I did have a sneaking suspicion given a couple very relevant experiences.&lt;/p&gt;
-
-&lt;p&gt;Several people asked me about a way to do big(ish) data at an affordable price. I enjoy owning hardware and infrastructure and from a business perspective that is a fairly decent endeavor in terms of static equity. I was bored with coding. The two of those items intersected and I decided to take on the task of bringing in some data clients and see if I could beat the services of other competitors and give them a better experience.&lt;/p&gt;
-
-&lt;p&gt;Disclosure: This site is currently running on our openstack deployment in &lt;a href=&#34;http://dtac.io&#34;&gt;DTAC&amp;rsquo;s&lt;/a&gt; private cloud&lt;/p&gt;
-
-&lt;p&gt;.
-.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/full_openstack.jpg&#34; alt=&#34;Full OpenStack&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;red-flags&#34;&gt;Red Flags&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Where there are &lt;em&gt;clouds&lt;/em&gt; of smoke, there is probably fire. - An Indian Truism&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;it-took-forever&#34;&gt;It Took Forever&lt;/h2&gt;
-
-&lt;p&gt;I witnessed an ambitious project slide face-first into the blue and white parking stall of the private cloud mall. Then later it was used as leverage to out every participant. I mostly attributed the breakdown to lack of time resources, OS talent and political infighting.  &lt;em&gt;nerds (heart) aws&lt;/em&gt; but more on that elsewhere.  Ignoring those huge red flags I figured my sysadmin abilities would be able to figure things out and surpass them.&lt;/p&gt;
-
-&lt;p&gt;My response: I got sysadmin skills and no politics. I&amp;rsquo;ve never failed to raise a datacenter infrastructure.&lt;/p&gt;
-
-&lt;h2 id=&#34;openstack-hate-speech&#34;&gt;OpenStack Hate Speech&lt;/h2&gt;
-
-&lt;p&gt;There was plenty of hating over OpenStack. More specifically there was a lot of negative commentary about Nova, Neutron and Cinder. Basically the heart of the application.&lt;/p&gt;
-
-&lt;p&gt;My response: I kinda need those bells and whistles so it&amp;rsquo;s worth dealing with monolithic bloat because that&amp;rsquo;s my only option.&lt;/p&gt;
-
-&lt;h2 id=&#34;nerds-heart-aws&#34;&gt;Nerds (heart) AWS&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;When there is blood in the streets, buy land. - Contrarian Invetors&amp;rsquo; Proverb&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Searching for OpenStack talent was like looking for unbiased political commentary on twitter. Just ain&amp;rsquo;t there.  Techs not only didn&amp;rsquo;t know it well, but most applicants that had it on their resumes didn&amp;rsquo;t want to deploy it. Out of 50 techs I talked with about private cloud work, 49 said they could help me set up with Amazon AW$.  It is entirely confusing to ask someone to help you with your private cloud and they offer to help what is essentially a competing public cloud.&lt;/p&gt;
-
-&lt;p&gt;A side note: Most tech professionals also said they were getting a &amp;ldquo;great deal&amp;rdquo; at Amazon. No financial officer I talked to shared this sentiment. I&amp;rsquo;m sure business math was never part of comp-sci. Food for thought.&lt;/p&gt;
-
-&lt;p&gt;My response: Well most nerds have near-0 business strategy. Also this indicates there is a massive gap in talent so I&amp;rsquo;d like to be here.&lt;/p&gt;
-
-&lt;h2 id=&#34;babylon-fortuna-ergo-enterprise-ready&#34;&gt;Babylon Fortuna ergo Enterprise-Ready&lt;/h2&gt;
-
-&lt;p&gt;The codebase is huge. And kinda old at this point. In internet years it&amp;rsquo;s about 50 years old.&lt;/p&gt;
-
-&lt;p&gt;My response: It is mature enough to use. I should be ashamed of myself. I deployed IBM Websphere and should have known better.&lt;/p&gt;
-
-&lt;h2 id=&#34;it-is-complicated&#34;&gt;It is Complicated&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/fb_complicated.png&#34; alt=&#34;It&#39;s Complicated&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Look at the diagram. Seriously Siri WHERE IS MY CAR!?!?!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://docs.openstack.org/icehouse/training-guides/content/figures/5/a/figures/openstack-arch-havana-logical-v1.jpg&#34; alt=&#34;OpenStack&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;BTW this image is taken from the OpenStack &amp;ldquo;Getting Started&amp;rdquo; section.&lt;/p&gt;
-
-&lt;p&gt;My response: Well, shit. Guess I&amp;rsquo;ve dealt with worse. I hope there isn&amp;rsquo;t magic happening. I&amp;rsquo;ll trust the Fuel installers. Oh God Fuel! don&amp;rsquo;t fail me!&lt;/p&gt;
-
-&lt;h2 id=&#34;it-is-fragile&#34;&gt;It Is Fragile&lt;/h2&gt;
-
-&lt;p&gt;Refer to the previous diagram. With so many moving parts and given the lack of talent capable of managing it there is a serious level of risk in trusting a critical production environment on this.&lt;/p&gt;
-
-&lt;p&gt;My response: Keep my public cloud fail overs built and ready to deploy. I&amp;rsquo;m a cheat.&lt;/p&gt;
-
-&lt;h2 id=&#34;it-is-vendor-driven&#34;&gt;It Is Vendor Driven&lt;/h2&gt;
-
-&lt;p&gt;I kinda knew that the growth of OpenStack was tainted by vendor intrigue. I have run into this spending a considerable amount of time working with OAuth 2.0 when the &amp;ldquo;framework&amp;rdquo; was going through proposals and the lead writers were splitting.&lt;/p&gt;
-
-&lt;p&gt;Cite: &lt;a href=&#34;https://www.openstack.org/summit/vancouver-2015/summit-videos/presentation/openstack-is-doomed-and-it-is-your-fault&#34;&gt;OpenStack is Doomed - Andy (termie) Smith&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;My response: Ick&lt;/p&gt;
-
-&lt;h1 id=&#34;the-final-decision&#34;&gt;The Final Decision&lt;/h1&gt;
-
-&lt;p&gt;While it might work for a team like RackSpace, I don&amp;rsquo;t think it fits what we need. The cost benefit of having a few drivers and some prebuilt scripts to managing images wasn&amp;rsquo;t enough to justify the cost and risk of having a system that is so fragile.&lt;/p&gt;
-
-&lt;p&gt;The risk and the knowns of unknowns inside the massive spaghetti of scope creep was enough that I couldn&amp;rsquo;t justify that I wouldn&amp;rsquo;t be able to jump in and fix something within less than a day. Pretty much every code fix I had to make took more than a day. More of 3-5 days to figure out each bug. That was the last straw.&lt;/p&gt;
-
-&lt;h2 id=&#34;opennebula&#34;&gt;OpenNebula&lt;/h2&gt;
-
-&lt;p&gt;We tried other stacks and I launched a multiple node infrastructure with OpenNebula. It was refreshingly vertical and self-contained. But still felt like it wanted to follow the hypervisor slipstream of OpenStack.&lt;/p&gt;
-
-&lt;h2 id=&#34;blah-stack&#34;&gt;Blah-Stack&lt;/h2&gt;
-
-&lt;p&gt;There was a lot of other options but I was burned out at this point.&lt;/p&gt;
-
-&lt;h2 id=&#34;future-plans&#34;&gt;Future Plans&lt;/h2&gt;
-
-&lt;p&gt;The focus internally is more on bare-metal and OS containers. So far so good.&lt;/p&gt;
-
-&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;There is no free ride. (Development is an Expect 2 Work Employment)&lt;/li&gt;
-&lt;li&gt;Swiss army knives suck for self-defense and bayonets&lt;/li&gt;
-&lt;li&gt;Don&amp;rsquo;t expect to launch a cloud out of the box that will fit your business needs&lt;/li&gt;
-&lt;li&gt;If you believe the marketing - baaah&lt;/li&gt;
-&lt;li&gt;Community first, politics last&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-      
+      <guid>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</guid>
+      <description>Encrypt Your DB Backups I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.
+Generate Keys From your user&amp;rsquo;s home directory:
+openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub
+Fill out the questions appropriately. Or not. I don&amp;rsquo;t think it matters really.
+That will create the public and private keys.
+backup_key.pem - private key backup_key.</description>
+    </item>
     
+    <item>
+      <title>HowTo Bind Multiple Terminals MacOS-X</title>
+      <link>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</link>
+      <pubDate>Tue, 29 Nov 2016 19:09:21 -0800</pubDate>
       
-        <item>
-          <title>Download an Entire Site with wget - mac OSX</title>
-          <link>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</link>
-          <pubDate>Mon, 21 Sep 2015 00:00:00 UTC</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</guid>
-          <description>
-
-&lt;h1 id=&#34;download-the-entire-site-with-wget&#34;&gt;Download the Entire Site with wget&lt;/h1&gt;
-
-&lt;p&gt;If you don&amp;rsquo;t have &lt;a href=&#34;http://brew.sh/&#34;&gt;homebrew&lt;/a&gt; please install it. It will make all our lives easier.&lt;/p&gt;
-
-&lt;h2 id=&#34;howto&#34;&gt;Howto&lt;/h2&gt;
-
-&lt;p&gt;This was kinda simple but I wanted to post it here for reference.&lt;/p&gt;
-
-&lt;p&gt;On thing I would like to note is the wait and limit-rate. Make sure you don&amp;rsquo;t trip any throttles or piss off any website owners by leaving the pipes wide open.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget \
-     --recursive \
-     --no-clobber \
-     --page-requisites \
-     --convert-links \
-     --wait=5 --limit-rate=20K \
-     --domains api.yoursite.com \
-     --no-parent \
-         http://api.yoursite.com/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Alternate you can run the mirror command&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget -m --wait=5 http://test.com
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I am sure one can use lynx but this is what I like. And it&amp;rsquo;s handy on the mac.&lt;/p&gt;
-</description>
-        </item>
-      
+      <guid>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</guid>
+      <description>Binding Multiple Terminals I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.
+I tried a few other terminal apps. Particularly iTerm2 that has some nice broadcasting.</description>
+    </item>
     
+    <item>
+      <title>Why We Quit OpenStack: or How I Lost 2 Months of My Life</title>
+      <link>http://scotttactical.com/why-we-quit-openstack/</link>
+      <pubDate>Fri, 28 Oct 2016 20:07:57 -0700</pubDate>
       
-        <item>
-          <title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</title>
-          <link>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
-          <pubDate>Wed, 16 Sep 2015 00:00:00 UTC</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
-          <description>
-
-&lt;h1 id=&#34;laravel-5-enforcing-https&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;
-
-&lt;p&gt;I&amp;rsquo;ve used a lot of frameworks. &lt;a href=&#34;http://laravel.com/&#34;&gt;Laravel is great&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;dealing-with-a-load-balancer&#34;&gt;Dealing with a load balancer&lt;/h2&gt;
-
-&lt;p&gt;Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.&lt;/p&gt;
-
-&lt;p&gt;If you do not handle the redirect properly and just look for port 443 then you will get yourself into a &lt;strong&gt;redirection loop&lt;/strong&gt;. That is annoying because if you don&amp;rsquo;t test under an SSL you will deploy to production and then have to tell you boss why you&amp;rsquo;re loopy. Amazon is kind of a pain for this.&lt;/p&gt;
-
-&lt;h2 id=&#34;aws-elb-proxy-headers&#34;&gt;AWS ELB Proxy Headers&lt;/h2&gt;
-
-&lt;p&gt;Make sure you know what the request looks like to the accepting server.&lt;/p&gt;
-
-&lt;p&gt;This header is going to be passed over:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;HTTP_X_FORWARDED_PROTO&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The problem with just looking for this and accepting your solution based on this is that header can be forged trivially. You need to make sure you are only acknowledging that header from trusted sources.&lt;/p&gt;
-
-&lt;h2 id=&#34;setting-the-redirect&#34;&gt;Setting the Redirect&lt;/h2&gt;
-
-&lt;p&gt;I went ahead and installed &lt;a href=&#34;https://github.com/fideloper/TrustedProxy&#34; title=&#34;Laravel Trusted Proxies&#34; target=&#34;_blank&#34;&gt;Laravel Trusted Proxies&lt;/a&gt; from &lt;a href=&#34;https://github.com/fideloper&#34; title=&#34;Chris Fideo&#34; target=&#34;_blank&#34;&gt;Chris Fideo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Follow his instructions. It&amp;rsquo;s pretty straight forward. Here is what my `config/trustedproxy.php` looks like.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&#39;proxies&#39; =&amp;amp;gt; [
-    &#39;172.31.0.0/16&#39;,
-],
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I knew after looking at my logs where my health checks were coming from:`ELB-HealthChecker/1.0`&lt;/p&gt;
-
-&lt;p&gt;I figured if I just allow everything in that B block that I should be okay.&lt;/p&gt;
-
-&lt;p&gt;Also set the proper header to look for.&lt;/p&gt;
-
-&lt;p&gt;NOTE: I lost a couple hours trying to figure out why it wouldn&amp;rsquo;t match. Read the docblock above it. It strips HTTP_  &lt;img src=&#34;http://scotttactical.com/wp-includes/images/smilies/frownie.png&#34; alt=&#34;:(&#34; class=&#34;wp-smiley&#34; style=&#34;height: 1em; max-height: 1em;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&#39;headers&#39; =&amp;amp;gt; [
-        \Illuminate\Http\Request::HEADER_CLIENT_IP    =&amp;amp;gt; &#39;X_FORWARDED_FOR&#39;,
-        \Illuminate\Http\Request::HEADER_CLIENT_HOST  =&amp;amp;gt; &#39;FORWARDED_HOST&#39;,
-        \Illuminate\Http\Request::HEADER_CLIENT_PROTO =&amp;amp;gt; &#39;X_FORWARDED_PROTO&#39;,
-        \Illuminate\Http\Request::HEADER_CLIENT_PORT  =&amp;amp;gt; &#39;X_FORWARDED_PORT&#39;,
-    ]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;add-to-laravel-middleware&#34;&gt;Add to Laravel Middleware&lt;/h2&gt;
-
-&lt;p&gt;I created Secure.php and added it to app/Http/Middleware&lt;/p&gt;
-
-&lt;p&gt;Thanks to the work from &lt;a href=&#34;https://gist.github.com/nblackburn/a66e8e93561e277996aa&#34; title=&#34;nblackburn&#34; target=&#34;_blank&#34;&gt;@nblackburn&lt;/a&gt;. That was highly appreciated.&lt;/p&gt;
-
-&lt;p&gt;What was weird about my environment is I was getting in a redirection loop because it would prepend `public/` on the front of my uri. I&amp;rsquo;m running multiple environments so I didn&amp;rsquo;t have the luxury of pointing my root to that directory. I had to strip that off the front.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;class Secure implements Middleware
-{
-    public function handle($request, Closure $next)
-    {
-        if (! $request-&amp;amp;gt;secure() &amp;amp;&amp;amp; app()-&amp;amp;gt;environment(&#39;production&#39;)) {
-
-            // this is a really ugly hack but it kept looping and prepnding public
-            return redirect()-&amp;amp;gt;secure(preg_replace(&#39;%/public%&#39;, &#39;&#39;, $request-&amp;amp;gt;getRequestUri()));
-        }
-
-        return $next($request);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Add it to your global middleware if you want it to run for all requests.&lt;/p&gt;
-
-&lt;p&gt;Open up: app/Http/Kernel.php&lt;/p&gt;
-
-&lt;p&gt;I added&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;protected $middleware = [
-	    ...		
-		// trust the proxies from aws
-		&#39;Fideloper\Proxy\TrustProxies&#39;,
-		// then force it secure (if production)
-		&#39;LeadFerret\Http\Middleware\Secure&#39;,
-	];
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now there are no more redirect loop hells.&lt;/p&gt;
-</description>
-        </item>
-      
+      <guid>http://scotttactical.com/why-we-quit-openstack/</guid>
+      <description>TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.
+Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.
+I will probably write another article that outlines all the questions that I should have asked before starting this.</description>
+    </item>
     
-
+    <item>
+      <title>Download an Entire Site with wget - mac OSX</title>
+      <link>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</link>
+      <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</guid>
+      <description>Download the Entire Site with wget If you don&amp;rsquo;t have homebrew please install it. It will make all our lives easier.
+Howto This was kinda simple but I wanted to post it here for reference.
+On thing I would like to note is the wait and limit-rate. Make sure you don&amp;rsquo;t trip any throttles or piss off any website owners by leaving the pipes wide open.
+wget \ --recursive \ --no-clobber \ --page-requisites \ --convert-links \ --wait=5 --limit-rate=20K \ --domains api.</description>
+    </item>
+    
+    <item>
+      <title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</title>
+      <link>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
+      <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
+      <description>Laravel 5 - Enforcing HTTPS I&amp;rsquo;ve used a lot of frameworks. Laravel is great.
+Dealing with a load balancer Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,80 +1,312 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scott Tactical </title>
+    <title>Tags on Scott Tactical</title>
     <link>http://scotttactical.com/tags/</link>
+    <description>Recent content in Tags on Scott Tactical</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Scott Tactical</author>
-    <rights>(C) 2017</rights>
-    <updated>2016-05-02 00:00:00 &#43;0000 UTC</updated>
-
+    <lastBuildDate>Mon, 02 May 2016 00:00:00 +0000</lastBuildDate>
     
+	<atom:link href="http://scotttactical.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>69 Blazer</title>
+      <link>http://scotttactical.com/tags/69-blazer/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
       
+      <guid>http://scotttactical.com/tags/69-blazer/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Adventure</title>
+      <link>http://scotttactical.com/tags/adventure/</link>
+      <pubDate>Thu, 21 Apr 2016 00:22:21 -0700</pubDate>
       
+      <guid>http://scotttactical.com/tags/adventure/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Api</title>
+      <link>http://scotttactical.com/tags/api/</link>
+      <pubDate>Thu, 10 Dec 2015 07:34:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/api/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>California</title>
+      <link>http://scotttactical.com/tags/california/</link>
+      <pubDate>Sun, 24 Apr 2016 22:50:08 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/california/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Data</title>
+      <link>http://scotttactical.com/tags/data/</link>
+      <pubDate>Wed, 04 Jan 2017 06:41:07 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/data/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Design</title>
+      <link>http://scotttactical.com/tags/design/</link>
+      <pubDate>Fri, 09 Dec 2016 08:52:58 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/design/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Devops</title>
+      <link>http://scotttactical.com/tags/devops/</link>
+      <pubDate>Sat, 24 Dec 2016 06:41:07 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/devops/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Django</title>
+      <link>http://scotttactical.com/tags/django/</link>
+      <pubDate>Sun, 15 Jan 2017 16:00:07 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/django/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Fitness</title>
+      <link>http://scotttactical.com/tags/fitness/</link>
+      <pubDate>Fri, 06 Nov 2015 01:23:11 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/fitness/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Go Golang</title>
+      <link>http://scotttactical.com/tags/go-golang/</link>
+      <pubDate>Thu, 22 Oct 2015 06:29:31 -0700</pubDate>
       
+      <guid>http://scotttactical.com/tags/go-golang/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Hardware</title>
+      <link>http://scotttactical.com/tags/hardware/</link>
+      <pubDate>Tue, 29 Mar 2016 16:14:48 -0700</pubDate>
       
+      <guid>http://scotttactical.com/tags/hardware/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Healthcare</title>
+      <link>http://scotttactical.com/tags/healthcare/</link>
+      <pubDate>Thu, 10 Dec 2015 07:34:17 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/healthcare/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Hiking</title>
+      <link>http://scotttactical.com/tags/hiking/</link>
+      <pubDate>Fri, 13 Nov 2015 00:22:21 -0700</pubDate>
       
+      <guid>http://scotttactical.com/tags/hiking/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Hugo</title>
+      <link>http://scotttactical.com/tags/hugo/</link>
+      <pubDate>Thu, 22 Oct 2015 06:29:31 -0700</pubDate>
       
+      <guid>http://scotttactical.com/tags/hugo/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Hypermedia</title>
+      <link>http://scotttactical.com/tags/hypermedia/</link>
+      <pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate>
       
+      <guid>http://scotttactical.com/tags/hypermedia/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Laravel</title>
+      <link>http://scotttactical.com/tags/laravel/</link>
+      <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
       
+      <guid>http://scotttactical.com/tags/laravel/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Leadership</title>
+      <link>http://scotttactical.com/tags/leadership/</link>
+      <pubDate>Tue, 01 Dec 2015 10:43:58 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/leadership/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Linux</title>
+      <link>http://scotttactical.com/tags/linux/</link>
+      <pubDate>Wed, 25 Feb 2015 00:00:00 +0000</pubDate>
       
+      <guid>http://scotttactical.com/tags/linux/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Networking</title>
+      <link>http://scotttactical.com/tags/networking/</link>
+      <pubDate>Wed, 04 Jan 2017 06:41:07 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/networking/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Nutrition</title>
+      <link>http://scotttactical.com/tags/nutrition/</link>
+      <pubDate>Fri, 06 Nov 2015 01:23:11 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/nutrition/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Panorama</title>
+      <link>http://scotttactical.com/tags/panorama/</link>
+      <pubDate>Thu, 19 Nov 2015 00:00:00 +0000</pubDate>
       
+      <guid>http://scotttactical.com/tags/panorama/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Performance</title>
+      <link>http://scotttactical.com/tags/performance/</link>
+      <pubDate>Wed, 04 Nov 2015 12:57:42 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/performance/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Philosophy</title>
+      <link>http://scotttactical.com/tags/philosophy/</link>
+      <pubDate>Fri, 14 Apr 2017 18:51:01 -0700</pubDate>
       
+      <guid>http://scotttactical.com/tags/philosophy/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Photography</title>
+      <link>http://scotttactical.com/tags/photography/</link>
+      <pubDate>Sun, 24 Apr 2016 22:50:08 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/photography/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Php</title>
+      <link>http://scotttactical.com/tags/php/</link>
+      <pubDate>Wed, 04 Nov 2015 12:57:42 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/php/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Politics</title>
+      <link>http://scotttactical.com/tags/politics/</link>
+      <pubDate>Fri, 14 Apr 2017 18:51:01 -0700</pubDate>
       
+      <guid>http://scotttactical.com/tags/politics/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Restoration</title>
+      <link>http://scotttactical.com/tags/restoration/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
       
+      <guid>http://scotttactical.com/tags/restoration/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Software</title>
+      <link>http://scotttactical.com/tags/software/</link>
+      <pubDate>Tue, 29 Mar 2016 16:14:48 -0700</pubDate>
       
+      <guid>http://scotttactical.com/tags/software/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>System Administration</title>
+      <link>http://scotttactical.com/tags/system-administration/</link>
+      <pubDate>Wed, 25 Feb 2015 00:00:00 +0000</pubDate>
       
+      <guid>http://scotttactical.com/tags/system-administration/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Technology</title>
+      <link>http://scotttactical.com/tags/technology/</link>
+      <pubDate>Fri, 05 May 2017 18:51:01 -0700</pubDate>
       
+      <guid>http://scotttactical.com/tags/technology/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Testing</title>
+      <link>http://scotttactical.com/tags/testing/</link>
+      <pubDate>Wed, 04 Nov 2015 12:57:42 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/testing/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Wheeling</title>
+      <link>http://scotttactical.com/tags/wheeling/</link>
+      <pubDate>Thu, 21 Apr 2016 00:22:21 -0700</pubDate>
       
+      <guid>http://scotttactical.com/tags/wheeling/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Writing</title>
+      <link>http://scotttactical.com/tags/writing/</link>
+      <pubDate>Tue, 08 Nov 2016 16:35:37 -0800</pubDate>
       
+      <guid>http://scotttactical.com/tags/writing/</guid>
+      <description></description>
+    </item>
     
-
   </channel>
 </rss>

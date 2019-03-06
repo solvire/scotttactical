@@ -1,7 +1,10 @@
 BaseUrl: "http://scotttactical.com/"
 LanguageCode: "en-us"
 Title: "Scott Tactical"
-Theme: "beg"
+# Theme: "beg"
+Theme: "hugo_theme_beg"
+# Theme: "hugo-nuo"
+disqusShortname: "scotttactical"
 
 Params:
   Author: "Scott Tactical"

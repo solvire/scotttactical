@@ -1,79 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scott Tactical </title>
+    <title>Writing on Scott Tactical</title>
     <link>http://scotttactical.com/tags/writing/</link>
+    <description>Recent content in Writing on Scott Tactical</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Scott Tactical</author>
-    <rights>(C) 2017</rights>
-    <updated>2016-11-08 16:35:37 -0800 PST</updated>
-
+    <lastBuildDate>Tue, 08 Nov 2016 16:35:37 -0800</lastBuildDate>
     
-      
-        <item>
-          <title>Writing Novels in Markdown Part 1</title>
-          <link>http://scotttactical.com/writing-novels-in-markdown-part1/</link>
-          <pubDate>Tue, 08 Nov 2016 16:35:37 PST</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/writing-novels-in-markdown-part1/</guid>
-          <description>
-
-&lt;h1 id=&#34;writing-in-markdown&#34;&gt;Writing in Markdown&lt;/h1&gt;
-
-&lt;p&gt;If you haven&amp;rsquo;t used &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;Markdown&lt;/a&gt; to write in a rich(er) text format, then you are missing out. I pretty much write all my technical documentation in Markdown. It&amp;rsquo;s pretty awesome and I don&amp;rsquo;t know why it took me so long to find it. I didn&amp;rsquo;t start using it until around 2013.&lt;/p&gt;
-
-&lt;h2 id=&#34;what-is-markdown&#34;&gt;What is Markdown&lt;/h2&gt;
-
-&lt;p&gt;Markdown was created by &lt;a href=&#34;https://en.wikipedia.org/wiki/John_Gruber&#34;&gt;John Gruber&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;According to Wikipedia.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;John Gruber created the &lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown language&lt;/a&gt; in 2004 in collaboration with Aaron Swartz on the syntax, with the goal of enabling people &amp;ldquo;to write using an easy-to-read, easy-to-write plain text format, and optionally convert it to structurally valid XHTML (or HTML)”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;What does that even mean? Well it just means it is plain text that has a few symbols to make it mean something more. Once you write a little of it then it&amp;rsquo;s much easier.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m still not sure how DaringFireball made any money, but I guess once you get traffic it&amp;rsquo;s all gravy.&lt;/p&gt;
-
-&lt;h1 id=&#34;the-objectives&#34;&gt;The Objectives&lt;/h1&gt;
-
-&lt;h2 id=&#34;time-management&#34;&gt;Time Management&lt;/h2&gt;
-
-&lt;p&gt;I write on various applications and in various places. I am always just jotting stuff down in Evernote, voice notes on my phone, sketching on my Post-it pad, etc.  I&amp;rsquo;m totally distributed. I think everywhere so I might as well be able to write everywhere.&lt;/p&gt;
-
-&lt;p&gt;There are so few minutes of available time in my day that I want to make use of them. If I tallied up all my available time in a day and aggregated it I would have easily written a few novels by now. But that is another topic.&lt;/p&gt;
-
-&lt;h2 id=&#34;deficiency-analysis&#34;&gt;Deficiency Analysis&lt;/h2&gt;
-
-&lt;p&gt;I tried to identify all the areas that were keeping me from writing.  The biggest was obviously motivation and getting back in the flow. I fail the biggest recommendation I have read: write every day.&lt;/p&gt;
-
-&lt;p&gt;The second problem was my editor sucked. I was using OpenOfficeArg. Totally a busted app now. Sorry guys. Time to ditch you.&lt;/p&gt;
-
-&lt;p&gt;The third problem was that my project was getting too ambitious and I couldn&amp;rsquo;t keep all the links to the ideas. Part of that reason was the gaps in writing time.&lt;/p&gt;
-
-&lt;h1 id=&#34;workflow&#34;&gt;Workflow&lt;/h1&gt;
-
-&lt;p&gt;This is my proposed workflow. It will be adjusted over time.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;break every chapter apart into it&amp;rsquo;s own file&lt;/li&gt;
-&lt;li&gt;start a new chapter&lt;/li&gt;
-&lt;li&gt;provide headers with tags and various elements&lt;/li&gt;
-&lt;li&gt;with a script fill the headers with any markdown notes&lt;/li&gt;
-&lt;li&gt;use the headers to link the files together&lt;/li&gt;
-&lt;li&gt;concatenate the files&lt;/li&gt;
-&lt;li&gt;generate a table of contents based on the files and headers&lt;/li&gt;
-&lt;li&gt;generate a project map based on collected data&lt;/li&gt;
-&lt;li&gt;publish in HTML for ebook&lt;/li&gt;
-&lt;li&gt;collect $$$&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;As the project progresses I will be posting updates on my evolving workflow.&lt;/p&gt;
-</description>
-        </item>
-      
+	<atom:link href="http://scotttactical.com/tags/writing/index.xml" rel="self" type="application/rss+xml" />
     
-
+    
+    <item>
+      <title>Writing Novels in Markdown Part 1</title>
+      <link>http://scotttactical.com/writing-novels-in-markdown-part1/</link>
+      <pubDate>Tue, 08 Nov 2016 16:35:37 -0800</pubDate>
+      
+      <guid>http://scotttactical.com/writing-novels-in-markdown-part1/</guid>
+      <description>Writing in Markdown If you haven&amp;rsquo;t used Markdown to write in a rich(er) text format, then you are missing out. I pretty much write all my technical documentation in Markdown. It&amp;rsquo;s pretty awesome and I don&amp;rsquo;t know why it took me so long to find it. I didn&amp;rsquo;t start using it until around 2013.
+What is Markdown Markdown was created by John Gruber.
+According to Wikipedia.
+ John Gruber created the Markdown language in 2004 in collaboration with Aaron Swartz on the syntax, with the goal of enabling people &amp;ldquo;to write using an easy-to-read, easy-to-write plain text format, and optionally convert it to structurally valid XHTML (or HTML)”</description>
+    </item>
+    
   </channel>
 </rss>

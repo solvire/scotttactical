@@ -5,7 +5,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-<meta property="og:url" content="http://scotttactical.com/">
+<meta property="og:url" content="http://scotttactical.com">
 
 
 <meta property="og:type" content="article">
@@ -23,19 +23,19 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/github.min.css">
-<link rel="stylesheet" href="http://scotttactical.com/css/main.css">
+<link rel="stylesheet" href="http://scotttactical.comcss/main.css">
 
 
-<script src="http://scotttactical.com//js/photo-swipe/photoswipe.min.js"></script>
+<script src="http://scotttactical.com/js/photo-swipe/photoswipe.min.js"></script>
 
-<script src="http://scotttactical.com//js/photo-swipe/photoswipe-ui-default.min.js"></script>
-
-
-
-<link rel="shortcut icon" href="http://scotttactical.com//assets/favicon.ico">
+<script src="http://scotttactical.com/js/photo-swipe/photoswipe-ui-default.min.js"></script>
 
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://scotttactical.com//index.xml">
+
+<link rel="shortcut icon" href="http://scotttactical.com/assets/favicon.ico">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://scotttactical.com/index.xml">
 
 
 <div class="container">
@@ -49,42 +49,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="http://scotttactical.com/">Scott Tactical</a>
+                    <a class="navbar-brand" href="http://scotttactical.com">Scott Tactical</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="http://scotttactical.com/post">All Posts</a></li>
-                        <li><a href="http://scotttactical.com/gallery">Galleries</a></li>
-                        <li><a href="http://scotttactical.com/news">News</a></li>
-                        <li><a href="http://scotttactical.com/tags">Tags</a></li>
-                        
-                        <li><a href="http://scotttactical.com/">Home</a></li>
-                        
+                        <li><a href="http://scotttactical.compost">All Posts</a></li>
+                        <li><a href="http://scotttactical.comgallery">Galleries</a></li>
+                        <li><a href="http://scotttactical.comnews">News</a></li>
+                        <li><a href="http://scotttactical.comtags">Tags</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                         
-                        <li>
-                            <a href="https://www.facebook.com/100005012745496" target="_blank">
-                                <i class="fa fa-facebook-square"></i>
-                                Facebook</a>
-                        </li>
                         
-                        
-                        <li>
-                            <a href="https://twitter.com/scott_tactical" target="_blank">
-                                <i class="fa fa-twitter-square"></i>
-                                Twitter</a>
-                        </li>
-                        
-                        
-                        <li>
-                            <a href="https://github.com/solvire" target="_blank">
-                                <i class="fa fa-github-square"></i>
-                                GitHub
-                            </a>
-                        </li>
                         
                         
                     </ul>
@@ -121,23 +99,23 @@
               <hr />
                 
 
-<h1 id="django-and-ecommerce:b4021289b9cd78d0572b4b30b6bfd1a4">Django And eCommerce</h1>
+<h1 id="django-and-ecommerce">Django And eCommerce</h1>
 
-<h1 id="tl-dr:b4021289b9cd78d0572b4b30b6bfd1a4">TL;DR</h1>
+<h1 id="tl-dr">TL;DR</h1>
 
 <p>I like Python and want to use it for eCommerce, so I went through the <a href="https://djangopackages.org/grids/g/ecommerce/">well known products</a> and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.</p>
 
-<h1 id="preface:b4021289b9cd78d0572b4b30b6bfd1a4">Preface</h1>
+<h1 id="preface">Preface</h1>
 
 <p>Let me say this took me almost 2 days to get through and evaluate, which I&rsquo;m used to having a demo site up in minutes. After having gone through, I think this could be launched in half an hour.  Below are my notes of the process.</p>
 
-<h1 id="backstory:b4021289b9cd78d0572b4b30b6bfd1a4">Backstory</h1>
+<h1 id="backstory">Backstory</h1>
 
 <p>I was contacted by a business partner to see if we could kick off a project to distribute some substances that newly became legal here in CA. I thought I could spin up an ecommerce app in a couple hours and be taking payments in a week. I wanted to see how fast I could do this with Django. Most my previous eCommerce deployments (many) were in PHP and many of them were in <a href="https://magento.com">magento</a>. Had a few in ASP, Perl, (Websphere) Java. I&rsquo;m over that pain.</p>
 
 <p>Online retail - E-commerce - as an industry, is very mature. It requires a TON of flexibility and features to compete. There isn&rsquo;t a lot of waste.</p>
 
-<h1 id="pre-setup:b4021289b9cd78d0572b4b30b6bfd1a4">Pre-setup</h1>
+<h1 id="pre-setup">Pre-setup</h1>
 
 <p>I will append this by saying a few things were already installed like PostgreSQL and Python VirtualenvWrapper.</p>
 
@@ -154,9 +132,9 @@
 
 <p>Let&rsquo;s Begin</p>
 
-<h1 id="local-setup:b4021289b9cd78d0572b4b30b6bfd1a4">Local Setup</h1>
+<h1 id="local-setup">Local Setup</h1>
 
-<h1 id="setup-postgresql:b4021289b9cd78d0572b4b30b6bfd1a4">Setup PostgreSQL</h1>
+<h1 id="setup-postgresql">Setup PostgreSQL</h1>
 
 <p>I have installed PostgreSQL locally already. Please see the documentation for more information.</p>
 
@@ -168,7 +146,7 @@
 <pre><code>createdb [project_slug]
 </code></pre>
 
-<h2 id="virtual-environment-python:b4021289b9cd78d0572b4b30b6bfd1a4">Virtual Environment - Python</h2>
+<h2 id="virtual-environment-python">Virtual Environment - Python</h2>
 
 <p>Python 2.7</p>
 
@@ -181,7 +159,7 @@
 
 <p>CD into a directory beneath your source location. I always do /project/source/*</p>
 
-<h2 id="install-cookiecutter-django:b4021289b9cd78d0572b4b30b6bfd1a4">Install cookiecutter-django</h2>
+<h2 id="install-cookiecutter-django">Install cookiecutter-django</h2>
 
 <p>I have used this <a href="https://github.com/pydanny/cookiecutter-django">cookiecutter</a> before so I stick with what I know.</p>
 
@@ -199,7 +177,7 @@ git remote add origin yourname@bitbucket.com:yourapp/yourapp.git
 git push -u origin master
 </code></pre>
 
-<h2 id="django-setup:b4021289b9cd78d0572b4b30b6bfd1a4">Django Setup</h2>
+<h2 id="django-setup">Django Setup</h2>
 
 <p>I decided to try out Django Oscar. I figure it is the most popular. And also hoping it isn&rsquo;t the most bloated.</p>
 
@@ -230,7 +208,7 @@ pycountry==17.1.8
 <pre><code>./manage.py
 </code></pre>
 
-<h1 id="set-up-oscar:b4021289b9cd78d0572b4b30b6bfd1a4">Set Up Oscar</h1>
+<h1 id="set-up-oscar">Set Up Oscar</h1>
 
 <p>in <code>yourapp/config/settings/common.py</code></p>
 
@@ -343,7 +321,7 @@ THIRD_PARTY_APPS = (
 }
 </code></pre>
 
-<h2 id="set-the-urls:b4021289b9cd78d0572b4b30b6bfd1a4">Set the URLs</h2>
+<h2 id="set-the-urls">Set the URLs</h2>
 
 <p>Here is my url file.</p>
 
@@ -371,14 +349,14 @@ if settings.DEBUG:
     ...
 </code></pre>
 
-<h2 id="build-schema:b4021289b9cd78d0572b4b30b6bfd1a4">Build Schema</h2>
+<h2 id="build-schema">Build Schema</h2>
 
 <p>If the database is created and you set up everything properly you should be able to build the DB schema now.</p>
 
 <pre><code>./manage.py migrate
 </code></pre>
 
-<h2 id="start-local:b4021289b9cd78d0572b4b30b6bfd1a4">Start Local</h2>
+<h2 id="start-local">Start Local</h2>
 
 <p>Kick off the local server.</p>
 
@@ -387,11 +365,11 @@ if settings.DEBUG:
 
 <p>If everything works properly you should be able to go to <a href="http://localhost:8000/">http://localhost:8000/</a> and see your new project running.</p>
 
-<h1 id="store-setup:b4021289b9cd78d0572b4b30b6bfd1a4">Store Setup</h1>
+<h1 id="store-setup">Store Setup</h1>
 
 <p>This wasn&rsquo;t quite enough for me so I needed to add some products into the application really quickly to see the catalogue.</p>
 
-<h2 id="install-shipping-countries:b4021289b9cd78d0572b4b30b6bfd1a4">Install Shipping Countries</h2>
+<h2 id="install-shipping-countries">Install Shipping Countries</h2>
 
 <p>Pycountry should have been installed already, and it was suggested to load all the countries in the oscar documentation.</p>
 
@@ -402,7 +380,7 @@ if settings.DEBUG:
 
 <p>I&rsquo;m annoyed at pycountry for a menial change like that. Or provide a better SDK.</p>
 
-<h2 id="where-templates-are:b4021289b9cd78d0572b4b30b6bfd1a4">Where Templates Are?</h2>
+<h2 id="where-templates-are">Where Templates Are?</h2>
 
 <p>I realized that the templates were not seen even though they were in the path. I just copied them from the oscar sandbox example so that I had more to go off of.</p>
 
@@ -414,13 +392,13 @@ if settings.DEBUG:
 <pre><code>/src/oscar/static/oscar/img &gt; yourapp/static
 </code></pre>
 
-<h2 id="dashboard:b4021289b9cd78d0572b4b30b6bfd1a4">Dashboard</h2>
+<h2 id="dashboard">Dashboard</h2>
 
 <p>Make sure you created a superuser account.</p>
 
 <p>Login and travel to the dashboard: <a href="http://127.0.0.1:8000/dashboard/">http://127.0.0.1:8000/dashboard/</a></p>
 
-<h2 id="product-setup:b4021289b9cd78d0572b4b30b6bfd1a4">Product Setup</h2>
+<h2 id="product-setup">Product Setup</h2>
 
 <p>You need to have a category and a shipper. That is easy enough to set up. I added a couple products and viewed them on the</p>
 
@@ -428,27 +406,27 @@ if settings.DEBUG:
 
 <p><img src="/images/oscar2.png" alt="Dashboard" /></p>
 
-<h1 id="conclusions:b4021289b9cd78d0572b4b30b6bfd1a4">Conclusions</h1>
+<h1 id="conclusions">Conclusions</h1>
 
-<h2 id="code-structure:b4021289b9cd78d0572b4b30b6bfd1a4">Code Structure</h2>
+<h2 id="code-structure">Code Structure</h2>
 
 <p>This looked fine to me. I was able to find my way around very easily compared to the likes of Magento, IBM, SAP. Thank goodness. That is stuff of nightmares.</p>
 
-<h2 id="loaders:b4021289b9cd78d0572b4b30b6bfd1a4">Loaders</h2>
+<h2 id="loaders">Loaders</h2>
 
 <p>The framework is important to me. I like to see proper recognizable patterns. There were red flags with the model class &ldquo;loader&rdquo; paradigm when I expected to see Django objects. I think that is unnecessary with a framework that has good bootstrapping functionality such as Django. Maybe someone can explain where my thinking is in error.</p>
 
-<h2 id="no-rest-for-me:b4021289b9cd78d0572b4b30b6bfd1a4">No REST for me</h2>
+<h2 id="no-rest-for-me">No REST for me</h2>
 
 <p>I was disappointed with how hard it was to find information about oscar and an integration with a REST layer. Most sites MUST support mobile. And probably should support mobile FIRST. The old days of a monolithic website stack are kinda over. Especially with javascript running rampage over the facades of the interwebs.</p>
 
 <p>Yes, I know there is <a href="https://github.com/django-oscar/django-oscar-api">django oscar api</a> - It needs more thorough documentation, and matrix of supported features would be nice. Overall it looks promising.</p>
 
-<h2 id="performance:b4021289b9cd78d0572b4b30b6bfd1a4">Performance</h2>
+<h2 id="performance">Performance</h2>
 
 <p>The application felt kinda slow. Maybe it can be optimized, but for a starter, I felt like it should be more responsive. The feel of other apps was a little better. With ecommerce the most important thing is checkout flow followed by performance and product data.  Don&rsquo;t skimp on ANY of those things.  Let the design languish if you have budget for a performance hacker. I&rsquo;ve launched large ecommerce sites and this is what killed most of them once traffic rolled in.</p>
 
-<h2 id="will-it-stay:b4021289b9cd78d0572b4b30b6bfd1a4">Will it Stay</h2>
+<h2 id="will-it-stay">Will it Stay</h2>
 
 <p>I still have to look through <a href="http://getsaleor.com/">Saleor</a> and <a href="http://mezzanine.jupo.org/">Cartrige on Mezzanine</a> which were very appealing. I also wanted to have a hand at setting up an ecommerce app in Go, but the lack of templating and abstraction that python is good at was a knock down.</p>
 
@@ -459,14 +437,14 @@ if settings.DEBUG:
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/technology" rel="tag">
+                        <a href="http://scotttactical.com/tags/technology" rel="tag">
                             <i class="fa fa-tags"></i>
                             <span itemprop="keywords">technology</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="http://scotttactical.com//tags/django" rel="tag">
+                        <a href="http://scotttactical.com/tags/django" rel="tag">
                             <i class="fa fa-tags"></i>
                             <span itemprop="keywords">django</span>
                         </a>
@@ -478,6 +456,10 @@ if settings.DEBUG:
                 
                 <h3>Related Post</h3>
                 <ul class="post-rels">
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -550,7 +532,7 @@ if settings.DEBUG:
                     
                     
                     
-                    <li><a href="http://scotttactical.com/why-we-quit-openstack">Why We Quit OpenStack: or How I Lost 2 Months of My Life</a></li>
+                    <li><a href="http://scotttactical.com/why-we-quit-openstack/">Why We Quit OpenStack: or How I Lost 2 Months of My Life</a></li>
                     
                     
                     
@@ -624,7 +606,7 @@ if settings.DEBUG:
                     
                     
                     
-                    <li><a href="http://scotttactical.com/django-search-multiple-fields">Django Search: Multiple Fields and Full Text</a></li>
+                    <li><a href="http://scotttactical.com/django-search-multiple-fields/">Django Search: Multiple Fields and Full Text</a></li>
                     
                     
                     
@@ -783,9 +765,186 @@ if settings.DEBUG:
                     
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                 </ul>
             </aside>
             
+            
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "scotttactical" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
             
             <footer>
 
@@ -796,7 +955,7 @@ if settings.DEBUG:
                         <li class="previous"><a href="http://scotttactical.com/post/django-saleor-ecommerce-review/"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
-                        <li><a href="http://scotttactical.com//post">All Posts</a></li>
+                        <li><a href="http://scotttactical.com/post">All Posts</a></li>
 
                         
                         <li class="next"><a href="http://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/">Newer <span aria-hidden="true">&rarr;</span></a></li>
@@ -804,302 +963,94 @@ if settings.DEBUG:
 
                     </ul>
                 </nav>
-
-                
-                
-                
-                <div id="disqus_thread"></div>
-                <script type="text/javascript">
- 
-var disqus_shortname = 'scotttactical'; 
-
- 
-(function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                
-                
             </footer>
 
         </article>
     </div>
     <div class="col-md-4">
         
-<aside>
-    <div class="row">
+<aside class="l-sidebar">
 
-        <div class="col-xs-12 col-sm-4 col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h2 class="panel-title">Recent Posts</h2>
-                </div>
-                <div class="list-group">
-                    
-                    <a href="/post/a-weed-delivery-service/" class="list-group-item">A Weed Delivery Service</a>
-                    
-                    <a href="/post/vehemenism/" class="list-group-item">Vehemenism</a>
-                    
-                    <a href="/post/email-in-a-box-setup/" class="list-group-item">eMail In A Box: Setup</a>
-                    
-                    <a href="/post/django-saleor-ecommerce-review/" class="list-group-item">Django Saleor eCommerce Review</a>
-                    
-                    <a href="/post/django-ecommerce-in-30-minutes/" class="list-group-item">Django eCommerce in 30&#43; Minutes</a>
-                    
-                    <a href="/post/how-to-setup-a-mapr-cluster-on-ubuntu/" class="list-group-item">How To Setup a MapR Cluster on Ubuntu</a>
-                    
-                    <a href="/post/sfp-vs.-qsfp/" class="list-group-item">SFP vs. QSFP</a>
-                    
-                    <a href="/post/encrypt-postgresql-backup-to-s3/" class="list-group-item">Encrypt PostgreSQL Backup to S3</a>
-                    
-                    <a href="/post/why-the-covered-california-website-sucks/" class="list-group-item">Why The Covered California Website Sucks</a>
-                    
-                    <a href="/post/internet-3rd-wave-and-rise-of-the-technology-fascist/" class="list-group-item">Internet 3rd Wave and Rise of the Technology Fascist</a>
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4 col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h2 class="panel-title">Tags</h2>
-                </div>
-                <div class="list-group">
-                    
-                    
-                    
-                    <a href="http://scotttactical.com//tags/69-blazer" class="list-group-item">
-                        <span class="badge">6</span>
-                        69-blazer
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/adventure" class="list-group-item">
-                        <span class="badge">4</span>
-                        adventure
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/api" class="list-group-item">
-                        <span class="badge">2</span>
-                        api
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/california" class="list-group-item">
-                        <span class="badge">8</span>
-                        california
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/data" class="list-group-item">
-                        <span class="badge">20</span>
-                        data
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/design" class="list-group-item">
-                        <span class="badge">1</span>
-                        design
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/devops" class="list-group-item">
-                        <span class="badge">5</span>
-                        devops
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/django" class="list-group-item">
-                        <span class="badge">4</span>
-                        django
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/fitness" class="list-group-item">
-                        <span class="badge">1</span>
-                        fitness
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/go-golang" class="list-group-item">
-                        <span class="badge">2</span>
-                        go-golang
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/hardware" class="list-group-item">
-                        <span class="badge">1</span>
-                        hardware
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/healthcare" class="list-group-item">
-                        <span class="badge">1</span>
-                        healthcare
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/hiking" class="list-group-item">
-                        <span class="badge">2</span>
-                        hiking
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/hugo" class="list-group-item">
-                        <span class="badge">2</span>
-                        hugo
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/hypermedia" class="list-group-item">
-                        <span class="badge">2</span>
-                        hypermedia
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/laravel" class="list-group-item">
-                        <span class="badge">2</span>
-                        laravel
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/leadership" class="list-group-item">
-                        <span class="badge">3</span>
-                        leadership
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/linux" class="list-group-item">
-                        <span class="badge">1</span>
-                        linux
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/networking" class="list-group-item">
-                        <span class="badge">1</span>
-                        networking
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/nutrition" class="list-group-item">
-                        <span class="badge">1</span>
-                        nutrition
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/panorama" class="list-group-item">
-                        <span class="badge">2</span>
-                        panorama
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/performance" class="list-group-item">
-                        <span class="badge">1</span>
-                        performance
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/philosophy" class="list-group-item">
-                        <span class="badge">5</span>
-                        philosophy
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/photography" class="list-group-item">
-                        <span class="badge">8</span>
-                        photography
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/php" class="list-group-item">
-                        <span class="badge">4</span>
-                        php
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/politics" class="list-group-item">
-                        <span class="badge">4</span>
-                        politics
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/restoration" class="list-group-item">
-                        <span class="badge">6</span>
-                        restoration
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/software" class="list-group-item">
-                        <span class="badge">4</span>
-                        software
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/system-administration" class="list-group-item">
-                        <span class="badge">1</span>
-                        system-administration
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/technology" class="list-group-item">
-                        <span class="badge">10</span>
-                        technology
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/testing" class="list-group-item">
-                        <span class="badge">1</span>
-                        testing
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/wheeling" class="list-group-item">
-                        <span class="badge">4</span>
-                        wheeling
-                    </a>
-                    
-                    
-                    <a href="http://scotttactical.com//tags/writing" class="list-group-item">
-                        <span class="badge">1</span>
-                        writing
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
-
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
     </div>
+    <div class="list-group">
+      
+      <a href="http://scotttactical.com/post/blockchain-end-of-war/" class="list-group-item">Blockchain: End Of War</a>
+      
+      <a href="http://scotttactical.com/post/a-weed-delivery-service/" class="list-group-item">A Weed Delivery Service</a>
+      
+      <a href="http://scotttactical.com/post/vehemenism/" class="list-group-item">Vehemenism</a>
+      
+      <a href="http://scotttactical.com/post/email-in-a-box-setup/" class="list-group-item">eMail In A Box: Setup</a>
+      
+      <a href="http://scotttactical.com/post/django-saleor-ecommerce-review/" class="list-group-item">Django Saleor eCommerce Review</a>
+      
+      <a href="http://scotttactical.com/post/django-ecommerce-in-30-minutes/" class="list-group-item">Django eCommerce in 30&#43; Minutes</a>
+      
+      <a href="http://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/" class="list-group-item">How To Setup a MapR Cluster on Ubuntu</a>
+      
+      <a href="http://scotttactical.com/post/sfp-vs.-qsfp/" class="list-group-item">SFP vs. QSFP</a>
+      
+      <a href="http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/" class="list-group-item">Encrypt PostgreSQL Backup to S3</a>
+      
+      <a href="http://scotttactical.com/post/why-the-covered-california-website-sucks/" class="list-group-item">Why The Covered California Website Sucks</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">GALLERY</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">NEWS</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://scotttactical.comtags/data" class="list-group-item">data</a>
+      
+      <a href="http://scotttactical.comtags/technology" class="list-group-item">technology</a>
+      
+      <a href="http://scotttactical.comtags/california" class="list-group-item">california</a>
+      
+      <a href="http://scotttactical.comtags/photography" class="list-group-item">photography</a>
+      
+      <a href="http://scotttactical.comtags/69-blazer" class="list-group-item">69-blazer</a>
+      
+      <a href="http://scotttactical.comtags/restoration" class="list-group-item">restoration</a>
+      
+      <a href="http://scotttactical.comtags/devops" class="list-group-item">devops</a>
+      
+      <a href="http://scotttactical.comtags/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://scotttactical.comtags/adventure" class="list-group-item">adventure</a>
+      
+      <a href="http://scotttactical.comtags/django" class="list-group-item">django</a>
+      
+    </div>
+  </section>
+  
+
 </aside>
 
+
     </div>
 </div>
-
-</div>
-<hr>
-
-<footer class="container copy">
-    <p>&copy; 2017  Scott Tactical </p>
-    <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a></p>
-</footer>
-
-<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-53440065-2', 'auto');
-ga('send', 'pageview');
-
-</script>
-

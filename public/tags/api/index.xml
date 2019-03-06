@@ -1,247 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scott Tactical </title>
+    <title>Api on Scott Tactical</title>
     <link>http://scotttactical.com/tags/api/</link>
+    <description>Recent content in Api on Scott Tactical</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Scott Tactical</author>
-    <rights>(C) 2017</rights>
-    <updated>2015-12-10 07:34:17 -0800 PST</updated>
-
+    <lastBuildDate>Thu, 10 Dec 2015 07:34:17 -0800</lastBuildDate>
     
-      
-        <item>
-          <title>Health, Interconnectivity - The Data Revolution</title>
-          <link>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</link>
-          <pubDate>Thu, 10 Dec 2015 07:34:17 PST</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
-          <description>
-
-&lt;h1 id=&#34;health-medical-interconnectivity-and-the-coming-data-revolution&#34;&gt;Health, Medical Interconnectivity and The Coming Data Revolution&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/future-medicine-small.jpg&#34; alt=&#34;Medicine In The Future&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;johnson-davis-walk&#34;&gt;Johnson Davis&amp;rsquo; Walk&lt;/h2&gt;
-
-&lt;p&gt;Six red indicators breach the serene layout of the medical information dashboard. Gauges, charts and graphs provide human cues concerning the information flowing through the Intra-Medical Services Accountability Pipeline. The IMSAP emerged in evolutionary form as various government, education and enterprises started the race to consume the calculus of living data. And now these machines of data consumption interpret the flow of what some consider the representation of that thing which connects life and machine.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;This is already too far out of alignment. Go ahead and authorize a broadcast.&amp;rdquo; The leather on a reclined command chair squeaks as a technical nurse analyst operating somewhere in west cornfield office Omaha adjusts his virtual reality enhanced workstation. He then presses a projected button in front of him to broadcast a reactionary command to the IMSAP allowing it to commence with corrective actions.&lt;/p&gt;
-
-&lt;p&gt;A thirty two character hash appears above those six red indicators. Each indicator represents a series of tests that have either passed or failed. The metrics on this dashboard are human readable graphs and gauges which represent the aggregations that were formed before various disparate machines decided to trigger these events.&lt;/p&gt;
-
-&lt;p&gt;Helped by a generous grant from the Department of Health, one US company started providing a selection of wearable transmission and monitoring devices to anyone who requested one. A super watch. Stylish enough and nearly indestructible: each one is paired to the owner&amp;rsquo;s own DNA sub-sequence so basically safe from theft or ending up on Pawn Stars. Inside the grayish protective shell is a lithium battery that can power the device well beyond the normal span of customary planned obsolescence.&lt;/p&gt;
-
-&lt;p&gt;Each watch powers various monitors that track not only the wearer&amp;rsquo;s location and environment but will also track a number of vitals and chemical indicators. Literally the entire band is an array of sensors. It can tell if the wearer is hydrated, if the skin started perspiring, if the glucose levels are spiking, or if the wearer is above the legal intoxication level for driving. Some watches have become an insurance imperative for obvious reasons.&lt;/p&gt;
-
-&lt;p&gt;Early wearable devices were tethered to phones or computers which would store and transmit to remote servers. These new devices record, buffer and broadcast their data continuously. The device will buffer several gigabytes of data and burst them out in order of importance once the wearer passes an access point relay station. With the interconnectivity of utilities, vehicles, city-wide wifi or personal hotspots the device has plenty of bandwidth to upload gigabytes of raw data every day into storage vaults holding petabytes of human biometrics.&lt;/p&gt;
-
-&lt;p&gt;Each relay station will bounce data around and apply its own level of security. The data is eventually aggregated and stored at any number of server farms which catalog and move the data based on the tasks.&lt;/p&gt;
-
-&lt;p&gt;Several companies and healthcare organizations have &amp;ldquo;subscribed&amp;rdquo; to this firehose of data with each promising to monitor or monetize the flow of data in a slightly different way. Because the data is identified by strings of characters or hashes the data can be recorded or parsed and then reported on without having to identify personal information. Much of the data is broken into blocks and only understandable by those consumers who own the tracking codes to piece them together.&lt;/p&gt;
-
-&lt;p&gt;Wearers can subscribe to a service and match to their hash for real-time health tracking or companies can do the same for bulk users. Some companies pull in various other data streams to allow machines to find correlations between data from other devices with the data coming from the wearer.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;The initial report shows the first indicator was an anxiety and flight risk flag coming from the HHS. His transportation pattern altered radically from normal routes and the account has a flag on it for persons of known risk.&amp;rdquo; announces the technical operator. &amp;ldquo;His records are coming up now. He is Mr. Johnson Davis of Phoenix, Arizona. It appears he has gone on a spontaneous and brisk walk.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;The second indicator comes from the medical office tracking his progress which says that the device accelerometer is showing extreme body movements coupled with lower skin temperatures and higher levels of perspiration. {Serotonin levels are out of the bracket} It broke a trend line that was tracking depression recovery progress&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;The third and fourth indicators were from Dark Gray deep learning algorithms. It pulled from the in-home monitoring device and also the pharmacy which has recorded a distinct distortion in blood chemical levels indicating that the Mr Davis has diminished or ceased his dosage. It doesn&amp;rsquo;t appear that he is intoxicated. It might have pulled in sentiment off his social media. That thing is creepy that way; reading all our messages and making note of our less-than-optimistic disposition.&amp;rdquo;&lt;/p&gt;
-
-&lt;h2 id=&#34;action&#34;&gt;Action&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://scotttactical.com/images/doctor-future1.jpg&#34; alt=&#34;Future Doctors&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Let&amp;rsquo;s try to contact his physician and then see if we can give mister Davis a call to see if he is okay.&amp;rdquo; A supervisor requests access to the wearers full records. Most data is stored in a database holding of a majority of the nation&amp;rsquo;s citizens, but some has to come from other sources. That request triggers cascading data requests from a list of Application Programming Interfaces (API) approved for the supervisors access and appropriate for the given threats. Each call is validated by a central HIPAA authorization service API that checks access controls for internal and external data.&lt;/p&gt;
-
-&lt;p&gt;After a couple seconds all the API calls return and the data is aggregated into a patient data record object that is both human and machine readable. After considerable debate and mangling an industry-wide format for data records was created allowing for the creation of generic interfaces that can easy view any type of patient record using the best in user interfaces.&lt;/p&gt;
-
-&lt;p&gt;Hypermedia embeds metadata about how to transverse the record including ways to find those first degree contacts associated to the record. The supervisors access and need allowed for the receipt of links to the medical organizations and professionals associated to the wearer.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;I have the vitals from the device here but it stopped. I think that is why indicator five went off. He is too far away from any access points so maybe Johnny is walking out into the woods. It will probably get a GPS blip in a couple minutes though.&amp;rdquo; reports the technician again. &amp;ldquo;The sixth IMSAP went off because both his cellphone is shut off or broken in addition to indicator five and two being active. It catches old folks who fall mostly.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;He was diagnosed with a major depressive disorder and prescribed medication. The physician is on chat and is getting a prescription recommendation based on the feed.&amp;rdquo; says the supervisor.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Was he at the golf course?&amp;rdquo; asks the technician jokingly.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;No he was asleep. He&amp;rsquo;s in India.&amp;rdquo; responds the supervisor.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Okay, I have dropped a marker and a care worker has already added into his route.&amp;rdquo; indicates the technician pointing at a map overlay of the area. &amp;ldquo;And the doctor has submitted the suggested drug formula from the feed to the API at the drug lab which is starting to print the pills right now. He will be in the area with the corrective prescription in a couple minutes.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Pushing back into his chair the tech relaxes, &amp;ldquo;Evening, mister Davis. Your cocktail is queued.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;fin.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;points-of-interest&#34;&gt;Points of Interest&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;API&lt;/li&gt;
-&lt;li&gt;Data format
-
-&lt;ul&gt;
-&lt;li&gt;Related records&lt;/li&gt;
-&lt;li&gt;Social media&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Machine learning
-
-&lt;ul&gt;
-&lt;li&gt;Deep learning&lt;/li&gt;
-&lt;li&gt;Integration / collaboration&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Storage size&lt;/li&gt;
-&lt;li&gt;Authorization (HIPAA)
-
-&lt;ul&gt;
-&lt;li&gt;Centralized controls&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Authentication
-
-&lt;ul&gt;
-&lt;li&gt;Devices&lt;/li&gt;
-&lt;li&gt;Agents&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Outsourcing medicine&lt;/li&gt;
-&lt;li&gt;Personalized prescriptions
-
-&lt;ul&gt;
-&lt;li&gt;3D printed&lt;/li&gt;
-&lt;li&gt;Matched to DNA&lt;/li&gt;
-&lt;li&gt;On demand&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.wearable-technologies.com/2015/06/one-single-device-to-diagnose-a-set-of-15-medical-conditions/&#34;&gt;https://www.wearable-technologies.com/2015/06/one-single-device-to-diagnose-a-set-of-15-medical-conditions/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.mckinsey.com/insights/pharmaceuticals_and_medical_products/the_role_of_big_data_in_medicine&#34;&gt;http://www.mckinsey.com/insights/pharmaceuticals_and_medical_products/the_role_of_big_data_in_medicine&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.wired.com/insights/2014/08/patient-monitoring-big-data-future-healthcare/&#34;&gt;http://www.wired.com/insights/2014/08/patient-monitoring-big-data-future-healthcare/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.withings.com/us/en/products/pulse&#34;&gt;http://www.withings.com/us/en/products/pulse&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.washingtonpost.com/news/innovations/wp/2015/08/11/why-it-matters-that-the-fda-just-approved-the-first-3d-printed-drug/&#34;&gt;https://www.washingtonpost.com/news/innovations/wp/2015/08/11/why-it-matters-that-the-fda-just-approved-the-first-3d-printed-drug/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://genomemag.com/what-is-personalized-medicine/#.VmmrzXurau4&#34;&gt;http://genomemag.com/what-is-personalized-medicine/#.VmmrzXurau4&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.magicleap.com/#/home&#34;&gt;http://www.magicleap.com/#/home&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-      
+	<atom:link href="http://scotttactical.com/tags/api/index.xml" rel="self" type="application/rss+xml" />
     
-      
-        <item>
-          <title>PHP Hypermedia REST API wrapper</title>
-          <link>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
-          <pubDate>Tue, 08 Sep 2015 00:00:00 UTC</pubDate>
-          <author>Scott Tactical</author>
-          <guid>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
-          <description>
-
-&lt;h2 id=&#34;hypermedia-for-php-apis&#34;&gt;Hypermedia for PHP APIs.&lt;/h2&gt;
-
-&lt;p&gt;Well, here it is.  I&amp;rsquo;m finally finishing up my Hypermedia layer for our &lt;a href=&#34;http://laravel.com/docs/5.1&#34; title=&#34;Laravel 5.1&#34;&gt;Laravel 5.1&lt;/a&gt; build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of &lt;a href=&#34;https://twitter.com/hashtag/iot&#34;&gt;Internet-of-Things&lt;/a&gt; (IoT).&lt;/p&gt;
-
-&lt;h3 id=&#34;in-production-alpha&#34;&gt;In Production - Alpha&lt;/h3&gt;
-
-&lt;p&gt;Right now I have it in our very alpha phase version of the software running the &lt;a href=&#34;http://docs.leadferretuser.apiary.io/#&#34;&gt;LeadFerret&lt;/a&gt; business lead search system.&lt;/p&gt;
-
-&lt;p&gt;The project is on github here: &lt;a href=&#34;https://github.com/solvire/php-hypermedia-api&#34;&gt;PHP Hypermedia API Layer for HATEOAS HTTP or REST Services&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It is slowly getting to where I would like it to be. Of course it takes a lot of work to manage business expectations since they and PHP devs tend to treat an API like a junk drawer.&lt;/p&gt;
-
-&lt;h3 id=&#34;so-why-now&#34;&gt;So why now?&lt;/h3&gt;
-
-&lt;p&gt;For about 20 or so years we have been collectively building sophisticated network interfaces for humans. The most advanced interface is the web browser. The browser&amp;rsquo;s job is to present or render data to the user in way that allows them to consume and then determine what the information means. In addition to the specific data quested the server will also present the representative data that delivers context. This was necessary by convention and dictated by market demand. People en mass were going into the business of supplying customers and other businesses with data. For the most part that data is self-serve. I&amp;rsquo;ll write more about that philosophy at a later time.&lt;/p&gt;
-
-&lt;h2 id=&#34;metadata-and-context&#34;&gt;Metadata and Context&lt;/h2&gt;
-
-&lt;p&gt;Each response should contain everything that is necessary for an intelligent agent to decide what to do next. Considering that machines will eclipse humans in pretty much every intelligence metric we can be qualified in keeping them in the category of intelligent agents. They will be making their own decisions based on the data.&lt;/p&gt;
-
-&lt;p&gt;In the past the design of an API would leave the interpretation of the HTTP service up to the designer of the API&amp;rsquo;s consumer. The context of the data is completely absent from the source of the data. Most of the time the designer of the client would have to build a specific set of functions or classes that would represent what the designer believed the documentation was trying to tell us about the data. Most web service designers were so far off from matching the returned data streams with the actual business objects the data represented that there was no great benefit in trying to have a client that mimicked the server object structure. The simple genius of the REST paradigm is that is requires the business object to be represented in the transaction and builds on the strengths of HTTP.&lt;/p&gt;
-
-&lt;h2 id=&#34;data-context-and-the-long-form&#34;&gt;Data Context and the Long Form&lt;/h2&gt;
-
-&lt;p&gt;Sample JSON output with context&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-JSON&#34;&gt;
-{
-    &amp;quot;currentItemCount&amp;quot;: 1,
-    &amp;quot;items&amp;quot;: [
-        {
-            &amp;quot;company&amp;quot;: {
-                &amp;quot;address&amp;quot;: &amp;quot;4209 Technology Drive&amp;quot;,
-                &amp;quot;alexa&amp;quot;: 0,
-                &amp;quot;area_code&amp;quot;: 510,
-                &amp;quot;city&amp;quot;: &amp;quot;Fremont&amp;quot;,
-                &amp;quot;county&amp;quot;: &amp;quot;Alameda&amp;quot;,
-                &amp;quot;domain&amp;quot;: &amp;quot;3pardata.com&amp;quot;,
-                &amp;quot;employees&amp;quot;: 15,
-                &amp;quot;f1000&amp;quot;: 0,
-                &amp;quot;fbpage&amp;quot;: &amp;quot;&amp;quot;,
-                &amp;quot;id&amp;quot;: 38252,
-                &amp;quot;location&amp;quot;: {
-                    &amp;quot;latitude&amp;quot;: 37.520000457764,
-                    &amp;quot;longitude&amp;quot;: -121.95999908447
-                },
-                &amp;quot;naics&amp;quot;: 0,
-                &amp;quot;name&amp;quot;: &amp;quot;3PARdata, Inc.&amp;quot;,
-                &amp;quot;phone&amp;quot;: &amp;quot;510-413-5999&amp;quot;,
-                &amp;quot;revenue&amp;quot;: 35,
-                &amp;quot;sic&amp;quot;: &amp;quot;3572&amp;quot;,
-                &amp;quot;state&amp;quot;: &amp;quot;CA&amp;quot;,
-                &amp;quot;year_founded&amp;quot;: 1999,
-                &amp;quot;zip&amp;quot;: &amp;quot;94538&amp;quot;
-            },
-            &amp;quot;created&amp;quot;: {
-                &amp;quot;date&amp;quot;: &amp;quot;2015-09-30 06:06:55.000000&amp;quot;,
-                &amp;quot;timezone&amp;quot;: &amp;quot;UTC&amp;quot;,
-                &amp;quot;timezone_type&amp;quot;: 3
-            },
-            &amp;quot;crowd_score&amp;quot;: 0,
-            &amp;quot;first_name&amp;quot;: &amp;quot;Jeff&amp;quot;,
-            &amp;quot;gender&amp;quot;: &amp;quot;male&amp;quot;,
-            &amp;quot;id&amp;quot;: 12756,
-            &amp;quot;last_name&amp;quot;: &amp;quot;Price&amp;quot;,
-            &amp;quot;phone&amp;quot;: &amp;quot;510-413-5999&amp;quot;,
-            &amp;quot;professional_categories&amp;quot;: [
-                &amp;quot;engineering&amp;quot;,
-                &amp;quot;photographer&amp;quot;
-            ],
-            &amp;quot;score&amp;quot;: 38,
-            &amp;quot;title&amp;quot;: &amp;quot;Vice President of Engineering and Founder&amp;quot;,
-            &amp;quot;title_level&amp;quot;: &amp;quot;VP&amp;quot;,
-            &amp;quot;useragent&amp;quot;: &amp;quot;Chrome&amp;quot;
-        }
-    ],
-    &amp;quot;itemsPerPage&amp;quot;: &amp;quot;50&amp;quot;,
-    &amp;quot;pageIndex&amp;quot;: 1,
-    &amp;quot;totalItems&amp;quot;: 1,
-    &amp;quot;totalPages&amp;quot;: 1
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;An allegory: an API client contacts a web service requesting a list of book titles. The most economical thing would be to stream back a delimited list of integers. That was all that was requested right? Could anyone figure out what it means if found alone. Not really. Only if they were able to consult with other sources: namely the documentation.&lt;/p&gt;
-
-&lt;p&gt;Social and modern media tends to deliver everything in the short form. It only provides the least amount of information possible. And then by a genetic algorithm the data that is the most entertaining bubbles up to the top. It lives without context. A picture of a cat or a meme with only a few lines. Even important topics in politics and commerce are made without context. The long form is dead. Although I have started to see a renewed interest especially when visiting Medium.&lt;/p&gt;
-
-&lt;h2 id=&#34;architecture&#34;&gt;Architecture&lt;/h2&gt;
-
-&lt;p&gt;This SDK attempts to represent a paradigm that mimics the organic agents of the Internet. Sorta. What I mean by that is the naming convention and the architecture are set up so they suggest some structures that are self-documenting. For instance the main controller for the pattern is a RepresentationalController. It represents the resource. If there is something that needs to be presented pertaining to the resource the RepresentationalController should answer the call.&lt;/p&gt;
-
-&lt;p&gt;Because the RepresentationalController is going to interpret the call it must handle translation of the verbs. Thankfully there are only a handful of authorized verbs so the interpretation is trivial.&lt;/p&gt;
-
-&lt;p&gt;I will elaborate more on the individual aspects of the architecture at a later time. Right now I&amp;rsquo;m leaving it brief.&lt;/p&gt;
-
-&lt;h2 id=&#34;closing&#34;&gt;Closing&lt;/h2&gt;
-
-&lt;p&gt;Probably not an acceptable instruction, but it&amp;rsquo;s a start. I&amp;rsquo;ll keep posting as I can.&lt;/p&gt;
-
-&lt;p&gt;ST&lt;/p&gt;
-</description>
-        </item>
-      
     
-
+    <item>
+      <title>Health, Interconnectivity - The Data Revolution</title>
+      <link>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</link>
+      <pubDate>Thu, 10 Dec 2015 07:34:17 -0800</pubDate>
+      
+      <guid>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
+      <description>Health, Medical Interconnectivity and The Coming Data Revolution Johnson Davis&amp;rsquo; Walk Six red indicators breach the serene layout of the medical information dashboard. Gauges, charts and graphs provide human cues concerning the information flowing through the Intra-Medical Services Accountability Pipeline. The IMSAP emerged in evolutionary form as various government, education and enterprises started the race to consume the calculus of living data. And now these machines of data consumption interpret the flow of what some consider the representation of that thing which connects life and machine.</description>
+    </item>
+    
+    <item>
+      <title>PHP Hypermedia REST API wrapper</title>
+      <link>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
+      <pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
+      <description>Hypermedia for PHP APIs. Well, here it is. I&amp;rsquo;m finally finishing up my Hypermedia layer for our Laravel 5.1 build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of Internet-of-Things (IoT).
+In Production - Alpha Right now I have it in our very alpha phase version of the software running the LeadFerret business lead search system.</description>
+    </item>
+    
   </channel>
 </rss>

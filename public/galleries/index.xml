@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scott Tactical </title>
+    <title>Galleries on Scott Tactical</title>
     <link>http://scotttactical.com/galleries/</link>
+    <description>Recent content in Galleries on Scott Tactical</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Scott Tactical</author>
-    <rights>(C) 2017</rights>
-    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
-
     
-
+	<atom:link href="http://scotttactical.com/galleries/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>
