@@ -5,11 +5,27 @@ date: 2019-03-05T21:32:16-08:00
 draft: false
 url: car-computer-intro
 image: images/cc-intro.jpg
+tags: ["car computer"]
+comments: true
 ---
 
 # Car Computer Introduction
 
 The purpose of the build out is to take a 100% analog vehicle and bring in modern creature comforts and a modern driveline. In addition to this I will be integrating a few technology tools that are developed at my current work.  
+
+## Scenario
+
+In the morning I would like to walk out to my car, walk up to the door and have it unlock for me. If it greeted me in Jarvis' voice from Ironman I would like that too.  
+
+When it sees me leave, I would like to be a little sad and then lock the door.
+
+
+That is to be determined.
+
+
+![Arduino](/images/jarvis.jpg)
+
+
 
 ## Features
 

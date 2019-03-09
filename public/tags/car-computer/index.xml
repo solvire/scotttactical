@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Car Computer on Scott Tactical</title>
+    <link>http://scotttactical.com/tags/car-computer/</link>
+    <description>Recent content in Car Computer on Scott Tactical</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Mar 2019 21:32:16 -0800</lastBuildDate>
+    
+	<atom:link href="http://scotttactical.com/tags/car-computer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Car Computer Hardware</title>
+      <link>http://scotttactical.com/car-computer-hardware/</link>
+      <pubDate>Tue, 05 Mar 2019 21:32:16 -0800</pubDate>
+      
+      <guid>http://scotttactical.com/car-computer-hardware/</guid>
+      <description>Car Computer hardware My trip to Fry&amp;rsquo;s in LA this morning wasn&amp;rsquo;t as great as I hoped. But I did get some great ideas on how to accomplish things.
+There were two major themes in the hardware that I looked at.
+ Small isolated modular things Apple stuff  There wasn&amp;rsquo;t much for integration or components that were universal. Either they were for their own little world or they were for some subset of the Apple ecosystem.</description>
+    </item>
+    
+    <item>
+      <title>Car Computer Intro</title>
+      <link>http://scotttactical.com/car-computer-intro/</link>
+      <pubDate>Tue, 05 Mar 2019 21:32:16 -0800</pubDate>
+      
+      <guid>http://scotttactical.com/car-computer-intro/</guid>
+      <description>Car Computer Introduction The purpose of the build out is to take a 100% analog vehicle and bring in modern creature comforts and a modern driveline. In addition to this I will be integrating a few technology tools that are developed at my current work.
+Scenario In the morning I would like to walk out to my car, walk up to the door and have it unlock for me. If it greeted me in Jarvis&amp;rsquo; voice from Ironman I would like that too.</description>
+    </item>
+    
+  </channel>
+</rss>

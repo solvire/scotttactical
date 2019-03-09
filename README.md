@@ -20,4 +20,9 @@ install the JS stuff
 
 Run gulp before deployment to condense things
 
-    gulp 
+    gulp
+
+
+# SSL
+
+  certbot --nginx certonly -w /var/www/stac/public -d scotttactical.com

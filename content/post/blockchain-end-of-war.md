@@ -2,6 +2,7 @@
 title: "Blockchain: End Of War"
 date: 2017-07-15T13:01:51-07:00
 draft: false
+tags: ["blockchain"]
 comments: true
 ---
 
