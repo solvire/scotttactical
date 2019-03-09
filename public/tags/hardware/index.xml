@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hardware on Scott Tactical</title>
-    <link>http://scotttactical.com/tags/hardware/</link>
+    <link>https://scotttactical.com/tags/hardware/</link>
     <description>Recent content in Hardware on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Mar 2016 16:14:48 -0700</lastBuildDate>
     
-	<atom:link href="http://scotttactical.com/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://scotttactical.com/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dymo LabelWriter on Mac OSX - JavaScript</title>
-      <link>http://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</link>
+      <link>https://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</link>
       <pubDate>Tue, 29 Mar 2016 16:14:48 -0700</pubDate>
       
-      <guid>http://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</guid>
+      <guid>https://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</guid>
       <description>Setup - Dymo LabelWriter 450 on Mac OSX The clinic software requires the ability to print labels adhoc and by event. This requires that the client be able to initiate the labels. There are no requirements that the backend server be able to print labels. Thank goodness. That requires something akin to a fulfillment center and probably integration with a 3rd app. Welcome: disparate stand-alone boxes.
 Install App and Drivers Good job guys.</description>
     </item>

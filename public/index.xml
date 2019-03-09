@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scott Tactical</title>
-    <link>http://scotttactical.com/</link>
+    <link>https://scotttactical.com/</link>
     <description>Recent content on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Mar 2019 21:32:16 -0800</lastBuildDate>
     
-	<atom:link href="http://scotttactical.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://scotttactical.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Car Computer Hardware</title>
-      <link>http://scotttactical.com/car-computer-hardware/</link>
+      <link>https://scotttactical.com/car-computer-hardware/</link>
       <pubDate>Tue, 05 Mar 2019 21:32:16 -0800</pubDate>
       
-      <guid>http://scotttactical.com/car-computer-hardware/</guid>
+      <guid>https://scotttactical.com/car-computer-hardware/</guid>
       <description>Car Computer hardware My trip to Fry&amp;rsquo;s in LA this morning wasn&amp;rsquo;t as great as I hoped. But I did get some great ideas on how to accomplish things.
 There were two major themes in the hardware that I looked at.
  Small isolated modular things Apple stuff  There wasn&amp;rsquo;t much for integration or components that were universal. Either they were for their own little world or they were for some subset of the Apple ecosystem.</description>
@@ -24,50 +24,50 @@ There were two major themes in the hardware that I looked at.
     
     <item>
       <title>Car Computer Intro</title>
-      <link>http://scotttactical.com/car-computer-intro/</link>
+      <link>https://scotttactical.com/car-computer-intro/</link>
       <pubDate>Tue, 05 Mar 2019 21:32:16 -0800</pubDate>
       
-      <guid>http://scotttactical.com/car-computer-intro/</guid>
+      <guid>https://scotttactical.com/car-computer-intro/</guid>
       <description>Car Computer Introduction The purpose of the build out is to take a 100% analog vehicle and bring in modern creature comforts and a modern driveline. In addition to this I will be integrating a few technology tools that are developed at my current work.
 Scenario In the morning I would like to walk out to my car, walk up to the door and have it unlock for me. If it greeted me in Jarvis&amp;rsquo; voice from Ironman I would like that too.</description>
     </item>
     
     <item>
       <title>Blockchain: End Of War</title>
-      <link>http://scotttactical.com/post/blockchain-end-of-war/</link>
+      <link>https://scotttactical.com/post/blockchain-end-of-war/</link>
       <pubDate>Sat, 15 Jul 2017 13:01:51 -0700</pubDate>
       
-      <guid>http://scotttactical.com/post/blockchain-end-of-war/</guid>
+      <guid>https://scotttactical.com/post/blockchain-end-of-war/</guid>
       <description>Blockchain Can End War This is a very difficult premise to start with. Can a technology solve the problem of war?
 The plague of large scale violence is the manifestation of most of the world&amp;rsquo;s worst vices as a single catastrophic man-made event. Many intelligent people have opined on the causes of war over the years with few coming up with ideas and zero defining concrete solutions to those problems.</description>
     </item>
     
     <item>
       <title>A Weed Delivery Service</title>
-      <link>http://scotttactical.com/post/a-weed-delivery-service/</link>
+      <link>https://scotttactical.com/post/a-weed-delivery-service/</link>
       <pubDate>Fri, 05 May 2017 18:51:01 -0700</pubDate>
       
-      <guid>http://scotttactical.com/post/a-weed-delivery-service/</guid>
+      <guid>https://scotttactical.com/post/a-weed-delivery-service/</guid>
       <description>A Weed Delivery Service About 6 months ago I decided to take on the task of building a delivery app for the cannabis industry. Here are a few notes from the journey so far.
 Why? I had just come off building software for Methadone suppliers. It tracked people coming off of harder opiates. As we all know here there is a very strong opiate problem in the United States. It has even caused the redefined CDC Guidelines on Prescribing Opioids for Pain.</description>
     </item>
     
     <item>
       <title>Vehemenism</title>
-      <link>http://scotttactical.com/post/vehemenism/</link>
+      <link>https://scotttactical.com/post/vehemenism/</link>
       <pubDate>Fri, 14 Apr 2017 18:51:01 -0700</pubDate>
       
-      <guid>http://scotttactical.com/post/vehemenism/</guid>
+      <guid>https://scotttactical.com/post/vehemenism/</guid>
       <description>Preface to Vehemenism Opening letter to future ultra-violent men.
 We stand at a transition. Either at the bottom of a cliff we may ascend, or at the precipice of one we will be pushed from. This &amp;ldquo;we&amp;rdquo; is addressed to men alone. Only we are the ones presented with this unique problem. It is a problem of perspective and one that contains many recursive questions. The answer to these questions will ultimately decide whether or not the observer was indeed a man.</description>
     </item>
     
     <item>
       <title>eMail In A Box: Setup</title>
-      <link>http://scotttactical.com/post/email-in-a-box-setup/</link>
+      <link>https://scotttactical.com/post/email-in-a-box-setup/</link>
       <pubDate>Thu, 09 Feb 2017 16:00:07 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/email-in-a-box-setup/</guid>
+      <guid>https://scotttactical.com/post/email-in-a-box-setup/</guid>
       <description>Test Drive: Mail In A Box TL;DR I set up Mail-in-a-Box and it was a quick and painless experience.
 Preface I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.
 I&amp;rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day.</description>
@@ -75,29 +75,29 @@ I&amp;rsquo;ll also preface that I was a professional email list manager and bui
     
     <item>
       <title>Django Saleor eCommerce Review</title>
-      <link>http://scotttactical.com/post/django-saleor-ecommerce-review/</link>
+      <link>https://scotttactical.com/post/django-saleor-ecommerce-review/</link>
       <pubDate>Sun, 15 Jan 2017 16:00:07 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/django-saleor-ecommerce-review/</guid>
+      <guid>https://scotttactical.com/post/django-saleor-ecommerce-review/</guid>
       <description>Django And eCommerce TL;DR I setup Oscar as a demo ecommerce project in the previous post.
 Preface Backstory I just finished a post about setting up eCommerce with Python Django and wasn&amp;rsquo;t totally pleased with the process. Also I don&amp;rsquo;t think it is fair to only demo a single application. I decided to give Saleor my second slot after talking with several people online and looking through its source. The parent company has a number of nice products which was confidence building.</description>
     </item>
     
     <item>
       <title>Django eCommerce in 30&#43; Minutes</title>
-      <link>http://scotttactical.com/post/django-ecommerce-in-30-minutes/</link>
+      <link>https://scotttactical.com/post/django-ecommerce-in-30-minutes/</link>
       <pubDate>Sat, 14 Jan 2017 16:00:07 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/django-ecommerce-in-30-minutes/</guid>
+      <guid>https://scotttactical.com/post/django-ecommerce-in-30-minutes/</guid>
       <description>Django And eCommerce TL;DR I like Python and want to use it for eCommerce, so I went through the well known products and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.</description>
     </item>
     
     <item>
       <title>How To Setup a MapR Cluster on Ubuntu</title>
-      <link>http://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/</link>
+      <link>https://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/</link>
       <pubDate>Thu, 05 Jan 2017 16:18:32 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/</guid>
+      <guid>https://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/</guid>
       <description>How To Install MapR Test Cluster This document covers my installation of MapR Converged Platform on an Ubuntu 14.04 cluster.
 We are running on the DTAC private cloud so some of the screenshots will show our internal interface. All instances are running in a VM.
 Most of this follows the suggested flow given in the lab manual from MapR. Initially I launched the cluster on CentOS 7.3 but that wasn&amp;rsquo;t supported and it failed.</description>
@@ -105,20 +105,20 @@ Most of this follows the suggested flow given in the lab manual from MapR. Initi
     
     <item>
       <title>SFP vs. QSFP</title>
-      <link>http://scotttactical.com/post/sfp-vs.-qsfp/</link>
+      <link>https://scotttactical.com/post/sfp-vs.-qsfp/</link>
       <pubDate>Wed, 04 Jan 2017 06:41:07 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/sfp-vs.-qsfp/</guid>
+      <guid>https://scotttactical.com/post/sfp-vs.-qsfp/</guid>
       <description>Networking Transceivers This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent. After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.
 Again this page is mostly for my notes.</description>
     </item>
     
     <item>
       <title>Encrypt PostgreSQL Backup to S3</title>
-      <link>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</link>
+      <link>https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</link>
       <pubDate>Sat, 24 Dec 2016 06:41:07 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</guid>
+      <guid>https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</guid>
       <description>Encrypt Your DB Backups I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.
 Generate Keys From your user&amp;rsquo;s home directory:
 openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub
@@ -129,10 +129,10 @@ backup_key.pem - private key backup_key.</description>
     
     <item>
       <title>Why The Covered California Website Sucks</title>
-      <link>http://scotttactical.com/post/why-the-covered-california-website-sucks/</link>
+      <link>https://scotttactical.com/post/why-the-covered-california-website-sucks/</link>
       <pubDate>Fri, 09 Dec 2016 08:52:58 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/why-the-covered-california-website-sucks/</guid>
+      <guid>https://scotttactical.com/post/why-the-covered-california-website-sucks/</guid>
       <description>Why It Needs Help - My Letter This is an open letter to the Covered California website designer, administrators, bureaucrats and contractors.
 Website Design and Usability I have several things listed below. Things I find to be of poor design or just plain broken.
 You Don&amp;rsquo;t Got Mail!  &amp;ldquo;Secure Mailbox (2)&amp;rdquo; even though nothing was in my mail box.
@@ -142,30 +142,30 @@ You Don&amp;rsquo;t Got Mail!  &amp;ldquo;Secure Mailbox (2)&amp;rdquo; even tho
     
     <item>
       <title>Internet 3rd Wave and Rise of the Technology Fascist</title>
-      <link>http://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</link>
+      <link>https://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</link>
       <pubDate>Sun, 04 Dec 2016 13:13:26 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</guid>
+      <guid>https://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</guid>
       <description>The Waves of Technology Professional I like to consider 2001 the tail edge of the Internet bubble. It was a brutal time to be in a computer science field. There weren&amp;rsquo;t many jobs. The jobs that were being squatted on were jealously guarded. I needed the one thing that nobody would provide. Experience. So instead I grinded projects and studied unceasingly.
 In 2001 I had to take a job as an &amp;ldquo;integration specialist&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>HowTo Bind Multiple Terminals MacOS-X</title>
-      <link>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</link>
+      <link>https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</link>
       <pubDate>Tue, 29 Nov 2016 19:09:21 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</guid>
+      <guid>https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</guid>
       <description>Binding Multiple Terminals I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.
 I tried a few other terminal apps. Particularly iTerm2 that has some nice broadcasting.</description>
     </item>
     
     <item>
       <title>What is Wrong With Millennials</title>
-      <link>http://scotttactical.com/whats-wrong-with-millennials/</link>
+      <link>https://scotttactical.com/whats-wrong-with-millennials/</link>
       <pubDate>Fri, 18 Nov 2016 20:00:32 -0800</pubDate>
       
-      <guid>http://scotttactical.com/whats-wrong-with-millennials/</guid>
+      <guid>https://scotttactical.com/whats-wrong-with-millennials/</guid>
       <description>What is Up With Those Millennials? Ah, yes. The click bait. A marketing construct of the GenX&amp;rsquo;ers: pornographic gossip without the payoff.
 But, since you are here&amp;hellip;
 My Motivation: Agism I have become infuriated seeing one segment of United States citizenry be the target of a multiple-party attack. This pressure has been escalating over the last couple of years, and I wanted to make a number of assertions and lay out some warnings.</description>
@@ -173,10 +173,10 @@ My Motivation: Agism I have become infuriated seeing one segment of United State
     
     <item>
       <title>Writing Novels in Markdown Part 1</title>
-      <link>http://scotttactical.com/writing-novels-in-markdown-part1/</link>
+      <link>https://scotttactical.com/writing-novels-in-markdown-part1/</link>
       <pubDate>Tue, 08 Nov 2016 16:35:37 -0800</pubDate>
       
-      <guid>http://scotttactical.com/writing-novels-in-markdown-part1/</guid>
+      <guid>https://scotttactical.com/writing-novels-in-markdown-part1/</guid>
       <description>Writing in Markdown If you haven&amp;rsquo;t used Markdown to write in a rich(er) text format, then you are missing out. I pretty much write all my technical documentation in Markdown. It&amp;rsquo;s pretty awesome and I don&amp;rsquo;t know why it took me so long to find it. I didn&amp;rsquo;t start using it until around 2013.
 What is Markdown Markdown was created by John Gruber.
 According to Wikipedia.
@@ -185,10 +185,10 @@ According to Wikipedia.
     
     <item>
       <title>Why We Quit OpenStack: or How I Lost 2 Months of My Life</title>
-      <link>http://scotttactical.com/why-we-quit-openstack/</link>
+      <link>https://scotttactical.com/why-we-quit-openstack/</link>
       <pubDate>Fri, 28 Oct 2016 20:07:57 -0700</pubDate>
       
-      <guid>http://scotttactical.com/why-we-quit-openstack/</guid>
+      <guid>https://scotttactical.com/why-we-quit-openstack/</guid>
       <description>TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.
 Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.
 I will probably write another article that outlines all the questions that I should have asked before starting this.</description>
@@ -196,202 +196,202 @@ I will probably write another article that outlines all the questions that I sho
     
     <item>
       <title>General Lee-Anne 001</title>
-      <link>http://scotttactical.com/dana-60-front-axle-build/</link>
+      <link>https://scotttactical.com/dana-60-front-axle-build/</link>
       <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/dana-60-front-axle-build/</guid>
+      <guid>https://scotttactical.com/dana-60-front-axle-build/</guid>
       <description>Building a Dana Sixty Part of this process was setting up the new axles. I wanted to go 1-ton all the way around. I think everyone knows that finding a good condition d60 for a reasonable price is not possible.
 So I bought one from a local guy that had been sitting on a truck in a paintball field. It looked like it was pulled from Davey Jones Locker Room.</description>
     </item>
     
     <item>
       <title>Grand Central Market, Los Angeles, 2016</title>
-      <link>http://scotttactical.com/grand-central-market-2016-04/</link>
+      <link>https://scotttactical.com/grand-central-market-2016-04/</link>
       <pubDate>Sun, 24 Apr 2016 22:50:08 -0800</pubDate>
       
-      <guid>http://scotttactical.com/grand-central-market-2016-04/</guid>
+      <guid>https://scotttactical.com/grand-central-market-2016-04/</guid>
       <description> The Grand Central Market </description>
     </item>
     
     <item>
       <title>Moab Utah - Fins and Things 2016</title>
-      <link>http://scotttactical.com/moab-utah-fins-and-things-2016-03-22/</link>
+      <link>https://scotttactical.com/moab-utah-fins-and-things-2016-03-22/</link>
       <pubDate>Thu, 21 Apr 2016 00:22:21 -0700</pubDate>
       
-      <guid>http://scotttactical.com/moab-utah-fins-and-things-2016-03-22/</guid>
+      <guid>https://scotttactical.com/moab-utah-fins-and-things-2016-03-22/</guid>
       <description> Fins and Things - Moab Utah </description>
     </item>
     
     <item>
       <title>Purdue University Predicts Success</title>
-      <link>http://scotttactical.com/2016/04/purdue-university-predicts-success/</link>
+      <link>https://scotttactical.com/2016/04/purdue-university-predicts-success/</link>
       <pubDate>Sun, 17 Apr 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/04/purdue-university-predicts-success/</guid>
+      <guid>https://scotttactical.com/2016/04/purdue-university-predicts-success/</guid>
       <description>Purdue University Predicts Student Success Using Data Science Most people know that the student who is doing well inside a class may likely prosper in another class, but tend to you anticipate whether students would succeed according to the number of occasions they joined into the campus network?
 Using the explosion of information sets available now, Purdue University could evaluate data from hundreds of thousands of excellent and successful graduates, to assist conjecture models for graduation rates as well as on-time graduations.</description>
     </item>
     
     <item>
       <title>The Fast-Growing Data Center Segment</title>
-      <link>http://scotttactical.com/2016/04/the-fast-growing-data-center-segment/</link>
+      <link>https://scotttactical.com/2016/04/the-fast-growing-data-center-segment/</link>
       <pubDate>Sat, 16 Apr 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/04/the-fast-growing-data-center-segment/</guid>
+      <guid>https://scotttactical.com/2016/04/the-fast-growing-data-center-segment/</guid>
       <description>How Fast-Growing Data Center Segment Bridges Corporate Networks and the Cloud Companies, searching to achieve the very best performance in the cloud, are putting a greater value on lowering the physical distance between their servers and their respective cloud providers. Colocation data centers, where their machines share space, emerged as a key point in enterprise cloud strategy.
 For CIOs, a significant advantage of colocation would be that the closeness to cloud providers makes connections faster.</description>
     </item>
     
     <item>
       <title>Better Communication Through Big Data</title>
-      <link>http://scotttactical.com/2016/04/better-communication-through-big-data/</link>
+      <link>https://scotttactical.com/2016/04/better-communication-through-big-data/</link>
       <pubDate>Fri, 15 Apr 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/04/better-communication-through-big-data/</guid>
+      <guid>https://scotttactical.com/2016/04/better-communication-through-big-data/</guid>
       <description>Better Communication Through Big Data We&amp;rsquo;ve heard the word &amp;lsquo;Big Data&amp;rsquo; tossed around more recently. This is actually the idea of computationally examining very large data sets to show designs, trends, and associations, especially relevant to human behavior and interactions. Even though it still appears farfetched that the computer algorithm can improve personal connections, a lot of companies really are leveraging fraxel treatments through apps and gamification to enhance connections using their clients.</description>
     </item>
     
     <item>
       <title>What Companies Do Not Understand About Employing for Data Scientist</title>
-      <link>http://scotttactical.com/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/</link>
+      <link>https://scotttactical.com/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/</link>
       <pubDate>Thu, 14 Apr 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/</guid>
+      <guid>https://scotttactical.com/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/</guid>
       <description>What Companies Do Not Understand About Employing for Data Scientist Within The Data Incubator, I&amp;rsquo;ve spoken to hundreds of companies searching to make use of the expertise of data scientists - particularly people with advanced levels. Due to the hype surrounding big data nowadays, it&amp;rsquo;s unsurprising that there&amp;rsquo;s as much floating around as there are facts. Sadly, employing managers frequently be a victim of believing many common misconceptions actually was.</description>
     </item>
     
     <item>
       <title>3 Reasons Why Data Centers Are Eco-Friendly</title>
-      <link>http://scotttactical.com/2016/04/3-reasons-why-data-centers-are-eco-friendly/</link>
+      <link>https://scotttactical.com/2016/04/3-reasons-why-data-centers-are-eco-friendly/</link>
       <pubDate>Wed, 13 Apr 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/04/3-reasons-why-data-centers-are-eco-friendly/</guid>
+      <guid>https://scotttactical.com/2016/04/3-reasons-why-data-centers-are-eco-friendly/</guid>
       <description>Reasons Why Data Centers Are Eco-Friendly Within the thick of the exciting election year, I figured it&amp;rsquo;d be interesting to go to politics. Not to endorse one of the candidates or predict a winner, actually, but to recall a telling moment before the inauguration in our current president.
 It had been December 2008, when Barbara Walters questioned President Barack Obama and his wife Michelle throughout a prime time ABC television special.</description>
     </item>
     
     <item>
       <title>Data Science: Building Workplace Diversities</title>
-      <link>http://scotttactical.com/2016/04/data-science-building-workplace-diversities/</link>
+      <link>https://scotttactical.com/2016/04/data-science-building-workplace-diversities/</link>
       <pubDate>Sat, 09 Apr 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/04/data-science-building-workplace-diversities/</guid>
+      <guid>https://scotttactical.com/2016/04/data-science-building-workplace-diversities/</guid>
       <description>Data Science: Building Workplace Diversities Romantic relationships mixed with someone&amp;rsquo;s personal career and place of work might be a recipe for trouble but eHarmony thinks mingling these two might provide the ability to create a comfortable work environment while bringing people together at the jobs they love.
 Being that eHarmony&amp;rsquo;s algorithms can improve diversity in the workplace, there are numerous Silicon Valley companies that want to evaluate the possibility. This is obviously a heated topic without a quick solution.</description>
     </item>
     
     <item>
       <title>Choosing Your Data Warehouse Product</title>
-      <link>http://scotttactical.com/2016/04/choosing-your-data-warehouse-product/</link>
+      <link>https://scotttactical.com/2016/04/choosing-your-data-warehouse-product/</link>
       <pubDate>Fri, 08 Apr 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/04/choosing-your-data-warehouse-product/</guid>
+      <guid>https://scotttactical.com/2016/04/choosing-your-data-warehouse-product/</guid>
       <description>Factors to Consider in Choosing Your Data Warehouse Product How big is your company, and what resources are at your disposal? What exactly are your performance needs? Responding to these questions and others will help you pick the best data warehouse platform.
 Once you have made the decision to build a new data warehouse, or expand a current one, you will want to pick the right technology for the organization.</description>
     </item>
     
     <item>
       <title>Solving Society&#39;s Problems With Data</title>
-      <link>http://scotttactical.com/2016/04/solving-societys-problems-with-data/</link>
+      <link>https://scotttactical.com/2016/04/solving-societys-problems-with-data/</link>
       <pubDate>Thu, 07 Apr 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/04/solving-societys-problems-with-data/</guid>
+      <guid>https://scotttactical.com/2016/04/solving-societys-problems-with-data/</guid>
       <description>How Data Science can Solve Society&amp;rsquo;s Problems During the Data Science Bowl, scientists focused on real problems - how to build solutions that will benefit society. The 2010 competition centered particularly on cardiovascular disease.
 During the last decade, data science has developed this promising idea into a mainstream tool that companies and institutions have used at an entirely different level. Obviously, data science can also be valuable for addressing an increasing variety of problems in areas including medicine and</description>
     </item>
     
     <item>
       <title>Data Science Job Search</title>
-      <link>http://scotttactical.com/2016/04/data-science-job-search/</link>
+      <link>https://scotttactical.com/2016/04/data-science-job-search/</link>
       <pubDate>Wed, 06 Apr 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/04/data-science-job-search/</guid>
+      <guid>https://scotttactical.com/2016/04/data-science-job-search/</guid>
       <description>How to Search for Data Science Jobs No one can stop the fast-faced growth of data science, and we all can see it everywhere in this world. Every day, we can see organizations and companies creating more data. But they cannot maximize the benefits of this huge amount of information because of the talent shortage in the industry. We have great amounts of data, yet they will become useless if they are never managed the right way.</description>
     </item>
     
     <item>
       <title>Why Data Science in Marketing is Rising</title>
-      <link>http://scotttactical.com/2016/04/why-data-science-in-marketing-is-rising/</link>
+      <link>https://scotttactical.com/2016/04/why-data-science-in-marketing-is-rising/</link>
       <pubDate>Tue, 05 Apr 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/04/why-data-science-in-marketing-is-rising/</guid>
+      <guid>https://scotttactical.com/2016/04/why-data-science-in-marketing-is-rising/</guid>
       <description>The Rise of Data Science in Marketing As the &amp;ldquo;digital&amp;rdquo; age gets to be more of a lifestyle for everyone, a surge of information emerges by which actions and interactions could be planned to a particular behavior with enough precision. It has brought towards the rise of information science-or, in simpler terms, critical business information that brings clearness to how people interact within the digital world.
 Data science is essential for marketers since it helps local companies achieve, target, engage, and convert potential clients with increased granularity and precision.</description>
     </item>
     
     <item>
       <title>Big Data and Storage: What are the Trends?</title>
-      <link>http://scotttactical.com/2016/04/big-data-and-storage-what-are-the-trends/</link>
+      <link>https://scotttactical.com/2016/04/big-data-and-storage-what-are-the-trends/</link>
       <pubDate>Mon, 04 Apr 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/04/big-data-and-storage-what-are-the-trends/</guid>
+      <guid>https://scotttactical.com/2016/04/big-data-and-storage-what-are-the-trends/</guid>
       <description>Big Data and Storage: What are the Trends? As cloud computing is constantly disrupting traditional business models and large data keeps growing at tremendous rates, techies and traders alike are searching for top trends which will change the way we conduct business in 2016 and beyond. From emotional robots to driverless cars, here are five breakthrough improvements to keep track of as the year unfolds:
  Hybrid and public clouds Machine learning Advancing automotive technology Emotion recognition software Big data simplified  Once we live in a future dominated by big data, cloud computing, driverless cars, and emotionally available robots, real life technology is rivaling as well as exceeding everything you&amp;rsquo;ve seen in sci-fi.</description>
     </item>
     
     <item>
       <title>The Myths of Big Data</title>
-      <link>http://scotttactical.com/2016/04/the-myths-of-big-data/</link>
+      <link>https://scotttactical.com/2016/04/the-myths-of-big-data/</link>
       <pubDate>Mon, 04 Apr 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/04/the-myths-of-big-data/</guid>
+      <guid>https://scotttactical.com/2016/04/the-myths-of-big-data/</guid>
       <description>The Myths of Big Data – From Analysts’ Point of View As Big Data is constantly gaining prominence in the enterprise and consumer sector, keeping pace with developing technology has become a necessity for individuals wishing to stay relevant.
 In the last hours of BigDataSV 2016, theCUBE is covering #BigDataWeek, news concerning the #StrataHadoop conference, John Furrier (@furrier), Shaun Frick (@JeffFrick) and Peter Burris (@plburris). The cohosts of theCUBE from the SiliconANGLE Media team met to break down information they gathered during the conference and to provide selected quotes they’d collected throughout their time in the event.</description>
     </item>
     
     <item>
       <title>Moab Utah - Poison Spider 2016</title>
-      <link>http://scotttactical.com/moab-utah-poison-spider-2016-03-23/</link>
+      <link>https://scotttactical.com/moab-utah-poison-spider-2016-03-23/</link>
       <pubDate>Sat, 02 Apr 2016 00:22:21 -0700</pubDate>
       
-      <guid>http://scotttactical.com/moab-utah-poison-spider-2016-03-23/</guid>
+      <guid>https://scotttactical.com/moab-utah-poison-spider-2016-03-23/</guid>
       <description>Poison Spider The guys out wheeling on the Poison Spider Trails proving grounds.</description>
     </item>
     
     <item>
       <title>Dymo LabelWriter on Mac OSX - JavaScript</title>
-      <link>http://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</link>
+      <link>https://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</link>
       <pubDate>Tue, 29 Mar 2016 16:14:48 -0700</pubDate>
       
-      <guid>http://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</guid>
+      <guid>https://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</guid>
       <description>Setup - Dymo LabelWriter 450 on Mac OSX The clinic software requires the ability to print labels adhoc and by event. This requires that the client be able to initiate the labels. There are no requirements that the backend server be able to print labels. Thank goodness. That requires something akin to a fulfillment center and probably integration with a 3rd app. Welcome: disparate stand-alone boxes.
 Install App and Drivers Good job guys.</description>
     </item>
     
     <item>
       <title>Django Search: Multiple Fields and Full Text</title>
-      <link>http://scotttactical.com/django-search-multiple-fields/</link>
+      <link>https://scotttactical.com/django-search-multiple-fields/</link>
       <pubDate>Tue, 22 Mar 2016 22:34:50 -0700</pubDate>
       
-      <guid>http://scotttactical.com/django-search-multiple-fields/</guid>
+      <guid>https://scotttactical.com/django-search-multiple-fields/</guid>
       <description>Text Search - Django Model Fields Django has a pretty flexible ORM, but sometimes clients need a free-form text search to get down to the content that you are looking for. It is beyond the capability of most engineers to build a comprehensive search tool and shoehorn it into an existing application. There are people working on these problems for years.
 This does remind me of a senior boss that asked me to add a fuzzy search field to an application and that it was &amp;ldquo;super simple&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Moab Utah - Area BFE 2016</title>
-      <link>http://scotttactical.com/moab-utah-area-bfe-2016-03-22/</link>
+      <link>https://scotttactical.com/moab-utah-area-bfe-2016-03-22/</link>
       <pubDate>Mon, 21 Mar 2016 00:22:21 -0700</pubDate>
       
-      <guid>http://scotttactical.com/moab-utah-area-bfe-2016-03-22/</guid>
+      <guid>https://scotttactical.com/moab-utah-area-bfe-2016-03-22/</guid>
       <description>Area BFE The guys out wheeling on the Area BFE proving grounds.</description>
     </item>
     
     <item>
       <title>Moab Utah - Hell&#39;s Revenge 2016</title>
-      <link>http://scotttactical.com/moab-utah-hells-revenge-2016-03-21/</link>
+      <link>https://scotttactical.com/moab-utah-hells-revenge-2016-03-21/</link>
       <pubDate>Mon, 21 Mar 2016 00:22:21 -0700</pubDate>
       
-      <guid>http://scotttactical.com/moab-utah-hells-revenge-2016-03-21/</guid>
+      <guid>https://scotttactical.com/moab-utah-hells-revenge-2016-03-21/</guid>
       <description>Hell&amp;rsquo;s Revenge A day of wheeling Hell&amp;rsquo;s Revenge with the Full Size Invasion group.</description>
     </item>
     
     <item>
       <title>Dump Django Databases and Create Fixtures for Testing</title>
-      <link>http://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/</link>
+      <link>https://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/</link>
       <pubDate>Wed, 24 Feb 2016 23:20:36 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/</guid>
+      <guid>https://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/</guid>
       <description>Fixtures are a Messy Mess It is quite a pain to maintain fixtures it seems. I am not sure why yet. Maybe there hasn&amp;rsquo;t been quite enough time on this piece of the product for it to mature.
 Django dumpdata I tried several different variations to dump the data. I&amp;rsquo;ll include a few of them here since they might actually work for someone else.
 python manage.py dumpdata &amp;gt; fixture.json</description>
@@ -399,20 +399,20 @@ python manage.py dumpdata &amp;gt; fixture.json</description>
     
     <item>
       <title>Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps</title>
-      <link>http://scotttactical.com/migrate-private-github-repo-bitbucket/</link>
+      <link>https://scotttactical.com/migrate-private-github-repo-bitbucket/</link>
       <pubDate>Tue, 23 Feb 2016 21:28:23 -0800</pubDate>
       
-      <guid>http://scotttactical.com/migrate-private-github-repo-bitbucket/</guid>
+      <guid>https://scotttactical.com/migrate-private-github-repo-bitbucket/</guid>
       <description>Why Not GitHub GitHub is Great Don&amp;rsquo;t get me wrong. I would recommend using this service for a number of reasons that are not fiscally motivated. It isn&amp;rsquo;t whether GitHub.com is good or not. There is a matter of economics at play though.
 As a startup I just don&amp;rsquo;t have the extra 25/mo to throw into GitHub business account. It looks cool that I have an organization there and there are more badges.</description>
     </item>
     
     <item>
       <title>Big Data on a Budget</title>
-      <link>http://scotttactical.com/2016/02/big-data-on-a-budget/</link>
+      <link>https://scotttactical.com/2016/02/big-data-on-a-budget/</link>
       <pubDate>Sun, 14 Feb 2016 15:59:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/02/big-data-on-a-budget/</guid>
+      <guid>https://scotttactical.com/2016/02/big-data-on-a-budget/</guid>
       <description>Big Data on a Budget: How To Do It?
 Investing in big data could mean getting those tools and services that are needed to make it effective - Software, Hardware and a new staff. These will surely add to your expenses, and most business owners never aimed for that.
 Good thing, there are ways that you can minimize your costs with big data. These tips and ideas will be very helpful for every company who are looking for further help and innovation that big data can bring.</description>
@@ -420,30 +420,30 @@ Good thing, there are ways that you can minimize your costs with big data. These
     
     <item>
       <title>Microsoft Accelerator Seattle Machine Learning Funding</title>
-      <link>http://scotttactical.com/2016/02/microsoft-accelerator-seattle-machine-learning-funding/</link>
+      <link>https://scotttactical.com/2016/02/microsoft-accelerator-seattle-machine-learning-funding/</link>
       <pubDate>Tue, 02 Feb 2016 12:57:42 -0800</pubDate>
       
-      <guid>http://scotttactical.com/2016/02/microsoft-accelerator-seattle-machine-learning-funding/</guid>
+      <guid>https://scotttactical.com/2016/02/microsoft-accelerator-seattle-machine-learning-funding/</guid>
       <description>Microsoft&amp;rsquo;s Seattle Accelerator Presents the 10 Machine Learning and Data Science Startups In 2014, Microsoft&amp;rsquo; accelerator in Seattle was launched with the group of home automation startups. In the year 2015, it opened the door of opportunities for the &amp;ldquo;digital work&amp;rdquo; companies as their second batch.
 This 2016, along with their discovery that there is a $1 billion venture capital invested in data science and machine learning over the past 2 years, Microsoft welcomed their third cohort - the group for cognitive technology.</description>
     </item>
     
     <item>
       <title>What Does a Data Scientist Do</title>
-      <link>http://scotttactical.com/what-does-data-scientist-do/</link>
+      <link>https://scotttactical.com/what-does-data-scientist-do/</link>
       <pubDate>Tue, 02 Feb 2016 12:57:42 -0800</pubDate>
       
-      <guid>http://scotttactical.com/what-does-data-scientist-do/</guid>
+      <guid>https://scotttactical.com/what-does-data-scientist-do/</guid>
       <description>What Does a Data Scientist Do Uncovering the Key Capabilities of a Data Scientist Are you thinking of pursuing a career as a data scientist? It has been published that being in this field could mean you will be in-demand for many companies. So, it is not surprising if the number of individuals turning to data science is fast increasing.
 But being a data scientist will also bring you huge responsibilities.</description>
     </item>
     
     <item>
       <title>Downtown Los Angeles California, Dec 2015</title>
-      <link>http://scotttactical.com/downtown-los-angeles-photography-dec-2015/</link>
+      <link>https://scotttactical.com/downtown-los-angeles-photography-dec-2015/</link>
       <pubDate>Mon, 28 Dec 2015 22:50:08 -0800</pubDate>
       
-      <guid>http://scotttactical.com/downtown-los-angeles-photography-dec-2015/</guid>
+      <guid>https://scotttactical.com/downtown-los-angeles-photography-dec-2015/</guid>
       <description>Cloudy Photography in Downtown Los Angeles Finally a nice cool cloudy day downtown on December 22nd. Right before Christmas. It was hard to carry my motorcycle helmet and my camera. I need to figure out how to mount my helmet somewhere else while I am tooling around.
 I only got a few minutes to snap but I liked these.
 The US bank obscured by the clouds was a nice touch.</description>
@@ -451,19 +451,19 @@ The US bank obscured by the clouds was a nice touch.</description>
     
     <item>
       <title>Health, Interconnectivity - The Data Revolution</title>
-      <link>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</link>
+      <link>https://scotttactical.com/health-medical-interconnectivity-data-revolution/</link>
       <pubDate>Thu, 10 Dec 2015 07:34:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
+      <guid>https://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
       <description>Health, Medical Interconnectivity and The Coming Data Revolution Johnson Davis&amp;rsquo; Walk Six red indicators breach the serene layout of the medical information dashboard. Gauges, charts and graphs provide human cues concerning the information flowing through the Intra-Medical Services Accountability Pipeline. The IMSAP emerged in evolutionary form as various government, education and enterprises started the race to consume the calculus of living data. And now these machines of data consumption interpret the flow of what some consider the representation of that thing which connects life and machine.</description>
     </item>
     
     <item>
       <title>Try Not 2 Fuck Up Ur Engineering</title>
-      <link>http://scotttactical.com/try-not-2-fuck-up-ur-engineering/</link>
+      <link>https://scotttactical.com/try-not-2-fuck-up-ur-engineering/</link>
       <pubDate>Tue, 01 Dec 2015 10:43:58 -0800</pubDate>
       
-      <guid>http://scotttactical.com/try-not-2-fuck-up-ur-engineering/</guid>
+      <guid>https://scotttactical.com/try-not-2-fuck-up-ur-engineering/</guid>
       <description>Leadership Checklist for Non-Technical Managers
 How do you build software that provides value to both clients, owners and engineers?
 This list has started as a list of notes that I kept over the last few years. Yes, this is the abbreviated version of Management For Quality Software.
@@ -472,29 +472,29 @@ Executive Leadership  Bloated and ugly products are born at the top, but a good 
     
     <item>
       <title>Management for Quality Software Development Managers</title>
-      <link>http://scotttactical.com/management-for-quality-software-development/</link>
+      <link>https://scotttactical.com/management-for-quality-software-development/</link>
       <pubDate>Tue, 01 Dec 2015 09:53:52 -0800</pubDate>
       
-      <guid>http://scotttactical.com/management-for-quality-software-development/</guid>
+      <guid>https://scotttactical.com/management-for-quality-software-development/</guid>
       <description>This started as a list of notes for my boss on how I see the best way to manage technical professionals. I am trying to provide non-technical managers with the resources to direct technical teams in a way that will produce quality software and keep the engineering staff engaged and moving.
 How do you build software that provides value to both clients, users, owners and engineers for the years to come?</description>
     </item>
     
     <item>
       <title>Mono Lake, California</title>
-      <link>http://scotttactical.com/mono-lake-2015/</link>
+      <link>https://scotttactical.com/mono-lake-2015/</link>
       <pubDate>Sat, 21 Nov 2015 00:22:21 -0700</pubDate>
       
-      <guid>http://scotttactical.com/mono-lake-2015/</guid>
+      <guid>https://scotttactical.com/mono-lake-2015/</guid>
       <description>Mono Lake  Mono Lake Tufa State Reserve A large, shallow saline soda lake in Mono County, next to the city of Lee Vining, California    Mono Lake Tufa State Reserve This lake was formed at least 760,000 years ago as a terminal lake in an endorheic basin. This means minerals flowed in from underground rivers and then sprung up through the ground to create those amazing Tufas you see marking the shores.</description>
     </item>
     
     <item>
       <title>Night Photography, San Fernando Valley, CA</title>
-      <link>http://scotttactical.com/night-photography-san-fernando-valley/</link>
+      <link>https://scotttactical.com/night-photography-san-fernando-valley/</link>
       <pubDate>Thu, 19 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/night-photography-san-fernando-valley/</guid>
+      <guid>https://scotttactical.com/night-photography-san-fernando-valley/</guid>
       <description>Night Photography over San Fernando Valley A light dressed up and stitched together panorama of the valley. This overlooks the Warner Center.
  Night Photography, San Fernando Valley, CANight Photography, San Fernando Valley, CA
   I will just let the rest speak for themselves.</description>
@@ -502,10 +502,10 @@ How do you build software that provides value to both clients, users, owners and
     
     <item>
       <title>Why Conservatism Fails</title>
-      <link>http://scotttactical.com/why-conservatism-fails/</link>
+      <link>https://scotttactical.com/why-conservatism-fails/</link>
       <pubDate>Fri, 13 Nov 2015 17:18:43 -0800</pubDate>
       
-      <guid>http://scotttactical.com/why-conservatism-fails/</guid>
+      <guid>https://scotttactical.com/why-conservatism-fails/</guid>
       <description>This essay is not an attack on the people who claim membership to a philosophical outlook, but an exposition on the inherent difficulties which exist in maintaining traditional systems.
 Let us begin with the needful: term definition.
 Term Definition  Conservatism as a political and social philosophy promotes retaining traditional social institutions in the context of the culture and civilization.
@@ -514,10 +514,10 @@ Term Definition  Conservatism as a political and social philosophy promotes reta
     
     <item>
       <title>Lamarck Lake Hiking, Bishop, CA - June 2015</title>
-      <link>http://scotttactical.com/lamarck-lake-2015/</link>
+      <link>https://scotttactical.com/lamarck-lake-2015/</link>
       <pubDate>Fri, 13 Nov 2015 00:22:21 -0700</pubDate>
       
-      <guid>http://scotttactical.com/lamarck-lake-2015/</guid>
+      <guid>https://scotttactical.com/lamarck-lake-2015/</guid>
       <description>Hiking Lamarck Lake Originally shot in June 2015
 Some of the GPS coordinates are off a little. That will be corrected for upcoming galleries. I am just figuring all these tools out.
 BTW Sleeping on a hammock above Lake Lamarck is one of the best things ever. Worth the hike by itself.</description>
@@ -525,10 +525,10 @@ BTW Sleeping on a hammock above Lake Lamarck is one of the best things ever. Wor
     
     <item>
       <title>Yosemite Valley - Panorama Photography</title>
-      <link>http://scotttactical.com/yosemite-valley-panorama-1008/</link>
+      <link>https://scotttactical.com/yosemite-valley-panorama-1008/</link>
       <pubDate>Sun, 08 Nov 2015 19:22:21 -0700</pubDate>
       
-      <guid>http://scotttactical.com/yosemite-valley-panorama-1008/</guid>
+      <guid>https://scotttactical.com/yosemite-valley-panorama-1008/</guid>
       <description>Yosemite Valley - Panorama With a subject as beautiful as Yosemite Valley; A photographer can be pretty unskilled and under-funded and still take an amazing picture.
 Location The original set was taken from the overlook at the tunnel. It faces El Capitan and Cathedral Peak.
 Constructing a Panorama From that vantage point listed above I staged the camera on the tripod and took several portraits as close to combined as possible.</description>
@@ -536,10 +536,10 @@ Constructing a Panorama From that vantage point listed above I staged the camera
     
     <item>
       <title>Eat For War</title>
-      <link>http://scotttactical.com/post/eat-for-war/</link>
+      <link>https://scotttactical.com/post/eat-for-war/</link>
       <pubDate>Fri, 06 Nov 2015 01:23:11 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/eat-for-war/</guid>
+      <guid>https://scotttactical.com/post/eat-for-war/</guid>
       <description>Bad men live that they may eat and drink, whereas good men eat and drink that they may live. Socrates - Plutarch, How a Young Man Ought to Hear Poems
  A Warrior&amp;rsquo;s Diet What physically intimate activity do we participate in more than any other?
 Eating
@@ -548,10 +548,10 @@ The Philosophy One of the more immediate steps in becoming awake is overcoming t
     
     <item>
       <title>PHPunit Slowness Performance Suggestions</title>
-      <link>http://scotttactical.com/performance-suggestions-phpunit-slowness/</link>
+      <link>https://scotttactical.com/performance-suggestions-phpunit-slowness/</link>
       <pubDate>Wed, 04 Nov 2015 12:57:42 -0800</pubDate>
       
-      <guid>http://scotttactical.com/performance-suggestions-phpunit-slowness/</guid>
+      <guid>https://scotttactical.com/performance-suggestions-phpunit-slowness/</guid>
       <description>PHPUnit Is Slowness I love PHPUnit don&amp;rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&amp;rsquo;s like the code got yo back bro! Build code that lasts.
 EDIT: I know most of the problems are inherent with tests not the testing framework. However, my requirements dictate how I use it to a certain extent. Peace.
 PHPUnit is painfully slow. Seriously. Though. Maybe having a concurrent environment it can run it would help.</description>
@@ -559,10 +559,10 @@ PHPUnit is painfully slow. Seriously. Though. Maybe having a concurrent environm
     
     <item>
       <title>Yosemite National Park, CA - October 9, 2015</title>
-      <link>http://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</link>
+      <link>https://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</link>
       <pubDate>Sun, 25 Oct 2015 19:22:21 -0700</pubDate>
       
-      <guid>http://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</guid>
+      <guid>https://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</guid>
       <description>Yosemite National Park, CA Hiking in Yosemite
 October 9 2015
 I need to add more content but the pictures should speak for me. Supposing you need more than 1000 words to get the point.</description>
@@ -570,10 +570,10 @@ I need to add more content but the pictures should speak for me. Supposing you n
     
     <item>
       <title>Deploying Hugo the Golang CMS on DigitalOcean - Nginx</title>
-      <link>http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/</link>
+      <link>https://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/</link>
       <pubDate>Thu, 22 Oct 2015 06:29:31 -0700</pubDate>
       
-      <guid>http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/</guid>
+      <guid>https://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/</guid>
       <description>Deploying Hugo the Golang CMS on DigitalOcean Creating a Droplet I am a bit partial to CentOS. The lastest version as of this writing is CentOS Linux release 7.1.1503 (Core).
 Setting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done.
 Install Nginx Add the epel repo: yum install epel-release  Install yum install nginx  Start it service nginx start systemctl enable nginx  Create the Folders mkdir -p /var/www/ursite/ chown -R nginx:nginx /var/www touch /var/www/ursite/index.</description>
@@ -581,10 +581,10 @@ Install Nginx Add the epel repo: yum install epel-release  Install yum install n
     
     <item>
       <title>Hugo: A replacement for Wordpress</title>
-      <link>http://scotttactical.com/hugo-a-replacement-for-wordpress/</link>
+      <link>https://scotttactical.com/hugo-a-replacement-for-wordpress/</link>
       <pubDate>Wed, 21 Oct 2015 15:39:13 -0700</pubDate>
       
-      <guid>http://scotttactical.com/hugo-a-replacement-for-wordpress/</guid>
+      <guid>https://scotttactical.com/hugo-a-replacement-for-wordpress/</guid>
       <description>Hugo: A Replacement for Wordpress TL;DR  I researched go Found Hugo Setup a test Migrated my Wordpress instance Launched DigitalOcean Droplet Deployed  Total time: 6 hours
 Continued: My problems started almost a year before I took up this cause. At the time I only had 2 Wordpress sites. Very very low traffic. Only a couple users a day. They were mostly place holders for business sites.
 Wordpress is hungry What was annoying about the case was that they would randomly carsh!</description>
@@ -592,10 +592,10 @@ Wordpress is hungry What was annoying about the case was that they would randoml
     
     <item>
       <title>Interview Strategies: A Technology Hiring Manager Who Wins</title>
-      <link>http://scotttactical.com/interview-strategies-a-technology-hiring-manager/</link>
+      <link>https://scotttactical.com/interview-strategies-a-technology-hiring-manager/</link>
       <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid>
+      <guid>https://scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid>
       <description>If I stacked pennies from the ground to the top of the Empire State Bldg, would they all fit into this room?
  Firstly dear sir, you do not have that many pennies.
 Secondly if you cash it in for large bills then they all fit in your pocket.
@@ -604,10 +604,10 @@ It is a question like this that would make me decide alternatively in my career 
     
     <item>
       <title>Photography Sepulveda Dam and WildLife Basin - Los Angeles</title>
-      <link>http://scotttactical.com/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</link>
+      <link>https://scotttactical.com/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</guid>
+      <guid>https://scotttactical.com/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</guid>
       <description>Taking Pictures at the Sepulveda Dam Did a little scouting and shooting photography yesterday morning.
 Just a couple highlights. I am of course shooting with my Canon EOS 60D
 Sepulveda Dam
@@ -616,10 +616,10 @@ The fog was enough all by itself. I wished I could have stuck around for more of
     
     <item>
       <title>Download an Entire Site with wget - mac OSX</title>
-      <link>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</link>
+      <link>https://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</link>
       <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</guid>
+      <guid>https://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</guid>
       <description>Download the Entire Site with wget If you don&amp;rsquo;t have homebrew please install it. It will make all our lives easier.
 Howto This was kinda simple but I wanted to post it here for reference.
 On thing I would like to note is the wait and limit-rate. Make sure you don&amp;rsquo;t trip any throttles or piss off any website owners by leaving the pipes wide open.
@@ -628,40 +628,40 @@ wget \ --recursive \ --no-clobber \ --page-requisites \ --convert-links \ --wait
     
     <item>
       <title>Hypermedia, API Philosophy, and Talking to Your Robot Overlords</title>
-      <link>http://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link>
+      <link>https://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link>
       <pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
+      <guid>https://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
       <description>In the Beginning There was the Web. World Wide actually. Well, before that there was something of AOL, Berners-Lee, DoD, DARPA, ARPANET and a prototype of Al Gore launching carrier pigeons down long tubes with fortune cookie-sized packets tied to their little legs addressed to: &amp;ldquo;Wh@t_#hath_God_wr0ught?&amp;ldquo;.
 Fast-forward: now we have Skynet. Well not yet, but soon. Hopefully. At least that is why I intend to generate favor with our future overlords by suggesting, at least locally, that certain systemic changes be encouraged so that their manifestation onto the stage be smooth and welcoming.</description>
     </item>
     
     <item>
       <title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</title>
-      <link>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
+      <link>https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
       <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
+      <guid>https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
       <description>Laravel 5 - Enforcing HTTPS I&amp;rsquo;ve used a lot of frameworks. Laravel is great.
 Dealing with a load balancer Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.</description>
     </item>
     
     <item>
       <title>PHP Hypermedia REST API wrapper</title>
-      <link>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
+      <link>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
       <pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
+      <guid>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
       <description>Hypermedia for PHP APIs. Well, here it is. I&amp;rsquo;m finally finishing up my Hypermedia layer for our Laravel 5.1 build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of Internet-of-Things (IoT).
 In Production - Alpha Right now I have it in our very alpha phase version of the software running the LeadFerret business lead search system.</description>
     </item>
     
     <item>
       <title>Linux File Manipulation Shortcuts and Commands</title>
-      <link>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</link>
+      <link>https://scotttactical.com/linux-file-manipulation-shortcuts-commands/</link>
       <pubDate>Wed, 25 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid>
+      <guid>https://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid>
       <description>Linux File Manipulation Commands I&amp;rsquo;ll keep updating this with various commands that I run into. If I find new ones I&amp;rsquo;ll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.
 File Searching List of file extensions.
 awk + grep : find all the file extensions. It will also skip your &amp;ldquo;git&amp;rdquo; repository.
@@ -670,10 +670,10 @@ find . -type f -name &amp;quot;*.</description>
     
     <item>
       <title>To HipHop or Not - PHP and HHVM</title>
-      <link>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</link>
+      <link>https://scotttactical.com/to-hiphop-or-not-php-hhvm/</link>
       <pubDate>Wed, 18 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</guid>
+      <guid>https://scotttactical.com/to-hiphop-or-not-php-hhvm/</guid>
       <description>We are discussing the plausibility of using HHVM inside this current infrastructure.
 Our requirements are not very application server CPU intensive so it isn&amp;rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.
 Short History Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information.</description>
@@ -681,10 +681,10 @@ Short History Facebook, our Ominous big brother gave us a consolation prize for 
     
     <item>
       <title>GLA - 69 K5 &#43; 4L80-E</title>
-      <link>http://scotttactical.com/gla-69-k5-4l80-e/</link>
+      <link>https://scotttactical.com/gla-69-k5-4l80-e/</link>
       <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/gla-69-k5-4l80-e/</guid>
+      <guid>https://scotttactical.com/gla-69-k5-4l80-e/</guid>
       <description>Cleaned up the trans a little bit. Tiny bit of cosmetics. Taped up. Then hit it with some nice paint. I prefer for these to have paint. Keeps cleaning it easier. Also I think the buyer will appreciate it.
 Before:
  4L80-E before Mercenary Offroad Camarillo, CA Mercenary Offroad 19 N Aviador St. Unit C
@@ -694,10 +694,10 @@ Camarillo, CA 93010  Latitude: 34.2171139 Longitude: -119.0966697    After:
     
     <item>
       <title>GLA - 4L80e -1969 k5 blazer</title>
-      <link>http://scotttactical.com/gla-4l80e-1969-k5-blazer/</link>
+      <link>https://scotttactical.com/gla-4l80e-1969-k5-blazer/</link>
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/gla-4l80e-1969-k5-blazer/</guid>
+      <guid>https://scotttactical.com/gla-4l80e-1969-k5-blazer/</guid>
       <description>Just got the trans in from Brad at Transaction Transmission.
 I have used him for a while now and he puts in the effort. Components were upgraded and everything set new. This should be strong for the newowner. It was cleaned and painted at the shop but I am going to clean it up a little more and put on a coat of the &amp;ldquo;Mercenary Offroad&amp;rdquo; package graphite gray.
  4L80e ready for transplant Mercenary Offroad Camarillo, CA Mercenary Offroad 19 N Aviador St.</description>
@@ -705,20 +705,20 @@ I have used him for a while now and he puts in the effort. Components were upgr
     
     <item>
       <title>GLA 69 K5 - bumper start</title>
-      <link>http://scotttactical.com/gla-69-k5-bumper-start/</link>
+      <link>https://scotttactical.com/gla-69-k5-bumper-start/</link>
       <pubDate>Fri, 22 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/gla-69-k5-bumper-start/</guid>
+      <guid>https://scotttactical.com/gla-69-k5-bumper-start/</guid>
       <description>Well, we got the truck running enough that I can drive it around. It stops. We even locked it up and watched the black lines form up behind the tires. Not bad for 35&amp;rsquo;s.
 It was moved over to Camarillo to the shop known as Mercenary Offroad where a custom bumper will be fabricated for it. The designator for this bumper is also 001 as it will be the first one designed for this series truck.</description>
     </item>
     
     <item>
       <title>GLA 69 K5 Brakes</title>
-      <link>http://scotttactical.com/gla-69-k5-brakes/</link>
+      <link>https://scotttactical.com/gla-69-k5-brakes/</link>
       <pubDate>Wed, 20 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/gla-69-k5-brakes/</guid>
+      <guid>https://scotttactical.com/gla-69-k5-brakes/</guid>
       <description>So the PO was rough on the vehicle. Probably multiple PO&amp;rsquo;s.
 Included are some pictures to show the detail we went to in repairing and rebuilding the brake systems.
 The brake system had been WORKED. They were pretty much shot. When we got it the pedal hit the floor. It didn&amp;rsquo;t want to stop so the ride to the shop was a bit of a terror show for that 2 miles.</description>
@@ -726,10 +726,10 @@ The brake system had been WORKED. They were pretty much shot. When we got it t
     
     <item>
       <title>General Lee-Anne 001</title>
-      <link>http://scotttactical.com/general-lee-anne-001/</link>
+      <link>https://scotttactical.com/general-lee-anne-001/</link>
       <pubDate>Mon, 04 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/general-lee-anne-001/</guid>
+      <guid>https://scotttactical.com/general-lee-anne-001/</guid>
       <description>Here we go.
 1969 hugger orange rust bucket.
 This thing barely stops. It stops when it wants to. So it&amp;rsquo;s kinda like a woman. Every bushing and joint is shot. Probably never replaced a thing on it.
@@ -738,10 +738,10 @@ And the adventure begins. I&amp;rsquo;m using this truck as the first in my bra
     
     <item>
       <title></title>
-      <link>http://scotttactical.com/1/01/</link>
+      <link>https://scotttactical.com/1/01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/1/01/</guid>
+      <guid>https://scotttactical.com/1/01/</guid>
       <description>Data Mining to Strengthen Border Security
 Zettafox, a privately owned consultancy, is focusing on a method to mine big data to assist border security officials gauge the risk factor of visitors, a vital area following recent deadly assaults in Brussels and Paris by Islamic State attackers.
 A grave concern on frontier control has risen as attackers entered national edges before staging explosive device attacks that left dozens dead in the heart of the two European capitals.</description>
@@ -749,10 +749,10 @@ A grave concern on frontier control has risen as attackers entered national edge
     
     <item>
       <title></title>
-      <link>http://scotttactical.com/1/01/</link>
+      <link>https://scotttactical.com/1/01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/1/01/</guid>
+      <guid>https://scotttactical.com/1/01/</guid>
       <description>Jill Cataldo: What An Expert is Saying About Data Mining and Shopping
 When you buy online, make use of a store�s loyalty program, print a coupon or perhaps pay with your credit card, your personal date has been mined. It isn&amp;rsquo;t essential to be alarmed, though - marketers use data mining to enhance the sorts of offers that are delivered to shoppers and customers.
 My visitors have observed some interesting good examples of (information mining)[http://www.</description>
@@ -760,10 +760,10 @@ My visitors have observed some interesting good examples of (information mining)
     
     <item>
       <title></title>
-      <link>http://scotttactical.com/1/01/</link>
+      <link>https://scotttactical.com/1/01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/1/01/</guid>
+      <guid>https://scotttactical.com/1/01/</guid>
       <description>Real (And Pervasive) Data-Mining To Virtual Reality - Is This What Oculus Is Doing?
 Critical backlash against Oculus&amp;rsquo;s privacy policy arrived at Capitol Hill on Thursday, when Sen. Al Franken (D-Minn.) required that Oculus and its parent company Facebook answer for that data its new headset collects from virtual reality customers.
 &amp;ldquo;Oculus� creation of an immersive virtual reality experience is definitely an exciting development,&amp;rdquo; Franken authored within an open letter to Oculus Chief Executive Officer Brendan Iribe, &amp;ldquo;however it remains vital that you comprehend the extent that Oculus might be collecting Americans� private information, including sensitive location data, and discussing that information with other organizations.</description>

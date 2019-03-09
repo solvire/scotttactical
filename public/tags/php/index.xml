@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Php on Scott Tactical</title>
-    <link>http://scotttactical.com/tags/php/</link>
+    <link>https://scotttactical.com/tags/php/</link>
     <description>Recent content in Php on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Nov 2015 12:57:42 -0800</lastBuildDate>
     
-	<atom:link href="http://scotttactical.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://scotttactical.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PHPunit Slowness Performance Suggestions</title>
-      <link>http://scotttactical.com/performance-suggestions-phpunit-slowness/</link>
+      <link>https://scotttactical.com/performance-suggestions-phpunit-slowness/</link>
       <pubDate>Wed, 04 Nov 2015 12:57:42 -0800</pubDate>
       
-      <guid>http://scotttactical.com/performance-suggestions-phpunit-slowness/</guid>
+      <guid>https://scotttactical.com/performance-suggestions-phpunit-slowness/</guid>
       <description>PHPUnit Is Slowness I love PHPUnit don&amp;rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&amp;rsquo;s like the code got yo back bro! Build code that lasts.
 EDIT: I know most of the problems are inherent with tests not the testing framework. However, my requirements dictate how I use it to a certain extent. Peace.
 PHPUnit is painfully slow. Seriously. Though. Maybe having a concurrent environment it can run it would help.</description>
@@ -24,30 +24,30 @@ PHPUnit is painfully slow. Seriously. Though. Maybe having a concurrent environm
     
     <item>
       <title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</title>
-      <link>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
+      <link>https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
       <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
+      <guid>https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
       <description>Laravel 5 - Enforcing HTTPS I&amp;rsquo;ve used a lot of frameworks. Laravel is great.
 Dealing with a load balancer Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.</description>
     </item>
     
     <item>
       <title>PHP Hypermedia REST API wrapper</title>
-      <link>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
+      <link>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
       <pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
+      <guid>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
       <description>Hypermedia for PHP APIs. Well, here it is. I&amp;rsquo;m finally finishing up my Hypermedia layer for our Laravel 5.1 build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of Internet-of-Things (IoT).
 In Production - Alpha Right now I have it in our very alpha phase version of the software running the LeadFerret business lead search system.</description>
     </item>
     
     <item>
       <title>To HipHop or Not - PHP and HHVM</title>
-      <link>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</link>
+      <link>https://scotttactical.com/to-hiphop-or-not-php-hhvm/</link>
       <pubDate>Wed, 18 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</guid>
+      <guid>https://scotttactical.com/to-hiphop-or-not-php-hhvm/</guid>
       <description>We are discussing the plausibility of using HHVM inside this current infrastructure.
 Our requirements are not very application server CPU intensive so it isn&amp;rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.
 Short History Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information.</description>

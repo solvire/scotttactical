@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technology on Scott Tactical</title>
-    <link>http://scotttactical.com/tags/technology/</link>
+    <link>https://scotttactical.com/tags/technology/</link>
     <description>Recent content in Technology on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 05 May 2017 18:51:01 -0700</lastBuildDate>
     
-	<atom:link href="http://scotttactical.com/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://scotttactical.com/tags/technology/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A Weed Delivery Service</title>
-      <link>http://scotttactical.com/post/a-weed-delivery-service/</link>
+      <link>https://scotttactical.com/post/a-weed-delivery-service/</link>
       <pubDate>Fri, 05 May 2017 18:51:01 -0700</pubDate>
       
-      <guid>http://scotttactical.com/post/a-weed-delivery-service/</guid>
+      <guid>https://scotttactical.com/post/a-weed-delivery-service/</guid>
       <description>A Weed Delivery Service About 6 months ago I decided to take on the task of building a delivery app for the cannabis industry. Here are a few notes from the journey so far.
 Why? I had just come off building software for Methadone suppliers. It tracked people coming off of harder opiates. As we all know here there is a very strong opiate problem in the United States. It has even caused the redefined CDC Guidelines on Prescribing Opioids for Pain.</description>
     </item>
     
     <item>
       <title>eMail In A Box: Setup</title>
-      <link>http://scotttactical.com/post/email-in-a-box-setup/</link>
+      <link>https://scotttactical.com/post/email-in-a-box-setup/</link>
       <pubDate>Thu, 09 Feb 2017 16:00:07 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/email-in-a-box-setup/</guid>
+      <guid>https://scotttactical.com/post/email-in-a-box-setup/</guid>
       <description>Test Drive: Mail In A Box TL;DR I set up Mail-in-a-Box and it was a quick and painless experience.
 Preface I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.
 I&amp;rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day.</description>
@@ -34,29 +34,29 @@ I&amp;rsquo;ll also preface that I was a professional email list manager and bui
     
     <item>
       <title>Django Saleor eCommerce Review</title>
-      <link>http://scotttactical.com/post/django-saleor-ecommerce-review/</link>
+      <link>https://scotttactical.com/post/django-saleor-ecommerce-review/</link>
       <pubDate>Sun, 15 Jan 2017 16:00:07 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/django-saleor-ecommerce-review/</guid>
+      <guid>https://scotttactical.com/post/django-saleor-ecommerce-review/</guid>
       <description>Django And eCommerce TL;DR I setup Oscar as a demo ecommerce project in the previous post.
 Preface Backstory I just finished a post about setting up eCommerce with Python Django and wasn&amp;rsquo;t totally pleased with the process. Also I don&amp;rsquo;t think it is fair to only demo a single application. I decided to give Saleor my second slot after talking with several people online and looking through its source. The parent company has a number of nice products which was confidence building.</description>
     </item>
     
     <item>
       <title>Django eCommerce in 30&#43; Minutes</title>
-      <link>http://scotttactical.com/post/django-ecommerce-in-30-minutes/</link>
+      <link>https://scotttactical.com/post/django-ecommerce-in-30-minutes/</link>
       <pubDate>Sat, 14 Jan 2017 16:00:07 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/django-ecommerce-in-30-minutes/</guid>
+      <guid>https://scotttactical.com/post/django-ecommerce-in-30-minutes/</guid>
       <description>Django And eCommerce TL;DR I like Python and want to use it for eCommerce, so I went through the well known products and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.</description>
     </item>
     
     <item>
       <title>Why The Covered California Website Sucks</title>
-      <link>http://scotttactical.com/post/why-the-covered-california-website-sucks/</link>
+      <link>https://scotttactical.com/post/why-the-covered-california-website-sucks/</link>
       <pubDate>Fri, 09 Dec 2016 08:52:58 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/why-the-covered-california-website-sucks/</guid>
+      <guid>https://scotttactical.com/post/why-the-covered-california-website-sucks/</guid>
       <description>Why It Needs Help - My Letter This is an open letter to the Covered California website designer, administrators, bureaucrats and contractors.
 Website Design and Usability I have several things listed below. Things I find to be of poor design or just plain broken.
 You Don&amp;rsquo;t Got Mail!  &amp;ldquo;Secure Mailbox (2)&amp;rdquo; even though nothing was in my mail box.
@@ -66,30 +66,30 @@ You Don&amp;rsquo;t Got Mail!  &amp;ldquo;Secure Mailbox (2)&amp;rdquo; even tho
     
     <item>
       <title>Internet 3rd Wave and Rise of the Technology Fascist</title>
-      <link>http://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</link>
+      <link>https://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</link>
       <pubDate>Sun, 04 Dec 2016 13:13:26 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</guid>
+      <guid>https://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</guid>
       <description>The Waves of Technology Professional I like to consider 2001 the tail edge of the Internet bubble. It was a brutal time to be in a computer science field. There weren&amp;rsquo;t many jobs. The jobs that were being squatted on were jealously guarded. I needed the one thing that nobody would provide. Experience. So instead I grinded projects and studied unceasingly.
 In 2001 I had to take a job as an &amp;ldquo;integration specialist&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>HowTo Bind Multiple Terminals MacOS-X</title>
-      <link>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</link>
+      <link>https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</link>
       <pubDate>Tue, 29 Nov 2016 19:09:21 -0800</pubDate>
       
-      <guid>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</guid>
+      <guid>https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</guid>
       <description>Binding Multiple Terminals I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.
 I tried a few other terminal apps. Particularly iTerm2 that has some nice broadcasting.</description>
     </item>
     
     <item>
       <title>Writing Novels in Markdown Part 1</title>
-      <link>http://scotttactical.com/writing-novels-in-markdown-part1/</link>
+      <link>https://scotttactical.com/writing-novels-in-markdown-part1/</link>
       <pubDate>Tue, 08 Nov 2016 16:35:37 -0800</pubDate>
       
-      <guid>http://scotttactical.com/writing-novels-in-markdown-part1/</guid>
+      <guid>https://scotttactical.com/writing-novels-in-markdown-part1/</guid>
       <description>Writing in Markdown If you haven&amp;rsquo;t used Markdown to write in a rich(er) text format, then you are missing out. I pretty much write all my technical documentation in Markdown. It&amp;rsquo;s pretty awesome and I don&amp;rsquo;t know why it took me so long to find it. I didn&amp;rsquo;t start using it until around 2013.
 What is Markdown Markdown was created by John Gruber.
 According to Wikipedia.
@@ -98,10 +98,10 @@ According to Wikipedia.
     
     <item>
       <title>Why We Quit OpenStack: or How I Lost 2 Months of My Life</title>
-      <link>http://scotttactical.com/why-we-quit-openstack/</link>
+      <link>https://scotttactical.com/why-we-quit-openstack/</link>
       <pubDate>Fri, 28 Oct 2016 20:07:57 -0700</pubDate>
       
-      <guid>http://scotttactical.com/why-we-quit-openstack/</guid>
+      <guid>https://scotttactical.com/why-we-quit-openstack/</guid>
       <description>TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.
 Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.
 I will probably write another article that outlines all the questions that I should have asked before starting this.</description>
@@ -109,10 +109,10 @@ I will probably write another article that outlines all the questions that I sho
     
     <item>
       <title>Interview Strategies: A Technology Hiring Manager Who Wins</title>
-      <link>http://scotttactical.com/interview-strategies-a-technology-hiring-manager/</link>
+      <link>https://scotttactical.com/interview-strategies-a-technology-hiring-manager/</link>
       <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid>
+      <guid>https://scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid>
       <description>If I stacked pennies from the ground to the top of the Empire State Bldg, would they all fit into this room?
  Firstly dear sir, you do not have that many pennies.
 Secondly if you cash it in for large bills then they all fit in your pocket.
