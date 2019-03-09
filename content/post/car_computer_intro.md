@@ -4,7 +4,7 @@ author: SScott
 date: 2019-03-05T21:32:16-08:00
 draft: false
 url: car-computer-intro
-image: images/cc-intro.jpg
+image: /images/cc-intro.jpg
 tags: ["car computer"]
 comments: true
 ---

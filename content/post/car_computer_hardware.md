@@ -4,7 +4,7 @@ author: SScott
 date: 2019-03-05T21:32:16-08:00
 draft: false
 url: car-computer-hardware
-image: images/trunk_computer.jpg
+image: /images/trunk_computer.jpg
 tags: ["car computer"]
 comments: true
 ---
