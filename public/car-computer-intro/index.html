@@ -9,13 +9,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="How To Setup a MapR Cluster on Ubuntu &middot; Scott Tactical">
+<meta property="og:title" content="Car Computer Intro &middot; Scott Tactical">
 
 <meta property="og:site_name" content="Scott Tactical">
 
 <title>
     
-    How To Setup a MapR Cluster on Ubuntu
+    Car Computer Intro
     
 </title>
 
@@ -79,18 +79,18 @@
             <header>
                 <div class="post-date">
                     <span class="glyphicon glyphicon-calendar"></span>
-                    <time itemprop="datePublished" datetime="2017-01-05T16:18:32-08:00">
-                        Thu, 05 Jan 2017 16:18:32 PST
+                    <time itemprop="datePublished" datetime="2019-03-05T21:32:16-08:00">
+                        Tue, 05 Mar 2019 21:32:16 PST
                     </time>
                     
                 </div>
                 <h1 class="post-title" itemprop="headline">
-                    <a href="http://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/">How To Setup a MapR Cluster on Ubuntu</a>
+                    <a href="http://scotttactical.com/car-computer-intro/">Car Computer Intro</a>
                 </h1>
                 <span >
-                  
+                  <img itemprop="image" alt="Car Computer Intro" src="http://scotttactical.comimages/cc-intro.jpg" /><br />
                   <span itemprop="author">Scott Tactical</span><br />
-                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">How To Setup a MapR Cluster on Ubuntu</span></a><br />
+                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">Car Computer Intro</span></a><br />
                   <span itemprop="publisher">Scott Tactical</span><br />
                 </span>
             </header>
@@ -99,181 +99,85 @@
               <hr />
                 
 
-<h1 id="how-to-install-mapr-test-cluster">How To Install MapR Test Cluster</h1>
+<h1 id="car-computer-introduction">Car Computer Introduction</h1>
 
-<p>This document covers my installation of MapR Converged Platform on an Ubuntu 14.04 cluster.</p>
+<p>The purpose of the build out is to take a 100% analog vehicle and bring in modern creature comforts and a modern driveline. In addition to this I will be integrating a few technology tools that are developed at my current work.</p>
 
-<p>We are running on the DTAC private cloud so some of the screenshots will show our internal interface. All instances are running in a VM.</p>
+<h2 id="features">Features</h2>
 
-<p>Most of this follows the suggested flow given in the lab manual from MapR. Initially I launched the cluster on CentOS 7.3 but that wasn&rsquo;t supported and it failed. The same with Ubuntu 16.</p>
-
-<h2 id="launch-virtual-machines">Launch Virtual Machines</h2>
-
-<p>I launched 4 virtual machines with the following specs:</p>
+<p>Below are the features that I would like to have in place for the acceptable delivery.</p>
 
 <ul>
-<li>OS: Ubuntu 14.04</li>
-<li>2 processer cores</li>
-<li>8GB memory</li>
-<li>4 disks total</li>
-<li>1 OS disk @ 8GB</li>
-<li>3 unformatted disks @ 20GB</li>
-<li>1 public IP nic  1GbE</li>
-<li>1 private IP nic  1GbE</li>
+<li>OBD2 Integration</li>
+<li>Biometric Entry (Face Unlock)</li>
+<li>Keyless Entry</li>
+<li>Alarm</li>
+<li>Stereo Setup</li>
+<li>Navigation</li>
+<li>IoT Syncing</li>
+<li>Anti-Theft</li>
+<li>Blackbox Recording</li>
+<li>Driving and Backup Cameras</li>
+<li>Steering Wheel Controls</li>
+<li>Accelerometer - axis tilt</li>
 </ul>
 
-<p><img src="/images/mapr1.png" alt="OpenNebula" /></p>
+<h1 id="research">Research</h1>
 
-<h2 id="csshx">CsshX</h2>
+<p>Obviously this was a research heavy experiment. I didn&rsquo;t really know how I was going to go about it. And there aren&rsquo;t a ton of plug&amp;play solutions. Which I kinda liked.  I used to help my dad build computers as a kid.  Actually I just used to hand him stuff and sit there bored.  Fun fact - back then the computers weighed as much as my car.</p>
 
-<p>If you are working on multiple servers it&rsquo;s best to use a unified command broadcast tool. It makes life so much easier. This is not the same as the clustershell that will be used from node to node.</p>
+<h2 id="resources">Resources</h2>
 
-<pre><code>csshx --login root --ssh_args &quot;-i .ssh/YOURKEY&quot; host1 host2 host3 host4
-</code></pre>
+<p>I will add to these from time to time. This is probably the only section I will update long term.</p>
 
-<p><img src="/images/mapr2.png" alt="csshx" /></p>
+<h3 id="hardware">Hardware</h3>
 
-<h2 id="ssh-keys">SSH keys</h2>
+<h4 id="reasonable-pcs">Reasonable PCs</h4>
 
-<p>You will need to setup passwordless authentication on all the severs. I always do that for external acounts but you need it make sure you can get from node to node.</p>
+<p>A $250 PC with a solid power supply.</p>
 
-<h2 id="housekeeping">HouseKeeping</h2>
+<p><a href="http://www.mini-box.com/SYS-M350-ASUS-J4005I-C-Intel-Celeron-ITX-M3-ATX-HV?sc=8&amp;category=1543">http://www.mini-box.com/SYS-M350-ASUS-J4005I-C-Intel-Celeron-ITX-M3-ATX-HV?sc=8&amp;category=1543</a></p>
 
-<pre><code>apt update
-apt upgrade
-apt install wget unzip clustershell vim htop nfs-common openjdk-7-jdk ntp ntpdate
-</code></pre>
+<p><a href="http://www.mini-box.com/Complete-CarPC-Systems">http://www.mini-box.com/Complete-CarPC-Systems</a></p>
 
-<h3 id="open-security">Open Security</h3>
+<h4 id="locked-down-hardware">Locked Down Hardware</h4>
 
-<p>I don&rsquo;t like this but MapR likes to have the app armor off. I&rsquo;ll be working on getting that or selinux for CentOS back. It could save you some pain later.</p>
+<p>These seem to be custom built specifically for car integration.</p>
 
-<pre><code>service apparmor stop
-update-rc.d -f apparmor remove
-</code></pre>
+<p>2-3 week lead time. Too tight for our needs.</p>
 
-<h2 id="keys-for-nodes">Keys for Nodes</h2>
+<p><a href="https://e3io.com/hideaway-unit">https://e3io.com/hideaway-unit</a></p>
 
-<p>Set up user mapr and give it keys. Generate keys for the nodes. See <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Generate SSH Keys</a> from Github.</p>
+<h4 id="batteries-not-included">Batteries Not Included</h4>
 
-<pre><code>useradd -m mapr
-usermod -aG sudo mapr
-mkdir /home/mapr/.ssh
-cp ~/.ssh/authorized_keys /home/mapr/.ssh/
-vim ~/.ssh/id_rsa
-cp ~/.ssh/id_rsa /home/mapr/.ssh/
-chmod 600 ~/.ssh/id_rsa /home/mapr/.ssh/id_rsa /home/mapr/.ssh/authorized_keys
-chown mapr:mapr -R /home/mapr/.ssh
-</code></pre>
+<p>Nice components. But I would have to assemble everything myself.</p>
 
-<h2 id="hostnames">Hostnames</h2>
+<p><a href="http://www.mini-box.com/Car-PC-System-Components">http://www.mini-box.com/Car-PC-System-Components</a></p>
 
-<p>It is important for the servers to have the hostnames to the local internal IP addresses set. I use AWS Route53 and that seems to work fine. Of course I need external connectivity to get out to their DNS. I set up the internal host names as mapr1-4 and add a DNS search parameter to the resolv.conf</p>
+<p>UK. probably wouldn&rsquo;t get here in time.</p>
 
-<h2 id="clustershell">Clustershell</h2>
+<p><a href="https://www.in-carpc.co.uk/products/view/cq15-fanless-vehicle-pc">https://www.in-carpc.co.uk/products/view/cq15-fanless-vehicle-pc</a></p>
 
-<p>The cluster shell should have been installed via apt above.</p>
+<h4 id="the-way-too-expensive">The Way Too Expensive</h4>
 
-<p>Edit the cluster shell config.</p>
+<p>This one is their mini rugged coming in at almost $1400!</p>
 
-<pre><code>vim /etc/clustershell/groups
-echo &quot;all: &lt;IP addr 1&gt; &lt;IP addr 1&gt; &lt;IP addr 2&gt; &lt;IP addr 4&gt;&quot; &gt;&gt; /etc/clustershell/groups
-</code></pre>
+<p><a href="https://www.spartonre.com/littlepcs/fanless-mini-pcs/lpc-810-ultra-small-rugged-fanless-mini-pc/">https://www.spartonre.com/littlepcs/fanless-mini-pcs/lpc-810-ultra-small-rugged-fanless-mini-pc/</a></p>
 
-<p>Then scan for the keys.</p>
+<h3 id="software">Software</h3>
 
-<p>As root and mapr</p>
+<p>Google Android</p>
 
-<pre><code>ssh-keyscan &lt;IP addr 1&gt; &lt;IP addr 1&gt; &lt;IP addr 2&gt; &lt;IP addr 4&gt; &gt;&gt; ~/.ssh/known_hosts
-</code></pre>
+<p><a href="https://www.android.com/auto/">https://www.android.com/auto/</a>
+It looks like they are making a very weak attempt at entering the market.</p>
 
-<p>Test it:</p>
+<h3 id="suites">Suites</h3>
 
-<pre><code>clush -a date
-</code></pre>
+<p>Carberry</p>
 
-<h2 id="set-up-ntpd">Set up ntpd</h2>
+<p><a href="http://www.carberry.it/">http://www.carberry.it/</a></p>
 
-<p>You will need to set up a local ntp server according to your own documentation. This is recommended by the MapR documentation.</p>
-
-<h1 id="install-mapr">Install MapR</h1>
-
-<h2 id="download-the-lab-files">Download the Lab Files</h2>
-
-<p>This install was done while going through the MapR training lab. So I have used their files for this purpose.</p>
-
-<pre><code>mkdir /opt/mapr
-cd /opt/mapr
-wget http://course-files.mapr.com/ADM2000/ADM200_Lab1.2.zip
-unzip ADM200_Lab1.2.zip
-ls labfiles
-</code></pre>
-
-<h2 id="run-validation">Run Validation</h2>
-
-<h3 id="run-a-cluster-audit">Run a Cluster Audit</h3>
-
-<pre><code>./labfiles/cluster-audit.sh | tee cluster-audit.log
-</code></pre>
-
-<p>You shouldn&rsquo;t see any errors or exit codes. Please fix if you find them.</p>
-
-<h3 id="evaluate-network-bandwidth">Evaluate Network Bandwidth</h3>
-
-<p>Here is where I really realized that I need faster networking in our data center. I will be posting an updated article after I have had time to build and upgrade the networking.</p>
-
-<pre><code>./labfiles/network-test.sh | tee network-test.log
-
-172.16.0.50: server-172.16.0.48-rpctest.log:Rate:  58.65 mb/s, time: 89.4174 sec, #rpcs 20007, rpcs/sec 223.748
-172.16.0.49: server-172.16.0.47-rpctest.log:Rate:  58.65 mb/s, time: 89.4173 sec, #rpcs 20007, rpcs/sec 223.749
-</code></pre>
-
-<h3 id="evaluate-data-flow">Evaluate Data Flow</h3>
-
-<pre><code>clush -Ba /opt/mapr/labfiles/memory-test.sh | tee memory-test.log
-</code></pre>
-
-<p>Stream will give you some interesting information about your throughput.</p>
-
-<pre><code>-------------------------------------------------------------
-Function      Rate (MB/s)   Avg time     Min time     Max time
-Copy:       13793.8268       0.0963       0.0928       0.1045
-Scale:      15898.8540       0.0843       0.0805       0.1087
-Add:        20007.9099       0.0993       0.0960       0.1102
-Triad:      19926.1249       0.0994       0.0964       0.1068
-</code></pre>
-
-<h3 id="evaluate-raw-disk-performance">Evaluate Raw Disk Performance</h3>
-
-<p>Be careful. This will erase everything on the disks. We set up 3 disks on each node but since they are obviously virtual let&rsquo;s just run it on one. I also don&rsquo;t feel like beating up SSD&rsquo;s like this so I skip it sometimes.</p>
-
-<pre><code>clush -Ba /opt/mapr/labfiles/disk-test.sh
-</code></pre>
-
-<h2 id="install-a-mapr-cluster">Install A MapR Cluster</h2>
-
-<h3 id="get-the-installer">Get the Installer</h3>
-
-<pre><code>wget http://package.mapr.com/releases/installer/mapr-setup.sh
-bash mapr-setup.sh
-</code></pre>
-
-<p>Run through the setup and let it know what you decide. It will probably try to install several dependencies.</p>
-
-<p><img src="/images/mapr3.png" alt="MapR Installer" /></p>
-
-<h2 id="finish-install">Finish Install</h2>
-
-<p>Go to the GUI and run through the rest of the install. The installer will give you the url and the port.</p>
-
-<pre><code>https://YOURHOST:9443/
-</code></pre>
-
-<p><img src="/images/mapr4.png" alt="MapR GUI Installer" /></p>
-
-<p>You will be notified of any discrepancies. It is best not to ignore these in a production environment. Of course I didn&rsquo;t have enough room on certain things, but I went ahead anyway.</p>
-
-<p><img src="/images/mapr5.png" alt="MapR GUI Installer" /></p>
+<p>This one looks to be the most full featured.</p>
 
             </div>
 
@@ -765,13 +669,13 @@ bash mapr-setup.sh
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="http://scotttactical.com/post/django-ecommerce-in-30-minutes/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="http://scotttactical.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="http://scotttactical.com/post/sfp-vs.-qsfp/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="http://scotttactical.com/post/blockchain-end-of-war/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>

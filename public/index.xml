@@ -6,10 +6,21 @@
     <description>Recent content on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jul 2017 13:01:51 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 05 Mar 2019 21:32:16 -0800</lastBuildDate>
     
 	<atom:link href="http://scotttactical.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Car Computer Intro</title>
+      <link>http://scotttactical.com/car-computer-intro/</link>
+      <pubDate>Tue, 05 Mar 2019 21:32:16 -0800</pubDate>
+      
+      <guid>http://scotttactical.com/car-computer-intro/</guid>
+      <description>Car Computer Introduction The purpose of the build out is to take a 100% analog vehicle and bring in modern creature comforts and a modern driveline. In addition to this I will be integrating a few technology tools that are developed at my current work.
+Features Below are the features that I would like to have in place for the acceptable delivery.
+ OBD2 Integration Biometric Entry (Face Unlock) Keyless Entry Alarm Stereo Setup Navigation IoT Syncing Anti-Theft Blackbox Recording Driving and Backup Cameras Steering Wheel Controls Accelerometer - axis tilt  Research Obviously this was a research heavy experiment.</description>
+    </item>
     
     <item>
       <title>Blockchain: End Of War</title>
