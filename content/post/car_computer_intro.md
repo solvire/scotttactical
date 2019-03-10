@@ -64,6 +64,12 @@ http://www.mini-box.com/SYS-M350-ASUS-J4005I-C-Intel-Celeron-ITX-M3-ATX-HV?sc=8&
 
 http://www.mini-box.com/Complete-CarPC-Systems
 
+This is what I eventually went with some days later:
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=scotttactical-20&marketplace=amazon&region=US&placement=B07LC79DZ6&asins=B07LC79DZ6&linkId=127920f062688cef612e1c46944b3dd3&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+
+
 #### Locked Down Hardware
 
 
