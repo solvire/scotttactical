@@ -125,6 +125,16 @@ This one is their mini rugged coming in at almost $1400!
 
 https://www.spartonre.com/littlepcs/fanless-mini-pcs/lpc-810-ultra-small-rugged-fanless-mini-pc/
 
+
+A great option but a little bit outside the price range.
+
+https://www.logicsupply.com/cl210g-11/?gclid=EAIaIQobChMIrei2noT74AIVZB6tBh3thA5CEAYYAyABEgL_XfD_BwE
+
+* $478.00
+* Quad-Core Intel Pentium N4200 processor
+* Dual LAN, options for 4G, Movidius, and multi-CEC functionality
+* TPM via Intel Platform Trust Technology
+
 #### Software
 
 

@@ -83,6 +83,32 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-12-24T06:41:07JST">Dec 24, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">Encrypt PostgreSQL Backup to S3</a></h2>
+  </header>
+
+  
+  <div class="summary">Encrypt Your DB Backups I&rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.
+Generate Keys From your user&rsquo;s home directory:
+openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub
+Fill out the questions appropriately. Or not. I don&rsquo;t think it matters really.
+That will create the public and private keys.
+backup_key.pem - private key backup_key.</div>
+
+  
+  <footer>
+    <a href="https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/" title="Encrypt PostgreSQL Backup to S3">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-12-09T08:52:58JST">Dec 9, 2016</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
       
@@ -127,28 +153,6 @@ In 2001 I had to take a job as an &ldquo;integration specialist&rdquo;.</div>
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-11-29T19:09:21JST">Nov 29, 2016</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/">HowTo Bind Multiple Terminals MacOS-X</a></h2>
-  </header>
-
-  
-  <div class="summary">Binding Multiple Terminals I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.
-I tried a few other terminal apps. Particularly iTerm2 that has some nice broadcasting.</div>
-
-  
-  <footer>
-    <a href="https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/" title="HowTo Bind Multiple Terminals MacOS-X">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -179,6 +183,8 @@ I tried a few other terminal apps. Particularly iTerm2 that has some nice broadc
     </div>
     <div class="list-group">
       
+      <a href="https://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
+      
       <a href="https://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
       
       <a href="https://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
@@ -196,8 +202,6 @@ I tried a few other terminal apps. Particularly iTerm2 that has some nice broadc
       <a href="https://scotttactical.com/post/django-saleor-ecommerce-review/" class="list-group-item">Django Saleor eCommerce Review</a>
       
       <a href="https://scotttactical.com/post/django-ecommerce-in-30-minutes/" class="list-group-item">Django eCommerce in 30&#43; Minutes</a>
-      
-      <a href="https://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/" class="list-group-item">How To Setup a MapR Cluster on Ubuntu</a>
       
     </div>
   </section>
@@ -245,7 +249,7 @@ I tried a few other terminal apps. Particularly iTerm2 that has some nice broadc
       
       <a href="https://scotttactical.com/tags/adventure" class="list-group-item">adventure</a>
       
-      <a href="https://scotttactical.com/tags/django" class="list-group-item">django</a>
+      <a href="https://scotttactical.com/tags/car-computer" class="list-group-item">car-computer</a>
       
     </div>
   </section>

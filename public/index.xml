@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 09 Mar 2019 14:33:06 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 11 Mar 2019 01:10:53 -0700</lastBuildDate>
     
 	<atom:link href="https://scotttactical.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux USB Relay Controller</title>
+      <link>https://scotttactical.com/linux-usb-relay-controller/</link>
+      <pubDate>Mon, 11 Mar 2019 01:10:53 -0700</pubDate>
+      
+      <guid>https://scotttactical.com/linux-usb-relay-controller/</guid>
+      <description>Finding A Relay Controller One of my bigger worries is working with peripherals. I needed to find a camera and I felt like that was going to be easy enough. The relay controller will hit the actuators running the door locks.
+What Is A Relay Switch Most things inside a car take a decent amount of power to actuate or power them. The car is limited to 12V DC and your other measurements are amps and watts.</description>
+    </item>
     
     <item>
       <title>Car Computer Camera</title>
