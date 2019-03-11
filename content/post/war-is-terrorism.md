@@ -6,7 +6,7 @@ draft: true
 tags: [ philosophy, politics ]
 ---
 
-# Killing is Murder
+## Killing is Murder
 
 There is a long running question of where the cutoff is from justifiable homicide and outright murder.  In the case of war it is a little bit gray. I, as a Catholic, have a guide that is fairly
 
