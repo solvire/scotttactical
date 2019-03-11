@@ -28,6 +28,13 @@ https://www.explainthatstuff.com/howrelayswork.html
 Switches are used all over automotive applications.  In the blazer I have a few relays on the lights but later there will be a lot more running other things that are constant heavy draw.
 
 
+## Electrical Relay Diagram
+
+
+{{% img src="images/relay_diagram1.png" caption="Relay Diagram." %}}
+
+
+
 ## Criteria
 
 Here are a few of the criteria needed
