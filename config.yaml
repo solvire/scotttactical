@@ -5,6 +5,7 @@ Title: "Scott Tactical"
 Theme: "hugo_theme_beg"
 # Theme: "hugo-nuo"
 disqusShortname: "scotttactical"
+googleAnalytics: "UA-53440065-2" # Optional
 
 Params:
   Author: "Scott Tactical"

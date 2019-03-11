@@ -70,6 +70,24 @@ This is what I eventually went with some days later:
     </iframe>
 
 
+Some notable mentions:
+
+
+https://www.bsicomputer.com/products/ebox100-312-fl-16278?gclid=CjwKCAiAwojkBRBbEiwAeRcJZE_dSibZm5DoXb6_yM9Rdmd5E2I4_gdONnFIA4sao9jQ2wkfpxE46RoCvLIQAvD_BwE
+
+* $299
+* Intel® Celeron® Processor N3350 (2M Cache, 1.10 GHz), with turbo boost up to 2.4 GHz
+* 2GB DDR3L SO-DIMM Memory (1x2GB)
+* 500GB 5.4K RPM SATA 2.5" Hard Drive
+* 1 x RS-232 (DB-9) COM Ports
+* 2 x USB3.0, 4 x USB2.0 Ports
+* 2 x Full-size PCI Express Mini Card Slots (USB + PCIe), 1 x SIM Slot
+* Wireless Module (Optional)
+* Built-in Dual HDMI 1.4b Ports
+* Built-in 2 x GbE LAN
+* 12V/36W Power Adapter
+
+
 #### Locked Down Hardware
 
 
@@ -91,6 +109,15 @@ http://www.mini-box.com/Car-PC-System-Components
 UK. probably wouldn't get here in time.
 
 https://www.in-carpc.co.uk/products/view/cq15-fanless-vehicle-pc
+
+#### Automotive Specific
+
+Car TFT had a lot of full featured components such as navigation.
+They also had hardened computers that would end up in the Way Too Expensive category
+
+https://www.cartft.com/
+https://www.cartft.com/catalog/enthusiast
+
 
 #### The Way Too Expensive
 
