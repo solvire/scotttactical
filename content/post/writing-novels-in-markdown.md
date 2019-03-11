@@ -7,11 +7,11 @@ tags: [ writing, technology ]
 image: images/love_markdown.png
 ---
 
-# Writing in Markdown
+## Writing in Markdown
 
 If you haven't used [Markdown](https://en.wikipedia.org/wiki/Markdown) to write in a rich(er) text format, then you are missing out. I pretty much write all my technical documentation in Markdown. It's pretty awesome and I don't know why it took me so long to find it. I didn't start using it until around 2013.
 
-## What is Markdown
+### What is Markdown
 
 Markdown was created by [John Gruber](https://en.wikipedia.org/wiki/John_Gruber).
 
@@ -23,15 +23,15 @@ What does that even mean? Well it just means it is plain text that has a few sym
 
 I'm still not sure how DaringFireball made any money, but I guess once you get traffic it's all gravy.
 
-# The Objectives
+## The Objectives
 
-## Time Management
+### Time Management
 
 I write on various applications and in various places. I am always just jotting stuff down in Evernote, voice notes on my phone, sketching on my Post-it pad, etc.  I'm totally distributed. I think everywhere so I might as well be able to write everywhere.
 
 There are so few minutes of available time in my day that I want to make use of them. If I tallied up all my available time in a day and aggregated it I would have easily written a few novels by now. But that is another topic.
 
-## Deficiency Analysis
+### Deficiency Analysis
 
 I tried to identify all the areas that were keeping me from writing.  The biggest was obviously motivation and getting back in the flow. I fail the biggest recommendation I have read: write every day.
 
@@ -39,7 +39,7 @@ The second problem was my editor sucked. I was using OpenOfficeArg. Totally a bu
 
 The third problem was that my project was getting too ambitious and I couldn't keep all the links to the ideas. Part of that reason was the gaps in writing time.
 
-# Workflow
+## Workflow
 
 This is my proposed workflow. It will be adjusted over time.
 

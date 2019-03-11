@@ -7,13 +7,13 @@ image: images/php-unit-logo.jpg
 comments: true
 ---
 
-# PHPUnit Is Slowness
+## PHPUnit Is Slowness
 
 I love [PHPUnit](https://phpunit.de/) don't get me wrong. More than a testing library, I like testing, or having tests. It's like the code got yo back bro! Build code that lasts.
 
 _EDIT_: I know most of the problems are inherent with tests not the testing framework.  However, my requirements dictate how I use it to a certain extent.  Peace.
 
-## PHPUnit is painfully slow.
+### PHPUnit is painfully slow.
 
 ![PHPUnit Is Slow](/images/turtle-speed.jpg)
 
@@ -21,7 +21,7 @@ Seriously. Though. Maybe having a concurrent environment it can run it would hel
 
 For reference the 41 year old [Scott Jurek](http://www.npr.org/sections/thetwo-way/2015/07/13/422610986/ultramarathoner-finishes-the-appalachian-trail-in-record-time) can walk the [2000+ mile Appalachian Trail](http://www.nps.gov/appa/index.htm) in 45 days. Single threaded of course.
 
-## Why is PHPUnit Anti-Performant
+### Why is PHPUnit Anti-Performant
 
 
 Some thing that are inherent to unit tests that make them slow.
@@ -33,9 +33,9 @@ Some thing that are inherent to unit tests that make them slow.
 - Writing to file on a local system is slow
 - Generating reports is intensive
 
-# Strategies
+## Strategies
 
-## SQLite - In Memory
+### SQLite - In Memory
 
 ![SQLite](/images/sqlite.gif)
 
@@ -61,13 +61,13 @@ I also like to make sure my host is set to not kill anything. I have wiped out a
 <env name="DB_HOST" value="NO"/>
 ```
 
-## Database - Sometimes
+### Database - Sometimes
 
 I have two base test cases that I use for almost everything. One that wraps up Laravel or the big framework I'm messing with or one that will just extend phpunit by itself.  It might even be better to have data groups into domains so that when you are running a group of tests that it only loads up those tables.
 
 We have a couple hundred tests. Not much.  But it takes 2-5 seconds to load up all the data. That adds up to minutes.  Can't handle that.
 
-## Grouping Test Suites
+### Grouping Test Suites
 
 You have the ability to group your tests. I always have my developers add docblocks such as below so that PHPUnit will know how to group thing. The fields that I want them to use are:
 
@@ -102,7 +102,7 @@ Available test group(s):
 
 ```
 
-## Filter Your Tests
+### Filter Your Tests
 
 Run only the tests you need. Sometimes I'm working with a class and I want to keep running that class.  Just filter by the test class name:
 
@@ -119,11 +119,11 @@ LeadFerret\Lib\Rules\CompanyModifyRuleProvider
 
 ```
 
-## Turn Off Code Coverage
+### Turn Off Code Coverage
 
 You don't always have to run code coverage reports. In fact probably only before a deployment. Either you really love to see code coverage or you hate dealing with unit tests.  Doesn't really seem to be much between.  
 
-### Performance Tests
+#### Performance Tests
 
 The difference was so staggering I that I was totally irritated I didn't find this sooner. I was even getting in trying to debug at the lower code level.  
 
@@ -148,14 +148,14 @@ Generating code coverage report in HTML format ... done
 
 FASTER!
 
-## JavaScript For The Assist
+### JavaScript For The Assist
 
 ![GulpJS](/images/gulp.png)
 
 We have been toying with using [Gulp](http://gulpjs.com/) / [NPM](https://www.npmjs.com/) for setting up a better workflow.  It is simple enough that once a file is saved that scripts can kick off the appropriate unit tests. If your tests are completing in less than a couple seconds then it doesn't hurt to keep running them. If they break you may know it sooner.  This is also helpful for those people who refuse to use a full-featured IDE.  Probably also the same people that enjoy working on javascript in the dark.  I know who you are. O.o
 
 
-# Conclusion
+## Conclusion
 
 Life is much better now.
 

@@ -6,11 +6,11 @@ image: images/django_pony.jpg
 comments: true
 ---
 
-# Fixtures are a Messy Mess
+## Fixtures are a Messy Mess
 
 It is quite a pain to maintain fixtures it seems. I am not sure why yet. Maybe there hasn't been quite enough time on this piece of the product for it to mature.
 
-# Django dumpdata
+## Django dumpdata
 
 I tried several different variations to dump the data. I'll include a few of them here since they might actually work for someone else.
 
@@ -33,7 +33,7 @@ gave me this:
 
   Could not load object.User(pk=None): null value in column "user_ptr_id" violates not-null constraint
 
-# DumpData Alternatives
+## DumpData Alternatives
 
 The [django grid](https://www.djangopackages.com/grids/g/fixtures/) to the rescue again.
 
@@ -41,7 +41,7 @@ A lot of the packages were for generating testing fixtures. I don't need that. W
 
 I decided to give [Fixture Magic](https://github.com/davedash/django-fixture-magic) a try.
 
-## Fixture Magic
+### Fixture Magic
 
 My initial test wasn't very promising.
 
@@ -53,7 +53,7 @@ But apparently I wasn't the [only one.](https://github.com/davedash/django-fixtu
 
 Then I found out that I can't have non-int keys. Since most of my objects use UUID that was the end of F-Magic.
 
-# I Gave Up On Fixtures
+## I Gave Up On Fixtures
 
 This data model must just be too complex.
 
@@ -65,7 +65,7 @@ Load it up with a script when deploying dev.
 
   psql APP < APP/fixtures/pg_dump.latest.sql
 
-# How Now Tests?
+## How Now Tests?
 
 I know. Fixtures are kinda important with tests. I went ahead and installed [Factory boy](https://github.com/rbarrois/factory_boy).
 

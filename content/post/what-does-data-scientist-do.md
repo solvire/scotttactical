@@ -7,9 +7,9 @@ image: images/data_science.jpg
 comments: true
 ---
 
-# What Does a Data Scientist Do
+## What Does a Data Scientist Do
 
-## Uncovering the Key Capabilities of a Data Scientist
+### Uncovering the Key Capabilities of a Data Scientist
 
 
 Are you thinking of pursuing a career as a data scientist? It has been published that being in this field could mean you will be in-demand for many companies. So, it is not surprising if the number of individuals turning to data science is fast increasing.

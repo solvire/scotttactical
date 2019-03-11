@@ -7,7 +7,7 @@ comments: true
 ---
 
 
-# Preface to Vehemenism
+## Preface to Vehemenism
 
 Opening letter to future ultra-violent men.
 
@@ -20,7 +20,7 @@ I will note that what I reference is not my entire personal philosophy, but vari
 These cyclical changes in society are not things any one person has control over. We are actors in the play.
 
 
-# Overview
+## Overview
 
 Why do I immediately focus on men? If this is a cultural epoch then why not include all of Society?  Women and children are part of society, but are not being fundamentally altered. They are being amplified. Their amplification is dramatically reducing the available pool of men. In this scenario, there is a zero-sum outcome.
 
@@ -36,7 +36,7 @@ Hopefully, I will be able to identify the way these men might communicate on a s
 
 This is a philosophy of a post-modern post-Christian male.
 
-# Tribalism
+## Tribalism
 
 Men are tribal. There is no question about this. Anyone who has a problem understanding this concept is not a man. It is our natural state. It is not a state that children, boys, and women would ever naturally coalesce into.  Boys tend to drift this direction, but it is a weak concept for them because they lack some of the requisites that each man must bring into the tribe. Those sacred ingredients are what men require, and the tribe requires to function and sustain.
 
@@ -47,7 +47,7 @@ The truth is we have very weak ideas about how humans lived before there was wri
 Tribalism will hold a central fixture in this series because that is the basic power structure for a male-centric existence. A man can still be a man by himself, but it's much harder to develop essential skills and survive. Bravo to those who can or are forced to.  To go beyond the tribe into a **"society" always suggests a sacrifice of the tribe** and the roles that men hold inside that social paradigm.
 
 
-# The Pack
+## The Pack
 
 Leadership is something that has mostly vanished in modern society. Many people think they are leaders, but in actuality, they are just bosses pushing people around and wholly supported by an efficient and complicated infrastructure. I will attempt to go into what leadership is and how it relates to the outcome of the pack as a whole.  
 
@@ -57,7 +57,7 @@ Packs need an alpha to be a pack. At least one. Many alpha types can exist in a 
 
 Right now there is a general dearth of qualified or capable males for these roles. Most do not understand or care to learn what base virtues are required in the making of an alpha.
 
-# The Virtues
+## The Virtues
 
 **Chivalry is dead**.
 
@@ -68,7 +68,7 @@ The virtues and pseudo-virtues of after Roman/medieval era did not and will not 
 The martial virtues are still somewhat intact and combined with tribal virtue they may not scale very well, but are the strongest group bonds and fulfill men in a way that no other system is capable of right now.  
 
 
-# Violence
+## Violence
 
 Men need violence.  It is necessary for our transition into manhood. Men have been starved for real violence for a long time, and there will be a sharp curl back on this trajectory. It may only be a few of us men who decide to prescribe this back on society, but it will ultimately destroy those few men who choose to do it.
 
@@ -78,13 +78,13 @@ True violence has no limits. It has no morals, and the harbinger is simply doing
 
 **The beauty of violence is the fact that is non-refundable**. Once it has acted upon us, it is final.  Like a bomb. It is the same with intercourse: real sex that is. Not intercourse with birth control or contraceptives.  Opposite from the way foolish children are taught to use their bodies like a playground.  Nothing can truly be romantic unless it is absolute and final.
 
-# Morality
+## Morality
 
 Morality exists as a byproduct of intention. It is something that a Vehemenist does not have to concern himself with because individual actions are not in themselves moral or immoral when viewed under a microscope.  What makes the man moral is the level of self-actualized completeness the man has achieved and his current ego.  Any artificial ego is immoral. All men have some ego. Therefore all men are inherently immoral.  All actions may have some taint of corruption. Thus, worrying about if an individual action is immoral is contrary to the philosophy. What should exist before contemplation; is the destruction of self and the violent removal of threats to the tribe.
 
 This should not be confused with the concept of "the ends justify the means."  That is a feminine concept that sociopaths use to justify their actions against society or individuals.  Instead, abstract morality is something that is only realized inside of the greater picture and only God or the gods would concern themselves in arguing over the minutiae of implementation.  This is freedom in action and thought.  If one of our brothers is to be in Hades, it is better to go to join him there than end up in paradise alone with hens.
 
-# Ethics
+## Ethics
 
 Morality and ethics exist either as subsets or supersets. Depending on your vantage point.  As it relates to men, ethics is something that extends only to the border of the tribes. It may be advantageous to follow a code of conduct in order for the tribe to maintain a level of credibility.  This facilitates commerce. Ethics only extend up to the perimeter of the circle.  As waves of concentric rings fade as they go away from the center of a dropped stone; so do weak concepts of morality.  Ethics are a weak facsimile of morals.
 
@@ -92,7 +92,7 @@ Some very brief introductions to diminishing ethical characteristics can be rela
 
 Because ethics are largely irrelevant, I will attempt to break down the various social paradigms that may oppress or limit men's development which live under the guise of ethics.
 
-# Sexuality
+## Sexuality
 
 Your impulses are not your identity.  It is entirely irrelevant who or what you are naturally or unnaturally attracted to.  
 
@@ -106,17 +106,17 @@ Men who pursue copulation with one or multiple women for the enhancement of thei
 
 Neo-stoicism is not easy.  
 
-# Patriarchy
+## Patriarchy
 
 This should be self-explanatory.
 
 Beta males cuckold for a woman who is intellectually in bed with an alpha. These men are usually easily paid off with sexual treats and small spaces of freedom that they can march around in like tiny Napoleons on their island.
 
-# Marriage
+## Marriage
 
 This institution is a farce. It serves no other purpose at this point than to transfer wealth and to punish foolish men for agreeing to legally participate. Any formal contract that can so easily be broken is no contract at all.  A study of marriage from a purely fiscal vantage point will explain why the Vehemenist would only agree to join a marriage if there are considerable financial benefits to him. Otherwise the tribe should seek to discourage it and attempt to pull the responsibility of raising children centrally under the strongest and most virtuous women.  
 
-# Child Rearing
+## Child Rearing
 
 Isolated and atomic families who hide their parenting tactics from the tribe are suspect to the tribe. If their intentions are to strengthen the group, then there is no logical reason why any aspect of their life should be hidden from the tribe.  Everyone essentially has to do the same things to live.  Infection grows in darkness.  Outside the tribe, however, the familial ideals should be guarded.  Knowing those allows another group to break down the tribe.
 
@@ -126,7 +126,7 @@ Woman have sought the "safest" way to raise children and have almost entirely ta
 
 It should be noted that women are not capable of raising boys to manhood. By the time boys hit an age of puberty all women must take a secondary role in raising the boy.  Even slight interaction with boys may cause them to develop effeminate characteristics, or they will compensate by developing an unjust masculine pride that only a woman can fulfill. The first feminine trap.
 
-# Health
+## Health
 
 Vehemenists seek to bring themselves to the highest level of their physical capacity. This is a pillar of the philosophy and extends to both women and children.  
 
@@ -138,13 +138,13 @@ Both men and woman have the very challenging job of determining what is most ben
 
 Drugs and alcohol must be used with limitations and for specific purposes. The same way that sex isn't a recreational device, neither are mind altering substances.  It may not be wrong to do these things, but it is always better to abstain from these chemicals when possible.  
 
-# Religion
+## Religion
 
 **Tribe is religion**.
 
 We have lost too much of the mystery of our souls and are incapable of pulling things out of ourselves anymore. It is dying inside of us. The pain is covered over with our ego. It is too hard to tell which religious basis will be adopted by Vehemenists. It could be many. There are candidates with various favorable ingredients. Gnosticism. Paganism. Ascetic or Orthodox Christianity. Islam. Zen Buddhism or Taoism. That isn't the point. The point of the tribe is to develop cultural norms by which the participants can all relate and where the martial virtues are supported.
 
-# Intellect
+## Intellect
 
 **Enhancing the mind is critically important**.  The forces that will attack the tribe are going to be overwhelmingly administrative.  
 
@@ -152,7 +152,7 @@ There are very few physical existential threats to the tribe when compared to th
 
 This topic will need deep discourse.  Having thoughtful leaders will make or destroy a tribe.  There are many conditions now that are going to force the tribe into the shadows. A careful study of the Islamic insurgents or the IRA would be a great starting point.  Both of those small groups were able to go up against empires and force them to the negotiating tables, albeit with sacrifice.
 
-# Conclusion
+## Conclusion
 
 I have not put any time limit on my work on this. It could take days, weeks or years.  This is not my philosophy but one that I believe will appear soon.
 

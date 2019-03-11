@@ -7,11 +7,11 @@ comments: true
 ---
 
 
-# Encrypt Your DB Backups
+## Encrypt Your DB Backups
 
 I'm mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.
 
-## Generate Keys
+### Generate Keys
 
 From your user's home directory:
 
@@ -24,7 +24,7 @@ That will create the public and private keys.
   backup_key.pem - private key
   backup_key.pem.pub - public key
 
-## Add AWS Keys
+### Add AWS Keys
 
 Create a file to hold your AWS keys.
 
@@ -40,7 +40,7 @@ aws_secret_access_key = SECRETKEY
 aws_region = us-east-1
 ```
 
-# Backup Script
+## Backup Script
 
 I don't want to bore with details but here is what this script will do from a high level:
 
@@ -52,15 +52,15 @@ I don't want to bore with details but here is what this script will do from a hi
 
 ```bash
 !/bin/bash
-# #######################
+## #######################
 
-# Database Name
+## Database Name
 database_name="$1"
 backup_public_key="/HOMDIR/.ssh/backup_key.pem.pub"
 
-# Location to place backups.
+## Location to place backups.
 backup_dir="/tmp/db_backups/"
-# Numbers of days you want to keep copies of your databases
+## Numbers of days you want to keep copies of your databases
 
 number_of_days=10
 if [ -z "${database_name}" ]
@@ -69,7 +69,7 @@ then
  exit 1
 fi
 
-# String to append to the name of the backup files
+## String to append to the name of the backup files
 backup_date=`date +%Y-%m-%d-%H-%M-%S`
 backup_name="${database_name}.${backup_date}.sql.bz2.enc"
 echo "Dumping ${database_name} to ${backup_dir}${backup_name}"
@@ -82,24 +82,24 @@ pg_dump ${database_name}|bzip2|openssl smime -encrypt \
 find ${backup_dir} -type f -prune -mtime \
     +${number_of_days} -exec rm -f {} \;
 
-# push file to S3
+## push file to S3
 aws s3 cp ${backup_dir}${backup_name} s3://YOURBUCKET/db_backup/
 
 ```
 
-## Crontab
+### Crontab
 
 Set up a crontab for this script. This one fires off at 3am PT daily. Change as needed.
 
   crontab -e
   0 3 * * * /location/pg_backup.sh YOURDB
 
-# Decrypt
+## Decrypt
 
 Decryption is pretty straight forward. Get your private key and pull the file from S3.
 
   openssl smime -decrypt -in my_database.sql.sql.bz2.enc -binary -inform DEM -inkey private.pem | bzcat >  my_database.sql.sql
 
-# Credits
+## Credits
 
 https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/

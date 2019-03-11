@@ -5,13 +5,13 @@ url: django-search-multiple-fields
 tags: [ software,django,data ]
 ---
 
-# Text Search - Django Model Fields
+## Text Search - Django Model Fields
 
 Django has a pretty flexible ORM, but sometimes clients need a free-form text search to get down to the content that you are looking for. It is beyond the capability of most engineers to build a comprehensive search tool and shoehorn it into an existing application. There are people working on these problems for years.
 
 This does remind me of a senior boss that asked me to add a fuzzy search field to an application and that it was "super simple". He said "you just do a LIKE statement against all the fields we care about!" and proceeded to pseudo code it for me. He should read my post about how not to F'k up your engineering staff.
 
-## Searching with Like Statements
+### Searching with Like Statements
 
 This is probably the first place an inexperienced engineer will start. Just pick the field and do a LIKE statement against it.
 
@@ -28,7 +28,7 @@ This doesn't scale. It's amateurish.
 
 But this will satisfy an annoying manager for the time being considering they probably know little about computer science.
 
-## Using Q Objects
+### Using Q Objects
 
 The [Q object](https://docs.djangoproject.com/en/dev/topics/db/queries/#complex-lookups-with-q-objects) in Django is kinda nice. It wraps the queryset. I need a little more information on it to be able to speak intelligently. But that aside I decided to use it in a few places where dynamic queries were valuable.
 
@@ -57,10 +57,10 @@ def get_query(query_string, search_fields):
     That combination aims to search keywords within a model by testing the given search fields.
     '''
 
-    query = None # Query to search for every search term
+    query = None ## Query to search for every search term
     terms = normalize_query(query_string)
     for term in terms:
-        or_query = None # Query to search for a given term in each field
+        or_query = None ## Query to search for a given term in each field
         for field_name in search_fields:
             q = Q(**{"%s__icontains" % field_name: term})
             if or_query is None:
@@ -90,7 +90,7 @@ Another helpful resource was from [Yeti](https://yeti.co/blog/global-search-in-d
 
 
 
-## Search Library
+### Search Library
 
 
 

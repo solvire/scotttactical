@@ -6,23 +6,23 @@ comments: true
 tags: [ technology, django ]
 ---
 
-# Django And eCommerce
+## Django And eCommerce
 
-# TL;DR
+## TL;DR
 
 I like Python and want to use it for eCommerce, so I went through the [well known products](https://djangopackages.org/grids/g/ecommerce/) and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.
 
-# Preface
+## Preface
 
 Let me say this took me almost 2 days to get through and evaluate, which I'm used to having a demo site up in minutes. After having gone through, I think this could be launched in half an hour.  Below are my notes of the process.
 
-# Backstory
+## Backstory
 
 I was contacted by a business partner to see if we could kick off a project to distribute some substances that newly became legal here in CA. I thought I could spin up an ecommerce app in a couple hours and be taking payments in a week. I wanted to see how fast I could do this with Django. Most my previous eCommerce deployments (many) were in PHP and many of them were in [magento](https://magento.com). Had a few in ASP, Perl, (Websphere) Java. I'm over that pain.
 
 Online retail - E-commerce - as an industry, is very mature. It requires a TON of flexibility and features to compete. There isn't a lot of waste.
 
-# Pre-setup
+## Pre-setup
 
 I will append this by saying a few things were already installed like PostgreSQL and Python VirtualenvWrapper.
 
@@ -38,9 +38,9 @@ Here are a couple details about my stack.
 
 Let's Begin
 
-# Local Setup
+## Local Setup
 
-# Setup PostgreSQL
+## Setup PostgreSQL
 
 I have installed PostgreSQL locally already. Please see the documentation for more information.
 
@@ -51,7 +51,7 @@ Create a database for yourself. You will probably be hitting this locally with s
     createdb [project_slug]
 
 
-## Virtual Environment - Python
+### Virtual Environment - Python
 
 Python 2.7
 
@@ -63,7 +63,7 @@ I'm still not on P3. Leave me alone, gosh. There is always some library that cau
 
 CD into a directory beneath your source location. I always do /project/source/*
 
-## Install cookiecutter-django
+### Install cookiecutter-django
 
 I have used this [cookiecutter](https://github.com/pydanny/cookiecutter-django) before so I stick with what I know.
 
@@ -79,7 +79,7 @@ Add the new files to the remote repository and push it.
     git remote add origin yourname@bitbucket.com:yourapp/yourapp.git
     git push -u origin master
 
-## Django Setup
+### Django Setup
 
 I decided to try out Django Oscar. I figure it is the most popular. And also hoping it isn't the most bloated.
 
@@ -107,7 +107,7 @@ Run the manage command to confirm.
 
     ./manage.py
 
-# Set Up Oscar
+## Set Up Oscar
 
 in `yourapp/config/settings/common.py`
 
@@ -117,7 +117,7 @@ According to the [documentation](https://django-oscar.readthedocs.io/en/latest/i
 
 
 ```python
-# Import all the oscar items
+## Import all the oscar items
 from oscar import OSCAR_MAIN_TEMPLATE_DIR
 from oscar import get_core_apps
 from oscar.defaults import *
@@ -127,7 +127,7 @@ from oscar.defaults import *
 ```python
 
 DJANGO_APPS = (
-    # Default Django apps:
+    ## Default Django apps:
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -136,20 +136,20 @@ DJANGO_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.flatpages',
 
-    # Useful template tags:
-    # 'django.contrib.humanize',
+    ## Useful template tags:
+    ## 'django.contrib.humanize',
 
-    # Admin
+    ## Admin
     'django.contrib.admin',
 
 )
 THIRD_PARTY_APPS = (
-    'crispy_forms',  # Form layouts
-    'allauth',  # registration
-    'allauth.account',  # registration
-    'allauth.socialaccount',  # registration
+    'crispy_forms',  ## Form layouts
+    'allauth',  ## registration
+    'allauth.account',  ## registration
+    'allauth.socialaccount',  ## registration
 
-    # the oscar apps
+    ## the oscar apps
     'compressor',
     'widget_tweaks',
     'pycountry'
@@ -169,23 +169,23 @@ MIDDLEWARE_CLASSES = (
 ```python
 TEMPLATES = [
     {
-        # See: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-TEMPLATES-BACKEND
+        ## See: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-TEMPLATES-BACKEND
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
+        ## See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
         'DIRS': [
             str(APPS_DIR.path('templates')),
             OSCAR_MAIN_TEMPLATE_DIR
         ],
         'OPTIONS': {
-            # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-debug
+            ## See: https://docs.djangoproject.com/en/dev/ref/settings/#template-debug
             'debug': DEBUG,
-            # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-loaders
-            # https://docs.djangoproject.com/en/dev/ref/templates/api/#loader-types
+            ## See: https://docs.djangoproject.com/en/dev/ref/settings/#template-loaders
+            ## https://docs.djangoproject.com/en/dev/ref/templates/api/#loader-types
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
                 'django.template.loaders.app_directories.Loader',
             ],
-            # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-context-processors
+            ## See: https://docs.djangoproject.com/en/dev/ref/settings/#template-context-processors
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
@@ -195,7 +195,7 @@ TEMPLATES = [
                 'django.template.context_processors.static',
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
-                # Your stuff: custom template context processors go here
+                ## Your stuff: custom template context processors go here
                 'oscar.apps.search.context_processors.search_form',
                 'oscar.apps.promotions.context_processors.promotions',
                 'oscar.apps.checkout.context_processors.checkout',
@@ -228,7 +228,7 @@ HAYSTACK_CONNECTIONS = {
 }
 ```
 
-## Set the URLs
+### Set the URLs
 
 
 Here is my url file.
@@ -238,17 +238,17 @@ Here is my url file.
 from oscar.app import application
 
 urlpatterns = [
-    # url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
+    ## url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
 
-    # Django Admin, use {% url 'admin:index' %}
+    ## Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, admin.site.urls),
 
-    # User management
+    ## User management
     url(r'^users/', include('yourapp.users.urls', namespace='users')),
     url(r'^accounts/', include('allauth.urls')),
 
-    # Your stuff: custom urls includes go here
+    ## Your stuff: custom urls includes go here
     url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'', include(application.urls)),
 
@@ -258,13 +258,13 @@ if settings.DEBUG:
     ...
 ```
 
-## Build Schema
+### Build Schema
 
 If the database is created and you set up everything properly you should be able to build the DB schema now.
 
     ./manage.py migrate
 
-## Start Local
+### Start Local
 
 Kick off the local server.
 
@@ -272,11 +272,11 @@ Kick off the local server.
 
 If everything works properly you should be able to go to http://localhost:8000/ and see your new project running.
 
-# Store Setup
+## Store Setup
 
 This wasn't quite enough for me so I needed to add some products into the application really quickly to see the catalogue.
 
-## Install Shipping Countries
+### Install Shipping Countries
 
 Pycountry should have been installed already, and it was suggested to load all the countries in the oscar documentation.
 
@@ -286,7 +286,7 @@ This threw an attribute error. At this point I am thinking this application may 
 
 I'm annoyed at pycountry for a menial change like that. Or provide a better SDK.
 
-## Where Templates Are?
+### Where Templates Are?
 
 I realized that the templates were not seen even though they were in the path. I just copied them from the oscar sandbox example so that I had more to go off of.
 
@@ -296,13 +296,13 @@ I also copied over all the static content into the media directory.
 
     /src/oscar/static/oscar/img > yourapp/static
 
-## Dashboard
+### Dashboard
 
 Make sure you created a superuser account.
 
 Login and travel to the dashboard: http://127.0.0.1:8000/dashboard/
 
-## Product Setup
+### Product Setup
 
 You need to have a category and a shipper. That is easy enough to set up. I added a couple products and viewed them on the
 
@@ -310,27 +310,27 @@ You need to have a category and a shipper. That is easy enough to set up. I adde
 
 ![Dashboard](/images/oscar2.png)
 
-# Conclusions
+## Conclusions
 
-## Code Structure
+### Code Structure
 
 This looked fine to me. I was able to find my way around very easily compared to the likes of Magento, IBM, SAP. Thank goodness. That is stuff of nightmares.
 
-## Loaders
+### Loaders
 
 The framework is important to me. I like to see proper recognizable patterns. There were red flags with the model class "loader" paradigm when I expected to see Django objects. I think that is unnecessary with a framework that has good bootstrapping functionality such as Django. Maybe someone can explain where my thinking is in error.
 
-## No REST for me
+### No REST for me
 
 I was disappointed with how hard it was to find information about oscar and an integration with a REST layer. Most sites MUST support mobile. And probably should support mobile FIRST. The old days of a monolithic website stack are kinda over. Especially with javascript running rampage over the facades of the interwebs.
 
 Yes, I know there is [django oscar api](https://github.com/django-oscar/django-oscar-api) - It needs more thorough documentation, and matrix of supported features would be nice. Overall it looks promising.
 
-## Performance
+### Performance
 
 The application felt kinda slow. Maybe it can be optimized, but for a starter, I felt like it should be more responsive. The feel of other apps was a little better. With ecommerce the most important thing is checkout flow followed by performance and product data.  Don't skimp on ANY of those things.  Let the design languish if you have budget for a performance hacker. I've launched large ecommerce sites and this is what killed most of them once traffic rolled in.
 
 
-## Will it Stay
+### Will it Stay
 
 I still have to look through [Saleor](http://getsaleor.com/) and [Cartrige on Mezzanine](http://mezzanine.jupo.org/) which were very appealing. I also wanted to have a hand at setting up an ecommerce app in Go, but the lack of templating and abstraction that python is good at was a knock down.

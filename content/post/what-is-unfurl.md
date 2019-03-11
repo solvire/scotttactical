@@ -6,7 +6,7 @@ url: what-is-link-unfurling
 tags: [ technology ]
 ---
 
-# How To Get Rich Effects On My Website
+## How To Get Rich Effects On My Website
 
 I posted a [link to Slack](https://api.slack.com/docs/message-link-unfurling) once and it loaded up all this cool information.  I couldn't figure out what was going on but was sure that it just ripped a ton of stuff out of the HTML headers. The METADATA.  
 
@@ -29,7 +29,7 @@ The last is of course the link above with plenty to get you going.
 
 ![Medium Unfurl](/images/unfurl3.jpg)
 
-# METADATA and Unfurl
+## METADATA and Unfurl
 
 The leaders on this topic are Twitter and Facebook.
 
@@ -40,7 +40,7 @@ Basically you are making Google Twitter and Facebook's job easier for them. No t
 
 Below are some of the fields that they look for.
 
-## Facebook OpenGraph
+### Facebook OpenGraph
 
 https://developers.facebook.com/docs/sharing/webmasters#markup
 
@@ -64,7 +64,7 @@ If you have the above metadata elements in your page give FB crawler a try and s
 
     https://developers.facebook.com/tools/debug/
 
-## Twitter Cards
+### Twitter Cards
 
 Twitter is also another innovator in this field. They offer rich experience cards for posting onto twitter. This is a good way to have a nice presentation of your data if people so happen to share. Twitter needs a lot of rich context because it's just a stream of nonsense most of the time.
 

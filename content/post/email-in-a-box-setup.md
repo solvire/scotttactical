@@ -6,13 +6,13 @@ comments: true
 tags: [ technology ]
 ---
 
-# Test Drive: Mail In A Box
+## Test Drive: Mail In A Box
 
-# TL;DR
+## TL;DR
 
-I set up [Mail-in-a-Box](https://mailinabox.email/) and it was a quick and painless experience. 
+I set up [Mail-in-a-Box](https://mailinabox.email/) and it was a quick and painless experience.
 
-# Preface
+## Preface
 
 
 I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.
@@ -20,7 +20,7 @@ I am tired of managing so many gmail and outlook accounts. Those $5/mo bills rea
 I'll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day. This is obviously much different, but it's cool to work in low volume transactional environments. I also hate HATE managing email.
 
 
-# Pre-setup
+## Pre-setup
 
 Here are a couple details about my stack.
 
@@ -41,7 +41,7 @@ Make sure to update ubuntu with all the latest fixes. My SSH keys and all that s
 
 Let's Begin
 
-# Domain Configuration
+## Domain Configuration
 
 
 I am using [Amazon AWS SES](https://aws.amazon.com/ses/) on their free tier to handle the transactional outgoing email, so this is mostly for incoming mail. If you have dealt with deliverability this is a huge thing for me.
@@ -54,7 +54,7 @@ Waiting for your ISP to get rDNS might be the longest thing.
 
 For those who wrote the documentation. It was dialed down a little much. It actually took longer to set up because of the dummyproofing that was going on.
 
-# Installation
+## Installation
 
 As root:
 
@@ -66,7 +66,7 @@ It gave me a nice TUI to go through graphic-ish setup.
 
 ![DTAC Cloud Instance](/images/mib3.png)
 
-# Configuration
+## Configuration
 
 
 You should be able to log into your console. https://box.yourdomain.com/admin
@@ -75,6 +75,6 @@ You should be able to log into your console. https://box.yourdomain.com/admin
 It will tell you what it is missing. The [Let's Encrypt](https://letsencrypt.org/) feature is great. Totally love that part! Seriously, it saves days of my life.
 
 
-# Conclusions
+## Conclusions
 
 I'm totally into this. Thanks to https://twitter.com/mailinabox for all the great work compiling this thing.

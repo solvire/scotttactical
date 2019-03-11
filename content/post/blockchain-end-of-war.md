@@ -6,7 +6,7 @@ tags: ["blockchain"]
 comments: true
 ---
 
-# Blockchain Can End War
+## Can Blockchain End War
 
 This is a very difficult premise to start with. Can a technology solve the problem of war?
 
@@ -17,7 +17,7 @@ This treatise is quite verbose. Go to *Blockchain - Game Changer* below for a sh
 
 Bare we with me as this is very unrefined yet.
 
-## The Social Contract
+### The Social Contract
 
 John Locke suggested that people in their natural state, (grimy brutish woodland creatures as Hobbes puts it) would willfully give up some of their rights in order to benefit from the value that a collective authority would provide. He asserted that men have ultimate authority to conditionally transfer power over the collective group into a governing executive, and would also have the right to retract this consent and dismantle that government if preservation and improvement of life are no longer the goals of that authority. This Lockian sentiment is familiar to anyone who has studied the US Declaration of Independence.
 
@@ -31,14 +31,14 @@ By changing the demographic of the societal agreement, the community can partici
 
 For these systems to thrive, they must be refreshed with many small local revolutions.  It was a dangerous addendum that was necessary for the contract to be healthy and subsequently removed as soon as the authority is established.  
 
-### Greedy Algorithms
+#### Greedy Algorithms
 
 The ideas presented by the enlightenment theorists assume a self-centered attitude will be common among all participants. There must be basic respect of natural laws built into the system for it to have ultimate legitimacy. It would be possible to imagine a social system where murder and rape are legal, but to do so one must imagine a collective comprised entirely of sociopaths. Such is the social systems that exist in prisons or 4chan.  The idea of an authoritarian dystopia such as those portrayed in *Hunger Games*, *The Purge*, or *Brave New World* would not come out of an initial democratic movement because there is no way a rational collective would introduce that system.
 
 Not everyone will develop the initial outline, but all participants must understand and agree to it based on whether or not it would benefit them, their family and their friends. If all groups seek to preserve the society and themselves, they should come to an agreement on what is best for the collective group.
 
 
-### A Systemic Flaw
+#### A Systemic Flaw
 
 If greed or self-seeking advantage is the centralized, self-leveling factor of the social contract, then the entire system is built with a single flaw. It was a gamble that was never appropriately addressed and will always put a shortened shelf life on any system that is based on this type of contract. There will always be opportunities, when advantageous, to change the level of adherence to the contract.
 
@@ -46,7 +46,7 @@ Imagine that society is like a suspension bridge built with the support lines co
 
 I would assert that the flaw in the system is authority of responsibility. It is less about the usurping of power and more with the abdication of responsibility. Responsibility is transferred to a single authority who has the power to protect or change the contract. Once moved it is impossible to recover the lost power.
 
-## Assumption of Property
+### Assumption of Property
 
 > All wealth is the product of labor. - John Locke
 
@@ -56,7 +56,7 @@ Industrialization and the migration of workers from the rural landscape into the
 
 The age of kings was ending, and the age of the merchant bureaucrat was beginning. The contract system was not designed for this and power moved too quickly into authoritarian systems. Therefore it was being abandoned in Europe for efficient authoritarian systems.
 
-## Property Distribution and Allocation
+### Property Distribution and Allocation
 
 The United States gave a sharp contrast to the old systems of the western European powers. It was a loosely coupled and distributed system of small sovereign states.  The states were the domain of the land.  Property was liberally dispensed because it was seen to be unlimited. The intention was that the new states were going to provide it to anyone who would use it.  The illusion of scarcity was distant, and the value of labor skyrocketed.
 
@@ -64,7 +64,7 @@ The elements required in the great land expansion were simple. An agreement of a
 
 Fast forward to now, where virtual property is as abundant as the US territories were in the 1800's. We all participate in the Internet ecosystem, and we all agree to certain rules. We agree to pay for services, and we agree to keep access to all these services somewhat level.  We all use the same protocols and built tools around them.  The difference is no longer the property itself but the customers or users of the property.  That is a byproduct of consumerism and best left in a separate topic.
 
-## Algorithmic Scarcity
+### Algorithmic Scarcity
 
 Land has a concrete scarcity. There will never be more land. Mined goods have a logarithmic scarcity, and cultivated goods have a linear scarcity based on the ingenuity of the participants. Mined goods are used for money because of known and suspected quantities.  We use money to value property. Money is property that can be exchanged for things of value.
 
@@ -72,7 +72,7 @@ Cryptocurrencies have the capability to take on any of the above forces based on
 
 The fact that new properties can be launched at any time based on the will of the people eliminates those physical limitations.  The micro nation is limited, but overall ecosystem is nearly infinite.  The value of the worker is tied to (artificial) scarcity levels, and therefore an arbitrarily defined system is a worker's system.
 
-## Fear Ambition Scarcity and Conquest
+### Fear Ambition Scarcity and Conquest
 
 > Lack of money is the root of all evil. - Mark Twain
 
@@ -84,7 +84,7 @@ A civil system will only be a true proponent for peace when value basis points d
 
 Given the ability to participate in a process that defines our value collectively, an educated citizenry should be able to collectively agree on a way to propel human value forward.  
 
-## Distributed Representation
+### Distributed Representation
 
 > Democracy is not freedom. Democracy is two wolves and a lamb voting on what to eat for lunch. Freedom comes from the recognition of certain rights which may not be taken, not even by a 99% vote. - Marvin Simkin, San Diego
 
@@ -94,7 +94,7 @@ Open democratic systems have a flaw in their designs.  Having a majority vote do
 
 If a contract is written to support the voices of the smallest dissenter, then true safeguards are in place.  We all have a responsibility to represent our fellow participant.  Maybe this can be called a **distributed representation** since the **contract for responsibility** is linked to the overall community rather than the centralized authority.
 
-## Violent Disruption
+### Violent Disruption
 
 The term violence does not have to be limited to physical violence. It can be systemic change in a violent manner. Disruption of tradition or normalities is violent.  The alteration of the system will cause many social systems to be upset.
 
@@ -104,13 +104,13 @@ When the voice of a minority goes unheard and unrepresented, they will find a wa
 
 What would happen if the national currency system and privately held debt went to a collective audience that has the ability to vote and control that debt? This is massively violent.
 
-# Blockchain - Game Changer
+## Blockchain - Game Changer
 
 Now that you have made it through all of that let me try to apply some concepts of distributed computing to the problems that exist above.
 
 In the past, it would have been impossible to solve some of the problems that exist inside of social contracts other than the way they did. It is not possible to expect everyone to participate in the writing of every law. That is true democracy, but it is unfeasible. It is also not desirable. Before cheap transit and instant communication, it would have been impossible to be present in all legislative activities.
 
-## Social Conditions
+### Social Conditions
 
 Below are some social conditions that I hope to align solutions in the distributed computing world
 
@@ -125,41 +125,41 @@ Below are some social conditions that I hope to align solutions in the distribut
 
 Given the above conditions, having been identified and cataloged, it seems logical that, given the emergence of new tools, we may be able to define new social contracts to mitigate those critical issues. The one thing that may give distributed systems a better chance of success over all previous systems is that the critical requirement for those systems to be abolished when rules are broken can now exist.  
 
-## Strong Valid Representation
+### Strong Valid Representation
 
 Blockchain has the ability to both identify and protect individual identities. That is a key for ensuring equal representation. If you can't tell who everyone is then why would you assume they are heard. And if they want to represent an unpopular opinion they must also be protected from the mob.
 
 Voting fraud could be a thing of the past. The public ledger should be accessible to any participant for audit.
 
-## Guaranteed Participation Ensured Voting Power
+### Guaranteed Participation Ensured Voting Power
 
 The system should require a specific amount of participants for things to change. If only half the participants vote it may not even signal a change is capable in the system. And if there are too many people voting then the vote is so diluted that it doesn't matter and people lose faith.
 
-## Sophisticated System of Accountability
+### Sophisticated System of Accountability
 
 There will always be public offices of administration. We still live in the physical world. But every action can easily be logged to a public ledger via whatever device or record there is in that domain. Algorithms can confirm that the office is being administered properly.
 
-## Information Validation
+### Information Validation
 
 Here is where things will really change. Right now the information goes from event, to witnesses, to media sources, through editors and then to consumers. If a country wishes to go to war, then all they need to do is to fake a risk to national security and classify anyone who does not agree as a traitor. Setting the narrative is easy when media is controlled by an authority and can be changed to suit the message.  
 
 These systems have the ability to span countries, so the notion of national security is going to break down. System security is going to start to rise above that. These are ever changing nations of systems that have no geographic boundary.
 
-## Network Credibility
+### Network Credibility
 
 The network itself has its own credibility based on the entire population agreeing to the rules. When the rules break, then nothing going forward is valid. They all must be followed and are nonnegotiable. That is a feature of the system. It cannot lie. If it promises to do something, it must do it.  If the contract is to defund nuclear weapons armament by X date, then everything else that relies on this network of trust will cease to be valid if that original promise is not met.  Chains of trust cannot have any broken links.
 
-## Networks of Networks
+### Networks of Networks
 
 As these networks become distributed, they will start to rely on the institution of each other.  If defense companies are going to get paid only if certain triggers happen in other distributed systems, then it is in their best interest to ensure all other systems are complied with.  It starts to lock out all the flexibility that exists in modern networks of control.
 
 Once there is a critical mass of these systems being relied upon, they won't be able to start killing networks without causing larger disruptions.  This gives smaller countries the ability to participate in bigger world politics.
 
-## Democratic Inoculation
+### Democratic Inoculation
 
 It is theorized that democracies do not attack each other. While the idea of democracy at scale is starting to be shaken by the last century of war, we certainly can see patterns protecting the coalition of democracies from attacking each other. It has obviously not kept democracies from attacking everyone else. Those sovereign domains do not justify attack because of differing idealogical opinion. If the distributed network relies on their participation, then it gives them something of a vote on their own future inside all participating entities.  This will greatly diminish political legitimacy if those rules are broken.
 
-# Conclusion
+## Conclusion
 
 Once decentralized trust-based network logic reaches critical mass, there will be an entirely new way to participate in resource allocation and decision-making processes.  The difficulty in controlling these networks may limit powerful sociopathic individuals from having enough control to push through controls that rely on the agreement of people they wish to oppress. That could be another nation or a small local special interest group.  
 

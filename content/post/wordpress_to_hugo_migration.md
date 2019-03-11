@@ -10,9 +10,9 @@ comments: true
 ---
 
 
-# Hugo: A Replacement for Wordpress
+## Hugo: A Replacement for Wordpress
 
-## TL;DR
+### TL;DR
 
 - I researched go
 - Found Hugo
@@ -23,11 +23,11 @@ comments: true
 
 Total time: _6 hours_
 
-## Continued:
+### Continued:
 
 My problems started almost a year before I took up this cause. At the time I only had 2 Wordpress sites. Very very low traffic.  Only a couple users a day.  They were mostly place holders for business sites.  
 
-## Wordpress is hungry
+### Wordpress is hungry
 
 What was annoying about the case was that they would randomly _carsh_! I realized they were running _out of memory_. I couldn't figure out why because I just wouldn't let myself believe that a couple instances of Wordpress were enough to run out of memory. It was an AWS box running with .5GB of memory and some swap space. I can't remember what. Maybe I was just too optimistic.
 
@@ -37,17 +37,17 @@ I reimaged the server, installed several performance plugins, cached anything I 
 
 Well eventually I decided it just needed more hardware. I went to 1G of memory for the 2 instances. That carshed as well. It was like watching the movie Carsh in slow motion. I added a couple gigs of swap, but then aws started acting funny and it would fill up the memory immediately. I then went to 2G ram and 2G of swap. Still - Carshon Daily show!
 
-## It's the Future Already
+### It's the Future Already
 
 It's 2015. In honor of 2015 and #BackToTheFuture day I am getting over 2000's technology and moving on to something new.
 
 _Blogs should fast and light_ and should be able to run in the fog. Static, and with out short codes. Gawd! And hoverboards.
 
 
-# So Starts My (Late) Journey
+## So Starts My (Late) Journey
 
 
-## My Requirements
+### My Requirements
 
 - Easy markup (or markdown)
 - Lite - less than 500M of memory required
@@ -65,7 +65,7 @@ _Blogs should fast and light_ and should be able to run in the fog. Static, and 
 - Templates (market)
 - Multi-site management (please?)
 
-## Languages - PREPARED TO FLAMED!
+### Languages - PREPARED TO FLAMED!
 
 - PHP - too slow - boring - part of my problem already
 - Python - Interesting but everyone wants to use django. Kinda heavy for this
@@ -80,13 +80,13 @@ _Blogs should fast and light_ and should be able to run in the fog. Static, and 
 
 Given my above list of languages I kinda forced myself into a sector.  
 
-### Languages - Decisions
+#### Languages - Decisions
 
-#### Ruby
+##### Ruby
 
 I really liked [jekyll](http://jekyllrb.com/docs/home/) and might have gone with it if Ruby wasn't such a foreign concept to me. And I haven't decided if I want to jump in and learn it completely. So not this time gems.
 
-#### A Shot at Python
+##### A Shot at Python
 
 I have a ton of experience with PHP. They are all about the same. They can get okay performance if you cache everything but they are just too heavy. And it's PHP. I'm over it. Drupal. Seriously it's 2015. That thing should have died 10 years ago.  Are you still driving your subaru brat?
 
@@ -94,11 +94,11 @@ I've used python before and I did give it a good run, but [Django](https://www.d
 
 To be fair to python, I spent a little time going through the implementation of [Mezzanine](http://mezzanine.jupo.org/) and [Django-CMS](http://www.django-cms.org/en/).  Still. Too grande.
 
-#### Java et al
+##### Java et al
 
 I have spent time before researching Java and C++ CMS programs. They are probably okay for monolithic enterprises who need some sort of back stroking to know they used a dump truck with a Cadillac interior to go pick up the groceries.  When 500 people will be working on it and you need a 20 step approval process I guess. I digress.
 
-# Starting with Go
+## Starting with Go
 
 Ok fine. Maybe now's my chance to play with [Golang](https://golang.org/). I was looking for a project for it so let's give this a try.
 
@@ -108,7 +108,7 @@ So far my implementation ideas are:
 - use a designed blog framework
 
 
-## Some Frameworks
+### Some Frameworks
 
 I really liked a few of the frameworks, but as time went on I decided to see if I could find something lighter. But for records sake here are the samples I looked at
 
@@ -118,12 +118,12 @@ I really liked a few of the frameworks, but as time went on I decided to see if 
 
 BTW: Martini looked really cool. Light learning curve. I almost went with that, but felt like I could find better features in a purpose built app.
 
-## A Blog Solution
+### A Blog Solution
 
 After meandering around with the frameworks I felt like I wanted to try something more stripped down. So I looked at micro sites and Hugo https://gohugo.io/ stood out.  I figured I would know in a couple hours if it work work or not.  
 
 
-# Hugo: Quick Start
+## Hugo: Quick Start
 
 Installing go is awesome on mac. If you have a mac and do not have [homebrew](http://brew.sh/) - shame on you.
 
@@ -149,7 +149,7 @@ Start the serve:
 
     hugo server --buildDrafts --watch
 
-# Conclusion
+## Conclusion
 
 This was very painless. I am kinda surprised. I was a little hesitant to get in here. Setting up virtual hosts and getting the code out there wasn't elegant but wasn't hard either. I just checked out my repo on the server.
 

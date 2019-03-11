@@ -7,7 +7,7 @@ tags: [ 69 Blazer, restoration ]
 image: images/gla.jpg
 ---
 
-# Building a Dana Sixty
+## Building a Dana Sixty
 
 Part of this process was setting up the new axles.
 I wanted to go 1-ton all the way around.

@@ -11,43 +11,43 @@ How do you build software that provides value to both clients, owners and engine
 
 This list has started as a list of notes that I kept over the last few years. Yes, this is the abbreviated version of [Management For Quality Software](/management-for-quality-software-development/).
 
-# Executive Leadership
+## Executive Leadership
 
 *   Bloated and ugly products are born at the top, but a good engineering environment may begin there
 *   The three ways business leaders can add value is with _numbers, numbers, numbers_
 *   Put your name on the product
 
-## The Business Requirement
+### The Business Requirement
 
 Write a business requirement that reflects specific details about a problem that the business is solving based on market research numbers. A full description is beyond this terse scope.
 
-## Feature Requests R Bad
+### Feature Requests R Bad
 
 I know you really want to. You think you know UI design and are well versed in using a browser. In reality you probably suck at engineering/UI/art.
 
 See previous paragraph sentence 1.
 
-## Feature-Driven Cycles Suck
+### Feature-Driven Cycles Suck
 
 "When is the report download page going to be done?"
 
 Not by the definition in agile dictionaries, but defined as the environment by which business determines short term goals in reference to features.
 
-## Business Vision
+### Business Vision
 
 *   Set a clear vision
 *   Make the vision both short and long term
 *   Don't pivot
 *   Avoid buzzword glory pitchmen
 
-## Employee Goals
+### Employee Goals
 
 *   Consider the employees goals in your vision
 *   If you do not care about the employees' goals then they might set their own
 *   Have an idea of what motivates people (We are not all building rockets or curing cancer)
 *   Make an employee goal the production of a quality product
 
-# Optimal Relationships
+## Optimal Relationships
 
 A few items here that I look for:
 
@@ -60,7 +60,7 @@ A few items here that I look for:
 
 Devs need [CS 666 Political Science](https://michaelochurch.wordpress.com/2014/12/) training. Seriously.
 
-# Hire the Right People
+## Hire the Right People
 
 ![Milton Office Space](/images/milton.jpg)
 
@@ -68,30 +68,30 @@ Hire people smarter than you and get out of their way.
 
 See my other articles on [hiring technology professionals](/interview-strategies-a-technology-hiring-manager/).
 
-## Don't Micromanage
+### Don't Micromanage
 
 Nuff said else failed previous item.
 
-# Understand Software Shelf Life
+## Understand Software Shelf Life
 
-## Shelf Life Definition
+### Shelf Life Definition
 
 Software expiration has passed when both of the following criteria have been met:
 
 *   It no longer produces enough value to support the maintenance of the code
 *   The proposed value from software improvements is less than the cost of the improvements
 
-## Predict The Futures
+### Predict The Futures
 
 Applying a timeline to the life of an application is hard. Not because one cannot estimate a project life, but because most are not truthful with themselves on the potential of their project.
 
 Ass.u.mption: shoestring ultra-successful software lasts forever and will fix rare bugs later when money is pouring.
 
-## Yeah – Fix It Later
+### Yeah – Fix It Later
 
 Don't fail the "fix it later" mentality. Sometimes disposable software is appropriate. If you only need to scrape a website once then just write a quick and dirty script and then archive it.
 
-## Plan For The Futures
+### Plan For The Futures
 
 We don't really know what the future holds for us, but we should plan for it. Ask this:
 
@@ -100,7 +100,7 @@ We don't really know what the future holds for us, but we should plan for it. As
 
 If it is only stored locally and undocumented on someone's machine: fail++.
 
-# Bad Code Costs Moar
+## Bad Code Costs Moar
 
 *   There is no fix-it-later scenario.
 *   There will be no point where you be chillin' counting benjamins letting engineers scrub code
@@ -111,7 +111,7 @@ You can only pick 2:
 
 ![Good Fast Cheap - Pick 2 - Venn Diagram](/images/good-fast-cheap-venn-diagram.jpg)
 
-## What is Bad Code
+### What is Bad Code
 
 This is a hard one to explain.
 
@@ -120,7 +120,7 @@ This is a hard one to explain.
 *   Sometimes coders are just not any good. You hired them so now it is a containment issue.
 *   Have peer reviews and pull requests, and yes, that costs. See: *Outsourced cheap stuff*
 
-## Myth of the Parallel Rewrite
+### Myth of the Parallel Rewrite
 
 Scenario:
 
@@ -132,19 +132,19 @@ Scenario:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sGUNPMPrxvA" frameborder="0" allowfullscreen></iframe>
 
-# Software Development Lifecycle
+## Software Development Lifecycle
 
 A reasonable software lifecycle is imperative to delivering quality software.
 
 No cycle == Bad mkay
 
-## Politics of The Lifecycle
+### Politics of The Lifecycle
 
 I intend to write at more length about the politics behind the product lifecycle.
 
 Case study: There is no policy for a daily deployment to Curiosity rover on Mars and if the previous glitches are an indicator we can assume that even [NASA has a high bug rate](http://www.space.com/23553-mars-rover-curiosity-software-glitch.html) when dealing with rapid product deployments.
 
-# Test - For the Love of All That is Sacred, Test
+## Test - For the Love of All That is Sacred, Test
 
 *  If you do not have tests your software probably sucks
 *  Tests indemnify engineers and build confidence
@@ -162,6 +162,6 @@ Biz Guy - "The super widget functionality I had you put in there last month is n
 
 Programmer - "All tests are passing. I am looking and there are no tests covering any business requirements for such a feature. If you want we can take a look and write a test that covers this feature."
 
-# Conclusion
+## Conclusion
 
 Build things that make the world better. Treat employees like people. Give back.

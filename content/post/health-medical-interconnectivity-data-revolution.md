@@ -6,11 +6,11 @@ comments: true
 tags: [ data, healthcare, api ]
 ---
 
-# Health, Medical Interconnectivity and The Coming Data Revolution
+## Health, Medical Interconnectivity and The Coming Data Revolution
 
 ![Medicine In The Future](/images/future-medicine-small.jpg)
 
-## Johnson Davis' Walk
+### Johnson Davis' Walk
 
 Six red indicators breach the serene layout of the medical information dashboard. Gauges, charts and graphs provide human cues concerning the information flowing through the Intra-Medical Services Accountability Pipeline. The IMSAP emerged in evolutionary form as various government, education and enterprises started the race to consume the calculus of living data. And now these machines of data consumption interpret the flow of what some consider the representation of that thing which connects life and machine.
 
@@ -36,7 +36,7 @@ Wearers can subscribe to a service and match to their hash for real-time health 
 
 "The third and fourth indicators were from Dark Gray deep learning algorithms. It pulled from the in-home monitoring device and also the pharmacy which has recorded a distinct distortion in blood chemical levels indicating that the Mr Davis has diminished or ceased his dosage. It doesn't appear that he is intoxicated. It might have pulled in sentiment off his social media. That thing is creepy that way; reading all our messages and making note of our less-than-optimistic disposition."
 
-## Action
+### Action
 
 ![Future Doctors](/images/doctor-future1.jpg)
 
@@ -62,7 +62,7 @@ fin.
 
 <hr />
 
-#### Points of Interest
+##### Points of Interest
 
 *   API
 *   Data format

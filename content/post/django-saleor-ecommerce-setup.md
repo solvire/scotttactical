@@ -6,24 +6,24 @@ comments: true
 tags: [ technology, django ]
 ---
 
-# Django And eCommerce
+## Django And eCommerce
 
-# TL;DR
+## TL;DR
 
 I setup [Oscar](http://oscarcommerce.com/) as a demo ecommerce project in the [previous post](/post/django-ecommerce-in-30-minutes/).
 
-# Preface
+## Preface
 
 
 ![Saleor](/images/saleor2.png)
 
 
-# Backstory
+## Backstory
 
 I just finished a post about setting up eCommerce with Python Django and wasn't totally pleased with the process. Also I don't think it is fair to only demo a single application.  I decided to give [Saleor](http://getsaleor.com/) my second slot after talking with several people online and looking through its source. The parent company has a number of nice products which was confidence building.
 
 
-# Pre-setup
+## Pre-setup
 
 As in the previous article, a few things were already installed like PostgreSQL and Python VirtualenvWrapper.
 
@@ -42,11 +42,11 @@ Here are a couple details about my stack.
 
 Let's Begin
 
-# Local Setup
+## Local Setup
 
 I'll be following the setup listed in the [Saleor Documentation](https://saleor.readthedocs.io/en/latest/installation.html).
 
-# Setup PostgreSQL
+## Setup PostgreSQL
 
 I have installed PostgreSQL locally already. Please see the documentation for more information.
 
@@ -56,18 +56,18 @@ Create a database for yourself. You will probably be hitting this locally with s
 
     createdb saleor
 
-## JavaScript
+### JavaScript
 
 Install the appropriate / required JavaScript components.
 
     npm i webpack -g
 
 
-## Virtual Environment - Python
+### Virtual Environment - Python
 
     mkvirtualenv saleor
 
-## Clone The Source
+### Clone The Source
 
 CD into a directory beneath your source location. I like to do /project/source/*
 
@@ -79,21 +79,21 @@ CD into a directory beneath your source location. I like to do /project/source/*
 
 Keep track of that secret key.
 
-## Build The Schema
+### Build The Schema
 
 I am running PostgreSQL locally.
 
     sed -i '' 's/saleor:saleor@//' saleor/settings.py
     python manage.py migrate
 
-## Build Front-End
+### Build Front-End
 
     npm install
     npm run build-assets
 
 Node package install took a while. I thought it was hung so I restarted it and ran it in verbose to know it wasn't dead.
 
-## Dump Schema
+### Dump Schema
 
 I want to add the test data to play with but I may not want it and don't want to have to recreate the database so I dumped the initial schema.
 
@@ -103,9 +103,9 @@ Then I added the test data.
 
     ./manage.py populatedb
 
-# Your Shop
+## Your Shop
 
-## Run The Server
+### Run The Server
 
 Kick it off
 
@@ -119,7 +119,7 @@ I went to create a test account and of course it blew up on the redirect. But th
 
 
 
-## View Dashboard
+### View Dashboard
 
 From the command line I created a superuser so I could see the dashboard.
 
@@ -128,7 +128,7 @@ I liked the dashboard. I think the single page app style is pretty dangerous, bu
 
 ![Saleor Home Page](/images/saleor4.png)
 
-## Git Add
+### Git Add
 
 Add the new files to the remote repository and push it.
 
@@ -139,24 +139,24 @@ Add the new files to the remote repository and push it.
     git push
 
 
-# Conclusions
+## Conclusions
 
-## Code Structure
+### Code Structure
 
 I liked this code layout better than Oscar. It was easier to find my around and seemed cleaner overall. Linting is important to me.
 
 I would have liked to have a separate settings file for local/testing/production such as is in various cookiecutter templates.
 
 
-## Building
+### Building
 
 It was easier to build this. Launching it into Heroku blew up on me but this local build did not. That was acceptable. The test data was good enough to play with too.  
 
-## No REST for me
+### No REST for me
 
 Again, I was disappointed with how hard it was to find information about the REST layer. Please favor mobile and JS heavy deployments. Make things API based first.
 
 
-## Will it Stay
+### Will it Stay
 
-This is probably the one. I still have to go through a little more testing of course, but I think I am set for now. 
+This is probably the one. I still have to go through a little more testing of course, but I think I am set for now.

@@ -8,37 +8,37 @@ image: images/hugo-logo.png
 comments: true
 ---
 
-# Deploying Hugo the Golang CMS on DigitalOcean
+## Deploying Hugo the Golang CMS on DigitalOcean
 
-## Creating a Droplet
+### Creating a Droplet
 
 I am a bit partial to CentOS. The lastest version as of this writing is _CentOS Linux release 7.1.1503 (Core)_.
 
 Setting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done.
 
-## Install Nginx
+### Install Nginx
 
-### Add the epel repo:
+#### Add the epel repo:
 
 	yum install epel-release
 
-### Install
+#### Install
 
 	yum install nginx
 
-### Start it
+#### Start it
 
 	service nginx start
 	systemctl enable nginx
 
-### Create the Folders
+#### Create the Folders
 
 	mkdir -p /var/www/ursite/
 	chown -R nginx:nginx /var/www
 	touch /var/www/ursite/index.html - or clone your site
 	cp /etc/nginx/sites-available/default /etc/nginx/sites-available/ursite
 
-### Configure nginx
+#### Configure nginx
 
 open the config file: `vim /etc/nginx/conf.d/virtual.conf`
 
@@ -46,7 +46,7 @@ Add the following:
 
 ```conf
 #
-# A virtual host using mix of IP-, name-, and port-based configuration
+## A virtual host using mix of IP-, name-, and port-based configuration
 #
 
 server {
@@ -61,7 +61,7 @@ server {
 }
 ```
 
-#### Install  Go + Hugo
+##### Install  Go + Hugo
 
 	yum install go
 

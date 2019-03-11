@@ -9,11 +9,11 @@ tags: ["car computer"]
 comments: true
 ---
 
-# Car Computer Camera
+## Camera Overview
 
 Finding a good camera shouldn't be too difficult given how many cameras exist now. They are literally everywhere.
 
-# Camera Criteria
+## Camera Criteria
 
 I learned right away that the cameras were pretty much all standardized. They came in a few flavors but overall they were either too small, too wide, or too expensive.  That helped me limit stuff down a lot.
 
@@ -23,7 +23,7 @@ I learned right away that the cameras were pretty much all standardized. They ca
 * color
 * USB preferable
 
-## Preferences
+### Preferences
 
 * Embeddable
 * Flush mounted
@@ -31,10 +31,10 @@ I learned right away that the cameras were pretty much all standardized. They ca
 * 1080p
 * hardened housing
 
-# Hardware Choices
+## Hardware Choices
 
 
-### First Find
+#### First Find
 
 I found this one right off by searching for "USB Camera".  It has a lot of good points that seem to match what I am looking for. I didn't need the hardware shell but I can take that off I assume.
 
@@ -56,7 +56,7 @@ Specification:
 * OS: Windows 2003/2008/XP/Vista/WIN7
 * Power: DC 5V, Power from PC
 
-### Second Find
+#### Second Find
 
 
 This one seemed pretty cool as an option:
@@ -71,7 +71,7 @@ This picture specifically cracked me up.
 
 Seriously? It's like the whiskey mouse.
 
-### A recommendation
+#### A recommendation
 
 
 

@@ -9,11 +9,11 @@ tags: ["car computer"]
 comments: true
 ---
 
-# Car Computer Introduction
+## Introduction To STAC Car Computer
 
 The purpose of the build out is to take a 100% analog vehicle and bring in modern creature comforts and a modern driveline. In addition to this I will be integrating a few technology tools that are developed at my current work.  
 
-## Scenario
+### Scenario
 
 In the morning I would like to walk out to my car, walk up to the door and have it unlock for me. If it greeted me in Jarvis' voice from Ironman I would like that too.  
 
@@ -27,7 +27,7 @@ That is to be determined.
 
 
 
-## Features
+### Features
 
 Below are the features that I would like to have in place for the acceptable delivery.
 
@@ -45,15 +45,15 @@ Below are the features that I would like to have in place for the acceptable del
 * Accelerometer - axis tilt
 
 
-# Research
+## Research
 
 Obviously this was a research heavy experiment. I didn't really know how I was going to go about it. And there aren't a ton of plug&play solutions. Which I kinda liked.  I used to help my dad build computers as a kid.  Actually I just used to hand him stuff and sit there bored.  Fun fact - back then the computers weighed as much as my car.
 
-## Resources
+### Resources
 
 I will add to these from time to time. This is probably the only section I will update long term.
 
-### Hardware
+#### Hardware
 
 #### Reasonable PCs
 
@@ -125,7 +125,7 @@ This one is their mini rugged coming in at almost $1400!
 
 https://www.spartonre.com/littlepcs/fanless-mini-pcs/lpc-810-ultra-small-rugged-fanless-mini-pc/
 
-### Software
+#### Software
 
 
 Google Android
@@ -134,7 +134,7 @@ https://www.android.com/auto/
 It looks like they are making a very weak attempt at entering the market.
 
 
-### Suites
+#### Suites
 
 Carberry
 

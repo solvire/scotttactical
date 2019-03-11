@@ -10,11 +10,11 @@ comments: true
 author: solvire
 ---
 
-## TL;DR
+### TL;DR
 
 OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.
 
-# Backstory
+## Backstory
 
 Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn't bad for some people. For most institutions it is just _wrong_.
 
@@ -31,24 +31,24 @@ Disclosure: This site is currently running on our openstack deployment in [DTAC'
 
 ![Full OpenStack](/images/full_openstack.jpg)
 
-# Red Flags
+## Red Flags
 
 > Where there are _clouds_ of smoke, there is probably fire. - An Indian Truism
 
-## It Took Forever
+### It Took Forever
 
 I witnessed an ambitious project slide face-first into the blue and white parking stall of the private cloud mall. Then later it was used as leverage to out every participant. I mostly attributed the breakdown to lack of time resources, OS talent and political infighting.  _nerds (heart) aws_ but more on that elsewhere.  Ignoring those huge red flags I figured my sysadmin abilities would be able to figure things out and surpass them.
 
 
 My response: I got sysadmin skills and no politics. I've never failed to raise a datacenter infrastructure.
 
-## OpenStack Hate Speech
+### OpenStack Hate Speech
 
 There was plenty of hating over OpenStack. More specifically there was a lot of negative commentary about Nova, Neutron and Cinder. Basically the heart of the application.
 
 My response: I kinda need those bells and whistles so it's worth dealing with monolithic bloat because that's my only option.
 
-## Nerds (heart) AWS
+### Nerds (heart) AWS
 
 > When there is blood in the streets, buy land. - Contrarian Invetors' Proverb
 
@@ -59,13 +59,13 @@ A side note: Most tech professionals also said they were getting a "great deal" 
 My response: Well most nerds have near-0 business strategy. Also this indicates there is a massive gap in talent so I'd like to be here.
 
 
-## Babylon Fortuna ergo Enterprise-Ready
+### Babylon Fortuna ergo Enterprise-Ready
 
 The codebase is huge. And kinda old at this point. In internet years it's about 50 years old.
 
 My response: It is mature enough to use. I should be ashamed of myself. I deployed IBM Websphere and should have known better.
 
-## It is Complicated
+### It is Complicated
 
 ![It's Complicated](/images/fb_complicated.png)
 
@@ -77,14 +77,14 @@ BTW this image is taken from the OpenStack "Getting Started" section.
 
 My response: Well, shit. Guess I've dealt with worse. I hope there isn't magic happening. I'll trust the Fuel installers. Oh God Fuel! don't fail me!
 
-## It Is Fragile
+### It Is Fragile
 
 Refer to the previous diagram. With so many moving parts and given the lack of talent capable of managing it there is a serious level of risk in trusting a critical production environment on this.
 
 
 My response: Keep my public cloud fail overs built and ready to deploy. I'm a cheat.
 
-## It Is Vendor Driven
+### It Is Vendor Driven
 
 I kinda knew that the growth of OpenStack was tainted by vendor intrigue. I have run into this spending a considerable amount of time working with OAuth 2.0 when the "framework" was going through proposals and the lead writers were splitting.
 
@@ -93,27 +93,27 @@ Cite: [OpenStack is Doomed - Andy (termie) Smith](https://www.openstack.org/summ
 
 My response: Ick
 
-# The Final Decision
+## The Final Decision
 
 While it might work for a team like RackSpace, I don't think it fits what we need. The cost benefit of having a few drivers and some prebuilt scripts to managing images wasn't enough to justify the cost and risk of having a system that is so fragile.
 
 The risk and the knowns of unknowns inside the massive spaghetti of scope creep was enough that I couldn't justify that I wouldn't be able to jump in and fix something within less than a day. Pretty much every code fix I had to make took more than a day. More of 3-5 days to figure out each bug. That was the last straw.
 
-## OpenNebula
+### OpenNebula
 
 We tried other stacks and I launched a multiple node infrastructure with OpenNebula. It was refreshingly vertical and self-contained. But still felt like it wanted to follow the hypervisor slipstream of OpenStack.
 
-## Blah-Stack
+### Blah-Stack
 
 There was a lot of other options but I was burned out at this point.
 
 
-## Future Plans
+### Future Plans
 
 The focus internally is more on bare-metal and OS containers. So far so good.
 
 
-# Conclusion
+## Conclusion
 
 - There is no free ride. (Development is an Expect 2 Work Employment)
 - Swiss army knives suck for self-defense and bayonets

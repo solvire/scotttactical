@@ -9,7 +9,7 @@ tags: ["car computer"]
 comments: true
 ---
 
-# Car Computer hardware
+## Searching For The Right Car Computer Hardware
 
 My trip to Fry's in LA this morning wasn't as great as I hoped. But I did get some great ideas on how to accomplish things.
 
@@ -20,7 +20,7 @@ There were two major themes in the hardware that I looked at.
 
 There wasn't much for integration or components that were universal. Either they were for their own little world or they were for some subset of the Apple ecosystem.  
 
-# Arduino
+## Arduino
 
 ![Arduino](/images/arduino.jpg)
 
@@ -34,11 +34,11 @@ Because the shelves were mostly barren I decided to spend more time looking at t
 * Ethernet bridge
 * Relay port (maybe 4 for other things?)
 
-# The Processing PC
+## The Processing PC
 
 I determined that I wasn't going to be able to come up with a raspberry pi model that I would feel confident would run the software without causing pain.
 
-## Shopping for Fanless Low Power PC
+### Shopping for Fanless Low Power PC
 
 Fry's didn't have anything.  In fact it looked like they were going out of business.  We need more hackers. That's for another topic tho.
 
