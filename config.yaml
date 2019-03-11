@@ -1,4 +1,14 @@
 BaseUrl: "https://scotttactical.com/"
+
+ignoreFiles:
+  - content/posts/\.*
+  - content/portfolio/\.*
+  - content/product/\.*
+  - content/sketch/\.*
+  - content/en/\.*
+  - content/fr/\.*
+
+
 LanguageCode: "en-us"
 Title: "Scott Tactical"
 # Theme: "beg"
@@ -6,6 +16,38 @@ Theme: "hugo_theme_beg"
 # Theme: "hugo-nuo"
 disqusShortname: "scotttactical"
 googleAnalytics: "UA-53440065-2" # Optional
+
+
+paginate: 3
+languageCode: en
+DefaultContentLanguage: en
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+    disableInlineCSS: true
+  instagram:
+    disabled: false
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
 
 Params:
   Author: "Scott Tactical"
@@ -31,3 +73,7 @@ permalinks:
   news: :year/:month/:slug/
 
 MetadataFormat: "yaml"
+
+
+copyright: >-
+  Copyright © 2014–2019, Scott Tactical; all rights reserved.
