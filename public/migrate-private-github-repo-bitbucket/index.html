@@ -1,127 +1,184 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.54.0" />
 
-<meta charset="utf-8">
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-<meta property="og:url" content="https://scotttactical.com/">
+<link rel="canonical" href="https://scotttactical.com/migrate-private-github-repo-bitbucket/">
 
 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps - Scott Tactical</title>
+    
+<meta name="description" content="Why Not GitHub GitHub is Great Don&amp;rsquo;t get me wrong. I would recommend using this service for a number of reasons that are not fiscally motivated. It isn&amp;rsquo;t whether GitHub.com is good or not. There is a matter of economics at play though.As a startup I just don&amp;rsquo;t have the extra 25/mo to throw into GitHub business account. It looks cool that I have an organization there and there are more badges.">
+
+<meta property="og:title" content="Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps - Scott Tactical">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps &middot; Scott Tactical">
-
+<meta property="og:url" content="https://scotttactical.com/migrate-private-github-repo-bitbucket/">
+<meta property="og:image" content="https://scotttactical.com/images/default.png">
 <meta property="og:site_name" content="Scott Tactical">
+<meta property="og:description" content="Why Not GitHub GitHub is Great Don&amp;rsquo;t get me wrong. I would recommend using this service for a number of reasons that are not fiscally motivated. It isn&amp;rsquo;t whether GitHub.com is good or not. There is a matter of economics at play though.As a startup I just don&amp;rsquo;t have the extra 25/mo to throw into GitHub business account. It looks cool that I have an organization there and there are more badges.">
+<meta property="og:locale" content="ja_JP">
 
-<title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scott Tactical">
+<meta name="twitter:url" content="https://scotttactical.com/migrate-private-github-repo-bitbucket/">
+<meta name="twitter:title" content="Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps - Scott Tactical">
+<meta name="twitter:description" content="Why Not GitHub GitHub is Great Don&amp;rsquo;t get me wrong. I would recommend using this service for a number of reasons that are not fiscally motivated. It isn&amp;rsquo;t whether GitHub.com is good or not. There is a matter of economics at play though.As a startup I just don&amp;rsquo;t have the extra 25/mo to throw into GitHub business account. It looks cool that I have an organization there and there are more badges.">
+<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scotttactical.com/"
+    },
+    "headline": "Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps - Scott Tactical",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scotttactical.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2016-02-23T21:28:23JST",
+    "dateModified": "2016-02-23T21:28:23JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scott Tactical"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scott Tactical",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scotttactical.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "Why Not GitHub GitHub is Great Don&rsquo;t get me wrong. I would recommend using this service for a number of reasons that are not fiscally motivated. It isn&rsquo;t whether GitHub.com is good or not. There is a matter of economics at play though.
+As a startup I just don&rsquo;t have the extra 25/mo to throw into GitHub business account. It looks cool that I have an organization there and there are more badges."
+  }
+</script>
+
+
+    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
     
-    Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps
+
+  </head>
+
+  <body>
     
-</title>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-53440065-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/github.min.css">
-<link rel="stylesheet" href="https://scotttactical.com/css/main.css">
+    
 
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
+          </div>
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe.min.js"></script>
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">About</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe-ui-default.min.js"></script>
-
-
-
-<link rel="shortcut icon" href="https://scotttactical.com//assets/favicon.ico">
-
-
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://scotttactical.com//index.xml">
-
-
-<div class="container">
-    <header class="nav">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="https://scotttactical.com/post">All Posts</a></li>
-                        <li><a href="https://scotttactical.com/gallery">Galleries</a></li>
-                        <li><a href="https://scotttactical.com/news">News</a></li>
-                        <li><a href="https://scotttactical.com/tags">Tags</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        
-                        
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </div>
+      </nav>
     </header>
 
-
+    <main>
+      <div class="container">
+        
 <div class="row">
-    <div class="col-md-8">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="col-md-8">
 
-            <header>
-                <div class="post-date">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                    <time itemprop="datePublished" datetime="2016-02-23T21:28:23-08:00">
-                        Tue, 23 Feb 2016 21:28:23 PST
-                    </time>
-                    
-                </div>
-                <h1 class="post-title" itemprop="headline">
-                    <a href="https://scotttactical.com/migrate-private-github-repo-bitbucket/">Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps</a>
-                </h1>
-                <span >
-                  
-                  <span itemprop="author">Scott Tactical</span><br />
-                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps</span></a><br />
-                  <span itemprop="publisher">Scott Tactical</span><br />
-                </span>
-            </header>
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps</li>
+      </ol>
+    </nav>
 
-            <div class="post-content" itemprop="articleBody">
-              <hr />
-                
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-02-23T21:28:23JST">Feb 23, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
+      
+    </ul>
 
-<h1 id="why-not-github">Why Not GitHub</h1>
+    <h1 class="title">Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps</h1>
+  </header>
 
-<h2 id="github-is-great">GitHub is Great</h2>
+  
+
+  <div class="article-body">
+
+<h2 id="why-not-github">Why Not GitHub</h2>
+
+<h3 id="github-is-great">GitHub is Great</h3>
 
 <p>Don&rsquo;t get me wrong. I would recommend using this service for a number of reasons that are not fiscally motivated. It isn&rsquo;t whether GitHub.com is good or not. There is a matter of economics at play though.</p>
 
 <p>As a startup I just don&rsquo;t have the extra 25/mo to throw into GitHub business account. It looks cool that I have an organization there and there are more badges.  But it doesn&rsquo;t work at 12 X $25 = $300/yr. Bottom account. Bronze I think it is.</p>
 
-<h2 id="github-is-mas-rico">GitHub is Mas Rico</h2>
+<h3 id="github-is-mas-rico">GitHub is Mas Rico</h3>
 
 <p>It is cheap if you are a big corporation but for a small shop or a single coder with some sensitive code it doesn&rsquo;t make sense.</p>
 
-<h1 id="why-bitbucket">Why Bitbucket</h1>
+<h2 id="why-bitbucket">Why Bitbucket</h2>
 
 <p><a href="https://bitbucket.org/">Bitbucket</a> is tied into <a href="https://www.atlassian.com/software/bitbucket">Atlassian</a>. There are a lot of advantages if that is your enterprise process software provider.  Having it link in with <a href="https://www.atlassian.com/software/confluence">Confluence</a> and <a href="https://www.atlassian.com/software/jira">Jira</a> is pretty nice.</p>
 
 <p>It is also a much more manageable pricing structure.  Free 99 for private! Yeah once you have more than 5 accounts it starts to charge.</p>
 
-<h1 id="moving-from-github-to-bitbucket">Moving From GitHub to Bitbucket</h1>
+<h2 id="moving-from-github-to-bitbucket">Moving From GitHub to Bitbucket</h2>
 
 <p>Ok let&rsquo;s move.</p>
 
-<h2 id="create-a-team">Create A Team</h2>
+<h3 id="create-a-team">Create A Team</h3>
 
 <p>At the top of the navigation select the Teams &gt;&gt; Create team.</p>
 
@@ -129,13 +186,13 @@
 
 <p>Follow the steps. It will tell you obvious things like &ldquo;You don&rsquo;t have any code&rdquo;. There are also no members in your team but you can deal with that later.</p>
 
-<h2 id="import-a-repository-from-github">Import a Repository from GitHub</h2>
+<h3 id="import-a-repository-from-github">Import a Repository from GitHub</h3>
 
 <p>Thankfully the developers at Atlassian are aware of migrants coming in and provided a convenient button to the</p>
 
 <p><img src="/images/github-bitbucket-migration-2.png" alt="Import a repository" /></p>
 
-<h2 id="set-up-the-new-repository">Set up the new repository</h2>
+<h3 id="set-up-the-new-repository">Set up the new repository</h3>
 
 <p>There are some helpful notes to guide you throught he process. Add your credentials and hit &ldquo;Import repository&rdquo;.</p>
 
@@ -151,7 +208,7 @@
 
 <p><img src="/images/github-bitbucket-migration-4.png" alt="Copy URL" /></p>
 
-<h2 id="change-the-origin-url">Change the Origin URL</h2>
+<h3 id="change-the-origin-url">Change the Origin URL</h3>
 
 <p>Now that you have created the new repository you need to update your git repo to point to the new repository.</p>
 
@@ -171,7 +228,7 @@
 
 <p>cat ~/.ssh/id_rsa.pub | pbcopy</p>
 
-<h2 id="delete-the-github-repository">Delete the GitHub Repository</h2>
+<h3 id="delete-the-github-repository">Delete the GitHub Repository</h3>
 
 <p>Once you feel confident that your repository is functioning in an acceptable form, DELETE your repository. With extreme care.</p>
 
@@ -183,518 +240,54 @@
 
 <p><img src="/images/github-bitbucket-migration-7.png" alt="Nuke It!" /></p>
 
-<h2 id="invite-to-your-party">Invite to Your Party</h2>
+<h3 id="invite-to-your-party">Invite to Your Party</h3>
 
 <p>Go ahead and send out invitations to your team members now.</p>
 
-<h2 id="downgrade-your-github-account">Downgrade your GitHub Account</h2>
+<h3 id="downgrade-your-github-account">Downgrade your GitHub Account</h3>
 
 <p>Go to account settings (or organization settings)
   Go to billing tab
   Click on change plan tab
   Downgrade to a free account</p>
 
-<h1 id="conclusion">Conclusion</h1>
+<h2 id="conclusion">Conclusion</h2>
 
 <p>That is about it.  That isn&rsquo;t very painful. It is probably wise to do early on if you have any intention of using the Atlassian tools.  We switched to Jira at the next to previous place a while before. They have a great sales team there so it is very likely that one of your business managers will get hoodwinked into it. Fancy brochures and talking about culture and productivity will peak.</p>
 
-<h2 id="ps">PS</h2>
+<h3 id="ps">PS</h3>
 
 <p>Btw. If you don&rsquo;t use a source code repository then please let me know so I can keep from wasting my time with any interviews with your company.</p>
+</div>
 
-            </div>
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scotttactical.com/tags/software/">software</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
 
-            <aside>
-                
-                <ul class="list-inline post-tags">
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/software" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">software</span>
-                        </a>
-                    </li>
-                    
-                </ul>
+</article>
 
-                
-                
-                <h3>Related Post</h3>
-                <ul class="post-rels">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/setup-dymo-labelwriter-mac-javascript/">Dymo LabelWriter on Mac OSX - JavaScript</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/django-search-multiple-fields/">Django Search: Multiple Fields and Full Text</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/try-not-2-fuck-up-ur-engineering/">Try Not 2 Fuck Up Ur Engineering</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </ul>
-            </aside>
-            
-            
-            <div id="disqus_thread"></div>
+
+    <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -714,30 +307,10 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            
-            <footer>
+  </div>
 
-                <nav>
-                    <ul class="pager">
-
-                        
-                        <li class="previous"><a href="https://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/"><span aria-hidden="true">&larr;</span> Older</a></li>
-                        
-
-                        <li><a href="https://scotttactical.com//post">All Posts</a></li>
-
-                        
-                        <li class="next"><a href="https://scotttactical.com/2016/02/big-data-on-a-budget/">Newer <span aria-hidden="true">&rarr;</span></a></li>
-                        
-
-                    </ul>
-                </nav>
-            </footer>
-
-        </article>
-    </div>
-    <div class="col-md-4">
-        
+  <div class="col-md-4">
+    
 <aside class="l-sidebar">
 
   <section class="panel panel-default">
@@ -821,5 +394,26 @@
 </aside>
 
 
-    </div>
+  </div>
 </div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

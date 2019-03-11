@@ -1,111 +1,168 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.54.0" />
 
-<meta charset="utf-8">
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-<meta property="og:url" content="https://scotttactical.com/">
+<link rel="canonical" href="https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/">
 
 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>HowTo Bind Multiple Terminals MacOS-X - Scott Tactical</title>
+    
+<meta name="description" content="Binding Multiple Terminals I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.I tried a few other terminal apps. Particularly iTerm2 that has some nice broadcasting.">
+
+<meta property="og:title" content="HowTo Bind Multiple Terminals MacOS-X - Scott Tactical">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HowTo Bind Multiple Terminals MacOS-X &middot; Scott Tactical">
-
+<meta property="og:url" content="https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/">
+<meta property="og:image" content="https://scotttactical.com/images/default.png">
 <meta property="og:site_name" content="Scott Tactical">
+<meta property="og:description" content="Binding Multiple Terminals I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.I tried a few other terminal apps. Particularly iTerm2 that has some nice broadcasting.">
+<meta property="og:locale" content="ja_JP">
 
-<title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scott Tactical">
+<meta name="twitter:url" content="https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/">
+<meta name="twitter:title" content="HowTo Bind Multiple Terminals MacOS-X - Scott Tactical">
+<meta name="twitter:description" content="Binding Multiple Terminals I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.I tried a few other terminal apps. Particularly iTerm2 that has some nice broadcasting.">
+<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scotttactical.com/"
+    },
+    "headline": "HowTo Bind Multiple Terminals MacOS-X - Scott Tactical",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scotttactical.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2016-11-29T19:09:21JST",
+    "dateModified": "2016-11-29T19:09:21JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scott Tactical"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scott Tactical",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scotttactical.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "Binding Multiple Terminals I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.
+I tried a few other terminal apps. Particularly iTerm2 that has some nice broadcasting."
+  }
+</script>
+
+
+    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
     
-    HowTo Bind Multiple Terminals MacOS-X
+
+  </head>
+
+  <body>
     
-</title>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-53440065-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/github.min.css">
-<link rel="stylesheet" href="https://scotttactical.com/css/main.css">
+    
 
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
+          </div>
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe.min.js"></script>
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">About</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe-ui-default.min.js"></script>
-
-
-
-<link rel="shortcut icon" href="https://scotttactical.com//assets/favicon.ico">
-
-
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://scotttactical.com//index.xml">
-
-
-<div class="container">
-    <header class="nav">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="https://scotttactical.com/post">All Posts</a></li>
-                        <li><a href="https://scotttactical.com/gallery">Galleries</a></li>
-                        <li><a href="https://scotttactical.com/news">News</a></li>
-                        <li><a href="https://scotttactical.com/tags">Tags</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        
-                        
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </div>
+      </nav>
     </header>
 
-
+    <main>
+      <div class="container">
+        
 <div class="row">
-    <div class="col-md-8">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="col-md-8">
 
-            <header>
-                <div class="post-date">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                    <time itemprop="datePublished" datetime="2016-11-29T19:09:21-08:00">
-                        Tue, 29 Nov 2016 19:09:21 PST
-                    </time>
-                    
-                </div>
-                <h1 class="post-title" itemprop="headline">
-                    <a href="https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/">HowTo Bind Multiple Terminals MacOS-X</a>
-                </h1>
-                <span >
-                  
-                  <span itemprop="author">Scott Tactical</span><br />
-                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">HowTo Bind Multiple Terminals MacOS-X</span></a><br />
-                  <span itemprop="publisher">Scott Tactical</span><br />
-                </span>
-            </header>
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">HowTo Bind Multiple Terminals MacOS-X</li>
+      </ol>
+    </nav>
 
-            <div class="post-content" itemprop="articleBody">
-              <hr />
-                
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-11-29T19:09:21JST">Nov 29, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
+      
+    </ul>
 
-<h1 id="binding-multiple-terminals">Binding Multiple Terminals</h1>
+    <h1 class="title">HowTo Bind Multiple Terminals MacOS-X</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="binding-multiple-terminals">Binding Multiple Terminals</h2>
 
 <p>I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.</p>
 
 <p>I tried a few other terminal apps. Particularly <a href="https://www.iterm2.com/documentation-one-page.html">iTerm2</a> that has some nice broadcasting. But I didn&rsquo;t like having to deal with the tabs and keystrokes. I kinda liked having multiple windows and the ease of launching with csshX</p>
 
-<h1 id="csshx-installation">csshX Installation</h1>
+<h2 id="csshx-installation">csshX Installation</h2>
 
 <blockquote>
 <p>csshX - Cluster SSH tool using MacOS-X Terminal.app</p>
@@ -119,538 +176,51 @@
 
 <p>csshx &ndash;help</p>
 
-<h1 id="configure-csshx">Configure csshX</h1>
+<h2 id="configure-csshx">Configure csshX</h2>
 
 <p>Create a config file. I chose to set up an rc file in my home directory.</p>
 
 <p>touch ~/.csshrc</p>
 
-<h2 id="logging-in-with-ssh-keys">Logging In With SSH Keys</h2>
+<h3 id="logging-in-with-ssh-keys">Logging In With SSH Keys</h3>
 
 <p>You are going to need this. Pretty much all cloud servers require keys.</p>
 
 <p>csshx &ndash;login ubuntu &ndash;ssh_args &ldquo;-i .ssh/your_private_key&rdquo; host1 host2</p>
 
 <p>That should get you pretty far.</p>
+</div>
 
-            </div>
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scotttactical.com/tags/technology/">technology</a></li>
+          
+          <li><a href="https://scotttactical.com/tags/devops/">devops</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
 
-            <aside>
-                
-                <ul class="list-inline post-tags">
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/technology" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">technology</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/devops" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">devops</span>
-                        </a>
-                    </li>
-                    
-                </ul>
+</article>
 
-                
-                
-                <h3>Related Post</h3>
-                <ul class="post-rels">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/a-weed-delivery-service/">A Weed Delivery Service</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/email-in-a-box-setup/">eMail In A Box: Setup</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/django-saleor-ecommerce-review/">Django Saleor eCommerce Review</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/django-ecommerce-in-30-minutes/">Django eCommerce in 30&#43; Minutes</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">Encrypt PostgreSQL Backup to S3</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/why-the-covered-california-website-sucks/">Why The Covered California Website Sucks</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/">Internet 3rd Wave and Rise of the Technology Fascist</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/writing-novels-in-markdown-part1/">Writing Novels in Markdown Part 1</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/why-we-quit-openstack/">Why We Quit OpenStack: or How I Lost 2 Months of My Life</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/interview-strategies-a-technology-hiring-manager/">Interview Strategies: A Technology Hiring Manager Who Wins</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/download-an-entire-site-with-wget-mac-osx/">Download an Entire Site with wget - mac OSX</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/">Force HTTPS on Laravel 5 behind AWS ELB on EC2</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </ul>
-            </aside>
-            
-            
-            <div id="disqus_thread"></div>
+
+    <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -670,30 +240,10 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            
-            <footer>
+  </div>
 
-                <nav>
-                    <ul class="pager">
-
-                        
-                        <li class="previous"><a href="https://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/"><span aria-hidden="true">&larr;</span> Older</a></li>
-                        
-
-                        <li><a href="https://scotttactical.com//post">All Posts</a></li>
-
-                        
-                        <li class="next"><a href="https://scotttactical.com/whats-wrong-with-millennials/">Newer <span aria-hidden="true">&rarr;</span></a></li>
-                        
-
-                    </ul>
-                </nav>
-            </footer>
-
-        </article>
-    </div>
-    <div class="col-md-4">
-        
+  <div class="col-md-4">
+    
 <aside class="l-sidebar">
 
   <section class="panel panel-default">
@@ -777,5 +327,26 @@
 </aside>
 
 
-    </div>
+  </div>
 </div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

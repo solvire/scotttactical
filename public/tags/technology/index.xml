@@ -6,6 +6,7 @@
     <description>Recent content in Technology on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
     <lastBuildDate>Fri, 05 May 2017 18:51:01 -0700</lastBuildDate>
     
 	<atom:link href="https://scotttactical.com/tags/technology/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +18,7 @@
       <pubDate>Fri, 05 May 2017 18:51:01 -0700</pubDate>
       
       <guid>https://scotttactical.com/post/a-weed-delivery-service/</guid>
-      <description>A Weed Delivery Service About 6 months ago I decided to take on the task of building a delivery app for the cannabis industry. Here are a few notes from the journey so far.
+      <description>Delivery Service About 6 months ago I decided to take on the task of building a delivery app for the cannabis industry. Here are a few notes from the journey so far.
 Why? I had just come off building software for Methadone suppliers. It tracked people coming off of harder opiates. As we all know here there is a very strong opiate problem in the United States. It has even caused the redefined CDC Guidelines on Prescribing Opioids for Pain.</description>
     </item>
     

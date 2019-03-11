@@ -1,103 +1,162 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.54.0" />
 
-<meta charset="utf-8">
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-<meta property="og:url" content="https://scotttactical.com/">
+<link rel="canonical" href="https://scotttactical.com/linux-file-manipulation-shortcuts-commands/">
 
 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Linux File Manipulation Shortcuts and Commands - Scott Tactical</title>
+    
+<meta name="description" content="Linux File Manipulation Commands I&amp;rsquo;ll keep updating this with various commands that I run into. If I find new ones I&amp;rsquo;ll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.File Searching List of file extensions.awk &#43; grep : find all the file extensions. It will also skip your &amp;ldquo;git&amp;rdquo; repository.find . -type f -name &amp;quot;*.">
+
+<meta property="og:title" content="Linux File Manipulation Shortcuts and Commands - Scott Tactical">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux File Manipulation Shortcuts and Commands &middot; Scott Tactical">
-
+<meta property="og:url" content="https://scotttactical.com/linux-file-manipulation-shortcuts-commands/">
+<meta property="og:image" content="https://scotttactical.com/images/default.png">
 <meta property="og:site_name" content="Scott Tactical">
+<meta property="og:description" content="Linux File Manipulation Commands I&amp;rsquo;ll keep updating this with various commands that I run into. If I find new ones I&amp;rsquo;ll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.File Searching List of file extensions.awk &#43; grep : find all the file extensions. It will also skip your &amp;ldquo;git&amp;rdquo; repository.find . -type f -name &amp;quot;*.">
+<meta property="og:locale" content="ja_JP">
 
-<title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scott Tactical">
+<meta name="twitter:url" content="https://scotttactical.com/linux-file-manipulation-shortcuts-commands/">
+<meta name="twitter:title" content="Linux File Manipulation Shortcuts and Commands - Scott Tactical">
+<meta name="twitter:description" content="Linux File Manipulation Commands I&amp;rsquo;ll keep updating this with various commands that I run into. If I find new ones I&amp;rsquo;ll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.File Searching List of file extensions.awk &#43; grep : find all the file extensions. It will also skip your &amp;ldquo;git&amp;rdquo; repository.find . -type f -name &amp;quot;*.">
+<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scotttactical.com/"
+    },
+    "headline": "Linux File Manipulation Shortcuts and Commands - Scott Tactical",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scotttactical.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2015-02-25T00:00:00JST",
+    "dateModified": "2015-02-25T00:00:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scott Tactical"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scott Tactical",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scotttactical.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "Linux File Manipulation Commands I&rsquo;ll keep updating this with various commands that I run into. If I find new ones I&rsquo;ll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.
+File Searching List of file extensions.
+awk + grep : find all the file extensions. It will also skip your &ldquo;git&rdquo; repository.
+find . -type f -name &quot;*."
+  }
+</script>
+
+
+    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
     
-    Linux File Manipulation Shortcuts and Commands
+
+  </head>
+
+  <body>
     
-</title>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-53440065-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/github.min.css">
-<link rel="stylesheet" href="https://scotttactical.com/css/main.css">
+    
 
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
+          </div>
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe.min.js"></script>
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">About</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe-ui-default.min.js"></script>
-
-
-
-<link rel="shortcut icon" href="https://scotttactical.com//assets/favicon.ico">
-
-
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://scotttactical.com//index.xml">
-
-
-<div class="container">
-    <header class="nav">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="https://scotttactical.com/post">All Posts</a></li>
-                        <li><a href="https://scotttactical.com/gallery">Galleries</a></li>
-                        <li><a href="https://scotttactical.com/news">News</a></li>
-                        <li><a href="https://scotttactical.com/tags">Tags</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        
-                        
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </div>
+      </nav>
     </header>
 
-
+    <main>
+      <div class="container">
+        
 <div class="row">
-    <div class="col-md-8">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="col-md-8">
 
-            <header>
-                <div class="post-date">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                    <time itemprop="datePublished" datetime="2015-02-25T00:00:00-08:00">
-                        Wed, 25 Feb 2015 00:00:00 UTC
-                    </time>
-                    
-                </div>
-                <h1 class="post-title" itemprop="headline">
-                    <a href="https://scotttactical.com/linux-file-manipulation-shortcuts-commands/">Linux File Manipulation Shortcuts and Commands</a>
-                </h1>
-                <span >
-                  <img itemprop="image" alt="Linux File Manipulation Shortcuts and Commands" src="https://scotttactical.com/images/baveria.jpg" /><br />
-                  <span itemprop="author">Scott Tactical</span><br />
-                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">Linux File Manipulation Shortcuts and Commands</span></a><br />
-                  <span itemprop="publisher">Scott Tactical</span><br />
-                </span>
-            </header>
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">Linux File Manipulation Shortcuts and Commands</li>
+      </ol>
+    </nav>
 
-            <div class="post-content" itemprop="articleBody">
-              <hr />
-                
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2015-02-25T00:00:00JST">Feb 25, 2015</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">Linux File Manipulation Shortcuts and Commands</h1>
+  </header>
+
+  
+
+  <div class="article-body">
 
 <h1 id="linux-file-manipulation-commands">Linux File Manipulation Commands</h1>
 
@@ -156,501 +215,38 @@
 <p>If you only want to show the highest numbers.</p>
 
 <p><code>$ awk '{ print $1 } ' access_log | sort | uniq -c | sort -n -k 1 | tail</code></p>
+</div>
 
-            </div>
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scotttactical.com/tags/linux/">linux</a></li>
+          
+          <li><a href="https://scotttactical.com/tags/system-administration/">system administration</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
 
-            <aside>
-                
-                <ul class="list-inline post-tags">
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/linux" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">linux</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/system-administration" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">system administration</span>
-                        </a>
-                    </li>
-                    
-                </ul>
+</article>
 
-                
-                
-                <h3>Related Post</h3>
-                <ul class="post-rels">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </ul>
-            </aside>
-            
-            
-            <div id="disqus_thread"></div>
+
+    <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -670,30 +266,10 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            
-            <footer>
+  </div>
 
-                <nav>
-                    <ul class="pager">
-
-                        
-                        <li class="previous"><a href="https://scotttactical.com/php-hypermedia-rest-api-wrapper/"><span aria-hidden="true">&larr;</span> Older</a></li>
-                        
-
-                        <li><a href="https://scotttactical.com//post">All Posts</a></li>
-
-                        
-                        <li class="next"><a href="https://scotttactical.com/to-hiphop-or-not-php-hhvm/">Newer <span aria-hidden="true">&rarr;</span></a></li>
-                        
-
-                    </ul>
-                </nav>
-            </footer>
-
-        </article>
-    </div>
-    <div class="col-md-4">
-        
+  <div class="col-md-4">
+    
 <aside class="l-sidebar">
 
   <section class="panel panel-default">
@@ -777,5 +353,26 @@
 </aside>
 
 
-    </div>
+  </div>
 </div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

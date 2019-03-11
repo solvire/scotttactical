@@ -1,117 +1,174 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.54.0" />
 
-<meta charset="utf-8">
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-<meta property="og:url" content="https://scotttactical.com/">
+<link rel="canonical" href="https://scotttactical.com/post/sfp-vs.-qsfp/">
 
 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>SFP vs. QSFP - Scott Tactical</title>
+    
+<meta name="description" content="Networking Transceivers This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent. After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.Again this page is mostly for my notes.">
+
+<meta property="og:title" content="SFP vs. QSFP - Scott Tactical">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SFP vs. QSFP &middot; Scott Tactical">
-
+<meta property="og:url" content="https://scotttactical.com/post/sfp-vs.-qsfp/">
+<meta property="og:image" content="https://scotttactical.com/images/default.png">
 <meta property="og:site_name" content="Scott Tactical">
+<meta property="og:description" content="Networking Transceivers This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent. After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.Again this page is mostly for my notes.">
+<meta property="og:locale" content="ja_JP">
 
-<title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scott Tactical">
+<meta name="twitter:url" content="https://scotttactical.com/post/sfp-vs.-qsfp/">
+<meta name="twitter:title" content="SFP vs. QSFP - Scott Tactical">
+<meta name="twitter:description" content="Networking Transceivers This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent. After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.Again this page is mostly for my notes.">
+<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scotttactical.com/"
+    },
+    "headline": "SFP vs. QSFP - Scott Tactical",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scotttactical.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2017-01-04T06:41:07JST",
+    "dateModified": "2017-01-04T06:41:07JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scott Tactical"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scott Tactical",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scotttactical.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "Networking Transceivers This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent. After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.
+Again this page is mostly for my notes."
+  }
+</script>
+
+
+    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
     
-    SFP vs. QSFP
+
+  </head>
+
+  <body>
     
-</title>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-53440065-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/github.min.css">
-<link rel="stylesheet" href="https://scotttactical.com/css/main.css">
+    
 
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
+          </div>
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe.min.js"></script>
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">About</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe-ui-default.min.js"></script>
-
-
-
-<link rel="shortcut icon" href="https://scotttactical.com//assets/favicon.ico">
-
-
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://scotttactical.com//index.xml">
-
-
-<div class="container">
-    <header class="nav">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="https://scotttactical.com/post">All Posts</a></li>
-                        <li><a href="https://scotttactical.com/gallery">Galleries</a></li>
-                        <li><a href="https://scotttactical.com/news">News</a></li>
-                        <li><a href="https://scotttactical.com/tags">Tags</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        
-                        
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </div>
+      </nav>
     </header>
 
-
+    <main>
+      <div class="container">
+        
 <div class="row">
-    <div class="col-md-8">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="col-md-8">
 
-            <header>
-                <div class="post-date">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                    <time itemprop="datePublished" datetime="2017-01-04T06:41:07-08:00">
-                        Wed, 04 Jan 2017 06:41:07 PST
-                    </time>
-                    
-                </div>
-                <h1 class="post-title" itemprop="headline">
-                    <a href="https://scotttactical.com/post/sfp-vs.-qsfp/">SFP vs. QSFP</a>
-                </h1>
-                <span >
-                  
-                  <span itemprop="author">Scott Tactical</span><br />
-                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">SFP vs. QSFP</span></a><br />
-                  <span itemprop="publisher">Scott Tactical</span><br />
-                </span>
-            </header>
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">SFP vs. QSFP</li>
+      </ol>
+    </nav>
 
-            <div class="post-content" itemprop="articleBody">
-              <hr />
-                
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2017-01-04T06:41:07JST">Jan 4, 2017</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
+      
+    </ul>
 
-<h1 id="networking-transceivers">Networking Transceivers</h1>
+    <h1 class="title">SFP vs. QSFP</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="networking-transceivers">Networking Transceivers</h2>
 
 <p>This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent.  After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.</p>
 
 <p>Again this page is mostly for my notes.</p>
 
-<h1 id="sfp-and-sfp">SFP and SFP+</h1>
+<h2 id="sfp-and-sfp">SFP and SFP+</h2>
 
 <p>SFP stands for &ldquo;small form-factor pluggable&rdquo;. It is a hot-pluggable transceiver. It allows for connecting devices via a fiber optic cable or copper cable. I have mostly seen fiber optics in data centers but didn&rsquo;t really know what they were about.</p>
 
 <p>See <a href="https://en.wikipedia.org/wiki/Small_Form_Factor_Committee">Small Form Factor Committee</a> for more information.</p>
 
-<h2 id="data-rates-by-type">Data Rates by Type</h2>
+<h3 id="data-rates-by-type">Data Rates by Type</h3>
 
 <p><a href="https://en.wikipedia.org/wiki/Small_form-factor_pluggable_transceiver">SFP</a> is rated for 1Gb, 2.5Gb and 10Gb/s traffic.</p>
 
@@ -121,11 +178,11 @@
 
 <p>SFP28 enhances the transceiver again by moving toward the 100Gb rates by allowing for multiple 25G channels. This is an advantage because the channels of 1/10/40/100 require more power and cooling compared to the 1/25/50/100 channels of the proposed gear. Again, it is above my skill level.</p>
 
-<h2 id="csfp">CSFP</h2>
+<h3 id="csfp">CSFP</h3>
 
 <p>CSFP stands for compact small form-factor pluggable (CSFP). I haven&rsquo;t used this but it seems to be designed for higher density and bi-directional traffic.</p>
 
-<h1 id="qsfp-and-qsfp">QSFP and QSFP+</h1>
+<h2 id="qsfp-and-qsfp">QSFP and QSFP+</h2>
 
 <p>Here is where things get a little more interesting. I didn&rsquo;t realize before that to get more bandwidth they were basically stacking technologies.</p>
 
@@ -158,7 +215,7 @@
 </ul></li>
 </ul>
 
-<h1 id="fanout-or-breakout-cables">Fanout or Breakout Cables</h1>
+<h2 id="fanout-or-breakout-cables">Fanout or Breakout Cables</h2>
 
 <p>I thought this was really cool. Similar to SAS controllers you can split the connections of the channels out. Essentially you use one port to power 4 10G nics. This is great if you have a switch with many high density ports.</p>
 
@@ -166,544 +223,43 @@
 
 <p><img src="http://www.sfpopticaltransceiver.com/photo/pc1313968-extreme_qsfp_copper_cable_qsfp_to_sfp_fan_out_cable_for_network.jpg" alt="sfpopticaltransceiver.com" /></p>
 
-<h1 id="conclusion">Conclusion</h1>
+<h2 id="conclusion">Conclusion</h2>
 
 <p>I will write my notes down regarding the technologies that employ these connectors. That is even more interesting. Basically this type of networking puts supercomputing into the hands of mere mortals.</p>
 
 <p>Please feel free to correct me if I am wrong in the comments below. I am open to suggestion.</p>
+</div>
 
-            </div>
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scotttactical.com/tags/data/">data</a></li>
+          
+          <li><a href="https://scotttactical.com/tags/networking/">networking</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
 
-            <aside>
-                
-                <ul class="list-inline post-tags">
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/data" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">data</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/networking" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">networking</span>
-                        </a>
-                    </li>
-                    
-                </ul>
+</article>
 
-                
-                
-                <h3>Related Post</h3>
-                <ul class="post-rels">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">Encrypt PostgreSQL Backup to S3</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/why-we-quit-openstack/">Why We Quit OpenStack: or How I Lost 2 Months of My Life</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/purdue-university-predicts-success/">Purdue University Predicts Success</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/the-fast-growing-data-center-segment/">The Fast-Growing Data Center Segment</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/better-communication-through-big-data/">Better Communication Through Big Data</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/">What Companies Do Not Understand About Employing for Data Scientist</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/3-reasons-why-data-centers-are-eco-friendly/">3 Reasons Why Data Centers Are Eco-Friendly</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/data-science-building-workplace-diversities/">Data Science: Building Workplace Diversities</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/choosing-your-data-warehouse-product/">Choosing Your Data Warehouse Product</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/solving-societys-problems-with-data/">Solving Society&#39;s Problems With Data</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/data-science-job-search/">Data Science Job Search</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/why-data-science-in-marketing-is-rising/">Why Data Science in Marketing is Rising</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/big-data-and-storage-what-are-the-trends/">Big Data and Storage: What are the Trends?</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/the-myths-of-big-data/">The Myths of Big Data</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/django-search-multiple-fields/">Django Search: Multiple Fields and Full Text</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/02/big-data-on-a-budget/">Big Data on a Budget</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/02/microsoft-accelerator-seattle-machine-learning-funding/">Microsoft Accelerator Seattle Machine Learning Funding</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/what-does-data-scientist-do/">What Does a Data Scientist Do</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/health-medical-interconnectivity-data-revolution/">Health, Interconnectivity - The Data Revolution</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </ul>
-            </aside>
-            
-            
-            <div id="disqus_thread"></div>
+
+    <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -723,30 +279,10 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            
-            <footer>
+  </div>
 
-                <nav>
-                    <ul class="pager">
-
-                        
-                        <li class="previous"><a href="https://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/"><span aria-hidden="true">&larr;</span> Older</a></li>
-                        
-
-                        <li><a href="https://scotttactical.com//post">All Posts</a></li>
-
-                        
-                        <li class="next"><a href="https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">Newer <span aria-hidden="true">&rarr;</span></a></li>
-                        
-
-                    </ul>
-                </nav>
-            </footer>
-
-        </article>
-    </div>
-    <div class="col-md-4">
-        
+  <div class="col-md-4">
+    
 <aside class="l-sidebar">
 
   <section class="panel panel-default">
@@ -830,5 +366,26 @@
 </aside>
 
 
-    </div>
+  </div>
 </div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

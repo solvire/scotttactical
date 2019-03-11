@@ -1,111 +1,169 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.54.0" />
 
-<meta charset="utf-8">
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-<meta property="og:url" content="https://scotttactical.com/">
+<link rel="canonical" href="https://scotttactical.com/performance-suggestions-phpunit-slowness/">
 
 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>PHPunit Slowness Performance Suggestions - Scott Tactical</title>
+    
+<meta name="description" content="PHPUnit Is Slowness I love PHPUnit don&amp;rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&amp;rsquo;s like the code got yo back bro! Build code that lasts.EDIT: I know most of the problems are inherent with tests not the testing framework. However, my requirements dictate how I use it to a certain extent. Peace.PHPUnit is painfully slow. Seriously. Though. Maybe having a concurrent environment it can run it would help.">
+
+<meta property="og:title" content="PHPunit Slowness Performance Suggestions - Scott Tactical">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHPunit Slowness Performance Suggestions &middot; Scott Tactical">
-
+<meta property="og:url" content="https://scotttactical.com/performance-suggestions-phpunit-slowness/">
+<meta property="og:image" content="https://scotttactical.com/images/default.png">
 <meta property="og:site_name" content="Scott Tactical">
+<meta property="og:description" content="PHPUnit Is Slowness I love PHPUnit don&amp;rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&amp;rsquo;s like the code got yo back bro! Build code that lasts.EDIT: I know most of the problems are inherent with tests not the testing framework. However, my requirements dictate how I use it to a certain extent. Peace.PHPUnit is painfully slow. Seriously. Though. Maybe having a concurrent environment it can run it would help.">
+<meta property="og:locale" content="ja_JP">
 
-<title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scott Tactical">
+<meta name="twitter:url" content="https://scotttactical.com/performance-suggestions-phpunit-slowness/">
+<meta name="twitter:title" content="PHPunit Slowness Performance Suggestions - Scott Tactical">
+<meta name="twitter:description" content="PHPUnit Is Slowness I love PHPUnit don&amp;rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&amp;rsquo;s like the code got yo back bro! Build code that lasts.EDIT: I know most of the problems are inherent with tests not the testing framework. However, my requirements dictate how I use it to a certain extent. Peace.PHPUnit is painfully slow. Seriously. Though. Maybe having a concurrent environment it can run it would help.">
+<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scotttactical.com/"
+    },
+    "headline": "PHPunit Slowness Performance Suggestions - Scott Tactical",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scotttactical.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2015-11-04T12:57:42JST",
+    "dateModified": "2015-11-04T12:57:42JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scott Tactical"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scott Tactical",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scotttactical.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "PHPUnit Is Slowness I love PHPUnit don&rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&rsquo;s like the code got yo back bro! Build code that lasts.
+EDIT: I know most of the problems are inherent with tests not the testing framework. However, my requirements dictate how I use it to a certain extent. Peace.
+PHPUnit is painfully slow. Seriously. Though. Maybe having a concurrent environment it can run it would help."
+  }
+</script>
+
+
+    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
     
-    PHPunit Slowness Performance Suggestions
+
+  </head>
+
+  <body>
     
-</title>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-53440065-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/github.min.css">
-<link rel="stylesheet" href="https://scotttactical.com/css/main.css">
+    
 
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
+          </div>
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe.min.js"></script>
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">About</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe-ui-default.min.js"></script>
-
-
-
-<link rel="shortcut icon" href="https://scotttactical.com//assets/favicon.ico">
-
-
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://scotttactical.com//index.xml">
-
-
-<div class="container">
-    <header class="nav">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="https://scotttactical.com/post">All Posts</a></li>
-                        <li><a href="https://scotttactical.com/gallery">Galleries</a></li>
-                        <li><a href="https://scotttactical.com/news">News</a></li>
-                        <li><a href="https://scotttactical.com/tags">Tags</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        
-                        
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </div>
+      </nav>
     </header>
 
-
+    <main>
+      <div class="container">
+        
 <div class="row">
-    <div class="col-md-8">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="col-md-8">
 
-            <header>
-                <div class="post-date">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                    <time itemprop="datePublished" datetime="2015-11-04T12:57:42-08:00">
-                        Wed, 04 Nov 2015 12:57:42 PST
-                    </time>
-                    
-                </div>
-                <h1 class="post-title" itemprop="headline">
-                    <a href="https://scotttactical.com/performance-suggestions-phpunit-slowness/">PHPunit Slowness Performance Suggestions</a>
-                </h1>
-                <span >
-                  <img itemprop="image" alt="PHPunit Slowness Performance Suggestions" src="https://scotttactical.com/images/php-unit-logo.jpg" /><br />
-                  <span itemprop="author">Scott Tactical</span><br />
-                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">PHPunit Slowness Performance Suggestions</span></a><br />
-                  <span itemprop="publisher">Scott Tactical</span><br />
-                </span>
-            </header>
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">PHPunit Slowness Performance Suggestions</li>
+      </ol>
+    </nav>
 
-            <div class="post-content" itemprop="articleBody">
-              <hr />
-                
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2015-11-04T12:57:42JST">Nov 4, 2015</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
+      
+    </ul>
 
-<h1 id="phpunit-is-slowness">PHPUnit Is Slowness</h1>
+    <h1 class="title">PHPunit Slowness Performance Suggestions</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="phpunit-is-slowness">PHPUnit Is Slowness</h2>
 
 <p>I love <a href="https://phpunit.de/">PHPUnit</a> don&rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&rsquo;s like the code got yo back bro! Build code that lasts.</p>
 
 <p><em>EDIT</em>: I know most of the problems are inherent with tests not the testing framework.  However, my requirements dictate how I use it to a certain extent.  Peace.</p>
 
-<h2 id="phpunit-is-painfully-slow">PHPUnit is painfully slow.</h2>
+<h3 id="phpunit-is-painfully-slow">PHPUnit is painfully slow.</h3>
 
 <p><img src="/images/turtle-speed.jpg" alt="PHPUnit Is Slow" /></p>
 
@@ -113,7 +171,7 @@
 
 <p>For reference the 41 year old <a href="http://www.npr.org/sections/thetwo-way/2015/07/13/422610986/ultramarathoner-finishes-the-appalachian-trail-in-record-time">Scott Jurek</a> can walk the <a href="http://www.nps.gov/appa/index.htm">2000+ mile Appalachian Trail</a> in 45 days. Single threaded of course.</p>
 
-<h2 id="why-is-phpunit-anti-performant">Why is PHPUnit Anti-Performant</h2>
+<h3 id="why-is-phpunit-anti-performant">Why is PHPUnit Anti-Performant</h3>
 
 <p>Some thing that are inherent to unit tests that make them slow.</p>
 
@@ -126,9 +184,9 @@
 <li>Generating reports is intensive</li>
 </ul>
 
-<h1 id="strategies">Strategies</h1>
+<h2 id="strategies">Strategies</h2>
 
-<h2 id="sqlite-in-memory">SQLite - In Memory</h2>
+<h3 id="sqlite-in-memory">SQLite - In Memory</h3>
 
 <p><img src="/images/sqlite.gif" alt="SQLite" /></p>
 
@@ -153,13 +211,13 @@ I also like to make sure my host is set to not kill anything. I have wiped out a
 &lt;env name=&quot;DB_HOST&quot; value=&quot;NO&quot;/&gt;
 </code></pre>
 
-<h2 id="database-sometimes">Database - Sometimes</h2>
+<h3 id="database-sometimes">Database - Sometimes</h3>
 
 <p>I have two base test cases that I use for almost everything. One that wraps up Laravel or the big framework I&rsquo;m messing with or one that will just extend phpunit by itself.  It might even be better to have data groups into domains so that when you are running a group of tests that it only loads up those tables.</p>
 
 <p>We have a couple hundred tests. Not much.  But it takes 2-5 seconds to load up all the data. That adds up to minutes.  Can&rsquo;t handle that.</p>
 
-<h2 id="grouping-test-suites">Grouping Test Suites</h2>
+<h3 id="grouping-test-suites">Grouping Test Suites</h3>
 
 <p>You have the ability to group your tests. I always have my developers add docblocks such as below so that PHPUnit will know how to group thing. The fields that I want them to use are:</p>
 
@@ -194,7 +252,7 @@ Available test group(s):
 
 </code></pre>
 
-<h2 id="filter-your-tests">Filter Your Tests</h2>
+<h3 id="filter-your-tests">Filter Your Tests</h3>
 
 <p>Run only the tests you need. Sometimes I&rsquo;m working with a class and I want to keep running that class.  Just filter by the test class name:</p>
 
@@ -210,11 +268,11 @@ LeadFerret\Lib\Rules\CompanyModifyRuleProvider
 
 </code></pre>
 
-<h2 id="turn-off-code-coverage">Turn Off Code Coverage</h2>
+<h3 id="turn-off-code-coverage">Turn Off Code Coverage</h3>
 
 <p>You don&rsquo;t always have to run code coverage reports. In fact probably only before a deployment. Either you really love to see code coverage or you hate dealing with unit tests.  Doesn&rsquo;t really seem to be much between.</p>
 
-<h3 id="performance-tests">Performance Tests</h3>
+<h4 id="performance-tests">Performance Tests</h4>
 
 <p>The difference was so staggering I that I was totally irritated I didn&rsquo;t find this sooner. I was even getting in trying to debug at the lower code level.</p>
 
@@ -237,13 +295,13 @@ Generating code coverage report in HTML format ... done
 
 <p>FASTER!</p>
 
-<h2 id="javascript-for-the-assist">JavaScript For The Assist</h2>
+<h3 id="javascript-for-the-assist">JavaScript For The Assist</h3>
 
 <p><img src="/images/gulp.png" alt="GulpJS" /></p>
 
 <p>We have been toying with using <a href="http://gulpjs.com/">Gulp</a> / <a href="https://www.npmjs.com/">NPM</a> for setting up a better workflow.  It is simple enough that once a file is saved that scripts can kick off the appropriate unit tests. If your tests are completing in less than a couple seconds then it doesn&rsquo;t hurt to keep running them. If they break you may know it sooner.  This is also helpful for those people who refuse to use a full-featured IDE.  Probably also the same people that enjoy working on javascript in the dark.  I know who you are. O.o</p>
 
-<h1 id="conclusion">Conclusion</h1>
+<h2 id="conclusion">Conclusion</h2>
 
 <p>Life is much better now.</p>
 
@@ -254,514 +312,40 @@ Generating code coverage report in HTML format ... done
 <p><em>Engineer; Don&rsquo;t Hack</em></p>
 
 <p>=st=</p>
+</div>
 
-            </div>
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scotttactical.com/tags/php/">php</a></li>
+          
+          <li><a href="https://scotttactical.com/tags/testing/">testing</a></li>
+          
+          <li><a href="https://scotttactical.com/tags/performance/">performance</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
 
-            <aside>
-                
-                <ul class="list-inline post-tags">
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/php" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">php</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/testing" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">testing</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/performance" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">performance</span>
-                        </a>
-                    </li>
-                    
-                </ul>
+</article>
 
-                
-                
-                <h3>Related Post</h3>
-                <ul class="post-rels">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/">Force HTTPS on Laravel 5 behind AWS ELB on EC2</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/php-hypermedia-rest-api-wrapper/">PHP Hypermedia REST API wrapper</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/to-hiphop-or-not-php-hhvm/">To HipHop or Not - PHP and HHVM</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </ul>
-            </aside>
-            
-            
-            <div id="disqus_thread"></div>
+
+    <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -781,30 +365,10 @@ Generating code coverage report in HTML format ... done
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            
-            <footer>
+  </div>
 
-                <nav>
-                    <ul class="pager">
-
-                        
-                        <li class="previous"><a href="https://scotttactical.com/post/eat-for-war/"><span aria-hidden="true">&larr;</span> Older</a></li>
-                        
-
-                        <li><a href="https://scotttactical.com//post">All Posts</a></li>
-
-                        
-                        <li class="next"><a href="https://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/">Newer <span aria-hidden="true">&rarr;</span></a></li>
-                        
-
-                    </ul>
-                </nav>
-            </footer>
-
-        </article>
-    </div>
-    <div class="col-md-4">
-        
+  <div class="col-md-4">
+    
 <aside class="l-sidebar">
 
   <section class="panel panel-default">
@@ -888,5 +452,26 @@ Generating code coverage report in HTML format ... done
 </aside>
 
 
-    </div>
+  </div>
 </div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

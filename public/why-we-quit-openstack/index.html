@@ -1,113 +1,167 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.54.0" />
 
-<meta charset="utf-8">
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-<meta property="og:url" content="https://scotttactical.com/">
+<link rel="canonical" href="https://scotttactical.com/why-we-quit-openstack/">
 
 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Why We Quit OpenStack: or How I Lost 2 Months of My Life - Scott Tactical</title>
+    
+<meta name="description" content="TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.I will probably write another article that outlines all the questions that I should have asked before starting this.">
+
+<meta property="og:title" content="Why We Quit OpenStack: or How I Lost 2 Months of My Life - Scott Tactical">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Why We Quit OpenStack: or How I Lost 2 Months of My Life &middot; Scott Tactical">
-
+<meta property="og:url" content="https://scotttactical.com/why-we-quit-openstack/">
+<meta property="og:image" content="https://scotttactical.com/images/default.png">
 <meta property="og:site_name" content="Scott Tactical">
+<meta property="og:description" content="TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.I will probably write another article that outlines all the questions that I should have asked before starting this.">
+<meta property="og:locale" content="ja_JP">
 
-<title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scott Tactical">
+<meta name="twitter:url" content="https://scotttactical.com/why-we-quit-openstack/">
+<meta name="twitter:title" content="Why We Quit OpenStack: or How I Lost 2 Months of My Life - Scott Tactical">
+<meta name="twitter:description" content="TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.I will probably write another article that outlines all the questions that I should have asked before starting this.">
+<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scotttactical.com/"
+    },
+    "headline": "Why We Quit OpenStack: or How I Lost 2 Months of My Life - Scott Tactical",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scotttactical.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2016-10-28T20:07:57JST",
+    "dateModified": "2016-10-29T13:02:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scott Tactical"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scott Tactical",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scotttactical.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.
+Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&rsquo;t bad for some people. For most institutions it is just wrong.
+I will probably write another article that outlines all the questions that I should have asked before starting this."
+  }
+</script>
+
+
+    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
     
-    Why We Quit OpenStack: or How I Lost 2 Months of My Life
+
+  </head>
+
+  <body>
     
-</title>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-53440065-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/github.min.css">
-<link rel="stylesheet" href="https://scotttactical.com/css/main.css">
+    
 
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
+          </div>
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe.min.js"></script>
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">About</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe-ui-default.min.js"></script>
-
-
-
-<link rel="shortcut icon" href="https://scotttactical.com//assets/favicon.ico">
-
-
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://scotttactical.com//index.xml">
-
-
-<div class="container">
-    <header class="nav">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="https://scotttactical.com/post">All Posts</a></li>
-                        <li><a href="https://scotttactical.com/gallery">Galleries</a></li>
-                        <li><a href="https://scotttactical.com/news">News</a></li>
-                        <li><a href="https://scotttactical.com/tags">Tags</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        
-                        
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </div>
+      </nav>
     </header>
 
-
+    <main>
+      <div class="container">
+        
 <div class="row">
-    <div class="col-md-8">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="col-md-8">
 
-            <header>
-                <div class="post-date">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                    <time itemprop="datePublished" datetime="2016-10-28T20:07:57-08:00">
-                        Fri, 28 Oct 2016 20:07:57 PDT
-                    </time>
-                    
-                    <time itemprop="dateModified" datetime="2016-10-29T13:02:00-08:00">
-                        Last Updated: Sat, 29 Oct 2016 13:02:00 PDT
-                    </time>
-                    
-                </div>
-                <h1 class="post-title" itemprop="headline">
-                    <a href="https://scotttactical.com/why-we-quit-openstack/">Why We Quit OpenStack: or How I Lost 2 Months of My Life</a>
-                </h1>
-                <span >
-                  <img itemprop="image" alt="Why We Quit OpenStack: or How I Lost 2 Months of My Life" src="https://scotttactical.com/images/openstack.jpg" /><br />
-                  <span itemprop="author">Scott Tactical</span><br />
-                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">Why We Quit OpenStack: or How I Lost 2 Months of My Life</span></a><br />
-                  <span itemprop="publisher">Scott Tactical</span><br />
-                </span>
-            </header>
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">Why We Quit OpenStack: or How I Lost 2 Months of My Life</li>
+      </ol>
+    </nav>
 
-            <div class="post-content" itemprop="articleBody">
-              <hr />
-                
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-10-29T13:02:00JST">Oct 29, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
+      
+    </ul>
 
-<h2 id="tl-dr">TL;DR</h2>
+    <h1 class="title">Why We Quit OpenStack: or How I Lost 2 Months of My Life</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h3 id="tl-dr">TL;DR</h3>
 
 <p>OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.</p>
 
-<h1 id="backstory">Backstory</h1>
+<h2 id="backstory">Backstory</h2>
 
 <p>Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&rsquo;t bad for some people. For most institutions it is just <em>wrong</em>.</p>
 
@@ -122,25 +176,25 @@
 
 <p><img src="/images/full_openstack.jpg" alt="Full OpenStack" /></p>
 
-<h1 id="red-flags">Red Flags</h1>
+<h2 id="red-flags">Red Flags</h2>
 
 <blockquote>
 <p>Where there are <em>clouds</em> of smoke, there is probably fire. - An Indian Truism</p>
 </blockquote>
 
-<h2 id="it-took-forever">It Took Forever</h2>
+<h3 id="it-took-forever">It Took Forever</h3>
 
 <p>I witnessed an ambitious project slide face-first into the blue and white parking stall of the private cloud mall. Then later it was used as leverage to out every participant. I mostly attributed the breakdown to lack of time resources, OS talent and political infighting.  <em>nerds (heart) aws</em> but more on that elsewhere.  Ignoring those huge red flags I figured my sysadmin abilities would be able to figure things out and surpass them.</p>
 
 <p>My response: I got sysadmin skills and no politics. I&rsquo;ve never failed to raise a datacenter infrastructure.</p>
 
-<h2 id="openstack-hate-speech">OpenStack Hate Speech</h2>
+<h3 id="openstack-hate-speech">OpenStack Hate Speech</h3>
 
 <p>There was plenty of hating over OpenStack. More specifically there was a lot of negative commentary about Nova, Neutron and Cinder. Basically the heart of the application.</p>
 
 <p>My response: I kinda need those bells and whistles so it&rsquo;s worth dealing with monolithic bloat because that&rsquo;s my only option.</p>
 
-<h2 id="nerds-heart-aws">Nerds (heart) AWS</h2>
+<h3 id="nerds-heart-aws">Nerds (heart) AWS</h3>
 
 <blockquote>
 <p>When there is blood in the streets, buy land. - Contrarian Invetors&rsquo; Proverb</p>
@@ -152,13 +206,13 @@
 
 <p>My response: Well most nerds have near-0 business strategy. Also this indicates there is a massive gap in talent so I&rsquo;d like to be here.</p>
 
-<h2 id="babylon-fortuna-ergo-enterprise-ready">Babylon Fortuna ergo Enterprise-Ready</h2>
+<h3 id="babylon-fortuna-ergo-enterprise-ready">Babylon Fortuna ergo Enterprise-Ready</h3>
 
 <p>The codebase is huge. And kinda old at this point. In internet years it&rsquo;s about 50 years old.</p>
 
 <p>My response: It is mature enough to use. I should be ashamed of myself. I deployed IBM Websphere and should have known better.</p>
 
-<h2 id="it-is-complicated">It is Complicated</h2>
+<h3 id="it-is-complicated">It is Complicated</h3>
 
 <p><img src="/images/fb_complicated.png" alt="It's Complicated" /></p>
 
@@ -170,13 +224,13 @@
 
 <p>My response: Well, shit. Guess I&rsquo;ve dealt with worse. I hope there isn&rsquo;t magic happening. I&rsquo;ll trust the Fuel installers. Oh God Fuel! don&rsquo;t fail me!</p>
 
-<h2 id="it-is-fragile">It Is Fragile</h2>
+<h3 id="it-is-fragile">It Is Fragile</h3>
 
 <p>Refer to the previous diagram. With so many moving parts and given the lack of talent capable of managing it there is a serious level of risk in trusting a critical production environment on this.</p>
 
 <p>My response: Keep my public cloud fail overs built and ready to deploy. I&rsquo;m a cheat.</p>
 
-<h2 id="it-is-vendor-driven">It Is Vendor Driven</h2>
+<h3 id="it-is-vendor-driven">It Is Vendor Driven</h3>
 
 <p>I kinda knew that the growth of OpenStack was tainted by vendor intrigue. I have run into this spending a considerable amount of time working with OAuth 2.0 when the &ldquo;framework&rdquo; was going through proposals and the lead writers were splitting.</p>
 
@@ -184,25 +238,25 @@
 
 <p>My response: Ick</p>
 
-<h1 id="the-final-decision">The Final Decision</h1>
+<h2 id="the-final-decision">The Final Decision</h2>
 
 <p>While it might work for a team like RackSpace, I don&rsquo;t think it fits what we need. The cost benefit of having a few drivers and some prebuilt scripts to managing images wasn&rsquo;t enough to justify the cost and risk of having a system that is so fragile.</p>
 
 <p>The risk and the knowns of unknowns inside the massive spaghetti of scope creep was enough that I couldn&rsquo;t justify that I wouldn&rsquo;t be able to jump in and fix something within less than a day. Pretty much every code fix I had to make took more than a day. More of 3-5 days to figure out each bug. That was the last straw.</p>
 
-<h2 id="opennebula">OpenNebula</h2>
+<h3 id="opennebula">OpenNebula</h3>
 
 <p>We tried other stacks and I launched a multiple node infrastructure with OpenNebula. It was refreshingly vertical and self-contained. But still felt like it wanted to follow the hypervisor slipstream of OpenStack.</p>
 
-<h2 id="blah-stack">Blah-Stack</h2>
+<h3 id="blah-stack">Blah-Stack</h3>
 
 <p>There was a lot of other options but I was burned out at this point.</p>
 
-<h2 id="future-plans">Future Plans</h2>
+<h3 id="future-plans">Future Plans</h3>
 
 <p>The focus internally is more on bare-metal and OS containers. So far so good.</p>
 
-<h1 id="conclusion">Conclusion</h1>
+<h2 id="conclusion">Conclusion</h2>
 
 <ul>
 <li>There is no free ride. (Development is an Expect 2 Work Employment)</li>
@@ -211,568 +265,40 @@
 <li>If you believe the marketing - baaah</li>
 <li>Community first, politics last</li>
 </ul>
+</div>
 
-            </div>
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scotttactical.com/tags/technology/">technology</a></li>
+          
+          <li><a href="https://scotttactical.com/tags/data/">data</a></li>
+          
+          <li><a href="https://scotttactical.com/tags/devops/">devops</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
 
-            <aside>
-                
-                <ul class="list-inline post-tags">
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/technology" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">technology</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/data" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">data</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/devops" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">devops</span>
-                        </a>
-                    </li>
-                    
-                </ul>
+</article>
 
-                
-                
-                <h3>Related Post</h3>
-                <ul class="post-rels">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/a-weed-delivery-service/">A Weed Delivery Service</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/email-in-a-box-setup/">eMail In A Box: Setup</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/django-saleor-ecommerce-review/">Django Saleor eCommerce Review</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/django-ecommerce-in-30-minutes/">Django eCommerce in 30&#43; Minutes</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/sfp-vs.-qsfp/">SFP vs. QSFP</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">Encrypt PostgreSQL Backup to S3</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/why-the-covered-california-website-sucks/">Why The Covered California Website Sucks</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/">Internet 3rd Wave and Rise of the Technology Fascist</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/">HowTo Bind Multiple Terminals MacOS-X</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/writing-novels-in-markdown-part1/">Writing Novels in Markdown Part 1</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/purdue-university-predicts-success/">Purdue University Predicts Success</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/the-fast-growing-data-center-segment/">The Fast-Growing Data Center Segment</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/better-communication-through-big-data/">Better Communication Through Big Data</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/">What Companies Do Not Understand About Employing for Data Scientist</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/3-reasons-why-data-centers-are-eco-friendly/">3 Reasons Why Data Centers Are Eco-Friendly</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/data-science-building-workplace-diversities/">Data Science: Building Workplace Diversities</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/choosing-your-data-warehouse-product/">Choosing Your Data Warehouse Product</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/solving-societys-problems-with-data/">Solving Society&#39;s Problems With Data</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/data-science-job-search/">Data Science Job Search</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/why-data-science-in-marketing-is-rising/">Why Data Science in Marketing is Rising</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/big-data-and-storage-what-are-the-trends/">Big Data and Storage: What are the Trends?</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/04/the-myths-of-big-data/">The Myths of Big Data</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/django-search-multiple-fields/">Django Search: Multiple Fields and Full Text</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/02/big-data-on-a-budget/">Big Data on a Budget</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/2016/02/microsoft-accelerator-seattle-machine-learning-funding/">Microsoft Accelerator Seattle Machine Learning Funding</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/what-does-data-scientist-do/">What Does a Data Scientist Do</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/health-medical-interconnectivity-data-revolution/">Health, Interconnectivity - The Data Revolution</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/interview-strategies-a-technology-hiring-manager/">Interview Strategies: A Technology Hiring Manager Who Wins</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/download-an-entire-site-with-wget-mac-osx/">Download an Entire Site with wget - mac OSX</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/">Force HTTPS on Laravel 5 behind AWS ELB on EC2</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </ul>
-            </aside>
-            
-            
-            <div id="disqus_thread"></div>
+
+    <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -792,30 +318,10 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            
-            <footer>
+  </div>
 
-                <nav>
-                    <ul class="pager">
-
-                        
-                        <li class="previous"><a href="https://scotttactical.com/writing-novels-in-markdown-part1/"><span aria-hidden="true">&larr;</span> Older</a></li>
-                        
-
-                        <li><a href="https://scotttactical.com//post">All Posts</a></li>
-
-                        
-                        <li class="next"><a href="https://scotttactical.com/dana-60-front-axle-build/">Newer <span aria-hidden="true">&rarr;</span></a></li>
-                        
-
-                    </ul>
-                </nav>
-            </footer>
-
-        </article>
-    </div>
-    <div class="col-md-4">
-        
+  <div class="col-md-4">
+    
 <aside class="l-sidebar">
 
   <section class="panel panel-default">
@@ -899,5 +405,26 @@
 </aside>
 
 
-    </div>
+  </div>
 </div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

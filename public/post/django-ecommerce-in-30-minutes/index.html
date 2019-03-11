@@ -1,121 +1,177 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.54.0" />
 
-<meta charset="utf-8">
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-<meta property="og:url" content="https://scotttactical.com/">
+<link rel="canonical" href="https://scotttactical.com/post/django-ecommerce-in-30-minutes/">
 
 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Django eCommerce in 30&#43; Minutes - Scott Tactical</title>
+    
+<meta name="description" content="Django And eCommerce TL;DR I like Python and want to use it for eCommerce, so I went through the well known products and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.">
+
+<meta property="og:title" content="Django eCommerce in 30&#43; Minutes - Scott Tactical">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Django eCommerce in 30&#43; Minutes &middot; Scott Tactical">
-
+<meta property="og:url" content="https://scotttactical.com/post/django-ecommerce-in-30-minutes/">
+<meta property="og:image" content="https://scotttactical.com/images/default.png">
 <meta property="og:site_name" content="Scott Tactical">
+<meta property="og:description" content="Django And eCommerce TL;DR I like Python and want to use it for eCommerce, so I went through the well known products and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.">
+<meta property="og:locale" content="ja_JP">
 
-<title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scott Tactical">
+<meta name="twitter:url" content="https://scotttactical.com/post/django-ecommerce-in-30-minutes/">
+<meta name="twitter:title" content="Django eCommerce in 30&#43; Minutes - Scott Tactical">
+<meta name="twitter:description" content="Django And eCommerce TL;DR I like Python and want to use it for eCommerce, so I went through the well known products and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.">
+<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://scotttactical.com/"
+    },
+    "headline": "Django eCommerce in 30&#43; Minutes - Scott Tactical",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://scotttactical.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2017-01-14T16:00:07JST",
+    "dateModified": "2017-01-14T16:00:07JST",
+    "author": {
+      "@type": "Person",
+      "name": "Scott Tactical"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scott Tactical",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://scotttactical.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "Django And eCommerce TL;DR I like Python and want to use it for eCommerce, so I went through the well known products and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing."
+  }
+</script>
+
+
+    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
     
-    Django eCommerce in 30&#43; Minutes
+
+  </head>
+
+  <body>
     
-</title>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-53440065-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/github.min.css">
-<link rel="stylesheet" href="https://scotttactical.com/css/main.css">
+    
 
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
+          </div>
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe.min.js"></script>
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">About</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
 
-<script src="https://scotttactical.com//js/photo-swipe/photoswipe-ui-default.min.js"></script>
-
-
-
-<link rel="shortcut icon" href="https://scotttactical.com//assets/favicon.ico">
-
-
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://scotttactical.com//index.xml">
-
-
-<div class="container">
-    <header class="nav">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="https://scotttactical.com/post">All Posts</a></li>
-                        <li><a href="https://scotttactical.com/gallery">Galleries</a></li>
-                        <li><a href="https://scotttactical.com/news">News</a></li>
-                        <li><a href="https://scotttactical.com/tags">Tags</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        
-                        
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </div>
+      </nav>
     </header>
 
-
+    <main>
+      <div class="container">
+        
 <div class="row">
-    <div class="col-md-8">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="col-md-8">
 
-            <header>
-                <div class="post-date">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                    <time itemprop="datePublished" datetime="2017-01-14T16:00:07-08:00">
-                        Sat, 14 Jan 2017 16:00:07 PST
-                    </time>
-                    
-                </div>
-                <h1 class="post-title" itemprop="headline">
-                    <a href="https://scotttactical.com/post/django-ecommerce-in-30-minutes/">Django eCommerce in 30&#43; Minutes</a>
-                </h1>
-                <span >
-                  
-                  <span itemprop="author">Scott Tactical</span><br />
-                  <a itemprop="mainEntityOfPage" href="#"><span itemprop="name">Django eCommerce in 30&#43; Minutes</span></a><br />
-                  <span itemprop="publisher">Scott Tactical</span><br />
-                </span>
-            </header>
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">Django eCommerce in 30&#43; Minutes</li>
+      </ol>
+    </nav>
 
-            <div class="post-content" itemprop="articleBody">
-              <hr />
-                
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2017-01-14T16:00:07JST">Jan 14, 2017</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
+      
+    </ul>
 
-<h1 id="django-and-ecommerce">Django And eCommerce</h1>
+    <h1 class="title">Django eCommerce in 30&#43; Minutes</h1>
+  </header>
 
-<h1 id="tl-dr">TL;DR</h1>
+  
+
+  <div class="article-body">
+
+<h2 id="django-and-ecommerce">Django And eCommerce</h2>
+
+<h2 id="tl-dr">TL;DR</h2>
 
 <p>I like Python and want to use it for eCommerce, so I went through the <a href="https://djangopackages.org/grids/g/ecommerce/">well known products</a> and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.</p>
 
-<h1 id="preface">Preface</h1>
+<h2 id="preface">Preface</h2>
 
 <p>Let me say this took me almost 2 days to get through and evaluate, which I&rsquo;m used to having a demo site up in minutes. After having gone through, I think this could be launched in half an hour.  Below are my notes of the process.</p>
 
-<h1 id="backstory">Backstory</h1>
+<h2 id="backstory">Backstory</h2>
 
 <p>I was contacted by a business partner to see if we could kick off a project to distribute some substances that newly became legal here in CA. I thought I could spin up an ecommerce app in a couple hours and be taking payments in a week. I wanted to see how fast I could do this with Django. Most my previous eCommerce deployments (many) were in PHP and many of them were in <a href="https://magento.com">magento</a>. Had a few in ASP, Perl, (Websphere) Java. I&rsquo;m over that pain.</p>
 
 <p>Online retail - E-commerce - as an industry, is very mature. It requires a TON of flexibility and features to compete. There isn&rsquo;t a lot of waste.</p>
 
-<h1 id="pre-setup">Pre-setup</h1>
+<h2 id="pre-setup">Pre-setup</h2>
 
 <p>I will append this by saying a few things were already installed like PostgreSQL and Python VirtualenvWrapper.</p>
 
@@ -132,9 +188,9 @@
 
 <p>Let&rsquo;s Begin</p>
 
-<h1 id="local-setup">Local Setup</h1>
+<h2 id="local-setup">Local Setup</h2>
 
-<h1 id="setup-postgresql">Setup PostgreSQL</h1>
+<h2 id="setup-postgresql">Setup PostgreSQL</h2>
 
 <p>I have installed PostgreSQL locally already. Please see the documentation for more information.</p>
 
@@ -146,7 +202,7 @@
 <pre><code>createdb [project_slug]
 </code></pre>
 
-<h2 id="virtual-environment-python">Virtual Environment - Python</h2>
+<h3 id="virtual-environment-python">Virtual Environment - Python</h3>
 
 <p>Python 2.7</p>
 
@@ -159,7 +215,7 @@
 
 <p>CD into a directory beneath your source location. I always do /project/source/*</p>
 
-<h2 id="install-cookiecutter-django">Install cookiecutter-django</h2>
+<h3 id="install-cookiecutter-django">Install cookiecutter-django</h3>
 
 <p>I have used this <a href="https://github.com/pydanny/cookiecutter-django">cookiecutter</a> before so I stick with what I know.</p>
 
@@ -177,7 +233,7 @@ git remote add origin yourname@bitbucket.com:yourapp/yourapp.git
 git push -u origin master
 </code></pre>
 
-<h2 id="django-setup">Django Setup</h2>
+<h3 id="django-setup">Django Setup</h3>
 
 <p>I decided to try out Django Oscar. I figure it is the most popular. And also hoping it isn&rsquo;t the most bloated.</p>
 
@@ -208,7 +264,7 @@ pycountry==17.1.8
 <pre><code>./manage.py
 </code></pre>
 
-<h1 id="set-up-oscar">Set Up Oscar</h1>
+<h2 id="set-up-oscar">Set Up Oscar</h2>
 
 <p>in <code>yourapp/config/settings/common.py</code></p>
 
@@ -216,7 +272,7 @@ pycountry==17.1.8
 
 <p>According to the <a href="https://django-oscar.readthedocs.io/en/latest/internals/getting_started.html#django-settings">documentation</a> update the settings for the templates.</p>
 
-<pre><code class="language-python"># Import all the oscar items
+<pre><code class="language-python">## Import all the oscar items
 from oscar import OSCAR_MAIN_TEMPLATE_DIR
 from oscar import get_core_apps
 from oscar.defaults import *
@@ -225,7 +281,7 @@ from oscar.defaults import *
 
 <pre><code class="language-python">
 DJANGO_APPS = (
-    # Default Django apps:
+    ## Default Django apps:
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -234,20 +290,20 @@ DJANGO_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.flatpages',
 
-    # Useful template tags:
-    # 'django.contrib.humanize',
+    ## Useful template tags:
+    ## 'django.contrib.humanize',
 
-    # Admin
+    ## Admin
     'django.contrib.admin',
 
 )
 THIRD_PARTY_APPS = (
-    'crispy_forms',  # Form layouts
-    'allauth',  # registration
-    'allauth.account',  # registration
-    'allauth.socialaccount',  # registration
+    'crispy_forms',  ## Form layouts
+    'allauth',  ## registration
+    'allauth.account',  ## registration
+    'allauth.socialaccount',  ## registration
 
-    # the oscar apps
+    ## the oscar apps
     'compressor',
     'widget_tweaks',
     'pycountry'
@@ -264,23 +320,23 @@ THIRD_PARTY_APPS = (
 
 <pre><code class="language-python">TEMPLATES = [
     {
-        # See: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-TEMPLATES-BACKEND
+        ## See: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-TEMPLATES-BACKEND
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
+        ## See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
         'DIRS': [
             str(APPS_DIR.path('templates')),
             OSCAR_MAIN_TEMPLATE_DIR
         ],
         'OPTIONS': {
-            # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-debug
+            ## See: https://docs.djangoproject.com/en/dev/ref/settings/#template-debug
             'debug': DEBUG,
-            # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-loaders
-            # https://docs.djangoproject.com/en/dev/ref/templates/api/#loader-types
+            ## See: https://docs.djangoproject.com/en/dev/ref/settings/#template-loaders
+            ## https://docs.djangoproject.com/en/dev/ref/templates/api/#loader-types
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
                 'django.template.loaders.app_directories.Loader',
             ],
-            # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-context-processors
+            ## See: https://docs.djangoproject.com/en/dev/ref/settings/#template-context-processors
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
@@ -290,7 +346,7 @@ THIRD_PARTY_APPS = (
                 'django.template.context_processors.static',
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
-                # Your stuff: custom template context processors go here
+                ## Your stuff: custom template context processors go here
                 'oscar.apps.search.context_processors.search_form',
                 'oscar.apps.promotions.context_processors.promotions',
                 'oscar.apps.checkout.context_processors.checkout',
@@ -321,7 +377,7 @@ THIRD_PARTY_APPS = (
 }
 </code></pre>
 
-<h2 id="set-the-urls">Set the URLs</h2>
+<h3 id="set-the-urls">Set the URLs</h3>
 
 <p>Here is my url file.</p>
 
@@ -329,17 +385,17 @@ THIRD_PARTY_APPS = (
 from oscar.app import application
 
 urlpatterns = [
-    # url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
+    ## url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
 
-    # Django Admin, use {% url 'admin:index' %}
+    ## Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, admin.site.urls),
 
-    # User management
+    ## User management
     url(r'^users/', include('yourapp.users.urls', namespace='users')),
     url(r'^accounts/', include('allauth.urls')),
 
-    # Your stuff: custom urls includes go here
+    ## Your stuff: custom urls includes go here
     url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'', include(application.urls)),
 
@@ -349,14 +405,14 @@ if settings.DEBUG:
     ...
 </code></pre>
 
-<h2 id="build-schema">Build Schema</h2>
+<h3 id="build-schema">Build Schema</h3>
 
 <p>If the database is created and you set up everything properly you should be able to build the DB schema now.</p>
 
 <pre><code>./manage.py migrate
 </code></pre>
 
-<h2 id="start-local">Start Local</h2>
+<h3 id="start-local">Start Local</h3>
 
 <p>Kick off the local server.</p>
 
@@ -365,11 +421,11 @@ if settings.DEBUG:
 
 <p>If everything works properly you should be able to go to <a href="http://localhost:8000/">http://localhost:8000/</a> and see your new project running.</p>
 
-<h1 id="store-setup">Store Setup</h1>
+<h2 id="store-setup">Store Setup</h2>
 
 <p>This wasn&rsquo;t quite enough for me so I needed to add some products into the application really quickly to see the catalogue.</p>
 
-<h2 id="install-shipping-countries">Install Shipping Countries</h2>
+<h3 id="install-shipping-countries">Install Shipping Countries</h3>
 
 <p>Pycountry should have been installed already, and it was suggested to load all the countries in the oscar documentation.</p>
 
@@ -380,7 +436,7 @@ if settings.DEBUG:
 
 <p>I&rsquo;m annoyed at pycountry for a menial change like that. Or provide a better SDK.</p>
 
-<h2 id="where-templates-are">Where Templates Are?</h2>
+<h3 id="where-templates-are">Where Templates Are?</h3>
 
 <p>I realized that the templates were not seen even though they were in the path. I just copied them from the oscar sandbox example so that I had more to go off of.</p>
 
@@ -392,13 +448,13 @@ if settings.DEBUG:
 <pre><code>/src/oscar/static/oscar/img &gt; yourapp/static
 </code></pre>
 
-<h2 id="dashboard">Dashboard</h2>
+<h3 id="dashboard">Dashboard</h3>
 
 <p>Make sure you created a superuser account.</p>
 
 <p>Login and travel to the dashboard: <a href="http://127.0.0.1:8000/dashboard/">http://127.0.0.1:8000/dashboard/</a></p>
 
-<h2 id="product-setup">Product Setup</h2>
+<h3 id="product-setup">Product Setup</h3>
 
 <p>You need to have a category and a shipper. That is easy enough to set up. I added a couple products and viewed them on the</p>
 
@@ -406,546 +462,61 @@ if settings.DEBUG:
 
 <p><img src="/images/oscar2.png" alt="Dashboard" /></p>
 
-<h1 id="conclusions">Conclusions</h1>
+<h2 id="conclusions">Conclusions</h2>
 
-<h2 id="code-structure">Code Structure</h2>
+<h3 id="code-structure">Code Structure</h3>
 
 <p>This looked fine to me. I was able to find my way around very easily compared to the likes of Magento, IBM, SAP. Thank goodness. That is stuff of nightmares.</p>
 
-<h2 id="loaders">Loaders</h2>
+<h3 id="loaders">Loaders</h3>
 
 <p>The framework is important to me. I like to see proper recognizable patterns. There were red flags with the model class &ldquo;loader&rdquo; paradigm when I expected to see Django objects. I think that is unnecessary with a framework that has good bootstrapping functionality such as Django. Maybe someone can explain where my thinking is in error.</p>
 
-<h2 id="no-rest-for-me">No REST for me</h2>
+<h3 id="no-rest-for-me">No REST for me</h3>
 
 <p>I was disappointed with how hard it was to find information about oscar and an integration with a REST layer. Most sites MUST support mobile. And probably should support mobile FIRST. The old days of a monolithic website stack are kinda over. Especially with javascript running rampage over the facades of the interwebs.</p>
 
 <p>Yes, I know there is <a href="https://github.com/django-oscar/django-oscar-api">django oscar api</a> - It needs more thorough documentation, and matrix of supported features would be nice. Overall it looks promising.</p>
 
-<h2 id="performance">Performance</h2>
+<h3 id="performance">Performance</h3>
 
 <p>The application felt kinda slow. Maybe it can be optimized, but for a starter, I felt like it should be more responsive. The feel of other apps was a little better. With ecommerce the most important thing is checkout flow followed by performance and product data.  Don&rsquo;t skimp on ANY of those things.  Let the design languish if you have budget for a performance hacker. I&rsquo;ve launched large ecommerce sites and this is what killed most of them once traffic rolled in.</p>
 
-<h2 id="will-it-stay">Will it Stay</h2>
+<h3 id="will-it-stay">Will it Stay</h3>
 
 <p>I still have to look through <a href="http://getsaleor.com/">Saleor</a> and <a href="http://mezzanine.jupo.org/">Cartrige on Mezzanine</a> which were very appealing. I also wanted to have a hand at setting up an ecommerce app in Go, but the lack of templating and abstraction that python is good at was a knock down.</p>
+</div>
 
-            </div>
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://scotttactical.com/tags/technology/">technology</a></li>
+          
+          <li><a href="https://scotttactical.com/tags/django/">django</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
 
-            <aside>
-                
-                <ul class="list-inline post-tags">
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/technology" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">technology</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://scotttactical.com//tags/django" rel="tag">
-                            <i class="fa fa-tags"></i>
-                            <span itemprop="keywords">django</span>
-                        </a>
-                    </li>
-                    
-                </ul>
+</article>
 
-                
-                
-                <h3>Related Post</h3>
-                <ul class="post-rels">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/a-weed-delivery-service/">A Weed Delivery Service</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/email-in-a-box-setup/">eMail In A Box: Setup</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/django-saleor-ecommerce-review/">Django Saleor eCommerce Review</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/why-the-covered-california-website-sucks/">Why The Covered California Website Sucks</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/">Internet 3rd Wave and Rise of the Technology Fascist</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/">HowTo Bind Multiple Terminals MacOS-X</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/writing-novels-in-markdown-part1/">Writing Novels in Markdown Part 1</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/why-we-quit-openstack/">Why We Quit OpenStack: or How I Lost 2 Months of My Life</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/django-search-multiple-fields/">Django Search: Multiple Fields and Full Text</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/">Dump Django Databases and Create Fixtures for Testing</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://scotttactical.com/interview-strategies-a-technology-hiring-manager/">Interview Strategies: A Technology Hiring Manager Who Wins</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </ul>
-            </aside>
-            
-            
-            <div id="disqus_thread"></div>
+
+    <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -965,30 +536,10 @@ if settings.DEBUG:
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            
-            <footer>
+  </div>
 
-                <nav>
-                    <ul class="pager">
-
-                        
-                        <li class="previous"><a href="https://scotttactical.com/post/django-saleor-ecommerce-review/"><span aria-hidden="true">&larr;</span> Older</a></li>
-                        
-
-                        <li><a href="https://scotttactical.com//post">All Posts</a></li>
-
-                        
-                        <li class="next"><a href="https://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/">Newer <span aria-hidden="true">&rarr;</span></a></li>
-                        
-
-                    </ul>
-                </nav>
-            </footer>
-
-        </article>
-    </div>
-    <div class="col-md-4">
-        
+  <div class="col-md-4">
+    
 <aside class="l-sidebar">
 
   <section class="panel panel-default">
@@ -1072,5 +623,26 @@ if settings.DEBUG:
 </aside>
 
 
-    </div>
+  </div>
 </div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
