@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 01:10:53 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 11 Mar 2019 21:15:12 -0700</lastBuildDate>
     
 	<atom:link href="https://scotttactical.com/tags/car-computer/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Car Computer Touchscreen Monitor</title>
+      <link>https://scotttactical.com/car-computer-touchscreen-monitor/</link>
+      <pubDate>Mon, 11 Mar 2019 21:15:12 -0700</pubDate>
+      
+      <guid>https://scotttactical.com/car-computer-touchscreen-monitor/</guid>
+      <description>How do you control your new custom Linux powered car computer? With a touch screen monitor obviously. And maybe a bluetooth keyboard and mouse.
+I would like this to feel like I am using a Steampunk hacker version of a Tesla.
+  Tesla Streamliner Concept   Well maybe not all that.
+Maybe more like this:
+  Race Truck Dash   Touch Screens I started a similar project about 6 years ago on another vehicle.</description>
+    </item>
     
     <item>
       <title>Linux USB Relay Controller</title>

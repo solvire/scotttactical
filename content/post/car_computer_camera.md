@@ -71,8 +71,51 @@ This picture specifically cracked me up.
 
 Seriously? It's like the whiskey mouse.
 
-#### A recommendation
+#### Final Choice
 
+ I wanted to have a smaller camera for a visible footprint. I also know that the image quality doesn't have to be very good to get a face match. In fact I will probably decrease the size of the image when it comes over.  If I used a 1080p camera it would be wasted data.
 
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=scotttactical-20&language=en_US&marketplace=amazon&region=US&placement=B01DRJXAWA&asins=B01DRJXAWA&linkId=5ad64477b4ece5aaaec5a4c6f87dd222&show_border=true&link_opens_in_new_window=true"></iframe>
 
-###
+* 100 degree M7 lens usb webcam for wide angle video image
+* Standard M7 mini lens with super wide angle FOV(D)138 (H)100 Degree
+* max 1280X720@ 30fps HD 720P high resolution
+* usb2.0 high speed mini size 32x32/26x26mm for small space insert
+* 1 Meter usb cord cable, support raspberry pi, opencv etc.
+
+Specification:
+
+* Sensor OV9712
+* Lens Size 1/4 inch
+* Pixel Size 3.0um X 3.0um
+* image area 3888m x 2430m
+* Max. Resolution 1280(H)X720(V)
+* Compression format MJPEG / YUV2（YUYV）
+* Resolution & frame MJPEG：320X240@ 30fps, 352X288@ 30fps
+* 640X360@60fps,640X480@ 30fps
+* 800X600@ 30fps,1280X720@ 30fps
+* YUV： 320X240@ 30fps,352X288@ 30fps
+* 640X360@30fps,640X480@ 30fps
+* 800X600@ 15fps,1280X720@ 5fps
+* S/N Ratio 40dB
+* Dynamic Range 69dB
+* Sensitivity 3.7V/lux-sec@550nm
+* Mini illumination 0. 1lux
+* Shutter Type Electronic rolling shutter / Frame exposure
+* Connecting Port type USB2.0 High Speed
+* Free Drive Protocol USB Video Class（UVC）
+* Support OTG Protocol USB2.0 OTG
+* AEC Support
+* AEB Support
+* AGC Support
+* Adjustable parameters Brightness, Contrast, Saturation, Hue, Sharpness, Gamma,Gain, White balance, Backlight Contrast, Exposure
+* Lens Parameter Standard M7 LENS FOV(D)138 (H)100 Degree
+* LED board power connector Support 2P-2.0mm socket
+* Power supply USB BUS POWER 4P-2.0mm socket
+* Power supply DC5V
+* Operating Voltage 120mA~180mA
+* Working current -10～70℃
+* Working temperature -20～85℃
+* Board size /Weight 32X32mm（Compatible 26X26mm）/ about 30g
+* Cable Standard 1M
+* Operating system request Win7 Win8,Mac os, Linux 2.6 or above,Android 4.0 or above 
