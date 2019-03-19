@@ -29,6 +29,23 @@ I installed the library above from apt and it ran out of the box.
 
 I scripted a tool that will send commands to a sub process. I just need to send and forget. I probably wont use the results of the commands right now.  Each time the application loads I will need to get the names of the devices however because I really don't want that hard coded.  I am hard coding each relay because I would like the ability to control things uniquely.  I'm probably going to use it to turn on seat heaters in the future as well.  
 
+I will say that not everything clicked out of the box.  I had to install a few things. Here are just some highlights to my notes which you might be able to follow and if not there are comments below.
+
+
+```bash
+apt install firmware-b43-installer
+apt install git vim openssh-server
+systemctl enable ssh
+apt install python3
+apt install libpython3.7-dev
+apt install libhidapi*
+apt-get install python3-distutils
+apt install python3-pip
+
+git clone https://github.com/darrylb123/usbrelay.git
+git checkout tags/v0.4 -b v0.4
+```
+
 ### Interacting With The Relay
 
 The results come back showing the device with the list of the relays.
