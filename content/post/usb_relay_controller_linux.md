@@ -69,6 +69,22 @@ The goal is for this to plug in and run lsusb to see it.
   see: sudo apt install moserial
 
 
+https://github.com/eblot/pyftdi
+
+Way outdated:
+
+http://bleyer.org/pyusb/
+
+
+#### An FTDI Board
+
+I really liked these relays but wasn't sure about implementation. 
+
+https://store.ncd.io/product/usb-relay-5-10-amp/
+
+
+
+
 ### HIDAPI
 
 > HIDAPI is a multi-platform library which allows an application to interface

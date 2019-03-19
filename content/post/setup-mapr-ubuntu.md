@@ -2,6 +2,7 @@
 date: 2017-01-05T16:18:32-08:00
 draft: false
 title: How To Setup a MapR Cluster on Ubuntu
+tags: ["technology"]
 comments: true
 ---
 
@@ -26,7 +27,7 @@ I launched 4 virtual machines with the following specs:
 - 1 public IP nic  1GbE
 - 1 private IP nic  1GbE
 
-![OpenNebula](/images/mapr1.png)
+{{% img src="/images/mapr1.png" caption="OpenNebula"  %}}
 
 
 ### CsshX
@@ -35,7 +36,7 @@ If you are working on multiple servers it's best to use a unified command broadc
 
     csshx --login root --ssh_args "-i .ssh/YOURKEY" host1 host2 host3 host4
 
-![csshx](/images/mapr2.png)
+{{% img src="/images/mapr2.png" caption="OpenNebula"  %}}
 
 ### SSH keys
 

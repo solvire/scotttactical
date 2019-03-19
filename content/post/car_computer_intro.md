@@ -135,6 +135,11 @@ https://www.logicsupply.com/cl210g-11/?gclid=EAIaIQobChMIrei2noT74AIVZB6tBh3thA5
 * Dual LAN, options for 4G, Movidius, and multi-CEC functionality
 * TPM via Intel Platform Trust Technology
 
+
+These looked rugged and they priced them dearly to boot.
+``
+http://www.cappuccinopc.com/solutions/fanless_mini_pc.asp
+
 #### Software
 
 

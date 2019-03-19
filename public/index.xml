@@ -5,12 +5,23 @@
     <link>https://scotttactical.com/</link>
     <description>Recent content on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 21:15:12 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 18 Mar 2019 18:16:54 -0700</lastBuildDate>
     
 	<atom:link href="https://scotttactical.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Installing a USB Relay</title>
+      <link>https://scotttactical.com/installing-usb-relay/</link>
+      <pubDate>Mon, 18 Mar 2019 18:16:54 -0700</pubDate>
+      
+      <guid>https://scotttactical.com/installing-usb-relay/</guid>
+      <description>USB HID Relay   USB Relay on Ubuntu Linux This was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.
+Thank you to @darrylb123 for https://github.com/darrylb123/usbrelay
+There was a python contribution but it broke the build. I spent a few hours trying to get it to build and gave up and just smashed the ugly.</description>
+    </item>
     
     <item>
       <title>Car Computer Touchscreen Monitor</title>

@@ -76,3 +76,36 @@ One of the reasons that I wanted to go with this product is I saw someone instal
  <iframe width="560" height="315" src="https://www.youtube.com/embed/2djTPJ02xK0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
  It always helps to see other people doing these things ahead of me. Bravo to you.
+
+
+## Inverters
+
+I neglected to spend the time researching this and got the wrong inverter. Make sure you understand what inverter types there are.
+
+There is a pure and modified sine wave inversion when going from DC to AC.
+
+https://invertersrus.com/pure-sine-vs-modified-sine/
+
+> All power inverters convert DC power (which is power stored in batteries) to AC power, which is the power supplied by the electric company and fed to your home. Electronic devices need AC power to operate, but power inverters generally output power in two forms, modified sine wave vs. pure sine wave.
+
+
+
+{{% img src="images/modified-sine-wave-vs-pure-sine-wave.jpg" caption="Modified sine wave vs pure sine wave" href="https://www.altestore.com/blog/2015/10/pure-sine-wave-vs-modified-sine-wave-whats-the-difference/#.XIhgDtFlC-w"  %}}
+
+Modified Sine Waves
+
+* square broken steps that oscillate
+
+Pure Sine Waves
+
+* smooth rolling waves
+
+
+{{% img src="images/modified-sine-wave-and-pure-sine-wave-oscilloscope.jpg" caption="Modified sine wave vs pure sine wave" href="https://www.altestore.com/blog/2015/10/pure-sine-wave-vs-modified-sine-wave-whats-the-difference/#.XIhgDtFlC-w"  %}}
+
+
+Initially I picked up this:
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=scotttactical-20&language=en_US&marketplace=amazon&region=US&placement=B004MDXS0U&asins=B004MDXS0U&linkId=e5896cb136c14edd839abc2de085eb57&show_border=true&link_opens_in_new_window=true"></iframe>
+
+I thought it was a nice inverter at a good price. But not for what I need to do.
