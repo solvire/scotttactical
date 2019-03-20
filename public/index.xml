@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 18 Mar 2019 18:16:54 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 19 Mar 2019 17:13:00 -0700</lastBuildDate>
     
 	<atom:link href="https://scotttactical.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Biometric Vehicle Entry</title>
+      <link>https://scotttactical.com/biometric-vehicle-entry-car-computer/</link>
+      <pubDate>Tue, 19 Mar 2019 17:13:00 -0700</pubDate>
+      
+      <guid>https://scotttactical.com/biometric-vehicle-entry-car-computer/</guid>
+      <description>Biometrics From Wiki:
+ Biometrics is the technical term for body measurements and calculations. It refers to metrics related to human characteristics. Biometrics authentication (or realistic authentication) is used in computer science as a form of identification and access control
+ Let the conspiracy theories abound. Actually most of the worries before are no longer theories. The capabilities of the biometric tools now are such that the human mind may no longer be the master of the visual recognition spectrum.</description>
+    </item>
     
     <item>
       <title>Installing a USB Relay</title>
