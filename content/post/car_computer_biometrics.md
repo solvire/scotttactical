@@ -54,7 +54,7 @@ The facial landmark map consists of 68 points on the face. These can be connecte
 
 
 
-{{% img src="images/car_computer/obama_fl.png" caption="obama landmarks" class="right" %}}
+{{% img src="images/car_computer/obama_fl.jpg" caption="obama landmarks" class="right" %}}
 
 
 Sometimes we don't need to calculate all the points and only need a couple to do minor landmark math. A smaller set is faster and easier to mess with.
