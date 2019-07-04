@@ -118,4 +118,4 @@ Specification:
 * Working temperature -20～85℃
 * Board size /Weight 32X32mm（Compatible 26X26mm）/ about 30g
 * Cable Standard 1M
-* Operating system request Win7 Win8,Mac os, Linux 2.6 or above,Android 4.0 or above 
+* Operating system request Win7 Win8,Mac os, Linux 2.6 or above,Android 4.0 or above

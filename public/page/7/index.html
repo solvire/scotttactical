@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="generator" content="Hugo 0.54.0" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://scotttactical.com/index.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://scotttactical.com/index.xml">
 
-<link rel="canonical" href="https://scotttactical.com/">
+<link rel="canonical" href="http://scotttactical.com/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>Scott Tactical</title>
     
-    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
+    <link href="http://scotttactical.comcss/styles.css" rel="stylesheet">
     
 
   </head>
@@ -49,7 +49,7 @@ if (!doNotTrack) {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
+            <a class="navbar-brand" href="http://scotttactical.com">Scott Tactical</a>
           </div>
 
           
@@ -83,20 +83,20 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-11-29T19:09:21JST">Nov 29, 2016</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2017-01-04T06:41:07JST">Jan 4, 2017</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://scotttactical.compost/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/">HowTo Bind Multiple Terminals MacOS-X</a></h2>
+    <h2 class="title"><a href="http://scotttactical.com/post/sfp-vs.-qsfp/">SFP vs. QSFP</a></h2>
   </header>
 
   
-  <div class="summary">Binding Multiple Terminals I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.
-I tried a few other terminal apps. Particularly iTerm2 that has some nice broadcasting.</div>
+  <div class="summary">Networking Transceivers This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent. After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.
+Again this page is mostly for my notes.</div>
 
   
   <footer>
-    <a href="https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/" title="HowTo Bind Multiple Terminals MacOS-X">Read More…</a>
+    <a href="http://scotttactical.com/post/sfp-vs.-qsfp/" title="SFP vs. QSFP">Read More…</a>
   </footer>
   
 </article>
@@ -105,21 +105,24 @@ I tried a few other terminal apps. Particularly iTerm2 that has some nice broadc
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-11-18T20:00:32JST">Nov 18, 2016</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-12-24T06:41:07JST">Dec 24, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://scotttactical.compost/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://scotttactical.com/whats-wrong-with-millennials/">What is Wrong With Millennials</a></h2>
+    <h2 class="title"><a href="http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">Encrypt PostgreSQL Backup to S3</a></h2>
   </header>
 
   
-  <div class="summary">What is Up With Those Millennials? Ah, yes. The click bait. A marketing construct of the GenX&rsquo;ers: pornographic gossip without the payoff.
-But, since you are here&hellip;
-My Motivation: Agism I have become infuriated seeing one segment of United States citizenry be the target of a multiple-party attack. This pressure has been escalating over the last couple of years, and I wanted to make a number of assertions and lay out some warnings.</div>
+  <div class="summary">Encrypt Your DB Backups I&rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.
+Generate Keys From your user&rsquo;s home directory:
+openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub
+Fill out the questions appropriately. Or not. I don&rsquo;t think it matters really.
+That will create the public and private keys.
+backup_key.pem - private key backup_key.</div>
 
   
   <footer>
-    <a href="https://scotttactical.com/whats-wrong-with-millennials/" title="What is Wrong With Millennials">Read More…</a>
+    <a href="http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/" title="Encrypt PostgreSQL Backup to S3">Read More…</a>
   </footer>
   
 </article>
@@ -128,22 +131,23 @@ My Motivation: Agism I have become infuriated seeing one segment of United State
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-11-08T16:35:37JST">Nov 8, 2016</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-12-09T08:52:58JST">Dec 9, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://scotttactical.compost/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="https://scotttactical.com/writing-novels-in-markdown-part1/">Writing Novels in Markdown Part 1</a></h2>
+    <h2 class="title"><a href="http://scotttactical.com/post/why-the-covered-california-website-sucks/">Why The Covered California Website Sucks</a></h2>
   </header>
 
   
-  <div class="summary">Writing in Markdown If you haven&rsquo;t used Markdown to write in a rich(er) text format, then you are missing out. I pretty much write all my technical documentation in Markdown. It&rsquo;s pretty awesome and I don&rsquo;t know why it took me so long to find it. I didn&rsquo;t start using it until around 2013.
-What is Markdown Markdown was created by John Gruber.
-According to Wikipedia.
- John Gruber created the Markdown language in 2004 in collaboration with Aaron Swartz on the syntax, with the goal of enabling people &ldquo;to write using an easy-to-read, easy-to-write plain text format, and optionally convert it to structurally valid XHTML (or HTML)”</div>
+  <div class="summary">Why It Needs Help - My Letter This is an open letter to the Covered California website designer, administrators, bureaucrats and contractors.
+Website Design and Usability I have several things listed below. Things I find to be of poor design or just plain broken.
+You Don&rsquo;t Got Mail!  &ldquo;Secure Mailbox (2)&rdquo; even though nothing was in my mail box.
+ It randomly logged me out.
+  GO&rsquo;ON CLICK ME IF YA CAN  I am low on time for open enrollment and it gave me a &ldquo;Pay Now&rdquo; button in order to do it faster, but the button was broken.</div>
 
   
   <footer>
-    <a href="https://scotttactical.com/writing-novels-in-markdown-part1/" title="Writing Novels in Markdown Part 1">Read More…</a>
+    <a href="http://scotttactical.com/post/why-the-covered-california-website-sucks/" title="Why The Covered California Website Sucks">Read More…</a>
   </footer>
   
 </article>
@@ -179,25 +183,25 @@ According to Wikipedia.
     </div>
     <div class="list-group">
       
-      <a href="https://scotttactical.com/biometric-vehicle-entry-car-computer/" class="list-group-item">Biometric Vehicle Entry</a>
+      <a href="http://scotttactical.com/why-i-converted-to-catholicism/" class="list-group-item">Why I Converted To Catholicism</a>
       
-      <a href="https://scotttactical.com/installing-usb-relay/" class="list-group-item">Installing a USB Relay</a>
+      <a href="http://scotttactical.com/ejs-2019-transit/" class="list-group-item">EJS 2019 - The Slow Route There </a>
       
-      <a href="https://scotttactical.com/car-computer-touchscreen-monitor/" class="list-group-item">Car Computer Touchscreen Monitor</a>
+      <a href="http://scotttactical.com/ejs-2019-departure-preparations/" class="list-group-item">Easter Jeep Safari 2019 - Departure Preparations</a>
       
-      <a href="https://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
+      <a href="http://scotttactical.com/car-computer-face-recognition/" class="list-group-item">Car Computer Face Recognition</a>
       
-      <a href="https://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
+      <a href="http://scotttactical.com/biometric-vehicle-entry-car-computer/" class="list-group-item">Biometric Vehicle Entry</a>
       
-      <a href="https://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
+      <a href="http://scotttactical.com/installing-usb-relay/" class="list-group-item">Installing a USB Relay</a>
       
-      <a href="https://scotttactical.com/car-computer-intro/" class="list-group-item">Car Computer Intro</a>
+      <a href="http://scotttactical.com/car-computer-touchscreen-monitor/" class="list-group-item">Car Computer Touchscreen Monitor</a>
       
-      <a href="https://scotttactical.com/post/blockchain-end-of-war/" class="list-group-item">Blockchain: End Of War</a>
+      <a href="http://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
       
-      <a href="https://scotttactical.com/post/a-weed-delivery-service/" class="list-group-item">A Weed Delivery Service</a>
+      <a href="http://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
       
-      <a href="https://scotttactical.com/post/vehemenism/" class="list-group-item">Vehemenism</a>
+      <a href="http://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
       
     </div>
   </section>
@@ -227,25 +231,25 @@ According to Wikipedia.
     </div>
     <div class="list-group">
       
-      <a href="https://scotttactical.com/tags/data" class="list-group-item">data</a>
+      <a href="http://scotttactical.comtags/data" class="list-group-item">data</a>
       
-      <a href="https://scotttactical.com/tags/technology" class="list-group-item">technology</a>
+      <a href="http://scotttactical.comtags/technology" class="list-group-item">technology</a>
       
-      <a href="https://scotttactical.com/tags/california" class="list-group-item">california</a>
+      <a href="http://scotttactical.comtags/car-computer" class="list-group-item">car-computer</a>
       
-      <a href="https://scotttactical.com/tags/photography" class="list-group-item">photography</a>
+      <a href="http://scotttactical.comtags/69-blazer" class="list-group-item">69-blazer</a>
       
-      <a href="https://scotttactical.com/tags/car-computer" class="list-group-item">car-computer</a>
+      <a href="http://scotttactical.comtags/california" class="list-group-item">california</a>
       
-      <a href="https://scotttactical.com/tags/69-blazer" class="list-group-item">69-blazer</a>
+      <a href="http://scotttactical.comtags/photography" class="list-group-item">photography</a>
       
-      <a href="https://scotttactical.com/tags/restoration" class="list-group-item">restoration</a>
+      <a href="http://scotttactical.comtags/philosophy" class="list-group-item">philosophy</a>
       
-      <a href="https://scotttactical.com/tags/devops" class="list-group-item">devops</a>
+      <a href="http://scotttactical.comtags/restoration" class="list-group-item">restoration</a>
       
-      <a href="https://scotttactical.com/tags/philosophy" class="list-group-item">philosophy</a>
+      <a href="http://scotttactical.comtags/devops" class="list-group-item">devops</a>
       
-      <a href="https://scotttactical.com/tags/adventure" class="list-group-item">adventure</a>
+      <a href="http://scotttactical.comtags/adventure" class="list-group-item">adventure</a>
       
     </div>
   </section>

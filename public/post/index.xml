@@ -2,22 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Scott Tactical</title>
-    <link>https://scotttactical.com/post/</link>
+    <link>http://scotttactical.com/post/</link>
     <description>Recent content in Posts on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 19 Mar 2019 17:13:00 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jul 2019 14:33:06 -0800</lastBuildDate>
     
-	<atom:link href="https://scotttactical.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://scotttactical.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Why I Converted To Catholicism</title>
+      <link>http://scotttactical.com/why-i-converted-to-catholicism/</link>
+      <pubDate>Thu, 04 Jul 2019 14:33:06 -0800</pubDate>
+      
+      <guid>http://scotttactical.com/why-i-converted-to-catholicism/</guid>
+      <description>Cradle Protestant I was born into a souther style Pentecostal family. If you haven&amp;rsquo;t been to a southern religious event then you really haven&amp;rsquo;t experienced a major demographic of US spiritualism. It&amp;rsquo;s something to behold.
+My career in getting in trouble and screwing with the system started in kindergarten. I was trouble. For reals. I remember I had 2 girl friends about the same time, I was flirting with the teacher, was spanked by the principal twice and almost expelled.</description>
+    </item>
+    
+    <item>
+      <title>EJS 2019 - The Slow Route There </title>
+      <link>http://scotttactical.com/ejs-2019-transit/</link>
+      <pubDate>Thu, 11 Apr 2019 20:08:45 -0700</pubDate>
+      
+      <guid>http://scotttactical.com/ejs-2019-transit/</guid>
+      <description>The First Leg We didn&amp;rsquo;t make it out on time. Obviously because I got home at 2am and didn&amp;rsquo;t want to drive this beast at that speed.
+The schedule manager Mariah insisted that we could get to Vegas in 4 hours. However she never went with a trail truck.
+To Vegas The first leg of the trip was uneventful. The truck was operating gracefully. The sound on the road</description>
+    </item>
+    
+    <item>
+      <title>Easter Jeep Safari 2019 - Departure Preparations</title>
+      <link>http://scotttactical.com/ejs-2019-departure-preparations/</link>
+      <pubDate>Thu, 11 Apr 2019 20:08:45 -0700</pubDate>
+      
+      <guid>http://scotttactical.com/ejs-2019-departure-preparations/</guid>
+      <description>Final Preparations Here is a list of final items pulled together before launching.
+Interior We had to get the rear seat installed. You know. So that the passenger wont fall out? There were some guide holes that we tried to use and then realized that it was not going to fit and had to move the seat around. Luckily that landed on a tapped plate which Greg insightfully set the front leg on it with a new plate and welded it in place.</description>
+    </item>
+    
+    <item>
+      <title>Car Computer Face Recognition</title>
+      <link>http://scotttactical.com/car-computer-face-recognition/</link>
+      <pubDate>Fri, 29 Mar 2019 20:08:45 -0700</pubDate>
+      
+      <guid>http://scotttactical.com/car-computer-face-recognition/</guid>
+      <description>Facial Recognition Computer Vision Libraries OpenCV dlib Installation cmake This is simple enough. But it&amp;rsquo;s worth calling out individually. If you do deep work with these binaries then you will start to mess with cmake. It&amp;rsquo;s a bit tough to build binaries.
+https://cmake.org/install/
+apt-get install cmake
+Install dlib on Ubuntu The easiest way to install dlib is to install it with the bundled version with pip.
+It may end up that you will need to compile dlib.</description>
+    </item>
+    
+    <item>
       <title>Biometric Vehicle Entry</title>
-      <link>https://scotttactical.com/biometric-vehicle-entry-car-computer/</link>
+      <link>http://scotttactical.com/biometric-vehicle-entry-car-computer/</link>
       <pubDate>Tue, 19 Mar 2019 17:13:00 -0700</pubDate>
       
-      <guid>https://scotttactical.com/biometric-vehicle-entry-car-computer/</guid>
+      <guid>http://scotttactical.com/biometric-vehicle-entry-car-computer/</guid>
       <description>Biometrics From Wiki:
  Biometrics is the technical term for body measurements and calculations. It refers to metrics related to human characteristics. Biometrics authentication (or realistic authentication) is used in computer science as a form of identification and access control
  Let the conspiracy theories abound. Actually most of the worries before are no longer theories. The capabilities of the biometric tools now are such that the human mind may no longer be the master of the visual recognition spectrum.</description>
@@ -25,21 +69,23 @@
     
     <item>
       <title>Installing a USB Relay</title>
-      <link>https://scotttactical.com/installing-usb-relay/</link>
+      <link>http://scotttactical.com/installing-usb-relay/</link>
       <pubDate>Mon, 18 Mar 2019 18:16:54 -0700</pubDate>
       
-      <guid>https://scotttactical.com/installing-usb-relay/</guid>
-      <description>USB HID Relay   USB Relay on Ubuntu Linux This was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.
+      <guid>http://scotttactical.com/installing-usb-relay/</guid>
+      <description>USB HID Relay   USB Relay on Ubuntu Linux I am starting off with this hardware:
+KNACRO 4-Channel 12V USB Control Switch Relay Module
+This was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.
 Thank you to @darrylb123 for https://github.com/darrylb123/usbrelay
 There was a python contribution but it broke the build. I spent a few hours trying to get it to build and gave up and just smashed the ugly.</description>
     </item>
     
     <item>
       <title>Car Computer Touchscreen Monitor</title>
-      <link>https://scotttactical.com/car-computer-touchscreen-monitor/</link>
+      <link>http://scotttactical.com/car-computer-touchscreen-monitor/</link>
       <pubDate>Mon, 11 Mar 2019 21:15:12 -0700</pubDate>
       
-      <guid>https://scotttactical.com/car-computer-touchscreen-monitor/</guid>
+      <guid>http://scotttactical.com/car-computer-touchscreen-monitor/</guid>
       <description>How do you control your new custom Linux powered car computer? With a touch screen monitor obviously. And maybe a bluetooth keyboard and mouse.
 I would like this to feel like I am using a Steampunk hacker version of a Tesla.
   Tesla Streamliner Concept   Well maybe not all that.
@@ -49,20 +95,20 @@ Maybe more like this:
     
     <item>
       <title>Linux USB Relay Controller</title>
-      <link>https://scotttactical.com/linux-usb-relay-controller/</link>
+      <link>http://scotttactical.com/linux-usb-relay-controller/</link>
       <pubDate>Mon, 11 Mar 2019 01:10:53 -0700</pubDate>
       
-      <guid>https://scotttactical.com/linux-usb-relay-controller/</guid>
+      <guid>http://scotttactical.com/linux-usb-relay-controller/</guid>
       <description>Finding A Relay Controller One of my bigger worries is working with peripherals. I needed to find a camera and I felt like that was going to be easy enough. The relay controller will hit the actuators running the door locks.
 What Is A Relay Switch Most things inside a car take a decent amount of power to actuate or power them. The car is limited to 12V DC and your other measurements are amps and watts.</description>
     </item>
     
     <item>
       <title>Car Computer Camera</title>
-      <link>https://scotttactical.com/car-computer-camera/</link>
+      <link>http://scotttactical.com/car-computer-camera/</link>
       <pubDate>Sat, 09 Mar 2019 14:33:06 -0800</pubDate>
       
-      <guid>https://scotttactical.com/car-computer-camera/</guid>
+      <guid>http://scotttactical.com/car-computer-camera/</guid>
       <description>Camera Overview Finding a good camera shouldn&amp;rsquo;t be too difficult given how many cameras exist now. They are literally everywhere.
 Camera Criteria I learned right away that the cameras were pretty much all standardized. They came in a few flavors but overall they were either too small, too wide, or too expensive. That helped me limit stuff down a lot.
  small not much distortion (fish eye is bad) resolution &amp;gt; 720p color USB preferable  Preferences  Embeddable Flush mounted White 1080p hardened housing  Hardware Choices First Find I found this one right off by searching for &amp;ldquo;USB Camera&amp;rdquo;.</description>
@@ -70,10 +116,10 @@ Camera Criteria I learned right away that the cameras were pretty much all stand
     
     <item>
       <title>Car Computer Hardware</title>
-      <link>https://scotttactical.com/car-computer-hardware/</link>
+      <link>http://scotttactical.com/car-computer-hardware/</link>
       <pubDate>Tue, 05 Mar 2019 21:32:16 -0800</pubDate>
       
-      <guid>https://scotttactical.com/car-computer-hardware/</guid>
+      <guid>http://scotttactical.com/car-computer-hardware/</guid>
       <description>Searching For The Right Car Computer Hardware My trip to Fry&amp;rsquo;s in LA this morning wasn&amp;rsquo;t as great as I hoped. But I did get some great ideas on how to accomplish things.
 There were two major themes in the hardware that I looked at.
  Small isolated modular things Apple stuff  There wasn&amp;rsquo;t much for integration or components that were universal. Either they were for their own little world or they were for some subset of the Apple ecosystem.</description>
@@ -81,50 +127,50 @@ There were two major themes in the hardware that I looked at.
     
     <item>
       <title>Car Computer Intro</title>
-      <link>https://scotttactical.com/car-computer-intro/</link>
+      <link>http://scotttactical.com/car-computer-intro/</link>
       <pubDate>Tue, 05 Mar 2019 21:32:16 -0800</pubDate>
       
-      <guid>https://scotttactical.com/car-computer-intro/</guid>
+      <guid>http://scotttactical.com/car-computer-intro/</guid>
       <description>Introduction To STAC Car Computer The purpose of the build out is to take a 100% analog vehicle and bring in modern creature comforts and a modern driveline. In addition to this I will be integrating a few technology tools that are developed at my current work.
 Scenario In the morning I would like to walk out to my car, walk up to the door and have it unlock for me.</description>
     </item>
     
     <item>
       <title>Blockchain: End Of War</title>
-      <link>https://scotttactical.com/post/blockchain-end-of-war/</link>
+      <link>http://scotttactical.com/post/blockchain-end-of-war/</link>
       <pubDate>Sat, 15 Jul 2017 13:01:51 -0700</pubDate>
       
-      <guid>https://scotttactical.com/post/blockchain-end-of-war/</guid>
+      <guid>http://scotttactical.com/post/blockchain-end-of-war/</guid>
       <description>Can Blockchain End War This is a very difficult premise to start with. Can a technology solve the problem of war?
 The plague of large scale violence is the manifestation of most of the world&amp;rsquo;s worst vices as a single catastrophic man-made event. Many intelligent people have opined on the causes of war over the years with few coming up with ideas and zero defining concrete solutions to those problems.</description>
     </item>
     
     <item>
       <title>A Weed Delivery Service</title>
-      <link>https://scotttactical.com/post/a-weed-delivery-service/</link>
+      <link>http://scotttactical.com/post/a-weed-delivery-service/</link>
       <pubDate>Fri, 05 May 2017 18:51:01 -0700</pubDate>
       
-      <guid>https://scotttactical.com/post/a-weed-delivery-service/</guid>
+      <guid>http://scotttactical.com/post/a-weed-delivery-service/</guid>
       <description>Delivery Service About 6 months ago I decided to take on the task of building a delivery app for the cannabis industry. Here are a few notes from the journey so far.
 Why? I had just come off building software for Methadone suppliers. It tracked people coming off of harder opiates. As we all know here there is a very strong opiate problem in the United States. It has even caused the redefined CDC Guidelines on Prescribing Opioids for Pain.</description>
     </item>
     
     <item>
       <title>Vehemenism</title>
-      <link>https://scotttactical.com/post/vehemenism/</link>
+      <link>http://scotttactical.com/post/vehemenism/</link>
       <pubDate>Fri, 14 Apr 2017 18:51:01 -0700</pubDate>
       
-      <guid>https://scotttactical.com/post/vehemenism/</guid>
+      <guid>http://scotttactical.com/post/vehemenism/</guid>
       <description>Preface to Vehemenism Opening letter to future ultra-violent men.
 We stand at a transition. Either at the bottom of a cliff we may ascend, or at the precipice of one we will be pushed from. This &amp;ldquo;we&amp;rdquo; is addressed to men alone. Only we are the ones presented with this unique problem. It is a problem of perspective and one that contains many recursive questions. The answer to these questions will ultimately decide whether or not the observer was indeed a man.</description>
     </item>
     
     <item>
       <title>eMail In A Box: Setup</title>
-      <link>https://scotttactical.com/post/email-in-a-box-setup/</link>
+      <link>http://scotttactical.com/post/email-in-a-box-setup/</link>
       <pubDate>Thu, 09 Feb 2017 16:00:07 -0800</pubDate>
       
-      <guid>https://scotttactical.com/post/email-in-a-box-setup/</guid>
+      <guid>http://scotttactical.com/post/email-in-a-box-setup/</guid>
       <description>Test Drive: Mail In A Box TL;DR I set up Mail-in-a-Box and it was a quick and painless experience.
 Preface I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.
 I&amp;rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day.</description>
@@ -132,29 +178,29 @@ I&amp;rsquo;ll also preface that I was a professional email list manager and bui
     
     <item>
       <title>Django Saleor eCommerce Review</title>
-      <link>https://scotttactical.com/post/django-saleor-ecommerce-review/</link>
+      <link>http://scotttactical.com/post/django-saleor-ecommerce-review/</link>
       <pubDate>Sun, 15 Jan 2017 16:00:07 -0800</pubDate>
       
-      <guid>https://scotttactical.com/post/django-saleor-ecommerce-review/</guid>
+      <guid>http://scotttactical.com/post/django-saleor-ecommerce-review/</guid>
       <description>Django And eCommerce TL;DR I setup Oscar as a demo ecommerce project in the previous post.
 Preface Backstory I just finished a post about setting up eCommerce with Python Django and wasn&amp;rsquo;t totally pleased with the process. Also I don&amp;rsquo;t think it is fair to only demo a single application. I decided to give Saleor my second slot after talking with several people online and looking through its source. The parent company has a number of nice products which was confidence building.</description>
     </item>
     
     <item>
       <title>Django eCommerce in 30&#43; Minutes</title>
-      <link>https://scotttactical.com/post/django-ecommerce-in-30-minutes/</link>
+      <link>http://scotttactical.com/post/django-ecommerce-in-30-minutes/</link>
       <pubDate>Sat, 14 Jan 2017 16:00:07 -0800</pubDate>
       
-      <guid>https://scotttactical.com/post/django-ecommerce-in-30-minutes/</guid>
+      <guid>http://scotttactical.com/post/django-ecommerce-in-30-minutes/</guid>
       <description>Django And eCommerce TL;DR I like Python and want to use it for eCommerce, so I went through the well known products and settled on Oscar as my demo. It took a while to set up, but was pretty full featured. Python and Django still have to compete with short busses like wordpress and dump trucks like Magento, but I think these tools are ready for me to start pushing.</description>
     </item>
     
     <item>
       <title>How To Setup a MapR Cluster on Ubuntu</title>
-      <link>https://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/</link>
+      <link>http://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/</link>
       <pubDate>Thu, 05 Jan 2017 16:18:32 -0800</pubDate>
       
-      <guid>https://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/</guid>
+      <guid>http://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/</guid>
       <description>How To Install MapR Test Cluster This document covers my installation of MapR Converged Platform on an Ubuntu 14.04 cluster.
 We are running on the DTAC private cloud so some of the screenshots will show our internal interface. All instances are running in a VM.
 Most of this follows the suggested flow given in the lab manual from MapR. Initially I launched the cluster on CentOS 7.3 but that wasn&amp;rsquo;t supported and it failed.</description>
@@ -162,20 +208,20 @@ Most of this follows the suggested flow given in the lab manual from MapR. Initi
     
     <item>
       <title>SFP vs. QSFP</title>
-      <link>https://scotttactical.com/post/sfp-vs.-qsfp/</link>
+      <link>http://scotttactical.com/post/sfp-vs.-qsfp/</link>
       <pubDate>Wed, 04 Jan 2017 06:41:07 -0800</pubDate>
       
-      <guid>https://scotttactical.com/post/sfp-vs.-qsfp/</guid>
+      <guid>http://scotttactical.com/post/sfp-vs.-qsfp/</guid>
       <description>Networking Transceivers This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent. After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.
 Again this page is mostly for my notes.</description>
     </item>
     
     <item>
       <title>Encrypt PostgreSQL Backup to S3</title>
-      <link>https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</link>
+      <link>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</link>
       <pubDate>Sat, 24 Dec 2016 06:41:07 -0800</pubDate>
       
-      <guid>https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</guid>
+      <guid>http://scotttactical.com/post/encrypt-postgresql-backup-to-s3/</guid>
       <description>Encrypt Your DB Backups I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.
 Generate Keys From your user&amp;rsquo;s home directory:
 openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub
@@ -186,10 +232,10 @@ backup_key.pem - private key backup_key.</description>
     
     <item>
       <title>Why The Covered California Website Sucks</title>
-      <link>https://scotttactical.com/post/why-the-covered-california-website-sucks/</link>
+      <link>http://scotttactical.com/post/why-the-covered-california-website-sucks/</link>
       <pubDate>Fri, 09 Dec 2016 08:52:58 -0800</pubDate>
       
-      <guid>https://scotttactical.com/post/why-the-covered-california-website-sucks/</guid>
+      <guid>http://scotttactical.com/post/why-the-covered-california-website-sucks/</guid>
       <description>Why It Needs Help - My Letter This is an open letter to the Covered California website designer, administrators, bureaucrats and contractors.
 Website Design and Usability I have several things listed below. Things I find to be of poor design or just plain broken.
 You Don&amp;rsquo;t Got Mail!  &amp;ldquo;Secure Mailbox (2)&amp;rdquo; even though nothing was in my mail box.
@@ -199,30 +245,30 @@ You Don&amp;rsquo;t Got Mail!  &amp;ldquo;Secure Mailbox (2)&amp;rdquo; even tho
     
     <item>
       <title>Internet 3rd Wave and Rise of the Technology Fascist</title>
-      <link>https://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</link>
+      <link>http://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</link>
       <pubDate>Sun, 04 Dec 2016 13:13:26 -0800</pubDate>
       
-      <guid>https://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</guid>
+      <guid>http://scotttactical.com/post/internet-3rd-wave-and-rise-of-the-technology-fascist/</guid>
       <description>The Waves of Technology Professional I like to consider 2001 the tail edge of the Internet bubble. It was a brutal time to be in a computer science field. There weren&amp;rsquo;t many jobs. The jobs that were being squatted on were jealously guarded. I needed the one thing that nobody would provide. Experience. So instead I grinded projects and studied unceasingly.
 In 2001 I had to take a job as an &amp;ldquo;integration specialist&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>HowTo Bind Multiple Terminals MacOS-X</title>
-      <link>https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</link>
+      <link>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</link>
       <pubDate>Tue, 29 Nov 2016 19:09:21 -0800</pubDate>
       
-      <guid>https://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</guid>
+      <guid>http://scotttactical.com/post/howto-bind-multiple-terminals-macos-x/</guid>
       <description>Binding Multiple Terminals I am running on multiple servers all the time. And with DTAC doing testing of big data I obviously need to play with many servers at once. I used to do a lot of work on linux and loved the broadcast ability of the terminals. So when I moved onto mac I expected more.
 I tried a few other terminal apps. Particularly iTerm2 that has some nice broadcasting.</description>
     </item>
     
     <item>
       <title>What is Wrong With Millennials</title>
-      <link>https://scotttactical.com/whats-wrong-with-millennials/</link>
+      <link>http://scotttactical.com/whats-wrong-with-millennials/</link>
       <pubDate>Fri, 18 Nov 2016 20:00:32 -0800</pubDate>
       
-      <guid>https://scotttactical.com/whats-wrong-with-millennials/</guid>
+      <guid>http://scotttactical.com/whats-wrong-with-millennials/</guid>
       <description>What is Up With Those Millennials? Ah, yes. The click bait. A marketing construct of the GenX&amp;rsquo;ers: pornographic gossip without the payoff.
 But, since you are here&amp;hellip;
 My Motivation: Agism I have become infuriated seeing one segment of United States citizenry be the target of a multiple-party attack. This pressure has been escalating over the last couple of years, and I wanted to make a number of assertions and lay out some warnings.</description>
@@ -230,10 +276,10 @@ My Motivation: Agism I have become infuriated seeing one segment of United State
     
     <item>
       <title>Writing Novels in Markdown Part 1</title>
-      <link>https://scotttactical.com/writing-novels-in-markdown-part1/</link>
+      <link>http://scotttactical.com/writing-novels-in-markdown-part1/</link>
       <pubDate>Tue, 08 Nov 2016 16:35:37 -0800</pubDate>
       
-      <guid>https://scotttactical.com/writing-novels-in-markdown-part1/</guid>
+      <guid>http://scotttactical.com/writing-novels-in-markdown-part1/</guid>
       <description>Writing in Markdown If you haven&amp;rsquo;t used Markdown to write in a rich(er) text format, then you are missing out. I pretty much write all my technical documentation in Markdown. It&amp;rsquo;s pretty awesome and I don&amp;rsquo;t know why it took me so long to find it. I didn&amp;rsquo;t start using it until around 2013.
 What is Markdown Markdown was created by John Gruber.
 According to Wikipedia.
@@ -242,10 +288,10 @@ According to Wikipedia.
     
     <item>
       <title>Why We Quit OpenStack: or How I Lost 2 Months of My Life</title>
-      <link>https://scotttactical.com/why-we-quit-openstack/</link>
+      <link>http://scotttactical.com/why-we-quit-openstack/</link>
       <pubDate>Fri, 28 Oct 2016 20:07:57 -0700</pubDate>
       
-      <guid>https://scotttactical.com/why-we-quit-openstack/</guid>
+      <guid>http://scotttactical.com/why-we-quit-openstack/</guid>
       <description>TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.
 Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.
 I will probably write another article that outlines all the questions that I should have asked before starting this.</description>
@@ -253,40 +299,40 @@ I will probably write another article that outlines all the questions that I sho
     
     <item>
       <title>General Lee-Anne 001</title>
-      <link>https://scotttactical.com/dana-60-front-axle-build/</link>
+      <link>http://scotttactical.com/dana-60-front-axle-build/</link>
       <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/dana-60-front-axle-build/</guid>
+      <guid>http://scotttactical.com/dana-60-front-axle-build/</guid>
       <description>Building a Dana Sixty Part of this process was setting up the new axles. I wanted to go 1-ton all the way around. I think everyone knows that finding a good condition d60 for a reasonable price is not possible.
 So I bought one from a local guy that had been sitting on a truck in a paintball field. It looked like it was pulled from Davey Jones Locker Room.</description>
     </item>
     
     <item>
       <title>Dymo LabelWriter on Mac OSX - JavaScript</title>
-      <link>https://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</link>
+      <link>http://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</link>
       <pubDate>Tue, 29 Mar 2016 16:14:48 -0700</pubDate>
       
-      <guid>https://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</guid>
+      <guid>http://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</guid>
       <description>Setup - Dymo LabelWriter 450 on Mac OSX The clinic software requires the ability to print labels adhoc and by event. This requires that the client be able to initiate the labels. There are no requirements that the backend server be able to print labels. Thank goodness. That requires something akin to a fulfillment center and probably integration with a 3rd app. Welcome: disparate stand-alone boxes.
 Install App and Drivers Good job guys.</description>
     </item>
     
     <item>
       <title>Django Search: Multiple Fields and Full Text</title>
-      <link>https://scotttactical.com/django-search-multiple-fields/</link>
+      <link>http://scotttactical.com/django-search-multiple-fields/</link>
       <pubDate>Tue, 22 Mar 2016 22:34:50 -0700</pubDate>
       
-      <guid>https://scotttactical.com/django-search-multiple-fields/</guid>
+      <guid>http://scotttactical.com/django-search-multiple-fields/</guid>
       <description>Text Search - Django Model Fields Django has a pretty flexible ORM, but sometimes clients need a free-form text search to get down to the content that you are looking for. It is beyond the capability of most engineers to build a comprehensive search tool and shoehorn it into an existing application. There are people working on these problems for years.
 This does remind me of a senior boss that asked me to add a fuzzy search field to an application and that it was &amp;ldquo;super simple&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Dump Django Databases and Create Fixtures for Testing</title>
-      <link>https://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/</link>
+      <link>http://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/</link>
       <pubDate>Wed, 24 Feb 2016 23:20:36 -0800</pubDate>
       
-      <guid>https://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/</guid>
+      <guid>http://scotttactical.com/post/dump-django-databases-and-create-fixtures-for-testing/</guid>
       <description>Fixtures are a Messy Mess It is quite a pain to maintain fixtures it seems. I am not sure why yet. Maybe there hasn&amp;rsquo;t been quite enough time on this piece of the product for it to mature.
 Django dumpdata I tried several different variations to dump the data. I&amp;rsquo;ll include a few of them here since they might actually work for someone else.
 python manage.py dumpdata &amp;gt; fixture.json</description>
@@ -294,39 +340,39 @@ python manage.py dumpdata &amp;gt; fixture.json</description>
     
     <item>
       <title>Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps</title>
-      <link>https://scotttactical.com/migrate-private-github-repo-bitbucket/</link>
+      <link>http://scotttactical.com/migrate-private-github-repo-bitbucket/</link>
       <pubDate>Tue, 23 Feb 2016 21:28:23 -0800</pubDate>
       
-      <guid>https://scotttactical.com/migrate-private-github-repo-bitbucket/</guid>
+      <guid>http://scotttactical.com/migrate-private-github-repo-bitbucket/</guid>
       <description>Why Not GitHub GitHub is Great Don&amp;rsquo;t get me wrong. I would recommend using this service for a number of reasons that are not fiscally motivated. It isn&amp;rsquo;t whether GitHub.com is good or not. There is a matter of economics at play though.
 As a startup I just don&amp;rsquo;t have the extra 25/mo to throw into GitHub business account. It looks cool that I have an organization there and there are more badges.</description>
     </item>
     
     <item>
       <title>What Does a Data Scientist Do</title>
-      <link>https://scotttactical.com/what-does-data-scientist-do/</link>
+      <link>http://scotttactical.com/what-does-data-scientist-do/</link>
       <pubDate>Tue, 02 Feb 2016 12:57:42 -0800</pubDate>
       
-      <guid>https://scotttactical.com/what-does-data-scientist-do/</guid>
+      <guid>http://scotttactical.com/what-does-data-scientist-do/</guid>
       <description>What Does a Data Scientist Do Uncovering the Key Capabilities of a Data Scientist Are you thinking of pursuing a career as a data scientist? It has been published that being in this field could mean you will be in-demand for many companies. So, it is not surprising if the number of individuals turning to data science is fast increasing.
 But being a data scientist will also bring you huge responsibilities.</description>
     </item>
     
     <item>
       <title>Health, Interconnectivity - The Data Revolution</title>
-      <link>https://scotttactical.com/health-medical-interconnectivity-data-revolution/</link>
+      <link>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</link>
       <pubDate>Thu, 10 Dec 2015 07:34:17 -0800</pubDate>
       
-      <guid>https://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
+      <guid>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
       <description>Health, Medical Interconnectivity and The Coming Data Revolution Johnson Davis&amp;rsquo; Walk Six red indicators breach the serene layout of the medical information dashboard. Gauges, charts and graphs provide human cues concerning the information flowing through the Intra-Medical Services Accountability Pipeline. The IMSAP emerged in evolutionary form as various government, education and enterprises started the race to consume the calculus of living data. And now these machines of data consumption interpret the flow of what some consider the representation of that thing which connects life and machine.</description>
     </item>
     
     <item>
       <title>Try Not 2 Fuck Up Ur Engineering</title>
-      <link>https://scotttactical.com/try-not-2-fuck-up-ur-engineering/</link>
+      <link>http://scotttactical.com/try-not-2-fuck-up-ur-engineering/</link>
       <pubDate>Tue, 01 Dec 2015 10:43:58 -0800</pubDate>
       
-      <guid>https://scotttactical.com/try-not-2-fuck-up-ur-engineering/</guid>
+      <guid>http://scotttactical.com/try-not-2-fuck-up-ur-engineering/</guid>
       <description>Leadership Checklist for Non-Technical Managers
 How do you build software that provides value to both clients, owners and engineers?
 This list has started as a list of notes that I kept over the last few years. Yes, this is the abbreviated version of Management For Quality Software.
@@ -335,20 +381,20 @@ Executive Leadership  Bloated and ugly products are born at the top, but a good 
     
     <item>
       <title>Management for Quality Software Development Managers</title>
-      <link>https://scotttactical.com/management-for-quality-software-development/</link>
+      <link>http://scotttactical.com/management-for-quality-software-development/</link>
       <pubDate>Tue, 01 Dec 2015 09:53:52 -0800</pubDate>
       
-      <guid>https://scotttactical.com/management-for-quality-software-development/</guid>
+      <guid>http://scotttactical.com/management-for-quality-software-development/</guid>
       <description>This started as a list of notes for my boss on how I see the best way to manage technical professionals. I am trying to provide non-technical managers with the resources to direct technical teams in a way that will produce quality software and keep the engineering staff engaged and moving.
 How do you build software that provides value to both clients, users, owners and engineers for the years to come?</description>
     </item>
     
     <item>
       <title>Why Conservatism Fails</title>
-      <link>https://scotttactical.com/why-conservatism-fails/</link>
+      <link>http://scotttactical.com/why-conservatism-fails/</link>
       <pubDate>Fri, 13 Nov 2015 17:18:43 -0800</pubDate>
       
-      <guid>https://scotttactical.com/why-conservatism-fails/</guid>
+      <guid>http://scotttactical.com/why-conservatism-fails/</guid>
       <description>This essay is not an attack on the people who claim membership to a philosophical outlook, but an exposition on the inherent difficulties which exist in maintaining traditional systems.
 Let us begin with the needful: term definition.
 Term Definition  Conservatism as a political and social philosophy promotes retaining traditional social institutions in the context of the culture and civilization.
@@ -357,10 +403,10 @@ Term Definition  Conservatism as a political and social philosophy promotes reta
     
     <item>
       <title>Eat For War</title>
-      <link>https://scotttactical.com/post/eat-for-war/</link>
+      <link>http://scotttactical.com/post/eat-for-war/</link>
       <pubDate>Fri, 06 Nov 2015 01:23:11 -0800</pubDate>
       
-      <guid>https://scotttactical.com/post/eat-for-war/</guid>
+      <guid>http://scotttactical.com/post/eat-for-war/</guid>
       <description>Bad men live that they may eat and drink, whereas good men eat and drink that they may live. Socrates - Plutarch, How a Young Man Ought to Hear Poems
  A Warrior&amp;rsquo;s Diet What physically intimate activity do we participate in more than any other?
 Eating
@@ -369,10 +415,10 @@ The Philosophy One of the more immediate steps in becoming awake is overcoming t
     
     <item>
       <title>PHPunit Slowness Performance Suggestions</title>
-      <link>https://scotttactical.com/performance-suggestions-phpunit-slowness/</link>
+      <link>http://scotttactical.com/performance-suggestions-phpunit-slowness/</link>
       <pubDate>Wed, 04 Nov 2015 12:57:42 -0800</pubDate>
       
-      <guid>https://scotttactical.com/performance-suggestions-phpunit-slowness/</guid>
+      <guid>http://scotttactical.com/performance-suggestions-phpunit-slowness/</guid>
       <description>PHPUnit Is Slowness I love PHPUnit don&amp;rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&amp;rsquo;s like the code got yo back bro! Build code that lasts.
 EDIT: I know most of the problems are inherent with tests not the testing framework. However, my requirements dictate how I use it to a certain extent. Peace.
 PHPUnit is painfully slow. Seriously. Though. Maybe having a concurrent environment it can run it would help.</description>
@@ -380,10 +426,10 @@ PHPUnit is painfully slow. Seriously. Though. Maybe having a concurrent environm
     
     <item>
       <title>Deploying Hugo the Golang CMS on DigitalOcean - Nginx</title>
-      <link>https://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/</link>
+      <link>http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/</link>
       <pubDate>Thu, 22 Oct 2015 06:29:31 -0700</pubDate>
       
-      <guid>https://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/</guid>
+      <guid>http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/</guid>
       <description>Deploying Hugo the Golang CMS on DigitalOcean Creating a Droplet I am a bit partial to CentOS. The lastest version as of this writing is CentOS Linux release 7.1.1503 (Core).
 Setting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done.
 Install Nginx Add the epel repo: yum install epel-release  Install yum install nginx  Start it service nginx start systemctl enable nginx  Create the Folders mkdir -p /var/www/ursite/ chown -R nginx:nginx /var/www touch /var/www/ursite/index.</description>
@@ -391,10 +437,10 @@ Install Nginx Add the epel repo: yum install epel-release  Install yum install n
     
     <item>
       <title>Hugo: A replacement for Wordpress</title>
-      <link>https://scotttactical.com/hugo-a-replacement-for-wordpress/</link>
+      <link>http://scotttactical.com/hugo-a-replacement-for-wordpress/</link>
       <pubDate>Wed, 21 Oct 2015 15:39:13 -0700</pubDate>
       
-      <guid>https://scotttactical.com/hugo-a-replacement-for-wordpress/</guid>
+      <guid>http://scotttactical.com/hugo-a-replacement-for-wordpress/</guid>
       <description>Hugo: A Replacement for Wordpress TL;DR  I researched go Found Hugo Setup a test Migrated my Wordpress instance Launched DigitalOcean Droplet Deployed  Total time: 6 hours
 Continued: My problems started almost a year before I took up this cause. At the time I only had 2 Wordpress sites. Very very low traffic. Only a couple users a day. They were mostly place holders for business sites.
 Wordpress is hungry What was annoying about the case was that they would randomly carsh!</description>
@@ -402,10 +448,10 @@ Wordpress is hungry What was annoying about the case was that they would randoml
     
     <item>
       <title>Interview Strategies: A Technology Hiring Manager Who Wins</title>
-      <link>https://scotttactical.com/interview-strategies-a-technology-hiring-manager/</link>
+      <link>http://scotttactical.com/interview-strategies-a-technology-hiring-manager/</link>
       <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid>
+      <guid>http://scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid>
       <description>If I stacked pennies from the ground to the top of the Empire State Bldg, would they all fit into this room?
  Firstly dear sir, you do not have that many pennies.
 Secondly if you cash it in for large bills then they all fit in your pocket.
@@ -414,10 +460,10 @@ It is a question like this that would make me decide alternatively in my career 
     
     <item>
       <title>Download an Entire Site with wget - mac OSX</title>
-      <link>https://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</link>
+      <link>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</link>
       <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</guid>
+      <guid>http://scotttactical.com/download-an-entire-site-with-wget-mac-osx/</guid>
       <description>Download the Entire Site with wget If you don&amp;rsquo;t have homebrew please install it. It will make all our lives easier.
 Howto This was kinda simple but I wanted to post it here for reference.
 On thing I would like to note is the wait and limit-rate. Make sure you don&amp;rsquo;t trip any throttles or piss off any website owners by leaving the pipes wide open.
@@ -426,40 +472,40 @@ wget \ --recursive \ --no-clobber \ --page-requisites \ --convert-links \ --wait
     
     <item>
       <title>Hypermedia, API Philosophy, and Talking to Your Robot Overlords</title>
-      <link>https://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link>
+      <link>http://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link>
       <pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
+      <guid>http://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
       <description>In the Beginning There was the Web. World Wide actually. Well, before that there was something of AOL, Berners-Lee, DoD, DARPA, ARPANET and a prototype of Al Gore launching carrier pigeons down long tubes with fortune cookie-sized packets tied to their little legs addressed to: &amp;ldquo;Wh@t_#hath_God_wr0ught?&amp;ldquo;.
 Fast-forward: now we have Skynet. Well not yet, but soon. Hopefully. At least that is why I intend to generate favor with our future overlords by suggesting, at least locally, that certain systemic changes be encouraged so that their manifestation onto the stage be smooth and welcoming.</description>
     </item>
     
     <item>
       <title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</title>
-      <link>https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
+      <link>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link>
       <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
+      <guid>http://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
       <description>Laravel 5 - Enforcing HTTPS I&amp;rsquo;ve used a lot of frameworks. Laravel is great.
 Dealing with a load balancer Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.</description>
     </item>
     
     <item>
       <title>PHP Hypermedia REST API wrapper</title>
-      <link>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
+      <link>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
       <pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
+      <guid>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
       <description>Hypermedia for PHP APIs. Well, here it is. I&amp;rsquo;m finally finishing up my Hypermedia layer for our Laravel 5.1 build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of Internet-of-Things (IoT).
 In Production - Alpha Right now I have it in our very alpha phase version of the software running the LeadFerret business lead search system.</description>
     </item>
     
     <item>
       <title>Linux File Manipulation Shortcuts and Commands</title>
-      <link>https://scotttactical.com/linux-file-manipulation-shortcuts-commands/</link>
+      <link>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</link>
       <pubDate>Wed, 25 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid>
+      <guid>http://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid>
       <description>Linux File Manipulation Commands I&amp;rsquo;ll keep updating this with various commands that I run into. If I find new ones I&amp;rsquo;ll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.
 File Searching List of file extensions.
 awk + grep : find all the file extensions. It will also skip your &amp;ldquo;git&amp;rdquo; repository.
@@ -468,10 +514,10 @@ find . -type f -name &amp;quot;*.</description>
     
     <item>
       <title>To HipHop or Not - PHP and HHVM</title>
-      <link>https://scotttactical.com/to-hiphop-or-not-php-hhvm/</link>
+      <link>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</link>
       <pubDate>Wed, 18 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/to-hiphop-or-not-php-hhvm/</guid>
+      <guid>http://scotttactical.com/to-hiphop-or-not-php-hhvm/</guid>
       <description>We are discussing the plausibility of using HHVM inside this current infrastructure.
 Our requirements are not very application server CPU intensive so it isn&amp;rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.
 Short History Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information.</description>
@@ -479,10 +525,10 @@ Short History Facebook, our Ominous big brother gave us a consolation prize for 
     
     <item>
       <title>GLA - 69 K5 &#43; 4L80-E</title>
-      <link>https://scotttactical.com/gla-69-k5-4l80-e/</link>
+      <link>http://scotttactical.com/gla-69-k5-4l80-e/</link>
       <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/gla-69-k5-4l80-e/</guid>
+      <guid>http://scotttactical.com/gla-69-k5-4l80-e/</guid>
       <description>Cleaned up the trans a little bit. Tiny bit of cosmetics. Taped up. Then hit it with some nice paint. I prefer for these to have paint. Keeps cleaning it easier. Also I think the buyer will appreciate it.
 Before:
  4L80-E before Mercenary Offroad Camarillo, CA Mercenary Offroad 19 N Aviador St. Unit C
@@ -492,10 +538,10 @@ Camarillo, CA 93010  Latitude: 34.2171139 Longitude: -119.0966697    After:
     
     <item>
       <title>GLA - 4L80e -1969 k5 blazer</title>
-      <link>https://scotttactical.com/gla-4l80e-1969-k5-blazer/</link>
+      <link>http://scotttactical.com/gla-4l80e-1969-k5-blazer/</link>
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/gla-4l80e-1969-k5-blazer/</guid>
+      <guid>http://scotttactical.com/gla-4l80e-1969-k5-blazer/</guid>
       <description>Just got the trans in from Brad at Transaction Transmission.
 I have used him for a while now and he puts in the effort. Components were upgraded and everything set new. This should be strong for the newowner. It was cleaned and painted at the shop but I am going to clean it up a little more and put on a coat of the &amp;ldquo;Mercenary Offroad&amp;rdquo; package graphite gray.
  4L80e ready for transplant Mercenary Offroad Camarillo, CA Mercenary Offroad 19 N Aviador St.</description>
@@ -503,20 +549,20 @@ I have used him for a while now and he puts in the effort. Components were upgr
     
     <item>
       <title>GLA 69 K5 - bumper start</title>
-      <link>https://scotttactical.com/gla-69-k5-bumper-start/</link>
+      <link>http://scotttactical.com/gla-69-k5-bumper-start/</link>
       <pubDate>Fri, 22 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/gla-69-k5-bumper-start/</guid>
+      <guid>http://scotttactical.com/gla-69-k5-bumper-start/</guid>
       <description>Well, we got the truck running enough that I can drive it around. It stops. We even locked it up and watched the black lines form up behind the tires. Not bad for 35&amp;rsquo;s.
 It was moved over to Camarillo to the shop known as Mercenary Offroad where a custom bumper will be fabricated for it. The designator for this bumper is also 001 as it will be the first one designed for this series truck.</description>
     </item>
     
     <item>
       <title>GLA 69 K5 Brakes</title>
-      <link>https://scotttactical.com/gla-69-k5-brakes/</link>
+      <link>http://scotttactical.com/gla-69-k5-brakes/</link>
       <pubDate>Wed, 20 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/gla-69-k5-brakes/</guid>
+      <guid>http://scotttactical.com/gla-69-k5-brakes/</guid>
       <description>So the PO was rough on the vehicle. Probably multiple PO&amp;rsquo;s.
 Included are some pictures to show the detail we went to in repairing and rebuilding the brake systems.
 The brake system had been WORKED. They were pretty much shot. When we got it the pedal hit the floor. It didn&amp;rsquo;t want to stop so the ride to the shop was a bit of a terror show for that 2 miles.</description>
@@ -524,10 +570,10 @@ The brake system had been WORKED. They were pretty much shot. When we got it t
     
     <item>
       <title>General Lee-Anne 001</title>
-      <link>https://scotttactical.com/general-lee-anne-001/</link>
+      <link>http://scotttactical.com/general-lee-anne-001/</link>
       <pubDate>Mon, 04 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://scotttactical.com/general-lee-anne-001/</guid>
+      <guid>http://scotttactical.com/general-lee-anne-001/</guid>
       <description>Here we go.
 1969 hugger orange rust bucket.
 This thing barely stops. It stops when it wants to. So it&amp;rsquo;s kinda like a woman. Every bushing and joint is shot. Probably never replaced a thing on it.

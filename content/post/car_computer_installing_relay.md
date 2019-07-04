@@ -13,6 +13,10 @@ comments: true
 
 ## USB Relay on Ubuntu Linux
 
+I am starting off with this hardware:
+
+  KNACRO 4-Channel 12V USB Control Switch Relay Module
+
 This was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.
 
 Thank you to @darrylb123 for https://github.com/darrylb123/usbrelay
