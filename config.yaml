@@ -65,7 +65,7 @@ Params:
 Indexes:
   tag: "tags"
   gallery: "galleries"
-  news: "news"
+  # news: "news"
 
 permalinks:
   post: post/:slug/

@@ -126,14 +126,14 @@ He stopped the conversation and walked me to the pastor's office.  He was a norm
 
 I might have raised my voice. I didn't slam my hands on anything this time. But I told him that their suggestion to get an annulment goes against the statistical data that the Vatican puts out related to the legitimacy of the legal system in the US specifically. That if we are wagering our souls and the souls of those who are in our care that our risk if far higher than the feelings of some weak-minded feminist who thinks that my marriage is better off dissolved. I asked if he knew what type of private lives the leaders of his Church are living. Of course the moment I said that they terminated the conversation and told me to leave.  
 
-## I Accept
+## I Accept Her
 
-My ex left the Church and I can't blame her. I stood alone on that Easter getting accepted in.
+My ex left the Church and I can't blame her. I stood alone that Easter getting accepted in.  Her family left her alone when she married me. I guess that is poetic enough.
 
-# Without End
+# Truth Never Ends
 
-After that I decided that I was still in possession of the truth. If logic is true, and the goal of life is to seek truth than I have an obligation now that I never knew I would carry. What I read has been backed up by years of follow on philosophy and therefore I am stuck.
+After that I decided that I was still in possession of the truth. If logic is true, and the purpose of life is to seek truth, then I have an obligation. What I determined has been backed up by years of follow-on philosophy and therefore I am stuck. Many people have come to me to ask me to dissolve the marriage. So many people want me to have children. I have had many marriage proposals from wonderful women. They leave confused when I have to tell them that some ancient book blocks the situation from happening.
 
-Philosophy dictates that time does not exist. It's a construct. Science says that love does not exist. Philosophy is right and science is wrong. Because science is incapable of measuring something they are incapable of naming it.  Love exists outside of measure and time and is affixed on an immovable point that all else surrounds. Other things are measured off of logical truths, but the measurement itself is not the point of truth.
+Philosophy dictates that time does not exist. It's a construct. Science says that love does not exist. Philosophy is right and science is insufficient and hollow. Because science is incapable of measuring something like this it is incapable of naming it.  Love exists outside of measure and time and is affixed on an immovable point that all else surrounds. Other things are measured off of logical truths, but the measurement itself is not the point of truth.
 
-Because I chose to unknown I cannot reverse the course. A covenant still stands and my future is permanently linked to the search for a never-ending love. 
+Because I chose to un-know I cannot reverse the course. A covenant still stands and my future is permanently linked to the search for a never-ending love.
