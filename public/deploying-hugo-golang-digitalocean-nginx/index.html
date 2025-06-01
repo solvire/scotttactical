@@ -4,11 +4,11 @@
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.92.2" />
 
 
 
-<link rel="canonical" href="http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/">
+<link rel="canonical" href="https://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
@@ -20,18 +20,18 @@
 
 <meta property="og:title" content="Deploying Hugo the Golang CMS on DigitalOcean - Nginx - Scott Tactical">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/">
-<meta property="og:image" content="http://scotttactical.comimages/default.png">
+<meta property="og:url" content="https://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/">
+<meta property="og:image" content="https://scotttactical.com/images/default.png">
 <meta property="og:site_name" content="Scott Tactical">
 <meta property="og:description" content="Deploying Hugo the Golang CMS on DigitalOcean Creating a Droplet I am a bit partial to CentOS. The lastest version as of this writing is CentOS Linux release 7.1.1503 (Core).Setting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done.Install Nginx Add the epel repo: yum install epel-release  Install yum install nginx  Start it service nginx start systemctl enable nginx  Create the Folders mkdir -p /var/www/ursite/ chown -R nginx:nginx /var/www touch /var/www/ursite/index.">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scott Tactical">
-<meta name="twitter:url" content="http://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/">
+<meta name="twitter:url" content="https://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/">
 <meta name="twitter:title" content="Deploying Hugo the Golang CMS on DigitalOcean - Nginx - Scott Tactical">
 <meta name="twitter:description" content="Deploying Hugo the Golang CMS on DigitalOcean Creating a Droplet I am a bit partial to CentOS. The lastest version as of this writing is CentOS Linux release 7.1.1503 (Core).Setting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done.Install Nginx Add the epel repo: yum install epel-release  Install yum install nginx  Start it service nginx start systemctl enable nginx  Create the Folders mkdir -p /var/www/ursite/ chown -R nginx:nginx /var/www touch /var/www/ursite/index.">
-<meta name="twitter:image" content="http://scotttactical.comimages/default.png">
+<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
 
 
 <script type="application/ld+json">
@@ -40,12 +40,12 @@
     "@type": "NewsArticle",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id":"http://scotttactical.com"
+      "@id":"https:\/\/scotttactical.com\/"
     },
     "headline": "Deploying Hugo the Golang CMS on DigitalOcean - Nginx - Scott Tactical",
     "image": {
       "@type": "ImageObject",
-      "url": "http://scotttactical.comimages/default.png",
+      "url": "https:\/\/scotttactical.com\/images\/default.png",
       "height": 800,
       "width": 800
     },
@@ -60,19 +60,17 @@
       "name": "Scott Tactical",
       "logo": {
         "@type": "ImageObject",
-        "url": "http://scotttactical.comimages/logo.png",
+        "url": "https:\/\/scotttactical.com\/images/logo.png",
         "width": 600,
         "height": 60
       }
     },
-    "description": "Deploying Hugo the Golang CMS on DigitalOcean Creating a Droplet I am a bit partial to CentOS. The lastest version as of this writing is CentOS Linux release 7.1.1503 (Core).
-Setting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done.
-Install Nginx Add the epel repo: yum install epel-release  Install yum install nginx  Start it service nginx start systemctl enable nginx  Create the Folders mkdir -p /var/www/ursite/ chown -R nginx:nginx /var/www touch /var/www/ursite/index."
+    "description": "Deploying Hugo the Golang CMS on DigitalOcean Creating a Droplet I am a bit partial to CentOS. The lastest version as of this writing is CentOS Linux release 7.1.1503 (Core).\nSetting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done.\nInstall Nginx Add the epel repo: yum install epel-release  Install yum install nginx  Start it service nginx start systemctl enable nginx  Create the Folders mkdir -p \/var\/www\/ursite\/ chown -R nginx:nginx \/var\/www touch \/var\/www\/ursite\/index."
   }
 </script>
 
 
-    <link href="http://scotttactical.comcss/styles.css" rel="stylesheet">
+    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
     
 
   </head>
@@ -92,7 +90,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     
 
     <header class="l-header">
@@ -105,7 +102,7 @@ if (!doNotTrack) {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://scotttactical.com">Scott Tactical</a>
+            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
           </div>
 
           
@@ -134,9 +131,9 @@ if (!doNotTrack) {
 
     <nav class="p-crumb">
       <ol class="breadcrumb">
-        <li><a href="http://scotttactical.com"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
         
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://scotttactical.compost/" itemprop="url"><span itemprop="title">post</span></a></li>
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
         
         <li class="active">Deploying Hugo the Golang CMS on DigitalOcean - Nginx</li>
       </ol>
@@ -146,7 +143,7 @@ if (!doNotTrack) {
   <header>
     <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2015-10-22T06:29:31JST">Oct 22, 2015</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://scotttactical.compost/">post</a></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
       
     </ul>
 
@@ -155,49 +152,31 @@ if (!doNotTrack) {
 
   
 
-  <div class="article-body">
-
-<h2 id="deploying-hugo-the-golang-cms-on-digitalocean">Deploying Hugo the Golang CMS on DigitalOcean</h2>
-
+  <div class="article-body"><h2 id="deploying-hugo-the-golang-cms-on-digitalocean">Deploying Hugo the Golang CMS on DigitalOcean</h2>
 <h3 id="creating-a-droplet">Creating a Droplet</h3>
-
 <p>I am a bit partial to CentOS. The lastest version as of this writing is <em>CentOS Linux release 7.1.1503 (Core)</em>.</p>
-
 <p>Setting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done.</p>
-
 <h3 id="install-nginx">Install Nginx</h3>
-
 <h4 id="add-the-epel-repo">Add the epel repo:</h4>
-
 <pre><code>yum install epel-release
 </code></pre>
-
 <h4 id="install">Install</h4>
-
 <pre><code>yum install nginx
 </code></pre>
-
 <h4 id="start-it">Start it</h4>
-
 <pre><code>service nginx start
 systemctl enable nginx
 </code></pre>
-
 <h4 id="create-the-folders">Create the Folders</h4>
-
 <pre><code>mkdir -p /var/www/ursite/
 chown -R nginx:nginx /var/www
 touch /var/www/ursite/index.html - or clone your site
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/ursite
 </code></pre>
-
 <h4 id="configure-nginx">Configure nginx</h4>
-
 <p>open the config file: <code>vim /etc/nginx/conf.d/virtual.conf</code></p>
-
 <p>Add the following:</p>
-
-<pre><code class="language-conf">#
+<pre tabindex="0"><code class="language-conf" data-lang="conf">#
 ## A virtual host using mix of IP-, name-, and port-based configuration
 #
 
@@ -211,26 +190,22 @@ server {
         index  index.html;
     }
 }
-</code></pre>
-
-<h5 id="install-go-hugo">Install  Go + Hugo</h5>
-
+</code></pre><h5 id="install--go--hugo">Install  Go + Hugo</h5>
 <pre><code>yum install go
 </code></pre>
-
 <p>I decided to install from source
 Edit your bash script to have the proper variables in place.</p>
-
 <pre><code>yum install git hg
 export GOPATH=$HOME/go
 go get -v github.com/spf13/hugo
 cp $GOPATH/bin/hugo /usr/local/bin/
 </code></pre>
-
 <p>NOTE: THis actually isn&rsquo;t necessary.  Just check it out and go with it. Afer screwing with it a few minutes I facepalmed&hellip; they are static files. Doh!</p>
 </div>
 
   <footer class="article-footer">
+    
+    
     
     
     
@@ -243,9 +218,9 @@ cp $GOPATH/bin/hugo /usr/local/bin/
       <div>
         <ul class="p-terms">
           
-          <li><a href="http://scotttactical.comtags/go-golang/">go golang</a></li>
+          <li><a href="https://scotttactical.com/tags/go-golang/">go golang</a></li>
           
-          <li><a href="http://scotttactical.comtags/hugo/">hugo</a></li>
+          <li><a href="https://scotttactical.com/tags/hugo/">hugo</a></li>
           
         </ul>
       </div>
@@ -289,25 +264,25 @@ cp $GOPATH/bin/hugo /usr/local/bin/
     </div>
     <div class="list-group">
       
-      <a href="http://scotttactical.com/why-i-converted-to-catholicism/" class="list-group-item">Why I Converted To Catholicism</a>
+      <a href="https://scotttactical.com/why-i-converted-to-catholicism/" class="list-group-item">Why I Converted To Catholicism</a>
       
-      <a href="http://scotttactical.com/ejs-2019-transit/" class="list-group-item">EJS 2019 - The Slow Route There </a>
+      <a href="https://scotttactical.com/ejs-2019-departure-preparations/" class="list-group-item">Easter Jeep Safari 2019 - Departure Preparations</a>
       
-      <a href="http://scotttactical.com/ejs-2019-departure-preparations/" class="list-group-item">Easter Jeep Safari 2019 - Departure Preparations</a>
+      <a href="https://scotttactical.com/ejs-2019-transit/" class="list-group-item">EJS 2019 - The Slow Route There </a>
       
-      <a href="http://scotttactical.com/car-computer-face-recognition/" class="list-group-item">Car Computer Face Recognition</a>
+      <a href="https://scotttactical.com/car-computer-face-recognition/" class="list-group-item">Car Computer Face Recognition</a>
       
-      <a href="http://scotttactical.com/biometric-vehicle-entry-car-computer/" class="list-group-item">Biometric Vehicle Entry</a>
+      <a href="https://scotttactical.com/biometric-vehicle-entry-car-computer/" class="list-group-item">Biometric Vehicle Entry</a>
       
-      <a href="http://scotttactical.com/installing-usb-relay/" class="list-group-item">Installing a USB Relay</a>
+      <a href="https://scotttactical.com/installing-usb-relay/" class="list-group-item">Installing a USB Relay</a>
       
-      <a href="http://scotttactical.com/car-computer-touchscreen-monitor/" class="list-group-item">Car Computer Touchscreen Monitor</a>
+      <a href="https://scotttactical.com/car-computer-touchscreen-monitor/" class="list-group-item">Car Computer Touchscreen Monitor</a>
       
-      <a href="http://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
+      <a href="https://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
       
-      <a href="http://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
+      <a href="https://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
       
-      <a href="http://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
+      <a href="https://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
       
     </div>
   </section>
@@ -315,7 +290,18 @@ cp $GOPATH/bin/hugo /usr/local/bin/
   
   <section class="panel panel-default">
     <div class="panel-heading">
-      <div class="panel-title">GALLERY</div>
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scotttactical.com//categories/software" class="list-group-item">software</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">SERIES</div>
     </div>
     <div class="list-group">
       
@@ -328,25 +314,25 @@ cp $GOPATH/bin/hugo /usr/local/bin/
     </div>
     <div class="list-group">
       
-      <a href="http://scotttactical.com/tags/data" class="list-group-item">data</a>
+      <a href="https://scotttactical.com//tags/data" class="list-group-item">data</a>
       
-      <a href="http://scotttactical.com/tags/technology" class="list-group-item">technology</a>
+      <a href="https://scotttactical.com//tags/technology" class="list-group-item">technology</a>
       
-      <a href="http://scotttactical.com/tags/car-computer" class="list-group-item">car-computer</a>
+      <a href="https://scotttactical.com//tags/car-computer" class="list-group-item">car-computer</a>
       
-      <a href="http://scotttactical.com/tags/69-blazer" class="list-group-item">69-blazer</a>
+      <a href="https://scotttactical.com//tags/69-blazer" class="list-group-item">69-blazer</a>
       
-      <a href="http://scotttactical.com/tags/california" class="list-group-item">california</a>
+      <a href="https://scotttactical.com//tags/california" class="list-group-item">california</a>
       
-      <a href="http://scotttactical.com/tags/photography" class="list-group-item">photography</a>
+      <a href="https://scotttactical.com//tags/photography" class="list-group-item">photography</a>
       
-      <a href="http://scotttactical.com/tags/philosophy" class="list-group-item">philosophy</a>
+      <a href="https://scotttactical.com//tags/philosophy" class="list-group-item">philosophy</a>
       
-      <a href="http://scotttactical.com/tags/restoration" class="list-group-item">restoration</a>
+      <a href="https://scotttactical.com//tags/restoration" class="list-group-item">restoration</a>
       
-      <a href="http://scotttactical.com/tags/devops" class="list-group-item">devops</a>
+      <a href="https://scotttactical.com//tags/devops" class="list-group-item">devops</a>
       
-      <a href="http://scotttactical.com/tags/adventure" class="list-group-item">adventure</a>
+      <a href="https://scotttactical.com//tags/adventure" class="list-group-item">adventure</a>
       
     </div>
   </section>

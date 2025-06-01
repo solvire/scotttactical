@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Writing on Scott Tactical</title>
-    <link>http://scotttactical.com/tags/writing/</link>
-    <description>Recent content in Writing on Scott Tactical</description>
+    <title>writing on Scott Tactical</title>
+    <link>https://scotttactical.com/tags/writing/</link>
+    <description>Recent content in writing on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 08 Nov 2016 16:35:37 -0800</lastBuildDate>
-    
-	<atom:link href="http://scotttactical.com/tags/writing/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 08 Nov 2016 16:35:37 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Writing Novels in Markdown Part 1</title>
-      <link>http://scotttactical.com/writing-novels-in-markdown-part1/</link>
+      <link>https://scotttactical.com/writing-novels-in-markdown-part1/</link>
       <pubDate>Tue, 08 Nov 2016 16:35:37 -0800</pubDate>
       
-      <guid>http://scotttactical.com/writing-novels-in-markdown-part1/</guid>
+      <guid>https://scotttactical.com/writing-novels-in-markdown-part1/</guid>
       <description>Writing in Markdown If you haven&amp;rsquo;t used Markdown to write in a rich(er) text format, then you are missing out. I pretty much write all my technical documentation in Markdown. It&amp;rsquo;s pretty awesome and I don&amp;rsquo;t know why it took me so long to find it. I didn&amp;rsquo;t start using it until around 2013.
 What is Markdown Markdown was created by John Gruber.
 According to Wikipedia.

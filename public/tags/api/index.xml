@@ -1,34 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Api on Scott Tactical</title>
-    <link>http://scotttactical.com/tags/api/</link>
-    <description>Recent content in Api on Scott Tactical</description>
+    <title>api on Scott Tactical</title>
+    <link>https://scotttactical.com/tags/api/</link>
+    <description>Recent content in api on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 10 Dec 2015 07:34:17 -0800</lastBuildDate>
-    
-	<atom:link href="http://scotttactical.com/tags/api/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 10 Dec 2015 07:34:17 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/api/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Health, Interconnectivity - The Data Revolution</title>
-      <link>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</link>
+      <link>https://scotttactical.com/health-medical-interconnectivity-data-revolution/</link>
       <pubDate>Thu, 10 Dec 2015 07:34:17 -0800</pubDate>
       
-      <guid>http://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
-      <description>Health, Medical Interconnectivity and The Coming Data Revolution Johnson Davis&amp;rsquo; Walk Six red indicators breach the serene layout of the medical information dashboard. Gauges, charts and graphs provide human cues concerning the information flowing through the Intra-Medical Services Accountability Pipeline. The IMSAP emerged in evolutionary form as various government, education and enterprises started the race to consume the calculus of living data. And now these machines of data consumption interpret the flow of what some consider the representation of that thing which connects life and machine.</description>
+      <guid>https://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid>
+      <description>Health, Medical Interconnectivity and The Coming Data Revolution Johnson Davis&#39; Walk Six red indicators breach the serene layout of the medical information dashboard. Gauges, charts and graphs provide human cues concerning the information flowing through the Intra-Medical Services Accountability Pipeline. The IMSAP emerged in evolutionary form as various government, education and enterprises started the race to consume the calculus of living data. And now these machines of data consumption interpret the flow of what some consider the representation of that thing which connects life and machine.</description>
     </item>
     
     <item>
       <title>PHP Hypermedia REST API wrapper</title>
-      <link>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
+      <link>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
       <pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
+      <guid>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
       <description>Hypermedia for PHP APIs. Well, here it is. I&amp;rsquo;m finally finishing up my Hypermedia layer for our Laravel 5.1 build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of Internet-of-Things (IoT).
-In Production - Alpha Right now I have it in our very alpha phase version of the software running the LeadFerret business lead search system.</description>
+In Production - Alpha Right now I have it in our very alpha phase version of the software running the LeadFerret business lead search system.
+The project is on github here: PHP Hypermedia API Layer for HATEOAS HTTP or REST Services</description>
     </item>
     
   </channel>

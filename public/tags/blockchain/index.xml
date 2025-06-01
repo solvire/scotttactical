@@ -1,25 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blockchain on Scott Tactical</title>
-    <link>http://scotttactical.com/tags/blockchain/</link>
-    <description>Recent content in Blockchain on Scott Tactical</description>
+    <title>blockchain on Scott Tactical</title>
+    <link>https://scotttactical.com/tags/blockchain/</link>
+    <description>Recent content in blockchain on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 15 Jul 2017 13:01:51 -0700</lastBuildDate>
-    
-	<atom:link href="http://scotttactical.com/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Jul 2017 13:01:51 -0700</lastBuildDate><atom:link href="https://scotttactical.com/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blockchain: End Of War</title>
-      <link>http://scotttactical.com/post/blockchain-end-of-war/</link>
+      <link>https://scotttactical.com/post/blockchain-end-of-war/</link>
       <pubDate>Sat, 15 Jul 2017 13:01:51 -0700</pubDate>
       
-      <guid>http://scotttactical.com/post/blockchain-end-of-war/</guid>
+      <guid>https://scotttactical.com/post/blockchain-end-of-war/</guid>
       <description>Can Blockchain End War This is a very difficult premise to start with. Can a technology solve the problem of war?
-The plague of large scale violence is the manifestation of most of the world&amp;rsquo;s worst vices as a single catastrophic man-made event. Many intelligent people have opined on the causes of war over the years with few coming up with ideas and zero defining concrete solutions to those problems.</description>
+The plague of large scale violence is the manifestation of most of the world&amp;rsquo;s worst vices as a single catastrophic man-made event. Many intelligent people have opined on the causes of war over the years with few coming up with ideas and zero defining concrete solutions to those problems. The best we have come up with is &amp;ldquo;humane&amp;rdquo; ways to conduct war.</description>
     </item>
     
   </channel>

@@ -1,44 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Car Computer on Scott Tactical</title>
-    <link>http://scotttactical.com/tags/car-computer/</link>
-    <description>Recent content in Car Computer on Scott Tactical</description>
+    <title>car computer on Scott Tactical</title>
+    <link>https://scotttactical.com/tags/car-computer/</link>
+    <description>Recent content in car computer on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 11 Apr 2019 20:08:45 -0700</lastBuildDate>
-    
-	<atom:link href="http://scotttactical.com/tags/car-computer/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>EJS 2019 - The Slow Route There </title>
-      <link>http://scotttactical.com/ejs-2019-transit/</link>
-      <pubDate>Thu, 11 Apr 2019 20:08:45 -0700</pubDate>
-      
-      <guid>http://scotttactical.com/ejs-2019-transit/</guid>
-      <description>The First Leg We didn&amp;rsquo;t make it out on time. Obviously because I got home at 2am and didn&amp;rsquo;t want to drive this beast at that speed.
-The schedule manager Mariah insisted that we could get to Vegas in 4 hours. However she never went with a trail truck.
-To Vegas The first leg of the trip was uneventful. The truck was operating gracefully. The sound on the road</description>
-    </item>
-    
+    <lastBuildDate>Thu, 11 Apr 2019 20:08:45 -0700</lastBuildDate><atom:link href="https://scotttactical.com/tags/car-computer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Easter Jeep Safari 2019 - Departure Preparations</title>
-      <link>http://scotttactical.com/ejs-2019-departure-preparations/</link>
+      <link>https://scotttactical.com/ejs-2019-departure-preparations/</link>
       <pubDate>Thu, 11 Apr 2019 20:08:45 -0700</pubDate>
       
-      <guid>http://scotttactical.com/ejs-2019-departure-preparations/</guid>
+      <guid>https://scotttactical.com/ejs-2019-departure-preparations/</guid>
       <description>Final Preparations Here is a list of final items pulled together before launching.
 Interior We had to get the rear seat installed. You know. So that the passenger wont fall out? There were some guide holes that we tried to use and then realized that it was not going to fit and had to move the seat around. Luckily that landed on a tapped plate which Greg insightfully set the front leg on it with a new plate and welded it in place.</description>
     </item>
     
     <item>
+      <title>EJS 2019 - The Slow Route There </title>
+      <link>https://scotttactical.com/ejs-2019-transit/</link>
+      <pubDate>Thu, 11 Apr 2019 20:08:45 -0700</pubDate>
+      
+      <guid>https://scotttactical.com/ejs-2019-transit/</guid>
+      <description>The First Leg We didn&amp;rsquo;t make it out on time. Obviously because I got home at 2am and didn&amp;rsquo;t want to drive this beast at that speed.
+The schedule manager Mariah insisted that we could get to Vegas in 4 hours. However she never went with a trail truck.
+To Vegas The first leg of the trip was uneventful. The truck was operating gracefully. The sound on the road
+K5 Blazer Bench Seat Install  </description>
+    </item>
+    
+    <item>
       <title>Car Computer Face Recognition</title>
-      <link>http://scotttactical.com/car-computer-face-recognition/</link>
+      <link>https://scotttactical.com/car-computer-face-recognition/</link>
       <pubDate>Fri, 29 Mar 2019 20:08:45 -0700</pubDate>
       
-      <guid>http://scotttactical.com/car-computer-face-recognition/</guid>
+      <guid>https://scotttactical.com/car-computer-face-recognition/</guid>
       <description>Facial Recognition Computer Vision Libraries OpenCV dlib Installation cmake This is simple enough. But it&amp;rsquo;s worth calling out individually. If you do deep work with these binaries then you will start to mess with cmake. It&amp;rsquo;s a bit tough to build binaries.
 https://cmake.org/install/
 apt-get install cmake
@@ -48,10 +45,10 @@ It may end up that you will need to compile dlib.</description>
     
     <item>
       <title>Biometric Vehicle Entry</title>
-      <link>http://scotttactical.com/biometric-vehicle-entry-car-computer/</link>
+      <link>https://scotttactical.com/biometric-vehicle-entry-car-computer/</link>
       <pubDate>Tue, 19 Mar 2019 17:13:00 -0700</pubDate>
       
-      <guid>http://scotttactical.com/biometric-vehicle-entry-car-computer/</guid>
+      <guid>https://scotttactical.com/biometric-vehicle-entry-car-computer/</guid>
       <description>Biometrics From Wiki:
  Biometrics is the technical term for body measurements and calculations. It refers to metrics related to human characteristics. Biometrics authentication (or realistic authentication) is used in computer science as a form of identification and access control
  Let the conspiracy theories abound. Actually most of the worries before are no longer theories. The capabilities of the biometric tools now are such that the human mind may no longer be the master of the visual recognition spectrum.</description>
@@ -59,11 +56,11 @@ It may end up that you will need to compile dlib.</description>
     
     <item>
       <title>Installing a USB Relay</title>
-      <link>http://scotttactical.com/installing-usb-relay/</link>
+      <link>https://scotttactical.com/installing-usb-relay/</link>
       <pubDate>Mon, 18 Mar 2019 18:16:54 -0700</pubDate>
       
-      <guid>http://scotttactical.com/installing-usb-relay/</guid>
-      <description>USB HID Relay   USB Relay on Ubuntu Linux I am starting off with this hardware:
+      <guid>https://scotttactical.com/installing-usb-relay/</guid>
+      <description>USB HID Relay  USB Relay on Ubuntu Linux I am starting off with this hardware:
 KNACRO 4-Channel 12V USB Control Switch Relay Module
 This was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.
 Thank you to @darrylb123 for https://github.com/darrylb123/usbrelay
@@ -72,33 +69,33 @@ There was a python contribution but it broke the build. I spent a few hours tryi
     
     <item>
       <title>Car Computer Touchscreen Monitor</title>
-      <link>http://scotttactical.com/car-computer-touchscreen-monitor/</link>
+      <link>https://scotttactical.com/car-computer-touchscreen-monitor/</link>
       <pubDate>Mon, 11 Mar 2019 21:15:12 -0700</pubDate>
       
-      <guid>http://scotttactical.com/car-computer-touchscreen-monitor/</guid>
+      <guid>https://scotttactical.com/car-computer-touchscreen-monitor/</guid>
       <description>How do you control your new custom Linux powered car computer? With a touch screen monitor obviously. And maybe a bluetooth keyboard and mouse.
 I would like this to feel like I am using a Steampunk hacker version of a Tesla.
-  Tesla Streamliner Concept   Well maybe not all that.
+&amp;lt;a href=&amp;quot;https://www.greencarreports.com/news/1093773_icon-helios-is-gorgeous-tesla-powered-electric-streamliner-concept&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;Tesla Streamliner Concept&amp;lt;/a&amp;gt;  Well maybe not all that.
 Maybe more like this:
-  Race Truck Dash   Touch Screens I started a similar project about 6 years ago on another vehicle.</description>
+Race Truck Dash  Touch Screens I started a similar project about 6 years ago on another vehicle.</description>
     </item>
     
     <item>
       <title>Linux USB Relay Controller</title>
-      <link>http://scotttactical.com/linux-usb-relay-controller/</link>
+      <link>https://scotttactical.com/linux-usb-relay-controller/</link>
       <pubDate>Mon, 11 Mar 2019 01:10:53 -0700</pubDate>
       
-      <guid>http://scotttactical.com/linux-usb-relay-controller/</guid>
+      <guid>https://scotttactical.com/linux-usb-relay-controller/</guid>
       <description>Finding A Relay Controller One of my bigger worries is working with peripherals. I needed to find a camera and I felt like that was going to be easy enough. The relay controller will hit the actuators running the door locks.
 What Is A Relay Switch Most things inside a car take a decent amount of power to actuate or power them. The car is limited to 12V DC and your other measurements are amps and watts.</description>
     </item>
     
     <item>
       <title>Car Computer Camera</title>
-      <link>http://scotttactical.com/car-computer-camera/</link>
+      <link>https://scotttactical.com/car-computer-camera/</link>
       <pubDate>Sat, 09 Mar 2019 14:33:06 -0800</pubDate>
       
-      <guid>http://scotttactical.com/car-computer-camera/</guid>
+      <guid>https://scotttactical.com/car-computer-camera/</guid>
       <description>Camera Overview Finding a good camera shouldn&amp;rsquo;t be too difficult given how many cameras exist now. They are literally everywhere.
 Camera Criteria I learned right away that the cameras were pretty much all standardized. They came in a few flavors but overall they were either too small, too wide, or too expensive. That helped me limit stuff down a lot.
  small not much distortion (fish eye is bad) resolution &amp;gt; 720p color USB preferable  Preferences  Embeddable Flush mounted White 1080p hardened housing  Hardware Choices First Find I found this one right off by searching for &amp;ldquo;USB Camera&amp;rdquo;.</description>
@@ -106,10 +103,10 @@ Camera Criteria I learned right away that the cameras were pretty much all stand
     
     <item>
       <title>Car Computer Hardware</title>
-      <link>http://scotttactical.com/car-computer-hardware/</link>
+      <link>https://scotttactical.com/car-computer-hardware/</link>
       <pubDate>Tue, 05 Mar 2019 21:32:16 -0800</pubDate>
       
-      <guid>http://scotttactical.com/car-computer-hardware/</guid>
+      <guid>https://scotttactical.com/car-computer-hardware/</guid>
       <description>Searching For The Right Car Computer Hardware My trip to Fry&amp;rsquo;s in LA this morning wasn&amp;rsquo;t as great as I hoped. But I did get some great ideas on how to accomplish things.
 There were two major themes in the hardware that I looked at.
  Small isolated modular things Apple stuff  There wasn&amp;rsquo;t much for integration or components that were universal. Either they were for their own little world or they were for some subset of the Apple ecosystem.</description>
@@ -117,10 +114,10 @@ There were two major themes in the hardware that I looked at.
     
     <item>
       <title>Car Computer Intro</title>
-      <link>http://scotttactical.com/car-computer-intro/</link>
+      <link>https://scotttactical.com/car-computer-intro/</link>
       <pubDate>Tue, 05 Mar 2019 21:32:16 -0800</pubDate>
       
-      <guid>http://scotttactical.com/car-computer-intro/</guid>
+      <guid>https://scotttactical.com/car-computer-intro/</guid>
       <description>Introduction To STAC Car Computer The purpose of the build out is to take a 100% analog vehicle and bring in modern creature comforts and a modern driveline. In addition to this I will be integrating a few technology tools that are developed at my current work.
 Scenario In the morning I would like to walk out to my car, walk up to the door and have it unlock for me.</description>
     </item>

@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Performance on Scott Tactical</title>
-    <link>http://scotttactical.com/tags/performance/</link>
-    <description>Recent content in Performance on Scott Tactical</description>
+    <title>performance on Scott Tactical</title>
+    <link>https://scotttactical.com/tags/performance/</link>
+    <description>Recent content in performance on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 04 Nov 2015 12:57:42 -0800</lastBuildDate>
-    
-	<atom:link href="http://scotttactical.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 04 Nov 2015 12:57:42 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PHPunit Slowness Performance Suggestions</title>
-      <link>http://scotttactical.com/performance-suggestions-phpunit-slowness/</link>
+      <link>https://scotttactical.com/performance-suggestions-phpunit-slowness/</link>
       <pubDate>Wed, 04 Nov 2015 12:57:42 -0800</pubDate>
       
-      <guid>http://scotttactical.com/performance-suggestions-phpunit-slowness/</guid>
+      <guid>https://scotttactical.com/performance-suggestions-phpunit-slowness/</guid>
       <description>PHPUnit Is Slowness I love PHPUnit don&amp;rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&amp;rsquo;s like the code got yo back bro! Build code that lasts.
 EDIT: I know most of the problems are inherent with tests not the testing framework. However, my requirements dictate how I use it to a certain extent. Peace.
 PHPUnit is painfully slow. Seriously. Though. Maybe having a concurrent environment it can run it would help.</description>

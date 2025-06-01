@@ -4,11 +4,11 @@
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.92.2" />
 
 
 
-<link rel="canonical" href="http://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/">
+<link rel="canonical" href="https://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
@@ -20,18 +20,18 @@
 
 <meta property="og:title" content="How To Setup a MapR Cluster on Ubuntu - Scott Tactical">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/">
-<meta property="og:image" content="http://scotttactical.comimages/default.png">
+<meta property="og:url" content="https://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/">
+<meta property="og:image" content="https://scotttactical.com/images/default.png">
 <meta property="og:site_name" content="Scott Tactical">
 <meta property="og:description" content="How To Install MapR Test Cluster This document covers my installation of MapR Converged Platform on an Ubuntu 14.04 cluster.We are running on the DTAC private cloud so some of the screenshots will show our internal interface. All instances are running in a VM.Most of this follows the suggested flow given in the lab manual from MapR. Initially I launched the cluster on CentOS 7.3 but that wasn&amp;rsquo;t supported and it failed.">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Scott Tactical">
-<meta name="twitter:url" content="http://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/">
+<meta name="twitter:url" content="https://scotttactical.com/post/how-to-setup-a-mapr-cluster-on-ubuntu/">
 <meta name="twitter:title" content="How To Setup a MapR Cluster on Ubuntu - Scott Tactical">
 <meta name="twitter:description" content="How To Install MapR Test Cluster This document covers my installation of MapR Converged Platform on an Ubuntu 14.04 cluster.We are running on the DTAC private cloud so some of the screenshots will show our internal interface. All instances are running in a VM.Most of this follows the suggested flow given in the lab manual from MapR. Initially I launched the cluster on CentOS 7.3 but that wasn&amp;rsquo;t supported and it failed.">
-<meta name="twitter:image" content="http://scotttactical.comimages/default.png">
+<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
 
 
 <script type="application/ld+json">
@@ -40,12 +40,12 @@
     "@type": "NewsArticle",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id":"http://scotttactical.com"
+      "@id":"https:\/\/scotttactical.com\/"
     },
     "headline": "How To Setup a MapR Cluster on Ubuntu - Scott Tactical",
     "image": {
       "@type": "ImageObject",
-      "url": "http://scotttactical.comimages/default.png",
+      "url": "https:\/\/scotttactical.com\/images\/default.png",
       "height": 800,
       "width": 800
     },
@@ -60,19 +60,17 @@
       "name": "Scott Tactical",
       "logo": {
         "@type": "ImageObject",
-        "url": "http://scotttactical.comimages/logo.png",
+        "url": "https:\/\/scotttactical.com\/images/logo.png",
         "width": 600,
         "height": 60
       }
     },
-    "description": "How To Install MapR Test Cluster This document covers my installation of MapR Converged Platform on an Ubuntu 14.04 cluster.
-We are running on the DTAC private cloud so some of the screenshots will show our internal interface. All instances are running in a VM.
-Most of this follows the suggested flow given in the lab manual from MapR. Initially I launched the cluster on CentOS 7.3 but that wasn&rsquo;t supported and it failed."
+    "description": "How To Install MapR Test Cluster This document covers my installation of MapR Converged Platform on an Ubuntu 14.04 cluster.\nWe are running on the DTAC private cloud so some of the screenshots will show our internal interface. All instances are running in a VM.\nMost of this follows the suggested flow given in the lab manual from MapR. Initially I launched the cluster on CentOS 7.3 but that wasn\u0026rsquo;t supported and it failed."
   }
 </script>
 
 
-    <link href="http://scotttactical.comcss/styles.css" rel="stylesheet">
+    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
     
 
   </head>
@@ -92,7 +90,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     
 
     <header class="l-header">
@@ -105,7 +102,7 @@ if (!doNotTrack) {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://scotttactical.com">Scott Tactical</a>
+            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
           </div>
 
           
@@ -134,9 +131,9 @@ if (!doNotTrack) {
 
     <nav class="p-crumb">
       <ol class="breadcrumb">
-        <li><a href="http://scotttactical.com"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
         
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://scotttactical.compost/" itemprop="url"><span itemprop="title">post</span></a></li>
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
         
         <li class="active">How To Setup a MapR Cluster on Ubuntu</li>
       </ol>
@@ -146,7 +143,7 @@ if (!doNotTrack) {
   <header>
     <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2017-01-05T16:18:32JST">Jan 5, 2017</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://scotttactical.compost/">post</a></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
       
     </ul>
 
@@ -155,20 +152,12 @@ if (!doNotTrack) {
 
   
 
-  <div class="article-body">
-
-<h2 id="how-to-install-mapr-test-cluster">How To Install MapR Test Cluster</h2>
-
+  <div class="article-body"><h2 id="how-to-install-mapr-test-cluster">How To Install MapR Test Cluster</h2>
 <p>This document covers my installation of MapR Converged Platform on an Ubuntu 14.04 cluster.</p>
-
 <p>We are running on the DTAC private cloud so some of the screenshots will show our internal interface. All instances are running in a VM.</p>
-
 <p>Most of this follows the suggested flow given in the lab manual from MapR. Initially I launched the cluster on CentOS 7.3 but that wasn&rsquo;t supported and it failed. The same with Ubuntu 16.</p>
-
 <h3 id="launch-virtual-machines">Launch Virtual Machines</h3>
-
 <p>I launched 4 virtual machines with the following specs:</p>
-
 <ul>
 <li>OS: Ubuntu 14.04</li>
 <li>2 processer cores</li>
@@ -179,61 +168,36 @@ if (!doNotTrack) {
 <li>1 public IP nic  1GbE</li>
 <li>1 private IP nic  1GbE</li>
 </ul>
-
-<figure>
-  <img src="http://scotttactical.com/images/mapr1.png" alt="How To Setup a MapR Cluster on Ubuntu /images/mapr1.png">
-  
-  <figcaption>
-    
-    OpenNebula
-    
-  </figcaption>
-  
-</figure>
-
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<pre><code>OpenNebula
+</code></pre>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h3 id="csshx">CsshX</h3>
-
 <p>If you are working on multiple servers it&rsquo;s best to use a unified command broadcast tool. It makes life so much easier. This is not the same as the clustershell that will be used from node to node.</p>
-
 <pre><code>csshx --login root --ssh_args &quot;-i .ssh/YOURKEY&quot; host1 host2 host3 host4
 </code></pre>
-
-<figure>
-  <img src="http://scotttactical.com/images/mapr2.png" alt="How To Setup a MapR Cluster on Ubuntu /images/mapr2.png">
-  
-  <figcaption>
-    
-    OpenNebula
-    
-  </figcaption>
-  
-</figure>
-
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<pre><code>OpenNebula
+</code></pre>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h3 id="ssh-keys">SSH keys</h3>
-
 <p>You will need to setup passwordless authentication on all the severs. I always do that for external acounts but you need it make sure you can get from node to node.</p>
-
 <h3 id="housekeeping">HouseKeeping</h3>
-
 <pre><code>apt update
 apt upgrade
 apt install wget unzip clustershell vim htop nfs-common openjdk-7-jdk ntp ntpdate
 </code></pre>
-
 <h4 id="open-security">Open Security</h4>
-
 <p>I don&rsquo;t like this but MapR likes to have the app armor off. I&rsquo;ll be working on getting that or selinux for CentOS back. It could save you some pain later.</p>
-
 <pre><code>service apparmor stop
 update-rc.d -f apparmor remove
 </code></pre>
-
 <h3 id="keys-for-nodes">Keys for Nodes</h3>
-
 <p>Set up user mapr and give it keys. Generate keys for the nodes. See <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Generate SSH Keys</a> from Github.</p>
-
 <pre><code>useradd -m mapr
 usermod -aG sudo mapr
 mkdir /home/mapr/.ssh
@@ -243,76 +207,48 @@ cp ~/.ssh/id_rsa /home/mapr/.ssh/
 chmod 600 ~/.ssh/id_rsa /home/mapr/.ssh/id_rsa /home/mapr/.ssh/authorized_keys
 chown mapr:mapr -R /home/mapr/.ssh
 </code></pre>
-
 <h3 id="hostnames">Hostnames</h3>
-
 <p>It is important for the servers to have the hostnames to the local internal IP addresses set. I use AWS Route53 and that seems to work fine. Of course I need external connectivity to get out to their DNS. I set up the internal host names as mapr1-4 and add a DNS search parameter to the resolv.conf</p>
-
 <h3 id="clustershell">Clustershell</h3>
-
 <p>The cluster shell should have been installed via apt above.</p>
-
 <p>Edit the cluster shell config.</p>
-
 <pre><code>vim /etc/clustershell/groups
 echo &quot;all: &lt;IP addr 1&gt; &lt;IP addr 1&gt; &lt;IP addr 2&gt; &lt;IP addr 4&gt;&quot; &gt;&gt; /etc/clustershell/groups
 </code></pre>
-
 <p>Then scan for the keys.</p>
-
 <p>As root and mapr</p>
-
 <pre><code>ssh-keyscan &lt;IP addr 1&gt; &lt;IP addr 1&gt; &lt;IP addr 2&gt; &lt;IP addr 4&gt; &gt;&gt; ~/.ssh/known_hosts
 </code></pre>
-
 <p>Test it:</p>
-
 <pre><code>clush -a date
 </code></pre>
-
 <h3 id="set-up-ntpd">Set up ntpd</h3>
-
 <p>You will need to set up a local ntp server according to your own documentation. This is recommended by the MapR documentation.</p>
-
 <h2 id="install-mapr">Install MapR</h2>
-
 <h3 id="download-the-lab-files">Download the Lab Files</h3>
-
 <p>This install was done while going through the MapR training lab. So I have used their files for this purpose.</p>
-
 <pre><code>mkdir /opt/mapr
 cd /opt/mapr
 wget http://course-files.mapr.com/ADM2000/ADM200_Lab1.2.zip
 unzip ADM200_Lab1.2.zip
 ls labfiles
 </code></pre>
-
 <h3 id="run-validation">Run Validation</h3>
-
 <h4 id="run-a-cluster-audit">Run a Cluster Audit</h4>
-
 <pre><code>./labfiles/cluster-audit.sh | tee cluster-audit.log
 </code></pre>
-
 <p>You shouldn&rsquo;t see any errors or exit codes. Please fix if you find them.</p>
-
 <h4 id="evaluate-network-bandwidth">Evaluate Network Bandwidth</h4>
-
 <p>Here is where I really realized that I need faster networking in our data center. I will be posting an updated article after I have had time to build and upgrade the networking.</p>
-
 <pre><code>./labfiles/network-test.sh | tee network-test.log
 
 172.16.0.50: server-172.16.0.48-rpctest.log:Rate:  58.65 mb/s, time: 89.4174 sec, #rpcs 20007, rpcs/sec 223.748
 172.16.0.49: server-172.16.0.47-rpctest.log:Rate:  58.65 mb/s, time: 89.4173 sec, #rpcs 20007, rpcs/sec 223.749
 </code></pre>
-
 <h4 id="evaluate-data-flow">Evaluate Data Flow</h4>
-
 <pre><code>clush -Ba /opt/mapr/labfiles/memory-test.sh | tee memory-test.log
 </code></pre>
-
 <p>Stream will give you some interesting information about your throughput.</p>
-
 <pre><code>-------------------------------------------------------------
 Function      Rate (MB/s)   Avg time     Min time     Max time
 Copy:       13793.8268       0.0963       0.0928       0.1045
@@ -320,41 +256,29 @@ Scale:      15898.8540       0.0843       0.0805       0.1087
 Add:        20007.9099       0.0993       0.0960       0.1102
 Triad:      19926.1249       0.0994       0.0964       0.1068
 </code></pre>
-
 <h4 id="evaluate-raw-disk-performance">Evaluate Raw Disk Performance</h4>
-
 <p>Be careful. This will erase everything on the disks. We set up 3 disks on each node but since they are obviously virtual let&rsquo;s just run it on one. I also don&rsquo;t feel like beating up SSD&rsquo;s like this so I skip it sometimes.</p>
-
 <pre><code>clush -Ba /opt/mapr/labfiles/disk-test.sh
 </code></pre>
-
 <h3 id="install-a-mapr-cluster">Install A MapR Cluster</h3>
-
 <h4 id="get-the-installer">Get the Installer</h4>
-
 <pre><code>wget http://package.mapr.com/releases/installer/mapr-setup.sh
 bash mapr-setup.sh
 </code></pre>
-
 <p>Run through the setup and let it know what you decide. It will probably try to install several dependencies.</p>
-
-<p><img src="/images/mapr3.png" alt="MapR Installer" /></p>
-
+<p><img src="/images/mapr3.png" alt="MapR Installer"></p>
 <h3 id="finish-install">Finish Install</h3>
-
 <p>Go to the GUI and run through the rest of the install. The installer will give you the url and the port.</p>
-
 <pre><code>https://YOURHOST:9443/
 </code></pre>
-
-<p><img src="/images/mapr4.png" alt="MapR GUI Installer" /></p>
-
+<p><img src="/images/mapr4.png" alt="MapR GUI Installer"></p>
 <p>You will be notified of any discrepancies. It is best not to ignore these in a production environment. Of course I didn&rsquo;t have enough room on certain things, but I went ahead anyway.</p>
-
-<p><img src="/images/mapr5.png" alt="MapR GUI Installer" /></p>
+<p><img src="/images/mapr5.png" alt="MapR GUI Installer"></p>
 </div>
 
   <footer class="article-footer">
+    
+    
     
     
     
@@ -367,7 +291,7 @@ bash mapr-setup.sh
       <div>
         <ul class="p-terms">
           
-          <li><a href="http://scotttactical.comtags/technology/">technology</a></li>
+          <li><a href="https://scotttactical.com/tags/technology/">technology</a></li>
           
         </ul>
       </div>
@@ -411,25 +335,25 @@ bash mapr-setup.sh
     </div>
     <div class="list-group">
       
-      <a href="http://scotttactical.com/why-i-converted-to-catholicism/" class="list-group-item">Why I Converted To Catholicism</a>
+      <a href="https://scotttactical.com/why-i-converted-to-catholicism/" class="list-group-item">Why I Converted To Catholicism</a>
       
-      <a href="http://scotttactical.com/ejs-2019-transit/" class="list-group-item">EJS 2019 - The Slow Route There </a>
+      <a href="https://scotttactical.com/ejs-2019-departure-preparations/" class="list-group-item">Easter Jeep Safari 2019 - Departure Preparations</a>
       
-      <a href="http://scotttactical.com/ejs-2019-departure-preparations/" class="list-group-item">Easter Jeep Safari 2019 - Departure Preparations</a>
+      <a href="https://scotttactical.com/ejs-2019-transit/" class="list-group-item">EJS 2019 - The Slow Route There </a>
       
-      <a href="http://scotttactical.com/car-computer-face-recognition/" class="list-group-item">Car Computer Face Recognition</a>
+      <a href="https://scotttactical.com/car-computer-face-recognition/" class="list-group-item">Car Computer Face Recognition</a>
       
-      <a href="http://scotttactical.com/biometric-vehicle-entry-car-computer/" class="list-group-item">Biometric Vehicle Entry</a>
+      <a href="https://scotttactical.com/biometric-vehicle-entry-car-computer/" class="list-group-item">Biometric Vehicle Entry</a>
       
-      <a href="http://scotttactical.com/installing-usb-relay/" class="list-group-item">Installing a USB Relay</a>
+      <a href="https://scotttactical.com/installing-usb-relay/" class="list-group-item">Installing a USB Relay</a>
       
-      <a href="http://scotttactical.com/car-computer-touchscreen-monitor/" class="list-group-item">Car Computer Touchscreen Monitor</a>
+      <a href="https://scotttactical.com/car-computer-touchscreen-monitor/" class="list-group-item">Car Computer Touchscreen Monitor</a>
       
-      <a href="http://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
+      <a href="https://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
       
-      <a href="http://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
+      <a href="https://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
       
-      <a href="http://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
+      <a href="https://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
       
     </div>
   </section>
@@ -437,7 +361,18 @@ bash mapr-setup.sh
   
   <section class="panel panel-default">
     <div class="panel-heading">
-      <div class="panel-title">GALLERY</div>
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://scotttactical.com//categories/software" class="list-group-item">software</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">SERIES</div>
     </div>
     <div class="list-group">
       
@@ -450,25 +385,25 @@ bash mapr-setup.sh
     </div>
     <div class="list-group">
       
-      <a href="http://scotttactical.com/tags/data" class="list-group-item">data</a>
+      <a href="https://scotttactical.com//tags/data" class="list-group-item">data</a>
       
-      <a href="http://scotttactical.com/tags/technology" class="list-group-item">technology</a>
+      <a href="https://scotttactical.com//tags/technology" class="list-group-item">technology</a>
       
-      <a href="http://scotttactical.com/tags/car-computer" class="list-group-item">car-computer</a>
+      <a href="https://scotttactical.com//tags/car-computer" class="list-group-item">car-computer</a>
       
-      <a href="http://scotttactical.com/tags/69-blazer" class="list-group-item">69-blazer</a>
+      <a href="https://scotttactical.com//tags/69-blazer" class="list-group-item">69-blazer</a>
       
-      <a href="http://scotttactical.com/tags/california" class="list-group-item">california</a>
+      <a href="https://scotttactical.com//tags/california" class="list-group-item">california</a>
       
-      <a href="http://scotttactical.com/tags/photography" class="list-group-item">photography</a>
+      <a href="https://scotttactical.com//tags/photography" class="list-group-item">photography</a>
       
-      <a href="http://scotttactical.com/tags/philosophy" class="list-group-item">philosophy</a>
+      <a href="https://scotttactical.com//tags/philosophy" class="list-group-item">philosophy</a>
       
-      <a href="http://scotttactical.com/tags/restoration" class="list-group-item">restoration</a>
+      <a href="https://scotttactical.com//tags/restoration" class="list-group-item">restoration</a>
       
-      <a href="http://scotttactical.com/tags/devops" class="list-group-item">devops</a>
+      <a href="https://scotttactical.com//tags/devops" class="list-group-item">devops</a>
       
-      <a href="http://scotttactical.com/tags/adventure" class="list-group-item">adventure</a>
+      <a href="https://scotttactical.com//tags/adventure" class="list-group-item">adventure</a>
       
     </div>
   </section>

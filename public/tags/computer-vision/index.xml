@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Computer Vision on Scott Tactical</title>
-    <link>http://scotttactical.com/tags/computer-vision/</link>
-    <description>Recent content in Computer Vision on Scott Tactical</description>
+    <title>computer vision on Scott Tactical</title>
+    <link>https://scotttactical.com/tags/computer-vision/</link>
+    <description>Recent content in computer vision on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 29 Mar 2019 20:08:45 -0700</lastBuildDate>
-    
-	<atom:link href="http://scotttactical.com/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 29 Mar 2019 20:08:45 -0700</lastBuildDate><atom:link href="https://scotttactical.com/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Car Computer Face Recognition</title>
-      <link>http://scotttactical.com/car-computer-face-recognition/</link>
+      <link>https://scotttactical.com/car-computer-face-recognition/</link>
       <pubDate>Fri, 29 Mar 2019 20:08:45 -0700</pubDate>
       
-      <guid>http://scotttactical.com/car-computer-face-recognition/</guid>
+      <guid>https://scotttactical.com/car-computer-face-recognition/</guid>
       <description>Facial Recognition Computer Vision Libraries OpenCV dlib Installation cmake This is simple enough. But it&amp;rsquo;s worth calling out individually. If you do deep work with these binaries then you will start to mess with cmake. It&amp;rsquo;s a bit tough to build binaries.
 https://cmake.org/install/
 apt-get install cmake

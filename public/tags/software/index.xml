@@ -1,53 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Software on Scott Tactical</title>
-    <link>http://scotttactical.com/tags/software/</link>
-    <description>Recent content in Software on Scott Tactical</description>
+    <title>software on Scott Tactical</title>
+    <link>https://scotttactical.com/tags/software/</link>
+    <description>Recent content in software on Scott Tactical</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 29 Mar 2016 16:14:48 -0700</lastBuildDate>
-    
-	<atom:link href="http://scotttactical.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 29 Mar 2016 16:14:48 -0700</lastBuildDate><atom:link href="https://scotttactical.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dymo LabelWriter on Mac OSX - JavaScript</title>
-      <link>http://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</link>
+      <link>https://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</link>
       <pubDate>Tue, 29 Mar 2016 16:14:48 -0700</pubDate>
       
-      <guid>http://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</guid>
+      <guid>https://scotttactical.com/setup-dymo-labelwriter-mac-javascript/</guid>
       <description>Setup - Dymo LabelWriter 450 on Mac OSX The clinic software requires the ability to print labels adhoc and by event. This requires that the client be able to initiate the labels. There are no requirements that the backend server be able to print labels. Thank goodness. That requires something akin to a fulfillment center and probably integration with a 3rd app. Welcome: disparate stand-alone boxes.
 Install App and Drivers Good job guys.</description>
     </item>
     
     <item>
       <title>Django Search: Multiple Fields and Full Text</title>
-      <link>http://scotttactical.com/django-search-multiple-fields/</link>
+      <link>https://scotttactical.com/django-search-multiple-fields/</link>
       <pubDate>Tue, 22 Mar 2016 22:34:50 -0700</pubDate>
       
-      <guid>http://scotttactical.com/django-search-multiple-fields/</guid>
+      <guid>https://scotttactical.com/django-search-multiple-fields/</guid>
       <description>Text Search - Django Model Fields Django has a pretty flexible ORM, but sometimes clients need a free-form text search to get down to the content that you are looking for. It is beyond the capability of most engineers to build a comprehensive search tool and shoehorn it into an existing application. There are people working on these problems for years.
 This does remind me of a senior boss that asked me to add a fuzzy search field to an application and that it was &amp;ldquo;super simple&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Migrate A Private GitHub Repository to Free Bitbucket in Roughly 7 Easy Steps</title>
-      <link>http://scotttactical.com/migrate-private-github-repo-bitbucket/</link>
+      <link>https://scotttactical.com/migrate-private-github-repo-bitbucket/</link>
       <pubDate>Tue, 23 Feb 2016 21:28:23 -0800</pubDate>
       
-      <guid>http://scotttactical.com/migrate-private-github-repo-bitbucket/</guid>
+      <guid>https://scotttactical.com/migrate-private-github-repo-bitbucket/</guid>
       <description>Why Not GitHub GitHub is Great Don&amp;rsquo;t get me wrong. I would recommend using this service for a number of reasons that are not fiscally motivated. It isn&amp;rsquo;t whether GitHub.com is good or not. There is a matter of economics at play though.
 As a startup I just don&amp;rsquo;t have the extra 25/mo to throw into GitHub business account. It looks cool that I have an organization there and there are more badges.</description>
     </item>
     
     <item>
       <title>Try Not 2 Fuck Up Ur Engineering</title>
-      <link>http://scotttactical.com/try-not-2-fuck-up-ur-engineering/</link>
+      <link>https://scotttactical.com/try-not-2-fuck-up-ur-engineering/</link>
       <pubDate>Tue, 01 Dec 2015 10:43:58 -0800</pubDate>
       
-      <guid>http://scotttactical.com/try-not-2-fuck-up-ur-engineering/</guid>
+      <guid>https://scotttactical.com/try-not-2-fuck-up-ur-engineering/</guid>
       <description>Leadership Checklist for Non-Technical Managers
 How do you build software that provides value to both clients, owners and engineers?
 This list has started as a list of notes that I kept over the last few years. Yes, this is the abbreviated version of Management For Quality Software.
