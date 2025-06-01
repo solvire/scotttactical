@@ -1,22 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>networking on Scott Tactical</title>
-    <link>https://scotttactical.com/tags/networking/</link>
-    <description>Recent content in networking on Scott Tactical</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 04 Jan 2017 06:41:07 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/networking/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>SFP vs. QSFP</title>
-      <link>https://scotttactical.com/post/sfp-vs.-qsfp/</link>
-      <pubDate>Wed, 04 Jan 2017 06:41:07 -0800</pubDate>
-      
-      <guid>https://scotttactical.com/post/sfp-vs.-qsfp/</guid>
-      <description>Networking Transceivers This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent. After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.
-Again this page is mostly for my notes.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>networking on Scott Tactical</title><link>https://scotttactical.com/tags/networking/</link><description>Recent content in networking on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Wed, 04 Jan 2017 06:41:07 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/networking/index.xml" rel="self" type="application/rss+xml"/><item><title>SFP vs. QSFP</title><link>https://scotttactical.com/post/sfp-vs.-qsfp/</link><pubDate>Wed, 04 Jan 2017 06:41:07 -0800</pubDate><guid>https://scotttactical.com/post/sfp-vs.-qsfp/</guid><description>Networking Transceivers This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent. After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.
+Again this page is mostly for my notes.</description></item></channel></rss>

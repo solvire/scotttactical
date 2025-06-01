@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-<meta name="pinterest" content="nopin">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.92.2" />
-
-
-
-<link rel="canonical" href="https://scotttactical.com/to-hiphop-or-not-php-hhvm/">
-
-
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>To HipHop or Not - PHP and HHVM - Scott Tactical</title>
-    
-<meta name="description" content="We are discussing the plausibility of using HHVM inside this current infrastructure.Our requirements are not very application server CPU intensive so it isn&amp;rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.Short History Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information.">
-
+<!doctype html><html>
+<head>
+<meta charset=utf-8>
+<meta name=pinterest content="nopin">
+<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel=canonical href=https://scotttactical.com/to-hiphop-or-not-php-hhvm/>
+<link href=//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css rel=stylesheet>
+<link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+<link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css>
+<title>To HipHop or Not - PHP and HHVM - Scott Tactical</title>
+<meta name=description content="We are discussing the plausibility of using HHVM inside this current infrastructure.Our requirements are not very application server CPU intensive so it isn&amp;rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.Short History Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information.">
 <meta property="og:title" content="To HipHop or Not - PHP and HHVM - Scott Tactical">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scotttactical.com/to-hiphop-or-not-php-hhvm/">
@@ -25,147 +16,70 @@
 <meta property="og:site_name" content="Scott Tactical">
 <meta property="og:description" content="We are discussing the plausibility of using HHVM inside this current infrastructure.Our requirements are not very application server CPU intensive so it isn&amp;rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.Short History Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information.">
 <meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="Scott Tactical">
-<meta name="twitter:url" content="https://scotttactical.com/to-hiphop-or-not-php-hhvm/">
-<meta name="twitter:title" content="To HipHop or Not - PHP and HHVM - Scott Tactical">
-<meta name="twitter:description" content="We are discussing the plausibility of using HHVM inside this current infrastructure.Our requirements are not very application server CPU intensive so it isn&amp;rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.Short History Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information.">
-<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
-
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id":"https:\/\/scotttactical.com\/"
-    },
-    "headline": "To HipHop or Not - PHP and HHVM - Scott Tactical",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https:\/\/scotttactical.com\/images\/default.png",
-      "height": 800,
-      "width": 800
-    },
-    "datePublished": "2015-02-18T00:00:00JST",
-    "dateModified": "2015-02-18T00:00:00JST",
-    "author": {
-      "@type": "Person",
-      "name": "Scott Tactical"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Scott Tactical",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https:\/\/scotttactical.com\/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "description": "We are discussing the plausibility of using HHVM inside this current infrastructure.\nOur requirements are not very application server CPU intensive so it isn\u0026rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.\nShort History Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information."
-  }
-</script>
-
-
-    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
-    
-
-  </head>
-
-  <body>
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-53440065-2', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-    
-
-    <header class="l-header">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-          </div>
-
-          
-          <div id="navbar" class="collapse navbar-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              
-              
-              <li><a href="/about/">About</a></li>
-              
-              
-            </ul>
-            
-          </div>
-          
-
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <div class="container">
-        
-<div class="row">
-  <div class="col-md-8">
-
-    <nav class="p-crumb">
-      <ol class="breadcrumb">
-        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-        
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
-        
-        <li class="active">To HipHop or Not - PHP and HHVM</li>
-      </ol>
-    </nav>
-
-    <article class="single">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2015-02-18T00:00:00JST">Feb 18, 2015</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
-      
-    </ul>
-
-    <h1 class="title">To HipHop or Not - PHP and HHVM</h1>
-  </header>
-
-  
-
-  <div class="article-body"><p>We are discussing the plausibility of using HHVM inside this current infrastructure.</p>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:site content="Scott Tactical">
+<meta name=twitter:url content="https://scotttactical.com/to-hiphop-or-not-php-hhvm/">
+<meta name=twitter:title content="To HipHop or Not - PHP and HHVM - Scott Tactical">
+<meta name=twitter:description content="We are discussing the plausibility of using HHVM inside this current infrastructure.Our requirements are not very application server CPU intensive so it isn&amp;rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.Short History Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information.">
+<meta name=twitter:image content="https://scotttactical.com/images/default.png">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/scotttactical.com\/"},"headline":"To HipHop or Not - PHP and HHVM - Scott Tactical","image":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images\/default.png","height":800,"width":800},"datePublished":"2015-02-18T00:00:00JST","dateModified":"2015-02-18T00:00:00JST","author":{"@type":"Person","name":"Scott Tactical"},"publisher":{"@type":"Organization","name":"Scott Tactical","logo":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images/logo.png","width":600,"height":60}},"description":"We are discussing the plausibility of using HHVM inside this current infrastructure.\nOur requirements are not very application server CPU intensive so it isn\u0026rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.\nShort History Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information."}</script>
+<link href=https://scotttactical.com/css/styles.css rel=stylesheet>
+</head>
+<body>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-53440065-2','auto'),ga('send','pageview'))</script>
+<header class=l-header>
+<nav class="navbar navbar-default">
+<div class=container>
+<div class=navbar-header>
+<button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#navbar aria-expanded=false>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<a class=navbar-brand href=https://scotttactical.com/>Scott Tactical</a>
+</div>
+<div id=navbar class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href=/about/>About</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<div class=container>
+<div class=row>
+<div class=col-md-8>
+<nav class=p-crumb>
+<ol class=breadcrumb>
+<li><a href=https://scotttactical.com/><i class="fa fa-home" aria-hidden=true></i></a></li>
+<li itemscope itemtype=http://data-vocabulary.org/Breadcrumb><a href=https://scotttactical.com/post/ itemprop=url><span itemprop=title>post</span></a></li>
+<li class=active>To HipHop or Not - PHP and HHVM</li>
+</ol>
+</nav>
+<article class=single>
+<header>
+<ul class=p-facts>
+<li><i class="fa fa-calendar" aria-hidden=true></i><time datetime=2015-02-18T00:00:00JST>Feb 18, 2015</time></li>
+<li><i class="fa fa-bookmark" aria-hidden=true></i><a href=https://scotttactical.com/post/>post</a></li>
+</ul>
+<h1 class=title>To HipHop or Not - PHP and HHVM</h1>
+</header>
+<div class=article-body><p>We are discussing the plausibility of using HHVM inside this current infrastructure.</p>
 <p>Our requirements are not very application server CPU intensive so it isn&rsquo;t immediately apparent why this would be beneficial, but for investigations sake I wanted to go through the diligence.</p>
-<h2 id="short-history">Short History</h2>
-<p><img src="http://hhvm.com/" alt="HHVM"></p>
+<h2 id=short-history>Short History</h2>
+<p><img src=http://hhvm.com/ alt=HHVM></p>
 <p>Facebook, our Ominous big brother gave us a consolation prize for freely giving away just about all that most people have online that has any value: their personal information. On the topic of sheeple for another day. For today, we thank you Facebook. May your stock price soar to the stars.</p>
-<p>I wanted to know what the differences between <a href="https://en.wikipedia.org/wiki/HipHop_Virtual_Machine">HHVM</a> and HipHop Orig was if there was any. HPHPc was the original source to source compiler that converted to C++. There were a lot of inherent problems there and the team later decided to switch tracks and make a JIT virtual machine instead: more formally [HipHop Virtual Machine] known as HHVM. I personally like this approach much better due to the portability. At some point I&rsquo;ll write about my romance with the idea of compiling in tools for <a href="https://en.wikipedia.org/wiki/Aspect-oriented_programming">AOP - Aspect Oriented Programming</a>.</p>
-<p>Interestingly enough VKontakt is coding their own translator right along side Facebook. <a href="https://en.wikipedia.org/wiki/KPHP">KPHP</a>. I guess old international habits die slowly.</p>
-<h3 id="hack-programming-language">Hack (programming language)</h3>
-<p>One of the best things I think this paradigm added is the enhanced <a href="https://en.wikipedia.org/wiki/Hack_%28programming_language%29">Hack</a> programming language. It gave PHP a static or dynamic type syntax. For those who complain about PHP&rsquo;s loose typing, well here you go.</p>
-<h2 id="benefits">Benefits</h2>
+<p>I wanted to know what the differences between <a href=https://en.wikipedia.org/wiki/HipHop_Virtual_Machine>HHVM</a> and HipHop Orig was if there was any. HPHPc was the original source to source compiler that converted to C++. There were a lot of inherent problems there and the team later decided to switch tracks and make a JIT virtual machine instead: more formally [HipHop Virtual Machine] known as HHVM. I personally like this approach much better due to the portability. At some point I&rsquo;ll write about my romance with the idea of compiling in tools for <a href=https://en.wikipedia.org/wiki/Aspect-oriented_programming>AOP - Aspect Oriented Programming</a>.</p>
+<p>Interestingly enough VKontakt is coding their own translator right along side Facebook. <a href=https://en.wikipedia.org/wiki/KPHP>KPHP</a>. I guess old international habits die slowly.</p>
+<h3 id=hack-programming-language>Hack (programming language)</h3>
+<p>One of the best things I think this paradigm added is the enhanced <a href=https://en.wikipedia.org/wiki/Hack_%28programming_language%29>Hack</a> programming language. It gave PHP a static or dynamic type syntax. For those who complain about PHP&rsquo;s loose typing, well here you go.</p>
+<h2 id=benefits>Benefits</h2>
 <p>What are the benefits to having HipHop in place?</p>
 <p><strong>Performance</strong></p>
 <p>That is about the only noteworthy thing I can see. Having Hack around is nice, but my guys are not going to change any time soon to use this. PHP is built to be phast and loose. Fast as in &ldquo;can you have this ready today&rdquo; sadly. I&rsquo;d rather have things up and running fast and deal with standards at the QA/unit test layer. Working with the majority of the code being legacy negates the benefit also.</p>
-<h2 id="our-stack">Our stack</h2>
+<h2 id=our-stack>Our stack</h2>
 <p>Right now it&rsquo;s so vanilla that it is disgusting.</p>
 <p>Ubuntu in AWS</p>
 <p>PHP 5.5.x</p>
@@ -232,166 +146,96 @@ if (!doNotTrack) {
 <p>mhash</p>
 <p>apc</p>
 <p>ZendOPcache</p>
-<h2 id="next-steps">Next Steps</h2>
+<h2 id=next-steps>Next Steps</h2>
 <p>I will be doing some performance tests coming up IF we are able to get this into play.</p>
 <p>My plan is to run load test against our normal branch and then</p>
 </div>
-
-  <footer class="article-footer">
-    
-    
-    
-    
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">TAGS</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scotttactical.com/tags/php/">php</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-  </footer>
-
-</article>
-
-
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "scotttactical" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-
-  <div class="col-md-4">
-    
-<aside class="l-sidebar">
-
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com/why-i-converted-to-catholicism/" class="list-group-item">Why I Converted To Catholicism</a>
-      
-      <a href="https://scotttactical.com/ejs-2019-departure-preparations/" class="list-group-item">Easter Jeep Safari 2019 - Departure Preparations</a>
-      
-      <a href="https://scotttactical.com/ejs-2019-transit/" class="list-group-item">EJS 2019 - The Slow Route There </a>
-      
-      <a href="https://scotttactical.com/car-computer-face-recognition/" class="list-group-item">Car Computer Face Recognition</a>
-      
-      <a href="https://scotttactical.com/biometric-vehicle-entry-car-computer/" class="list-group-item">Biometric Vehicle Entry</a>
-      
-      <a href="https://scotttactical.com/installing-usb-relay/" class="list-group-item">Installing a USB Relay</a>
-      
-      <a href="https://scotttactical.com/car-computer-touchscreen-monitor/" class="list-group-item">Car Computer Touchscreen Monitor</a>
-      
-      <a href="https://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
-      
-      <a href="https://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
-      
-      <a href="https://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
-      
-    </div>
-  </section>
-
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">CATEGORY</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com//categories/software" class="list-group-item">software</a>
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">SERIES</div>
-    </div>
-    <div class="list-group">
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">TAG</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com//tags/data" class="list-group-item">data</a>
-      
-      <a href="https://scotttactical.com//tags/technology" class="list-group-item">technology</a>
-      
-      <a href="https://scotttactical.com//tags/car-computer" class="list-group-item">car-computer</a>
-      
-      <a href="https://scotttactical.com//tags/69-blazer" class="list-group-item">69-blazer</a>
-      
-      <a href="https://scotttactical.com//tags/california" class="list-group-item">california</a>
-      
-      <a href="https://scotttactical.com//tags/photography" class="list-group-item">photography</a>
-      
-      <a href="https://scotttactical.com//tags/philosophy" class="list-group-item">philosophy</a>
-      
-      <a href="https://scotttactical.com//tags/restoration" class="list-group-item">restoration</a>
-      
-      <a href="https://scotttactical.com//tags/devops" class="list-group-item">devops</a>
-      
-      <a href="https://scotttactical.com//tags/adventure" class="list-group-item">adventure</a>
-      
-    </div>
-  </section>
-  
-
-</aside>
-
-  </div>
+<footer class=article-footer>
+<section class=bordered>
+<header>
+<div class=panel-title>TAGS</div>
+</header>
+<div>
+<ul class=p-terms>
+<li><a href=https://scotttactical.com/tags/php/>php</a></li>
+</ul>
 </div>
-
-      </div>
-    </main>
-
-    <footer class="l-footer">
-      <div class="container">
-        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
-    </footer>
-
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
+</section>
+</footer>
+</article>
+<div id=disqus_thread></div>
+<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//scotttactical.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+</div>
+<div class=col-md-4>
+<aside class=l-sidebar>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>LATESTS</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com/why-i-converted-to-catholicism/ class=list-group-item>Why I Converted To Catholicism</a>
+<a href=https://scotttactical.com/ejs-2019-departure-preparations/ class=list-group-item>Easter Jeep Safari 2019 - Departure Preparations</a>
+<a href=https://scotttactical.com/ejs-2019-transit/ class=list-group-item>EJS 2019 - The Slow Route There </a>
+<a href=https://scotttactical.com/car-computer-face-recognition/ class=list-group-item>Car Computer Face Recognition</a>
+<a href=https://scotttactical.com/biometric-vehicle-entry-car-computer/ class=list-group-item>Biometric Vehicle Entry</a>
+<a href=https://scotttactical.com/installing-usb-relay/ class=list-group-item>Installing a USB Relay</a>
+<a href=https://scotttactical.com/car-computer-touchscreen-monitor/ class=list-group-item>Car Computer Touchscreen Monitor</a>
+<a href=https://scotttactical.com/linux-usb-relay-controller/ class=list-group-item>Linux USB Relay Controller</a>
+<a href=https://scotttactical.com/car-computer-camera/ class=list-group-item>Car Computer Camera</a>
+<a href=https://scotttactical.com/car-computer-hardware/ class=list-group-item>Car Computer Hardware</a>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>CATEGORY</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com//categories/software class=list-group-item>software</a>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>SERIES</div>
+</div>
+<div class=list-group>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>TAG</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com//tags/data class=list-group-item>data</a>
+<a href=https://scotttactical.com//tags/technology class=list-group-item>technology</a>
+<a href=https://scotttactical.com//tags/car-computer class=list-group-item>car-computer</a>
+<a href=https://scotttactical.com//tags/69-blazer class=list-group-item>69-blazer</a>
+<a href=https://scotttactical.com//tags/california class=list-group-item>california</a>
+<a href=https://scotttactical.com//tags/photography class=list-group-item>photography</a>
+<a href=https://scotttactical.com//tags/philosophy class=list-group-item>philosophy</a>
+<a href=https://scotttactical.com//tags/restoration class=list-group-item>restoration</a>
+<a href=https://scotttactical.com//tags/devops class=list-group-item>devops</a>
+<a href=https://scotttactical.com//tags/adventure class=list-group-item>adventure</a>
+</div>
+</section>
+</aside>
+</div>
+</div>
+</div>
+</main>
+<footer class=l-footer>
+<div class=container>
+<p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+<aside>
+<p>Powered by <a href=https://gohugo.io/>Hugo</a>.</p>
+<p><a href=https://github.com/dim0627/hugo_theme_beg>Beg</a> designed by <a href=http://yet.unresolved.xyz/>Daisuke Tsuji</a>.</p>
+</aside>
+</div>
+</footer>
+<script src=//code.jquery.com/jquery-3.1.1.min.js></script>
+<script src=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
 </html>
-

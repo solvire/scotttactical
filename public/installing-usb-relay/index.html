@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-<meta name="pinterest" content="nopin">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.92.2" />
-
-
-
-<link rel="canonical" href="https://scotttactical.com/installing-usb-relay/">
-
-
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Installing a USB Relay - Scott Tactical</title>
-    
-<meta name="description" content="USB HID Relay  USB Relay on Ubuntu Linux I am starting off with this hardware:KNACRO 4-Channel 12V USB Control Switch Relay ModuleThis was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.Thank you to @darrylb123 for https://github.com/darrylb123/usbrelayThere was a python contribution but it broke the build. I spent a few hours trying to get it to build and gave up and just smashed the ugly.">
-
+<!doctype html><html>
+<head>
+<meta charset=utf-8>
+<meta name=pinterest content="nopin">
+<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel=canonical href=https://scotttactical.com/installing-usb-relay/>
+<link href=//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css rel=stylesheet>
+<link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+<link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css>
+<title>Installing a USB Relay - Scott Tactical</title>
+<meta name=description content="USB HID Relay  USB Relay on Ubuntu Linux I am starting off with this hardware:KNACRO 4-Channel 12V USB Control Switch Relay ModuleThis was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.Thank you to @darrylb123 for https://github.com/darrylb123/usbrelayThere was a python contribution but it broke the build. I spent a few hours trying to get it to build and gave up and just smashed the ugly.">
 <meta property="og:title" content="Installing a USB Relay - Scott Tactical">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scotttactical.com/installing-usb-relay/">
@@ -25,152 +16,72 @@
 <meta property="og:site_name" content="Scott Tactical">
 <meta property="og:description" content="USB HID Relay  USB Relay on Ubuntu Linux I am starting off with this hardware:KNACRO 4-Channel 12V USB Control Switch Relay ModuleThis was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.Thank you to @darrylb123 for https://github.com/darrylb123/usbrelayThere was a python contribution but it broke the build. I spent a few hours trying to get it to build and gave up and just smashed the ugly.">
 <meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="Scott Tactical">
-<meta name="twitter:url" content="https://scotttactical.com/installing-usb-relay/">
-<meta name="twitter:title" content="Installing a USB Relay - Scott Tactical">
-<meta name="twitter:description" content="USB HID Relay  USB Relay on Ubuntu Linux I am starting off with this hardware:KNACRO 4-Channel 12V USB Control Switch Relay ModuleThis was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.Thank you to @darrylb123 for https://github.com/darrylb123/usbrelayThere was a python contribution but it broke the build. I spent a few hours trying to get it to build and gave up and just smashed the ugly.">
-<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
-
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id":"https:\/\/scotttactical.com\/"
-    },
-    "headline": "Installing a USB Relay - Scott Tactical",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https:\/\/scotttactical.com\/images\/default.png",
-      "height": 800,
-      "width": 800
-    },
-    "datePublished": "2019-03-18T18:16:54JST",
-    "dateModified": "2019-03-18T18:16:54JST",
-    "author": {
-      "@type": "Person",
-      "name": "Scott Tactical"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Scott Tactical",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https:\/\/scotttactical.com\/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "description": "USB HID Relay  USB Relay on Ubuntu Linux I am starting off with this hardware:\nKNACRO 4-Channel 12V USB Control Switch Relay Module\nThis was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.\nThank you to @darrylb123 for https:\/\/github.com\/darrylb123\/usbrelay\nThere was a python contribution but it broke the build. I spent a few hours trying to get it to build and gave up and just smashed the ugly."
-  }
-</script>
-
-
-    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
-    
-
-  </head>
-
-  <body>
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-53440065-2', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-    
-
-    <header class="l-header">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-          </div>
-
-          
-          <div id="navbar" class="collapse navbar-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              
-              
-              <li><a href="/about/">About</a></li>
-              
-              
-            </ul>
-            
-          </div>
-          
-
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <div class="container">
-        
-<div class="row">
-  <div class="col-md-8">
-
-    <nav class="p-crumb">
-      <ol class="breadcrumb">
-        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-        
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
-        
-        <li class="active">Installing a USB Relay</li>
-      </ol>
-    </nav>
-
-    <article class="single">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-03-18T18:16:54JST">Mar 18, 2019</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
-      
-    </ul>
-
-    <h1 class="title">Installing a USB Relay</h1>
-  </header>
-
-  
-
-  <div class="article-body"><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:site content="Scott Tactical">
+<meta name=twitter:url content="https://scotttactical.com/installing-usb-relay/">
+<meta name=twitter:title content="Installing a USB Relay - Scott Tactical">
+<meta name=twitter:description content="USB HID Relay  USB Relay on Ubuntu Linux I am starting off with this hardware:KNACRO 4-Channel 12V USB Control Switch Relay ModuleThis was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.Thank you to @darrylb123 for https://github.com/darrylb123/usbrelayThere was a python contribution but it broke the build. I spent a few hours trying to get it to build and gave up and just smashed the ugly.">
+<meta name=twitter:image content="https://scotttactical.com/images/default.png">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/scotttactical.com\/"},"headline":"Installing a USB Relay - Scott Tactical","image":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images\/default.png","height":800,"width":800},"datePublished":"2019-03-18T18:16:54JST","dateModified":"2019-03-18T18:16:54JST","author":{"@type":"Person","name":"Scott Tactical"},"publisher":{"@type":"Organization","name":"Scott Tactical","logo":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images/logo.png","width":600,"height":60}},"description":"USB HID Relay  USB Relay on Ubuntu Linux I am starting off with this hardware:\nKNACRO 4-Channel 12V USB Control Switch Relay Module\nThis was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.\nThank you to @darrylb123 for https:\/\/github.com\/darrylb123\/usbrelay\nThere was a python contribution but it broke the build. I spent a few hours trying to get it to build and gave up and just smashed the ugly."}</script>
+<link href=https://scotttactical.com/css/styles.css rel=stylesheet>
+</head>
+<body>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-53440065-2','auto'),ga('send','pageview'))</script>
+<header class=l-header>
+<nav class="navbar navbar-default">
+<div class=container>
+<div class=navbar-header>
+<button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#navbar aria-expanded=false>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<a class=navbar-brand href=https://scotttactical.com/>Scott Tactical</a>
+</div>
+<div id=navbar class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href=/about/>About</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<div class=container>
+<div class=row>
+<div class=col-md-8>
+<nav class=p-crumb>
+<ol class=breadcrumb>
+<li><a href=https://scotttactical.com/><i class="fa fa-home" aria-hidden=true></i></a></li>
+<li itemscope itemtype=http://data-vocabulary.org/Breadcrumb><a href=https://scotttactical.com/post/ itemprop=url><span itemprop=title>post</span></a></li>
+<li class=active>Installing a USB Relay</li>
+</ol>
+</nav>
+<article class=single>
+<header>
+<ul class=p-facts>
+<li><i class="fa fa-calendar" aria-hidden=true></i><time datetime=2019-03-18T18:16:54JST>Mar 18, 2019</time></li>
+<li><i class="fa fa-bookmark" aria-hidden=true></i><a href=https://scotttactical.com/post/>post</a></li>
+</ul>
+<h1 class=title>Installing a USB Relay</h1>
+</header>
+<div class=article-body>
 <pre><code>USB HID Relay
 </code></pre>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h2 id="usb-relay-on-ubuntu-linux">USB Relay on Ubuntu Linux</h2>
+<h2 id=usb-relay-on-ubuntu-linux>USB Relay on Ubuntu Linux</h2>
 <p>I am starting off with this hardware:</p>
 <p>KNACRO 4-Channel 12V USB Control Switch Relay Module</p>
 <p>This was fairly easy but not where I wanted to be. I found a library that did a ton of things for me.</p>
-<p>Thank you to @darrylb123 for <a href="https://github.com/darrylb123/usbrelay">https://github.com/darrylb123/usbrelay</a></p>
+<p>Thank you to @darrylb123 for <a href=https://github.com/darrylb123/usbrelay>https://github.com/darrylb123/usbrelay</a></p>
 <p>There was a python contribution but it broke the build. I spent a few hours trying to get it to build and gave up and just smashed the ugly.</p>
 <p>Wrapping C++ code in python isn&rsquo;t super tough but it takes a lot of time and running through iterations of compilation. Sending it to a process is fairly simple and given the amount of time I will be doing it will give me more time to focus on other things. I&rsquo;ll come back to this later after I&rsquo;m out of urgent prototype mode.</p>
-<h3 id="usb-relay-driver">USB Relay Driver</h3>
+<h3 id=usb-relay-driver>USB Relay Driver</h3>
 <p>With HID I was able to see the device/chip in <code>lsusb</code> right away.</p>
 <p>I installed the library above from apt and it ran out of the box.</p>
-<p>I scripted a tool that will send commands to a sub process. I just need to send and forget. I probably wont use the results of the commands right now.  Each time the application loads I will need to get the names of the devices however because I really don&rsquo;t want that hard coded.  I am hard coding each relay because I would like the ability to control things uniquely.  I&rsquo;m probably going to use it to turn on seat heaters in the future as well.</p>
-<p>I will say that not everything clicked out of the box.  I had to install a few things. Here are just some highlights to my notes which you might be able to follow and if not there are comments below.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt install firmware-b43-installer
+<p>I scripted a tool that will send commands to a sub process. I just need to send and forget. I probably wont use the results of the commands right now. Each time the application loads I will need to get the names of the devices however because I really don&rsquo;t want that hard coded. I am hard coding each relay because I would like the ability to control things uniquely. I&rsquo;m probably going to use it to turn on seat heaters in the future as well.</p>
+<p>I will say that not everything clicked out of the box. I had to install a few things. Here are just some highlights to my notes which you might be able to follow and if not there are comments below.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>apt install firmware-b43-installer
 apt install git vim openssh-server
 systemctl enable ssh
 apt install python3
@@ -181,72 +92,71 @@ apt install python3-pip
 
 git clone https://github.com/darrylb123/usbrelay.git
 git checkout tags/v0.4 -b v0.4
-</code></pre></div><h3 id="interacting-with-the-relay">Interacting With The Relay</h3>
+</code></pre></div><h3 id=interacting-with-the-relay>Interacting With The Relay</h3>
 <p>The results come back showing the device with the list of the relays.</p>
 <p>Notice this was build with HIDRAW vs HIDUSB lib. I don&rsquo;t know what the differences are but on some platforms they perform differently.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$&gt; usbrelay
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$&gt; usbrelay
 Device Found
   type: 16c0 05df
   path: /dev/hidraw0
   serial_number:
   Manufacturer: www.dcttech.com
   Product:      USBRelay4
-  Release:      <span style="color:#ae81ff">100</span>
-  Interface:    <span style="color:#ae81ff">0</span>
-  Number of Relays <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
-QAAMZ_1<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-QAAMZ_2<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-QAAMZ_3<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-QAAMZ_4<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+  Release:      <span style=color:#ae81ff>100</span>
+  Interface:    <span style=color:#ae81ff>0</span>
+  Number of Relays <span style=color:#f92672>=</span> <span style=color:#ae81ff>4</span>
+QAAMZ_1<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+QAAMZ_2<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+QAAMZ_3<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+QAAMZ_4<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
 </code></pre></div><p>I will take the relay names and add them to an array in the code and just replace the numeric ID. The integer at the end is the boolean.</p>
 <p>NOTE: It doesn&rsquo;t hurt to send similar signals to a relay. (or doesn&rsquo;t seem to) Meaning if it&rsquo;s on I can send another on and it doesn&rsquo;t do anything. Same with off.</p>
 <p>To get an idea of the code running this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
-    print(<span style="color:#e6db74">&#34;Relay Trip&#34;</span>)
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>
+<span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;__main__&#34;</span>:
+    print(<span style=color:#e6db74>&#34;Relay Trip&#34;</span>)
 
-    <span style="color:#75715e"># get the list of relays</span>
+    <span style=color:#75715e># get the list of relays</span>
 
-    result <span style="color:#f92672">=</span> subprocess<span style="color:#f92672">.</span>check_output([<span style="color:#e6db74">&#39;usbrelay&#39;</span>])
+    result <span style=color:#f92672>=</span> subprocess<span style=color:#f92672>.</span>check_output([<span style=color:#e6db74>&#39;usbrelay&#39;</span>])
 
-    results <span style="color:#f92672">=</span> result<span style="color:#f92672">.</span>decode()<span style="color:#f92672">.</span>strip()<span style="color:#f92672">.</span>splitlines()
+    results <span style=color:#f92672>=</span> result<span style=color:#f92672>.</span>decode()<span style=color:#f92672>.</span>strip()<span style=color:#f92672>.</span>splitlines()
 
-    devices <span style="color:#f92672">=</span> {}
-    <span style="color:#66d9ef">for</span> res <span style="color:#f92672">in</span> results:
-        key, val <span style="color:#f92672">=</span> res<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;=&#39;</span>)
-        devices[key] <span style="color:#f92672">=</span> int(val)
+    devices <span style=color:#f92672>=</span> {}
+    <span style=color:#66d9ef>for</span> res <span style=color:#f92672>in</span> results:
+        key, val <span style=color:#f92672>=</span> res<span style=color:#f92672>.</span>split(<span style=color:#e6db74>&#39;=&#39;</span>)
+        devices[key] <span style=color:#f92672>=</span> int(val)
 
     print(devices)
-    args <span style="color:#f92672">=</span> parser<span style="color:#f92672">.</span>parse_args()
+    args <span style=color:#f92672>=</span> parser<span style=color:#f92672>.</span>parse_args()
 
-    c1 <span style="color:#f92672">=</span> args<span style="color:#f92672">.</span>channel1
-    c2 <span style="color:#f92672">=</span> args<span style="color:#f92672">.</span>channel2
-    c3 <span style="color:#f92672">=</span> args<span style="color:#f92672">.</span>channel3
-    c4 <span style="color:#f92672">=</span> args<span style="color:#f92672">.</span>channel4
+    c1 <span style=color:#f92672>=</span> args<span style=color:#f92672>.</span>channel1
+    c2 <span style=color:#f92672>=</span> args<span style=color:#f92672>.</span>channel2
+    c3 <span style=color:#f92672>=</span> args<span style=color:#f92672>.</span>channel3
+    c4 <span style=color:#f92672>=</span> args<span style=color:#f92672>.</span>channel4
 
-    <span style="color:#66d9ef">for</span> device, state <span style="color:#f92672">in</span> devices<span style="color:#f92672">.</span>items():
-        <span style="color:#66d9ef">if</span> device<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;_1&#34;</span>):
-            subprocess<span style="color:#f92672">.</span>check_output([<span style="color:#e6db74">&#39;usbrelay&#39;</span>, <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>device<span style="color:#e6db74">}</span><span style="color:#e6db74">=</span><span style="color:#e6db74">{</span>c1<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>])
-        <span style="color:#66d9ef">if</span> device<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;_2&#34;</span>):
-            subprocess<span style="color:#f92672">.</span>check_output([<span style="color:#e6db74">&#39;usbrelay&#39;</span>, <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>device<span style="color:#e6db74">}</span><span style="color:#e6db74">=</span><span style="color:#e6db74">{</span>c2<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>])
-        <span style="color:#66d9ef">if</span> device<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;_3&#34;</span>):
-            subprocess<span style="color:#f92672">.</span>check_output([<span style="color:#e6db74">&#39;usbrelay&#39;</span>, <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>device<span style="color:#e6db74">}</span><span style="color:#e6db74">=</span><span style="color:#e6db74">{</span>c3<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>])
-        <span style="color:#66d9ef">if</span> device<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;_4&#34;</span>):
-            subprocess<span style="color:#f92672">.</span>check_output([<span style="color:#e6db74">&#39;usbrelay&#39;</span>, <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>device<span style="color:#e6db74">}</span><span style="color:#e6db74">=</span><span style="color:#e6db74">{</span>c4<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>])
+    <span style=color:#66d9ef>for</span> device, state <span style=color:#f92672>in</span> devices<span style=color:#f92672>.</span>items():
+        <span style=color:#66d9ef>if</span> device<span style=color:#f92672>.</span>endswith(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;_1&#34;</span>):
+            subprocess<span style=color:#f92672>.</span>check_output([<span style=color:#e6db74>&#39;usbrelay&#39;</span>, <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>device<span style=color:#e6db74>}</span><span style=color:#e6db74>=</span><span style=color:#e6db74>{</span>c1<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>])
+        <span style=color:#66d9ef>if</span> device<span style=color:#f92672>.</span>endswith(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;_2&#34;</span>):
+            subprocess<span style=color:#f92672>.</span>check_output([<span style=color:#e6db74>&#39;usbrelay&#39;</span>, <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>device<span style=color:#e6db74>}</span><span style=color:#e6db74>=</span><span style=color:#e6db74>{</span>c2<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>])
+        <span style=color:#66d9ef>if</span> device<span style=color:#f92672>.</span>endswith(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;_3&#34;</span>):
+            subprocess<span style=color:#f92672>.</span>check_output([<span style=color:#e6db74>&#39;usbrelay&#39;</span>, <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>device<span style=color:#e6db74>}</span><span style=color:#e6db74>=</span><span style=color:#e6db74>{</span>c3<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>])
+        <span style=color:#66d9ef>if</span> device<span style=color:#f92672>.</span>endswith(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;_4&#34;</span>):
+            subprocess<span style=color:#f92672>.</span>check_output([<span style=color:#e6db74>&#39;usbrelay&#39;</span>, <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>device<span style=color:#e6db74>}</span><span style=color:#e6db74>=</span><span style=color:#e6db74>{</span>c4<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>])
 
 
 </code></pre></div><p>Below is the test results at prob 1am so don&rsquo;t mind my groggy voice.</p>
-<!-- raw HTML omitted -->
-<h2 id="usb-relay-on-macbook-pro">USB Relay on Macbook Pro</h2>
+<h2 id=usb-relay-on-macbook-pro>USB Relay on Macbook Pro</h2>
 <p>I didn&rsquo;t really know what I was getting into and I do all of my initial research on Mac. So I decided to start there.</p>
 <p>Everything is easier on Mac right?</p>
-<h3 id="chipset-variants">Chipset Variants</h3>
+<h3 id=chipset-variants>Chipset Variants</h3>
 <p>There are two variants of USB relays that I am working with. An FTDI and HID version.</p>
 <p>The HID version is supposedly able to be picked up by the system as soon as it&rsquo;s plugged in so that is what I started with.</p>
-<p>There is no <code>lsusb</code> so I had look up what Mac uses.  This site helped me out: <a href="https://pim.famnit.upr.si/blog/index.php?/archives/165-OS-X-equivalent-to-lsusb.html">https://pim.famnit.upr.si/blog/index.php?/archives/165-OS-X-equivalent-to-lsusb.html</a></p>
+<p>There is no <code>lsusb</code> so I had look up what Mac uses. This site helped me out: <a href=https://pim.famnit.upr.si/blog/index.php?/archives/165-OS-X-equivalent-to-lsusb.html>https://pim.famnit.upr.si/blog/index.php?/archives/165-OS-X-equivalent-to-lsusb.html</a></p>
 <p>system_profiler SPUSBDataType</p>
-<p>The data did show me that I was nested.  It went through a USB 3.0 hub to a 2.0 hub then down to the device.  There was a lot of other things being picked up here that were overlocked.  At first I wasn&rsquo;t sure what I was looking for then saw the name which matched the board.  I kinda expected more of a GUID so IDK what will happen if I plug in more of these.</p>
-<pre tabindex="0"><code>USB 3.0 Bus:
+<p>The data did show me that I was nested. It went through a USB 3.0 hub to a 2.0 hub then down to the device. There was a lot of other things being picked up here that were overlocked. At first I wasn&rsquo;t sure what I was looking for then saw the name which matched the board. I kinda expected more of a GUID so IDK what will happen if I plug in more of these.</p>
+<pre tabindex=0><code>USB 3.0 Bus:
 
 Host Controller Driver: AppleUSBXHCISPT
 PCI Device ID: 0xa12f
@@ -300,210 +210,132 @@ PCI Vendor ID: 0x8086
         Current Available (mA): 500
         Current Required (mA): 20
         Extra Operating Current (mA): 0
-</code></pre><p>And there it is.  <code>USBRelay4</code></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</code></pre><p>And there it is. <code>USBRelay4</code></p>
 <pre><code>Mac USB system profile
 </code></pre>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h3 id="system-report">System Report</h3>
+<h3 id=system-report>System Report</h3>
 <p>There is another way to get to this</p>
 <ol>
 <li>About This Mac</li>
 <li>System Report</li>
-<li>Hardware &gt; USB</li>
+<li>Hardware > USB</li>
 </ol>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
 <pre><code>USB Relay On
 </code></pre>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h3 id="brew-u">Brew U</h3>
+<h3 id=brew-u>Brew U</h3>
 <p>Apparently I could have just installed via brew. :|</p>
 <p>brew install lsusb</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$&gt; lsusb
-2019-03-18 18:36:56.382 system_profiler<span style="color:#f92672">[</span>48402:1885449<span style="color:#f92672">]</span> SPUSBDevice: IOCreatePlugInInterfaceForService failed 0xe00002be
-Bus <span style="color:#ae81ff">020</span> Device 015: ID 2109:2813 VIA Labs, Inc. USB2.0 Hub
-Bus <span style="color:#ae81ff">020</span> Device 016: ID 1a40:0801 TERMINUS TECHNOLOGY INC. USB 2.0 Hub
-Bus <span style="color:#ae81ff">020</span> Device 020: ID 2109:0100 VIA Labs, Inc. USB 2.0 BILLBOARD  Serial: <span style="color:#ae81ff">0000000000000001</span>
-Bus <span style="color:#ae81ff">020</span> Device 025: ID 16c0:05df 16c0 USBRelay4
-Bus <span style="color:#ae81ff">020</span> Device 017: ID 05e3:0608 Genesys Logic, Inc. USB2.0 Hub
-Bus <span style="color:#ae81ff">020</span> Device 019: ID 046d:c52b Logitech Inc. USB Receiver
-Bus <span style="color:#ae81ff">020</span> Device 018: ID 05ac:024f Apple Inc. Matias Backlit Keyboard  Serial: FK318VUS
-Bus <span style="color:#ae81ff">020</span> Device 027: ID 05ac:12a8 Apple Inc. iPhone  Serial: 9dac5dde6e85ef8007a86a42a2785fea667e8bff
-Bus <span style="color:#ae81ff">020</span> Device 000: ID 05ac:8600 Apple Inc. iBridge
-Bus <span style="color:#ae81ff">000</span> Device 001: ID 2109:0813 VIA Labs, Inc. USB3.0 Hub
-Bus <span style="color:#ae81ff">000</span> Device 002: ID 058f:8468 Alcor Micro, Corp. Mass Storage Device  Serial: 058F84688461
-Bus <span style="color:#ae81ff">000</span> Device 001: ID 1d6b:ISPT Linux Foundation USB 3.0 Bus
-Bus <span style="color:#ae81ff">000</span> Device 001: ID 1d6b:CIAR Linux Foundation USB 3.1 Bus
-Bus <span style="color:#ae81ff">001</span> Device 001: ID 1d6b:CIAR Linux Foundation USB 3.1 Bus
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$&gt; lsusb
+2019-03-18 18:36:56.382 system_profiler<span style=color:#f92672>[</span>48402:1885449<span style=color:#f92672>]</span> SPUSBDevice: IOCreatePlugInInterfaceForService failed 0xe00002be
+Bus <span style=color:#ae81ff>020</span> Device 015: ID 2109:2813 VIA Labs, Inc. USB2.0 Hub
+Bus <span style=color:#ae81ff>020</span> Device 016: ID 1a40:0801 TERMINUS TECHNOLOGY INC. USB 2.0 Hub
+Bus <span style=color:#ae81ff>020</span> Device 020: ID 2109:0100 VIA Labs, Inc. USB 2.0 BILLBOARD  Serial: <span style=color:#ae81ff>0000000000000001</span>
+Bus <span style=color:#ae81ff>020</span> Device 025: ID 16c0:05df 16c0 USBRelay4
+Bus <span style=color:#ae81ff>020</span> Device 017: ID 05e3:0608 Genesys Logic, Inc. USB2.0 Hub
+Bus <span style=color:#ae81ff>020</span> Device 019: ID 046d:c52b Logitech Inc. USB Receiver
+Bus <span style=color:#ae81ff>020</span> Device 018: ID 05ac:024f Apple Inc. Matias Backlit Keyboard  Serial: FK318VUS
+Bus <span style=color:#ae81ff>020</span> Device 027: ID 05ac:12a8 Apple Inc. iPhone  Serial: 9dac5dde6e85ef8007a86a42a2785fea667e8bff
+Bus <span style=color:#ae81ff>020</span> Device 000: ID 05ac:8600 Apple Inc. iBridge
+Bus <span style=color:#ae81ff>000</span> Device 001: ID 2109:0813 VIA Labs, Inc. USB3.0 Hub
+Bus <span style=color:#ae81ff>000</span> Device 002: ID 058f:8468 Alcor Micro, Corp. Mass Storage Device  Serial: 058F84688461
+Bus <span style=color:#ae81ff>000</span> Device 001: ID 1d6b:ISPT Linux Foundation USB 3.0 Bus
+Bus <span style=color:#ae81ff>000</span> Device 001: ID 1d6b:CIAR Linux Foundation USB 3.1 Bus
+Bus <span style=color:#ae81ff>001</span> Device 001: ID 1d6b:CIAR Linux Foundation USB 3.1 Bus
 </code></pre></div><p>This is much easier to read anyway.</p>
-<h3 id="talking-to-usb-relay-on-mac">Talking To USB Relay On Mac</h3>
+<h3 id=talking-to-usb-relay-on-mac>Talking To USB Relay On Mac</h3>
 <p>This is not going to be as easy as just sending bits over a COM port. I have to walk through a few layers of device controls.</p>
-<p><a href="https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/HID/intro/intro.html">https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/HID/intro/intro.html</a></p>
+<p><a href=https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/HID/intro/intro.html>https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/HID/intro/intro.html</a></p>
 <p>There are some USB specific standards defined that I wont spend time to go into right now:</p>
-<p><a href="https://www.usb.org/hid">https://www.usb.org/hid</a></p>
+<p><a href=https://www.usb.org/hid>https://www.usb.org/hid</a></p>
 <p>And here I am stuck. There are no drivers for it so I will bail and go work on Linux for a bit.</p>
 <p>Sorry for the false hope.</p>
 </div>
-
-  <footer class="article-footer">
-    
-    
-    
-    
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">TAGS</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scotttactical.com/tags/car-computer/">car computer</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-  </footer>
-
-</article>
-
-
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "scotttactical" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-
-  <div class="col-md-4">
-    
-<aside class="l-sidebar">
-
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com/why-i-converted-to-catholicism/" class="list-group-item">Why I Converted To Catholicism</a>
-      
-      <a href="https://scotttactical.com/ejs-2019-departure-preparations/" class="list-group-item">Easter Jeep Safari 2019 - Departure Preparations</a>
-      
-      <a href="https://scotttactical.com/ejs-2019-transit/" class="list-group-item">EJS 2019 - The Slow Route There </a>
-      
-      <a href="https://scotttactical.com/car-computer-face-recognition/" class="list-group-item">Car Computer Face Recognition</a>
-      
-      <a href="https://scotttactical.com/biometric-vehicle-entry-car-computer/" class="list-group-item">Biometric Vehicle Entry</a>
-      
-      <a href="https://scotttactical.com/installing-usb-relay/" class="list-group-item">Installing a USB Relay</a>
-      
-      <a href="https://scotttactical.com/car-computer-touchscreen-monitor/" class="list-group-item">Car Computer Touchscreen Monitor</a>
-      
-      <a href="https://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
-      
-      <a href="https://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
-      
-      <a href="https://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
-      
-    </div>
-  </section>
-
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">CATEGORY</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com//categories/software" class="list-group-item">software</a>
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">SERIES</div>
-    </div>
-    <div class="list-group">
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">TAG</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com//tags/data" class="list-group-item">data</a>
-      
-      <a href="https://scotttactical.com//tags/technology" class="list-group-item">technology</a>
-      
-      <a href="https://scotttactical.com//tags/car-computer" class="list-group-item">car-computer</a>
-      
-      <a href="https://scotttactical.com//tags/69-blazer" class="list-group-item">69-blazer</a>
-      
-      <a href="https://scotttactical.com//tags/california" class="list-group-item">california</a>
-      
-      <a href="https://scotttactical.com//tags/photography" class="list-group-item">photography</a>
-      
-      <a href="https://scotttactical.com//tags/philosophy" class="list-group-item">philosophy</a>
-      
-      <a href="https://scotttactical.com//tags/restoration" class="list-group-item">restoration</a>
-      
-      <a href="https://scotttactical.com//tags/devops" class="list-group-item">devops</a>
-      
-      <a href="https://scotttactical.com//tags/adventure" class="list-group-item">adventure</a>
-      
-    </div>
-  </section>
-  
-
-</aside>
-
-  </div>
+<footer class=article-footer>
+<section class=bordered>
+<header>
+<div class=panel-title>TAGS</div>
+</header>
+<div>
+<ul class=p-terms>
+<li><a href=https://scotttactical.com/tags/car-computer/>car computer</a></li>
+</ul>
 </div>
-
-      </div>
-    </main>
-
-    <footer class="l-footer">
-      <div class="container">
-        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
-    </footer>
-
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
+</section>
+</footer>
+</article>
+<div id=disqus_thread></div>
+<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//scotttactical.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+</div>
+<div class=col-md-4>
+<aside class=l-sidebar>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>LATESTS</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com/why-i-converted-to-catholicism/ class=list-group-item>Why I Converted To Catholicism</a>
+<a href=https://scotttactical.com/ejs-2019-departure-preparations/ class=list-group-item>Easter Jeep Safari 2019 - Departure Preparations</a>
+<a href=https://scotttactical.com/ejs-2019-transit/ class=list-group-item>EJS 2019 - The Slow Route There </a>
+<a href=https://scotttactical.com/car-computer-face-recognition/ class=list-group-item>Car Computer Face Recognition</a>
+<a href=https://scotttactical.com/biometric-vehicle-entry-car-computer/ class=list-group-item>Biometric Vehicle Entry</a>
+<a href=https://scotttactical.com/installing-usb-relay/ class=list-group-item>Installing a USB Relay</a>
+<a href=https://scotttactical.com/car-computer-touchscreen-monitor/ class=list-group-item>Car Computer Touchscreen Monitor</a>
+<a href=https://scotttactical.com/linux-usb-relay-controller/ class=list-group-item>Linux USB Relay Controller</a>
+<a href=https://scotttactical.com/car-computer-camera/ class=list-group-item>Car Computer Camera</a>
+<a href=https://scotttactical.com/car-computer-hardware/ class=list-group-item>Car Computer Hardware</a>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>CATEGORY</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com//categories/software class=list-group-item>software</a>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>SERIES</div>
+</div>
+<div class=list-group>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>TAG</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com//tags/data class=list-group-item>data</a>
+<a href=https://scotttactical.com//tags/technology class=list-group-item>technology</a>
+<a href=https://scotttactical.com//tags/car-computer class=list-group-item>car-computer</a>
+<a href=https://scotttactical.com//tags/69-blazer class=list-group-item>69-blazer</a>
+<a href=https://scotttactical.com//tags/california class=list-group-item>california</a>
+<a href=https://scotttactical.com//tags/photography class=list-group-item>photography</a>
+<a href=https://scotttactical.com//tags/philosophy class=list-group-item>philosophy</a>
+<a href=https://scotttactical.com//tags/restoration class=list-group-item>restoration</a>
+<a href=https://scotttactical.com//tags/devops class=list-group-item>devops</a>
+<a href=https://scotttactical.com//tags/adventure class=list-group-item>adventure</a>
+</div>
+</section>
+</aside>
+</div>
+</div>
+</div>
+</main>
+<footer class=l-footer>
+<div class=container>
+<p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+<aside>
+<p>Powered by <a href=https://gohugo.io/>Hugo</a>.</p>
+<p><a href=https://github.com/dim0627/hugo_theme_beg>Beg</a> designed by <a href=http://yet.unresolved.xyz/>Daisuke Tsuji</a>.</p>
+</aside>
+</div>
+</footer>
+<script src=//code.jquery.com/jquery-3.1.1.min.js></script>
+<script src=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
 </html>
-

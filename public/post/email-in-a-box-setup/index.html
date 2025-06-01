@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-<meta name="pinterest" content="nopin">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.92.2" />
-
-
-
-<link rel="canonical" href="https://scotttactical.com/post/email-in-a-box-setup/">
-
-
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>eMail In A Box: Setup - Scott Tactical</title>
-    
-<meta name="description" content="Test Drive: Mail In A Box TL;DR I set up Mail-in-a-Box and it was a quick and painless experience.Preface I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.I&amp;rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day.">
-
+<!doctype html><html>
+<head>
+<meta charset=utf-8>
+<meta name=pinterest content="nopin">
+<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel=canonical href=https://scotttactical.com/post/email-in-a-box-setup/>
+<link href=//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css rel=stylesheet>
+<link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+<link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css>
+<title>eMail In A Box: Setup - Scott Tactical</title>
+<meta name=description content="Test Drive: Mail In A Box TL;DR I set up Mail-in-a-Box and it was a quick and painless experience.Preface I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.I&amp;rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day.">
 <meta property="og:title" content="eMail In A Box: Setup - Scott Tactical">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scotttactical.com/post/email-in-a-box-setup/">
@@ -25,142 +16,65 @@
 <meta property="og:site_name" content="Scott Tactical">
 <meta property="og:description" content="Test Drive: Mail In A Box TL;DR I set up Mail-in-a-Box and it was a quick and painless experience.Preface I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.I&amp;rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day.">
 <meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="Scott Tactical">
-<meta name="twitter:url" content="https://scotttactical.com/post/email-in-a-box-setup/">
-<meta name="twitter:title" content="eMail In A Box: Setup - Scott Tactical">
-<meta name="twitter:description" content="Test Drive: Mail In A Box TL;DR I set up Mail-in-a-Box and it was a quick and painless experience.Preface I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.I&amp;rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day.">
-<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
-
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id":"https:\/\/scotttactical.com\/"
-    },
-    "headline": "eMail In A Box: Setup - Scott Tactical",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https:\/\/scotttactical.com\/images\/default.png",
-      "height": 800,
-      "width": 800
-    },
-    "datePublished": "2017-02-09T16:00:07JST",
-    "dateModified": "2017-02-09T16:00:07JST",
-    "author": {
-      "@type": "Person",
-      "name": "Scott Tactical"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Scott Tactical",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https:\/\/scotttactical.com\/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "description": "Test Drive: Mail In A Box TL;DR I set up Mail-in-a-Box and it was a quick and painless experience.\nPreface I am tired of managing so many gmail and outlook accounts. Those $5\/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.\nI\u0026rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending\/receiving greater than 20 million emails a day."
-  }
-</script>
-
-
-    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
-    
-
-  </head>
-
-  <body>
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-53440065-2', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-    
-
-    <header class="l-header">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-          </div>
-
-          
-          <div id="navbar" class="collapse navbar-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              
-              
-              <li><a href="/about/">About</a></li>
-              
-              
-            </ul>
-            
-          </div>
-          
-
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <div class="container">
-        
-<div class="row">
-  <div class="col-md-8">
-
-    <nav class="p-crumb">
-      <ol class="breadcrumb">
-        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-        
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
-        
-        <li class="active">eMail In A Box: Setup</li>
-      </ol>
-    </nav>
-
-    <article class="single">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2017-02-09T16:00:07JST">Feb 9, 2017</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
-      
-    </ul>
-
-    <h1 class="title">eMail In A Box: Setup</h1>
-  </header>
-
-  
-
-  <div class="article-body"><h2 id="test-drive-mail-in-a-box">Test Drive: Mail In A Box</h2>
-<h2 id="tldr">TL;DR</h2>
-<p>I set up <a href="https://mailinabox.email/">Mail-in-a-Box</a> and it was a quick and painless experience.</p>
-<h2 id="preface">Preface</h2>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:site content="Scott Tactical">
+<meta name=twitter:url content="https://scotttactical.com/post/email-in-a-box-setup/">
+<meta name=twitter:title content="eMail In A Box: Setup - Scott Tactical">
+<meta name=twitter:description content="Test Drive: Mail In A Box TL;DR I set up Mail-in-a-Box and it was a quick and painless experience.Preface I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.I&amp;rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day.">
+<meta name=twitter:image content="https://scotttactical.com/images/default.png">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/scotttactical.com\/"},"headline":"eMail In A Box: Setup - Scott Tactical","image":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images\/default.png","height":800,"width":800},"datePublished":"2017-02-09T16:00:07JST","dateModified":"2017-02-09T16:00:07JST","author":{"@type":"Person","name":"Scott Tactical"},"publisher":{"@type":"Organization","name":"Scott Tactical","logo":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images/logo.png","width":600,"height":60}},"description":"Test Drive: Mail In A Box TL;DR I set up Mail-in-a-Box and it was a quick and painless experience.\nPreface I am tired of managing so many gmail and outlook accounts. Those $5\/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.\nI\u0026rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending\/receiving greater than 20 million emails a day."}</script>
+<link href=https://scotttactical.com/css/styles.css rel=stylesheet>
+</head>
+<body>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-53440065-2','auto'),ga('send','pageview'))</script>
+<header class=l-header>
+<nav class="navbar navbar-default">
+<div class=container>
+<div class=navbar-header>
+<button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#navbar aria-expanded=false>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<a class=navbar-brand href=https://scotttactical.com/>Scott Tactical</a>
+</div>
+<div id=navbar class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href=/about/>About</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<div class=container>
+<div class=row>
+<div class=col-md-8>
+<nav class=p-crumb>
+<ol class=breadcrumb>
+<li><a href=https://scotttactical.com/><i class="fa fa-home" aria-hidden=true></i></a></li>
+<li itemscope itemtype=http://data-vocabulary.org/Breadcrumb><a href=https://scotttactical.com/post/ itemprop=url><span itemprop=title>post</span></a></li>
+<li class=active>eMail In A Box: Setup</li>
+</ol>
+</nav>
+<article class=single>
+<header>
+<ul class=p-facts>
+<li><i class="fa fa-calendar" aria-hidden=true></i><time datetime=2017-02-09T16:00:07JST>Feb 9, 2017</time></li>
+<li><i class="fa fa-bookmark" aria-hidden=true></i><a href=https://scotttactical.com/post/>post</a></li>
+</ul>
+<h1 class=title>eMail In A Box: Setup</h1>
+</header>
+<div class=article-body><h2 id=test-drive-mail-in-a-box>Test Drive: Mail In A Box</h2>
+<h2 id=tldr>TL;DR</h2>
+<p>I set up <a href=https://mailinabox.email/>Mail-in-a-Box</a> and it was a quick and painless experience.</p>
+<h2 id=preface>Preface</h2>
 <p>I am tired of managing so many gmail and outlook accounts. Those $5/mo bills really eat at me. So I wanted to try something simple. I got goosebumps when I saw this and had to try it.</p>
 <p>I&rsquo;ll also preface that I was a professional email list manager and built an email service platform that was sending/receiving greater than 20 million emails a day. This is obviously much different, but it&rsquo;s cool to work in low volume transactional environments. I also hate HATE managing email.</p>
-<h2 id="pre-setup">Pre-setup</h2>
+<h2 id=pre-setup>Pre-setup</h2>
 <p>Here are a couple details about my stack.</p>
-<p>I am hosting on <a href="http://dtac.io">http://dtac.io</a> cloud VPS with the following specs.</p>
+<p>I am hosting on <a href=http://dtac.io>http://dtac.io</a> cloud VPS with the following specs.</p>
 <ul>
 <li>Ubuntu 14.04 LTS</li>
 <li>2GB memory</li>
@@ -170,184 +84,114 @@ if (!doNotTrack) {
 <li>1 ipv6 public</li>
 <li>1 piv6 private</li>
 </ul>
-<p><img src="/images/mib1.png" alt="DTAC Cloud Instance"></p>
+<p><img src=/images/mib1.png alt="DTAC Cloud Instance"></p>
 <p>Make sure to update ubuntu with all the latest fixes. My SSH keys and all that stuff were already deployed with my personal images.</p>
 <p>Let&rsquo;s Begin</p>
-<h2 id="domain-configuration">Domain Configuration</h2>
-<p>I am using <a href="https://aws.amazon.com/ses/">Amazon AWS SES</a> on their free tier to handle the transactional outgoing email, so this is mostly for incoming mail. If you have dealt with deliverability this is a huge thing for me.</p>
-<p>I am also using <a href="https://aws.amazon.com/route53/">Amazon Route 53</a> for managing the DNS. It&rsquo;s free and I don&rsquo;t want to deal with name servers.</p>
-<p>I created an A record for box.theduber.club to my IP. I then set the hostname of the box locally. Make sure to set up reverse DNS as well. <a href="https://aws.amazon.com/premiumsupport/knowledge-center/route-53-reverse-dns/">https://aws.amazon.com/premiumsupport/knowledge-center/route-53-reverse-dns/</a></p>
+<h2 id=domain-configuration>Domain Configuration</h2>
+<p>I am using <a href=https://aws.amazon.com/ses/>Amazon AWS SES</a> on their free tier to handle the transactional outgoing email, so this is mostly for incoming mail. If you have dealt with deliverability this is a huge thing for me.</p>
+<p>I am also using <a href=https://aws.amazon.com/route53/>Amazon Route 53</a> for managing the DNS. It&rsquo;s free and I don&rsquo;t want to deal with name servers.</p>
+<p>I created an A record for box.theduber.club to my IP. I then set the hostname of the box locally. Make sure to set up reverse DNS as well. <a href=https://aws.amazon.com/premiumsupport/knowledge-center/route-53-reverse-dns/>https://aws.amazon.com/premiumsupport/knowledge-center/route-53-reverse-dns/</a></p>
 <p>Waiting for your ISP to get rDNS might be the longest thing.</p>
 <p>For those who wrote the documentation. It was dialed down a little much. It actually took longer to set up because of the dummyproofing that was going on.</p>
-<h2 id="installation">Installation</h2>
+<h2 id=installation>Installation</h2>
 <p>As root:</p>
 <pre><code>curl -s https://mailinabox.email/setup.sh | sudo bash
 </code></pre>
 <p>It gave me a nice TUI to go through graphic-ish setup.</p>
-<p><img src="/images/mib2.png" alt="DTAC Cloud Instance"></p>
-<p><img src="/images/mib3.png" alt="DTAC Cloud Instance"></p>
-<h2 id="configuration">Configuration</h2>
-<p>You should be able to log into your console. <a href="https://box.yourdomain.com/admin">https://box.yourdomain.com/admin</a></p>
-<p>It will tell you what it is missing. The <a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a> feature is great. Totally love that part! Seriously, it saves days of my life.</p>
-<h2 id="conclusions">Conclusions</h2>
-<p>I&rsquo;m totally into this. Thanks to <a href="https://twitter.com/mailinabox">https://twitter.com/mailinabox</a> for all the great work compiling this thing.</p>
+<p><img src=/images/mib2.png alt="DTAC Cloud Instance"></p>
+<p><img src=/images/mib3.png alt="DTAC Cloud Instance"></p>
+<h2 id=configuration>Configuration</h2>
+<p>You should be able to log into your console. <a href=https://box.yourdomain.com/admin>https://box.yourdomain.com/admin</a></p>
+<p>It will tell you what it is missing. The <a href=https://letsencrypt.org/>Let&rsquo;s Encrypt</a> feature is great. Totally love that part! Seriously, it saves days of my life.</p>
+<h2 id=conclusions>Conclusions</h2>
+<p>I&rsquo;m totally into this. Thanks to <a href=https://twitter.com/mailinabox>https://twitter.com/mailinabox</a> for all the great work compiling this thing.</p>
 </div>
-
-  <footer class="article-footer">
-    
-    
-    
-    
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">TAGS</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scotttactical.com/tags/technology/">technology</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-  </footer>
-
+<footer class=article-footer>
+<section class=bordered>
+<header>
+<div class=panel-title>TAGS</div>
+</header>
+<div>
+<ul class=p-terms>
+<li><a href=https://scotttactical.com/tags/technology/>technology</a></li>
+</ul>
+</div>
+</section>
+</footer>
 </article>
-
-
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "scotttactical" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-
-  <div class="col-md-4">
-    
-<aside class="l-sidebar">
-
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com/why-i-converted-to-catholicism/" class="list-group-item">Why I Converted To Catholicism</a>
-      
-      <a href="https://scotttactical.com/ejs-2019-departure-preparations/" class="list-group-item">Easter Jeep Safari 2019 - Departure Preparations</a>
-      
-      <a href="https://scotttactical.com/ejs-2019-transit/" class="list-group-item">EJS 2019 - The Slow Route There </a>
-      
-      <a href="https://scotttactical.com/car-computer-face-recognition/" class="list-group-item">Car Computer Face Recognition</a>
-      
-      <a href="https://scotttactical.com/biometric-vehicle-entry-car-computer/" class="list-group-item">Biometric Vehicle Entry</a>
-      
-      <a href="https://scotttactical.com/installing-usb-relay/" class="list-group-item">Installing a USB Relay</a>
-      
-      <a href="https://scotttactical.com/car-computer-touchscreen-monitor/" class="list-group-item">Car Computer Touchscreen Monitor</a>
-      
-      <a href="https://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
-      
-      <a href="https://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
-      
-      <a href="https://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
-      
-    </div>
-  </section>
-
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">CATEGORY</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com//categories/software" class="list-group-item">software</a>
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">SERIES</div>
-    </div>
-    <div class="list-group">
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">TAG</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com//tags/data" class="list-group-item">data</a>
-      
-      <a href="https://scotttactical.com//tags/technology" class="list-group-item">technology</a>
-      
-      <a href="https://scotttactical.com//tags/car-computer" class="list-group-item">car-computer</a>
-      
-      <a href="https://scotttactical.com//tags/69-blazer" class="list-group-item">69-blazer</a>
-      
-      <a href="https://scotttactical.com//tags/california" class="list-group-item">california</a>
-      
-      <a href="https://scotttactical.com//tags/photography" class="list-group-item">photography</a>
-      
-      <a href="https://scotttactical.com//tags/philosophy" class="list-group-item">philosophy</a>
-      
-      <a href="https://scotttactical.com//tags/restoration" class="list-group-item">restoration</a>
-      
-      <a href="https://scotttactical.com//tags/devops" class="list-group-item">devops</a>
-      
-      <a href="https://scotttactical.com//tags/adventure" class="list-group-item">adventure</a>
-      
-    </div>
-  </section>
-  
-
-</aside>
-
-  </div>
+<div id=disqus_thread></div>
+<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//scotttactical.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
 </div>
-
-      </div>
-    </main>
-
-    <footer class="l-footer">
-      <div class="container">
-        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
-    </footer>
-
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
+<div class=col-md-4>
+<aside class=l-sidebar>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>LATESTS</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com/why-i-converted-to-catholicism/ class=list-group-item>Why I Converted To Catholicism</a>
+<a href=https://scotttactical.com/ejs-2019-departure-preparations/ class=list-group-item>Easter Jeep Safari 2019 - Departure Preparations</a>
+<a href=https://scotttactical.com/ejs-2019-transit/ class=list-group-item>EJS 2019 - The Slow Route There </a>
+<a href=https://scotttactical.com/car-computer-face-recognition/ class=list-group-item>Car Computer Face Recognition</a>
+<a href=https://scotttactical.com/biometric-vehicle-entry-car-computer/ class=list-group-item>Biometric Vehicle Entry</a>
+<a href=https://scotttactical.com/installing-usb-relay/ class=list-group-item>Installing a USB Relay</a>
+<a href=https://scotttactical.com/car-computer-touchscreen-monitor/ class=list-group-item>Car Computer Touchscreen Monitor</a>
+<a href=https://scotttactical.com/linux-usb-relay-controller/ class=list-group-item>Linux USB Relay Controller</a>
+<a href=https://scotttactical.com/car-computer-camera/ class=list-group-item>Car Computer Camera</a>
+<a href=https://scotttactical.com/car-computer-hardware/ class=list-group-item>Car Computer Hardware</a>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>CATEGORY</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com//categories/software class=list-group-item>software</a>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>SERIES</div>
+</div>
+<div class=list-group>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>TAG</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com//tags/data class=list-group-item>data</a>
+<a href=https://scotttactical.com//tags/technology class=list-group-item>technology</a>
+<a href=https://scotttactical.com//tags/car-computer class=list-group-item>car-computer</a>
+<a href=https://scotttactical.com//tags/69-blazer class=list-group-item>69-blazer</a>
+<a href=https://scotttactical.com//tags/california class=list-group-item>california</a>
+<a href=https://scotttactical.com//tags/photography class=list-group-item>photography</a>
+<a href=https://scotttactical.com//tags/philosophy class=list-group-item>philosophy</a>
+<a href=https://scotttactical.com//tags/restoration class=list-group-item>restoration</a>
+<a href=https://scotttactical.com//tags/devops class=list-group-item>devops</a>
+<a href=https://scotttactical.com//tags/adventure class=list-group-item>adventure</a>
+</div>
+</section>
+</aside>
+</div>
+</div>
+</div>
+</main>
+<footer class=l-footer>
+<div class=container>
+<p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+<aside>
+<p>Powered by <a href=https://gohugo.io/>Hugo</a>.</p>
+<p><a href=https://github.com/dim0627/hugo_theme_beg>Beg</a> designed by <a href=http://yet.unresolved.xyz/>Daisuke Tsuji</a>.</p>
+</aside>
+</div>
+</footer>
+<script src=//code.jquery.com/jquery-3.1.1.min.js></script>
+<script src=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
 </html>
-

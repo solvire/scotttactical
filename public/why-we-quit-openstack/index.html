@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-<meta name="pinterest" content="nopin">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.92.2" />
-
-
-
-<link rel="canonical" href="https://scotttactical.com/why-we-quit-openstack/">
-
-
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Why We Quit OpenStack: or How I Lost 2 Months of My Life - Scott Tactical</title>
-    
-<meta name="description" content="TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.I will probably write another article that outlines all the questions that I should have asked before starting this.">
-
+<!doctype html><html>
+<head>
+<meta charset=utf-8>
+<meta name=pinterest content="nopin">
+<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel=canonical href=https://scotttactical.com/why-we-quit-openstack/>
+<link href=//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css rel=stylesheet>
+<link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+<link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css>
+<title>Why We Quit OpenStack: or How I Lost 2 Months of My Life - Scott Tactical</title>
+<meta name=description content="TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.I will probably write another article that outlines all the questions that I should have asked before starting this.">
 <meta property="og:title" content="Why We Quit OpenStack: or How I Lost 2 Months of My Life - Scott Tactical">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scotttactical.com/why-we-quit-openstack/">
@@ -25,186 +16,109 @@
 <meta property="og:site_name" content="Scott Tactical">
 <meta property="og:description" content="TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.I will probably write another article that outlines all the questions that I should have asked before starting this.">
 <meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="Scott Tactical">
-<meta name="twitter:url" content="https://scotttactical.com/why-we-quit-openstack/">
-<meta name="twitter:title" content="Why We Quit OpenStack: or How I Lost 2 Months of My Life - Scott Tactical">
-<meta name="twitter:description" content="TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.I will probably write another article that outlines all the questions that I should have asked before starting this.">
-<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
-
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id":"https:\/\/scotttactical.com\/"
-    },
-    "headline": "Why We Quit OpenStack: or How I Lost 2 Months of My Life - Scott Tactical",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https:\/\/scotttactical.com\/images\/default.png",
-      "height": 800,
-      "width": 800
-    },
-    "datePublished": "2016-10-28T20:07:57JST",
-    "dateModified": "2016-10-29T13:02:00JST",
-    "author": {
-      "@type": "Person",
-      "name": "Scott Tactical"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Scott Tactical",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https:\/\/scotttactical.com\/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "description": "TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.\nBackstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn\u0026rsquo;t bad for some people. For most institutions it is just wrong.\nI will probably write another article that outlines all the questions that I should have asked before starting this."
-  }
-</script>
-
-
-    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
-    
-
-  </head>
-
-  <body>
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-53440065-2', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-    
-
-    <header class="l-header">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-          </div>
-
-          
-          <div id="navbar" class="collapse navbar-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              
-              
-              <li><a href="/about/">About</a></li>
-              
-              
-            </ul>
-            
-          </div>
-          
-
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <div class="container">
-        
-<div class="row">
-  <div class="col-md-8">
-
-    <nav class="p-crumb">
-      <ol class="breadcrumb">
-        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-        
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
-        
-        <li class="active">Why We Quit OpenStack: or How I Lost 2 Months of My Life</li>
-      </ol>
-    </nav>
-
-    <article class="single">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-10-29T13:02:00JST">Oct 29, 2016</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
-      
-    </ul>
-
-    <h1 class="title">Why We Quit OpenStack: or How I Lost 2 Months of My Life</h1>
-  </header>
-
-  
-
-  <div class="article-body"><h3 id="tldr">TL;DR</h3>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:site content="Scott Tactical">
+<meta name=twitter:url content="https://scotttactical.com/why-we-quit-openstack/">
+<meta name=twitter:title content="Why We Quit OpenStack: or How I Lost 2 Months of My Life - Scott Tactical">
+<meta name=twitter:description content="TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&amp;rsquo;t bad for some people. For most institutions it is just wrong.I will probably write another article that outlines all the questions that I should have asked before starting this.">
+<meta name=twitter:image content="https://scotttactical.com/images/default.png">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/scotttactical.com\/"},"headline":"Why We Quit OpenStack: or How I Lost 2 Months of My Life - Scott Tactical","image":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images\/default.png","height":800,"width":800},"datePublished":"2016-10-28T20:07:57JST","dateModified":"2016-10-29T13:02:00JST","author":{"@type":"Person","name":"Scott Tactical"},"publisher":{"@type":"Organization","name":"Scott Tactical","logo":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images/logo.png","width":600,"height":60}},"description":"TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.\nBackstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn\u0026rsquo;t bad for some people. For most institutions it is just wrong.\nI will probably write another article that outlines all the questions that I should have asked before starting this."}</script>
+<link href=https://scotttactical.com/css/styles.css rel=stylesheet>
+</head>
+<body>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-53440065-2','auto'),ga('send','pageview'))</script>
+<header class=l-header>
+<nav class="navbar navbar-default">
+<div class=container>
+<div class=navbar-header>
+<button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#navbar aria-expanded=false>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<a class=navbar-brand href=https://scotttactical.com/>Scott Tactical</a>
+</div>
+<div id=navbar class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href=/about/>About</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<div class=container>
+<div class=row>
+<div class=col-md-8>
+<nav class=p-crumb>
+<ol class=breadcrumb>
+<li><a href=https://scotttactical.com/><i class="fa fa-home" aria-hidden=true></i></a></li>
+<li itemscope itemtype=http://data-vocabulary.org/Breadcrumb><a href=https://scotttactical.com/post/ itemprop=url><span itemprop=title>post</span></a></li>
+<li class=active>Why We Quit OpenStack: or How I Lost 2 Months of My Life</li>
+</ol>
+</nav>
+<article class=single>
+<header>
+<ul class=p-facts>
+<li><i class="fa fa-calendar" aria-hidden=true></i><time datetime=2016-10-29T13:02:00JST>Oct 29, 2016</time></li>
+<li><i class="fa fa-bookmark" aria-hidden=true></i><a href=https://scotttactical.com/post/>post</a></li>
+</ul>
+<h1 class=title>Why We Quit OpenStack: or How I Lost 2 Months of My Life</h1>
+</header>
+<div class=article-body><h3 id=tldr>TL;DR</h3>
 <p>OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.</p>
-<h2 id="backstory">Backstory</h2>
+<h2 id=backstory>Backstory</h2>
 <p>Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&rsquo;t bad for some people. For most institutions it is just <em>wrong</em>.</p>
 <p>I will probably write another article that outlines all the questions that I should have asked before starting this. My assumptions were not all quite valid, but I did have a sneaking suspicion given a couple very relevant experiences.</p>
 <p>Several people asked me about a way to do big(ish) data at an affordable price. I enjoy owning hardware and infrastructure and from a business perspective that is a fairly decent endeavor in terms of static equity. I was bored with coding. The two of those items intersected and I decided to take on the task of bringing in some data clients and see if I could beat the services of other competitors and give them a better experience.</p>
-<p>Disclosure: This site is currently running on our openstack deployment in <a href="http://dtac.io">DTAC&rsquo;s</a> private cloud</p>
+<p>Disclosure: This site is currently running on our openstack deployment in <a href=http://dtac.io>DTAC&rsquo;s</a> private cloud</p>
 <p>.
 .</p>
-<p><img src="/images/full_openstack.jpg" alt="Full OpenStack"></p>
-<h2 id="red-flags">Red Flags</h2>
+<p><img src=/images/full_openstack.jpg alt="Full OpenStack"></p>
+<h2 id=red-flags>Red Flags</h2>
 <blockquote>
 <p>Where there are <em>clouds</em> of smoke, there is probably fire. - An Indian Truism</p>
 </blockquote>
-<h3 id="it-took-forever">It Took Forever</h3>
-<p>I witnessed an ambitious project slide face-first into the blue and white parking stall of the private cloud mall. Then later it was used as leverage to out every participant. I mostly attributed the breakdown to lack of time resources, OS talent and political infighting.  <em>nerds (heart) aws</em> but more on that elsewhere.  Ignoring those huge red flags I figured my sysadmin abilities would be able to figure things out and surpass them.</p>
+<h3 id=it-took-forever>It Took Forever</h3>
+<p>I witnessed an ambitious project slide face-first into the blue and white parking stall of the private cloud mall. Then later it was used as leverage to out every participant. I mostly attributed the breakdown to lack of time resources, OS talent and political infighting. <em>nerds (heart) aws</em> but more on that elsewhere. Ignoring those huge red flags I figured my sysadmin abilities would be able to figure things out and surpass them.</p>
 <p>My response: I got sysadmin skills and no politics. I&rsquo;ve never failed to raise a datacenter infrastructure.</p>
-<h3 id="openstack-hate-speech">OpenStack Hate Speech</h3>
+<h3 id=openstack-hate-speech>OpenStack Hate Speech</h3>
 <p>There was plenty of hating over OpenStack. More specifically there was a lot of negative commentary about Nova, Neutron and Cinder. Basically the heart of the application.</p>
 <p>My response: I kinda need those bells and whistles so it&rsquo;s worth dealing with monolithic bloat because that&rsquo;s my only option.</p>
-<h3 id="nerds-heart-aws">Nerds (heart) AWS</h3>
+<h3 id=nerds-heart-aws>Nerds (heart) AWS</h3>
 <blockquote>
 <p>When there is blood in the streets, buy land. - Contrarian Invetors' Proverb</p>
 </blockquote>
-<p>Searching for OpenStack talent was like looking for unbiased political commentary on twitter. Just ain&rsquo;t there.  Techs not only didn&rsquo;t know it well, but most applicants that had it on their resumes didn&rsquo;t want to deploy it. Out of 50 techs I talked with about private cloud work, 49 said they could help me set up with Amazon AW$.  It is entirely confusing to ask someone to help you with your private cloud and they offer to help what is essentially a competing public cloud.</p>
+<p>Searching for OpenStack talent was like looking for unbiased political commentary on twitter. Just ain&rsquo;t there. Techs not only didn&rsquo;t know it well, but most applicants that had it on their resumes didn&rsquo;t want to deploy it. Out of 50 techs I talked with about private cloud work, 49 said they could help me set up with Amazon AW$. It is entirely confusing to ask someone to help you with your private cloud and they offer to help what is essentially a competing public cloud.</p>
 <p>A side note: Most tech professionals also said they were getting a &ldquo;great deal&rdquo; at Amazon. No financial officer I talked to shared this sentiment. I&rsquo;m sure business math was never part of comp-sci. Food for thought.</p>
 <p>My response: Well most nerds have near-0 business strategy. Also this indicates there is a massive gap in talent so I&rsquo;d like to be here.</p>
-<h3 id="babylon-fortuna-ergo-enterprise-ready">Babylon Fortuna ergo Enterprise-Ready</h3>
+<h3 id=babylon-fortuna-ergo-enterprise-ready>Babylon Fortuna ergo Enterprise-Ready</h3>
 <p>The codebase is huge. And kinda old at this point. In internet years it&rsquo;s about 50 years old.</p>
 <p>My response: It is mature enough to use. I should be ashamed of myself. I deployed IBM Websphere and should have known better.</p>
-<h3 id="it-is-complicated">It is Complicated</h3>
-<p><img src="/images/fb_complicated.png" alt="It&rsquo;s Complicated"></p>
+<h3 id=it-is-complicated>It is Complicated</h3>
+<p><img src=/images/fb_complicated.png alt="It&rsquo;s Complicated"></p>
 <p>Look at the diagram. Seriously Siri WHERE IS MY CAR!?!?!</p>
-<p><img src="http://docs.openstack.org/icehouse/training-guides/content/figures/5/a/figures/openstack-arch-havana-logical-v1.jpg" alt="OpenStack"></p>
+<p><img src=http://docs.openstack.org/icehouse/training-guides/content/figures/5/a/figures/openstack-arch-havana-logical-v1.jpg alt=OpenStack></p>
 <p>BTW this image is taken from the OpenStack &ldquo;Getting Started&rdquo; section.</p>
 <p>My response: Well, shit. Guess I&rsquo;ve dealt with worse. I hope there isn&rsquo;t magic happening. I&rsquo;ll trust the Fuel installers. Oh God Fuel! don&rsquo;t fail me!</p>
-<h3 id="it-is-fragile">It Is Fragile</h3>
+<h3 id=it-is-fragile>It Is Fragile</h3>
 <p>Refer to the previous diagram. With so many moving parts and given the lack of talent capable of managing it there is a serious level of risk in trusting a critical production environment on this.</p>
 <p>My response: Keep my public cloud fail overs built and ready to deploy. I&rsquo;m a cheat.</p>
-<h3 id="it-is-vendor-driven">It Is Vendor Driven</h3>
+<h3 id=it-is-vendor-driven>It Is Vendor Driven</h3>
 <p>I kinda knew that the growth of OpenStack was tainted by vendor intrigue. I have run into this spending a considerable amount of time working with OAuth 2.0 when the &ldquo;framework&rdquo; was going through proposals and the lead writers were splitting.</p>
-<p>Cite: <a href="https://www.openstack.org/summit/vancouver-2015/summit-videos/presentation/openstack-is-doomed-and-it-is-your-fault">OpenStack is Doomed - Andy (termie) Smith</a></p>
+<p>Cite: <a href=https://www.openstack.org/summit/vancouver-2015/summit-videos/presentation/openstack-is-doomed-and-it-is-your-fault>OpenStack is Doomed - Andy (termie) Smith</a></p>
 <p>My response: Ick</p>
-<h2 id="the-final-decision">The Final Decision</h2>
+<h2 id=the-final-decision>The Final Decision</h2>
 <p>While it might work for a team like RackSpace, I don&rsquo;t think it fits what we need. The cost benefit of having a few drivers and some prebuilt scripts to managing images wasn&rsquo;t enough to justify the cost and risk of having a system that is so fragile.</p>
 <p>The risk and the knowns of unknowns inside the massive spaghetti of scope creep was enough that I couldn&rsquo;t justify that I wouldn&rsquo;t be able to jump in and fix something within less than a day. Pretty much every code fix I had to make took more than a day. More of 3-5 days to figure out each bug. That was the last straw.</p>
-<h3 id="opennebula">OpenNebula</h3>
+<h3 id=opennebula>OpenNebula</h3>
 <p>We tried other stacks and I launched a multiple node infrastructure with OpenNebula. It was refreshingly vertical and self-contained. But still felt like it wanted to follow the hypervisor slipstream of OpenStack.</p>
-<h3 id="blah-stack">Blah-Stack</h3>
+<h3 id=blah-stack>Blah-Stack</h3>
 <p>There was a lot of other options but I was burned out at this point.</p>
-<h3 id="future-plans">Future Plans</h3>
+<h3 id=future-plans>Future Plans</h3>
 <p>The focus internally is more on bare-metal and OS containers. So far so good.</p>
-<h2 id="conclusion">Conclusion</h2>
+<h2 id=conclusion>Conclusion</h2>
 <ul>
 <li>There is no free ride. (Development is an Expect 2 Work Employment)</li>
 <li>Swiss army knives suck for self-defense and bayonets</li>
@@ -213,166 +127,94 @@ if (!doNotTrack) {
 <li>Community first, politics last</li>
 </ul>
 </div>
-
-  <footer class="article-footer">
-    
-    
-    
-    
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">TAGS</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scotttactical.com/tags/technology/">technology</a></li>
-          
-          <li><a href="https://scotttactical.com/tags/data/">data</a></li>
-          
-          <li><a href="https://scotttactical.com/tags/devops/">devops</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-  </footer>
-
-</article>
-
-
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "scotttactical" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-
-  <div class="col-md-4">
-    
-<aside class="l-sidebar">
-
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com/why-i-converted-to-catholicism/" class="list-group-item">Why I Converted To Catholicism</a>
-      
-      <a href="https://scotttactical.com/ejs-2019-departure-preparations/" class="list-group-item">Easter Jeep Safari 2019 - Departure Preparations</a>
-      
-      <a href="https://scotttactical.com/ejs-2019-transit/" class="list-group-item">EJS 2019 - The Slow Route There </a>
-      
-      <a href="https://scotttactical.com/car-computer-face-recognition/" class="list-group-item">Car Computer Face Recognition</a>
-      
-      <a href="https://scotttactical.com/biometric-vehicle-entry-car-computer/" class="list-group-item">Biometric Vehicle Entry</a>
-      
-      <a href="https://scotttactical.com/installing-usb-relay/" class="list-group-item">Installing a USB Relay</a>
-      
-      <a href="https://scotttactical.com/car-computer-touchscreen-monitor/" class="list-group-item">Car Computer Touchscreen Monitor</a>
-      
-      <a href="https://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
-      
-      <a href="https://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
-      
-      <a href="https://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
-      
-    </div>
-  </section>
-
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">CATEGORY</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com//categories/software" class="list-group-item">software</a>
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">SERIES</div>
-    </div>
-    <div class="list-group">
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">TAG</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com//tags/data" class="list-group-item">data</a>
-      
-      <a href="https://scotttactical.com//tags/technology" class="list-group-item">technology</a>
-      
-      <a href="https://scotttactical.com//tags/car-computer" class="list-group-item">car-computer</a>
-      
-      <a href="https://scotttactical.com//tags/69-blazer" class="list-group-item">69-blazer</a>
-      
-      <a href="https://scotttactical.com//tags/california" class="list-group-item">california</a>
-      
-      <a href="https://scotttactical.com//tags/photography" class="list-group-item">photography</a>
-      
-      <a href="https://scotttactical.com//tags/philosophy" class="list-group-item">philosophy</a>
-      
-      <a href="https://scotttactical.com//tags/restoration" class="list-group-item">restoration</a>
-      
-      <a href="https://scotttactical.com//tags/devops" class="list-group-item">devops</a>
-      
-      <a href="https://scotttactical.com//tags/adventure" class="list-group-item">adventure</a>
-      
-    </div>
-  </section>
-  
-
-</aside>
-
-  </div>
+<footer class=article-footer>
+<section class=bordered>
+<header>
+<div class=panel-title>TAGS</div>
+</header>
+<div>
+<ul class=p-terms>
+<li><a href=https://scotttactical.com/tags/technology/>technology</a></li>
+<li><a href=https://scotttactical.com/tags/data/>data</a></li>
+<li><a href=https://scotttactical.com/tags/devops/>devops</a></li>
+</ul>
 </div>
-
-      </div>
-    </main>
-
-    <footer class="l-footer">
-      <div class="container">
-        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
-    </footer>
-
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
+</section>
+</footer>
+</article>
+<div id=disqus_thread></div>
+<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//scotttactical.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+</div>
+<div class=col-md-4>
+<aside class=l-sidebar>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>LATESTS</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com/why-i-converted-to-catholicism/ class=list-group-item>Why I Converted To Catholicism</a>
+<a href=https://scotttactical.com/ejs-2019-departure-preparations/ class=list-group-item>Easter Jeep Safari 2019 - Departure Preparations</a>
+<a href=https://scotttactical.com/ejs-2019-transit/ class=list-group-item>EJS 2019 - The Slow Route There </a>
+<a href=https://scotttactical.com/car-computer-face-recognition/ class=list-group-item>Car Computer Face Recognition</a>
+<a href=https://scotttactical.com/biometric-vehicle-entry-car-computer/ class=list-group-item>Biometric Vehicle Entry</a>
+<a href=https://scotttactical.com/installing-usb-relay/ class=list-group-item>Installing a USB Relay</a>
+<a href=https://scotttactical.com/car-computer-touchscreen-monitor/ class=list-group-item>Car Computer Touchscreen Monitor</a>
+<a href=https://scotttactical.com/linux-usb-relay-controller/ class=list-group-item>Linux USB Relay Controller</a>
+<a href=https://scotttactical.com/car-computer-camera/ class=list-group-item>Car Computer Camera</a>
+<a href=https://scotttactical.com/car-computer-hardware/ class=list-group-item>Car Computer Hardware</a>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>CATEGORY</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com//categories/software class=list-group-item>software</a>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>SERIES</div>
+</div>
+<div class=list-group>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>TAG</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com//tags/data class=list-group-item>data</a>
+<a href=https://scotttactical.com//tags/technology class=list-group-item>technology</a>
+<a href=https://scotttactical.com//tags/car-computer class=list-group-item>car-computer</a>
+<a href=https://scotttactical.com//tags/69-blazer class=list-group-item>69-blazer</a>
+<a href=https://scotttactical.com//tags/california class=list-group-item>california</a>
+<a href=https://scotttactical.com//tags/photography class=list-group-item>photography</a>
+<a href=https://scotttactical.com//tags/philosophy class=list-group-item>philosophy</a>
+<a href=https://scotttactical.com//tags/restoration class=list-group-item>restoration</a>
+<a href=https://scotttactical.com//tags/devops class=list-group-item>devops</a>
+<a href=https://scotttactical.com//tags/adventure class=list-group-item>adventure</a>
+</div>
+</section>
+</aside>
+</div>
+</div>
+</div>
+</main>
+<footer class=l-footer>
+<div class=container>
+<p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+<aside>
+<p>Powered by <a href=https://gohugo.io/>Hugo</a>.</p>
+<p><a href=https://github.com/dim0627/hugo_theme_beg>Beg</a> designed by <a href=http://yet.unresolved.xyz/>Daisuke Tsuji</a>.</p>
+</aside>
+</div>
+</footer>
+<script src=//code.jquery.com/jquery-3.1.1.min.js></script>
+<script src=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
 </html>
-

@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-<meta name="pinterest" content="nopin">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.92.2" />
-
-
-
-<link rel="canonical" href="https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">
-
-
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Encrypt PostgreSQL Backup to S3 - Scott Tactical</title>
-    
-<meta name="description" content="Encrypt Your DB Backups I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.Generate Keys From your user&amp;rsquo;s home directory:openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pubFill out the questions appropriately. Or not. I don&amp;rsquo;t think it matters really.That will create the public and private keys.backup_key.pem - private key backup_key.">
-
+<!doctype html><html>
+<head>
+<meta charset=utf-8>
+<meta name=pinterest content="nopin">
+<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel=canonical href=https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/>
+<link href=//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css rel=stylesheet>
+<link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+<link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css>
+<title>Encrypt PostgreSQL Backup to S3 - Scott Tactical</title>
+<meta name=description content="Encrypt Your DB Backups I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.Generate Keys From your user&amp;rsquo;s home directory:openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pubFill out the questions appropriately. Or not. I don&amp;rsquo;t think it matters really.That will create the public and private keys.backup_key.pem - private key backup_key.">
 <meta property="og:title" content="Encrypt PostgreSQL Backup to S3 - Scott Tactical">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">
@@ -25,152 +16,75 @@
 <meta property="og:site_name" content="Scott Tactical">
 <meta property="og:description" content="Encrypt Your DB Backups I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.Generate Keys From your user&amp;rsquo;s home directory:openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pubFill out the questions appropriately. Or not. I don&amp;rsquo;t think it matters really.That will create the public and private keys.backup_key.pem - private key backup_key.">
 <meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="Scott Tactical">
-<meta name="twitter:url" content="https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">
-<meta name="twitter:title" content="Encrypt PostgreSQL Backup to S3 - Scott Tactical">
-<meta name="twitter:description" content="Encrypt Your DB Backups I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.Generate Keys From your user&amp;rsquo;s home directory:openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pubFill out the questions appropriately. Or not. I don&amp;rsquo;t think it matters really.That will create the public and private keys.backup_key.pem - private key backup_key.">
-<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
-
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id":"https:\/\/scotttactical.com\/"
-    },
-    "headline": "Encrypt PostgreSQL Backup to S3 - Scott Tactical",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https:\/\/scotttactical.com\/images\/default.png",
-      "height": 800,
-      "width": 800
-    },
-    "datePublished": "2016-12-24T06:41:07JST",
-    "dateModified": "2016-12-24T06:41:07JST",
-    "author": {
-      "@type": "Person",
-      "name": "Scott Tactical"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Scott Tactical",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https:\/\/scotttactical.com\/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "description": "Encrypt Your DB Backups I\u0026rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.\nGenerate Keys From your user\u0026rsquo;s home directory:\nopenssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh\/backup_key.pem -out .ssh\/backup_key.pem.pub\nFill out the questions appropriately. Or not. I don\u0026rsquo;t think it matters really.\nThat will create the public and private keys.\nbackup_key.pem - private key backup_key."
-  }
-</script>
-
-
-    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
-    
-
-  </head>
-
-  <body>
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-53440065-2', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-    
-
-    <header class="l-header">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-          </div>
-
-          
-          <div id="navbar" class="collapse navbar-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              
-              
-              <li><a href="/about/">About</a></li>
-              
-              
-            </ul>
-            
-          </div>
-          
-
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <div class="container">
-        
-<div class="row">
-  <div class="col-md-8">
-
-    <nav class="p-crumb">
-      <ol class="breadcrumb">
-        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-        
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
-        
-        <li class="active">Encrypt PostgreSQL Backup to S3</li>
-      </ol>
-    </nav>
-
-    <article class="single">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-12-24T06:41:07JST">Dec 24, 2016</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
-      
-    </ul>
-
-    <h1 class="title">Encrypt PostgreSQL Backup to S3</h1>
-  </header>
-
-  
-
-  <div class="article-body"><h2 id="encrypt-your-db-backups">Encrypt Your DB Backups</h2>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:site content="Scott Tactical">
+<meta name=twitter:url content="https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/">
+<meta name=twitter:title content="Encrypt PostgreSQL Backup to S3 - Scott Tactical">
+<meta name=twitter:description content="Encrypt Your DB Backups I&amp;rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.Generate Keys From your user&amp;rsquo;s home directory:openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pubFill out the questions appropriately. Or not. I don&amp;rsquo;t think it matters really.That will create the public and private keys.backup_key.pem - private key backup_key.">
+<meta name=twitter:image content="https://scotttactical.com/images/default.png">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/scotttactical.com\/"},"headline":"Encrypt PostgreSQL Backup to S3 - Scott Tactical","image":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images\/default.png","height":800,"width":800},"datePublished":"2016-12-24T06:41:07JST","dateModified":"2016-12-24T06:41:07JST","author":{"@type":"Person","name":"Scott Tactical"},"publisher":{"@type":"Organization","name":"Scott Tactical","logo":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images/logo.png","width":600,"height":60}},"description":"Encrypt Your DB Backups I\u0026rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.\nGenerate Keys From your user\u0026rsquo;s home directory:\nopenssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh\/backup_key.pem -out .ssh\/backup_key.pem.pub\nFill out the questions appropriately. Or not. I don\u0026rsquo;t think it matters really.\nThat will create the public and private keys.\nbackup_key.pem - private key backup_key."}</script>
+<link href=https://scotttactical.com/css/styles.css rel=stylesheet>
+</head>
+<body>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-53440065-2','auto'),ga('send','pageview'))</script>
+<header class=l-header>
+<nav class="navbar navbar-default">
+<div class=container>
+<div class=navbar-header>
+<button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#navbar aria-expanded=false>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<a class=navbar-brand href=https://scotttactical.com/>Scott Tactical</a>
+</div>
+<div id=navbar class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href=/about/>About</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<div class=container>
+<div class=row>
+<div class=col-md-8>
+<nav class=p-crumb>
+<ol class=breadcrumb>
+<li><a href=https://scotttactical.com/><i class="fa fa-home" aria-hidden=true></i></a></li>
+<li itemscope itemtype=http://data-vocabulary.org/Breadcrumb><a href=https://scotttactical.com/post/ itemprop=url><span itemprop=title>post</span></a></li>
+<li class=active>Encrypt PostgreSQL Backup to S3</li>
+</ol>
+</nav>
+<article class=single>
+<header>
+<ul class=p-facts>
+<li><i class="fa fa-calendar" aria-hidden=true></i><time datetime=2016-12-24T06:41:07JST>Dec 24, 2016</time></li>
+<li><i class="fa fa-bookmark" aria-hidden=true></i><a href=https://scotttactical.com/post/>post</a></li>
+</ul>
+<h1 class=title>Encrypt PostgreSQL Backup to S3</h1>
+</header>
+<div class=article-body><h2 id=encrypt-your-db-backups>Encrypt Your DB Backups</h2>
 <p>I&rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.</p>
-<h3 id="generate-keys">Generate Keys</h3>
+<h3 id=generate-keys>Generate Keys</h3>
 <p>From your user&rsquo;s home directory:</p>
 <p>openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub</p>
 <p>Fill out the questions appropriately. Or not. I don&rsquo;t think it matters really.</p>
 <p>That will create the public and private keys.</p>
 <p>backup_key.pem - private key
 backup_key.pem.pub - public key</p>
-<h3 id="add-aws-keys">Add AWS Keys</h3>
+<h3 id=add-aws-keys>Add AWS Keys</h3>
 <p>Create a file to hold your AWS keys.</p>
 <p>mkdir ~/.aws
 vi ~/.aws/credentials</p>
 <p>Here is the format:</p>
-<pre tabindex="0"><code>[default]
+<pre tabindex=0><code>[default]
 aws_access_key_id = ACCESSKEY
 aws_secret_access_key = SECRETKEY
 aws_region = us-east-1
-</code></pre><h2 id="backup-script">Backup Script</h2>
+</code></pre><h2 id=backup-script>Backup Script</h2>
 <p>I don&rsquo;t want to bore with details but here is what this script will do from a high level:</p>
 <ol>
 <li>Take DB name</li>
@@ -179,208 +93,137 @@ aws_region = us-east-1
 <li>remove the old versions</li>
 <li>copy to s3 for storage</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">!/bin/bash
-<span style="color:#75715e">## #######################</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>!/bin/bash
+<span style=color:#75715e>## #######################</span>
 
-<span style="color:#75715e">## Database Name</span>
-database_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
-backup_public_key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/HOMDIR/.ssh/backup_key.pem.pub&#34;</span>
+<span style=color:#75715e>## Database Name</span>
+database_name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$1<span style=color:#e6db74>&#34;</span>
+backup_public_key<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/HOMDIR/.ssh/backup_key.pem.pub&#34;</span>
 
-<span style="color:#75715e">## Location to place backups.</span>
-backup_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/tmp/db_backups/&#34;</span>
-<span style="color:#75715e">## Numbers of days you want to keep copies of your databases</span>
+<span style=color:#75715e>## Location to place backups.</span>
+backup_dir<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/tmp/db_backups/&#34;</span>
+<span style=color:#75715e>## Numbers of days you want to keep copies of your databases</span>
 
-number_of_days<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
-<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>database_name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>
-<span style="color:#66d9ef">then</span>
- echo <span style="color:#e6db74">&#34;Please specify a database name as the first argument&#34;</span>
- exit <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">fi</span>
+number_of_days<span style=color:#f92672>=</span><span style=color:#ae81ff>10</span>
+<span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> -z <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>database_name<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span> <span style=color:#f92672>]</span>
+<span style=color:#66d9ef>then</span>
+ echo <span style=color:#e6db74>&#34;Please specify a database name as the first argument&#34;</span>
+ exit <span style=color:#ae81ff>1</span>
+<span style=color:#66d9ef>fi</span>
 
-<span style="color:#75715e">## String to append to the name of the backup files</span>
-backup_date<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>date +%Y-%m-%d-%H-%M-%S<span style="color:#e6db74">`</span>
-backup_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>database_name<span style="color:#e6db74">}</span><span style="color:#e6db74">.</span><span style="color:#e6db74">${</span>backup_date<span style="color:#e6db74">}</span><span style="color:#e6db74">.sql.bz2.enc&#34;</span>
-echo <span style="color:#e6db74">&#34;Dumping </span><span style="color:#e6db74">${</span>database_name<span style="color:#e6db74">}</span><span style="color:#e6db74"> to </span><span style="color:#e6db74">${</span>backup_dir<span style="color:#e6db74">}${</span>backup_name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style=color:#75715e>## String to append to the name of the backup files</span>
+backup_date<span style=color:#f92672>=</span><span style=color:#e6db74>`</span>date +%Y-%m-%d-%H-%M-%S<span style=color:#e6db74>`</span>
+backup_name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>database_name<span style=color:#e6db74>}</span><span style=color:#e6db74>.</span><span style=color:#e6db74>${</span>backup_date<span style=color:#e6db74>}</span><span style=color:#e6db74>.sql.bz2.enc&#34;</span>
+echo <span style=color:#e6db74>&#34;Dumping </span><span style=color:#e6db74>${</span>database_name<span style=color:#e6db74>}</span><span style=color:#e6db74> to </span><span style=color:#e6db74>${</span>backup_dir<span style=color:#e6db74>}${</span>backup_name<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
 
-pg_dump <span style="color:#e6db74">${</span>database_name<span style="color:#e6db74">}</span>|bzip2|openssl smime -encrypt <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span> -aes256 -binary -outform DEM <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span> -out <span style="color:#e6db74">${</span>backup_dir<span style="color:#e6db74">}${</span>backup_name<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>backup_public_key<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+pg_dump <span style=color:#e6db74>${</span>database_name<span style=color:#e6db74>}</span>|bzip2|openssl smime -encrypt <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span> -aes256 -binary -outform DEM <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span> -out <span style=color:#e6db74>${</span>backup_dir<span style=color:#e6db74>}${</span>backup_name<span style=color:#e6db74>}</span> <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span> <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>backup_public_key<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
 
-find <span style="color:#e6db74">${</span>backup_dir<span style="color:#e6db74">}</span> -type f -prune -mtime <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    +<span style="color:#e6db74">${</span>number_of_days<span style="color:#e6db74">}</span> -exec rm -f <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
+find <span style=color:#e6db74>${</span>backup_dir<span style=color:#e6db74>}</span> -type f -prune -mtime <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>    +<span style=color:#e6db74>${</span>number_of_days<span style=color:#e6db74>}</span> -exec rm -f <span style=color:#f92672>{}</span> <span style=color:#ae81ff>\;</span>
 
-<span style="color:#75715e">## push file to S3</span>
-aws s3 cp <span style="color:#e6db74">${</span>backup_dir<span style="color:#e6db74">}${</span>backup_name<span style="color:#e6db74">}</span> s3://YOURBUCKET/db_backup/
+<span style=color:#75715e>## push file to S3</span>
+aws s3 cp <span style=color:#e6db74>${</span>backup_dir<span style=color:#e6db74>}${</span>backup_name<span style=color:#e6db74>}</span> s3://YOURBUCKET/db_backup/
 
-</code></pre></div><h3 id="crontab">Crontab</h3>
+</code></pre></div><h3 id=crontab>Crontab</h3>
 <p>Set up a crontab for this script. This one fires off at 3am PT daily. Change as needed.</p>
 <p>crontab -e
 0 3 * * * /location/pg_backup.sh YOURDB</p>
-<h2 id="decrypt">Decrypt</h2>
+<h2 id=decrypt>Decrypt</h2>
 <p>Decryption is pretty straight forward. Get your private key and pull the file from S3.</p>
-<p>openssl smime -decrypt -in my_database.sql.sql.bz2.enc -binary -inform DEM -inkey private.pem | bzcat &gt;  my_database.sql.sql</p>
-<h2 id="credits">Credits</h2>
-<p><a href="https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/">https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/</a></p>
+<p>openssl smime -decrypt -in my_database.sql.sql.bz2.enc -binary -inform DEM -inkey private.pem | bzcat > my_database.sql.sql</p>
+<h2 id=credits>Credits</h2>
+<p><a href=https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/>https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/</a></p>
 </div>
-
-  <footer class="article-footer">
-    
-    
-    
-    
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">TAGS</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scotttactical.com/tags/devops/">devops</a></li>
-          
-          <li><a href="https://scotttactical.com/tags/data/">data</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-  </footer>
-
+<footer class=article-footer>
+<section class=bordered>
+<header>
+<div class=panel-title>TAGS</div>
+</header>
+<div>
+<ul class=p-terms>
+<li><a href=https://scotttactical.com/tags/devops/>devops</a></li>
+<li><a href=https://scotttactical.com/tags/data/>data</a></li>
+</ul>
+</div>
+</section>
+</footer>
 </article>
-
-
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "scotttactical" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-
-  <div class="col-md-4">
-    
-<aside class="l-sidebar">
-
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com/why-i-converted-to-catholicism/" class="list-group-item">Why I Converted To Catholicism</a>
-      
-      <a href="https://scotttactical.com/ejs-2019-departure-preparations/" class="list-group-item">Easter Jeep Safari 2019 - Departure Preparations</a>
-      
-      <a href="https://scotttactical.com/ejs-2019-transit/" class="list-group-item">EJS 2019 - The Slow Route There </a>
-      
-      <a href="https://scotttactical.com/car-computer-face-recognition/" class="list-group-item">Car Computer Face Recognition</a>
-      
-      <a href="https://scotttactical.com/biometric-vehicle-entry-car-computer/" class="list-group-item">Biometric Vehicle Entry</a>
-      
-      <a href="https://scotttactical.com/installing-usb-relay/" class="list-group-item">Installing a USB Relay</a>
-      
-      <a href="https://scotttactical.com/car-computer-touchscreen-monitor/" class="list-group-item">Car Computer Touchscreen Monitor</a>
-      
-      <a href="https://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
-      
-      <a href="https://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
-      
-      <a href="https://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
-      
-    </div>
-  </section>
-
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">CATEGORY</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com//categories/software" class="list-group-item">software</a>
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">SERIES</div>
-    </div>
-    <div class="list-group">
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">TAG</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com//tags/data" class="list-group-item">data</a>
-      
-      <a href="https://scotttactical.com//tags/technology" class="list-group-item">technology</a>
-      
-      <a href="https://scotttactical.com//tags/car-computer" class="list-group-item">car-computer</a>
-      
-      <a href="https://scotttactical.com//tags/69-blazer" class="list-group-item">69-blazer</a>
-      
-      <a href="https://scotttactical.com//tags/california" class="list-group-item">california</a>
-      
-      <a href="https://scotttactical.com//tags/photography" class="list-group-item">photography</a>
-      
-      <a href="https://scotttactical.com//tags/philosophy" class="list-group-item">philosophy</a>
-      
-      <a href="https://scotttactical.com//tags/restoration" class="list-group-item">restoration</a>
-      
-      <a href="https://scotttactical.com//tags/devops" class="list-group-item">devops</a>
-      
-      <a href="https://scotttactical.com//tags/adventure" class="list-group-item">adventure</a>
-      
-    </div>
-  </section>
-  
-
-</aside>
-
-  </div>
+<div id=disqus_thread></div>
+<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//scotttactical.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
 </div>
-
-      </div>
-    </main>
-
-    <footer class="l-footer">
-      <div class="container">
-        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
-    </footer>
-
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
+<div class=col-md-4>
+<aside class=l-sidebar>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>LATESTS</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com/why-i-converted-to-catholicism/ class=list-group-item>Why I Converted To Catholicism</a>
+<a href=https://scotttactical.com/ejs-2019-departure-preparations/ class=list-group-item>Easter Jeep Safari 2019 - Departure Preparations</a>
+<a href=https://scotttactical.com/ejs-2019-transit/ class=list-group-item>EJS 2019 - The Slow Route There </a>
+<a href=https://scotttactical.com/car-computer-face-recognition/ class=list-group-item>Car Computer Face Recognition</a>
+<a href=https://scotttactical.com/biometric-vehicle-entry-car-computer/ class=list-group-item>Biometric Vehicle Entry</a>
+<a href=https://scotttactical.com/installing-usb-relay/ class=list-group-item>Installing a USB Relay</a>
+<a href=https://scotttactical.com/car-computer-touchscreen-monitor/ class=list-group-item>Car Computer Touchscreen Monitor</a>
+<a href=https://scotttactical.com/linux-usb-relay-controller/ class=list-group-item>Linux USB Relay Controller</a>
+<a href=https://scotttactical.com/car-computer-camera/ class=list-group-item>Car Computer Camera</a>
+<a href=https://scotttactical.com/car-computer-hardware/ class=list-group-item>Car Computer Hardware</a>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>CATEGORY</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com//categories/software class=list-group-item>software</a>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>SERIES</div>
+</div>
+<div class=list-group>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>TAG</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com//tags/data class=list-group-item>data</a>
+<a href=https://scotttactical.com//tags/technology class=list-group-item>technology</a>
+<a href=https://scotttactical.com//tags/car-computer class=list-group-item>car-computer</a>
+<a href=https://scotttactical.com//tags/69-blazer class=list-group-item>69-blazer</a>
+<a href=https://scotttactical.com//tags/california class=list-group-item>california</a>
+<a href=https://scotttactical.com//tags/photography class=list-group-item>photography</a>
+<a href=https://scotttactical.com//tags/philosophy class=list-group-item>philosophy</a>
+<a href=https://scotttactical.com//tags/restoration class=list-group-item>restoration</a>
+<a href=https://scotttactical.com//tags/devops class=list-group-item>devops</a>
+<a href=https://scotttactical.com//tags/adventure class=list-group-item>adventure</a>
+</div>
+</section>
+</aside>
+</div>
+</div>
+</div>
+</main>
+<footer class=l-footer>
+<div class=container>
+<p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+<aside>
+<p>Powered by <a href=https://gohugo.io/>Hugo</a>.</p>
+<p><a href=https://github.com/dim0627/hugo_theme_beg>Beg</a> designed by <a href=http://yet.unresolved.xyz/>Daisuke Tsuji</a>.</p>
+</aside>
+</div>
+</footer>
+<script src=//code.jquery.com/jquery-3.1.1.min.js></script>
+<script src=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
 </html>
-

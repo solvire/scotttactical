@@ -1,33 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>hypermedia on Scott Tactical</title>
-    <link>https://scotttactical.com/tags/hypermedia/</link>
-    <description>Recent content in hypermedia on Scott Tactical</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 17 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://scotttactical.com/tags/hypermedia/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hypermedia, API Philosophy, and Talking to Your Robot Overlords</title>
-      <link>https://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link>
-      <pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
-      <description>In the Beginning There was the Web. World Wide actually. Well, before that there was something of AOL, Berners-Lee, DoD, DARPA, ARPANET and a prototype of Al Gore launching carrier pigeons down long tubes with fortune cookie-sized packets tied to their little legs addressed to: &amp;ldquo;Wh@t_#hath_God_wr0ught?&amp;rdquo;.
-Fast-forward: now we have Skynet. Well not yet, but soon. Hopefully. At least that is why I intend to generate favor with our future overlords by suggesting, at least locally, that certain systemic changes be encouraged so that their manifestation onto the stage be smooth and welcoming.</description>
-    </item>
-    
-    <item>
-      <title>PHP Hypermedia REST API wrapper</title>
-      <link>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</link>
-      <pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid>
-      <description>Hypermedia for PHP APIs. Well, here it is. I&amp;rsquo;m finally finishing up my Hypermedia layer for our Laravel 5.1 build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of Internet-of-Things (IoT).
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hypermedia on Scott Tactical</title><link>https://scotttactical.com/tags/hypermedia/</link><description>Recent content in hypermedia on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Thu, 17 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://scotttactical.com/tags/hypermedia/index.xml" rel="self" type="application/rss+xml"/><item><title>Hypermedia, API Philosophy, and Talking to Your Robot Overlords</title><link>https://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link><pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid><description>In the Beginning There was the Web. World Wide actually. Well, before that there was something of AOL, Berners-Lee, DoD, DARPA, ARPANET and a prototype of Al Gore launching carrier pigeons down long tubes with fortune cookie-sized packets tied to their little legs addressed to: &amp;ldquo;Wh@t_#hath_God_wr0ught?&amp;rdquo;.
+Fast-forward: now we have Skynet. Well not yet, but soon. Hopefully. At least that is why I intend to generate favor with our future overlords by suggesting, at least locally, that certain systemic changes be encouraged so that their manifestation onto the stage be smooth and welcoming.</description></item><item><title>PHP Hypermedia REST API wrapper</title><link>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</link><pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid><description>Hypermedia for PHP APIs. Well, here it is. I&amp;rsquo;m finally finishing up my Hypermedia layer for our Laravel 5.1 build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of Internet-of-Things (IoT).
 In Production - Alpha Right now I have it in our very alpha phase version of the software running the LeadFerret business lead search system.
-The project is on github here: PHP Hypermedia API Layer for HATEOAS HTTP or REST Services</description>
-    </item>
-    
-  </channel>
-</rss>
+The project is on github here: PHP Hypermedia API Layer for HATEOAS HTTP or REST Services</description></item></channel></rss>

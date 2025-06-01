@@ -1,24 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>system administration on Scott Tactical</title>
-    <link>https://scotttactical.com/tags/system-administration/</link>
-    <description>Recent content in system administration on Scott Tactical</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 25 Feb 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://scotttactical.com/tags/system-administration/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Linux File Manipulation Shortcuts and Commands</title>
-      <link>https://scotttactical.com/linux-file-manipulation-shortcuts-commands/</link>
-      <pubDate>Wed, 25 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid>
-      <description>Linux File Manipulation Commands I&amp;rsquo;ll keep updating this with various commands that I run into. If I find new ones I&amp;rsquo;ll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>system administration on Scott Tactical</title><link>https://scotttactical.com/tags/system-administration/</link><description>Recent content in system administration on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Wed, 25 Feb 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://scotttactical.com/tags/system-administration/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux File Manipulation Shortcuts and Commands</title><link>https://scotttactical.com/linux-file-manipulation-shortcuts-commands/</link><pubDate>Wed, 25 Feb 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/linux-file-manipulation-shortcuts-commands/</guid><description>Linux File Manipulation Commands I&amp;rsquo;ll keep updating this with various commands that I run into. If I find new ones I&amp;rsquo;ll update them from time to time. Please feel free to comment. It is starting as my personal cheat sheet storage place.
 File Searching List of file extensions.
 awk + grep : find all the file extensions. It will also skip your &amp;ldquo;git&amp;rdquo; repository.
-find . -type f -name &amp;quot;*.*&amp;quot; !</description>
-    </item>
-    
-  </channel>
-</rss>
+find . -type f -name &amp;quot;*.*&amp;quot; !</description></item></channel></rss>

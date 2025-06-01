@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-<meta name="pinterest" content="nopin">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.92.2" />
-
-
-
-<link rel="canonical" href="https://scotttactical.com/linux-usb-relay-controller/">
-
-
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Linux USB Relay Controller - Scott Tactical</title>
-    
-<meta name="description" content="Finding A Relay Controller One of my bigger worries is working with peripherals. I needed to find a camera and I felt like that was going to be easy enough. The relay controller will hit the actuators running the door locks.What Is A Relay Switch Most things inside a car take a decent amount of power to actuate or power them. The car is limited to 12V DC and your other measurements are amps and watts.">
-
+<!doctype html><html>
+<head>
+<meta charset=utf-8>
+<meta name=pinterest content="nopin">
+<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel=canonical href=https://scotttactical.com/linux-usb-relay-controller/>
+<link href=//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css rel=stylesheet>
+<link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+<link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css>
+<title>Linux USB Relay Controller - Scott Tactical</title>
+<meta name=description content="Finding A Relay Controller One of my bigger worries is working with peripherals. I needed to find a camera and I felt like that was going to be easy enough. The relay controller will hit the actuators running the door locks.What Is A Relay Switch Most things inside a car take a decent amount of power to actuate or power them. The car is limited to 12V DC and your other measurements are amps and watts.">
 <meta property="og:title" content="Linux USB Relay Controller - Scott Tactical">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://scotttactical.com/linux-usb-relay-controller/">
@@ -25,155 +16,70 @@
 <meta property="og:site_name" content="Scott Tactical">
 <meta property="og:description" content="Finding A Relay Controller One of my bigger worries is working with peripherals. I needed to find a camera and I felt like that was going to be easy enough. The relay controller will hit the actuators running the door locks.What Is A Relay Switch Most things inside a car take a decent amount of power to actuate or power them. The car is limited to 12V DC and your other measurements are amps and watts.">
 <meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="Scott Tactical">
-<meta name="twitter:url" content="https://scotttactical.com/linux-usb-relay-controller/">
-<meta name="twitter:title" content="Linux USB Relay Controller - Scott Tactical">
-<meta name="twitter:description" content="Finding A Relay Controller One of my bigger worries is working with peripherals. I needed to find a camera and I felt like that was going to be easy enough. The relay controller will hit the actuators running the door locks.What Is A Relay Switch Most things inside a car take a decent amount of power to actuate or power them. The car is limited to 12V DC and your other measurements are amps and watts.">
-<meta name="twitter:image" content="https://scotttactical.com/images/default.png">
-
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id":"https:\/\/scotttactical.com\/"
-    },
-    "headline": "Linux USB Relay Controller - Scott Tactical",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https:\/\/scotttactical.com\/images\/default.png",
-      "height": 800,
-      "width": 800
-    },
-    "datePublished": "2019-03-11T01:10:53JST",
-    "dateModified": "2019-03-11T01:10:53JST",
-    "author": {
-      "@type": "Person",
-      "name": "Scott Tactical"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Scott Tactical",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https:\/\/scotttactical.com\/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "description": "Finding A Relay Controller One of my bigger worries is working with peripherals. I needed to find a camera and I felt like that was going to be easy enough. The relay controller will hit the actuators running the door locks.\nWhat Is A Relay Switch Most things inside a car take a decent amount of power to actuate or power them. The car is limited to 12V DC and your other measurements are amps and watts."
-  }
-</script>
-
-
-    <link href="https://scotttactical.com/css/styles.css" rel="stylesheet">
-    
-
-  </head>
-
-  <body>
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-53440065-2', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-    
-
-    <header class="l-header">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://scotttactical.com/">Scott Tactical</a>
-          </div>
-
-          
-          <div id="navbar" class="collapse navbar-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              
-              
-              <li><a href="/about/">About</a></li>
-              
-              
-            </ul>
-            
-          </div>
-          
-
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <div class="container">
-        
-<div class="row">
-  <div class="col-md-8">
-
-    <nav class="p-crumb">
-      <ol class="breadcrumb">
-        <li><a href="https://scotttactical.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-        
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://scotttactical.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
-        
-        <li class="active">Linux USB Relay Controller</li>
-      </ol>
-    </nav>
-
-    <article class="single">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-03-11T01:10:53JST">Mar 11, 2019</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://scotttactical.com/post/">post</a></li>
-      
-    </ul>
-
-    <h1 class="title">Linux USB Relay Controller</h1>
-  </header>
-
-  
-
-  <div class="article-body"><h2 id="finding-a-relay-controller">Finding A Relay Controller</h2>
-<p>One of my bigger worries is working with peripherals.  I needed to find a camera and I felt like that was going to be easy enough.  The relay controller will hit the actuators running the door locks.</p>
-<h2 id="what-is-a-relay-switch">What Is A Relay Switch</h2>
-<p>Most things inside a car take a decent amount of power to actuate or power them. The car is limited to 12V DC and your other measurements are amps and watts.  Most wiring coming from a computer are rated for very very low current.  This is because those are only carrying signal. With the exception of your charging and some power over wire like USB and Ethernet.</p>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:site content="Scott Tactical">
+<meta name=twitter:url content="https://scotttactical.com/linux-usb-relay-controller/">
+<meta name=twitter:title content="Linux USB Relay Controller - Scott Tactical">
+<meta name=twitter:description content="Finding A Relay Controller One of my bigger worries is working with peripherals. I needed to find a camera and I felt like that was going to be easy enough. The relay controller will hit the actuators running the door locks.What Is A Relay Switch Most things inside a car take a decent amount of power to actuate or power them. The car is limited to 12V DC and your other measurements are amps and watts.">
+<meta name=twitter:image content="https://scotttactical.com/images/default.png">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/scotttactical.com\/"},"headline":"Linux USB Relay Controller - Scott Tactical","image":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images\/default.png","height":800,"width":800},"datePublished":"2019-03-11T01:10:53JST","dateModified":"2019-03-11T01:10:53JST","author":{"@type":"Person","name":"Scott Tactical"},"publisher":{"@type":"Organization","name":"Scott Tactical","logo":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images/logo.png","width":600,"height":60}},"description":"Finding A Relay Controller One of my bigger worries is working with peripherals. I needed to find a camera and I felt like that was going to be easy enough. The relay controller will hit the actuators running the door locks.\nWhat Is A Relay Switch Most things inside a car take a decent amount of power to actuate or power them. The car is limited to 12V DC and your other measurements are amps and watts."}</script>
+<link href=https://scotttactical.com/css/styles.css rel=stylesheet>
+</head>
+<body>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-53440065-2','auto'),ga('send','pageview'))</script>
+<header class=l-header>
+<nav class="navbar navbar-default">
+<div class=container>
+<div class=navbar-header>
+<button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#navbar aria-expanded=false>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<a class=navbar-brand href=https://scotttactical.com/>Scott Tactical</a>
+</div>
+<div id=navbar class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href=/about/>About</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<div class=container>
+<div class=row>
+<div class=col-md-8>
+<nav class=p-crumb>
+<ol class=breadcrumb>
+<li><a href=https://scotttactical.com/><i class="fa fa-home" aria-hidden=true></i></a></li>
+<li itemscope itemtype=http://data-vocabulary.org/Breadcrumb><a href=https://scotttactical.com/post/ itemprop=url><span itemprop=title>post</span></a></li>
+<li class=active>Linux USB Relay Controller</li>
+</ol>
+</nav>
+<article class=single>
+<header>
+<ul class=p-facts>
+<li><i class="fa fa-calendar" aria-hidden=true></i><time datetime=2019-03-11T01:10:53JST>Mar 11, 2019</time></li>
+<li><i class="fa fa-bookmark" aria-hidden=true></i><a href=https://scotttactical.com/post/>post</a></li>
+</ul>
+<h1 class=title>Linux USB Relay Controller</h1>
+</header>
+<div class=article-body><h2 id=finding-a-relay-controller>Finding A Relay Controller</h2>
+<p>One of my bigger worries is working with peripherals. I needed to find a camera and I felt like that was going to be easy enough. The relay controller will hit the actuators running the door locks.</p>
+<h2 id=what-is-a-relay-switch>What Is A Relay Switch</h2>
+<p>Most things inside a car take a decent amount of power to actuate or power them. The car is limited to 12V DC and your other measurements are amps and watts. Most wiring coming from a computer are rated for very very low current. This is because those are only carrying signal. With the exception of your charging and some power over wire like USB and Ethernet.</p>
 <p>I don&rsquo;t have data on what it takes to power the locks because their specs are limited. But I am not going to take the chance.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
 <pre><code>&lt;a href=&quot;https://www.explainthatstuff.com/howrelayswork.html&quot; target=&quot;_blank&quot;&gt;What is a relay switch.&lt;/a&gt;
 </code></pre>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>What a relay does is take a low power input and throw a bigger switch so greater power can pass through it.  Think of it as leverage against the current. That analogy doesn&rsquo;t really do it justice.</p>
-<p><a href="https://www.explainthatstuff.com/howrelayswork.html">https://www.explainthatstuff.com/howrelayswork.html</a></p>
-<p>Switches are used all over automotive applications.  In the blazer I have a few relays on the lights but later there will be a lot more running other things that are constant heavy draw.</p>
-<h2 id="electrical-relay-diagram">Electrical Relay Diagram</h2>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>What a relay does is take a low power input and throw a bigger switch so greater power can pass through it. Think of it as leverage against the current. That analogy doesn&rsquo;t really do it justice.</p>
+<p><a href=https://www.explainthatstuff.com/howrelayswork.html>https://www.explainthatstuff.com/howrelayswork.html</a></p>
+<p>Switches are used all over automotive applications. In the blazer I have a few relays on the lights but later there will be a lot more running other things that are constant heavy draw.</p>
+<h2 id=electrical-relay-diagram>Electrical Relay Diagram</h2>
 <pre><code>Relay Diagram.
 </code></pre>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h2 id="criteria">Criteria</h2>
+<h2 id=criteria>Criteria</h2>
 <p>Here are a few of the criteria needed</p>
 <ul>
 <li>constant off</li>
@@ -183,24 +89,24 @@ if (!doNotTrack) {
 <li>low closed state power draw (common component on the vehicle anyway)</li>
 <li>FTDI chipset(?)</li>
 </ul>
-<h2 id="usb-drivers">USB Drivers</h2>
+<h2 id=usb-drivers>USB Drivers</h2>
 <p>It looks like there is a standard format for talking over USB to these controller broads.</p>
 <p>There seem to be a few drivers for peripherals however.</p>
-<h3 id="ftdi">FTDI</h3>
-<p>FTDI: <a href="https://www.ftdichip.com/FTDrivers.htm">https://www.ftdichip.com/FTDrivers.htm</a></p>
-<p><a href="https://www.ftdichip.com/Drivers/D2XX/Linux/ReadMe-linux.txt">https://www.ftdichip.com/Drivers/D2XX/Linux/ReadMe-linux.txt</a></p>
+<h3 id=ftdi>FTDI</h3>
+<p>FTDI: <a href=https://www.ftdichip.com/FTDrivers.htm>https://www.ftdichip.com/FTDrivers.htm</a></p>
+<p><a href=https://www.ftdichip.com/Drivers/D2XX/Linux/ReadMe-linux.txt>https://www.ftdichip.com/Drivers/D2XX/Linux/ReadMe-linux.txt</a></p>
 <p>This theoretically should allow for me to connect a USB device and have it picked up right away. That is what I would like.</p>
 <p>The goal is for this to plug in and run lsusb to see it.</p>
 <p>lsusb
 dmesg | tail</p>
 <p>see: sudo apt install moserial</p>
-<p><a href="https://github.com/eblot/pyftdi">https://github.com/eblot/pyftdi</a></p>
+<p><a href=https://github.com/eblot/pyftdi>https://github.com/eblot/pyftdi</a></p>
 <p>Way outdated:</p>
-<p><a href="http://bleyer.org/pyusb/">http://bleyer.org/pyusb/</a></p>
-<h4 id="an-ftdi-board">An FTDI Board</h4>
+<p><a href=http://bleyer.org/pyusb/>http://bleyer.org/pyusb/</a></p>
+<h4 id=an-ftdi-board>An FTDI Board</h4>
 <p>I really liked these relays but wasn&rsquo;t sure about implementation.</p>
-<p><a href="https://store.ncd.io/product/usb-relay-5-10-amp/">https://store.ncd.io/product/usb-relay-5-10-amp/</a></p>
-<h3 id="hidapi">HIDAPI</h3>
+<p><a href=https://store.ncd.io/product/usb-relay-5-10-amp/>https://store.ncd.io/product/usb-relay-5-10-amp/</a></p>
+<h3 id=hidapi>HIDAPI</h3>
 <blockquote>
 <p>HIDAPI is a multi-platform library which allows an application to interface
 with USB and Bluetooth HID-Class devices on Windows, Linux, FreeBSD, and Mac
@@ -214,11 +120,11 @@ OS X.</p>
 <li>Mac (using IOHidManager)</li>
 </ul>
 <p>Drivers:</p>
-<p><a href="https://github.com/signal11/hidapi">https://github.com/signal11/hidapi</a></p>
-<p><a href="https://github.com/darrylb123/usbrelay">https://github.com/darrylb123/usbrelay</a></p>
-<h2 id="shopping-for-a-usb-relay">Shopping For a USB Relay</h2>
+<p><a href=https://github.com/signal11/hidapi>https://github.com/signal11/hidapi</a></p>
+<p><a href=https://github.com/darrylb123/usbrelay>https://github.com/darrylb123/usbrelay</a></p>
+<h2 id=shopping-for-a-usb-relay>Shopping For a USB Relay</h2>
 <p>Here are a few options that I ran into.</p>
-<h3 id="selection-1">Selection 1</h3>
+<h3 id=selection-1>Selection 1</h3>
 <p>I seemed to like this board best but it was coming from belgrade and wouldn&rsquo;t be here for weeks.</p>
 <ul>
 <li>4 SPDT Relays RAS-05-15 (10A / 250VAC, 15A / 120VAC, 15A / 24VDC)</li>
@@ -240,15 +146,14 @@ OS X.</p>
 <li>Supported by Denkovi Command line tool (Windows, Linux): Yes</li>
 <li>Android software available (low cost but very useful): Yes</li>
 </ul>
-<p>Documentation: <a href="http://denkovi.com/Documents/USB4/Current-Version/USB4RelayBoard_UM.pdf">http://denkovi.com/Documents/USB4/Current-Version/USB4RelayBoard_UM.pdf</a></p>
-<p>Denkovi command line tool: <a href="http://denkovi.com/denkovi-relay-command-line-tool">http://denkovi.com/denkovi-relay-command-line-tool</a></p>
-<p>Denkovi Relay Manager: <a href="http://denkovi.com/drm-software">http://denkovi.com/drm-software</a>
+<p>Documentation: <a href=http://denkovi.com/Documents/USB4/Current-Version/USB4RelayBoard_UM.pdf>http://denkovi.com/Documents/USB4/Current-Version/USB4RelayBoard_UM.pdf</a></p>
+<p>Denkovi command line tool: <a href=http://denkovi.com/denkovi-relay-command-line-tool>http://denkovi.com/denkovi-relay-command-line-tool</a></p>
+<p>Denkovi Relay Manager: <a href=http://denkovi.com/drm-software>http://denkovi.com/drm-software</a>
 For software examples: please contact with us.</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h3 id="selection-2">Selection 2</h3>
+<p></p>
+<h3 id=selection-2>Selection 2</h3>
 <p>This one seemed realistically working for me.</p>
 <p>Though it didn&rsquo;t directly say it this has an <strong>FTDI</strong> brain on it according to one of the reviews.</p>
-<!-- raw HTML omitted -->
 <p>From thier posting:</p>
 <p>This USB Relay Controller/Data Acquisition Module allows computer controlled switching of external devices as well as full bi-directional communication with the external world (ideal for Data Acquisition applications) using the USB port of your computer. The controller is very flexible and can be used in many custom applications including weather stations as well as temperature monitoring, logging and control as it can be easily connected to temperature and other types of sensors.</p>
 <p>Communication Parameters:</p>
@@ -297,11 +202,10 @@ For software examples: please contact with us.</p>
 <li>ON command : FF 04 01 (HEX) or 255 4 1 (DEC)</li>
 </ul>
 <p>Download:</p>
-<p><a href="https://s3-ap-northeast-1.amazonaws.com/sain-amzn/20/20-018-909/20-018-909.rar">https://s3-ap-northeast-1.amazonaws.com/sain-amzn/20/20-018-909/20-018-909.rar</a></p>
-<h3 id="section-3">Section 3</h3>
+<p><a href=https://s3-ap-northeast-1.amazonaws.com/sain-amzn/20/20-018-909/20-018-909.rar>https://s3-ap-northeast-1.amazonaws.com/sain-amzn/20/20-018-909/20-018-909.rar</a></p>
+<h3 id=section-3>Section 3</h3>
 <p>This one was another option in the case of shenanigans.</p>
 <p>It says that it is HID compatible which is another driver layer.</p>
-<!-- raw HTML omitted -->
 <ul>
 <li>The module uses HID technology, without any driver, plug and play. Support WIN7, XP 32-bit, 64-bit system, easy to use simple. (Can provide development library, if you need, please contact us).</li>
 <li>Onboard square USB interface, stable connection; use of high-performance USB control chip; use dedicated relay driver chip ULN2803, relay work more stable;</li>
@@ -310,7 +214,7 @@ For software examples: please contact with us.</p>
 <li>Note: Due to the characteristics of the USB protocol, this module is not suitable for use where electromagnetic interference is large! If you want to use, please do electromagnetic shielding measures.</li>
 </ul>
 <p>APP Download:
-<a href="https://www.amazon.com/clouddrive/share/8Qn3vw8915JaZiv5bYzuBJWg1Ic4kibOcus1BhTJcrS">https://www.amazon.com/clouddrive/share/8Qn3vw8915JaZiv5bYzuBJWg1Ic4kibOcus1BhTJcrS</a></p>
+<a href=https://www.amazon.com/clouddrive/share/8Qn3vw8915JaZiv5bYzuBJWg1Ic4kibOcus1BhTJcrS>https://www.amazon.com/clouddrive/share/8Qn3vw8915JaZiv5bYzuBJWg1Ic4kibOcus1BhTJcrS</a></p>
 <p>Input voltage: DC 12 V;</p>
 <ul>
 <li>Input current: greater than 300mA;</li>
@@ -339,166 +243,96 @@ For software examples: please contact with us.</p>
 <ul>
 <li>1*4-Channel 12V USB Control Switch Relay Module</li>
 </ul>
-<h3 id="dont-forget-your-power-cord">Don&rsquo;t Forget Your Power Cord</h3>
+<h3 id=dont-forget-your-power-cord>Don&rsquo;t Forget Your Power Cord</h3>
 <p>These are DC so unless you have a car battery sitting there - make sure to bring your own powah.</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p></p>
 </div>
-
-  <footer class="article-footer">
-    
-    
-    
-    
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">TAGS</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="https://scotttactical.com/tags/car-computer/">car computer</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-  </footer>
-
+<footer class=article-footer>
+<section class=bordered>
+<header>
+<div class=panel-title>TAGS</div>
+</header>
+<div>
+<ul class=p-terms>
+<li><a href=https://scotttactical.com/tags/car-computer/>car computer</a></li>
+</ul>
+</div>
+</section>
+</footer>
 </article>
-
-
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "scotttactical" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-
-  <div class="col-md-4">
-    
-<aside class="l-sidebar">
-
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">LATESTS</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com/why-i-converted-to-catholicism/" class="list-group-item">Why I Converted To Catholicism</a>
-      
-      <a href="https://scotttactical.com/ejs-2019-departure-preparations/" class="list-group-item">Easter Jeep Safari 2019 - Departure Preparations</a>
-      
-      <a href="https://scotttactical.com/ejs-2019-transit/" class="list-group-item">EJS 2019 - The Slow Route There </a>
-      
-      <a href="https://scotttactical.com/car-computer-face-recognition/" class="list-group-item">Car Computer Face Recognition</a>
-      
-      <a href="https://scotttactical.com/biometric-vehicle-entry-car-computer/" class="list-group-item">Biometric Vehicle Entry</a>
-      
-      <a href="https://scotttactical.com/installing-usb-relay/" class="list-group-item">Installing a USB Relay</a>
-      
-      <a href="https://scotttactical.com/car-computer-touchscreen-monitor/" class="list-group-item">Car Computer Touchscreen Monitor</a>
-      
-      <a href="https://scotttactical.com/linux-usb-relay-controller/" class="list-group-item">Linux USB Relay Controller</a>
-      
-      <a href="https://scotttactical.com/car-computer-camera/" class="list-group-item">Car Computer Camera</a>
-      
-      <a href="https://scotttactical.com/car-computer-hardware/" class="list-group-item">Car Computer Hardware</a>
-      
-    </div>
-  </section>
-
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">CATEGORY</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com//categories/software" class="list-group-item">software</a>
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">SERIES</div>
-    </div>
-    <div class="list-group">
-      
-    </div>
-  </section>
-  
-  <section class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">TAG</div>
-    </div>
-    <div class="list-group">
-      
-      <a href="https://scotttactical.com//tags/data" class="list-group-item">data</a>
-      
-      <a href="https://scotttactical.com//tags/technology" class="list-group-item">technology</a>
-      
-      <a href="https://scotttactical.com//tags/car-computer" class="list-group-item">car-computer</a>
-      
-      <a href="https://scotttactical.com//tags/69-blazer" class="list-group-item">69-blazer</a>
-      
-      <a href="https://scotttactical.com//tags/california" class="list-group-item">california</a>
-      
-      <a href="https://scotttactical.com//tags/photography" class="list-group-item">photography</a>
-      
-      <a href="https://scotttactical.com//tags/philosophy" class="list-group-item">philosophy</a>
-      
-      <a href="https://scotttactical.com//tags/restoration" class="list-group-item">restoration</a>
-      
-      <a href="https://scotttactical.com//tags/devops" class="list-group-item">devops</a>
-      
-      <a href="https://scotttactical.com//tags/adventure" class="list-group-item">adventure</a>
-      
-    </div>
-  </section>
-  
-
-</aside>
-
-  </div>
+<div id=disqus_thread></div>
+<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//scotttactical.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
 </div>
-
-      </div>
-    </main>
-
-    <footer class="l-footer">
-      <div class="container">
-        <p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
-    </footer>
-
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
+<div class=col-md-4>
+<aside class=l-sidebar>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>LATESTS</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com/why-i-converted-to-catholicism/ class=list-group-item>Why I Converted To Catholicism</a>
+<a href=https://scotttactical.com/ejs-2019-departure-preparations/ class=list-group-item>Easter Jeep Safari 2019 - Departure Preparations</a>
+<a href=https://scotttactical.com/ejs-2019-transit/ class=list-group-item>EJS 2019 - The Slow Route There </a>
+<a href=https://scotttactical.com/car-computer-face-recognition/ class=list-group-item>Car Computer Face Recognition</a>
+<a href=https://scotttactical.com/biometric-vehicle-entry-car-computer/ class=list-group-item>Biometric Vehicle Entry</a>
+<a href=https://scotttactical.com/installing-usb-relay/ class=list-group-item>Installing a USB Relay</a>
+<a href=https://scotttactical.com/car-computer-touchscreen-monitor/ class=list-group-item>Car Computer Touchscreen Monitor</a>
+<a href=https://scotttactical.com/linux-usb-relay-controller/ class=list-group-item>Linux USB Relay Controller</a>
+<a href=https://scotttactical.com/car-computer-camera/ class=list-group-item>Car Computer Camera</a>
+<a href=https://scotttactical.com/car-computer-hardware/ class=list-group-item>Car Computer Hardware</a>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>CATEGORY</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com//categories/software class=list-group-item>software</a>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>SERIES</div>
+</div>
+<div class=list-group>
+</div>
+</section>
+<section class="panel panel-default">
+<div class=panel-heading>
+<div class=panel-title>TAG</div>
+</div>
+<div class=list-group>
+<a href=https://scotttactical.com//tags/data class=list-group-item>data</a>
+<a href=https://scotttactical.com//tags/technology class=list-group-item>technology</a>
+<a href=https://scotttactical.com//tags/car-computer class=list-group-item>car-computer</a>
+<a href=https://scotttactical.com//tags/69-blazer class=list-group-item>69-blazer</a>
+<a href=https://scotttactical.com//tags/california class=list-group-item>california</a>
+<a href=https://scotttactical.com//tags/photography class=list-group-item>photography</a>
+<a href=https://scotttactical.com//tags/philosophy class=list-group-item>philosophy</a>
+<a href=https://scotttactical.com//tags/restoration class=list-group-item>restoration</a>
+<a href=https://scotttactical.com//tags/devops class=list-group-item>devops</a>
+<a href=https://scotttactical.com//tags/adventure class=list-group-item>adventure</a>
+</div>
+</section>
+</aside>
+</div>
+</div>
+</div>
+</main>
+<footer class=l-footer>
+<div class=container>
+<p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
+<aside>
+<p>Powered by <a href=https://gohugo.io/>Hugo</a>.</p>
+<p><a href=https://github.com/dim0627/hugo_theme_beg>Beg</a> designed by <a href=http://yet.unresolved.xyz/>Daisuke Tsuji</a>.</p>
+</aside>
+</div>
+</footer>
+<script src=//code.jquery.com/jquery-3.1.1.min.js></script>
+<script src=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
 </html>
-

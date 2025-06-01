@@ -1,25 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>computer vision on Scott Tactical</title>
-    <link>https://scotttactical.com/tags/computer-vision/</link>
-    <description>Recent content in computer vision on Scott Tactical</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 29 Mar 2019 20:08:45 -0700</lastBuildDate><atom:link href="https://scotttactical.com/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Car Computer Face Recognition</title>
-      <link>https://scotttactical.com/car-computer-face-recognition/</link>
-      <pubDate>Fri, 29 Mar 2019 20:08:45 -0700</pubDate>
-      
-      <guid>https://scotttactical.com/car-computer-face-recognition/</guid>
-      <description>Facial Recognition Computer Vision Libraries OpenCV dlib Installation cmake This is simple enough. But it&amp;rsquo;s worth calling out individually. If you do deep work with these binaries then you will start to mess with cmake. It&amp;rsquo;s a bit tough to build binaries.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>computer vision on Scott Tactical</title><link>https://scotttactical.com/tags/computer-vision/</link><description>Recent content in computer vision on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Fri, 29 Mar 2019 20:08:45 -0700</lastBuildDate><atom:link href="https://scotttactical.com/tags/computer-vision/index.xml" rel="self" type="application/rss+xml"/><item><title>Car Computer Face Recognition</title><link>https://scotttactical.com/car-computer-face-recognition/</link><pubDate>Fri, 29 Mar 2019 20:08:45 -0700</pubDate><guid>https://scotttactical.com/car-computer-face-recognition/</guid><description>Facial Recognition Computer Vision Libraries OpenCV dlib Installation cmake This is simple enough. But it&amp;rsquo;s worth calling out individually. If you do deep work with these binaries then you will start to mess with cmake. It&amp;rsquo;s a bit tough to build binaries.
 https://cmake.org/install/
 apt-get install cmake
 Install dlib on Ubuntu The easiest way to install dlib is to install it with the bundled version with pip.
-It may end up that you will need to compile dlib.</description>
-    </item>
-    
-  </channel>
-</rss>
+It may end up that you will need to compile dlib.</description></item></channel></rss>

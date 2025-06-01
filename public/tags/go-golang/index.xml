@@ -1,34 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>go golang on Scott Tactical</title>
-    <link>https://scotttactical.com/tags/go-golang/</link>
-    <description>Recent content in go golang on Scott Tactical</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 22 Oct 2015 06:29:31 -0700</lastBuildDate><atom:link href="https://scotttactical.com/tags/go-golang/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Deploying Hugo the Golang CMS on DigitalOcean - Nginx</title>
-      <link>https://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/</link>
-      <pubDate>Thu, 22 Oct 2015 06:29:31 -0700</pubDate>
-      
-      <guid>https://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/</guid>
-      <description>Deploying Hugo the Golang CMS on DigitalOcean Creating a Droplet I am a bit partial to CentOS. The lastest version as of this writing is CentOS Linux release 7.1.1503 (Core).
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>go golang on Scott Tactical</title><link>https://scotttactical.com/tags/go-golang/</link><description>Recent content in go golang on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Thu, 22 Oct 2015 06:29:31 -0700</lastBuildDate><atom:link href="https://scotttactical.com/tags/go-golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploying Hugo the Golang CMS on DigitalOcean - Nginx</title><link>https://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/</link><pubDate>Thu, 22 Oct 2015 06:29:31 -0700</pubDate><guid>https://scotttactical.com/deploying-hugo-golang-digitalocean-nginx/</guid><description>Deploying Hugo the Golang CMS on DigitalOcean Creating a Droplet I am a bit partial to CentOS. The lastest version as of this writing is CentOS Linux release 7.1.1503 (Core).
 Setting up a droplet is always very simple. Just turn it on basically. Upload your ssh keys. Done.
-Install Nginx Add the epel repo: yum install epel-release  Install yum install nginx  Start it service nginx start systemctl enable nginx  Create the Folders mkdir -p /var/www/ursite/ chown -R nginx:nginx /var/www touch /var/www/ursite/index.</description>
-    </item>
-    
-    <item>
-      <title>Hugo: A replacement for Wordpress</title>
-      <link>https://scotttactical.com/hugo-a-replacement-for-wordpress/</link>
-      <pubDate>Wed, 21 Oct 2015 15:39:13 -0700</pubDate>
-      
-      <guid>https://scotttactical.com/hugo-a-replacement-for-wordpress/</guid>
-      <description>Hugo: A Replacement for Wordpress TL;DR  I researched go Found Hugo Setup a test Migrated my Wordpress instance Launched DigitalOcean Droplet Deployed  Total time: 6 hours
+Install Nginx Add the epel repo: yum install epel-release Install yum install nginx Start it service nginx start systemctl enable nginx Create the Folders mkdir -p /var/www/ursite/ chown -R nginx:nginx /var/www touch /var/www/ursite/index.</description></item><item><title>Hugo: A replacement for Wordpress</title><link>https://scotttactical.com/hugo-a-replacement-for-wordpress/</link><pubDate>Wed, 21 Oct 2015 15:39:13 -0700</pubDate><guid>https://scotttactical.com/hugo-a-replacement-for-wordpress/</guid><description>Hugo: A Replacement for Wordpress TL;DR I researched go Found Hugo Setup a test Migrated my Wordpress instance Launched DigitalOcean Droplet Deployed Total time: 6 hours
 Continued: My problems started almost a year before I took up this cause. At the time I only had 2 Wordpress sites. Very very low traffic. Only a couple users a day. They were mostly place holders for business sites.
-Wordpress is hungry What was annoying about the case was that they would randomly carsh!</description>
-    </item>
-    
-  </channel>
-</rss>
+Wordpress is hungry What was annoying about the case was that they would randomly carsh!</description></item></channel></rss>

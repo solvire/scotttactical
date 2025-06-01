@@ -1,46 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>leadership on Scott Tactical</title>
-    <link>https://scotttactical.com/tags/leadership/</link>
-    <description>Recent content in leadership on Scott Tactical</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 01 Dec 2015 10:43:58 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/leadership/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Try Not 2 Fuck Up Ur Engineering</title>
-      <link>https://scotttactical.com/try-not-2-fuck-up-ur-engineering/</link>
-      <pubDate>Tue, 01 Dec 2015 10:43:58 -0800</pubDate>
-      
-      <guid>https://scotttactical.com/try-not-2-fuck-up-ur-engineering/</guid>
-      <description>Leadership Checklist for Non-Technical Managers
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>leadership on Scott Tactical</title><link>https://scotttactical.com/tags/leadership/</link><description>Recent content in leadership on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Tue, 01 Dec 2015 10:43:58 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/leadership/index.xml" rel="self" type="application/rss+xml"/><item><title>Try Not 2 Fuck Up Ur Engineering</title><link>https://scotttactical.com/try-not-2-fuck-up-ur-engineering/</link><pubDate>Tue, 01 Dec 2015 10:43:58 -0800</pubDate><guid>https://scotttactical.com/try-not-2-fuck-up-ur-engineering/</guid><description>Leadership Checklist for Non-Technical Managers
 How do you build software that provides value to both clients, owners and engineers?
 This list has started as a list of notes that I kept over the last few years. Yes, this is the abbreviated version of Management For Quality Software.
-Executive Leadership  Bloated and ugly products are born at the top, but a good engineering environment may begin there The three ways business leaders can add value is with numbers, numbers, numbers Put your name on the product  The Business Requirement Write a business requirement that reflects specific details about a problem that the business is solving based on market research numbers.</description>
-    </item>
-    
-    <item>
-      <title>Management for Quality Software Development Managers</title>
-      <link>https://scotttactical.com/management-for-quality-software-development/</link>
-      <pubDate>Tue, 01 Dec 2015 09:53:52 -0800</pubDate>
-      
-      <guid>https://scotttactical.com/management-for-quality-software-development/</guid>
-      <description>This started as a list of notes for my boss on how I see the best way to manage technical professionals. I am trying to provide non-technical managers with the resources to direct technical teams in a way that will produce quality software and keep the engineering staff engaged and moving.
-How do you build software that provides value to both clients, users, owners and engineers for the years to come?</description>
-    </item>
-    
-    <item>
-      <title>Interview Strategies: A Technology Hiring Manager Who Wins</title>
-      <link>https://scotttactical.com/interview-strategies-a-technology-hiring-manager/</link>
-      <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid>
-      <description>If I stacked pennies from the ground to the top of the Empire State Bldg, would they all fit into this room?
- Firstly dear sir, you do not have that many pennies.
+Executive Leadership Bloated and ugly products are born at the top, but a good engineering environment may begin there The three ways business leaders can add value is with numbers, numbers, numbers Put your name on the product The Business Requirement Write a business requirement that reflects specific details about a problem that the business is solving based on market research numbers.</description></item><item><title>Management for Quality Software Development Managers</title><link>https://scotttactical.com/management-for-quality-software-development/</link><pubDate>Tue, 01 Dec 2015 09:53:52 -0800</pubDate><guid>https://scotttactical.com/management-for-quality-software-development/</guid><description>This started as a list of notes for my boss on how I see the best way to manage technical professionals. I am trying to provide non-technical managers with the resources to direct technical teams in a way that will produce quality software and keep the engineering staff engaged and moving.
+How do you build software that provides value to both clients, users, owners and engineers for the years to come?</description></item><item><title>Interview Strategies: A Technology Hiring Manager Who Wins</title><link>https://scotttactical.com/interview-strategies-a-technology-hiring-manager/</link><pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid><description>If I stacked pennies from the ground to the top of the Empire State Bldg, would they all fit into this room?
+Firstly dear sir, you do not have that many pennies.
 Secondly if you cash it in for large bills then they all fit in your pocket.
-It is a question like this that would make me decide alternatively in my career choice. However I see tech managers searching for really “smart” interview questions and white board problems in an attempt to stump the prospective employee.</description>
-    </item>
-    
-  </channel>
-</rss>
+It is a question like this that would make me decide alternatively in my career choice. However I see tech managers searching for really “smart” interview questions and white board problems in an attempt to stump the prospective employee.</description></item></channel></rss>
