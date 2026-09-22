@@ -1,14 +1,80 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>California on Scott Tactical</title><link>https://scotttactical.com/tags/california/</link><description>Recent content in California on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Sun, 24 Apr 2016 22:50:08 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/california/index.xml" rel="self" type="application/rss+xml"/><item><title>Grand Central Market, Los Angeles, 2016</title><link>https://scotttactical.com/grand-central-market-2016-04/</link><pubDate>Sun, 24 Apr 2016 22:50:08 -0800</pubDate><guid>https://scotttactical.com/grand-central-market-2016-04/</guid><description>The Grand Central Market</description></item><item><title>Downtown Los Angeles California, Dec 2015</title><link>https://scotttactical.com/downtown-los-angeles-photography-dec-2015/</link><pubDate>Mon, 28 Dec 2015 22:50:08 -0800</pubDate><guid>https://scotttactical.com/downtown-los-angeles-photography-dec-2015/</guid><description>Cloudy Photography in Downtown Los Angeles Finally a nice cool cloudy day downtown on December 22nd. Right before Christmas. It was hard to carry my motorcycle helmet and my camera. I need to figure out how to mount my helmet somewhere else while I am tooling around.
-I only got a few minutes to snap but I liked these.
-The US bank obscured by the clouds was a nice touch. I have to go back on a weekend and shoot more.</description></item><item><title>Mono Lake, California</title><link>https://scotttactical.com/mono-lake-2015/</link><pubDate>Sat, 21 Nov 2015 00:22:21 -0700</pubDate><guid>https://scotttactical.com/mono-lake-2015/</guid><description>Mono Lake Mono Lake Tufa State Reserve This lake was formed at least 760,000 years ago as a terminal lake in an endorheic basin. This means minerals flowed in from underground rivers and then sprung up through the ground to create those amazing Tufas you see marking the shores.
-A remarkable attraction that has to be seen.</description></item><item><title>Night Photography, San Fernando Valley, CA</title><link>https://scotttactical.com/night-photography-san-fernando-valley/</link><pubDate>Thu, 19 Nov 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/night-photography-san-fernando-valley/</guid><description>Night Photography over San Fernando Valley A light dressed up and stitched together panorama of the valley. This overlooks the Warner Center.
-Night Photography, San Fernando Valley, CANight Photography, San Fernando Valley, CA
-I will just let the rest speak for themselves.</description></item><item><title>Lamarck Lake Hiking, Bishop, CA - June 2015</title><link>https://scotttactical.com/lamarck-lake-2015/</link><pubDate>Fri, 13 Nov 2015 00:22:21 -0700</pubDate><guid>https://scotttactical.com/lamarck-lake-2015/</guid><description>Hiking Lamarck Lake Originally shot in June 2015
-Some of the GPS coordinates are off a little. That will be corrected for upcoming galleries. I am just figuring all these tools out.
-BTW Sleeping on a hammock above Lake Lamarck is one of the best things ever. Worth the hike by itself.</description></item><item><title>Yosemite Valley - Panorama Photography</title><link>https://scotttactical.com/yosemite-valley-panorama-1008/</link><pubDate>Sun, 08 Nov 2015 19:22:21 -0700</pubDate><guid>https://scotttactical.com/yosemite-valley-panorama-1008/</guid><description>Yosemite Valley - Panorama With a subject as beautiful as Yosemite Valley; A photographer can be pretty unskilled and under-funded and still take an amazing picture.
-Location The original set was taken from the overlook at the tunnel. It faces El Capitan and Cathedral Peak.
-Constructing a Panorama From that vantage point listed above I staged the camera on the tripod and took several portraits as close to combined as possible.</description></item><item><title>Yosemite National Park, CA - October 9, 2015</title><link>https://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</link><pubDate>Sun, 25 Oct 2015 19:22:21 -0700</pubDate><guid>https://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</guid><description>Yosemite National Park, CA Hiking in Yosemite
-October 9 2015
-I need to add more content but the pictures should speak for me. Supposing you need more than 1000 words to get the point.</description></item><item><title>Photography Sepulveda Dam and WildLife Basin - Los Angeles</title><link>https://scotttactical.com/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</link><pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</guid><description>Taking Pictures at the Sepulveda Dam Did a little scouting and shooting photography yesterday morning.
-Just a couple highlights. I am of course shooting with my Canon EOS 60D
-Sepulveda DamThe fog was enough all by itself. I wished I could have stuck around for more of that. I will come back just for the morning fog and do a timelapse at some point.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>California on Scott Tactical</title>
+		<link>http://localhost:1313/tags/california/</link>
+		<description>Recent content in California on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 24 Apr 2016 22:50:08 -0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/california/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Grand Central Market, Los Angeles, 2016</title>
+				<link>http://localhost:1313/grand-central-market-2016-04/</link>
+				<pubDate>Sun, 24 Apr 2016 22:50:08 -0800</pubDate>
+				<guid>http://localhost:1313/grand-central-market-2016-04/</guid>
+				<description>&lt;h2 id=&#34;the-grand-central-market&#34;&gt;The Grand Central Market&lt;/h2&gt;</description>
+			</item>
+			<item>
+				<title>Downtown Los Angeles California, Dec 2015</title>
+				<link>http://localhost:1313/downtown-los-angeles-photography-dec-2015/</link>
+				<pubDate>Mon, 28 Dec 2015 22:50:08 -0800</pubDate>
+				<guid>http://localhost:1313/downtown-los-angeles-photography-dec-2015/</guid>
+				<description>&lt;h2 id=&#34;cloudy-photography-in-downtown-los-angeles&#34;&gt;Cloudy Photography in Downtown Los Angeles&lt;/h2&gt;&#xA;&lt;p&gt;Finally a nice cool cloudy day downtown on December 22nd. Right before Christmas. It was hard to carry my motorcycle helmet and my camera. I need to figure out how to mount my helmet somewhere else while I am tooling around.&lt;/p&gt;&#xA;&lt;p&gt;I only got a few minutes to snap but I liked these.&lt;/p&gt;&#xA;&lt;p&gt;The US bank obscured by the clouds was a nice touch. I have to go back on a weekend and shoot more. Maybe really early before cars get all over the place.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Mono Lake, California</title>
+				<link>http://localhost:1313/mono-lake-2015/</link>
+				<pubDate>Sat, 21 Nov 2015 00:22:21 -0700</pubDate>
+				<guid>http://localhost:1313/mono-lake-2015/</guid>
+				<description>&lt;h1 id=&#34;mono-lake&#34;&gt;Mono Lake&lt;/h1&gt;&#xA;&lt;div itemscope itemtype=&#34;http://schema.org/LakeBodyOfWater&#34;&gt;&#xA;&lt;span itemprop=&#34;photo&#34;&gt;&lt;a href=&#34;http://img.scotttactical.com/images/gallery/mono-lake-2015/IMG_6558.jpg&#34; &gt;&lt;img src=&#34;http://img.scotttactical.com/images/gallery/mono-lake-2015/thumbs/IMG_6558.jpg&#34; alt=&#34;Mono Lake&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&#xA;&lt;br /&gt;&lt;br /&gt;&#xA;&lt;span itemprop=&#34;name&#34;&gt;Mono Lake Tufa State Reserve&lt;/span&gt;&#xA;&lt;span itemprop=&#34;description&#34;&gt;A large, shallow saline soda lake in Mono County, next to the city of &lt;span itemscope itemprop=&#34;containedInPlace&#34; itemtype=&#34;http://schema.org/City&#34;&gt;Lee Vining&lt;/span&gt;, &lt;span itemscope itemprop=&#34;containedInPlace&#34; itemtype=&#34;http://schema.org/State&#34;&gt;California&lt;/span&gt;&lt;/span&gt;&#xA;&lt;br /&gt;&lt;br /&gt;&#xA;&lt;span itemscope itemprop=&#34;hasMap&#34; itemtype=&#34;http://schema.org/Map&#34;&gt;&#xA;&lt;iframe src=&#34;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201195.59398605046!2d-119.16908589714801!3d38.00789691337158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809637c5e3070203%3A0x3d0f785cdd7cec36!2sMono+Lake%2C+California+93541!5e0!3m2!1sen!2sus!4v1448257351586&#34; width=&#34;600&#34; height=&#34;450&#34; frameborder=&#34;0&#34; style=&#34;border:0&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;mono-lake-tufa-state-reserve&#34;&gt;Mono Lake Tufa State Reserve&lt;/h2&gt;&#xA;&lt;p&gt;This lake was formed at least 760,000 years ago as a terminal lake in an &lt;a href=&#34;https://en.wikipedia.org/wiki/Endorheic_basin&#34;&gt;endorheic basin&lt;/a&gt;. This means minerals flowed in from underground rivers and then sprung up through the ground to create those amazing Tufas you see marking the shores.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Night Photography, San Fernando Valley, CA</title>
+				<link>http://localhost:1313/night-photography-san-fernando-valley/</link>
+				<pubDate>Thu, 19 Nov 2015 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/night-photography-san-fernando-valley/</guid>
+				<description>&lt;h1 id=&#34;night-photography-over-san-fernando-valley&#34;&gt;Night Photography over San Fernando Valley&lt;/h1&gt;&#xA;&lt;p&gt;A light dressed up and stitched together panorama of the valley. This overlooks the &lt;a href=&#34;https://en.wikipedia.org/wiki/Warner_Center,_Los_Angeles&#34;&gt;Warner Center&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;a href=&#34;http://img.scotttactical.com/images/gallery/night-photography-san-fernando-valley/roof1.jpg&#34;&gt;&lt;img src=&#34;http://img.scotttactical.com/images/gallery/night-photography-san-fernando-valley/thumbs/roof1.jpg&#34;&#xA;&#x9;&#x9;&#x9;alt=&#34;Night Photography, San Fernando Valley, CA&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;&#xA;&#x9;&#x9;&#x9;&lt;h4&gt;Night Photography, San Fernando Valley, CA&lt;/h4&gt;&lt;p&gt;Night Photography, San Fernando Valley, CA&lt;/p&gt;&#xA;&#x9;&#x9;&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I will just let the rest speak for themselves.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Lamarck Lake Hiking, Bishop, CA - June 2015</title>
+				<link>http://localhost:1313/lamarck-lake-2015/</link>
+				<pubDate>Fri, 13 Nov 2015 00:22:21 -0700</pubDate>
+				<guid>http://localhost:1313/lamarck-lake-2015/</guid>
+				<description>&lt;h1 id=&#34;hiking-lamarck-lake&#34;&gt;Hiking Lamarck Lake&lt;/h1&gt;&#xA;&lt;p&gt;Originally shot in June 2015&lt;/p&gt;&#xA;&lt;p&gt;Some of the GPS coordinates are off a little. That will be corrected for upcoming galleries. I am just figuring all these tools out.&lt;/p&gt;&#xA;&lt;p&gt;BTW Sleeping on a hammock above Lake Lamarck is one of the best things ever. Worth the hike by itself.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Yosemite Valley - Panorama Photography</title>
+				<link>http://localhost:1313/yosemite-valley-panorama-1008/</link>
+				<pubDate>Sun, 08 Nov 2015 19:22:21 -0700</pubDate>
+				<guid>http://localhost:1313/yosemite-valley-panorama-1008/</guid>
+				<description>&lt;h1 id=&#34;yosemite-valley---panorama&#34;&gt;Yosemite Valley - Panorama&lt;/h1&gt;&#xA;&lt;p&gt;With a subject as beautiful as Yosemite Valley; A photographer can be pretty unskilled and under-funded and still take an amazing picture.&lt;/p&gt;&#xA;&lt;h2 id=&#34;location&#34;&gt;Location&lt;/h2&gt;&#xA;&lt;p&gt;The original set was taken from the overlook at the tunnel. It faces &lt;a href=&#34;https://en.wikipedia.org/wiki/El_Capitan&#34;&gt;El Capitan&lt;/a&gt; and &lt;a href=&#34;http://www.summitpost.org/cathedral-peak/150524&#34;&gt;Cathedral Peak&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;constructing-a-panorama&#34;&gt;Constructing a Panorama&lt;/h1&gt;&#xA;&lt;p&gt;From that vantage point listed above I staged the camera on the tripod and took several portraits as close to combined as possible.&lt;/p&gt;&#xA;&lt;h2 id=&#34;panorama-stitching&#34;&gt;Panorama Stitching&lt;/h2&gt;&#xA;&lt;p&gt;I stitched everything together with &lt;a href=&#34;http://hugin.sourceforge.net/&#34;&gt;Hugin&lt;/a&gt; which actually did very well. I will do another post just for that a little later.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Yosemite National Park, CA - October 9, 2015</title>
+				<link>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</link>
+				<pubDate>Sun, 25 Oct 2015 19:22:21 -0700</pubDate>
+				<guid>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</guid>
+				<description>&lt;h1 id=&#34;yosemite-national-park-ca&#34;&gt;Yosemite National Park, CA&lt;/h1&gt;&#xA;&lt;p&gt;Hiking in Yosemite&lt;/p&gt;&#xA;&lt;p&gt;October 9 2015&lt;/p&gt;&#xA;&lt;p&gt;I need to add more content but the pictures should speak for me. Supposing you need more than 1000 words to get the point.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Yosemite National Park, CA - October 9, 2015</title>
+				<link>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</link>
+				<pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</guid>
+				<description>&lt;h1 id=&#34;hiking-yosemite-ca&#34;&gt;Hiking Yosemite, CA&lt;/h1&gt;&#xA;&lt;h2 id=&#34;rimrise-and-shine&#34;&gt;Rimrise and Shine&lt;/h2&gt;&#xA;&lt;p&gt;Mornings in Yosemite Valley are breathtaking. The weather was perfect IMO.&lt;/p&gt;&#xA;&lt;p&gt;We had some unfortunate luck with the camping and as you can see we could not get duplicate nights on our spot. See our note on getting your site well in advance.&lt;/p&gt;&#xA;&lt;p&gt;Our wonderful neighbors were kind enough to help us out. They got us from the upper pines campsites out around the valley and back to the trailhead of the 4 mile trail. It is a pleasure to meet with good folks. Living in the San Fernando Valley, Los Angeles causes one to disparage the lack of humanity in the throngs of the masses.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Photography Sepulveda Dam and WildLife Basin - Los Angeles</title>
+				<link>http://localhost:1313/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</link>
+				<pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/photography-sepulveda-dam-and-wildlife-basin-los-angeles/</guid>
+				<description>&lt;h1 id=&#34;taking-pictures-at-the-sepulveda-dam&#34;&gt;Taking Pictures at the Sepulveda Dam&lt;/h1&gt;&#xA;&lt;p&gt;Did a little scouting and shooting photography yesterday morning.&lt;/p&gt;&#xA;&lt;p&gt;Just a couple highlights.  I am of course shooting with my Canon EOS 60D&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Sepulveda_Dam&#34; target=&#34;_blank&#34;&gt;Sepulveda Dam&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The fog was enough all by itself. I wished I could have stuck around for more of that. I will come back just for the morning fog and do a timelapse at some point.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

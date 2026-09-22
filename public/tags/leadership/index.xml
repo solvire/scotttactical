@@ -1,8 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>leadership on Scott Tactical</title><link>https://scotttactical.com/tags/leadership/</link><description>Recent content in leadership on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Tue, 01 Dec 2015 10:43:58 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/leadership/index.xml" rel="self" type="application/rss+xml"/><item><title>Try Not 2 Fuck Up Ur Engineering</title><link>https://scotttactical.com/try-not-2-fuck-up-ur-engineering/</link><pubDate>Tue, 01 Dec 2015 10:43:58 -0800</pubDate><guid>https://scotttactical.com/try-not-2-fuck-up-ur-engineering/</guid><description>Leadership Checklist for Non-Technical Managers
-How do you build software that provides value to both clients, owners and engineers?
-This list has started as a list of notes that I kept over the last few years. Yes, this is the abbreviated version of Management For Quality Software.
-Executive Leadership Bloated and ugly products are born at the top, but a good engineering environment may begin there The three ways business leaders can add value is with numbers, numbers, numbers Put your name on the product The Business Requirement Write a business requirement that reflects specific details about a problem that the business is solving based on market research numbers.</description></item><item><title>Management for Quality Software Development Managers</title><link>https://scotttactical.com/management-for-quality-software-development/</link><pubDate>Tue, 01 Dec 2015 09:53:52 -0800</pubDate><guid>https://scotttactical.com/management-for-quality-software-development/</guid><description>This started as a list of notes for my boss on how I see the best way to manage technical professionals. I am trying to provide non-technical managers with the resources to direct technical teams in a way that will produce quality software and keep the engineering staff engaged and moving.
-How do you build software that provides value to both clients, users, owners and engineers for the years to come?</description></item><item><title>Interview Strategies: A Technology Hiring Manager Who Wins</title><link>https://scotttactical.com/interview-strategies-a-technology-hiring-manager/</link><pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/interview-strategies-a-technology-hiring-manager/</guid><description>If I stacked pennies from the ground to the top of the Empire State Bldg, would they all fit into this room?
-Firstly dear sir, you do not have that many pennies.
-Secondly if you cash it in for large bills then they all fit in your pocket.
-It is a question like this that would make me decide alternatively in my career choice. However I see tech managers searching for really “smart” interview questions and white board problems in an attempt to stump the prospective employee.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Leadership on Scott Tactical</title>
+		<link>http://localhost:1313/tags/leadership/</link>
+		<description>Recent content in Leadership on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 09 Jan 2017 08:00:07 -0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/leadership/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Girls Code Better: Why I Prefer Women</title>
+				<link>http://localhost:1313/post/girls-code-better/</link>
+				<pubDate>Mon, 09 Jan 2017 08:00:07 -0800</pubDate>
+				<guid>http://localhost:1313/post/girls-code-better/</guid>
+				<description>&lt;h2 id=&#34;why-i-prefer-female-engineers&#34;&gt;Why I Prefer Female Engineers&lt;/h2&gt;&#xA;&lt;p&gt;Preface: This isn&amp;rsquo;t how it always was. I&amp;rsquo;ll be honest, I am a 2 part chauvinist, but I am also pragmatic. I also deeply care about the personal and professional outcomes of my team.&lt;/p&gt;&#xA;&lt;h3 id=&#34;now-we-have-engineers&#34;&gt;Now We Have Engineers&lt;/h3&gt;</description>
+			</item>
+			<item>
+				<title>Try Not 2 Fuck Up Ur Engineering</title>
+				<link>http://localhost:1313/try-not-2-fuck-up-ur-engineering/</link>
+				<pubDate>Tue, 01 Dec 2015 10:43:58 -0800</pubDate>
+				<guid>http://localhost:1313/try-not-2-fuck-up-ur-engineering/</guid>
+				<description>&lt;p&gt;Leadership Checklist for Non-Technical Managers&lt;/p&gt;&#xA;&lt;p&gt;How do you build software that provides value to both clients, owners and engineers?&lt;/p&gt;&#xA;&lt;p&gt;This list has started as a list of notes that I kept over the last few years. Yes, this is the abbreviated version of &lt;a href=&#34;http://localhost:1313/management-for-quality-software-development/&#34;&gt;Management For Quality Software&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;executive-leadership&#34;&gt;Executive Leadership&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bloated and ugly products are born at the top, but a good engineering environment may begin there&lt;/li&gt;&#xA;&lt;li&gt;The three ways business leaders can add value is with &lt;em&gt;numbers, numbers, numbers&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Put your name on the product&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;the-business-requirement&#34;&gt;The Business Requirement&lt;/h3&gt;&#xA;&lt;p&gt;Write a business requirement that reflects specific details about a problem that the business is solving based on market research numbers. A full description is beyond this terse scope.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Management for Quality Software Development Managers</title>
+				<link>http://localhost:1313/management-for-quality-software-development/</link>
+				<pubDate>Tue, 01 Dec 2015 09:53:52 -0800</pubDate>
+				<guid>http://localhost:1313/management-for-quality-software-development/</guid>
+				<description>&lt;p&gt;This started as a list of notes for my boss on how I see the best way to manage technical professionals. I am trying to provide non-technical managers with the resources to direct technical teams in a way that will produce quality software and keep the engineering staff engaged and moving.&lt;/p&gt;&#xA;&lt;p&gt;How do you build software that provides value to both clients, users, owners and engineers for the years to come?&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Interview Strategies: A Technology Hiring Manager Who Wins</title>
+				<link>http://localhost:1313/interview-strategies-a-technology-hiring-manager/</link>
+				<pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/interview-strategies-a-technology-hiring-manager/</guid>
+				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;If I stacked pennies from the ground to the top of the Empire State Bldg, would they all fit into this room?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Firstly dear sir, you do not have that many pennies.&lt;/p&gt;&#xA;&lt;p&gt;Secondly if you cash it in for large bills then they all fit in your pocket.&lt;/p&gt;&#xA;&lt;p&gt;It is a question like this that would make me decide alternatively in my career choice. However I see tech managers searching for really “smart” interview questions and white board problems in an attempt to stump the prospective employee. Is the work you do not interesting enough that you are unable to ask a question related to the job? I have also found that blowing these tests off had zero effect in my employability. If they want you they already want you. Kinda like approaching attractive women.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,172 +1,406 @@
-<!doctype html><html>
-<head>
-<meta charset=utf-8>
-<meta name=pinterest content="nopin">
-<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
-/tags/data/index.xml
-<link rel=canonical href=https://scotttactical.com/tags/data/>
-<link href=//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css rel=stylesheet>
-<link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
-<link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css>
-<title>data - Scott Tactical</title>
-<link href=https://scotttactical.com/css/styles.css rel=stylesheet>
-</head>
-<body>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-53440065-2','auto'),ga('send','pageview'))</script>
-<header class=l-header>
-<nav class="navbar navbar-default">
-<div class=container>
-<div class=navbar-header>
-<button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#navbar aria-expanded=false>
-<span class=sr-only>Toggle navigation</span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-</button>
-<a class=navbar-brand href=https://scotttactical.com/>Scott Tactical</a>
-</div>
-<div id=navbar class="collapse navbar-collapse">
-<ul class="nav navbar-nav navbar-right">
-<li><a href=/about/>About</a></li>
-</ul>
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel="alternate" type="application/rss+xml" title="Scott Tactical" href="/tags/data/index.xml">
+<link rel="canonical" href="http://localhost:1313/tags/data/">
+
+    <link rel="stylesheet" href="/css/scott.css">
+    <link rel="stylesheet" href="/css/chroma.css">
+    <title>Data - Scott Tactical</title>
+    
+    
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    
+    <script type="application/javascript">
+      var doNotTrack = false;
+      doNotTrack || (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-53440065-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+
+    <header class="site-header">
+  <div class="container site-header-inner">
+    <a class="site-brand" href="http://localhost:1313/">Scott Tactical</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="http://localhost:1313/">Home</a></li>
+        
+        <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main id="main" class="site-main">
+      <div class="container">
+        
+<div class="layout">
+  <div class="layout-main">
+
+    
+    <header class="page-header">
+      <h1>Data</h1>
+    </header>
+    
+
+    <ul class="article-list">
+      
+      <li><article class="li">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2017-01-04T06:41:07-08:00">Jan 4, 2017</time></li>
+      <li><a href="http://localhost:1313/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://localhost:1313/post/sfp-vs.-qsfp/">SFP vs. QSFP</a></h2>
+  </header>
+
+  
+  <div class="summary"><h2 id="networking-transceivers">Networking Transceivers</h2>
+<p>This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent.  After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.</p>
+<p>Again this page is mostly for my notes.</p></div>
+
+  
+  <footer>
+    <a class="read-more" href="http://localhost:1313/post/sfp-vs.-qsfp/" title="SFP vs. QSFP">Read more &rarr;</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2016-12-24T06:41:07-08:00">Dec 24, 2016</time></li>
+      <li><a href="http://localhost:1313/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://localhost:1313/post/encrypt-postgresql-backup-to-s3/">Encrypt PostgreSQL Backup to S3</a></h2>
+  </header>
+
+  
+  <div class="summary"><h2 id="encrypt-your-db-backups">Encrypt Your DB Backups</h2>
+<p>I&rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.</p>
+<h3 id="generate-keys">Generate Keys</h3>
+<p>From your user&rsquo;s home directory:</p>
+<p>openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub</p>
+<p>Fill out the questions appropriately. Or not. I don&rsquo;t think it matters really.</p>
+<p>That will create the public and private keys.</p>
+<p>backup_key.pem - private key
+backup_key.pem.pub - public key</p></div>
+
+  
+  <footer>
+    <a class="read-more" href="http://localhost:1313/post/encrypt-postgresql-backup-to-s3/" title="Encrypt PostgreSQL Backup to S3">Read more &rarr;</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2016-10-29T13:02:00-07:00">Oct 29, 2016</time></li>
+      <li><a href="http://localhost:1313/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://localhost:1313/why-we-quit-openstack/">Why We Quit OpenStack: or How I Lost 2 Months of My Life</a></h2>
+  </header>
+
+  
+  <div class="summary"><h3 id="tldr">TL;DR</h3>
+<p>OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.</p>
+<h2 id="backstory">Backstory</h2>
+<p>Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&rsquo;t bad for some people. For most institutions it is just <em>wrong</em>.</p>
+<p>I will probably write another article that outlines all the questions that I should have asked before starting this. My assumptions were not all quite valid, but I did have a sneaking suspicion given a couple very relevant experiences.</p></div>
+
+  
+  <footer>
+    <a class="read-more" href="http://localhost:1313/why-we-quit-openstack/" title="Why We Quit OpenStack: or How I Lost 2 Months of My Life">Read more &rarr;</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2016-04-17T15:59:17-08:00">Apr 17, 2016</time></li>
+      <li><a href="http://localhost:1313/news/">news</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://localhost:1313/2016/04/purdue-university-predicts-success/">Purdue University Predicts Success</a></h2>
+  </header>
+
+  
+  <div class="summary"><h1 id="purdue-university-predicts-student-success-using-data-science">Purdue University Predicts Student Success Using Data Science</h1>
+<p>Most people know that the student who is doing well inside a class may likely prosper in another class, but tend to you anticipate whether students would succeed according to the number of occasions they joined into the campus network?</p>
+<p>Using the explosion of information sets available now, <a href="http://www.purdue.edu/">Purdue University</a> could evaluate data from hundreds of thousands of excellent and successful graduates, to assist conjecture models for graduation rates as well as on-time graduations. (Gerry McCartney](<a href="https://www.linkedin.com/in/gerry-mccartney-9352142">https://www.linkedin.com/in/gerry-mccartney-9352142</a>), VP &amp; CIO at Purdue, spoke about these new data sets and just how Purdue use them in the recent <a href="http://www.idgenterprise.com/news/press-release/agenda16-conference-announces-top-25-digital-transformation-award-winners/">AGENDA16 conference</a>.</p></div>
+
+  
+  <footer>
+    <a class="read-more" href="http://localhost:1313/2016/04/purdue-university-predicts-success/" title="Purdue University Predicts Success">Read more &rarr;</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2016-04-16T15:59:17-08:00">Apr 16, 2016</time></li>
+      <li><a href="http://localhost:1313/news/">news</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://localhost:1313/2016/04/the-fast-growing-data-center-segment/">The Fast-Growing Data Center Segment</a></h2>
+  </header>
+
+  
+  <div class="summary"><h1 id="how-fast-growing-data-center-segment-bridges-corporate-networks-and-the-cloud">How Fast-Growing Data Center Segment Bridges Corporate Networks and the Cloud</h1>
+<p>Companies, searching to achieve the very best performance in the cloud, are putting a greater value on lowering the physical distance between their servers and their respective cloud providers. <a href="http://www.equinix.com/services/data-centers-colocation/">Colocation data centers</a>, where their machines share space, emerged as a key point in <a href="http://www.forbes.com/sites/bradpeters/2013/05/21/the-worst-and-best-enterprise-cloud-strategies/#367cddf32dd8">enterprise cloud strategy</a>.</p>
+<p>For CIOs, a significant advantage of colocation would be that the closeness to cloud providers makes connections faster. <a href="http://www.equinix.com/">Equinix Corporation</a>, the market&rsquo;s biggest colocation firm by revenue, states it offers under 10 milliseconds of latency to in excess of 90% of people of the United States and Europe. The setup is becoming more and more essential as companies move a part of their IT infrastructure towards the cloud, but nonetheless need fast connections for their corporate data centers in so-known as hybrid cloud plans. &lsquo;You can observe colocation like a mid-point between your traditional type of businesses running their very own data centers and moving fully towards the public cloud,&rsquo; stated <a href="https://www.linkedin.com/in/johndinsdale">John Dinsdale</a>, chief analyst and controlling director of Synergy Research Group.</p></div>
+
+  
+  <footer>
+    <a class="read-more" href="http://localhost:1313/2016/04/the-fast-growing-data-center-segment/" title="The Fast-Growing Data Center Segment">Read more &rarr;</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2016-04-15T15:59:17-08:00">Apr 15, 2016</time></li>
+      <li><a href="http://localhost:1313/news/">news</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://localhost:1313/2016/04/better-communication-through-big-data/">Better Communication Through Big Data</a></h2>
+  </header>
+
+  
+  <div class="summary"><h1 id="better-communication-through-big-data">Better Communication Through Big Data</h1>
+<p>We&rsquo;ve heard the word &lsquo;<a href="http://www.sas.com/en_us/insights/big-data/what-is-big-data.html">Big Data</a>&rsquo; tossed around more recently. This is actually the idea of computationally examining very large data sets to show designs, trends, and associations, especially relevant to human behavior and interactions. Even though it still appears farfetched that the computer algorithm can improve personal connections, a lot of companies really are leveraging fraxel treatments through apps and gamification to enhance connections using their clients. And possibly, to leverage these technologies to enhance place of work culture.</p></div>
+
+  
+  <footer>
+    <a class="read-more" href="http://localhost:1313/2016/04/better-communication-through-big-data/" title="Better Communication Through Big Data">Read more &rarr;</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2016-04-14T15:59:17-08:00">Apr 14, 2016</time></li>
+      <li><a href="http://localhost:1313/news/">news</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://localhost:1313/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/">What Companies Do Not Understand About Employing for Data Scientist</a></h2>
+  </header>
+
+  
+  <div class="summary"><h1 id="what-companies-do-not-understand-about-employing-for-data-scientist">What Companies Do Not Understand About Employing for Data Scientist</h1>
+<p>Within <a href="https://www.thedataincubator.com/?utm_source=entrepreneur&amp;utm_medium=blog&amp;utm_campaign=hiringmanagers">The Data Incubator</a>, I&rsquo;ve spoken to hundreds of companies searching to make use of the expertise of data scientists - particularly people with advanced levels. Due to the hype surrounding big data nowadays, it&rsquo;s unsurprising that there&rsquo;s as much floating around as there are facts. Sadly, employing managers frequently be a victim of believing many common misconceptions actually was. Listed below are three particulars about data science that employing managers may not understand:</p></div>
+
+  
+  <footer>
+    <a class="read-more" href="http://localhost:1313/2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/" title="What Companies Do Not Understand About Employing for Data Scientist">Read more &rarr;</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2016-04-13T15:59:17-08:00">Apr 13, 2016</time></li>
+      <li><a href="http://localhost:1313/news/">news</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://localhost:1313/2016/04/3-reasons-why-data-centers-are-eco-friendly/">3 Reasons Why Data Centers Are Eco-Friendly</a></h2>
+  </header>
+
+  
+  <div class="summary"><h1 id="reasons-why-data-centers-are-eco-friendly">Reasons Why Data Centers Are Eco-Friendly</h1>
+<p>Within the thick of the <a href="http://www.thenews.com.pk/print/98612-US-election-doesnt-get-more-exciting-than-this">exciting election year</a>, I figured it&rsquo;d be interesting to go to politics.  Not to endorse one of the candidates or predict a winner, actually, but to recall a telling moment before the inauguration in our current president.</p>
+<p>It had been December 2008, when <a href="http://www.huffingtonpost.com/news/obama-barbara-walters-interview/">Barbara Walters questioned President Barack Obama and his wife Michelle</a> throughout a prime time ABC television special. In those days, Obama had not yet been sworn set for his first term and hadn&rsquo;t moved in to the White House. But Barbara requested if he intends to make his new 1600 Pennsylvania Avenue address more eco-friendly to be able to set a good example for other people in America.</p></div>
+
+  
+  <footer>
+    <a class="read-more" href="http://localhost:1313/2016/04/3-reasons-why-data-centers-are-eco-friendly/" title="3 Reasons Why Data Centers Are Eco-Friendly">Read more &rarr;</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2016-04-09T15:59:17-08:00">Apr 9, 2016</time></li>
+      <li><a href="http://localhost:1313/news/">news</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://localhost:1313/2016/04/data-science-building-workplace-diversities/">Data Science: Building Workplace Diversities</a></h2>
+  </header>
+
+  
+  <div class="summary"><h1 id="data-science-building-workplace-diversities">Data Science: Building Workplace Diversities</h1>
+<p>Romantic relationships mixed with someone&rsquo;s personal career and place of work might be a recipe for trouble but <a href="http://www.eharmony.com/">eHarmony</a> thinks mingling these two might provide the ability to create a comfortable work environment while bringing people together at the jobs they love.</p>
+<p>Being that eHarmony&rsquo;s algorithms can improve diversity in the workplace, there are numerous <a href="http://www.truth-out.org/buzzflash/commentary/creating-a-chasm-of-income-inequality-in-silicon-valley">Silicon Valley companies</a> that want to evaluate the possibility.  This is obviously a heated topic without a quick solution. (puns)</p></div>
+
+  
+  <footer>
+    <a class="read-more" href="http://localhost:1313/2016/04/data-science-building-workplace-diversities/" title="Data Science: Building Workplace Diversities">Read more &rarr;</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2016-04-08T15:59:17-08:00">Apr 8, 2016</time></li>
+      <li><a href="http://localhost:1313/news/">news</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://localhost:1313/2016/04/choosing-your-data-warehouse-product/">Choosing Your Data Warehouse Product</a></h2>
+  </header>
+
+  
+  <div class="summary"><h1 id="factors-to-consider-in-choosing-your-data-warehouse-product">Factors to Consider in Choosing Your Data Warehouse Product</h1>
+<p>How big is your company, and what resources are at your disposal? What exactly are your performance needs? Responding to these questions and others will help you pick the best data warehouse platform.</p>
+<p>Once you have made the decision to build a <a href="http://www.prnewswire.com/news-releases/impetus-technologies-launches-data-warehouse-transformation-practice-powered-by-an-industry-first-automated-migration-toolkit-300241681.html">new data warehouse</a>, or expand a current one, you will want to pick the right technology for the organization. This is often challenging, because there are many data warehouse platforms and vendors to evaluate.</p></div>
+
+  
+  <footer>
+    <a class="read-more" href="http://localhost:1313/2016/04/choosing-your-data-warehouse-product/" title="Choosing Your Data Warehouse Product">Read more &rarr;</a>
+  </footer>
+  
+</article>
+</li>
+      
+    </ul>
+
+    
+<nav class="pagination" aria-label="Pagination">
+  
+  <span class="prev disabled">&larr; Newer</span>
+  
+  <span class="page-number">Page 1 of 2</span>
+  
+  <a class="next" href="/tags/data/page/2/">Older &rarr;</a>
+  
 </nav>
-</header>
-<main>
-<div class=container>
-<div class=row>
-<div class=col-md-8>
-<header class=page-header>
-<h1>data</h1>
-</header>
-<ul class=p-articles>
-<li><article class=li>
-<header>
-<ul class=p-facts>
-<li><i class="fa fa-calendar" aria-hidden=true></i><time datetime=2017-01-04T06:41:07JST>Jan 4, 2017</time></li>
-<li><i class="fa fa-bookmark" aria-hidden=true></i><a href=https://scotttactical.com/post/>post</a></li>
-</ul>
-<h2 class=title><a href=https://scotttactical.com/post/sfp-vs.-qsfp/>SFP vs. QSFP</a></h2>
-</header>
-<div class=summary>Networking Transceivers This is all pretty new stuff for me. I have been a cat5 ethernet guy since the beginning. There was just never a need to push more data than what I was getting. But now with converged storage that need is quite apparent. After having deployed a MapR-FS and doing a speed test I realized where I needed to make improvements.
-Again this page is mostly for my notes.</div>
-<footer>
-<a href=https://scotttactical.com/post/sfp-vs.-qsfp/ title="SFP vs. QSFP">Read More…</a>
-</footer>
-</article>
-</li>
-<li><article class=li>
-<header>
-<ul class=p-facts>
-<li><i class="fa fa-calendar" aria-hidden=true></i><time datetime=2016-12-24T06:41:07JST>Dec 24, 2016</time></li>
-<li><i class="fa fa-bookmark" aria-hidden=true></i><a href=https://scotttactical.com/post/>post</a></li>
-</ul>
-<h2 class=title><a href=https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/>Encrypt PostgreSQL Backup to S3</a></h2>
-</header>
-<div class=summary>Encrypt Your DB Backups I&rsquo;m mostly putting this here for my reference. I do this in multiple projects and always seem to forget where my instructions are.
-Generate Keys From your user&rsquo;s home directory:
-openssl req -x509 -nodes -days 1000000 -newkey rsa:4096 -keyout .ssh/backup_key.pem -out .ssh/backup_key.pem.pub
-Fill out the questions appropriately. Or not. I don&rsquo;t think it matters really.
-That will create the public and private keys.
-backup_key.pem - private key backup_key.</div>
-<footer>
-<a href=https://scotttactical.com/post/encrypt-postgresql-backup-to-s3/ title="Encrypt PostgreSQL Backup to S3">Read More…</a>
-</footer>
-</article>
-</li>
-<li><article class=li>
-<header>
-<ul class=p-facts>
-<li><i class="fa fa-calendar" aria-hidden=true></i><time datetime=2016-10-29T13:02:00JST>Oct 29, 2016</time></li>
-<li><i class="fa fa-bookmark" aria-hidden=true></i><a href=https://scotttactical.com/post/>post</a></li>
-</ul>
-<h2 class=title><a href=https://scotttactical.com/why-we-quit-openstack/>Why We Quit OpenStack: or How I Lost 2 Months of My Life</a></h2>
-</header>
-<div class=summary>TL;DR OpenStack is a massive complicated ecosystem. It is only going to survive by the vendors that support it and probably not what you need.
-Backstory Let me begin by saying that given the proper talent pool, financial resources, and time; OpenStack probably isn&rsquo;t bad for some people. For most institutions it is just wrong.
-I will probably write another article that outlines all the questions that I should have asked before starting this.</div>
-<footer>
-<a href=https://scotttactical.com/why-we-quit-openstack/ title="Why We Quit OpenStack: or How I Lost 2 Months of My Life">Read More…</a>
-</footer>
-</article>
-</li>
-</ul>
-<nav>
-<ul class=pager>
-<li class=disabled><a href=#>Previous</a></li>
-<li><a href=/tags/data/page/2/>Next</a></li>
-</ul>
-</nav>
-</div>
-<div class=col-md-4>
-<aside class=l-sidebar>
-<section class="panel panel-default">
-<div class=panel-heading>
-<div class=panel-title>LATESTS</div>
-</div>
-<div class=list-group>
-<a href=https://scotttactical.com/why-i-converted-to-catholicism/ class=list-group-item>Why I Converted To Catholicism</a>
-<a href=https://scotttactical.com/ejs-2019-departure-preparations/ class=list-group-item>Easter Jeep Safari 2019 - Departure Preparations</a>
-<a href=https://scotttactical.com/ejs-2019-transit/ class=list-group-item>EJS 2019 - The Slow Route There </a>
-<a href=https://scotttactical.com/car-computer-face-recognition/ class=list-group-item>Car Computer Face Recognition</a>
-<a href=https://scotttactical.com/biometric-vehicle-entry-car-computer/ class=list-group-item>Biometric Vehicle Entry</a>
-<a href=https://scotttactical.com/installing-usb-relay/ class=list-group-item>Installing a USB Relay</a>
-<a href=https://scotttactical.com/car-computer-touchscreen-monitor/ class=list-group-item>Car Computer Touchscreen Monitor</a>
-<a href=https://scotttactical.com/linux-usb-relay-controller/ class=list-group-item>Linux USB Relay Controller</a>
-<a href=https://scotttactical.com/car-computer-camera/ class=list-group-item>Car Computer Camera</a>
-<a href=https://scotttactical.com/car-computer-hardware/ class=list-group-item>Car Computer Hardware</a>
-</div>
-</section>
-<section class="panel panel-default">
-<div class=panel-heading>
-<div class=panel-title>CATEGORY</div>
-</div>
-<div class=list-group>
-<a href=https://scotttactical.com//categories/software class=list-group-item>software</a>
-</div>
-</section>
-<section class="panel panel-default">
-<div class=panel-heading>
-<div class=panel-title>SERIES</div>
-</div>
-<div class=list-group>
-</div>
-</section>
-<section class="panel panel-default">
-<div class=panel-heading>
-<div class=panel-title>TAG</div>
-</div>
-<div class=list-group>
-<a href=https://scotttactical.com//tags/data class=list-group-item>data</a>
-<a href=https://scotttactical.com//tags/technology class=list-group-item>technology</a>
-<a href=https://scotttactical.com//tags/car-computer class=list-group-item>car-computer</a>
-<a href=https://scotttactical.com//tags/69-blazer class=list-group-item>69-blazer</a>
-<a href=https://scotttactical.com//tags/california class=list-group-item>california</a>
-<a href=https://scotttactical.com//tags/photography class=list-group-item>photography</a>
-<a href=https://scotttactical.com//tags/philosophy class=list-group-item>philosophy</a>
-<a href=https://scotttactical.com//tags/restoration class=list-group-item>restoration</a>
-<a href=https://scotttactical.com//tags/devops class=list-group-item>devops</a>
-<a href=https://scotttactical.com//tags/adventure class=list-group-item>adventure</a>
-</div>
-</section>
+
+
+  </div>
+  <div class="layout-side">
+    <aside class="sidebar">
+
+  <section class="sidebar-section">
+    <h2>Latest</h2>
+    <ul>
+      
+      <li><a href="http://localhost:1313/site-modernization-2026-09/">How an AI Coding Agent Rebuilt This Site</a></li>
+      
+      <li><a href="http://localhost:1313/site-redesign-2026/">Site Redesign: Out With the Bootstrap 3 Theme</a></li>
+      
+      <li><a href="http://localhost:1313/car-computer-monitoring/">Car Computer Monitoring</a></li>
+      
+      <li><a href="http://localhost:1313/why-i-converted-to-catholicism/">Why I Converted To Catholicism</a></li>
+      
+      <li><a href="http://localhost:1313/ejs-2019-departure-preparations/">Easter Jeep Safari 2019 - Departure Preparations</a></li>
+      
+      <li><a href="http://localhost:1313/ejs-2019-transit/">EJS 2019 - The Slow Route There </a></li>
+      
+      <li><a href="http://localhost:1313/car-computer-face-recognition/">Car Computer Face Recognition</a></li>
+      
+      <li><a href="http://localhost:1313/biometric-vehicle-entry-car-computer/">Biometric Vehicle Entry</a></li>
+      
+      <li><a href="http://localhost:1313/installing-usb-relay/">Installing a USB Relay</a></li>
+      
+      <li><a href="http://localhost:1313/car-computer-touchscreen-monitor/">Car Computer Touchscreen Monitor</a></li>
+      
+    </ul>
+  </section>
+
+  
+  <section class="sidebar-section">
+    <h2>Category</h2>
+    <ul>
+      
+      <li><a href="http://localhost:1313/categories/software/">software</a></li>
+      
+    </ul>
+  </section>
+  
+  <section class="sidebar-section">
+    <h2>Series</h2>
+    <ul>
+      
+    </ul>
+  </section>
+  
+  <section class="sidebar-section">
+    <h2>Tag</h2>
+    <ul>
+      
+      <li><a href="http://localhost:1313/tags/data/">data</a></li>
+      
+      <li><a href="http://localhost:1313/tags/technology/">technology</a></li>
+      
+      <li><a href="http://localhost:1313/tags/car-computer/">car computer</a></li>
+      
+      <li><a href="http://localhost:1313/tags/photography/">photography</a></li>
+      
+      <li><a href="http://localhost:1313/tags/california/">california</a></li>
+      
+      <li><a href="http://localhost:1313/tags/philosophy/">philosophy</a></li>
+      
+      <li><a href="http://localhost:1313/tags/69-blazer/">69 blazer</a></li>
+      
+      <li><a href="http://localhost:1313/tags/politics/">politics</a></li>
+      
+      <li><a href="http://localhost:1313/tags/restoration/">restoration</a></li>
+      
+      <li><a href="http://localhost:1313/tags/devops/">devops</a></li>
+      
+    </ul>
+  </section>
+  
+
 </aside>
+
+  </div>
 </div>
-</div>
-</div>
-</main>
-<footer class=l-footer>
-<div class=container>
-<p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
-<aside>
-<p>Powered by <a href=https://gohugo.io/>Hugo</a>.</p>
-<p><a href=https://github.com/dim0627/hugo_theme_beg>Beg</a> designed by <a href=http://yet.unresolved.xyz/>Daisuke Tsuji</a>.</p>
-</aside>
-</div>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+  <div class="container">
+    <p>&copy; Scott Tactical</p>
+    <p class="site-footer-note">Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+  </div>
 </footer>
-<script src=//code.jquery.com/jquery-3.1.1.min.js></script>
-<script src=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script>
-<script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js></script>
-<script>hljs.initHighlightingOnLoad()</script>
-</body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({ startOnLoad: true });</script>
+  </body>
 </html>

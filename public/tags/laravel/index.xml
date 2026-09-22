@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>laravel on Scott Tactical</title><link>https://scotttactical.com/tags/laravel/</link><description>Recent content in laravel on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Wed, 16 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://scotttactical.com/tags/laravel/index.xml" rel="self" type="application/rss+xml"/><item><title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</title><link>https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</link><pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/</guid><description>Laravel 5 - Enforcing HTTPS I&amp;rsquo;ve used a lot of frameworks. Laravel is great.
-Dealing with a load balancer Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.</description></item><item><title>PHP Hypermedia REST API wrapper</title><link>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</link><pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid><description>Hypermedia for PHP APIs. Well, here it is. I&amp;rsquo;m finally finishing up my Hypermedia layer for our Laravel 5.1 build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of Internet-of-Things (IoT).
-In Production - Alpha Right now I have it in our very alpha phase version of the software running the LeadFerret business lead search system.
-The project is on github here: PHP Hypermedia API Layer for HATEOAS HTTP or REST Services</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Laravel on Scott Tactical</title>
+		<link>http://localhost:1313/tags/laravel/</link>
+		<description>Recent content in Laravel on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 16 Sep 2015 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</title>
+				<link>http://localhost:1313/force-https-on-laravel-5-aws-elb-on-ec2/</link>
+				<pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/force-https-on-laravel-5-aws-elb-on-ec2/</guid>
+				<description>&lt;h1 id=&#34;laravel-5---enforcing-https&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve used a lot of frameworks. &lt;a href=&#34;http://laravel.com/&#34;&gt;Laravel is great&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;dealing-with-a-load-balancer&#34;&gt;Dealing with a load balancer&lt;/h2&gt;&#xA;&lt;p&gt;Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>PHP Hypermedia REST API wrapper</title>
+				<link>http://localhost:1313/php-hypermedia-rest-api-wrapper/</link>
+				<pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/php-hypermedia-rest-api-wrapper/</guid>
+				<description>&lt;h2 id=&#34;hypermedia-for-php-apis&#34;&gt;Hypermedia for PHP APIs.&lt;/h2&gt;&#xA;&lt;p&gt;Well, here it is.  I&amp;rsquo;m finally finishing up my Hypermedia layer for our &lt;a href=&#34;http://laravel.com/docs/5.1&#34; title=&#34;Laravel 5.1&#34;&gt;Laravel 5.1&lt;/a&gt; build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of &lt;a href=&#34;https://twitter.com/hashtag/iot&#34;&gt;Internet-of-Things&lt;/a&gt; (IoT).&lt;/p&gt;&#xA;&lt;h3 id=&#34;in-production---alpha&#34;&gt;In Production - Alpha&lt;/h3&gt;&#xA;&lt;p&gt;Right now I have it in our very alpha phase version of the software running the &lt;a href=&#34;http://docs.leadferretuser.apiary.io/#&#34;&gt;LeadFerret&lt;/a&gt; business lead search system.&lt;/p&gt;&#xA;&lt;p&gt;The project is on github here: &lt;a href=&#34;https://github.com/solvire/php-hypermedia-api&#34;&gt;PHP Hypermedia API Layer for HATEOAS HTTP or REST Services&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

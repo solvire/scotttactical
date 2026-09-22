@@ -1,3 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>testing on Scott Tactical</title><link>https://scotttactical.com/tags/testing/</link><description>Recent content in testing on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Wed, 04 Nov 2015 12:57:42 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/testing/index.xml" rel="self" type="application/rss+xml"/><item><title>PHPunit Slowness Performance Suggestions</title><link>https://scotttactical.com/performance-suggestions-phpunit-slowness/</link><pubDate>Wed, 04 Nov 2015 12:57:42 -0800</pubDate><guid>https://scotttactical.com/performance-suggestions-phpunit-slowness/</guid><description>PHPUnit Is Slowness I love PHPUnit don&amp;rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&amp;rsquo;s like the code got yo back bro! Build code that lasts.
-EDIT: I know most of the problems are inherent with tests not the testing framework. However, my requirements dictate how I use it to a certain extent. Peace.
-PHPUnit is painfully slow. Seriously. Though. Maybe having a concurrent environment it can run it would help.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Testing on Scott Tactical</title>
+		<link>http://localhost:1313/tags/testing/</link>
+		<description>Recent content in Testing on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 04 Nov 2015 12:57:42 -0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>PHPunit Slowness Performance Suggestions</title>
+				<link>http://localhost:1313/performance-suggestions-phpunit-slowness/</link>
+				<pubDate>Wed, 04 Nov 2015 12:57:42 -0800</pubDate>
+				<guid>http://localhost:1313/performance-suggestions-phpunit-slowness/</guid>
+				<description>&lt;h2 id=&#34;phpunit-is-slowness&#34;&gt;PHPUnit Is Slowness&lt;/h2&gt;&#xA;&lt;p&gt;I love &lt;a href=&#34;https://phpunit.de/&#34;&gt;PHPUnit&lt;/a&gt; don&amp;rsquo;t get me wrong. More than a testing library, I like testing, or having tests. It&amp;rsquo;s like the code got yo back bro! Build code that lasts.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;EDIT&lt;/em&gt;: I know most of the problems are inherent with tests not the testing framework.  However, my requirements dictate how I use it to a certain extent.  Peace.&lt;/p&gt;&#xA;&lt;h3 id=&#34;phpunit-is-painfully-slow&#34;&gt;PHPUnit is painfully slow.&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/turtle-speed.jpg&#34; alt=&#34;PHPUnit Is Slow&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Seriously. Though. Maybe having a concurrent environment it can run it would help. I worked at a place with 65,000 unit tests and if they ran as slow as our unit tests here it would never finish. It was literally taking 30-60 seconds per test. That is 65000 x 60 = 1083 hours or 45 days.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

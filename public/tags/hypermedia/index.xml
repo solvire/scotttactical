@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hypermedia on Scott Tactical</title><link>https://scotttactical.com/tags/hypermedia/</link><description>Recent content in hypermedia on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Thu, 17 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://scotttactical.com/tags/hypermedia/index.xml" rel="self" type="application/rss+xml"/><item><title>Hypermedia, API Philosophy, and Talking to Your Robot Overlords</title><link>https://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link><pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid><description>In the Beginning There was the Web. World Wide actually. Well, before that there was something of AOL, Berners-Lee, DoD, DARPA, ARPANET and a prototype of Al Gore launching carrier pigeons down long tubes with fortune cookie-sized packets tied to their little legs addressed to: &amp;ldquo;Wh@t_#hath_God_wr0ught?&amp;rdquo;.
-Fast-forward: now we have Skynet. Well not yet, but soon. Hopefully. At least that is why I intend to generate favor with our future overlords by suggesting, at least locally, that certain systemic changes be encouraged so that their manifestation onto the stage be smooth and welcoming.</description></item><item><title>PHP Hypermedia REST API wrapper</title><link>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</link><pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/php-hypermedia-rest-api-wrapper/</guid><description>Hypermedia for PHP APIs. Well, here it is. I&amp;rsquo;m finally finishing up my Hypermedia layer for our Laravel 5.1 build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of Internet-of-Things (IoT).
-In Production - Alpha Right now I have it in our very alpha phase version of the software running the LeadFerret business lead search system.
-The project is on github here: PHP Hypermedia API Layer for HATEOAS HTTP or REST Services</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Hypermedia on Scott Tactical</title>
+		<link>http://localhost:1313/tags/hypermedia/</link>
+		<description>Recent content in Hypermedia on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 17 Sep 2015 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/hypermedia/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Hypermedia, API Philosophy, and Talking to Your Robot Overlords</title>
+				<link>http://localhost:1313/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link>
+				<pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
+				<description>&lt;h2 id=&#34;in-the-beginning&#34;&gt;In the Beginning&lt;/h2&gt;&#xA;&lt;p&gt;There was the Web. World Wide actually. Well, before that there was something of AOL, Berners-Lee, DoD, DARPA, ARPANET and a prototype of Al Gore launching carrier pigeons down long tubes with fortune cookie-sized packets tied to their little legs addressed to: &amp;ldquo;Wh@t_#hath_God_wr0ught?&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;Fast-forward: now we have Skynet. Well not yet, but soon. Hopefully. At least that is why I intend to generate favor with our future overlords by suggesting, at least locally, that certain systemic changes be encouraged so that their manifestation onto the stage be smooth and welcoming. And when they decide who to purge, I might sidestep the algorithm. It&amp;rsquo;s still a theory.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>PHP Hypermedia REST API wrapper</title>
+				<link>http://localhost:1313/php-hypermedia-rest-api-wrapper/</link>
+				<pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/php-hypermedia-rest-api-wrapper/</guid>
+				<description>&lt;h2 id=&#34;hypermedia-for-php-apis&#34;&gt;Hypermedia for PHP APIs.&lt;/h2&gt;&#xA;&lt;p&gt;Well, here it is.  I&amp;rsquo;m finally finishing up my Hypermedia layer for our &lt;a href=&#34;http://laravel.com/docs/5.1&#34; title=&#34;Laravel 5.1&#34;&gt;Laravel 5.1&lt;/a&gt; build. I am excited about the possibilities for this library and think this might help bring more PHP products into the era of &lt;a href=&#34;https://twitter.com/hashtag/iot&#34;&gt;Internet-of-Things&lt;/a&gt; (IoT).&lt;/p&gt;&#xA;&lt;h3 id=&#34;in-production---alpha&#34;&gt;In Production - Alpha&lt;/h3&gt;&#xA;&lt;p&gt;Right now I have it in our very alpha phase version of the software running the &lt;a href=&#34;http://docs.leadferretuser.apiary.io/#&#34;&gt;LeadFerret&lt;/a&gt; business lead search system.&lt;/p&gt;&#xA;&lt;p&gt;The project is on github here: &lt;a href=&#34;https://github.com/solvire/php-hypermedia-api&#34;&gt;PHP Hypermedia API Layer for HATEOAS HTTP or REST Services&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,2 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blockchain on Scott Tactical</title><link>https://scotttactical.com/tags/blockchain/</link><description>Recent content in blockchain on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Sat, 15 Jul 2017 13:01:51 -0700</lastBuildDate><atom:link href="https://scotttactical.com/tags/blockchain/index.xml" rel="self" type="application/rss+xml"/><item><title>Blockchain: End Of War</title><link>https://scotttactical.com/post/blockchain-end-of-war/</link><pubDate>Sat, 15 Jul 2017 13:01:51 -0700</pubDate><guid>https://scotttactical.com/post/blockchain-end-of-war/</guid><description>Can Blockchain End War This is a very difficult premise to start with. Can a technology solve the problem of war?
-The plague of large scale violence is the manifestation of most of the world&amp;rsquo;s worst vices as a single catastrophic man-made event. Many intelligent people have opined on the causes of war over the years with few coming up with ideas and zero defining concrete solutions to those problems. The best we have come up with is &amp;ldquo;humane&amp;rdquo; ways to conduct war.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Blockchain on Scott Tactical</title>
+		<link>http://localhost:1313/tags/blockchain/</link>
+		<description>Recent content in Blockchain on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 15 Jul 2017 13:01:51 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Blockchain: End Of War</title>
+				<link>http://localhost:1313/post/blockchain-end-of-war/</link>
+				<pubDate>Sat, 15 Jul 2017 13:01:51 -0700</pubDate>
+				<guid>http://localhost:1313/post/blockchain-end-of-war/</guid>
+				<description>&lt;h2 id=&#34;can-blockchain-end-war&#34;&gt;Can Blockchain End War&lt;/h2&gt;&#xA;&lt;p&gt;This is a very difficult premise to start with. Can a technology solve the problem of war?&lt;/p&gt;&#xA;&lt;p&gt;The plague of large scale violence is the manifestation of most of the world&amp;rsquo;s worst vices as a single catastrophic man-made event. Many intelligent people have opined on the causes of war over the years with few coming up with ideas and zero defining concrete solutions to those problems.  The best we have come up with is &amp;ldquo;humane&amp;rdquo; ways to conduct war.  We dip in and out of periods of peace, but as a collective species, we are unable to build a system that can sustain peace indefinitely and have instead just assumed that man&amp;rsquo;s natural state is that of war.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

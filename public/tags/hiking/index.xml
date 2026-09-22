@@ -1,5 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hiking on Scott Tactical</title><link>https://scotttactical.com/tags/hiking/</link><description>Recent content in hiking on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Fri, 13 Nov 2015 00:22:21 -0700</lastBuildDate><atom:link href="https://scotttactical.com/tags/hiking/index.xml" rel="self" type="application/rss+xml"/><item><title>Lamarck Lake Hiking, Bishop, CA - June 2015</title><link>https://scotttactical.com/lamarck-lake-2015/</link><pubDate>Fri, 13 Nov 2015 00:22:21 -0700</pubDate><guid>https://scotttactical.com/lamarck-lake-2015/</guid><description>Hiking Lamarck Lake Originally shot in June 2015
-Some of the GPS coordinates are off a little. That will be corrected for upcoming galleries. I am just figuring all these tools out.
-BTW Sleeping on a hammock above Lake Lamarck is one of the best things ever. Worth the hike by itself.</description></item><item><title>Yosemite National Park, CA - October 9, 2015</title><link>https://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</link><pubDate>Sun, 25 Oct 2015 19:22:21 -0700</pubDate><guid>https://scotttactical.com/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</guid><description>Yosemite National Park, CA Hiking in Yosemite
-October 9 2015
-I need to add more content but the pictures should speak for me. Supposing you need more than 1000 words to get the point.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Hiking on Scott Tactical</title>
+		<link>http://localhost:1313/tags/hiking/</link>
+		<description>Recent content in Hiking on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 13 Nov 2015 00:22:21 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/hiking/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Lamarck Lake Hiking, Bishop, CA - June 2015</title>
+				<link>http://localhost:1313/lamarck-lake-2015/</link>
+				<pubDate>Fri, 13 Nov 2015 00:22:21 -0700</pubDate>
+				<guid>http://localhost:1313/lamarck-lake-2015/</guid>
+				<description>&lt;h1 id=&#34;hiking-lamarck-lake&#34;&gt;Hiking Lamarck Lake&lt;/h1&gt;&#xA;&lt;p&gt;Originally shot in June 2015&lt;/p&gt;&#xA;&lt;p&gt;Some of the GPS coordinates are off a little. That will be corrected for upcoming galleries. I am just figuring all these tools out.&lt;/p&gt;&#xA;&lt;p&gt;BTW Sleeping on a hammock above Lake Lamarck is one of the best things ever. Worth the hike by itself.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Yosemite National Park, CA - October 9, 2015</title>
+				<link>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</link>
+				<pubDate>Sun, 25 Oct 2015 19:22:21 -0700</pubDate>
+				<guid>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</guid>
+				<description>&lt;h1 id=&#34;yosemite-national-park-ca&#34;&gt;Yosemite National Park, CA&lt;/h1&gt;&#xA;&lt;p&gt;Hiking in Yosemite&lt;/p&gt;&#xA;&lt;p&gt;October 9 2015&lt;/p&gt;&#xA;&lt;p&gt;I need to add more content but the pictures should speak for me. Supposing you need more than 1000 words to get the point.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Yosemite National Park, CA - October 9, 2015</title>
+				<link>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</link>
+				<pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/yosemite-national-park-panorama-trail-glacier-point-vernal-nevada-fall/</guid>
+				<description>&lt;h1 id=&#34;hiking-yosemite-ca&#34;&gt;Hiking Yosemite, CA&lt;/h1&gt;&#xA;&lt;h2 id=&#34;rimrise-and-shine&#34;&gt;Rimrise and Shine&lt;/h2&gt;&#xA;&lt;p&gt;Mornings in Yosemite Valley are breathtaking. The weather was perfect IMO.&lt;/p&gt;&#xA;&lt;p&gt;We had some unfortunate luck with the camping and as you can see we could not get duplicate nights on our spot. See our note on getting your site well in advance.&lt;/p&gt;&#xA;&lt;p&gt;Our wonderful neighbors were kind enough to help us out. They got us from the upper pines campsites out around the valley and back to the trailhead of the 4 mile trail. It is a pleasure to meet with good folks. Living in the San Fernando Valley, Los Angeles causes one to disparage the lack of humanity in the throngs of the masses.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

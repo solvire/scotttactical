@@ -1,214 +1,309 @@
-<!doctype html><html>
-<head>
-<meta charset=utf-8>
-<meta name=pinterest content="nopin">
-<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
-<link rel=canonical href=https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/>
-<link href=//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css rel=stylesheet>
-<link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
-<link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css>
-<title>Force HTTPS on Laravel 5 behind AWS ELB on EC2 - Scott Tactical</title>
-<meta name=description content="Laravel 5 - Enforcing HTTPS I&amp;rsquo;ve used a lot of frameworks. Laravel is great.Dealing with a load balancer Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.">
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="http://localhost:1313/force-https-on-laravel-5-aws-elb-on-ec2/">
+
+    <link rel="stylesheet" href="/css/scott.css">
+    <link rel="stylesheet" href="/css/chroma.css">
+    <title>Force HTTPS on Laravel 5 behind AWS ELB on EC2 - Scott Tactical</title>
+    
+<meta name="description" content="&lt;h1 id=&#34;laravel-5---enforcing-https&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;&lt;p&gt;I&amp;rsquo;ve used a lot of frameworks. &lt;a href=&#34;http://laravel.com/&#34;&gt;Laravel is great&lt;/a&gt;.&lt;/p&gt;&lt;h2 id=&#34;dealing-with-a-load-balancer&#34;&gt;Dealing with a load balancer&lt;/h2&gt;&lt;p&gt;Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.&lt;/p&gt;">
+
 <meta property="og:title" content="Force HTTPS on Laravel 5 behind AWS ELB on EC2 - Scott Tactical">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/">
-<meta property="og:image" content="https://scotttactical.com/images/default.png">
+<meta property="og:url" content="http://localhost:1313/force-https-on-laravel-5-aws-elb-on-ec2/">
+<meta property="og:image" content="http://localhost:1313/images/default.png">
 <meta property="og:site_name" content="Scott Tactical">
-<meta property="og:description" content="Laravel 5 - Enforcing HTTPS I&amp;rsquo;ve used a lot of frameworks. Laravel is great.Dealing with a load balancer Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.">
-<meta property="og:locale" content="ja_JP">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:site content="Scott Tactical">
-<meta name=twitter:url content="https://scotttactical.com/force-https-on-laravel-5-aws-elb-on-ec2/">
-<meta name=twitter:title content="Force HTTPS on Laravel 5 behind AWS ELB on EC2 - Scott Tactical">
-<meta name=twitter:description content="Laravel 5 - Enforcing HTTPS I&amp;rsquo;ve used a lot of frameworks. Laravel is great.Dealing with a load balancer Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.">
-<meta name=twitter:image content="https://scotttactical.com/images/default.png">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/scotttactical.com\/"},"headline":"Force HTTPS on Laravel 5 behind AWS ELB on EC2 - Scott Tactical","image":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images\/default.png","height":800,"width":800},"datePublished":"2015-09-16T00:00:00JST","dateModified":"2015-09-16T00:00:00JST","author":{"@type":"Person","name":"Scott Tactical"},"publisher":{"@type":"Organization","name":"Scott Tactical","logo":{"@type":"ImageObject","url":"https:\/\/scotttactical.com\/images/logo.png","width":600,"height":60}},"description":"Laravel 5 - Enforcing HTTPS I\u0026rsquo;ve used a lot of frameworks. Laravel is great.\nDealing with a load balancer Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn\u0026rsquo;t have to be performed on the slave boxes."}</script>
-<link href=https://scotttactical.com/css/styles.css rel=stylesheet>
-</head>
-<body>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-53440065-2','auto'),ga('send','pageview'))</script>
-<header class=l-header>
-<nav class="navbar navbar-default">
-<div class=container>
-<div class=navbar-header>
-<button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#navbar aria-expanded=false>
-<span class=sr-only>Toggle navigation</span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-</button>
-<a class=navbar-brand href=https://scotttactical.com/>Scott Tactical</a>
-</div>
-<div id=navbar class="collapse navbar-collapse">
-<ul class="nav navbar-nav navbar-right">
-<li><a href=/about/>About</a></li>
-</ul>
-</div>
-</div>
-</nav>
+<meta property="og:description" content="&lt;h1 id=&#34;laravel-5---enforcing-https&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;&lt;p&gt;I&amp;rsquo;ve used a lot of frameworks. &lt;a href=&#34;http://laravel.com/&#34;&gt;Laravel is great&lt;/a&gt;.&lt;/p&gt;&lt;h2 id=&#34;dealing-with-a-load-balancer&#34;&gt;Dealing with a load balancer&lt;/h2&gt;&lt;p&gt;Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.&lt;/p&gt;">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scott Tactical">
+<meta name="twitter:url" content="http://localhost:1313/force-https-on-laravel-5-aws-elb-on-ec2/">
+<meta name="twitter:title" content="Force HTTPS on Laravel 5 behind AWS ELB on EC2 - Scott Tactical">
+<meta name="twitter:description" content="&lt;h1 id=&#34;laravel-5---enforcing-https&#34;&gt;Laravel 5 - Enforcing HTTPS&lt;/h1&gt;&lt;p&gt;I&amp;rsquo;ve used a lot of frameworks. &lt;a href=&#34;http://laravel.com/&#34;&gt;Laravel is great&lt;/a&gt;.&lt;/p&gt;&lt;h2 id=&#34;dealing-with-a-load-balancer&#34;&gt;Dealing with a load balancer&lt;/h2&gt;&lt;p&gt;Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&amp;rsquo;t have to be performed on the slave boxes.&lt;/p&gt;">
+<meta name="twitter:image" content="http://localhost:1313/images/default.png">
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http:\/\/localhost:1313\/"
+    },
+    "headline": "Force HTTPS on Laravel 5 behind AWS ELB on EC2 - Scott Tactical",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http:\/\/localhost:1313\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2015-09-16T00:00:00Z",
+    "dateModified": "2015-09-16T00:00:00Z",
+    "author": {
+      "@type": "Person",
+      "name": "Scott Tactical"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scott Tactical",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http:\/\/localhost:1313\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "\u003ch1 id=\u0022laravel-5---enforcing-https\u0022\u003eLaravel 5 - Enforcing HTTPS\u003c\/h1\u003e\n\u003cp\u003eI\u0026rsquo;ve used a lot of frameworks. \u003ca href=\u0022http:\/\/laravel.com\/\u0022\u003eLaravel is great\u003c\/a\u003e.\u003c\/p\u003e\n\u003ch2 id=\u0022dealing-with-a-load-balancer\u0022\u003eDealing with a load balancer\u003c\/h2\u003e\n\u003cp\u003eMost of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn\u0026rsquo;t have to be performed on the slave boxes.\u003c\/p\u003e"
+  }
+</script>
+
+
+    
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    
+    <script type="application/javascript">
+      var doNotTrack = false;
+      doNotTrack || (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-53440065-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+
+    <header class="site-header">
+  <div class="container site-header-inner">
+    <a class="site-brand" href="http://localhost:1313/">Scott Tactical</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="http://localhost:1313/">Home</a></li>
+        
+        <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
 </header>
-<main>
-<div class=container>
-<div class=row>
-<div class=col-md-8>
-<nav class=p-crumb>
-<ol class=breadcrumb>
-<li><a href=https://scotttactical.com/><i class="fa fa-home" aria-hidden=true></i></a></li>
-<li itemscope itemtype=http://data-vocabulary.org/Breadcrumb><a href=https://scotttactical.com/post/ itemprop=url><span itemprop=title>post</span></a></li>
-<li class=active>Force HTTPS on Laravel 5 behind AWS ELB on EC2</li>
-</ol>
-</nav>
-<article class=single>
-<header>
-<ul class=p-facts>
-<li><i class="fa fa-calendar" aria-hidden=true></i><time datetime=2015-09-16T00:00:00JST>Sep 16, 2015</time></li>
-<li><i class="fa fa-bookmark" aria-hidden=true></i><a href=https://scotttactical.com/post/>post</a></li>
-</ul>
-<h1 class=title>Force HTTPS on Laravel 5 behind AWS ELB on EC2</h1>
-</header>
-<div class=article-body><h1 id=laravel-5---enforcing-https>Laravel 5 - Enforcing HTTPS</h1>
-<p>I&rsquo;ve used a lot of frameworks. <a href=http://laravel.com/>Laravel is great</a>.</p>
-<h2 id=dealing-with-a-load-balancer>Dealing with a load balancer</h2>
+
+
+    <main id="main" class="site-main">
+      <div class="container">
+        
+<div class="layout">
+  <div class="layout-main">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="http://localhost:1313/">Home</a></li>
+        
+        <li><a href="http://localhost:1313/post/">post</a></li>
+        
+        <li aria-current="page">Force HTTPS on Laravel 5 behind AWS ELB on EC2</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2015-09-16T00:00:00Z">Sep 16, 2015</time></li>
+      <li><a href="http://localhost:1313/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">Force HTTPS on Laravel 5 behind AWS ELB on EC2</h1>
+  </header>
+
+  
+
+  <div class="article-body"><h1 id="laravel-5---enforcing-https">Laravel 5 - Enforcing HTTPS</h1>
+<p>I&rsquo;ve used a lot of frameworks. <a href="http://laravel.com/">Laravel is great</a>.</p>
+<h2 id="dealing-with-a-load-balancer">Dealing with a load balancer</h2>
 <p>Most of us are on a scaled service and most of us need HTTPS. It is much easier to put the SSL certificate on the load balancer and then proxy the request over port 80 to the actual server. It saves on CPU processes as well since the decryption work doesn&rsquo;t have to be performed on the slave boxes.</p>
 <p>If you do not handle the redirect properly and just look for port 443 then you will get yourself into a <strong>redirection loop</strong>. That is annoying because if you don&rsquo;t test under an SSL you will deploy to production and then have to tell you boss why you&rsquo;re loopy. Amazon is kind of a pain for this.</p>
-<h2 id=aws-elb-proxy-headers>AWS ELB Proxy Headers</h2>
+<h2 id="aws-elb-proxy-headers">AWS ELB Proxy Headers</h2>
 <p>Make sure you know what the request looks like to the accepting server.</p>
 <p>This header is going to be passed over:</p>
 <p><code>HTTP_X_FORWARDED_PROTO</code></p>
 <p>The problem with just looking for this and accepting your solution based on this is that header can be forged trivially. You need to make sure you are only acknowledging that header from trusted sources.</p>
-<h2 id=setting-the-redirect>Setting the Redirect</h2>
-<p>I went ahead and installed Laravel Trusted Proxies from Chris Fideo.</p>
+<h2 id="setting-the-redirect">Setting the Redirect</h2>
+<p>I went ahead and installed <a href="https://github.com/fideloper/TrustedProxy" title="Laravel Trusted Proxies" target="_blank">Laravel Trusted Proxies</a> from <a href="https://github.com/fideloper" title="Chris Fideo" target="_blank">Chris Fideo</a>.</p>
 <p>Follow his instructions. It&rsquo;s pretty straight forward. Here is what my `config/trustedproxy.php` looks like.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#e6db74>&#39;proxies&#39;</span> <span style=color:#f92672>=&amp;</span><span style=color:#a6e22e>gt</span>; [
-    <span style=color:#e6db74>&#39;172.31.0.0/16&#39;</span>,
-],
-</code></pre></div><p>I knew after looking at my logs where my health checks were coming from:`ELB-HealthChecker/1.0`</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="s1">&#39;proxies&#39;</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;172.31.0.0/16&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">],</span>
+</span></span></code></pre></div><p>I knew after looking at my logs where my health checks were coming from:`ELB-HealthChecker/1.0`</p>
 <p>I figured if I just allow everything in that B block that I should be okay.</p>
 <p>Also set the proper header to look for.</p>
-<p>NOTE: I lost a couple hours trying to figure out why it wouldn&rsquo;t match. Read the docblock above it. It strips HTTP_ </p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#e6db74>&#39;headers&#39;</span> <span style=color:#f92672>=&amp;</span><span style=color:#a6e22e>gt</span>; [
-        <span style=color:#a6e22e>\Illuminate\Http\Request</span><span style=color:#f92672>::</span><span style=color:#a6e22e>HEADER_CLIENT_IP</span>    <span style=color:#f92672>=&amp;</span><span style=color:#a6e22e>gt</span>; <span style=color:#e6db74>&#39;X_FORWARDED_FOR&#39;</span>,
-        <span style=color:#a6e22e>\Illuminate\Http\Request</span><span style=color:#f92672>::</span><span style=color:#a6e22e>HEADER_CLIENT_HOST</span>  <span style=color:#f92672>=&amp;</span><span style=color:#a6e22e>gt</span>; <span style=color:#e6db74>&#39;FORWARDED_HOST&#39;</span>,
-        <span style=color:#a6e22e>\Illuminate\Http\Request</span><span style=color:#f92672>::</span><span style=color:#a6e22e>HEADER_CLIENT_PROTO</span> <span style=color:#f92672>=&amp;</span><span style=color:#a6e22e>gt</span>; <span style=color:#e6db74>&#39;X_FORWARDED_PROTO&#39;</span>,
-        <span style=color:#a6e22e>\Illuminate\Http\Request</span><span style=color:#f92672>::</span><span style=color:#a6e22e>HEADER_CLIENT_PORT</span>  <span style=color:#f92672>=&amp;</span><span style=color:#a6e22e>gt</span>; <span style=color:#e6db74>&#39;X_FORWARDED_PORT&#39;</span>,
-    ]
-</code></pre></div><h2 id=add-to-laravel-middleware>Add to Laravel Middleware</h2>
+<p>NOTE: I lost a couple hours trying to figure out why it wouldn&rsquo;t match. Read the docblock above it. It strips HTTP_  <img src="http://scotttactical.com/wp-includes/images/smilies/frownie.png" alt=":(" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="s1">&#39;headers&#39;</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">\Illuminate\Http\Request</span><span class="o">::</span><span class="na">HEADER_CLIENT_IP</span>    <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="s1">&#39;X_FORWARDED_FOR&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">\Illuminate\Http\Request</span><span class="o">::</span><span class="na">HEADER_CLIENT_HOST</span>  <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="s1">&#39;FORWARDED_HOST&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">\Illuminate\Http\Request</span><span class="o">::</span><span class="na">HEADER_CLIENT_PROTO</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="s1">&#39;X_FORWARDED_PROTO&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">\Illuminate\Http\Request</span><span class="o">::</span><span class="na">HEADER_CLIENT_PORT</span>  <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="s1">&#39;X_FORWARDED_PORT&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span></code></pre></div><h2 id="add-to-laravel-middleware">Add to Laravel Middleware</h2>
 <p>I created Secure.php and added it to app/Http/Middleware</p>
-<p>Thanks to the work from @nblackburn. That was highly appreciated.</p>
+<p>Thanks to the work from <a href="https://gist.github.com/nblackburn/a66e8e93561e277996aa" title="nblackburn" target="_blank">@nblackburn</a>. That was highly appreciated.</p>
 <p>What was weird about my environment is I was getting in a redirection loop because it would prepend `public/` on the front of my uri. I&rsquo;m running multiple environments so I didn&rsquo;t have the luxury of pointing my root to that directory. I had to strip that off the front.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Secure</span> <span style=color:#66d9ef>implements</span> <span style=color:#a6e22e>Middleware</span>
-{
-    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>handle</span>($request, <span style=color:#a6e22e>Closure</span> $next)
-    {
-        <span style=color:#66d9ef>if</span> (<span style=color:#f92672>!</span> $request<span style=color:#f92672>-&amp;</span><span style=color:#a6e22e>gt</span>;<span style=color:#a6e22e>secure</span>() <span style=color:#f92672>&amp;&amp;</span> <span style=color:#a6e22e>app</span>()<span style=color:#f92672>-&amp;</span><span style=color:#a6e22e>gt</span>;<span style=color:#a6e22e>environment</span>(<span style=color:#e6db74>&#39;production&#39;</span>)) {
-
-            <span style=color:#75715e>// this is a really ugly hack but it kept looping and prepnding public
-</span><span style=color:#75715e></span>            <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>redirect</span>()<span style=color:#f92672>-&amp;</span><span style=color:#a6e22e>gt</span>;<span style=color:#a6e22e>secure</span>(<span style=color:#a6e22e>preg_replace</span>(<span style=color:#e6db74>&#39;%/public%&#39;</span>, <span style=color:#e6db74>&#39;&#39;</span>, $request<span style=color:#f92672>-&amp;</span><span style=color:#a6e22e>gt</span>;<span style=color:#a6e22e>getRequestUri</span>()));
-        }
-
-        <span style=color:#66d9ef>return</span> $next($request);
-    }
-}
-</code></pre></div><p>Add it to your global middleware if you want it to run for all requests.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Secure</span> <span class="k">implements</span> <span class="nx">Middleware</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">handle</span><span class="p">(</span><span class="nv">$request</span><span class="p">,</span> <span class="nx">Closure</span> <span class="nv">$next</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="nv">$request</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">secure</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="nx">app</span><span class="p">()</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">environment</span><span class="p">(</span><span class="s1">&#39;production&#39;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">// this is a really ugly hack but it kept looping and prepnding public
+</span></span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="nx">redirect</span><span class="p">()</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">secure</span><span class="p">(</span><span class="nx">preg_replace</span><span class="p">(</span><span class="s1">&#39;%/public%&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$request</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">getRequestUri</span><span class="p">()));</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nv">$next</span><span class="p">(</span><span class="nv">$request</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Add it to your global middleware if you want it to run for all requests.</p>
 <p>Open up: app/Http/Kernel.php</p>
 <p>I added</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#66d9ef>protected</span> $middleware <span style=color:#f92672>=</span> [
-	    <span style=color:#f92672>...</span>		
-		<span style=color:#75715e>// trust the proxies from aws
-</span><span style=color:#75715e></span>		<span style=color:#e6db74>&#39;Fideloper\Proxy\TrustProxies&#39;</span>,
-		<span style=color:#75715e>// then force it secure (if production)
-</span><span style=color:#75715e></span>		<span style=color:#e6db74>&#39;LeadFerret\Http\Middleware\Secure&#39;</span>,
-	];
-</code></pre></div><p>Now there are no more redirect loop hells.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">protected</span> <span class="nv">$middleware</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">	    <span class="o">...</span>		
+</span></span><span class="line"><span class="cl">		<span class="c1">// trust the proxies from aws
+</span></span></span><span class="line"><span class="cl">		<span class="s1">&#39;Fideloper\Proxy\TrustProxies&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// then force it secure (if production)
+</span></span></span><span class="line"><span class="cl">		<span class="s1">&#39;LeadFerret\Http\Middleware\Secure&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="p">];</span>
+</span></span></code></pre></div><p>Now there are no more redirect loop hells.</p>
 </div>
-<footer class=article-footer>
-<section class=bordered>
-<header>
-<div class=panel-title>TAGS</div>
-</header>
-<div>
-<ul class=p-terms>
-<li><a href=https://scotttactical.com/tags/php/>php</a></li>
-<li><a href=https://scotttactical.com/tags/devops/>devops</a></li>
-<li><a href=https://scotttactical.com/tags/laravel/>laravel</a></li>
-</ul>
-</div>
-</section>
-</footer>
+
+  <footer class="article-footer">
+    
+    
+    
+    
+    
+    
+    
+    <section class="terms-section">
+      <header>TAGS</header>
+      <ul class="terms">
+        
+        <li><a href="http://localhost:1313/tags/php/">php</a></li>
+        
+        <li><a href="http://localhost:1313/tags/devops/">devops</a></li>
+        
+        <li><a href="http://localhost:1313/tags/laravel/">laravel</a></li>
+        
+      </ul>
+    </section>
+    
+    
+  </footer>
+
 </article>
-<div id=disqus_thread></div>
-<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//scotttactical.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
-</div>
-<div class=col-md-4>
-<aside class=l-sidebar>
-<section class="panel panel-default">
-<div class=panel-heading>
-<div class=panel-title>LATESTS</div>
-</div>
-<div class=list-group>
-<a href=https://scotttactical.com/why-i-converted-to-catholicism/ class=list-group-item>Why I Converted To Catholicism</a>
-<a href=https://scotttactical.com/ejs-2019-departure-preparations/ class=list-group-item>Easter Jeep Safari 2019 - Departure Preparations</a>
-<a href=https://scotttactical.com/ejs-2019-transit/ class=list-group-item>EJS 2019 - The Slow Route There </a>
-<a href=https://scotttactical.com/car-computer-face-recognition/ class=list-group-item>Car Computer Face Recognition</a>
-<a href=https://scotttactical.com/biometric-vehicle-entry-car-computer/ class=list-group-item>Biometric Vehicle Entry</a>
-<a href=https://scotttactical.com/installing-usb-relay/ class=list-group-item>Installing a USB Relay</a>
-<a href=https://scotttactical.com/car-computer-touchscreen-monitor/ class=list-group-item>Car Computer Touchscreen Monitor</a>
-<a href=https://scotttactical.com/linux-usb-relay-controller/ class=list-group-item>Linux USB Relay Controller</a>
-<a href=https://scotttactical.com/car-computer-camera/ class=list-group-item>Car Computer Camera</a>
-<a href=https://scotttactical.com/car-computer-hardware/ class=list-group-item>Car Computer Hardware</a>
-</div>
-</section>
-<section class="panel panel-default">
-<div class=panel-heading>
-<div class=panel-title>CATEGORY</div>
-</div>
-<div class=list-group>
-<a href=https://scotttactical.com//categories/software class=list-group-item>software</a>
-</div>
-</section>
-<section class="panel panel-default">
-<div class=panel-heading>
-<div class=panel-title>SERIES</div>
-</div>
-<div class=list-group>
-</div>
-</section>
-<section class="panel panel-default">
-<div class=panel-heading>
-<div class=panel-title>TAG</div>
-</div>
-<div class=list-group>
-<a href=https://scotttactical.com//tags/data class=list-group-item>data</a>
-<a href=https://scotttactical.com//tags/technology class=list-group-item>technology</a>
-<a href=https://scotttactical.com//tags/car-computer class=list-group-item>car-computer</a>
-<a href=https://scotttactical.com//tags/69-blazer class=list-group-item>69-blazer</a>
-<a href=https://scotttactical.com//tags/california class=list-group-item>california</a>
-<a href=https://scotttactical.com//tags/photography class=list-group-item>photography</a>
-<a href=https://scotttactical.com//tags/philosophy class=list-group-item>philosophy</a>
-<a href=https://scotttactical.com//tags/restoration class=list-group-item>restoration</a>
-<a href=https://scotttactical.com//tags/devops class=list-group-item>devops</a>
-<a href=https://scotttactical.com//tags/adventure class=list-group-item>adventure</a>
-</div>
-</section>
+
+
+    
+  </div>
+
+  <div class="layout-side">
+    <aside class="sidebar">
+
+  <section class="sidebar-section">
+    <h2>Latest</h2>
+    <ul>
+      
+      <li><a href="http://localhost:1313/site-modernization-2026-09/">How an AI Coding Agent Rebuilt This Site</a></li>
+      
+      <li><a href="http://localhost:1313/site-redesign-2026/">Site Redesign: Out With the Bootstrap 3 Theme</a></li>
+      
+      <li><a href="http://localhost:1313/car-computer-monitoring/">Car Computer Monitoring</a></li>
+      
+      <li><a href="http://localhost:1313/why-i-converted-to-catholicism/">Why I Converted To Catholicism</a></li>
+      
+      <li><a href="http://localhost:1313/ejs-2019-departure-preparations/">Easter Jeep Safari 2019 - Departure Preparations</a></li>
+      
+      <li><a href="http://localhost:1313/ejs-2019-transit/">EJS 2019 - The Slow Route There </a></li>
+      
+      <li><a href="http://localhost:1313/car-computer-face-recognition/">Car Computer Face Recognition</a></li>
+      
+      <li><a href="http://localhost:1313/biometric-vehicle-entry-car-computer/">Biometric Vehicle Entry</a></li>
+      
+      <li><a href="http://localhost:1313/installing-usb-relay/">Installing a USB Relay</a></li>
+      
+      <li><a href="http://localhost:1313/car-computer-touchscreen-monitor/">Car Computer Touchscreen Monitor</a></li>
+      
+    </ul>
+  </section>
+
+  
+  <section class="sidebar-section">
+    <h2>Category</h2>
+    <ul>
+      
+      <li><a href="http://localhost:1313/categories/software/">software</a></li>
+      
+    </ul>
+  </section>
+  
+  <section class="sidebar-section">
+    <h2>Series</h2>
+    <ul>
+      
+    </ul>
+  </section>
+  
+  <section class="sidebar-section">
+    <h2>Tag</h2>
+    <ul>
+      
+      <li><a href="http://localhost:1313/tags/data/">data</a></li>
+      
+      <li><a href="http://localhost:1313/tags/technology/">technology</a></li>
+      
+      <li><a href="http://localhost:1313/tags/car-computer/">car computer</a></li>
+      
+      <li><a href="http://localhost:1313/tags/photography/">photography</a></li>
+      
+      <li><a href="http://localhost:1313/tags/california/">california</a></li>
+      
+      <li><a href="http://localhost:1313/tags/philosophy/">philosophy</a></li>
+      
+      <li><a href="http://localhost:1313/tags/69-blazer/">69 blazer</a></li>
+      
+      <li><a href="http://localhost:1313/tags/politics/">politics</a></li>
+      
+      <li><a href="http://localhost:1313/tags/restoration/">restoration</a></li>
+      
+      <li><a href="http://localhost:1313/tags/devops/">devops</a></li>
+      
+    </ul>
+  </section>
+  
+
 </aside>
+
+  </div>
 </div>
-</div>
-</div>
-</main>
-<footer class=l-footer>
-<div class=container>
-<p>Copyright © 2014–2019, Scott Tactical; all rights reserved.</p>
-<aside>
-<p>Powered by <a href=https://gohugo.io/>Hugo</a>.</p>
-<p><a href=https://github.com/dim0627/hugo_theme_beg>Beg</a> designed by <a href=http://yet.unresolved.xyz/>Daisuke Tsuji</a>.</p>
-</aside>
-</div>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+  <div class="container">
+    <p>&copy; Scott Tactical</p>
+    <p class="site-footer-note">Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+  </div>
 </footer>
-<script src=//code.jquery.com/jquery-3.1.1.min.js></script>
-<script src=//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script>
-<script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js></script>
-<script>hljs.initHighlightingOnLoad()</script>
-</body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({ startOnLoad: true });</script>
+  </body>
 </html>

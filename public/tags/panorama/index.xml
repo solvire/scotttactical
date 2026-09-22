@@ -1,5 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>panorama on Scott Tactical</title><link>https://scotttactical.com/tags/panorama/</link><description>Recent content in panorama on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Thu, 19 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://scotttactical.com/tags/panorama/index.xml" rel="self" type="application/rss+xml"/><item><title>Night Photography, San Fernando Valley, CA</title><link>https://scotttactical.com/night-photography-san-fernando-valley/</link><pubDate>Thu, 19 Nov 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/night-photography-san-fernando-valley/</guid><description>Night Photography over San Fernando Valley A light dressed up and stitched together panorama of the valley. This overlooks the Warner Center.
-Night Photography, San Fernando Valley, CANight Photography, San Fernando Valley, CA
-I will just let the rest speak for themselves.</description></item><item><title>Yosemite Valley - Panorama Photography</title><link>https://scotttactical.com/yosemite-valley-panorama-1008/</link><pubDate>Sun, 08 Nov 2015 19:22:21 -0700</pubDate><guid>https://scotttactical.com/yosemite-valley-panorama-1008/</guid><description>Yosemite Valley - Panorama With a subject as beautiful as Yosemite Valley; A photographer can be pretty unskilled and under-funded and still take an amazing picture.
-Location The original set was taken from the overlook at the tunnel. It faces El Capitan and Cathedral Peak.
-Constructing a Panorama From that vantage point listed above I staged the camera on the tripod and took several portraits as close to combined as possible.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Panorama on Scott Tactical</title>
+		<link>http://localhost:1313/tags/panorama/</link>
+		<description>Recent content in Panorama on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 19 Nov 2015 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/panorama/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Night Photography, San Fernando Valley, CA</title>
+				<link>http://localhost:1313/night-photography-san-fernando-valley/</link>
+				<pubDate>Thu, 19 Nov 2015 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/night-photography-san-fernando-valley/</guid>
+				<description>&lt;h1 id=&#34;night-photography-over-san-fernando-valley&#34;&gt;Night Photography over San Fernando Valley&lt;/h1&gt;&#xA;&lt;p&gt;A light dressed up and stitched together panorama of the valley. This overlooks the &lt;a href=&#34;https://en.wikipedia.org/wiki/Warner_Center,_Los_Angeles&#34;&gt;Warner Center&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;a href=&#34;http://img.scotttactical.com/images/gallery/night-photography-san-fernando-valley/roof1.jpg&#34;&gt;&lt;img src=&#34;http://img.scotttactical.com/images/gallery/night-photography-san-fernando-valley/thumbs/roof1.jpg&#34;&#xA;&#x9;&#x9;&#x9;alt=&#34;Night Photography, San Fernando Valley, CA&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;&#xA;&#x9;&#x9;&#x9;&lt;h4&gt;Night Photography, San Fernando Valley, CA&lt;/h4&gt;&lt;p&gt;Night Photography, San Fernando Valley, CA&lt;/p&gt;&#xA;&#x9;&#x9;&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I will just let the rest speak for themselves.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Yosemite Valley - Panorama Photography</title>
+				<link>http://localhost:1313/yosemite-valley-panorama-1008/</link>
+				<pubDate>Sun, 08 Nov 2015 19:22:21 -0700</pubDate>
+				<guid>http://localhost:1313/yosemite-valley-panorama-1008/</guid>
+				<description>&lt;h1 id=&#34;yosemite-valley---panorama&#34;&gt;Yosemite Valley - Panorama&lt;/h1&gt;&#xA;&lt;p&gt;With a subject as beautiful as Yosemite Valley; A photographer can be pretty unskilled and under-funded and still take an amazing picture.&lt;/p&gt;&#xA;&lt;h2 id=&#34;location&#34;&gt;Location&lt;/h2&gt;&#xA;&lt;p&gt;The original set was taken from the overlook at the tunnel. It faces &lt;a href=&#34;https://en.wikipedia.org/wiki/El_Capitan&#34;&gt;El Capitan&lt;/a&gt; and &lt;a href=&#34;http://www.summitpost.org/cathedral-peak/150524&#34;&gt;Cathedral Peak&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;constructing-a-panorama&#34;&gt;Constructing a Panorama&lt;/h1&gt;&#xA;&lt;p&gt;From that vantage point listed above I staged the camera on the tripod and took several portraits as close to combined as possible.&lt;/p&gt;&#xA;&lt;h2 id=&#34;panorama-stitching&#34;&gt;Panorama Stitching&lt;/h2&gt;&#xA;&lt;p&gt;I stitched everything together with &lt;a href=&#34;http://hugin.sourceforge.net/&#34;&gt;Hugin&lt;/a&gt; which actually did very well. I will do another post just for that a little later.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

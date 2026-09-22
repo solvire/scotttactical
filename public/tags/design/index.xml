@@ -1,5 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>design on Scott Tactical</title><link>https://scotttactical.com/tags/design/</link><description>Recent content in design on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Fri, 09 Dec 2016 08:52:58 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/design/index.xml" rel="self" type="application/rss+xml"/><item><title>Why The Covered California Website Sucks</title><link>https://scotttactical.com/post/why-the-covered-california-website-sucks/</link><pubDate>Fri, 09 Dec 2016 08:52:58 -0800</pubDate><guid>https://scotttactical.com/post/why-the-covered-california-website-sucks/</guid><description>Why It Needs Help - My Letter This is an open letter to the Covered California website designer, administrators, bureaucrats and contractors.
-Website Design and Usability I have several things listed below. Things I find to be of poor design or just plain broken.
-You Don&amp;rsquo;t Got Mail! &amp;ldquo;Secure Mailbox (2)&amp;rdquo; even though nothing was in my mail box.
-It randomly logged me out.
-GO&amp;rsquo;ON CLICK ME IF YA CAN I am low on time for open enrollment and it gave me a &amp;ldquo;Pay Now&amp;rdquo; button in order to do it faster, but the button was broken.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Design on Scott Tactical</title>
+		<link>http://localhost:1313/tags/design/</link>
+		<description>Recent content in Design on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 21 Sep 2026 18:00:00 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/design/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Site Redesign: Out With the Bootstrap 3 Theme</title>
+				<link>http://localhost:1313/site-redesign-2026/</link>
+				<pubDate>Mon, 21 Sep 2026 18:00:00 -0700</pubDate>
+				<guid>http://localhost:1313/site-redesign-2026/</guid>
+				<description>&lt;h2 id=&#34;site-redesign-2026&#34;&gt;Site Redesign 2026&lt;/h2&gt;&#xA;&lt;h3 id=&#34;tldr&#34;&gt;TL;DR&lt;/h3&gt;&#xA;&lt;p&gt;The site has a new visual theme. The old Bootstrap 3 &amp;ldquo;Beg&amp;rdquo; theme is retired&#xA;(kept in the repo for rollback). The new one is hand-rolled, has light and&#xA;dark color schemes, loads zero third-party assets, and every URL stayed&#xA;exactly the same.&lt;/p&gt;&#xA;&lt;h3 id=&#34;designer-credit&#34;&gt;Designer credit&lt;/h3&gt;&#xA;&lt;p&gt;This redesign was designed and implemented by &lt;strong&gt;Kilo&lt;/strong&gt;, an AI coding agent,&#xA;working from a short design brief: &amp;ldquo;modern, clean, fast, mobile-first; a&#xA;pragmatic engineer&amp;rsquo;s field notes and photo trips; typography over ornament.&amp;rdquo;&#xA;The brief, the hard constraints (no URL changes, no content loss, keep the&#xA;build plain Hugo), and the final approval were human. The theme code, the&#xA;CSS, the verification, and this write-up&amp;rsquo;s factual content are the agent&amp;rsquo;s.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Why The Covered California Website Sucks</title>
+				<link>http://localhost:1313/post/why-the-covered-california-website-sucks/</link>
+				<pubDate>Fri, 09 Dec 2016 08:52:58 -0800</pubDate>
+				<guid>http://localhost:1313/post/why-the-covered-california-website-sucks/</guid>
+				<description>&lt;h2 id=&#34;why-it-needs-help---my-letter&#34;&gt;Why It Needs Help - My Letter&lt;/h2&gt;&#xA;&lt;p&gt;This is an open letter to the Covered California website designer, administrators, bureaucrats and contractors.&lt;/p&gt;&#xA;&lt;h2 id=&#34;website-design-and-usability&#34;&gt;Website Design and Usability&lt;/h2&gt;&#xA;&lt;p&gt;I have several things listed below. Things I find to be of poor design or just plain broken.&lt;/p&gt;&#xA;&lt;h3 id=&#34;you-dont-got-mail&#34;&gt;You Don&amp;rsquo;t Got Mail!&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&amp;ldquo;Secure Mailbox (2)&amp;rdquo; even though nothing was in my mail box.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;It randomly logged me out.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;goon-click-me-if-ya-can&#34;&gt;GO&amp;rsquo;ON CLICK ME IF YA CAN&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;I am low on time for open enrollment and it gave me a &amp;ldquo;Pay Now&amp;rdquo; button in order to do it faster, but the button was broken. It would pop up and then if I tried to pay it would throw a JavaScript error in my console and close out. Now I can&amp;rsquo;t pay. It&amp;rsquo;s weird when people don&amp;rsquo;t want my money.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,12 +1,80 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>philosophy on Scott Tactical</title><link>https://scotttactical.com/tags/philosophy/</link><description>Recent content in philosophy on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Thu, 04 Jul 2019 14:33:06 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/philosophy/index.xml" rel="self" type="application/rss+xml"/><item><title>Why I Converted To Catholicism</title><link>https://scotttactical.com/why-i-converted-to-catholicism/</link><pubDate>Thu, 04 Jul 2019 14:33:06 -0800</pubDate><guid>https://scotttactical.com/why-i-converted-to-catholicism/</guid><description>Cradle Protestant I was born into a souther style Pentecostal family. If you haven&amp;rsquo;t been to a southern religious event then you really haven&amp;rsquo;t experienced a major demographic of US spiritualism. It&amp;rsquo;s something to behold.
-My career in getting in trouble and screwing with the system started in kindergarten. I was trouble. For reals. I remember I had 2 girl friends about the same time, I was flirting with the teacher, was spanked by the principal twice and almost expelled.</description></item><item><title>Vehemenism</title><link>https://scotttactical.com/post/vehemenism/</link><pubDate>Fri, 14 Apr 2017 18:51:01 -0700</pubDate><guid>https://scotttactical.com/post/vehemenism/</guid><description>Preface to Vehemenism Opening letter to future ultra-violent men.
-We stand at a transition. Either at the bottom of a cliff we may ascend, or at the precipice of one we will be pushed from. This &amp;ldquo;we&amp;rdquo; is addressed to men alone. Only we are the ones presented with this unique problem. It is a problem of perspective and one that contains many recursive questions. The answer to these questions will ultimately decide whether or not the observer was indeed a man.</description></item><item><title>What is Wrong With Millennials</title><link>https://scotttactical.com/whats-wrong-with-millennials/</link><pubDate>Fri, 18 Nov 2016 20:00:32 -0800</pubDate><guid>https://scotttactical.com/whats-wrong-with-millennials/</guid><description>What is Up With Those Millennials? Ah, yes. The click bait. A marketing construct of the GenX&amp;rsquo;ers: pornographic gossip without the payoff.
-But, since you are here&amp;hellip;
-My Motivation: Agism I have become infuriated seeing one segment of United States citizenry be the target of a multiple-party attack. This pressure has been escalating over the last couple of years, and I wanted to make a number of assertions and lay out some warnings.</description></item><item><title>Why Conservatism Fails</title><link>https://scotttactical.com/why-conservatism-fails/</link><pubDate>Fri, 13 Nov 2015 17:18:43 -0800</pubDate><guid>https://scotttactical.com/why-conservatism-fails/</guid><description>This essay is not an attack on the people who claim membership to a philosophical outlook, but an exposition on the inherent difficulties which exist in maintaining traditional systems.
-Let us begin with the needful: term definition.
-Term Definition Conservatism as a political and social philosophy promotes retaining traditional social institutions in the context of the culture and civilization.
-This is the definition found at Wikipedia and I find it to be a pretty good summation of the idea.</description></item><item><title>Eat For War</title><link>https://scotttactical.com/post/eat-for-war/</link><pubDate>Fri, 06 Nov 2015 01:23:11 -0800</pubDate><guid>https://scotttactical.com/post/eat-for-war/</guid><description>Bad men live that they may eat and drink, whereas good men eat and drink that they may live. Socrates - Plutarch, How a Young Man Ought to Hear Poems
-A Warrior&amp;rsquo;s Diet What physically intimate activity do we participate in more than any other?
-Eating
-The Philosophy One of the more immediate steps in becoming awake is overcoming the omnivore&amp;rsquo;s dilemma. The passion of hunger. We take other living things into our bodies and literally become one with them.</description></item><item><title>Hypermedia, API Philosophy, and Talking to Your Robot Overlords</title><link>https://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link><pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate><guid>https://scotttactical.com/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid><description>In the Beginning There was the Web. World Wide actually. Well, before that there was something of AOL, Berners-Lee, DoD, DARPA, ARPANET and a prototype of Al Gore launching carrier pigeons down long tubes with fortune cookie-sized packets tied to their little legs addressed to: &amp;ldquo;Wh@t_#hath_God_wr0ught?&amp;rdquo;.
-Fast-forward: now we have Skynet. Well not yet, but soon. Hopefully. At least that is why I intend to generate favor with our future overlords by suggesting, at least locally, that certain systemic changes be encouraged so that their manifestation onto the stage be smooth and welcoming.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Philosophy on Scott Tactical</title>
+		<link>http://localhost:1313/tags/philosophy/</link>
+		<description>Recent content in Philosophy on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 04 Jul 2019 14:33:06 -0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Why I Converted To Catholicism</title>
+				<link>http://localhost:1313/why-i-converted-to-catholicism/</link>
+				<pubDate>Thu, 04 Jul 2019 14:33:06 -0800</pubDate>
+				<guid>http://localhost:1313/why-i-converted-to-catholicism/</guid>
+				<description>&lt;h2 id=&#34;cradle-protestant&#34;&gt;Cradle Protestant&lt;/h2&gt;&#xA;&lt;p&gt;I was born into a souther style Pentecostal family. If you haven&amp;rsquo;t been to a southern religious event then you really haven&amp;rsquo;t experienced a major demographic of US spiritualism.  It&amp;rsquo;s something to behold.&lt;/p&gt;&#xA;&lt;p&gt;My career in getting in trouble and screwing with the system started in kindergarten. I was trouble. For reals.  I remember I had 2 girl friends about the same time, I was flirting with the teacher, was spanked by the principal twice and almost expelled. I was also friends with the paster&amp;rsquo;s son who was way worse than me but I blame my bright orange ball of hair for my trouble.  Stupid ginger genes.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>As A Guest At The Abbey Of Regina Laudis</title>
+				<link>http://localhost:1313/guest-at-regina-laudis/</link>
+				<pubDate>Sat, 02 Sep 2017 18:20:56 -0700</pubDate>
+				<guid>http://localhost:1313/guest-at-regina-laudis/</guid>
+				<description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;&#xA;&lt;p&gt;I spent 5 days at a Benedictine Abbey, and fell in love with the culture and people you maintain it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;how-i-found-the-abbey&#34;&gt;How I Found The Abbey&lt;/h2&gt;&#xA;&lt;p&gt;Basically I found the Abbey through a friend. My friend had been searching all over for a community and had visited many monasteries. This one just resonated with her. It also happened to be that one of the&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Vehemenism</title>
+				<link>http://localhost:1313/post/vehemenism/</link>
+				<pubDate>Fri, 14 Apr 2017 18:51:01 -0700</pubDate>
+				<guid>http://localhost:1313/post/vehemenism/</guid>
+				<description>&lt;h2 id=&#34;preface-to-vehemenism&#34;&gt;Preface to Vehemenism&lt;/h2&gt;&#xA;&lt;p&gt;Opening letter to future ultra-violent men.&lt;/p&gt;&#xA;&lt;p&gt;We stand at a transition. Either at the bottom of a cliff we may ascend, or at the precipice of one we will be pushed from. This &amp;ldquo;we&amp;rdquo; is addressed to men alone. Only we are the ones presented with this unique problem.  It is a problem of perspective and one that contains many recursive questions.  The answer to these questions will ultimately decide whether or not the observer was indeed a man. That question will ultimately distill to a single query: &amp;ldquo;Am I to destroy myself?&amp;rdquo;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>War is Terrorism: The US Foreign Policy</title>
+				<link>http://localhost:1313/post/war-is-terrorism/</link>
+				<pubDate>Fri, 10 Mar 2017 08:00:07 -0800</pubDate>
+				<guid>http://localhost:1313/post/war-is-terrorism/</guid>
+				<description>&lt;h2 id=&#34;killing-is-murder&#34;&gt;Killing is Murder&lt;/h2&gt;&#xA;&lt;p&gt;There is a long running question of where the cutoff is from justifiable homicide and outright murder.  In the case of war it is a little bit gray. I, as a Catholic, have a guide that is fairly&lt;/p&gt;&#xA;&lt;p&gt;Drumpf boy is on a roll:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.rt.com/news/380256-assad-foreign-troops-invaders/&#34;&gt;https://www.rt.com/news/380256-assad-foreign-troops-invaders/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Here is my analysis and why this is different.&lt;/p&gt;&#xA;&lt;p&gt;In the past all the invasions were under the pretense of a country that has &amp;ldquo;forfeit sovereignty&amp;rdquo; and or invited the US to intervene.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Conservatism in the USA and the Myth of Freedom</title>
+				<link>http://localhost:1313/post/conservatism-usa-myth-of-freedom/</link>
+				<pubDate>Sun, 04 Dec 2016 19:09:21 -0800</pubDate>
+				<guid>http://localhost:1313/post/conservatism-usa-myth-of-freedom/</guid>
+				<description>&lt;h1 id=&#34;land-of-the-free&#34;&gt;Land of the Free&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Welcome to America. You are now free to think exactly how we tell you.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;In 2016 I realized a few things about people in the United States. I realized that women are not going to vote for a woman because she is a women unless she meets several social minimums. This is in contrast to minorities voting for someone because they are a minority. I realized that the conservative right is indeed as hypocritical in their voting practices and narratives. I found that the class warfare narrative of the left is easily mirrored by the&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is Wrong With Millennials</title>
+				<link>http://localhost:1313/whats-wrong-with-millennials/</link>
+				<pubDate>Fri, 18 Nov 2016 20:00:32 -0800</pubDate>
+				<guid>http://localhost:1313/whats-wrong-with-millennials/</guid>
+				<description>&lt;h2 id=&#34;what-is-up-with-those-millennials&#34;&gt;What is Up With Those Millennials?&lt;/h2&gt;&#xA;&lt;p&gt;Ah, yes. The click bait. A marketing construct of the GenX&amp;rsquo;ers: pornographic gossip without the payoff.&lt;/p&gt;&#xA;&lt;p&gt;But, since you are here&amp;hellip;&lt;/p&gt;&#xA;&lt;h3 id=&#34;my-motivation-agism&#34;&gt;My Motivation: Agism&lt;/h3&gt;&#xA;&lt;p&gt;I have become infuriated seeing one segment of United States citizenry be the target of a multiple-party attack.  This pressure has been escalating over the last couple of years, and I wanted to make a number of assertions and lay out some warnings.  The warning comes at the end if you can make it that far. I know how your attention span is now days.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Why Conservatism Fails</title>
+				<link>http://localhost:1313/why-conservatism-fails/</link>
+				<pubDate>Fri, 13 Nov 2015 17:18:43 -0800</pubDate>
+				<guid>http://localhost:1313/why-conservatism-fails/</guid>
+				<description>&lt;p&gt;This essay is not an attack on the people who claim membership to a philosophical outlook, but an exposition on the inherent difficulties which exist in maintaining traditional systems.&lt;/p&gt;&#xA;&lt;p&gt;Let us begin with the needful: &lt;em&gt;term definition&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;term-definition&#34;&gt;Term Definition&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Conservatism&#34; title=&#34;Conservatism&#34;&gt;Conservatism&lt;/a&gt; as a political and social philosophy promotes retaining traditional social institutions in the context of the culture and civilization.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;This is the definition found at &lt;em&gt;Wikipedia&lt;/em&gt; and I find it to be a pretty good summation of the idea. Conservatives are those who hold the belief that there is value in the current institutions and that change will have negative effect on the systems of value that the previous generations have passed forward.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Eat For War</title>
+				<link>http://localhost:1313/post/eat-for-war/</link>
+				<pubDate>Fri, 06 Nov 2015 01:23:11 -0800</pubDate>
+				<guid>http://localhost:1313/post/eat-for-war/</guid>
+				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;Bad men live that they may eat and drink, whereas good men eat and drink that they may live. Socrates - Plutarch, &lt;em&gt;How a Young Man Ought to Hear Poems&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;a-warriors-diet&#34;&gt;A Warrior&amp;rsquo;s Diet&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;What physically intimate activity do we participate in more than any other?&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Eating&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-philosophy&#34;&gt;The Philosophy&lt;/h3&gt;&#xA;&lt;p&gt;One of the more immediate steps in becoming awake is overcoming the omnivore&amp;rsquo;s dilemma. The &lt;em&gt;passion of hunger&lt;/em&gt;. We take other living things into our bodies and literally become one with them. Most religions incorporate some form of consumption into their ritual. It is part of every culture and one of those most important glues in uniting various traditions.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Hypermedia, API Philosophy, and Talking to Your Robot Overlords</title>
+				<link>http://localhost:1313/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</link>
+				<pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hypermedia-api-philosophy-and-talking-to-your-robot-overlords/</guid>
+				<description>&lt;h2 id=&#34;in-the-beginning&#34;&gt;In the Beginning&lt;/h2&gt;&#xA;&lt;p&gt;There was the Web. World Wide actually. Well, before that there was something of AOL, Berners-Lee, DoD, DARPA, ARPANET and a prototype of Al Gore launching carrier pigeons down long tubes with fortune cookie-sized packets tied to their little legs addressed to: &amp;ldquo;Wh@t_#hath_God_wr0ught?&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;Fast-forward: now we have Skynet. Well not yet, but soon. Hopefully. At least that is why I intend to generate favor with our future overlords by suggesting, at least locally, that certain systemic changes be encouraged so that their manifestation onto the stage be smooth and welcoming. And when they decide who to purge, I might sidestep the algorithm. It&amp;rsquo;s still a theory.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

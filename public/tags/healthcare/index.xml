@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>healthcare on Scott Tactical</title><link>https://scotttactical.com/tags/healthcare/</link><description>Recent content in healthcare on Scott Tactical</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2014–2019, Scott Tactical; all rights reserved.</copyright><lastBuildDate>Thu, 10 Dec 2015 07:34:17 -0800</lastBuildDate><atom:link href="https://scotttactical.com/tags/healthcare/index.xml" rel="self" type="application/rss+xml"/><item><title>Health, Interconnectivity - The Data Revolution</title><link>https://scotttactical.com/health-medical-interconnectivity-data-revolution/</link><pubDate>Thu, 10 Dec 2015 07:34:17 -0800</pubDate><guid>https://scotttactical.com/health-medical-interconnectivity-data-revolution/</guid><description>Health, Medical Interconnectivity and The Coming Data Revolution Johnson Davis' Walk Six red indicators breach the serene layout of the medical information dashboard. Gauges, charts and graphs provide human cues concerning the information flowing through the Intra-Medical Services Accountability Pipeline. The IMSAP emerged in evolutionary form as various government, education and enterprises started the race to consume the calculus of living data. And now these machines of data consumption interpret the flow of what some consider the representation of that thing which connects life and machine.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Healthcare on Scott Tactical</title>
+		<link>http://localhost:1313/tags/healthcare/</link>
+		<description>Recent content in Healthcare on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 10 Dec 2015 07:34:17 -0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/healthcare/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Health, Interconnectivity - The Data Revolution</title>
+				<link>http://localhost:1313/health-medical-interconnectivity-data-revolution/</link>
+				<pubDate>Thu, 10 Dec 2015 07:34:17 -0800</pubDate>
+				<guid>http://localhost:1313/health-medical-interconnectivity-data-revolution/</guid>
+				<description>&lt;h2 id=&#34;health-medical-interconnectivity-and-the-coming-data-revolution&#34;&gt;Health, Medical Interconnectivity and The Coming Data Revolution&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/future-medicine-small.jpg&#34; alt=&#34;Medicine In The Future&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;johnson-davis-walk&#34;&gt;Johnson Davis&amp;rsquo; Walk&lt;/h3&gt;&#xA;&lt;p&gt;Six red indicators breach the serene layout of the medical information dashboard. Gauges, charts and graphs provide human cues concerning the information flowing through the Intra-Medical Services Accountability Pipeline. The IMSAP emerged in evolutionary form as various government, education and enterprises started the race to consume the calculus of living data. And now these machines of data consumption interpret the flow of what some consider the representation of that thing which connects life and machine.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
