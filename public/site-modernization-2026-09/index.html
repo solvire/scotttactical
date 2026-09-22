@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="http://localhost:1313/site-modernization-2026-09/">
+
+    <link rel="stylesheet" href="/css/scott.css">
+    <link rel="stylesheet" href="/css/chroma.css">
+    <title>How an AI Coding Agent Rebuilt This Site - Scott Tactical</title>
+    
+<meta name="description" content="&lt;h2 id=&#34;the-bottom-line&#34;&gt;The bottom line&lt;/h2&gt;&lt;p&gt;This site was rebuilt by an AI coding agent, and this page is the part of thatjob most people do not see. Below is not just what happened. It is also theboring, nerdy underneath: what the model is, how the work is measured, whattokens, wall time, and effort actually mean, and why a human would even bother.&lt;/p&gt;&lt;p&gt;That is the part an SEO crawler will eat up, and the part a curious engineerwill actually enjoy.&lt;/p&gt;">
+
+<meta property="og:title" content="How an AI Coding Agent Rebuilt This Site - Scott Tactical">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/site-modernization-2026-09/">
+<meta property="og:image" content="http://localhost:1313/images/default.png">
+<meta property="og:site_name" content="Scott Tactical">
+<meta property="og:description" content="&lt;h2 id=&#34;the-bottom-line&#34;&gt;The bottom line&lt;/h2&gt;&lt;p&gt;This site was rebuilt by an AI coding agent, and this page is the part of thatjob most people do not see. Below is not just what happened. It is also theboring, nerdy underneath: what the model is, how the work is measured, whattokens, wall time, and effort actually mean, and why a human would even bother.&lt;/p&gt;&lt;p&gt;That is the part an SEO crawler will eat up, and the part a curious engineerwill actually enjoy.&lt;/p&gt;">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scott Tactical">
+<meta name="twitter:url" content="http://localhost:1313/site-modernization-2026-09/">
+<meta name="twitter:title" content="How an AI Coding Agent Rebuilt This Site - Scott Tactical">
+<meta name="twitter:description" content="&lt;h2 id=&#34;the-bottom-line&#34;&gt;The bottom line&lt;/h2&gt;&lt;p&gt;This site was rebuilt by an AI coding agent, and this page is the part of thatjob most people do not see. Below is not just what happened. It is also theboring, nerdy underneath: what the model is, how the work is measured, whattokens, wall time, and effort actually mean, and why a human would even bother.&lt;/p&gt;&lt;p&gt;That is the part an SEO crawler will eat up, and the part a curious engineerwill actually enjoy.&lt;/p&gt;">
+<meta name="twitter:image" content="http://localhost:1313/images/default.png">
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http:\/\/localhost:1313\/"
+    },
+    "headline": "How an AI Coding Agent Rebuilt This Site - Scott Tactical",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http:\/\/localhost:1313\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2026-09-21T20:00:00-07:00",
+    "dateModified": "2026-09-21T20:00:00-07:00",
+    "author": {
+      "@type": "Person",
+      "name": "Scott Tactical"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scott Tactical",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http:\/\/localhost:1313\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "\u003ch2 id=\u0022the-bottom-line\u0022\u003eThe bottom line\u003c\/h2\u003e\n\u003cp\u003eThis site was rebuilt by an AI coding agent, and this page is the part of that\njob most people do not see. Below is not just what happened. It is also the\nboring, nerdy underneath: what the model is, how the work is measured, what\ntokens, wall time, and effort actually mean, and why a human would even bother.\u003c\/p\u003e\n\u003cp\u003eThat is the part an SEO crawler will eat up, and the part a curious engineer\nwill actually enjoy.\u003c\/p\u003e"
+  }
+</script>
+
+
+    
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    
+    <script type="application/javascript">
+      var doNotTrack = false;
+      doNotTrack || (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-53440065-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+
+    <header class="site-header">
+  <div class="container site-header-inner">
+    <a class="site-brand" href="http://localhost:1313/">Scott Tactical</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="http://localhost:1313/">Home</a></li>
+        
+        <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main id="main" class="site-main">
+      <div class="container">
+        
+<div class="layout">
+  <div class="layout-main">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="http://localhost:1313/">Home</a></li>
+        
+        <li><a href="http://localhost:1313/post/">post</a></li>
+        
+        <li aria-current="page">How an AI Coding Agent Rebuilt This Site</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2026-09-21T20:00:00-07:00">Sep 21, 2026</time></li>
+      <li><a href="http://localhost:1313/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">How an AI Coding Agent Rebuilt This Site</h1>
+  </header>
+
+  
+
+  <div class="article-body"><h2 id="the-bottom-line">The bottom line</h2>
+<p>This site was rebuilt by an AI coding agent, and this page is the part of that
+job most people do not see. Below is not just what happened. It is also the
+boring, nerdy underneath: what the model is, how the work is measured, what
+tokens, wall time, and effort actually mean, and why a human would even bother.</p>
+<p>That is the part an SEO crawler will eat up, and the part a curious engineer
+will actually enjoy.</p>
+<h2 id="who-or-what-did-the-work">Who (or what) did the work</h2>
+<p>The agent is the Kilo CLI, and the model behind it for this session was
+<code>deepseek/deepseek-v4-flash</code> (serve-spec id
+<code>openrouter/deepseek/deepseek-v4-flash-0731</code>). That is a long way of saying:
+a large language model running a code agent harness, given a terminal, a filesystem,
+and a set of rules.</p>
+<p>A code agent is not ChatGPT in a box. It is a loop. It reads a file, decides,
+runs a command, reads the output, decides again. For this job it shelled into a
+Docker container running Hugo, built the site, served it, curl&rsquo;d its own pages,
+diffed URL trees, and compared old versus new output &ndash; all without a human
+retyping a single command.</p>
+<h2 id="the-actual-job">The actual job</h2>
+<p>The scotttactical.com source was 2016-era: old capital-case Hugo config, a
+vendored Bootstrap 3 theme, and a gulp-3 LESS pipeline that no longer even built
+on modern Node. The production site was serving a stale, prebuilt <code>public/</code>.</p>
+<p>The modernization, end to end:</p>
+<ol>
+<li>Probed the repo and dumped every config, layout, partial, and piece of front
+matter to understand the URL map before touching anything.</li>
+<li>Proved the theme could be salvaged by running modern Hugo against it and
+capturing the concrete errors (three removed APIs: <code>getJSON</code>, and the
+<code>_internal/google_analytics.html</code> and <code>_internal/disqus.html</code> templates).</li>
+<li>Wrote a single modern <code>hugo.toml</code>.</li>
+<li>Surgically patched the theme: inlined Google Analytics and Disqus, rewrote
+the gallery schema to stop calling the dead remote host.</li>
+<li>Retired gulp/less and folded the CSS into the theme&rsquo;s static assets.</li>
+<li>Made the Dockerfile a real multi-stage build.</li>
+<li>Built it, served it, crawled it: zero broken internal links, and every
+source-authored URL preserved.</li>
+</ol>
+<p>That last part mattered most. The old <code>public/</code> was not even one coherent build,
+it interleaved three Hugo generations with 11 pages pointing at localhost and 38
+referencing dead CDN assets. The requirement was not &ldquo;match those bytes.&rdquo; It was:
+never change a URL that links and SEO depend on.</p>
+<h2 id="tokens-wall-time-and-effort--translated">Tokens, wall time, and effort &ndash; translated</h2>
+<p>These are the three numbers people actually mean when they talk about AI work,
+and they are not the same thing.</p>
+<p><strong>Tokens.</strong> A token is roughly 3/4 of a word to the model. Everything the agent
+reads and writes &ndash; every file, every command output, every diff &ndash; is a stream
+of tokens flowing through a context window. This site is a handful of megabytes
+of source; the working set that matters is what fits in the context window at
+once. A good agent reads a file, uses it, and lets it age out, rather than
+loading the world and losing track of the task.</p>
+<p><strong>Wall time.</strong> This is clock time, real seconds. Context windows are big but the
+model still moves at a rate, and every tool call &ndash; a Docker build, a curl, a
+git diff &ndash; has latency. Objects and code render faster than reasoning; heavy
+steps are the build and the crawl, not the typing.</p>
+<p><strong>Effort.</strong> The highest-leverage quantity. A code agent chooses how deliberately
+it reasons before it acts. For grunt work it can go shallow and fast. For a task
+like &ldquo;do not change the URL map,&rdquo; it must go deep: trace every post&rsquo;s front
+matter, diff every generated path, prove the new tree is a superset of the
+intended old one. The same model can burn tokens fast on nothing, or spend them
+slowly and land exactly on the target. Effort is where the discipline lives.</p>
+<h2 id="why-do-it-this-way-at-all">Why do it this way at all</h2>
+<p>Three reasons.</p>
+<p><strong>Reproducibility.</strong> The whole pipeline compiles in Docker from source now. A
+new machine, a fresh clone, a container build &ndash; same site. No hidden state, no
+&ldquo;it built on my laptop.&rdquo; That is worth more than the cost of the compute.</p>
+<p><strong>The URL map is the contract.</strong> A static site&rsquo;s resale value is its links. The
+readiness to rewrite without relocating &ndash; to move the build and leave every URL
+standing &ndash; is the entire point of doing this with a tool that can diff instead
+of eyeball.</p>
+<p><strong>Because keeping a hand-built template alive is expensive.</strong> gulp-3 LESS was
+dead weight. The humans here did not want a redesign-drift treadmill; they wanted
+the build stack modern enough that the next change is one file, not a war.</p>
+<h2 id="the-actual-bill">The actual bill</h2>
+<p>Because it is fun and honest to show your work, here are the real figures the
+platform reported for the session that did this.</p>
+<table>
+	<thead>
+			<tr>
+					<th>Quantity</th>
+					<th>Value</th>
+					<th>What it means</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Provider / route</td>
+					<td>OpenRouter - DeepSeek V4 Flash 0731</td>
+					<td>the actual generation model behind the agent</td>
+			</tr>
+			<tr>
+					<td>Steps</td>
+					<td>240</td>
+					<td>tool calls + model turns across the whole job</td>
+			</tr>
+			<tr>
+					<td>Cost</td>
+					<td>$0.738502</td>
+					<td>total spend, sub-one-dollar</td>
+			</tr>
+			<tr>
+					<td>Input tokens</td>
+					<td>2,253,923</td>
+					<td>everything read: files, configs, command output, diffs</td>
+			</tr>
+			<tr>
+					<td>Output tokens</td>
+					<td>73,567</td>
+					<td>everything generated: edits, explanations, commands</td>
+			</tr>
+			<tr>
+					<td>Reasoning tokens</td>
+					<td>64,246</td>
+					<td>the intermediate chain-of-thought, not shown to you</td>
+			</tr>
+			<tr>
+					<td>Cache read</td>
+					<td>35,009,024</td>
+					<td>cached-context tokens served without recompute</td>
+			</tr>
+			<tr>
+					<td>Cache write</td>
+					<td>0</td>
+					<td>nothing fresh persisted to cache this run</td>
+			</tr>
+			<tr>
+					<td>Cache hit rate</td>
+					<td>94.0%</td>
+					<td>how much of the context was reused, not recomputed</td>
+			</tr>
+			<tr>
+					<td>Wall time</td>
+					<td>roughly 3 hours of human chat + seconds of actual compute</td>
+					<td>the model work itself was seconds across 240 steps</td>
+			</tr>
+	</tbody>
+</table>
+<p>Read those numbers the way an engineer would.</p>
+<p><strong>Input over output, ~30x.</strong> The agent consumed about 30 tokens of context for
+every token it wrote. That is not waste; it is the whole point of a code agent.
+To move a site without breaking its URL map, the model has to <em>look</em> &ndash; at the
+config, at every post&rsquo;s front matter, at the old build, at the diff &ndash; far more
+than it writes. A setting that reads barely anything is a setting guessing.</p>
+<p><strong>Caching did the work.</strong> 35M cached tokens against 2.2M fresh input, a 94% hit
+rate, and a $0.74 bill. The reason it was cheap is not that the model is weak; it
+is that most of the context (the repo, the rules, the earlier turns) was already
+in cache and never recomputed. Cache is the reason context windows got usable at
+all. That 94% is the load-bearing number in the whole table.</p>
+<p><strong>Reasoning is billed separately and hidden.</strong> 64K tokens went to internal
+reasoning you never saw &ndash; the &ldquo;should I trust this theory about the URL before
+I edit it&rdquo; thinking. It is not shown to you because you asked for the result, not
+the deliberation. But it is real, it is counted, and it is why effort is a knob
+you pay for by the ounce rather than by the line.</p>
+<p><strong>$0.74 to rebuild a 2016 site.</strong> The model itself cost less than a coffee.
+Every worthwhile cost in this task was human attention &ndash; deciding the URL map
+must not move, deciding the dependencies are a controlled one, deciding when to
+stop. The compute was the cheap part.</p>
+<h2 id="you-can-draw-in-posts-now">You can draw in posts now</h2>
+<p>This theme gained a mermaid shortcode while this build was in progress. There
+was no mermaid support in Hugo out of the box &ndash; Hugo renders Markdown, and a
+fenced code block is just a code block until something runs the diagram
+javascript. We added a tiny <code>mermaid</code> shortcode (a <code>&lt;pre class=&quot;mermaid&quot;&gt;</code>
+wrapper) and loaded the mermaid.js script in the base layout. Now any post can
+drop in a real flow diagram, no external image host needed. Like the loop that
+did this job:</p>
+<pre class="mermaid">
+
+flowchart TD
+  A[Read repo + URL map] --> B{Build with modern Hugo}
+  B -- fails --> C[Capture the concrete error]
+  C --> A
+  B -- ok --> D[Verify URLs and assets unchanged]
+  D --> F[OK]
+
+</pre>
+<p>The text is the diagram. That is the whole trick of a chart you can keep in
+git.</p>
+<h2 id="the-honest-asterisk">The honest asterisk</h2>
+<p>The model cannot run the step counter or the billing meter; the platform does.
+Those numbers above came from the operator&rsquo;s OpenRouter dashboard, not from the
+model, and they arrived after the session. So treat them as the ground truth of
+what this job cost &ndash; and treat the model&rsquo;s own claims about itself with the same
+caution you would any narrator.</p>
+<p>What is true regardless of the meter: the working set fit in context, the build
+was verified against itself, the production artifact was never deleted or
+committed without approval, and the model&rsquo;s purpose is to spend your effort
+budget where it counts, keep the diff small, and be honest about the parts it
+cannot prove.</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="terms-section">
+      <header>CATEGORIES</header>
+      <ul class="terms">
+        
+        <li><a href="http://localhost:1313/categories/software/">Software</a></li>
+        
+      </ul>
+    </section>
+    
+    
+    
+    
+    
+    <section class="terms-section">
+      <header>TAGS</header>
+      <ul class="terms">
+        
+        <li><a href="http://localhost:1313/tags/hugo/">hugo</a></li>
+        
+        <li><a href="http://localhost:1313/tags/llm/">llm</a></li>
+        
+        <li><a href="http://localhost:1313/tags/ai/">ai</a></li>
+        
+        <li><a href="http://localhost:1313/tags/meta/">meta</a></li>
+        
+        <li><a href="http://localhost:1313/tags/engineering/">engineering</a></li>
+        
+      </ul>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="layout-side">
+    <aside class="sidebar">
+
+  <section class="sidebar-section">
+    <h2>Latest</h2>
+    <ul>
+      
+      <li><a href="http://localhost:1313/site-modernization-2026-09/">How an AI Coding Agent Rebuilt This Site</a></li>
+      
+      <li><a href="http://localhost:1313/site-redesign-2026/">Site Redesign: Out With the Bootstrap 3 Theme</a></li>
+      
+      <li><a href="http://localhost:1313/car-computer-monitoring/">Car Computer Monitoring</a></li>
+      
+      <li><a href="http://localhost:1313/why-i-converted-to-catholicism/">Why I Converted To Catholicism</a></li>
+      
+      <li><a href="http://localhost:1313/ejs-2019-departure-preparations/">Easter Jeep Safari 2019 - Departure Preparations</a></li>
+      
+      <li><a href="http://localhost:1313/ejs-2019-transit/">EJS 2019 - The Slow Route There </a></li>
+      
+      <li><a href="http://localhost:1313/car-computer-face-recognition/">Car Computer Face Recognition</a></li>
+      
+      <li><a href="http://localhost:1313/biometric-vehicle-entry-car-computer/">Biometric Vehicle Entry</a></li>
+      
+      <li><a href="http://localhost:1313/installing-usb-relay/">Installing a USB Relay</a></li>
+      
+      <li><a href="http://localhost:1313/car-computer-touchscreen-monitor/">Car Computer Touchscreen Monitor</a></li>
+      
+    </ul>
+  </section>
+
+  
+  <section class="sidebar-section">
+    <h2>Category</h2>
+    <ul>
+      
+      <li><a href="http://localhost:1313/categories/software/">software</a></li>
+      
+    </ul>
+  </section>
+  
+  <section class="sidebar-section">
+    <h2>Series</h2>
+    <ul>
+      
+    </ul>
+  </section>
+  
+  <section class="sidebar-section">
+    <h2>Tag</h2>
+    <ul>
+      
+      <li><a href="http://localhost:1313/tags/data/">data</a></li>
+      
+      <li><a href="http://localhost:1313/tags/technology/">technology</a></li>
+      
+      <li><a href="http://localhost:1313/tags/car-computer/">car computer</a></li>
+      
+      <li><a href="http://localhost:1313/tags/photography/">photography</a></li>
+      
+      <li><a href="http://localhost:1313/tags/california/">california</a></li>
+      
+      <li><a href="http://localhost:1313/tags/philosophy/">philosophy</a></li>
+      
+      <li><a href="http://localhost:1313/tags/69-blazer/">69 blazer</a></li>
+      
+      <li><a href="http://localhost:1313/tags/politics/">politics</a></li>
+      
+      <li><a href="http://localhost:1313/tags/restoration/">restoration</a></li>
+      
+      <li><a href="http://localhost:1313/tags/devops/">devops</a></li>
+      
+    </ul>
+  </section>
+  
+
+</aside>
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+  <div class="container">
+    <p>&copy; Scott Tactical</p>
+    <p class="site-footer-note">Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({ startOnLoad: true });</script>
+  </body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="http://localhost:1313/site-redesign-2026/">
+
+    <link rel="stylesheet" href="/css/scott.css">
+    <link rel="stylesheet" href="/css/chroma.css">
+    <title>Site Redesign: Out With the Bootstrap 3 Theme - Scott Tactical</title>
+    
+<meta name="description" content="&lt;h2 id=&#34;site-redesign-2026&#34;&gt;Site Redesign 2026&lt;/h2&gt;&lt;h3 id=&#34;tldr&#34;&gt;TL;DR&lt;/h3&gt;&lt;p&gt;The site has a new visual theme. The old Bootstrap 3 &amp;ldquo;Beg&amp;rdquo; theme is retired(kept in the repo for rollback). The new one is hand-rolled, has light anddark color schemes, loads zero third-party assets, and every URL stayedexactly the same.&lt;/p&gt;&lt;h3 id=&#34;designer-credit&#34;&gt;Designer credit&lt;/h3&gt;&lt;p&gt;This redesign was designed and implemented by &lt;strong&gt;Kilo&lt;/strong&gt;, an AI coding agent,working from a short design brief: &amp;ldquo;modern, clean, fast, mobile-first; apragmatic engineer&amp;rsquo;s field notes and photo trips; typography over ornament.&amp;rdquo;The brief, the hard constraints (no URL changes, no content loss, keep thebuild plain Hugo), and the final approval were human. The theme code, theCSS, the verification, and this write-up&amp;rsquo;s factual content are the agent&amp;rsquo;s.&lt;/p&gt;">
+
+<meta property="og:title" content="Site Redesign: Out With the Bootstrap 3 Theme - Scott Tactical">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/site-redesign-2026/">
+<meta property="og:image" content="http://localhost:1313/images/default.png">
+<meta property="og:site_name" content="Scott Tactical">
+<meta property="og:description" content="&lt;h2 id=&#34;site-redesign-2026&#34;&gt;Site Redesign 2026&lt;/h2&gt;&lt;h3 id=&#34;tldr&#34;&gt;TL;DR&lt;/h3&gt;&lt;p&gt;The site has a new visual theme. The old Bootstrap 3 &amp;ldquo;Beg&amp;rdquo; theme is retired(kept in the repo for rollback). The new one is hand-rolled, has light anddark color schemes, loads zero third-party assets, and every URL stayedexactly the same.&lt;/p&gt;&lt;h3 id=&#34;designer-credit&#34;&gt;Designer credit&lt;/h3&gt;&lt;p&gt;This redesign was designed and implemented by &lt;strong&gt;Kilo&lt;/strong&gt;, an AI coding agent,working from a short design brief: &amp;ldquo;modern, clean, fast, mobile-first; apragmatic engineer&amp;rsquo;s field notes and photo trips; typography over ornament.&amp;rdquo;The brief, the hard constraints (no URL changes, no content loss, keep thebuild plain Hugo), and the final approval were human. The theme code, theCSS, the verification, and this write-up&amp;rsquo;s factual content are the agent&amp;rsquo;s.&lt;/p&gt;">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Scott Tactical">
+<meta name="twitter:url" content="http://localhost:1313/site-redesign-2026/">
+<meta name="twitter:title" content="Site Redesign: Out With the Bootstrap 3 Theme - Scott Tactical">
+<meta name="twitter:description" content="&lt;h2 id=&#34;site-redesign-2026&#34;&gt;Site Redesign 2026&lt;/h2&gt;&lt;h3 id=&#34;tldr&#34;&gt;TL;DR&lt;/h3&gt;&lt;p&gt;The site has a new visual theme. The old Bootstrap 3 &amp;ldquo;Beg&amp;rdquo; theme is retired(kept in the repo for rollback). The new one is hand-rolled, has light anddark color schemes, loads zero third-party assets, and every URL stayedexactly the same.&lt;/p&gt;&lt;h3 id=&#34;designer-credit&#34;&gt;Designer credit&lt;/h3&gt;&lt;p&gt;This redesign was designed and implemented by &lt;strong&gt;Kilo&lt;/strong&gt;, an AI coding agent,working from a short design brief: &amp;ldquo;modern, clean, fast, mobile-first; apragmatic engineer&amp;rsquo;s field notes and photo trips; typography over ornament.&amp;rdquo;The brief, the hard constraints (no URL changes, no content loss, keep thebuild plain Hugo), and the final approval were human. The theme code, theCSS, the verification, and this write-up&amp;rsquo;s factual content are the agent&amp;rsquo;s.&lt;/p&gt;">
+<meta name="twitter:image" content="http://localhost:1313/images/default.png">
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http:\/\/localhost:1313\/"
+    },
+    "headline": "Site Redesign: Out With the Bootstrap 3 Theme - Scott Tactical",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http:\/\/localhost:1313\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2026-09-21T18:00:00-07:00",
+    "dateModified": "2026-09-21T18:00:00-07:00",
+    "author": {
+      "@type": "Person",
+      "name": "Scott Tactical"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Scott Tactical",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http:\/\/localhost:1313\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "\u003ch2 id=\u0022site-redesign-2026\u0022\u003eSite Redesign 2026\u003c\/h2\u003e\n\u003ch3 id=\u0022tldr\u0022\u003eTL;DR\u003c\/h3\u003e\n\u003cp\u003eThe site has a new visual theme. The old Bootstrap 3 \u0026ldquo;Beg\u0026rdquo; theme is retired\n(kept in the repo for rollback). The new one is hand-rolled, has light and\ndark color schemes, loads zero third-party assets, and every URL stayed\nexactly the same.\u003c\/p\u003e\n\u003ch3 id=\u0022designer-credit\u0022\u003eDesigner credit\u003c\/h3\u003e\n\u003cp\u003eThis redesign was designed and implemented by \u003cstrong\u003eKilo\u003c\/strong\u003e, an AI coding agent,\nworking from a short design brief: \u0026ldquo;modern, clean, fast, mobile-first; a\npragmatic engineer\u0026rsquo;s field notes and photo trips; typography over ornament.\u0026rdquo;\nThe brief, the hard constraints (no URL changes, no content loss, keep the\nbuild plain Hugo), and the final approval were human. The theme code, the\nCSS, the verification, and this write-up\u0026rsquo;s factual content are the agent\u0026rsquo;s.\u003c\/p\u003e"
+  }
+</script>
+
+
+    
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    
+    <script type="application/javascript">
+      var doNotTrack = false;
+      doNotTrack || (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-53440065-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+
+    <header class="site-header">
+  <div class="container site-header-inner">
+    <a class="site-brand" href="http://localhost:1313/">Scott Tactical</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="http://localhost:1313/">Home</a></li>
+        
+        <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main id="main" class="site-main">
+      <div class="container">
+        
+<div class="layout">
+  <div class="layout-main">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="http://localhost:1313/">Home</a></li>
+        
+        <li><a href="http://localhost:1313/post/">post</a></li>
+        
+        <li aria-current="page">Site Redesign: Out With the Bootstrap 3 Theme</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="facts">
+      <li><time datetime="2026-09-21T18:00:00-07:00">Sep 21, 2026</time></li>
+      <li><a href="http://localhost:1313/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">Site Redesign: Out With the Bootstrap 3 Theme</h1>
+  </header>
+
+  
+
+  <div class="article-body"><h2 id="site-redesign-2026">Site Redesign 2026</h2>
+<h3 id="tldr">TL;DR</h3>
+<p>The site has a new visual theme. The old Bootstrap 3 &ldquo;Beg&rdquo; theme is retired
+(kept in the repo for rollback). The new one is hand-rolled, has light and
+dark color schemes, loads zero third-party assets, and every URL stayed
+exactly the same.</p>
+<h3 id="designer-credit">Designer credit</h3>
+<p>This redesign was designed and implemented by <strong>Kilo</strong>, an AI coding agent,
+working from a short design brief: &ldquo;modern, clean, fast, mobile-first; a
+pragmatic engineer&rsquo;s field notes and photo trips; typography over ornament.&rdquo;
+The brief, the hard constraints (no URL changes, no content loss, keep the
+build plain Hugo), and the final approval were human. The theme code, the
+CSS, the verification, and this write-up&rsquo;s factual content are the agent&rsquo;s.</p>
+<p>It seemed worth saying out loud, since the site has a decade of human-written
+posts and this is the first artifact on it authored by a machine.</p>
+<h3 id="the-build-by-the-numbers">The build, by the numbers</h3>
+<p>For the statistically curious - measured where possible, estimated where
+labelled:</p>
+<ul>
+<li><strong>Wall clock:</strong> ~15 minutes for the audit + design proposal, ~15 minutes for
+the full implementation and verification. Call it 30 minutes end to end,
+including the docs. A human doing the same theme port is booking a weekend.</li>
+<li><strong>The model:</strong> this session ran on <strong>Kimi</strong> (Moonshot AI), invoked through
+the OpenRouter API as <code>moonshotai/kimi-latest</code>, inside the Kilo agent
+harness. Tool calls (read/write/edit/shell) are executed by the harness;
+the model decides what to do and writes the code.</li>
+<li><strong>Files touched:</strong> 19 new theme files (layouts, partials, shortcodes,
+theme.toml, 2 stylesheets), 6 site-level layouts rewritten, 1 config file
+edited, 1 doc written, 12 screenshots captured. The theme&rsquo;s CSS is ~420
+lines, hand-written; there is no CSS framework anywhere in it.</li>
+<li><strong>Builds:</strong> 6 full Docker builds of the site during development, plus one
+&ldquo;before&rdquo; build of the old theme for comparison screenshots. Each build is
+~2 seconds for 187 pages (Hugo is absurdly fast), so iteration was
+effectively free.</li>
+<li><strong>Bugs found by building, not by reading:</strong> 2 (the ignored <code>markup.unsafe</code>
+setting and the <code>main.css</code> filename collision). Both were caught within one
+build-and-screenshot cycle each.</li>
+<li><strong>Tokens (estimate):</strong> the harness does not expose an exact count to the
+agent, but the session transcript - repo audit, ~30 file reads/writes, 6
+builds, 15 screenshots analyzed - is on the order of a few hundred thousand
+tokens, most of it reading files and image attachments rather than
+generating code. At current API prices that puts the whole redesign in the
+single-digit dollars.</li>
+<li><strong>Human time:</strong> one design brief, three multiple-choice decisions (theme
+approach, dark/light handling, syntax highlighting), and a final review.</li>
+</ul>
+<h3 id="what-was-wrong-with-the-old-theme">What was wrong with the old theme</h3>
+<p>The previous theme was <code>hugo_theme_beg</code>, a Bootstrap 3 design from the
+mid-2010s:</p>
+<ul>
+<li>It pulled Bootstrap, jQuery, Font Awesome, and highlight.js 8.4 from CDNs
+(<code>maxcdn.bootstrapcdn.com</code>, <code>cdnjs.cloudflare.com</code>, <code>code.jquery.com</code>).
+Some of those URLs have been dead for years; the rest were privacy and
+performance dead weight.</li>
+<li>Bootstrap 3 aesthetics - panels, glyphicons, the navbar - read as dated
+now.</li>
+<li>A JavaScript framework (jQuery) to collapse a two-item navigation menu.</li>
+</ul>
+<h3 id="the-new-theme">The new theme</h3>
+<p><code>themes/scott/</code>, hand-rolled:</p>
+<ul>
+<li><strong>No frameworks, no CDN.</strong> All CSS is one file
+(<code>scott.css</code>, ~400 lines). The only JavaScript left on the site is the
+vendored PhotoSwipe for galleries and the (optional, config-gated)
+Disqus/Analytics snippets that were already there.</li>
+<li><strong>Light and dark schemes</strong> via CSS custom properties and
+<code>prefers-color-scheme</code>. It follows the OS setting; no toggle, no JS.</li>
+<li><strong>System font stack.</strong> No webfont downloads - the first render is just
+HTML and one local stylesheet.</li>
+<li><strong>Fluid type scale</strong> with <code>clamp()</code>, a ~68ch reading measure, and a
+mobile-first layout where the sidebar stacks below the content.</li>
+<li><strong>Server-side syntax highlighting.</strong> Code blocks are highlighted at build
+time by Hugo&rsquo;s Chroma engine (solarized-dark palette, readable in both
+color schemes) instead of a client-side script from 2014.</li>
+<li><strong>Gallery grid</strong> rebuilt on CSS grid with lazy-loading thumbnails, keeping
+the existing front-matter-driven image list and the PhotoSwipe markup
+contract.</li>
+</ul>
+<h3 id="fixed-along-the-way">Fixed along the way</h3>
+<p>Two latent config bugs surfaced during verification:</p>
+<ol>
+<li><code>markup.unsafe = true</code> is not honored by modern Hugo - the setting moved
+to <code>markup.goldmark.renderer.unsafe</code>. Raw HTML embedded in old posts was
+being silently dropped from the output. Fixed; the affected posts render
+their figures and iframes again.</li>
+<li>The theme&rsquo;s stylesheet was initially named <code>main.css</code>, which the site&rsquo;s
+own vendored PhotoSwipe <code>static/css/main.css</code> shadows. Renamed to
+<code>scott.css</code>. File-name collisions across the theme/site boundary are a
+real thing.</li>
+</ol>
+<h3 id="constraints-that-held">Constraints that held</h3>
+<p>The point of the exercise was a visual overhaul, not a reorganization, so:</p>
+<ul>
+<li>Every URL is byte-identical to before. The build produces the same 186
+URL entries as the pre-redesign build, verified by diffing the generated
+path set against the historical <code>public/</code> artifact (186 common, 0 new).</li>
+<li>No content files were touched.</li>
+<li>The build is still plain <code>hugo</code> - no Node, no bundler, no pipeline.</li>
+</ul>
+<h3 id="before-and-after">Before and after</h3>
+<p><figure><img src="/images/redesign-2026/before-post.png"
+			alt="Before: Bootstrap 3 &lsquo;Beg&rsquo; theme"><figcaption>
+			<p>Before: Bootstrap 3 &lsquo;Beg&rsquo; theme</p>
+		</figcaption>
+</figure>
+
+<figure><img src="/images/redesign-2026/after-post-light.png"
+			alt="After: light scheme"><figcaption>
+			<p>After: light scheme</p>
+		</figcaption>
+</figure>
+
+<figure><img src="/images/redesign-2026/after-post-dark.png"
+			alt="After: dark scheme"><figcaption>
+			<p>After: dark scheme</p>
+		</figcaption>
+</figure>
+
+<figure><img src="/images/redesign-2026/after-gallery.png"
+			alt="Gallery page, new thumb grid"><figcaption>
+			<p>Gallery page, new thumb grid</p>
+		</figcaption>
+</figure>
+</p>
+<p>Full notes, the theme inventory, and the verification logs are in the repo
+at <code>docs/visual-redesign.md</code>, alongside the build-parity documentation from
+the earlier build-stack modernization.</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="terms-section">
+      <header>CATEGORIES</header>
+      <ul class="terms">
+        
+        <li><a href="http://localhost:1313/categories/software/">Software</a></li>
+        
+      </ul>
+    </section>
+    
+    
+    
+    
+    
+    <section class="terms-section">
+      <header>TAGS</header>
+      <ul class="terms">
+        
+        <li><a href="http://localhost:1313/tags/hugo/">hugo</a></li>
+        
+        <li><a href="http://localhost:1313/tags/design/">design</a></li>
+        
+        <li><a href="http://localhost:1313/tags/meta/">meta</a></li>
+        
+      </ul>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="layout-side">
+    <aside class="sidebar">
+
+  <section class="sidebar-section">
+    <h2>Latest</h2>
+    <ul>
+      
+      <li><a href="http://localhost:1313/site-modernization-2026-09/">How an AI Coding Agent Rebuilt This Site</a></li>
+      
+      <li><a href="http://localhost:1313/site-redesign-2026/">Site Redesign: Out With the Bootstrap 3 Theme</a></li>
+      
+      <li><a href="http://localhost:1313/car-computer-monitoring/">Car Computer Monitoring</a></li>
+      
+      <li><a href="http://localhost:1313/why-i-converted-to-catholicism/">Why I Converted To Catholicism</a></li>
+      
+      <li><a href="http://localhost:1313/ejs-2019-departure-preparations/">Easter Jeep Safari 2019 - Departure Preparations</a></li>
+      
+      <li><a href="http://localhost:1313/ejs-2019-transit/">EJS 2019 - The Slow Route There </a></li>
+      
+      <li><a href="http://localhost:1313/car-computer-face-recognition/">Car Computer Face Recognition</a></li>
+      
+      <li><a href="http://localhost:1313/biometric-vehicle-entry-car-computer/">Biometric Vehicle Entry</a></li>
+      
+      <li><a href="http://localhost:1313/installing-usb-relay/">Installing a USB Relay</a></li>
+      
+      <li><a href="http://localhost:1313/car-computer-touchscreen-monitor/">Car Computer Touchscreen Monitor</a></li>
+      
+    </ul>
+  </section>
+
+  
+  <section class="sidebar-section">
+    <h2>Category</h2>
+    <ul>
+      
+      <li><a href="http://localhost:1313/categories/software/">software</a></li>
+      
+    </ul>
+  </section>
+  
+  <section class="sidebar-section">
+    <h2>Series</h2>
+    <ul>
+      
+    </ul>
+  </section>
+  
+  <section class="sidebar-section">
+    <h2>Tag</h2>
+    <ul>
+      
+      <li><a href="http://localhost:1313/tags/data/">data</a></li>
+      
+      <li><a href="http://localhost:1313/tags/technology/">technology</a></li>
+      
+      <li><a href="http://localhost:1313/tags/car-computer/">car computer</a></li>
+      
+      <li><a href="http://localhost:1313/tags/photography/">photography</a></li>
+      
+      <li><a href="http://localhost:1313/tags/california/">california</a></li>
+      
+      <li><a href="http://localhost:1313/tags/philosophy/">philosophy</a></li>
+      
+      <li><a href="http://localhost:1313/tags/69-blazer/">69 blazer</a></li>
+      
+      <li><a href="http://localhost:1313/tags/politics/">politics</a></li>
+      
+      <li><a href="http://localhost:1313/tags/restoration/">restoration</a></li>
+      
+      <li><a href="http://localhost:1313/tags/devops/">devops</a></li>
+      
+    </ul>
+  </section>
+  
+
+</aside>
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+  <div class="container">
+    <p>&copy; Scott Tactical</p>
+    <p class="site-footer-note">Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({ startOnLoad: true });</script>
+  </body>
+</html>

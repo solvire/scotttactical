@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Ai on Scott Tactical</title>
+		<link>http://localhost:1313/tags/ai/</link>
+		<description>Recent content in Ai on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 21 Sep 2026 20:00:00 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>How an AI Coding Agent Rebuilt This Site</title>
+				<link>http://localhost:1313/site-modernization-2026-09/</link>
+				<pubDate>Mon, 21 Sep 2026 20:00:00 -0700</pubDate>
+				<guid>http://localhost:1313/site-modernization-2026-09/</guid>
+				<description>&lt;h2 id=&#34;the-bottom-line&#34;&gt;The bottom line&lt;/h2&gt;&#xA;&lt;p&gt;This site was rebuilt by an AI coding agent, and this page is the part of that&#xA;job most people do not see. Below is not just what happened. It is also the&#xA;boring, nerdy underneath: what the model is, how the work is measured, what&#xA;tokens, wall time, and effort actually mean, and why a human would even bother.&lt;/p&gt;&#xA;&lt;p&gt;That is the part an SEO crawler will eat up, and the part a curious engineer&#xA;will actually enjoy.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

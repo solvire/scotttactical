@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Meta on Scott Tactical</title>
+		<link>http://localhost:1313/tags/meta/</link>
+		<description>Recent content in Meta on Scott Tactical</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 21 Sep 2026 20:00:00 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>How an AI Coding Agent Rebuilt This Site</title>
+				<link>http://localhost:1313/site-modernization-2026-09/</link>
+				<pubDate>Mon, 21 Sep 2026 20:00:00 -0700</pubDate>
+				<guid>http://localhost:1313/site-modernization-2026-09/</guid>
+				<description>&lt;h2 id=&#34;the-bottom-line&#34;&gt;The bottom line&lt;/h2&gt;&#xA;&lt;p&gt;This site was rebuilt by an AI coding agent, and this page is the part of that&#xA;job most people do not see. Below is not just what happened. It is also the&#xA;boring, nerdy underneath: what the model is, how the work is measured, what&#xA;tokens, wall time, and effort actually mean, and why a human would even bother.&lt;/p&gt;&#xA;&lt;p&gt;That is the part an SEO crawler will eat up, and the part a curious engineer&#xA;will actually enjoy.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Site Redesign: Out With the Bootstrap 3 Theme</title>
+				<link>http://localhost:1313/site-redesign-2026/</link>
+				<pubDate>Mon, 21 Sep 2026 18:00:00 -0700</pubDate>
+				<guid>http://localhost:1313/site-redesign-2026/</guid>
+				<description>&lt;h2 id=&#34;site-redesign-2026&#34;&gt;Site Redesign 2026&lt;/h2&gt;&#xA;&lt;h3 id=&#34;tldr&#34;&gt;TL;DR&lt;/h3&gt;&#xA;&lt;p&gt;The site has a new visual theme. The old Bootstrap 3 &amp;ldquo;Beg&amp;rdquo; theme is retired&#xA;(kept in the repo for rollback). The new one is hand-rolled, has light and&#xA;dark color schemes, loads zero third-party assets, and every URL stayed&#xA;exactly the same.&lt;/p&gt;&#xA;&lt;h3 id=&#34;designer-credit&#34;&gt;Designer credit&lt;/h3&gt;&#xA;&lt;p&gt;This redesign was designed and implemented by &lt;strong&gt;Kilo&lt;/strong&gt;, an AI coding agent,&#xA;working from a short design brief: &amp;ldquo;modern, clean, fast, mobile-first; a&#xA;pragmatic engineer&amp;rsquo;s field notes and photo trips; typography over ornament.&amp;rdquo;&#xA;The brief, the hard constraints (no URL changes, no content loss, keep the&#xA;build plain Hugo), and the final approval were human. The theme code, the&#xA;CSS, the verification, and this write-up&amp;rsquo;s factual content are the agent&amp;rsquo;s.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
