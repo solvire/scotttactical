@@ -1,5 +1,5 @@
 ---
-date: 2026-09-22T21:15:00-07:00
+date: 2026-09-22T14:00:00-07:00
 draft: false
 title: "How I Moved This Site Home (and Let a Bot Do It)"
 url: /self-hosting-the-bot-did-it/
