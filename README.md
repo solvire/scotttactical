@@ -1,28 +1,67 @@
 # scotttactical
 
+The Scott Tactical site - a static blog built with Hugo and served as a container.
 
-Some instructions
+## Stack
 
-install hugo
+- **Hugo** - the static site generator (source site)
+- **nginx** - serves the built output (via `nginxinc/nginx-unprivileged`)
+- **Container image** on `ghcr.io/solvire/scotttactical` - the deployable artifact
 
-    brew install hugo
+The `Dockerfile` is a multi-stage build: it compiles fresh Hugo output, then
+serves it through nginx. The deployed site runs this image.
 
-install the JS stuff
+## Local development
 
-    brew install npm
-    npm install --global gulp-cli
+Prereqs: [Hugo](https://gohugo.io/installation/) (the version pinned in the
+Dockerfile; see `Dockerfile`).
 
-    hugo new post/name.md
+```bash
+# run the dev server with live reload
+hugo server
 
-    hugo server -w
+# build the static site into ./public
+hugo
+```
 
-    hugo -b http://scotttactical.com
+The `./public/` directory is the build output.
 
-Run gulp before deployment to condense things
+## Build and push the image
 
-    gulp
+```bash
+docker build -t ghcr.io/solvire/scotttactical:<tag> .
 
+# authenticate ghcr.io (a classic PAT with write:packages scope)
+docker login ghcr.io
 
-# SSL
+docker push ghcr.io/solvire/scotttactical:<tag>
+```
 
-  certbot --nginx certonly -w /var/www/stac/public -d scotttactical.com
+Use a **new semantic tag** for every publish (e.g. `0.2.0`, never `latest`).
+Deploys are pinned to an explicit tag, so don't overwrite an existing tag.
+
+## Deploy
+
+The image is deployed to the homelab k3s cluster via ArgoCD (GitOps). Deployment
+manifests live in the `homelab-manifests` repo. A publish is:
+
+1. Build + push a new image tag (above)
+2. Bump the image reference in the deployment manifest
+3. ArgoCD converges the cluster
+
+Nothing here exposes the cluster or its addresses; the manifests repo owns the
+deployment details.
+
+## Content
+
+Add a post with:
+
+```bash
+hugo new post/your-name.md
+```
+
+Edit, then `hugo` to rebuild and `hugo server` to preview.
+
+## License
+
+Copyright (c) Scott Tactical. All rights reserved.
