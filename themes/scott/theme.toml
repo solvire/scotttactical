@@ -1,0 +1,12 @@
+name = "scott"
+license = "MIT"
+licenselink = "https://github.com/solvire/scotttactical/blob/master/themes/scott/LICENSE.md"
+description = "Clean, mobile-first personal/tech site theme for scotttactical.com"
+homepage = "https://scotttactical.com/"
+tags = ["blog", "responsive", "minimal", "dark", "light", "gallery"]
+features = ["dark mode via prefers-color-scheme", "chroma syntax highlighting", "no JS framework", "no external assets"]
+min_version = "0.120.0"
+
+[author]
+  name = "solvire"
+  homepage = "https://github.com/solvire"

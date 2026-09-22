@@ -4,27 +4,33 @@ The Scott Tactical site - a static blog built with Hugo and served as a containe
 
 ## Stack
 
-- **Hugo** - the static site generator (source site)
+- **Hugo** - the static site generator (source site), theme `themes/scott/`
 - **nginx** - serves the built output (via `nginxinc/nginx-unprivileged`)
 - **Container image** on `ghcr.io/solvire/scotttactical` - the deployable artifact
 
 The `Dockerfile` is a multi-stage build: it compiles fresh Hugo output, then
 serves it through nginx. The deployed site runs this image.
 
-## Local development
+## No local toolchain required
 
-Prereqs: [Hugo](https://gohugo.io/installation/) (the version pinned in the
-Dockerfile; see `Dockerfile`).
+Do NOT install Hugo, Go, or any other build toolchain on the host (this repo
+lives on a NAS mount). Everything runs through the official Hugo container
+image:
 
 ```bash
-# run the dev server with live reload
-hugo server
+# dev server with live reload on http://localhost:1313
+docker run --rm -v "$PWD":/site -w /site -p 1313:1313 \
+  ghcr.io/gohugoio/hugo:latest \
+  server --config hugo.toml --bind 0.0.0.0 --port 1313
 
-# build the static site into ./public
-hugo
+# one-off build into ./public
+docker run --rm -v "$PWD":/site -w /site \
+  ghcr.io/gohugoio/hugo:latest \
+  --config hugo.toml --environment production --cleanDestinationDir
 ```
 
-The `./public/` directory is the build output.
+The `ghcr.io/gohugoio/hugo` image contains the Hugo binary - Hugo is a single
+statically-linked executable, so no Go installation is ever involved.
 
 ## Build and push the image
 
@@ -54,13 +60,21 @@ deployment details.
 
 ## Content
 
-Add a post with:
+Add a post by creating a file under `content/post/your-name.md` (front matter
+conventions in any existing post), or scaffold it with:
 
 ```bash
-hugo new post/your-name.md
+docker run --rm -v "$PWD":/site -w /site \
+  ghcr.io/gohugoio/hugo:latest new post/your-name.md
 ```
 
-Edit, then `hugo` to rebuild and `hugo server` to preview.
+Edit, then rebuild with the Docker commands above to preview.
+
+## Docs
+
+- `docs/build-and-url-parity.md` - build-stack modernization + URL stability proof
+- `docs/visual-redesign.md` - the `themes/scott/` redesign: decisions,
+  verification, before/after screenshots, rollback instructions
 
 ## License
 

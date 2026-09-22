@@ -1,0 +1,42 @@
+{{ define "title" }}{{ .Title }} - {{ end }}
+
+{{ define "meta" }}
+{{ partial "single_meta.html" . }}
+{{ partial "single_json_ld.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<div class="layout">
+  <div class="layout-main">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        {{ with .Section }}
+        <li><a href="{{ $.Site.BaseURL }}{{ . | urlize }}/">{{ . }}</a></li>
+        {{ end }}
+        <li aria-current="page">{{ .Title }}</li>
+      </ol>
+    </nav>
+
+    {{ .Render "summary" }}
+
+    {{ if and (isset .Site.Params "Disqus") .Params.comments }}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    var disqus_shortname = '{{ .Site.Params.Disqus }}';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {{ end }}
+  </div>
+
+  <div class="layout-side">
+    {{ partial "sidebar.html" . }}
+  </div>
+</div>
+{{ end }}

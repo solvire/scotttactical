@@ -1,4 +1,5 @@
 ---
+url: /2016/02/microsoft-accelerator-seattle-machine-learning-funding/
 date: 2016-02-02T12:57:42-08:00
 title: Microsoft Accelerator Seattle Machine Learning Funding
 image: images/microsoft-ventures-accelerator.png

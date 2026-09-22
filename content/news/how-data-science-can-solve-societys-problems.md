@@ -1,4 +1,5 @@
 ---
+url: /2016/04/solving-societys-problems-with-data/
 date: 2016-04-07T15:59:17-08:00
 title: "Solving Society's Problems With Data"
 image: images/society.jpg

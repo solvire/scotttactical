@@ -1,4 +1,5 @@
 ---
+url: /2016/04/big-data-and-storage-what-are-the-trends/
 date: 2016-04-04T15:59:17-08:00
 title: "Big Data and Storage: What are the Trends?"
 image: images/cloud-1.jpg

@@ -1,4 +1,5 @@
 ---
+url: /2016/04/better-communication-through-big-data/
 date: 2016-04-15T15:59:17-08:00
 title: "Better Communication Through Big Data"
 image: images/cloud-1.jpg

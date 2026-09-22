@@ -1,4 +1,5 @@
 ---
+url: /post/a-weed-delivery-service/
 date: 2017-05-05T18:51:01-07:00
 draft: false
 title: A Weed Delivery Service

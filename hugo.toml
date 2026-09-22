@@ -1,0 +1,61 @@
+baseURL = "https://scotttactical.com/"
+title = "Scott Tactical"
+theme = "scott"
+locale = "en-us"
+defaultContentLanguage = "en"
+
+# Build settings
+buildDrafts = true
+buildFuture = false
+buildExpired = false
+
+# Pagination (list templates slice .Paginator)
+paginate = 3
+
+# Only publish the content roots that are actually in use.
+ignoreFiles = [
+  "content/posts/.*",
+  "content/portfolio/.*",
+  "content/product/.*",
+  "content/sketch/.*",
+  "content/en/.*",
+  "content/fr/.*",
+]
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# Theme params - names must match the templates exactly.
+[params]
+  Author = "Scott Tactical"
+  DateForm = "Mon, 02 Jan 2006 15:04:05 MST"
+  ISO8601 = "2006-01-02T15:04:05-08:00"
+  dateformat = "Jan 2, 2006"
+  GoogleAnalyticsUserID = "UA-53440065-2"
+  Facebook = "100005012745496"
+  Twitter = "scott_tactical"
+  Github = "solvire"
+  ShowRelatedPost = true
+  Disqus = "scotttactical"
+  GalleryBaseUrl = "http://img.scotttactical.com/images/gallery/"
+  custom_css = []
+
+ignoreLogs = ['warning-goldmark-raw-html']
+
+# The original content embeds raw HTML (galleries, iframes, figures); render it.
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  # Server-side syntax highlighting (Chroma). Styles: themes/scott/static/css/chroma.css
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
+    tabWidth = 4

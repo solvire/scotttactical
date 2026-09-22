@@ -1,4 +1,5 @@
 ---
+url: /2016/04/the-fast-growing-data-center-segment/
 date: 2016-04-16T15:59:17-08:00
 title: "The Fast-Growing Data Center Segment"
 image: images/cloud-1.jpg

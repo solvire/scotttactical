@@ -1,4 +1,5 @@
 ---
+url: /post/dump-django-databases-and-create-fixtures-for-testing/
 date: 2016-02-24T23:20:36-08:00
 title: Dump Django Databases and Create Fixtures for Testing
 tags: [ django ]

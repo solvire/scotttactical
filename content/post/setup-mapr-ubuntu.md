@@ -1,4 +1,5 @@
 ---
+url: /post/how-to-setup-a-mapr-cluster-on-ubuntu/
 date: 2017-01-05T16:18:32-08:00
 draft: false
 title: How To Setup a MapR Cluster on Ubuntu

@@ -1,0 +1,13 @@
+{{ define "title" }}{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ end }}
+
+{{ define "main" }}
+{{ $latest := (index (sort (where .Site.RegularPages "Section" "post") "Date" "desc") 0) }}
+<div class="layout">
+  <div class="layout-main">
+    {{ $latest.Render "summary" }}
+  </div>
+  <div class="layout-side">
+    {{ partial "sidebar.html" . }}
+  </div>
+</div>
+{{ end }}

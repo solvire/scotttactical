@@ -1,0 +1,23 @@
+<aside class="sidebar">
+
+  <section class="sidebar-section">
+    <h2>Latest</h2>
+    <ul>
+      {{ range first 10 .Site.RegularPages }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+
+  {{ range $key, $value := .Site.Taxonomies }}
+  <section class="sidebar-section">
+    <h2>{{ $key | singularize | humanize }}</h2>
+    <ul>
+      {{ range first 10 $value.ByCount }}
+      <li><a href="{{ $.Site.BaseURL }}{{ $key }}/{{ .Name | urlize }}/">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+</aside>

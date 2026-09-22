@@ -1,4 +1,5 @@
 ---
+url: /post/internet-3rd-wave-and-rise-of-the-technology-fascist/
 date: 2016-12-04T13:13:26-08:00
 draft: false
 title: Internet 3rd Wave and Rise of the Technology Fascist

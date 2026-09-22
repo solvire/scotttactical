@@ -1,4 +1,5 @@
 ---
+url: /2016/04/the-myths-of-big-data/
 date: 2016-04-04T15:59:17-08:00
 title: The Myths of Big Data
 image: images/2016-1.jpg

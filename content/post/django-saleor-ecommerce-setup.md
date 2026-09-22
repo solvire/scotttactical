@@ -1,4 +1,5 @@
 ---
+url: /post/django-saleor-ecommerce-review/
 date: 2017-01-15T16:00:07-08:00
 draft: false
 title: "Django Saleor eCommerce Review"

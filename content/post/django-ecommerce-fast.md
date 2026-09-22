@@ -1,4 +1,5 @@
 ---
+url: /post/django-ecommerce-in-30-minutes/
 date: 2017-01-14T16:00:07-08:00
 draft: false
 title: "Django eCommerce in 30+ Minutes"

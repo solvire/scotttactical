@@ -1,6 +1,29 @@
-list html 
-<div class="gallery">
-        {{ range .Data.Pages }}
-        {{ .Render "li"}}
-        {{ end }}
+{{ define "title" }}{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ end }}
+
+{{ define "main" }}
+<div class="layout">
+  <div class="layout-main">
+    <header class="page-header">
+      <h1>Galleries</h1>
+    </header>
+
+    <ul class="article-list">
+      {{ range .Pages }}
+      <li>
+        <article class="li sm">
+          <header>
+            <ul class="facts">
+              <li><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></li>
+            </ul>
+            <div class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+          </header>
+        </article>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="layout-side">
+    {{ partial "sidebar.html" . }}
+  </div>
 </div>
+{{ end }}

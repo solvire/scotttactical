@@ -1,4 +1,5 @@
 ---
+url: /2016/02/big-data-on-a-budget/
 date: 2016-02-14T15:59:17-08:00
 title: Big Data on a Budget
 image: images/microsoft-data-center.jpg

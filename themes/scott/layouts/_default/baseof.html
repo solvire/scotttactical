@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+  <head>
+    {{ partial "meta.html" . }}
+    <link rel="stylesheet" href="{{ "css/scott.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/chroma.css" | relURL }}">
+    <title>{{ block "title" . }}{{ end }}{{ .Site.Title }}</title>
+    {{ block "meta" . }}{{ end }}
+    {{ range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ . | relURL }}">
+    {{ end }}
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    {{ if and (ne (getenv "HUGO_ENV") "DEV") .Site.Params.GoogleAnalyticsUserID }}
+    <script type="application/javascript">
+      var doNotTrack = false;
+      doNotTrack || (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ .Site.Params.GoogleAnalyticsUserID }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {{ end }}
+
+    {{ partial "header.html" . }}
+
+    <main id="main" class="site-main">
+      <div class="container">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </main>
+
+    {{ partial "footer.html" . }}
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({ startOnLoad: true });</script>
+  </body>
+</html>

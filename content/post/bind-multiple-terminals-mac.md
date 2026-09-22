@@ -1,4 +1,5 @@
 ---
+url: /post/howto-bind-multiple-terminals-macos-x/
 date: 2016-11-29T19:09:21-08:00
 draft: false
 title: "HowTo Bind Multiple Terminals MacOS-X"

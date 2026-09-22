@@ -1,4 +1,5 @@
 ---
+url: /2016/04/3-reasons-why-data-centers-are-eco-friendly/
 date: 2016-04-13T15:59:17-08:00
 title: "3 Reasons Why Data Centers Are Eco-Friendly"
 image: images/cloud-1.jpg

@@ -1,4 +1,5 @@
 ---
+url: /2016/04/data-science-building-workplace-diversities/
 date: 2016-04-09T15:59:17-08:00
 title: "Data Science: Building Workplace Diversities"
 image: images/diversity.jpg

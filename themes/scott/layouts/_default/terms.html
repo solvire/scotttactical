@@ -1,0 +1,26 @@
+{{ define "title" }}{{ .Title }} - {{ end }}
+
+{{ define "main" }}
+<div class="layout">
+  <div class="layout-main">
+
+    <header class="page-header">
+      <h1>{{ .Title }}</h1>
+    </header>
+
+    <ul class="term-list">
+      {{ $data := .Data }}
+      {{ range $key, $value := .Data.Terms }}
+      <li>
+        <a href="{{ printf "%s%s/%s/" $.Site.BaseURL $data.Plural ($key | urlize) }}">{{ $key }}</a>
+        <span class="count">{{ len $value }}</span>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="layout-side">
+    {{ partial "sidebar.html" . }}
+  </div>
+</div>
+{{ end }}

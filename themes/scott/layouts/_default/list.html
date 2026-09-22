@@ -1,0 +1,25 @@
+{{ define "title" }}{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ end }}
+
+{{ define "main" }}
+<div class="layout">
+  <div class="layout-main">
+
+    {{ if not .IsHome }}
+    <header class="page-header">
+      <h1>{{ .Title }}</h1>
+    </header>
+    {{ end }}
+
+    <ul class="article-list">
+      {{ range (.Paginate .Data.Pages).Pages }}
+      <li>{{ .Render "li" }}</li>
+      {{ end }}
+    </ul>
+
+    {{ partial "pagination.html" . }}
+  </div>
+  <div class="layout-side">
+    {{ partial "sidebar.html" . }}
+  </div>
+</div>
+{{ end }}

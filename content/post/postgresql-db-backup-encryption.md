@@ -1,4 +1,5 @@
 ---
+url: /post/encrypt-postgresql-backup-to-s3/
 date: 2016-12-24T06:41:07-08:00
 draft: false
 title: Encrypt PostgreSQL Backup to S3

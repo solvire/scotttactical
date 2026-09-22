@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="container site-header-inner">
+    <a class="site-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

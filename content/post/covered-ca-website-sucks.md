@@ -1,4 +1,5 @@
 ---
+url: /post/why-the-covered-california-website-sucks/
 date: 2016-12-09T08:52:58-08:00
 draft: false
 title: Why The Covered California Website Sucks

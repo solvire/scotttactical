@@ -1,23 +1,14 @@
-
-<article class="post">
-    <header>
-        <div class="post-date">
-            <span class="glyphicon glyphicon-calendar"></span>
-            <time datetime="{{ .Date.Format .Site.Params.DateForm }}">
-                {{ .Date.Format .Site.Params.DateForm }}
-            </time>
-        </div>
-        <h1 class="post-title">
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </h1>
-    </header>
-    <div class="post-content">
-        {{ .Summary }}
-    </div>
-    <footer class="readon">
-        <a href="{{ .Permalink }}" class="btn btn-default">
-            READ ON
-        </a>
-    </footer>
+<article class="li">
+  <header>
+    <ul class="facts">
+      <li><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></li>
+    </ul>
+    <h2 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  </header>
+  <div class="summary">
+    {{ .Summary }}
+  </div>
+  <footer>
+    <a class="read-more" href="{{ .Permalink }}">View gallery &rarr;</a>
+  </footer>
 </article>
-<hr>

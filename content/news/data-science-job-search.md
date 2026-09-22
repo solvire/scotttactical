@@ -1,4 +1,5 @@
 ---
+url: /2016/04/data-science-job-search/
 date: 2016-04-06T15:59:17-08:00
 title: Data Science Job Search
 image: images/data_science_job.jpg

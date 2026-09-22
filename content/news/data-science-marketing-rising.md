@@ -1,4 +1,5 @@
 ---
+url: /2016/04/why-data-science-in-marketing-is-rising/
 date: 2016-04-05T15:59:17-08:00
 title: Why Data Science in Marketing is Rising
 image: images/brain.jpg

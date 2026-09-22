@@ -1,4 +1,5 @@
 ---
+url: /2016/04/what-companies-do-not-understand-about-employing-for-data-scientist/
 date: 2016-04-14T15:59:17-08:00
 title: "What Companies Do Not Understand About Employing for Data Scientist"
 image: images/cloud-1.jpg

@@ -1,4 +1,5 @@
 ---
+url: /post/email-in-a-box-setup/
 date: 2017-02-09T16:00:07-08:00
 draft: false
 title: "eMail In A Box: Setup"

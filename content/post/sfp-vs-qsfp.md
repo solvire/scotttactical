@@ -1,4 +1,5 @@
 ---
+url: /post/sfp-vs.-qsfp/
 date: 2017-01-04T06:41:07-08:00
 draft: false
 title: "SFP vs. QSFP"

@@ -1,4 +1,5 @@
 ---
+url: /2016/04/choosing-your-data-warehouse-product/
 date: 2016-04-08T15:59:17-08:00
 title: Choosing Your Data Warehouse Product
 image: images/data1.jpg

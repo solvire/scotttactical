@@ -1,18 +1,29 @@
-gallery html 
-<div class="gallery">
+{{ define "title" }}{{ .Title }} - {{ end }}
 
+{{ define "meta" }}
+{{ partial "single_meta.html" . }}
+{{ end }}
 
-Before XXX
+{{ define "main" }}
+<div class="layout">
+  <div class="layout-main">
+    <article class="gallery">
+      <header>
+        <ul class="facts">
+          <li><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></li>
+        </ul>
+        <h1 class="title">{{ .Title }}</h1>
+      </header>
 
-	{{ $j1 := getJSON "https://s3.amazonaws.com/img.scotttactical.com/images/gallery/yosemite-1009/IMG_6350.jpg.json" }}
+      <div class="article-body">
+        {{ .Content }}
+      </div>
 
-
-    {{ range $j1  }}
-       
-        	field {{ . }}
-      
-    {{ end }}
-
-after XXX
-
+      {{ partial "gallery/schema" . }}
+    </article>
+  </div>
+  <div class="layout-side">
+    {{ partial "sidebar.html" . }}
+  </div>
 </div>
+{{ end }}
