@@ -1,7 +1,7 @@
 ---
 date: 2026-09-22T15:00:00-07:00
 draft: false
-title: "How I Moved This Site Home (and Why It Wasn't About This Site)"
+title: "Welcome Home... To My Home - From Cloud To Self-Hosting"
 url: /self-hosting-the-mini-data-center/
 image: images/minidc-topology.jpg
 categories:
@@ -9,6 +9,12 @@ categories:
 tags: [ self-hosting, llm, ai, k3s, homelab, engineering, meta ]
 comments: false
 ---
+
+It started with this website here. For years this site sat on an AWS EC2 instance, with S3 hosting some images. It cost around $4/mo so it wasn't much. But I got to thinking about it. Within that year I could have paid for a little machine. With about 10X the power. Literally. And it was even more than that. It was remote, and static, and hard to update, which meant it was stale. As you can see by the posts it was very stale. Then we start expanding that math to the bigger sites I had. Then it hit me pretty hard. I'm just burning money.
+
+Now it's local. Sitting on my desk. And proxied out through my firewall. And when I am working with a coding harness I can push button deploy new articles. This is great. My tech-nerd-CTO footprint was far too small anyway. I needed to publish more about the side tasks I was working on. Things like that. 
+
+## TL;DR
 
 The short version: I was paying around $95 a month to host a pile of small things
 in the cloud, most of which I barely used. This site was a tiny slice of that. I
@@ -61,6 +67,8 @@ of sites migrates.
 - **frp** for public exposure - the box dials out, so zero ports open on the house
 - **NUT** for UPS shutdown ordering
 - **Route53** for DNS
+
+![The rack as it sits](/images/rack-hardware.jpg)
 
 The topology as it actually sits today:
 
