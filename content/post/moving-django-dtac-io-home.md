@@ -16,6 +16,8 @@ that had an actual database in it. That made it the interesting one. This articl
 is the record of dragging a real, stateful web application off a rented VM and
 onto the little cluster sitting next to my keyboard.
 
+![The rack that now runs it](/images/django-home-rack.jpg)
+
 ## TL;DR
 
 dtac.io was a cookiecutter-Django site living on a single EC2 instance with its
@@ -128,4 +130,4 @@ faster to work on than it ever was in the cloud.
 The static site proved the pattern. The Django site proved it holds weight.
 Next up is mail.
 
-![The rack](/images/rack-hardware.jpg)
+![The cyber home host](/images/django-home-host.jpg)
