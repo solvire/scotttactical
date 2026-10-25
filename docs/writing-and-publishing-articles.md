@@ -5,7 +5,9 @@ handed to a fresh workspace or a new editor with no prior context: everything
 needed is in this file plus the repo itself.
 
 - Repo: `github.com/solvire/scotttactical` (branch `master`)
-- Local checkout: `/media/master-store/Master_Documents/projects/scotttactical/scotttactical`
+- Working copy: `/media/master-store/Master_Documents/projects/scotttactical/scotttactical`
+  (the ONLY checkout - do not create a second clone; GitHub is the backstop, and
+  two local trees drift apart and cause confusion)
 - Live site: https://scotttactical.com
 
 ---
@@ -65,10 +67,14 @@ comments: false
 
 Field rules:
 
-- **`date`** - MUST be in the past. `buildFuture = false` in `hugo.toml`, so a
-  future-dated post is **silently dropped** from the build. This is the single
-  most common publishing failure. Use `-07:00` (US Pacific) to match the rest of
-  the site.
+- **`date`** - MUST be before the build time. `buildFuture = false` in
+  `hugo.toml`, so a future-dated post is **silently dropped** from the build (no
+  error - the page simply is not there). This is the single most common
+  publishing failure. Use `-07:00` (US Pacific) to match the rest of the site;
+  the workstation's local timezone is irrelevant, the offset in the file is what
+  counts. Pick a time comfortably in the past, not "midnight today" - a post
+  dated `T00:00:00-08:00` is still in the future for the first hours of the UTC
+  day and gets dropped.
 - **`draft`** - set `false`. (`buildDrafts = true` is intentionally on so the
   older still-draft legacy posts keep rendering, but new posts should be `false`.)
 - **`title`** - the headline, quoted.
@@ -81,6 +87,18 @@ Field rules:
   (`self-hosting`, `homelab`, `hugo`, `llm`, `ai`, `engineering`, `meta`, ...).
 - **`comments`** - `true` enables Disqus on the post; `false` (the default for
   new posts) leaves it off.
+
+Front-matter pre-flight (cheap, catches the date trap before a wasted build):
+
+```bash
+# the post date must be earlier than now, or the build drops the page silently
+grep -m1 '^date:' content/post/<slug>.md
+date -u +%Y-%m-%dT%H:%M:%SZ
+```
+
+The real guard is the build itself: after any build, the page directory must
+exist (`ls /tmp/hugo-check/<slug>/`, or inside the deploy image). If it is
+missing, the date is the first thing to check.
 
 The body is Markdown. Raw HTML is allowed (the build has
 `[markup.goldmark.renderer] unsafe = true`). Code fences are syntax-highlighted
@@ -105,16 +123,20 @@ Do not invent facts. If a number is an estimate, label it as an estimate.
 
 ## 5. Images
 
-- Put article images under `static/images/<topic>/` (e.g.
-  `static/images/django-home-topology.jpg`).
-- Reference them in the body with the `figure` shortcode:
+- Put article images under `static/images/` (a `<topic>/` subfolder is fine, but
+  flat is also used, e.g. `static/images/django-home-topology.jpg`).
+- Reference them in the body either way - both render:
+  - plain Markdown, `![alt text](/images/django-home-topology.jpg)` - what the
+    recent posts use, or
+  - the `figure` shortcode, when you want a caption:
 
 ```markdown
 {{< figure src="/images/django-home-topology.jpg" caption="The rack as it stands today." >}}
 ```
 
 - The `image:` front-matter field (a hero/social image) is separate from in-body
-  figures and points at the same `static/` tree.
+  figures and points at the same `static/` tree. A leading slash (`/images/x.jpg`)
+  or none (`images/x.jpg`) both work; existing posts use both.
 - Gallery images are a different mechanism (external host, `content/gallery/`) -
   not covered here.
 
@@ -179,19 +201,47 @@ The sequence:
 
 ```bash
 # 1. Build and push a NEW image tag (never reuse or overwrite a tag)
-docker build -t ghcr.io/solvire/scotttactical:<new-tag> .
+docker build -t ghcr.io/solvire/scotttactical:<new-tag> .   # prints the Pages count
 docker login ghcr.io                       # classic PAT with write:packages
 docker push ghcr.io/solvire/scotttactical:<new-tag>
 
-# 2. Bump the image reference in the deployment manifest
+# 2. Confirm the page is actually inside the image (catches the date trap)
+docker run --rm --entrypoint sh ghcr.io/solvire/scotttactical:<new-tag> \
+  -c 'ls /usr/share/nginx/html/<slug>/'
+
+# 3. Bump the image reference in the deployment manifest
 #    homelab-manifests/apps/scotttactical/deployment.yaml  -> image: ...:<new-tag>
 
-# 3. Commit + push the manifest; ArgoCD converges the cluster
+# 4. Commit + push the manifest; ArgoCD converges the cluster
 ```
 
 Current pinned tag: see `homelab-manifests/apps/scotttactical/deployment.yaml`
-(was `0.2.4` as of this writing). Use a new semantic tag each publish
-(`0.2.5`, `0.2.6`, ...); never `latest`, never reuse.
+(was `0.2.5` as of this writing). Use a new semantic tag each publish
+(`0.2.6`, `0.2.7`, ...); never `latest`, never reuse.
+
+### Verify the rollout
+
+ArgoCD auto-syncs, but its repo poll can lag a few minutes. (These commands
+assume `kubectl` is already pointed at the home cluster.) Force a refresh if
+you are impatient, then confirm the cluster is on the new tag and that ArgoCD
+synced the exact commit you pushed:
+
+```bash
+# optional: make ArgoCD re-read the repo now instead of waiting for its poll
+kubectl -n argocd annotate application scotttactical \
+  argocd.argoproj.io/refresh=normal --overwrite
+
+kubectl get deploy scotttactical \
+  -o jsonpath='{.spec.template.spec.containers[0].image}'; echo   # -> :<new-tag>
+kubectl rollout status deploy/scotttactical
+
+# ArgoCD's synced revision must equal the manifest commit you just pushed
+kubectl get application scotttactical -n argocd \
+  -o jsonpath='{.status.sync.revision}'; echo
+```
+
+A first request can return `502` for a few seconds while the old pod terminates
+- re-check rather than panic.
 
 Notes:
 
@@ -233,5 +283,7 @@ Notes:
 - [ ] Production build passes; page exists; screenshot verified
 - [ ] No existing URL disappeared in the path-set diff
 - [ ] Operator approved commit/push/deploy
-- [ ] Image built + pushed with a NEW tag; manifest bumped; ArgoCD converged
+- [ ] Image built + pushed with a NEW tag; page confirmed inside the image
+- [ ] Manifest bumped; ArgoCD synced revision matches the pushed commit
+- [ ] `kubectl rollout status deploy/scotttactical` succeeds; pod on the new tag
 - [ ] Live check: `curl -sI https://scotttactical.com/<slug>/` returns 200
