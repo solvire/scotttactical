@@ -1,5 +1,5 @@
 ---
-date: 2026-10-25T00:00:00-08:00
+date: 2026-10-24T12:00:00-07:00
 draft: false
 title: "An Unpatched RCE on a Church Website: Moving It Off an End-of-Life Host"
 url: /wordpress-to-home-k8s/
@@ -17,7 +17,7 @@ The advisory was not subtle. NSA Cyber put out a public warning telling organiza
 
 ![NSA Cyber advisory on the PHP RCE vulnerabilities, October 21, 2026](/images/st-mary-nsa-advisory.png)
 
-So we moved the site home - onto the same cluster that already serves the other sites, published through the same edge. This is the record of that move: the commands, the redirect loops, and the parts that bit us.
+So we moved the site home onto the same cluster that already serves the other sites, published through the same edge. This is the record of that move: the commands, the redirect loops, and the parts that bit us.
 
 ![The site we moved: a parish church in Los Angeles](/images/st-mary-church.jpg)
 
@@ -27,7 +27,7 @@ byzantinela.com ran on a single droplet with PHP 7.3.17, WordPress 6.6.2, and Ma
 
 ## The stack we were leaving
 
-The production box was a DigitalOcean droplet (`167.172.220.211`) running OpenLiteSpeed with PHP 7.3.17, MariaDB 10.4, and WordPress 6.6.2. DigitalOcean notified every customer about the two CVEs and was explicit: patches exist only for supported PHP versions, 8.2 and later. Running 8.1 or earlier meant no official patch and an immediate upgrade.
+The production box was a DigitalOcean droplet running OpenLiteSpeed with PHP 7.3.17, MariaDB 10.4, and WordPress 6.6.2. DigitalOcean notified every customer about the two CVEs and was explicit: patches exist only for supported PHP versions, 8.2 and later. Running 8.1 or earlier meant no official patch and an immediate upgrade.
 
 ![DigitalOcean advisory email about the PHP RCE vulnerabilities](/images/st-mary-do-alert.png)
 
@@ -87,19 +87,6 @@ The migration itself followed one rule: one change at a time. Before each step, 
 
 This is the part that looks easy on a diagram. Each one is a mundane, real problem, and each one cost real time.
 
-### Two divergent git histories
-
-The operator had rewritten history locally with `filter-repo` to purge logs and backups, then force-pushed. GitHub held the rewritten history; the NAS clone was still on the old one, `ahead 15, behind 13`. Two histories, one repo, no obvious truth.
-
-We resolved it by proving equivalence rather than trusting either side: compare tree hashes, per-area file counts, and sample file hashes. The rewritten history was canonical. The NAS clone became a plain mirror with `git fetch && git reset --hard origin/master`.
-
-The cleanup also surfaced roughly 130 MB of junk that was still tracked - only `.gitignore` had been added, not `git rm --cached`. That included a 72 MB `wp-content/debug.log`, 46 MB of gallery backups, and a SQL dump. Adding a `.gitignore` does not untrack anything.
-
-### The NAS made every request take four seconds
-
-The repo lived on a CIFS/SMB mount. Under the "repo is the site" model, the container reads PHP files off that share. Every request was hundreds of small file reads over CIFS, and the result was about four seconds per request, with parallel crawls timing out.
-
-Moving the working clone to local disk dropped it to about 0.3 seconds. The NAS is now a mirror, not a working copy. If you are serving code, serve it from local disk.
 
 ### Redirect loop number one: the port
 
@@ -142,21 +129,15 @@ strategy:
 
 Brief downtime on a database restart is fine. A corrupt-looking data directory is not.
 
-### Liveness probes that restart-looped WordPress
-
-The default liveness probe timeout is one second. A cold WordPress request takes longer than that, so the probe failed, the pod restarted, and the cold request got colder. Raising the probe timeouts fixed it. If your app is slow to warm, your probe has to be patient.
-
 ### 197,289 users, of which 197,252 were spam
 
-The user table had 197,289 rows. A flood between 2021 and 2025 had created 197,252 spam accounts. The obvious keep signal - "has logged in" - does not work, because the spam accounts logged in too. The reliable signal was "has a first or last name," plus administrator, plus "authored a post." That kept 37 real people.
+The user table had 197,289 rows. A flood between 2021 and 2025 had created 197,252 spam accounts. The obvious keep signal "has logged in" does not work, because the spam accounts logged in too. The reliable signal was "has a first or last name," plus administrator, plus "authored a post." That kept 37 real people.
 
-WordPress has no foreign keys, so before deleting anything we verified that no content table referenced a non-keep user - zero orphans. Then a script (`deploy/prune-spam-users.sh`, dry-run by default) deleted 197,252 users and 2.96 million usermeta rows from both the local and cluster databases, with backups and the keep-list exported first. The 37 were reviewed and approved by hand.
+WordPress has no foreign keys, so before deleting anything we verified that no content table referenced a non-keep user with zero orphans. Then deleted 197,252 users and 2.96 million usermeta rows from both the local and cluster databases, with backups and the keep-list exported first. The 37 were reviewed and approved by hand.
 
 ### The security pass
 
 Before the domain went public, a fresh-context agent did a read-only assessment. It found: XML-RPC open, REST and `?author=` username enumeration, no brute-force limiting on login, no HSTS, containers running as root with full capabilities, and a stored-XSS upload flag. All of it was fixed before exposure - block XML-RPC at the edge and app, block anonymous REST user enumeration, block `?author=` before `redirect_canonical`, rate-limit `wp-login.php` at the edge, add HSTS and security headers, drop capabilities and set a seccomp profile with `allowPrivilegeEscalation: false`, turn off `ALLOW_UNFILTERED_UPLOADS`, deny PHP execution in uploads, disable server tokens, and block `install.php`.
-
-Two honest notes from that pass: a NetworkPolicy was added, but flannel does not enforce network policies, so it needs a policy-capable CNI to actually do anything. And a fresh-context reviewer is genuinely useful - it has no memory of why you made the choices you made, which is exactly the perspective you want on a security review.
 
 None of this is exotic. That is the point - it is the ordinary friction of running a real web application, and it is exactly the kind of work an agent absorbs.
 
@@ -166,7 +147,7 @@ The whole point was to own the stack rather than rent it. The tradeoffs are real
 
 We own the edge (a paid Reserved Instance), the DNS (Route53), and the WordPress install. The upside is control and cost: the edge compute is already paid for, and there is no per-site hosting bill. The downside is that we now own the operational surface - TLS renewal, the tunnel, the cluster, and the database. A vendor portal would have absorbed some of that.
 
-The tunnel design buys a specific property: zero inbound exposure at home. The site is served from home hardware, but the public IP and TLS live on the edge, and the home side only dials out. That is a genuinely better security posture than a port forward, and it is why we chose it over the alternatives.
+The tunnel design buys a specific property: zero inbound exposure at home base.
 
 ## What it costs in milliseconds
 
@@ -210,6 +191,6 @@ The site is immutable by design, so content changes need no deploy and code chan
 
 ## Takeaway
 
-The vulnerability was the trigger, but the fix was not a patch - it was leaving a stack that could no longer be patched. The move worked because we treated the repo as the site, tested every step against a real regression harness, and changed one thing at a time with a rollback point behind each change. The parts that hurt were not the WordPress upgrade; they were the plumbing around it: a port dropped from a Host header, TLS terminated one hop too early, a database that cannot roll, and a user table that had been quietly filling with spam for four years.
+The vulnerability was the trigger, but the fix was not a patch, it was leaving a stack that could no longer be patched. The move worked because we treated the repo as the site, tested every step against a real regression harness, and changed one thing at a time with a rollback point behind each change. The parts that hurt were not the WordPress upgrade; they were the plumbing around it: a port dropped from a Host header, TLS terminated one hop too early, a database that cannot roll, and a user table that had been quietly filling with spam for four years.
 
-If you are staring at an end-of-life stack with an unpatched RCE, the useful question is not "can I patch this?" It is "what would it take to own the whole thing?" For a small site, the answer is smaller than it looks - and the second time you do it, it is smaller still.
+If you are staring at an end-of-life stack with an unpatched RCE, the useful question is not "can I patch this?" It is "what would it take to own the whole thing?" For a small site, the answer is smaller than it looks and the second time you do it, it is smaller still.
