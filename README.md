@@ -72,9 +72,12 @@ Edit, then rebuild with the Docker commands above to preview.
 
 ## Docs
 
+- `docs/writing-and-publishing-articles.md` - how to write an article and publish
+  it (front-matter contract, preview/build/verify, image + deploy path, checklist)
 - `docs/build-and-url-parity.md` - build-stack modernization + URL stability proof
 - `docs/visual-redesign.md` - the `themes/scott/` redesign: decisions,
   verification, before/after screenshots, rollback instructions
+- `docs/edge-deployment.md` - how the live site is exposed (frp tunnel path)
 
 ## License
 
